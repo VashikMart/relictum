@@ -79,6 +79,14 @@ a{color:inherit;text-decoration:none}
 .home .cap h3{font-size:clamp(22px,3vw,30px);white-space:nowrap}
 .home .cap p{font-size:14.5px;color:#3d3a35}
 
+/* галерея ракурсов */
+.gallery{padding:0 0 clamp(30px,5vw,60px)}
+.gallery .ggrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:680px){.gallery .ggrid{grid-template-columns:1fr}}
+.gallery .gitem{border:1px solid var(--linel);overflow:hidden;background:var(--bone)}
+.gallery .gitem img{width:100%;aspect-ratio:3/2;object-fit:cover;transition:transform .8s var(--ease)}
+.gallery .gitem:hover img{transform:scale(1.04)}
+
 /* CTA / сервис */
 .cta{background:var(--coal);color:var(--ivory);padding:clamp(56px,8vw,104px) 0;text-align:center}
 .cta .price{font-family:var(--serif);font-size:clamp(30px,4vw,46px);margin-bottom:6px}
@@ -130,6 +138,7 @@ if(!o){
   var alive = P?P.alive:null;
   var era = P?P.era:null;
   var interior = P?P.interior:null;
+  var gallery = P?P.gallery:null;
 
   var passCells=[
     ['Эпоха', o.period||'—'],
@@ -157,6 +166,14 @@ if(!o){
       '<div class="cap rv"><h3>Как это живёт дома</h3><p>'+interior.text+'</p></div>'+
     '</div></section>') : '';
 
+  var gallerySec = (gallery&&gallery.length) ? (
+    '<section class="gallery"><div class="wrap">'+
+      '<div class="label rv" style="margin-bottom:16px">Ещё ракурсы в интерьере</div>'+
+      '<div class="ggrid">'+
+        gallery.map(function(g){return '<div class="gitem rv"><img src="'+IMG+g+'" alt="'+o.name+' — ракурс" loading="lazy"></div>'}).join('')+
+      '</div>'+
+    '</div></section>') : '';
+
   app.innerHTML=
   '<section class="hero">'+
     '<div class="txt">'+
@@ -178,7 +195,7 @@ if(!o){
     (era?'<div class="eratag rv"><b>'+era.title+'</b><span>'+era.line+'</span></div>':'')+
   '</div></div></section>'+
 
-  aliveSec+ homeSec+
+  aliveSec+ homeSec+ gallerySec+
 
   '<section class="cta"><div class="wrap">'+
     '<div class="label rv" style="color:var(--gold);margin-bottom:14px">'+o.id+'</div>'+
