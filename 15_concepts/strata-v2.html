@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RELICTUM — Спуск сквозь эры · научная версия</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0A0908; --coal:#14110E; --ivory:#F4F0E8; --bronze:#B08A55; --gold:#E9C98A; --deep:#8F6530;
+  --mist:rgba(244,240,232,.62); --line:rgba(176,138,85,.22);
+  --serif:'Cormorant Garamond',serif; --sans:'Inter',sans-serif;
+  --ease:cubic-bezier(.23,1,.32,1);
+  --cen:#C97B4A; --mez:#6f9b5e; --pal:#4f7fa0; --pre:#8a5a86;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--black);color:var(--ivory);font-family:var(--sans);font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.04}
+
+/* HUD */
+.hud{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:flex-start;padding:15px clamp(16px,4vw,44px);background:linear-gradient(180deg,rgba(10,9,8,.85),transparent);pointer-events:none}
+.hud .mark{font-family:var(--serif);letter-spacing:.32em;font-size:15px;text-indent:.32em;padding-top:5px}
+.hud .meter{text-align:right}
+.hud .depth{font-family:var(--serif);font-size:clamp(22px,5.4vw,32px);font-variant-numeric:tabular-nums;line-height:1}
+.hud .depth small{font-size:.5em;color:var(--bronze)}
+.hud .era{font-size:8.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-top:5px}
+.hud .aeon{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--mist);margin-top:2px}
+
+/* научная колонка периодов */
+.gcol{position:fixed;right:0;top:0;bottom:0;width:118px;z-index:95;display:flex;flex-direction:column;font-size:8.5px;border-left:1px solid var(--line);background:rgba(10,9,8,.5);backdrop-filter:blur(4px)}
+.gcol .seg{flex:var(--f,1);display:flex;align-items:center;padding:0 8px;border-bottom:1px solid rgba(255,255,255,.07);color:rgba(244,240,232,.7);position:relative;letter-spacing:.04em;text-transform:uppercase}
+.gcol .seg .my{margin-left:auto;color:rgba(244,240,232,.4);font-variant-numeric:tabular-nums}
+.gcol .eralab{position:absolute;left:2px;top:0;bottom:0;width:3px}
+.gcol .dot{position:absolute;right:0;width:100%;height:2px;background:var(--gold);box-shadow:0 0 8px var(--gold);z-index:2;transition:top .1s linear}
+@media(max-width:820px){.gcol{width:74px;font-size:7px}.gcol .seg{padding:0 4px}}
+@media(max-width:560px){.gcol{display:none}}
+
+/* слой-эра */
+.era{position:relative;min-height:100svh;padding:12svh clamp(16px,4vw,60px) 10svh;display:flex;flex-direction:column;justify-content:center;border-top:1px solid var(--line)}
+.era .tag{display:inline-flex;align-items:center;gap:10px;font-size:9.5px;letter-spacing:.26em;text-transform:uppercase;margin-bottom:12px}
+.era .tag .sw{width:22px;height:3px}
+.era h2{font-size:clamp(34px,7vw,60px);margin-bottom:6px}
+.era .rng{font-family:var(--serif);font-style:italic;font-size:clamp(15px,3.4vw,21px);color:var(--gold);margin-bottom:16px}
+.era .periods{font-size:11px;letter-spacing:.06em;color:var(--mist);margin-bottom:20px;max-width:60ch}
+.era .periods b{color:var(--ivory);font-weight:400}
+.era p.txt{color:var(--ivory);font-size:clamp(13.5px,3.4vw,15.5px);max-width:52ch;margin-bottom:24px}
+
+/* коллаж прошлое|настоящее */
+.split{position:relative;border:1px solid var(--line);overflow:hidden;aspect-ratio:16/10;max-width:1000px}
+.split .past,.split .now{position:absolute;inset:0}
+.split .past img,.split .now img{width:100%;height:100%;object-fit:cover}
+.split .now{clip-path:polygon(58% 0,100% 0,100% 100%,42% 100%)}
+.split .seam{position:absolute;top:0;bottom:0;left:50%;width:2px;background:var(--gold);transform:skewX(-9deg);box-shadow:0 0 14px rgba(233,201,138,.6);z-index:3}
+.split .cap{position:absolute;bottom:0;z-index:4;padding:14px 18px;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase}
+.split .cap.l{left:0;color:var(--gold)}
+.split .cap.r{right:0;text-align:right;color:var(--ivory)}
+.split .cap b{font-family:var(--serif);font-style:italic;font-size:15px;letter-spacing:0;display:block;text-transform:none;margin-bottom:2px}
+.split::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,9,8,.6),transparent 40%);pointer-events:none;z-index:2}
+@media(max-width:620px){.split{aspect-ratio:4/5}.split .now{clip-path:polygon(0 55%,100% 45%,100% 100%,0 100%)}.split .seam{top:50%;left:0;right:0;bottom:auto;width:auto;height:2px;transform:skewY(-5deg)}}
+
+.finds{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.find{display:inline-flex;align-items:center;gap:9px;background:rgba(10,9,8,.6);border:1px solid rgba(233,201,138,.32);padding:8px 15px 8px 8px;text-decoration:none;color:var(--ivory);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;transition:.35s var(--ease)}
+.find img{width:32px;height:40px;object-fit:cover}
+.find:hover{background:var(--gold);color:var(--black)}
+
+/* граница эонов */
+.boundary{min-height:70svh;display:grid;place-items:center;text-align:center;padding:60px 20px;background:linear-gradient(180deg,rgba(79,127,160,.12),rgba(138,90,134,.12))}
+.boundary .big{font-family:var(--serif);font-size:clamp(30px,6vw,54px);line-height:1.1}
+.boundary .big em{font-style:italic;color:var(--gold)}
+.boundary p{color:var(--mist);max-width:48ch;margin:18px auto 0;font-size:14px}
+.boundary .arrows{margin-top:24px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+
+/* врата и финал */
+.gate{position:relative;min-height:100svh;display:grid;place-items:center;text-align:center;overflow:hidden}
+.gate video,.gate>img.bgv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:.9}
+.gate .veil{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,9,8,.5),rgba(10,9,8,.3) 40%,var(--black))}
+.gate .in{padding:90px 22px 60px}
+.gate img.lockup{width:min(430px,72vw);margin:0 auto 4vh}
+.gate h1{font-size:clamp(40px,10vw,88px)}
+.gate h1 em{font-style:italic;color:var(--gold)}
+.gate p{color:var(--mist);max-width:48ch;margin:18px auto 0;font-size:14.5px}
+.hint{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--mist);animation:bob 2.4s ease-in-out infinite;z-index:2}
+@keyframes bob{50%{transform:translate(-50%,8px)}}
+.finale{background:radial-gradient(120% 80% at 50% 100%,#2a1608,var(--black) 60%)}
+.finale .btns{margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.finale .btn{display:inline-block;padding:15px 30px;border:1px solid var(--bronze);color:var(--gold);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;text-decoration:none;transition:.4s var(--ease)}
+.finale .btn:hover{background:var(--gold);color:var(--black)}
+.rv{opacity:0;transform:translateY(28px);transition:1s var(--ease)}
+.rv.on{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<div class="hud">
+  <span class="mark">RELICTUM</span>
+  <div class="meter">
+    <div class="depth"><span id="dN">0</span> <small id="dU">м</small></div>
+    <div class="era" id="dE">Поверхность</div>
+    <div class="aeon" id="dA">сегодня</div>
+  </div>
+</div>
+
+<!-- научная колонка -->
+<div class="gcol" id="gcol">
+  <div class="seg" style="--f:1.2;color:var(--cen)"><span>Четвертичн.</span><span class="my">2,6</span></div>
+  <div class="seg" style="--f:1.4;color:var(--cen)"><span>Неоген</span><span class="my">23</span></div>
+  <div class="seg" style="--f:1.6;color:var(--cen)"><span>Палеоген</span><span class="my">66</span></div>
+  <div class="seg" style="--f:2.2;color:var(--mez)"><span>Мел</span><span class="my">145</span></div>
+  <div class="seg" style="--f:1.6;color:var(--mez)"><span>Юра</span><span class="my">201</span></div>
+  <div class="seg" style="--f:1.4;color:var(--mez)"><span>Триас</span><span class="my">252</span></div>
+  <div class="seg" style="--f:1.4;color:var(--pal)"><span>Пермь</span><span class="my">299</span></div>
+  <div class="seg" style="--f:1.6;color:var(--pal)"><span>Карбон</span><span class="my">359</span></div>
+  <div class="seg" style="--f:1.4;color:var(--pal)"><span>Девон</span><span class="my">419</span></div>
+  <div class="seg" style="--f:1;color:var(--pal)"><span>Силур</span><span class="my">444</span></div>
+  <div class="seg" style="--f:1.5;color:var(--pal)"><span>Ордовик</span><span class="my">485</span></div>
+  <div class="seg" style="--f:1.4;color:var(--pal)"><span>Кембрий</span><span class="my">541</span></div>
+  <div class="seg" style="--f:5;color:var(--pre);background:rgba(138,90,134,.14)"><span>Докембрий</span><span class="my">4600</span></div>
+  <div class="dot" id="gdot" style="top:0"></div>
+</div>
+
+<!-- ВРАТА -->
+<header class="gate" data-era="Поверхность" data-aeon="сегодня" data-d0="0" data-d1="0">
+  <video class="bgv" id="heroVideo" autoplay muted loop playsinline poster="../shared/img/strata_hero.jpg" style="display:none">
+    <source src="../shared/img/strata_descent.mp4" type="video/mp4">
+  </video>
+  <img class="bgv" id="heroImg" src="../shared/img/strata_hero.jpg" alt="">
+  <div class="veil"></div>
+  <div class="in">
+    <img class="lockup" src="../shared/brand/Relictum_lockup_dark.png" alt="RELICTUM">
+    <h1>Спуск<br>сквозь <em>эры</em></h1>
+    <p>Под ногами — архив планеты. Мы спускаемся сквозь эры фанерозоя к скрытому времени докембрия. Слева — как они жили, справа — как мы их находим сегодня.</p>
+  </div>
+  <div class="hint">Листайте вниз · сквозь 4,6 млрд лет</div>
+</header>
+
+<!-- КАЙНОЗОЙ -->
+<section class="era" data-era="Кайнозой" data-aeon="Фанерозой · эра млекопитающих" data-d0="0" data-d1="300" data-col="cen">
+  <div class="rv">
+    <div class="tag" style="color:var(--cen)"><span class="sw" style="background:var(--cen)"></span>Кайнозой · эра млекопитающих</div>
+    <h2>Век зверей</h2>
+    <div class="rng">66 миллионов лет назад — сегодня</div>
+    <div class="periods">Периоды: <b>палеоген</b> (66) · <b>неоген</b> (23) · <b>четвертичный</b> (2,6 млн лет). После гибели динозавров сушу заняли млекопитающие; в вечной мерзлоте последнего ледника — мамонтовая фауна.</div>
+    <div class="split">
+      <div class="past"><img src="../shared/img/recon_cenozoic.jpg" alt="Реконструкция кайнозоя"></div>
+      <div class="now"><img src="../shared/img/dig_paleontologists.jpg" alt="Раскопки"></div>
+      <div class="seam"></div>
+      <div class="cap l"><b>Так они жили</b>реконструкция</div>
+      <div class="cap r"><b>Так мы их находим</b>раскопки дома</div>
+    </div>
+    <div class="finds">
+      <a class="find" href="../16_product_promos/mammoth-tusk.html"><img src="../shared/img/prod_mammoth_tusk.jpg" alt="">Бивень мамонта</a>
+      <a class="find" href="../16_product_promos/megalodon-tooth.html"><img src="../shared/img/prod_megalodon_tooth.jpg" alt="">Зуб мегалодона</a>
+    </div>
+  </div>
+</section>
+
+<!-- МЕЗОЗОЙ -->
+<section class="era" data-era="Мезозой" data-aeon="Фанерозой · эра динозавров" data-d0="300" data-d1="900" data-col="mez">
+  <div class="rv">
+    <div class="tag" style="color:var(--mez)"><span class="sw" style="background:var(--mez)"></span>Мезозой · эра рептилий</div>
+    <h2>Царство ящеров</h2>
+    <div class="rng">252 – 66 миллионов лет назад</div>
+    <div class="periods">Периоды: <b>триас</b> (252) · <b>юра</b> (201) · <b>мел</b> (145). На суше — динозавры, в морях — ихтиозавры и аммониты. Эра оборвалась ударом астероида на границе мела и палеогена.</div>
+    <div class="split">
+      <div class="past"><img src="../shared/img/recon_cretaceous.jpg" alt="Реконструкция мезозоя"></div>
+      <div class="now"><img src="../shared/img/dig_ichthyo_measure.jpg" alt="Скелет ихтиозавра"></div>
+      <div class="seam"></div>
+      <div class="cap l"><b>Так они жили</b>реконструкция</div>
+      <div class="cap r"><b>Так мы их находим</b>скелет с рулеткой</div>
+    </div>
+    <div class="finds">
+      <a class="find" href="../02_site_v1_gallery/object.html?id=R–0203"><img src="../shared/img/prod_trex_tooth.jpg" alt="">Зуб тираннозавра</a>
+      <a class="find" href="../02_site_v1_gallery/object.html?id=R–0601"><img src="../shared/img/grand_triceratops_skull.jpg" alt="">Череп трицератопса</a>
+      <a class="find" href="../02_site_v1_gallery/journal-ammonite.html"><img src="../shared/img/cat_ammonite.jpg" alt="">Аммонит</a>
+    </div>
+  </div>
+</section>
+
+<!-- ПАЛЕОЗОЙ -->
+<section class="era" data-era="Палеозой" data-aeon="Фанерозой · эра древней жизни" data-d0="900" data-d1="1800" data-col="pal">
+  <div class="rv">
+    <div class="tag" style="color:var(--pal)"><span class="sw" style="background:var(--pal)"></span>Палеозой · эра древней жизни</div>
+    <h2>Первые глаза</h2>
+    <div class="rng">541 – 252 миллиона лет назад</div>
+    <div class="periods">Периоды: <b>кембрий</b> (541) · <b>ордовик</b> (485) · <b>силур</b> (444) · <b>девон</b> (419) · <b>карбон</b> (359) · <b>пермь</b> (299). Кембрий открыл фанерозой: у жизни появились раковины, панцири и первые глаза — трилобиты, ракоскорпионы.</div>
+    <div class="split">
+      <div class="past"><img src="../shared/img/recon_paleozoic.jpg" alt="Реконструкция палеозоя"></div>
+      <div class="now"><img src="../shared/img/dig_ammonites_insitu.jpg" alt="Окаменелости в породе"></div>
+      <div class="seam"></div>
+      <div class="cap l"><b>Так они жили</b>реконструкция</div>
+      <div class="cap r"><b>Так мы их находим</b>окаменелости в породе</div>
+    </div>
+    <div class="finds">
+      <a class="find" href="../02_site_v1_gallery/object.html?id=R–0205"><img src="../shared/img/prod_trilobite.jpg" alt="">Трилобит Drotops</a>
+    </div>
+  </div>
+</section>
+
+<!-- ГРАНИЦА ЭОНОВ -->
+<section class="boundary">
+  <div>
+    <div class="big">Здесь заканчивается <em>видимая</em> жизнь</div>
+    <p>541 миллион лет назад. Выше — фанерозой, «явная жизнь»: всё, что оставило раковины и кости. Ниже — криптозой, «скрытая жизнь»: почти четыре миллиарда лет планета жила без свидетелей, которых можно найти в породе.</p>
+    <div class="arrows">↑ Фанерозой · 12% истории &nbsp;·&nbsp; Криптозой · 88% ↓</div>
+  </div>
+</section>
+
+<!-- КРИПТОЗОЙ -->
+<section class="era" data-era="Криптозой · докембрий" data-aeon="скрытая жизнь · 88% истории Земли" data-d0="1800" data-d1="6000" data-col="pre">
+  <div class="rv">
+    <div class="tag" style="color:var(--pre)"><span class="sw" style="background:var(--pre)"></span>Криптозой · докембрий</div>
+    <h2>Тишина до нас</h2>
+    <div class="rng">4,6 миллиарда – 541 миллион лет назад</div>
+    <div class="periods">Почти вся история Земли. Жизнь была — бактерии, строматолиты, мягкотелые эдиакарские организмы, — но она скрыта: без скелетов и раковин её почти не найти в осадочных породах.</div>
+    <div class="split">
+      <div class="past"><img src="../shared/img/recon_precambrian.jpg" alt="Реконструкция эдиакария"></div>
+      <div class="now"><img src="../shared/img/sr_iron.jpg" alt="Полосатая железная руда"></div>
+      <div class="seam"></div>
+      <div class="cap l"><b>Так они жили</b>эдиакарские организмы</div>
+      <div class="cap r"><b>Так мы их находим</b>полосатые железные руды</div>
+    </div>
+    <div class="finds">
+      <a class="find" href="../02_site_v1_gallery/catalog.html#terra"><img src="../shared/img/cat_minerals_amethyst.jpg" alt="">Минералы Земли</a>
+    </div>
+  </div>
+</section>
+
+<!-- МАНТИЯ -->
+<section class="era" data-era="Мантия · начало" data-aeon="≈ 4,5 млрд лет" data-d0="6000" data-d1="70000" data-col="pre" style="background:radial-gradient(120% 90% at 50% 100%, rgba(194,87,31,.28), transparent 60%)">
+  <div class="rv">
+    <div class="tag" style="color:#c2571f"><span class="sw" style="background:#c2571f"></span>Базальт · граница мантии</div>
+    <h2>Где камень ещё жидкий</h2>
+    <div class="rng">≈ 4,5 миллиарда лет · глубже архивов</div>
+    <div class="periods">Ниже осадочных пород — только огонь, из которого всё началось. Дальше человек не бурил. Но у дома есть объект и с этой глубины — с такой же границы ядра и мантии <b>другой</b> планеты.</div>
+    <div class="finds">
+      <a class="find" href="../02_site_v1_gallery/journal-meteorite.html"><img src="../shared/img/prod_pallasite_seymchan.jpg" alt="">Палласит Сеймчан</a>
+    </div>
+  </div>
+</section>
+
+<!-- ФИНАЛ -->
+<section class="gate finale" data-era="Мантия" data-aeon="4,5 млрд лет" data-d0="70000" data-d1="70000">
+  <div class="in">
+    <h1>Мы поднимаем<br><em>время наверх</em></h1>
+    <p>Свидетели каждой эры — в каталоге дома: атрибутированные, оправленные, с паспортом происхождения.</p>
+    <div class="btns">
+      <a class="btn" href="../02_site_v1_gallery/catalog.html">Каталог</a>
+      <a class="btn" href="eras.html">Живые эры</a>
+      <a class="btn" href="strata.html">Первая версия «Спуска»</a>
+    </div>
+  </div>
+</section>
+
+<script>
+/* видео-хиро */
+(function(){var v=document.getElementById('heroVideo');v.addEventListener('canplay',function(){v.style.display='block';document.getElementById('heroImg').style.display='none'});v.load();})();
+
+/* глубиномер + точка на колонке + появление */
+var secs=[...document.querySelectorAll('[data-d0]')];
+var dN=document.getElementById('dN'),dU=document.getElementById('dU'),dE=document.getElementById('dE'),dA=document.getElementById('dA');
+var gcol=document.getElementById('gcol'),gdot=document.getElementById('gdot');
+function anchors(){return secs.map(function(s){return {d0:+s.dataset.d0,d1:+s.dataset.d1,era:s.dataset.era,aeon:s.dataset.aeon,top:s.offsetTop,h:s.offsetHeight}})}
+var an=anchors();addEventListener('resize',function(){an=anchors()});addEventListener('load',function(){an=anchors();onS()});
+function fmtD(m){return m<1000?[Math.round(m).toLocaleString('ru'),'м']:[(m/1000).toLocaleString('ru',{maximumFractionDigits:1}),'км']}
+function onS(){
+  var pos=scrollY+innerHeight*0.5, cur=an[0];
+  for(var i=0;i<an.length;i++){var a=an[i];
+    if(pos>=a.top&&pos<a.top+a.h){cur=a;
+      var t=(pos-a.top)/a.h, d=a.d0+(a.d1-a.d0)*Math.min(1,Math.max(0,t)), f=fmtD(d);
+      dN.textContent='−'+f[0];dU.textContent=f[1];dE.textContent=a.era;dA.textContent=a.aeon;break;}
+  }
+  var p=Math.min(1,Math.max(0,scrollY/(document.body.scrollHeight-innerHeight)));
+  var r=gcol.getBoundingClientRect();gdot.style.top=(p*r.height)+'px';
+  document.querySelectorAll('.rv').forEach(function(e){var rr=e.getBoundingClientRect();if(rr.top<innerHeight*0.82)e.classList.add('on')});
+}
+addEventListener('scroll',onS,{passive:true});onS();
+</script>
+</body>
+</html>
