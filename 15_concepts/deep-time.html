@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RELICTUM — Путешествие в глубокое время · концепт</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0C0B0A; --coal:#14120F; --ivory:#F4F0E8; --bronze:#B08A55; --deep:#8F6530;
+  --mist:rgba(244,240,232,.6); --line:rgba(176,138,85,.22);
+  --serif:'Cormorant Garamond',serif; --sans:'Inter',sans-serif;
+  --ease:cubic-bezier(.23,1,.32,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:auto}
+body{background:var(--black);color:var(--ivory);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+h1,h2{font-family:var(--serif);font-weight:400;line-height:1.06}
+.label{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--bronze)}
+
+/* комета-курсор */
+#trail{position:fixed;inset:0;pointer-events:none;z-index:200}
+
+/* счётчик времени */
+.clock{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;justify-content:space-between;align-items:baseline;
+  padding:22px clamp(20px,4vw,50px);
+  background:linear-gradient(180deg,rgba(12,11,10,.85),transparent);
+}
+.clock .mark{font-family:var(--serif);letter-spacing:.34em;font-size:17px;text-indent:.34em}
+.clock .years{text-align:right}
+.clock .years .n{font-family:var(--serif);font-size:clamp(20px,2.6vw,32px);font-variant-numeric:tabular-nums;color:var(--ivory)}
+.clock .years .t{font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:var(--bronze)}
+
+/* прогресс-нить времени */
+.thread{position:fixed;left:clamp(16px,3vw,40px);top:0;bottom:0;width:1px;background:var(--line);z-index:90}
+.thread .fill{position:absolute;top:0;left:0;width:100%;height:0;background:linear-gradient(180deg,var(--bronze),#e9c98a);box-shadow:0 0 8px rgba(233,201,138,.5)}
+.thread .dot{position:absolute;left:50%;transform:translate(-50%,-50%);width:7px;height:7px;border-radius:50%;background:var(--bronze);box-shadow:0 0 10px rgba(233,201,138,.8)}
+@media(max-width:700px){.thread{display:none}}
+
+/* эпохи */
+.epoch{min-height:100svh;display:grid;align-items:center;position:relative;padding:90px 0}
+.epoch .in{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,80px);align-items:center;max-width:1280px;margin:0 auto;padding:0 clamp(22px,6vw,80px)}
+@media(max-width:880px){.epoch .in{grid-template-columns:1fr}}
+.epoch .ph{position:relative;overflow:hidden}
+.epoch .ph img{width:100%;aspect-ratio:4/4.4;object-fit:cover;transform:scale(1.12);transition:transform 1.8s var(--ease),opacity 1.2s;opacity:0}
+.epoch.on .ph img{transform:scale(1);opacity:1}
+.epoch .ph::after{content:'';position:absolute;inset:0;box-shadow:inset 0 0 90px 30px var(--black)}
+.epoch .txt>*{opacity:0;transform:translateY(26px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.epoch.on .txt>*{opacity:1;transform:none}
+.epoch.on .txt>*:nth-child(2){transition-delay:.12s}
+.epoch.on .txt>*:nth-child(3){transition-delay:.22s}
+.epoch.on .txt>*:nth-child(4){transition-delay:.32s}
+.epoch .when{font-family:var(--serif);font-style:italic;font-size:clamp(15px,1.6vw,20px);color:var(--bronze);margin-bottom:14px}
+.epoch h2{font-size:clamp(32px,4.4vw,62px);margin-bottom:16px}
+.epoch p{color:var(--mist);max-width:46ch;font-size:15px;margin-bottom:20px}
+.epoch .obj{display:inline-flex;align-items:baseline;gap:14px;border:1px solid var(--line);padding:13px 20px;text-decoration:none;color:var(--ivory);font-size:12px;letter-spacing:.14em;text-transform:uppercase;transition:.4s var(--ease)}
+.epoch .obj:hover{background:var(--bronze);color:var(--black);border-color:var(--bronze)}
+.epoch .obj i{font-family:var(--serif);font-style:italic;text-transform:none;letter-spacing:0;font-size:14px;color:var(--bronze)}
+.epoch .obj:hover i{color:var(--black)}
+.epoch:nth-child(even) .in .ph{order:2}
+@media(max-width:880px){.epoch:nth-child(even) .in .ph{order:0}}
+
+/* hero и финал */
+.gate{min-height:100svh;display:grid;place-items:center;text-align:center;position:relative}
+.gate .stars{position:absolute;inset:0;overflow:hidden}
+.gate h1{font-size:clamp(40px,7vw,104px);max-width:14ch;margin:0 auto}
+.gate h1 em{font-style:italic;color:var(--bronze)}
+.gate p{color:var(--mist);max-width:52ch;margin:24px auto 0}
+.gate .hint{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--mist);animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translate(-50%,8px)}}
+.gate img.lockup{width:min(520px,74vw);margin:0 auto 4vh}
+.final{background:var(--coal)}
+.final .btns{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.final .btn{display:inline-block;padding:16px 36px;border:1px solid var(--bronze);color:var(--bronze);font-size:11px;letter-spacing:.26em;text-transform:uppercase;text-decoration:none;transition:.4s var(--ease)}
+.final .btn:hover{background:var(--bronze);color:var(--black)}
+</style>
+</head>
+<body>
+
+<canvas id="trail"></canvas>
+
+<div class="clock">
+  <span class="mark">RELICTUM</span>
+  <div class="years"><div class="n" id="yearsN">СЕГОДНЯ</div><div class="t" id="yearsT">Москва · MMXXVI</div></div>
+</div>
+
+<div class="thread"><div class="fill" id="tfill"></div><div class="dot" id="tdot" style="top:0"></div></div>
+
+<!-- ВРАТА -->
+<header class="gate" data-years="0">
+  <div>
+    <img class="lockup" src="../shared/brand/Relictum_lockup_dark.png" alt="RELICTUM">
+    <h1>Каждый скролл —<br><em>миллион лет</em> назад</h1>
+    <p>Это путешествие к истокам наших объектов. Чем ниже вы спускаетесь, тем глубже время. Следите за счётчиком.</p>
+  </div>
+  <div class="hint">Листайте вниз · в прошлое</div>
+</header>
+
+<!-- ЭПОХИ -->
+<section class="epoch" id="e1" data-years="25000">
+  <div class="in">
+    <div class="ph"><img src="../shared/img/grand_mammoth_skull.jpg" alt="Череп мамонта"></div>
+    <div class="txt">
+      <div class="when">25 000 лет назад · плейстоцен</div>
+      <h2>Ледник ещё держит Евразию</h2>
+      <p>По тундростепи, где будет Якутия, идут мамонты. Один из них оставит бивни с размахом два метра сорок — вечная мерзлота сохранит их до вас.</p>
+      <a class="obj" href="../02_site_v1_gallery/catalog.html#grand"><i>Mammuthus primigenius</i> · череп с бивнями — R–0605</a>
+    </div>
+  </div>
+</section>
+
+<section class="epoch" id="e2" data-years="66000000">
+  <div class="in">
+    <div class="ph"><img src="../shared/img/grand_triceratops_skull.jpg" alt="Череп трицератопса"></div>
+    <div class="txt">
+      <div class="when">66 миллионов лет назад · поздний мел</div>
+      <h2>Последнее утро мезозоя</h2>
+      <p>Трицератопс пасётся в поймах Хелл-Крика и не знает, что эпоха гигантов заканчивается сегодня. Его череп переживёт удар астероида — и всё, что было после.</p>
+      <a class="obj" href="../02_site_v1_gallery/catalog.html#grand"><i>Triceratops horridus</i> · череп 210 см — R–0601</a>
+    </div>
+  </div>
+</section>
+
+<section class="epoch" id="e3" data-years="110000000">
+  <div class="in">
+    <div class="ph"><img src="../shared/img/cat_ammonite.jpg" alt="Аммонит"></div>
+    <div class="txt">
+      <div class="when">110 миллионов лет назад · меловое море</div>
+      <h2>Математика без математика</h2>
+      <p>В тёплом море над будущим Мадагаскаром моллюск достраивает раковину по закону логарифмической спирали. Золотое сечение — за 110 миллионов лет до Евклида.</p>
+      <a class="obj" href="../02_site_v1_gallery/journal-ammonite.html"><i>Cleoniceras besairiei</i> · аммонит — R–0207</a>
+    </div>
+  </div>
+</section>
+
+<section class="epoch" id="e4" data-years="180000000">
+  <div class="in">
+    <div class="ph"><img src="../shared/img/prod_ichthyosaur_skull.jpg" alt="Череп ихтиозавра"></div>
+    <div class="txt">
+      <div class="when">180 миллионов лет назад · юрский океан</div>
+      <h2>Глаза размером с блюдца</h2>
+      <p>Там, где будет Поволжье, — открытое море. Ихтиозавр, рыба-ящер с идеальной гидродинамикой, охотится на глубине. Его череп с зубным рядом дойдёт до нас целиком.</p>
+      <a class="obj" href="../02_site_v1_gallery/catalog.html#vita"><i>Ichthyosauria</i> · череп 62 см — R–0202</a>
+    </div>
+  </div>
+</section>
+
+<section class="epoch" id="e5" data-years="390000000">
+  <div class="in">
+    <div class="ph"><img src="../shared/img/prod_trilobite.jpg" alt="Трилобит"></div>
+    <div class="txt">
+      <div class="when">390 миллионов лет назад · девон</div>
+      <h2>Первые глаза, видевшие мир</h2>
+      <p>До динозавров дальше, чем от динозавров до вас. По дну девонского моря ползёт трилобит — его фасеточные глаза из кальцита станут одними из первых глаз на планете.</p>
+      <a class="obj" href="../02_site_v1_gallery/catalog.html#vita"><i>Drotops megalomanicus</i> · плита — R–0205</a>
+    </div>
+  </div>
+</section>
+
+<section class="epoch" id="e6" data-years="4560000000">
+  <div class="in">
+    <div class="ph"><img src="../shared/img/prod_pallasite_seymchan.jpg" alt="Палласит Сеймчан"></div>
+    <div class="txt">
+      <div class="when">4,56 миллиарда лет назад · до Земли</div>
+      <h2>Раньше, чем восход</h2>
+      <p>Солнце только зажглось. Из пыли собираются первые миры — один из них погибнет в столкновении, и осколок его границы ядра и мантии однажды упадёт в Магаданской области.</p>
+      <a class="obj" href="../02_site_v1_gallery/journal-meteorite.html"><i>Seymchan Pallasite</i> · срез — R–0101</a>
+    </div>
+  </div>
+</section>
+
+<!-- ФИНАЛ -->
+<section class="gate final" data-years="4560000000">
+  <div>
+    <div class="label" style="margin-bottom:3vh">Конец путешествия · начало коллекции</div>
+    <h1 style="font-size:clamp(32px,5vw,72px)">Всё это — не музейные витрины.<br><em>Это каталог.</em></h1>
+    <p>Каждый объект из этого путешествия можно держать в руках, поставить в кабинете, передать детям.</p>
+    <div class="btns">
+      <a class="btn" href="../02_site_v1_gallery/catalog.html">Открыть каталог</a>
+      <a class="btn" style="border-color:rgba(244,240,232,.4);color:var(--ivory)" href="../02_site_v1_gallery/maison.html#concierge">Консьерж</a>
+    </div>
+  </div>
+</section>
+
+<script>
+/* ---------- счётчик лет: лог-интерполяция по скроллу ---------- */
+const secs=[...document.querySelectorAll('[data-years]')];
+const yearsN=document.getElementById('yearsN'), yearsT=document.getElementById('yearsT');
+const fmt=y=>{
+  if(y<1000) return {n:'СЕГОДНЯ',t:'Москва · MMXXVI'};
+  if(y<1e6) return {n:(Math.round(y/100)*100).toLocaleString('ru'), t:'лет назад'};
+  if(y<1e9) return {n:Math.round(y/1e6).toLocaleString('ru'), t:'миллионов лет назад'};
+  return {n:(y/1e9).toLocaleString('ru',{minimumFractionDigits:2,maximumFractionDigits:2}), t:'миллиарда лет назад'};
+};
+function anchors(){return secs.map(s=>({y:+s.dataset.years, c:s.offsetTop+s.offsetHeight*0.5}))}
+let A=anchors();
+addEventListener('resize',()=>A=anchors());
+addEventListener('load',()=>{A=anchors();onScroll()});
+const lg=y=>Math.log10(1+y);
+function onScroll(){
+  const pos=scrollY+innerHeight*0.5;
+  // сегмент между центрами соседних секций
+  let i=0;
+  while(i<A.length-2 && pos>A[i+1].c) i++;
+  const a=A[i], b=A[i+1];
+  const t=Math.min(1,Math.max(0,(pos-a.c)/(b.c-a.c)));
+  const y=Math.pow(10, lg(a.y)+(lg(b.y)-lg(a.y))*t)-1;
+  const f=fmt(y);
+  yearsN.textContent=f.n; yearsT.textContent=f.t;
+  const p=Math.min(1,Math.max(0,scrollY/(document.body.scrollHeight-innerHeight)));
+  document.getElementById('tfill').style.height=(p*100)+'%';
+  document.getElementById('tdot').style.top=(p*100)+'%';
+}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+/* ---------- появление эпох ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle('on',e.isIntersecting)),{threshold:.28});
+document.querySelectorAll('.epoch').forEach(s=>io.observe(s));
+
+/* ---------- комета-курсор ---------- */
+const cv=document.getElementById('trail'),cx=cv.getContext('2d');
+let W,H;function rs(){W=cv.width=innerWidth*devicePixelRatio;H=cv.height=innerHeight*devicePixelRatio;cv.style.width=innerWidth+'px';cv.style.height=innerHeight+'px'}
+rs();addEventListener('resize',rs);
+const P=[];let mx=-100,my=-100,lx=-100,ly=-100;
+addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY});
+function tick(){
+  cx.clearRect(0,0,W,H);
+  const dx=mx-lx,dy=my-ly,sp=Math.hypot(dx,dy);
+  if(sp>1&&mx>0){const n=Math.min(4,Math.ceil(sp/6));
+    for(let i=0;i<n;i++){P.push({x:(lx+dx*i/n)*devicePixelRatio,y:(ly+dy*i/n)*devicePixelRatio,vx:(Math.random()-.5)*.5-dx*.02,vy:(Math.random()-.5)*.5-dy*.02+.2,r:(Math.random()*1.6+.5)*devicePixelRatio,a:.85,d:.012+Math.random()*.02});}}
+  lx=mx;ly=my;
+  for(let i=P.length-1;i>=0;i--){const p=P[i];p.x+=p.vx;p.y+=p.vy;p.a-=p.d;
+    if(p.a<=0){P.splice(i,1);continue}
+    cx.beginPath();cx.arc(p.x,p.y,p.r,0,7);
+    cx.fillStyle=`rgba(217,179,109,${p.a*.7})`;cx.fill();}
+  if(P.length>240)P.splice(0,P.length-240);
+  requestAnimationFrame(tick);
+}
+tick();
+</script>
+</body>
+</html>
