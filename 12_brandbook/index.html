@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RELICTUM — Бренд-бук</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#F4F0E8; --bone:#FBF8F1; --black:#141210; --bronze:#B08A55; --deep:#8F6530;
+  --stone:#756D60; --line:rgba(143,101,48,.26);
+  --serif:'Cormorant Garamond',serif; --sans:'Inter',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--ivory);color:var(--black);font-family:var(--sans);font-weight:300;line-height:1.72;font-size:15.5px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.08}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(22px,5vw,68px)}
+.label{font-size:11px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:var(--deep)}
+section{padding:clamp(60px,8vw,120px) 0;border-bottom:1px solid var(--line)}
+.num{font-family:var(--serif);font-style:italic;font-size:16px;color:var(--deep)}
+h2.head{font-size:clamp(30px,4vw,56px);margin:12px 0 30px}
+p.lead{font-size:clamp(16px,1.7vw,21px);color:#3a3630;max-width:60ch;line-height:1.7}
+p.body{color:var(--stone);max-width:64ch;margin-bottom:16px}
+
+/* cover */
+.cover{min-height:92svh;display:grid;place-items:center;text-align:center;border-bottom:1px solid var(--line)}
+.cover img{width:min(560px,80vw);margin:0 auto}
+.cover .sub{margin-top:6vh}
+
+/* pillars */
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:20px}
+@media(max-width:820px){.tri{grid-template-columns:1fr}}
+.tri .c{border-top:1px solid var(--black);padding-top:18px}
+.tri .c h3{font-size:25px;margin-bottom:10px}
+.tri .c p{font-size:14px;color:var(--stone)}
+
+/* values list */
+.vals{display:grid;gap:0;margin-top:14px}
+.val{display:grid;grid-template-columns:64px 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--line);align-items:baseline}
+.val .n{font-family:var(--serif);font-size:30px;color:var(--deep)}
+.val h4{font-size:23px;margin-bottom:6px}
+.val p{font-size:14px;color:var(--stone);max-width:58ch}
+
+/* positioning map */
+.map{border:1px solid var(--line);margin-top:24px;background:var(--bone)}
+.map .row{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:0;border-bottom:1px solid var(--line)}
+.map .row:last-child{border-bottom:none}
+.map .row>div{padding:16px 20px;border-right:1px solid var(--line);font-size:13.5px}
+.map .row>div:last-child{border-right:none}
+.map .row.h>div{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--deep);background:rgba(143,101,48,.06)}
+.map .row .who{font-family:var(--serif);font-size:17px;color:var(--black)}
+.map .row.us{background:rgba(176,138,85,.1)}
+.map .row.us .who{color:var(--deep)}
+@media(max-width:820px){.map .row{grid-template-columns:1fr}.map .row>div{border-right:none;border-bottom:1px solid var(--line)}.map .row.h{display:none}}
+
+/* personas */
+.personas{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:24px}
+@media(max-width:820px){.personas{grid-template-columns:1fr}}
+.persona{border:1px solid var(--line);padding:28px 30px;background:var(--bone)}
+.persona .tag{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--deep)}
+.persona h4{font-size:24px;margin:8px 0 4px}
+.persona .role{font-family:var(--serif);font-style:italic;color:var(--stone);margin-bottom:14px}
+.persona dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:13px}
+.persona dt{color:var(--deep);text-transform:uppercase;letter-spacing:.1em;font-size:10px;padding-top:3px}
+.persona dd{color:var(--stone)}
+
+/* voice do/dont */
+.voice-q{font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.8vw,34px);border-left:2px solid var(--bronze);padding:18px 30px;margin:24px 0;background:var(--bone);color:var(--black)}
+.dd{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:20px}
+@media(max-width:700px){.dd{grid-template-columns:1fr}}
+.dd h4{font-size:19px;margin-bottom:12px}
+.dd ul{list-style:none}
+.dd li{padding:10px 0 10px 28px;border-bottom:1px solid var(--line);font-size:14px;position:relative;color:#3a3630}
+.dd li::before{position:absolute;left:0}
+.dd .yes li::before{content:'✓';color:var(--deep)}
+.dd .no li::before{content:'✕';color:#9a4a34}
+.rewrite{margin-top:26px;border:1px solid var(--line)}
+.rewrite .r{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line)}
+.rewrite .r:last-child{border-bottom:none}
+.rewrite .r>div{padding:16px 20px;font-size:14px}
+.rewrite .r>div:first-child{border-right:1px solid var(--line);color:#9a4a34;text-decoration:line-through;text-decoration-color:rgba(154,74,52,.4)}
+.rewrite .r>div:last-child{color:var(--black)}
+.rewrite .rh>div{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--deep);background:rgba(143,101,48,.06);text-decoration:none}
+@media(max-width:700px){.rewrite .r{grid-template-columns:1fr}.rewrite .r>div:first-child{border-right:none;border-bottom:1px solid var(--line)}}
+
+/* architecture */
+.arch{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+@media(max-width:820px){.arch{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.arch{grid-template-columns:1fr}}
+.arch .a{border:1px solid var(--line);padding:22px;background:var(--bone)}
+.arch .a .k{font-family:var(--serif);font-size:22px;color:var(--black)}
+.arch .a .d{font-size:12.5px;color:var(--stone);margin-top:6px}
+
+.toc{position:fixed;top:0;left:0;right:0;background:rgba(244,240,232,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:50;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.toc .in{max-width:1080px;margin:0 auto;padding:12px clamp(22px,5vw,68px);display:flex;gap:20px;flex-wrap:wrap;color:var(--stone)}
+.toc a{color:var(--stone);text-decoration:none}
+.toc a:hover{color:var(--black)}
+@media(max-width:820px){.toc{display:none}}
+footer{padding:70px 0;text-align:center}
+footer img{width:min(360px,60vw);margin:0 auto}
+</style>
+</head>
+<body>
+
+<div class="toc"><div class="in">
+  <span style="color:var(--deep)">Бренд-бук</span>
+  <a href="#legend">Легенда</a><a href="#mvv">Миссия</a><a href="#pos">Позиционирование</a>
+  <a href="#audience">Аудитория</a><a href="#voice">Голос</a><a href="#naming">Нейминг</a><a href="#arch">Архитектура</a>
+</div></div>
+
+<header class="cover">
+  <div>
+    <img src="../shared/brand/Relictum_lockup_light.png" alt="RELICTUM — Роскошь вне времени">
+    <div class="label sub">Бренд-бук · v1.0 · MMXXVI</div>
+  </div>
+</header>
+
+<!-- ЛЕГЕНДА -->
+<section id="legend">
+  <div class="wrap">
+    <div class="num">Глава I</div>
+    <h2 class="head">Легенда бренда</h2>
+    <p class="lead">Всё, чем мы владеем, дано нам на время. Дом, картины, украшения — рано или поздно сменят руки. Есть лишь одна категория вещей, которая владела временем прежде нас и переживёт нас снова: свидетельства глубокого времени.</p>
+    <p class="body" style="margin-top:26px">Relictum — от латинского <em>relictum</em>, «оставленное», «то, что осталось». Мы собираем то, что осталось от эпох, которых не видел ни один человек: зуб хищника, вымершего за 60 миллионов лет до нас; спираль моллюска, вычислившего золотое сечение до всякой геометрии; срез метеорита, который старше самой Земли.</p>
+    <p class="body">Эти предметы прошли сквозь вымирания, ледники и падения комет — чтобы оказаться в одной комнате с вами. Владеть таким объектом — не покупка. Это привилегия быть последним звеном в цепи длиной в сотни миллионов лет, и первым человеком, вписавшим в неё своё имя.</p>
+    <div class="voice-q">Мы не продаём окаменелости.<br>Мы передаём время.</div>
+  </div>
+</section>
+
+<!-- МИССИЯ ВИДЕНИЕ ЦЕННОСТИ -->
+<section id="mvv">
+  <div class="wrap">
+    <div class="num">Глава II</div>
+    <h2 class="head">Миссия · Видение · Ценности</h2>
+    <div class="tri">
+      <div class="c">
+        <div class="label">Миссия</div>
+        <h3>Зачем мы есть</h3>
+        <p>Возвращать глубокому времени статус искусства: превращать научные свидетельства прошлого в объекты, достойные лучших коллекций и интерьеров мира.</p>
+      </div>
+      <div class="c">
+        <div class="label">Видение</div>
+        <h3>Куда идём</h3>
+        <p>Стать первым именем, которое произносят, когда говорят о natural history как о предмете роскоши, — российским домом с международным голосом.</p>
+      </div>
+      <div class="c">
+        <div class="label">Роль</div>
+        <h3>Кто мы для клиента</h3>
+        <p>Не магазин и не аукцион, а хранитель и проводник: мы находим, атрибутируем, оправляем и передаём — с полной ответственностью за подлинность.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:56px">
+      <div class="label">Пять ценностей дома</div>
+      <div class="vals">
+        <div class="val"><span class="n">I</span><div><h4>Подлинность выше всего</h4><p>Ни один объект не покидает дом без экспертизы, провенанса и легального экспорта. Сомнение — причина отказать, а не продать.</p></div></div>
+        <div class="val"><span class="n">II</span><div><h4>Редкость, а не ассортимент</h4><p>Мы отбираем единицы из сотен. Лучше десять безупречных объектов, чем тысяча посредственных.</p></div></div>
+        <div class="val"><span class="n">III</span><div><h4>Наука как основа красоты</h4><p>Точная датировка и латинское имя — не сноска, а часть ценности. Мы говорим о предметах на уровне тех, кто их изучает.</p></div></div>
+        <div class="val"><span class="n">IV</span><div><h4>Тишина вместо давления</h4><p>Никаких скидок, срочности и восклицаний. Роскошь убеждает воздухом и точностью, а не громкостью.</p></div></div>
+        <div class="val"><span class="n">V</span><div><h4>Служение коллекции</h4><p>Отношения не заканчиваются продажей: оправа, доставка, монтаж, консервация и выкуп — весь цикл жизни объекта у владельца.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПОЗИЦИОНИРОВАНИЕ -->
+<section id="pos">
+  <div class="wrap">
+    <div class="num">Глава III</div>
+    <h2 class="head">Позиционирование</h2>
+    <p class="lead">Для состоятельного коллекционера, дизайнера интерьеров и дарителя, который ищет предмет с настоящей историей, — Relictum это люксовый дом редких природных артефактов, который соединяет научную подлинность с эстетикой галереи. В отличие от массовых fossil-магазинов и обезличенных аукционов, каждый наш объект приходит оправленным, задокументированным и готовым стать центром пространства.</p>
+    <div class="map">
+      <div class="row h"><div>Игрок</div><div>Что предлагает</div><div>Чего не хватает</div></div>
+      <div class="row"><div class="who">PaleoHunters</div><div>Широкий научный ассортимент, музей, лаборатория, входные цены</div><div>Массовость, будничная подача и доставка, нет люкс-ритуала</div></div>
+      <div class="row"><div class="who">Sotheby's / Christie's<br>Natural History</div><div>Топовые лоты, мировое имя, рекордные цены</div><div>Обезличенность, разовые торги, нет сервиса и оправы «под ключ»</div></div>
+      <div class="row"><div class="who">luxpodarki и салоны</div><div>Люкс-подача, консьерж, упаковка, гравировка</div><div>Сувенирный ассортимент без научной глубины и провенанса</div></div>
+      <div class="row us"><div class="who">RELICTUM</div><div>Отобранные объекты музейного уровня + оправа, провенанс, консьерж, интерьер, экспедиции</div><div>— это и есть свободная ниша</div></div>
+    </div>
+    <p class="body" style="margin-top:28px"><b style="color:var(--black);font-weight:500">Формула отличия:</b> научная достоверность PaleoHunters × люкс-сервис салонов × арт-дирекция аукционного дома — в одном российском бренде с международной оптикой.</p>
+  </div>
+</section>
+
+<!-- АУДИТОРИЯ -->
+<section id="audience">
+  <div class="wrap">
+    <div class="num">Глава IV</div>
+    <h2 class="head">Портреты аудитории</h2>
+    <p class="body">Четыре ядра спроса. Разные мотивы — общий уровень требований к подлинности и вкусу.</p>
+    <div class="personas">
+      <div class="persona">
+        <div class="tag">Ядро 01 · Коллекционер</div>
+        <h4>Андрей, 48</h4>
+        <div class="role">Собственник бизнеса, частный музей дома</div>
+        <dl>
+          <dt>Мотив</dt><dd>Обладать исключительным, чего нет у равных; инвестиция в редкость</dd>
+          <dt>Барьер</dt><dd>Страх подделки и юридических рисков</dd>
+          <dt>Что решает</dt><dd>Провенанс, экспертиза, репутация дома, закрытый каталог</dd>
+        </dl>
+      </div>
+      <div class="persona">
+        <div class="tag">Ядро 02 · Дизайнер интерьера</div>
+        <h4>Марина, 39</h4>
+        <div class="role">Архитектурное бюро премиум-класса</div>
+        <dl>
+          <dt>Мотив</dt><dd>Уникальный акцент для проекта, которого нет в шоурумах</dd>
+          <dt>Барьер</dt><dd>Логистика, монтаж, свет, сроки</dd>
+          <dt>Что решает</dt><dd>Оправа под пространство, кейсы, работа с командой дома</dd>
+        </dl>
+      </div>
+      <div class="persona">
+        <div class="tag">Ядро 03 · Даритель</div>
+        <h4>Сергей, 52</h4>
+        <div class="role">Ищет подарок «которого точно нет»</div>
+        <dl>
+          <dt>Мотив</dt><dd>Удивить статусного получателя вещью с историей</dd>
+          <dt>Барьер</dt><dd>Не разбирается в теме, боится ошибиться</dd>
+          <dt>Что решает</dt><dd>Консьерж-подбор, ритуал упаковки, история объекта</dd>
+        </dl>
+      </div>
+      <div class="persona">
+        <div class="tag">Ядро 04 · Институция</div>
+        <h4>Family office / девелопер</h4>
+        <div class="role">Лобби, штаб-квартира, частный фонд</div>
+        <dl>
+          <dt>Мотив</dt><dd>Монументальный объект как заявление о статусе</dd>
+          <dt>Барьер</dt><dd>Бюджет, гарантии, документация, NDA</dd>
+          <dt>Что решает</dt><dd>Монументальная коллекция, приватные продажи, договор</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ГОЛОС -->
+<section id="voice">
+  <div class="wrap">
+    <div class="num">Глава V</div>
+    <h2 class="head">Голос бренда</h2>
+    <p class="lead">Спокойный, точный, вечный. Мы говорим как куратор, а не как продавец: сначала история и происхождение, потом — цена. Русский язык с латинскими терминами науки. Одна мысль на фразу.</p>
+    <div class="dd">
+      <div class="yes">
+        <h4>Всегда</h4>
+        <ul>
+          <li>Латинские имена видов и точные датировки</li>
+          <li>Короткие декларативные фразы</li>
+          <li>История и провенанс прежде цены</li>
+          <li>Факт вместо прилагательного: «4,56 млрд лет», а не «невероятно древний»</li>
+          <li>Уважение к интеллекту читателя</li>
+        </ul>
+      </div>
+      <div class="no">
+        <h4>Никогда</h4>
+        <ul>
+          <li>«Купи», «скидка», «хит», «успей», восклицательные знаки</li>
+          <li>Мультяшные динозавры, Jurassic Park-эстетика</li>
+          <li>Черепа-эмблемы, готика, хоррор</li>
+          <li>Эмодзи-спам (максимум одна комета или ромб)</li>
+          <li>Золото на каждом элементе</li>
+        </ul>
+      </div>
+    </div>
+    <div class="rewrite">
+      <div class="r rh"><div>Как не надо</div><div>Как надо</div></div>
+      <div class="r"><div>Огромная СКИДКА на зуб мегалодона! Успейте купить!</div><div>Зуб мегалодона музейного качества. 15,4 см — категория, которая появляется раз в сезон.</div></div>
+      <div class="r"><div>Крутой древний метеорит, очень красивый камень</div><div>Палласит Сеймчан. Вещество границы ядра и мантии протопланеты. Старше Земли.</div></div>
+      <div class="r"><div>Идеальный подарок на день рождения!!!</div><div>Сто миллионов лет — в руках того, кому вы это дарите.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- НЕЙМИНГ -->
+<section id="naming">
+  <div class="wrap">
+    <div class="num">Глава VI</div>
+    <h2 class="head">Нейминг и коды</h2>
+    <div class="tri">
+      <div class="c"><div class="label">Объекты</div><h3>Шифр R–XXXX</h3><p>Каждый объект получает нумерованный код дома: R–0101. Первая цифра — мир, далее порядковый номер. Код на табличке, в паспорте и досье.</p></div>
+      <div class="c"><div class="label">Коллекции</div><h3>Латинские имена миров</h3><p>Vita (Жизнь), Terra (Земля), Cosmos (Космос). На латыни в акцентах, по-русски в основном тексте.</p></div>
+      <div class="c"><div class="label">Издания</div><h3>Editions № 01–12</h3><p>Авторские тиражи нумеруются римско-арабской парой. Закрытый тираж — часть ценности.</p></div>
+    </div>
+    <p class="body" style="margin-top:34px">Тон имён — музейный, а не коммерческий: «Провенанс-карта», а не «сертификат качества»; «Кабинет», а не «блог»; «Ателье», а не «мастерская»; «Консьерж», а не «менеджер».</p>
+  </div>
+</section>
+
+<!-- АРХИТЕКТУРА -->
+<section id="arch">
+  <div class="wrap">
+    <div class="num">Глава VII</div>
+    <h2 class="head">Архитектура бренда</h2>
+    <p class="body">Единый дом Relictum и семь направлений под одним именем (branded house).</p>
+    <div class="arch">
+      <div class="a"><div class="k">Relictum Gallery</div><div class="d">Каталог и приватные продажи — ядро.</div></div>
+      <div class="a"><div class="k">Relictum Editions</div><div class="d">Авторские объекты, лимитированные тиражи.</div></div>
+      <div class="a"><div class="k">Relictum Atelier</div><div class="d">Лаборатория препарации и оправа объектов.</div></div>
+      <div class="a"><div class="k">Relictum Interior</div><div class="d">Объекты для интерьеров, работа с архитекторами.</div></div>
+      <div class="a"><div class="k">Relictum Expeditions</div><div class="d">Частные экспедиции — travel-направление.</div></div>
+      <div class="a"><div class="k">Relictum Journal</div><div class="d">Научная редакция, доверие через знание.</div></div>
+      <div class="a"><div class="k">Relictum Concierge</div><div class="d">Персональный подбор, закрытый каталог, выкуп.</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img src="../shared/brand/Relictum_lockup_light.png" alt="RELICTUM">
+  <div class="label" style="margin-top:16px">Роскошь вне времени · Земля · Жизнь · Космос · MMXXVI</div>
+</footer>
+
+</body>
+</html>
