@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RELICTUM — Стартовая страница проекта</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ivory:#F4F0E8; --bone:#FBF8F1; --black:#111111; --bronze:#B08A55; --deep:#9A6D34;
+  --stone:#7A7267; --line:rgba(154,109,52,.28);
+  --serif:'Cormorant Garamond',serif; --sans:'Inter',sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--ivory); color:var(--black); font-family:var(--sans); font-weight:300; }
+h1,h2,h3 { font-family:var(--serif); font-weight:400; }
+.label { font-size:11px; font-weight:500; letter-spacing:.24em; text-transform:uppercase; color:var(--deep); }
+.wrap { max-width:1160px; margin:0 auto; padding:0 clamp(20px,4vw,60px); }
+header { text-align:center; padding:70px 0 40px; }
+header img { width:min(560px,84vw); margin:0 auto; display:block; }
+.grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; padding:40px 0 30px; }
+@media (max-width:800px){ .grid{ grid-template-columns:1fr; } }
+a.card {
+  display:block; background:var(--bone); border:1px solid var(--line); padding:30px 32px;
+  text-decoration:none; color:inherit; transition:box-shadow .4s, transform .4s;
+}
+a.card:hover { box-shadow:0 28px 60px -34px rgba(17,17,17,.35); transform:translateY(-3px); }
+a.card h2 { font-size:27px; margin:10px 0 8px; }
+a.card p { font-size:13.5px; color:var(--stone); line-height:1.6; }
+a.card .go { display:inline-block; margin-top:14px; font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--deep); }
+a.card.dark { background:var(--black); color:var(--ivory); border-color:rgba(176,138,85,.25); }
+a.card.dark p { color:rgba(244,240,232,.65); }
+.foot { text-align:center; padding:30px 0 60px; font-size:11.5px; letter-spacing:.14em; color:var(--stone); text-transform:uppercase; }
+</style>
+</head>
+<body>
+<header>
+  <img src="shared/brand/Relictum_lockup_light.png" alt="RELICTUM — Роскошь вне времени">
+  <div class="label" style="margin-top:8px">Пакет бренда · всё открывается отсюда</div>
+</header>
+
+<div class="wrap">
+  <div class="grid">
+    <a class="card" href="02_site_v1_gallery/index.html">
+      <div class="label">Сайт · версия 1</div>
+      <h2>The Gallery — магазин</h2>
+      <p>Светлая люкс-версия: главная, каталог с фильтрами, поиском и сортировкой, карточка объекта, экспедиции, журнал, дом и консьерж. 6 страниц.</p>
+      <span class="go">Открыть сайт ⟶</span>
+    </a>
+    <a class="card dark" href="03_site_v2_monolith/index.html">
+      <div class="label" style="color:var(--bronze)">Сайт · версия 2</div>
+      <h2>Monolith — манифест</h2>
+      <p>Тёмная иммерсивная версия: один объект на экран, лента эпох, монументы, ритуал. Для запуска бренда и кампаний.</p>
+      <span class="go" style="color:var(--bronze)">Открыть сайт ⟶</span>
+    </a>
+    <a class="card" href="07_product_presentations/deck_auction.html">
+      <div class="label">Продуктовая презентация · стиль I</div>
+      <h2>Аукционный каталог</h2>
+      <p>Музейно-аукционная подача: лоты, эстимейты, четыре слоя ценности, провенанс. 8 лотов, листается стрелками.</p>
+      <span class="go">Открыть презентацию ⟶</span>
+    </a>
+    <a class="card dark" href="07_product_presentations/deck_campaign.html">
+      <div class="label" style="color:var(--bronze)">Продуктовая презентация · стиль II</div>
+      <h2>Кампания</h2>
+      <p>Как большие люкс-дома: полноэкранные кадры, одна мысль на слайд, цены — только в конце одним списком.</p>
+      <span class="go" style="color:var(--bronze)">Открыть презентацию ⟶</span>
+    </a>
+    <a class="card" href="04_presentation/relictum_deck.html">
+      <div class="label">Бренд</div>
+      <h2>Презентация бренда</h2>
+      <p>17 слайдов: позиционирование, рынок, айдентика, миры, монументы, оправы, сервис, роадмап. + PDF рядом в папке.</p>
+      <span class="go">Открыть ⟶</span>
+    </a>
+    <a class="card" href="06_product_design/index.html">
+      <div class="label">Продукт</div>
+      <h2>Книга «Оправа для времени»</h2>
+      <p>Шесть оправ дома, настенные системы, интеграция в интерьер, правила света, упаковка, документы, путь клиента.</p>
+      <span class="go">Открыть ⟶</span>
+    </a>
+    <a class="card" href="01_design_system/index.html">
+      <div class="label">Дизайн</div>
+      <h2>Дизайн-система</h2>
+      <p>Логотип, палитра, типографика, компоненты, фотостиль, голос бренда, токены для разработки.</p>
+      <span class="go">Открыть ⟶</span>
+    </a>
+    <a class="card" href="08_instagram/index.html">
+      <div class="label">Соцсети</div>
+      <h2>Instagram-пак</h2>
+      <p>Раскладка ленты в телефоне, четыре поста с готовыми текстами и хэштегами, система рубрик и ритм публикаций.</p>
+      <span class="go">Открыть ⟶</span>
+    </a>
+  </div>
+</div>
+
+<div class="foot">Relictum · Земля · Жизнь · Космос · MMXXVI</div>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RELICTUM — Продуктовая презентация · Стиль I «Аукционный каталог»</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ivory:#F4F0E8; --bone:#FBF8F1; --black:#111111; --bronze:#B08A55; --deep:#9A6D34;
+  --sand:#D8C8AF; --stone:#7A7267; --line:rgba(154,109,52,.28);
+  --serif:'Cormorant Garamond',serif; --sans:'Inter',sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; overflow:hidden; background:#000; }
+body { font-family:var(--sans); font-weight:300; }
+.deck { height:100%; position:relative; }
+.slide { position:absolute; inset:0; display:none; overflow:hidden; background:var(--ivory); color:var(--black); }
+.slide.on { display:grid; animation:fade .7s cubic-bezier(.23,1,.32,1); }
+@keyframes fade { from { opacity:0; } }
+h1,h2,h3 { font-family:var(--serif); font-weight:400; line-height:1.06; }
+.label { font-size:clamp(9px,.85vw,12px); font-weight:500; letter-spacing:.28em; text-transform:uppercase; color:var(--deep); }
+.pagenum { position:absolute; bottom:24px; right:34px; font-size:11px; letter-spacing:.2em; color:var(--stone); z-index:5; }
+.brandline { position:absolute; bottom:24px; left:34px; font-family:var(--serif); font-size:12px; letter-spacing:.3em; color:var(--stone); z-index:5; }
+.hint { position:fixed; bottom:24px; left:50%; transform:translateX(-50%); font-size:10px; letter-spacing:.2em; color:rgba(122,114,103,.7); text-transform:uppercase; z-index:10; }
+.center { place-items:center; text-align:center; padding:clamp(30px,5vw,90px); }
+
+/* ЛОТ: фото слева на всю высоту, паспорт справа */
+.lot { grid-template-columns:1.05fr 1fr; }
+.lot .ph { overflow:hidden; height:100%; position:relative; }
+.lot .ph img { width:100%; height:100%; object-fit:cover; }
+.lot .ph .lotno { position:absolute; top:30px; left:34px; background:rgba(17,17,17,.82); color:var(--ivory); padding:10px 18px; font-size:11px; letter-spacing:.26em; }
+.lot .pass { padding:clamp(26px,3.6vw,64px); display:flex; flex-direction:column; justify-content:center; background:var(--bone); border-left:1px solid var(--line); }
+.lot h2 { font-size:clamp(26px,3vw,46px); margin:10px 0 2px; }
+.lot .latin { font-family:var(--serif); font-style:italic; font-size:clamp(15px,1.5vw,22px); color:var(--deep); margin-bottom:2.2vh; }
+.lot .story { font-size:clamp(12px,1.1vw,15.5px); color:#3d3a35; line-height:1.75; margin-bottom:2.2vh; max-width:54ch; }
+.lot dl.spec { display:grid; grid-template-columns:auto 1fr; gap:8px 22px; font-size:clamp(10.5px,1vw,13.5px); border-top:1px solid var(--line); padding-top:2vh; margin-bottom:2.2vh; }
+.lot dt { color:var(--deep); letter-spacing:.16em; text-transform:uppercase; font-size:clamp(9px,.8vw,10.5px); padding-top:2px; }
+.lot dd { color:var(--stone); border-bottom:1px solid rgba(154,109,52,.12); padding-bottom:7px; }
+.lot .est { display:flex; align-items:baseline; gap:18px; border-top:1px solid var(--line); padding-top:2vh; }
+.lot .est .n { font-family:var(--serif); font-size:clamp(22px,2.4vw,36px); }
+.lot .est .t { font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:var(--stone); }
+.prov { margin-top:1.6vh; font-size:clamp(10px,.95vw,12.5px); color:var(--stone); border-left:2px solid var(--bronze); padding-left:14px; line-height:1.7; }
+</style>
+</head>
+<body>
+<div class="deck">
+
+<!-- COVER -->
+<section class="slide center on">
+  <div>
+    <div class="label" style="margin-bottom:4vh">Сессия частных продаж · Осень MMXXVI</div>
+    <img src="../shared/brand/Relictum_lockup_light.png" alt="RELICTUM" style="width:min(700px,70vw)">
+    <h1 style="font-size:clamp(24px,2.6vw,40px);margin-top:4vh;font-style:italic">Каталог I · Свидетельства глубокого времени</h1>
+    <div class="label" style="margin-top:3vh;color:var(--stone)">Восемь лотов · Просмотр по записи · Москва</div>
+  </div>
+</section>
+
+<!-- HOW TO READ -->
+<section class="slide center">
+  <div style="max-width:900px">
+    <div class="label">Как читать каталог</div>
+    <h2 style="font-size:clamp(28px,3.4vw,52px);margin:2.5vh 0">Каждый лот — четыре слоя ценности</h2>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:4vh;text-align:left">
+      <div><div class="label">I · Объект</div><p style="font-size:13px;color:var(--stone);margin-top:10px">Сохранность, размер, редкость класса. То, что видно глазами.</p></div>
+      <div><div class="label">II · Наука</div><p style="font-size:13px;color:var(--stone);margin-top:10px">Вид, эпоха, история находки — атрибуция экспертов дома.</p></div>
+      <div><div class="label">III · Провенанс</div><p style="font-size:13px;color:var(--stone);margin-top:10px">Легальность экспорта и цепочка владения, зафиксированная в Provenance Card.</p></div>
+      <div><div class="label">IV · Оправа</div><p style="font-size:13px;color:var(--stone);margin-top:10px">Подставка, витрина и свет мастерской Relictum — объект готов к экспозиции.</p></div>
+    </div>
+  </div>
+  <div class="brandline">RELICTUM</div><div class="pagenum"></div>
+</section>
+
+<!-- LOT 1 -->
+<section class="slide lot">
+  <div class="ph"><div class="lotno">Лот 01 · R–0601</div><img src="../shared/img/grand_triceratops_skull.jpg" alt=""></div>
+  <div class="pass">
+    <div class="label">Монументы · Динозавры</div>
+    <h2>Череп трицератопса</h2>
+    <div class="latin">Triceratops horridus</div>
+    <p class="story">Последний великий рогатый динозавр: этот череп встретил астероид, завершивший мезозой. Двухметровый костяной воротник и надбровные рога сохранились без реконструкции более чем на 85% — редкость даже для музейных собраний. Препарация заняла четырнадцать месяцев.</p>
+    <dl class="spec">
+      <dt>Эпоха</dt><dd>Поздний мел · ≈ 66 млн лет</dd>
+      <dt>Находка</dt><dd>Формация Хелл-Крик, Монтана, США · 2019</dd>
+      <dt>Размер</dt><dd>210 × 160 см · оригинальная кость 85%+</dd>
+      <dt>Оправа</dt><dd>Скрытая стальная колыбель, гранитный подиум</dd>
+    </dl>
+    <div class="est"><span class="t">Цена дома</span><span class="n">18 500 000 ₽</span></div>
+    <div class="prov">Провенанс: частные раскопки на ранчо (США), экспортная лицензия, одна смена владельца. Полный пакет документов и цифровое досье.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- LOT 2 -->
+<section class="slide lot">
+  <div class="ph"><div class="lotno">Лот 02 · R–0602</div><img src="../shared/img/grand_raptor_skeleton.jpg" alt=""></div>
+  <div class="pass">
+    <div class="label">Монументы · Динозавры</div>
+    <h2>Скелет хищного динозавра</h2>
+    <div class="latin">Dromaeosauridae</div>
+    <p class="story">Полный смонтированный скелет хищника в охотничьей позе — момент атаки, остановленный на семьдесят пять миллионов лет. Монтаж выполнен мастерской дома: каждая кость на индивидуальном скрытом креплении, каркас разбирается для перевозки за четыре часа.</p>
+    <dl class="spec">
+      <dt>Эпоха</dt><dd>Поздний мел · ≈ 75 млн лет</dd>
+      <dt>Находка</dt><dd>Пустыня Гоби, Монголия · легальный экспорт</dd>
+      <dt>Размер</dt><dd>Длина 2,1 м · высота 1,1 м</dd>
+      <dt>Оправа</dt><dd>Матовый стальной каркас, мраморная платформа</dd>
+    </dl>
+    <div class="est"><span class="t">Эстимейт</span><span class="n">По запросу</span></div>
+    <div class="prov">Топ-лот сессии. Показ только в галерее; научное заключение двух независимых институтов.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- LOT 3 -->
+<section class="slide lot">
+  <div class="ph"><div class="lotno">Лот 03 · R–0605</div><img src="../shared/img/grand_mammoth_skull.jpg" alt=""></div>
+  <div class="pass">
+    <div class="label">Монументы · Мамонтовая фауна</div>
+    <h2>Череп мамонта с бивнями</h2>
+    <div class="latin">Mammuthus primigenius</div>
+    <p class="story">Тридцать тысяч лет вечная мерзлота Якутии хранила эту пару бивней с размахом два метра сорок. Карамельная патина — след минералов мерзлоты, её невозможно подделать. Из всех монументов дома этот — самый русский.</p>
+    <dl class="spec">
+      <dt>Эпоха</dt><dd>Плейстоцен · ≈ 30 000 лет</dd>
+      <dt>Находка</dt><dd>Берег Индигирки, Якутия</dd>
+      <dt>Размер</dt><dd>Размах бивней 2,4 м</dd>
+      <dt>Оправа</dt><dd>Гранитный блок, бронзовые опоры под бивни</dd>
+    </dl>
+    <div class="est"><span class="t">Цена дома</span><span class="n">7 400 000 ₽</span></div>
+    <div class="prov">Провенанс: лицензированный сбор мамонтовой кости, экспертиза ФГБУН, справка о законности происхождения.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- LOT 4 -->
+<section class="slide lot">
+  <div class="ph"><div class="lotno">Лот 04 · R–0101</div><img src="../shared/img/prod_pallasite_seymchan.jpg" alt=""></div>
+  <div class="pass">
+    <div class="label">Космос · Палласиты</div>
+    <h2>Палласит Сеймчан</h2>
+    <div class="latin">Seymchan Pallasite · 1 240 г</div>
+    <p class="story">Старше самой Земли: вещество границы ядра и мантии протопланеты, разрушенной 4,5 миллиарда лет назад. На просвет оливины горят золотисто-зелёным. Из ста известных науке палласитов Сеймчан — эталон стабильности: срез не окисляется десятилетиями.</p>
+    <dl class="spec">
+      <dt>Возраст</dt><dd>≈ 4,56 млрд лет</dd>
+      <dt>Находка</dt><dd>Магаданская область · 1967</dd>
+      <dt>Размер</dt><dd>Срез 18 × 14 × 0,6 см</dd>
+      <dt>Оправа</dt><dd>Латунный мольберт с контровой подсветкой</dd>
+    </dl>
+    <div class="est"><span class="t">Цена дома</span><span class="n">2 400 000 ₽</span></div>
+    <div class="prov">Классификация Meteoritical Bulletin; сертификат металлографии, паспорт среза с картой оливинов.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- LOT 5 -->
+<section class="slide lot">
+  <div class="ph"><div class="lotno">Лот 05 · R–0203</div><img src="../shared/img/prod_trex_tooth.jpg" alt=""></div>
+  <div class="pass">
+    <div class="label">Жизнь · Динозавры</div>
+    <h2>Зуб тираннозавра</h2>
+    <div class="latin">Tyrannosaurus rex</div>
+    <p class="story">Десять сантиметров самого известного хищника планеты. Зазубрины режущей кромки читаются под лупой как день находки. T. rex менял зубы всю жизнь — но экземпляры с корнем, не тронутые рекой и временем, попадаются раз в сезон раскопок.</p>
+    <dl class="spec">
+      <dt>Эпоха</dt><dd>Поздний мел · 66–68 млн лет</dd>
+      <dt>Находка</dt><dd>Хелл-Крик, Монтана, США</dd>
+      <dt>Размер</dt><dd>9,8 см с корнем · эмаль без реставрации</dd>
+      <dt>Оправа</dt><dd>Оправа № 1 «The Pin» · бронза, мрамор Marquina</dd>
+    </dl>
+    <div class="est"><span class="t">Цена дома</span><span class="n">1 450 000 ₽</span></div>
+    <div class="prov">Частные земли США, экспортные документы, заключение палеонтолога дома. Сопровождается футляром The Ritual.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- LOT 6 -->
+<section class="slide lot">
+  <div class="ph"><div class="lotno">Лот 06 · R–0201</div><img src="../shared/img/prod_megalodon_tooth.jpg" alt=""></div>
+  <div class="pass">
+    <div class="label">Жизнь · Океан</div>
+    <h2>Зуб мегалодона, музейное качество</h2>
+    <div class="latin">Otodus megalodon · 15,4 см</div>
+    <p class="story">Крупнейший хищник в истории океана. Пятнадцать сантиметров — территория музейного качества: полная эмаль, живая режущая кромка, ни одной реставрации. Цена мегалодона растёт с размером нелинейно: каждый сантиметр после двенадцати удваивает редкость.</p>
+    <dl class="spec">
+      <dt>Эпоха</dt><dd>Неоген · 2,6–23 млн лет</dd>
+      <dt>Находка</dt><dd>Дно Атлантики, Южная Каролина · подъём дайверами</dd>
+      <dt>Размер</dt><dd>15,4 см по диагонали</dd>
+      <dt>Оправа</dt><dd>Стальной арматурный стенд, чёрный музейный лак</dd>
+    </dl>
+    <div class="est"><span class="t">Цена дома</span><span class="n">1 250 000 ₽</span></div>
+    <div class="prov">Задокументированный подъём 2024 года; градация качества по шкале дома в паспорте объекта.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- LOT 7 -->
+<section class="slide lot">
+  <div class="ph"><div class="lotno">Лот 07 · R–0606</div><img src="../shared/img/grand_ammonite_wall.jpg" alt=""></div>
+  <div class="pass">
+    <div class="label">Монументы · Интерьер</div>
+    <h2>Панно Grand Wall</h2>
+    <div class="latin">Relictum Grand Wall · 200 × 120 см</div>
+    <p class="story">Десятки аммонитов юрского и мелового периодов, собранные мастерской в единую настенную композицию. Каждое панно проектируется под конкретную стену и свет — от гостиной до лобби. Это не готовый предмет, а комиссия: вы утверждаете эскиз до первого камня.</p>
+    <dl class="spec">
+      <dt>Эпохи</dt><dd>Юра — мел · 110–180 млн лет</dd>
+      <dt>Состав</dt><dd>30–60 аммонитов, каменная плита, бронзовая рама</dd>
+      <dt>Срок</dt><dd>Комиссия 10–14 недель</dd>
+      <dt>Монтаж</dt><dd>Скрытая система, команда дома</dd>
+    </dl>
+    <div class="est"><span class="t">От</span><span class="n">3 200 000 ₽</span></div>
+    <div class="prov">Каждый аммонит панно получает собственную строку в Provenance Card композиции.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- LOT 8 -->
+<section class="slide lot">
+  <div class="ph"><div class="lotno">Лот 08 · R–0501</div><img src="../shared/img/editions_megalodon_vitrine.jpg" alt=""></div>
+  <div class="pass">
+    <div class="label">Relictum Editions</div>
+    <h2>Editions № 01 · Мегалодон</h2>
+    <div class="latin">Тираж 12 нумерованных экземпляров</div>
+    <p class="story">Первый авторский объект дома: зуб мегалодона музейного качества в витрине ручной работы — патинированная бронза, музейное стекло, чёрный мрамор. Клеймо дома и номер издания гравируются на основании. Двенадцать экземпляров — и серия закрывается навсегда.</p>
+    <dl class="spec">
+      <dt>Объект</dt><dd>Otodus megalodon, музейное качество</dd>
+      <dt>Витрина</dt><dd>Бронза, ручная патина · стекло low-iron</dd>
+      <dt>Размер</dt><dd>42 × 30 × 18 см</dd>
+      <dt>Издание</dt><dd>№ 03/12 доступен на дату каталога</dd>
+    </dl>
+    <div class="est"><span class="t">Цена дома</span><span class="n">2 900 000 ₽</span></div>
+    <div class="prov">Editions — самая быстрорастущая ценность дома: закрытый тираж + подпись мастерской.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- CLOSING -->
+<section class="slide center" style="background:var(--black);color:var(--ivory)">
+  <div>
+    <img src="../shared/brand/Relictum_lockup_dark.png" alt="RELICTUM" style="width:min(560px,64vw);margin:0 auto">
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(18px,2vw,30px);margin-top:4vh;color:rgba(244,240,232,.85)">Просмотр лотов — в галерее дома, по записи.</p>
+    <div class="label" style="margin-top:3vh;color:var(--bronze)">concierge@relictum.ru · +7 900 000-00-00 · Москва</div>
+  </div>
+</section>
+
+</div>
+<div class="hint">← → или пробел · листать</div>
+<script>
+const slides=[...document.querySelectorAll('.slide')];
+slides.forEach((s,k)=>{const p=s.querySelector('.pagenum');if(p)p.textContent=String(k+1).padStart(2,'0')});
+let i=0;
+function go(n){i=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,k)=>s.classList.toggle('on',k===i))}
+addEventListener('keydown',e=>{if(['ArrowRight',' ','PageDown'].includes(e.key)){e.preventDefault();go(i+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();go(i-1)}if(e.key==='Home')go(0)});
+addEventListener('click',e=>{if(!e.target.closest('a'))go(i+1)});
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}.hint{display:none}}</style>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RELICTUM — Презентация бренда</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ivory:#F4F0E8; --bone:#FBF8F1; --black:#111111; --coal:#161412;
+  --bronze:#B08A55; --deep:#9A6D34; --sand:#D8C8AF; --stone:#7A7267;
+  --line:rgba(154,109,52,.28); --line-d:rgba(176,138,85,.22);
+  --serif:'Cormorant Garamond',serif; --sans:'Inter',sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; overflow:hidden; background:#000; }
+body { font-family:var(--sans); font-weight:300; }
+.deck { height:100%; position:relative; }
+.slide {
+  position:absolute; inset:0; display:none; overflow:hidden;
+  background:var(--ivory); color:var(--black);
+  padding:clamp(30px,5vw,90px);
+}
+.slide.on { display:grid; animation:fade .8s cubic-bezier(.23,1,.32,1); }
+@keyframes fade { from { opacity:0; transform:scale(1.012); } }
+.slide.dark { background:var(--black); color:var(--ivory); }
+h1,h2,h3,.serif { font-family:var(--serif); font-weight:400; line-height:1.06; }
+.label { font-size:clamp(9px,.85vw,12px); font-weight:500; letter-spacing:.28em; text-transform:uppercase; color:var(--deep); }
+.dark .label { color:var(--bronze); }
+.pagenum { position:absolute; bottom:26px; right:36px; font-size:11px; letter-spacing:.2em; color:var(--stone); z-index:5; }
+.dark .pagenum { color:rgba(244,240,232,.4); }
+.brandline { position:absolute; bottom:26px; left:36px; font-family:var(--serif); font-size:13px; letter-spacing:.3em; color:var(--stone); z-index:5; }
+.dark .brandline { color:rgba(244,240,232,.4); }
+.hint { position:fixed; bottom:26px; left:50%; transform:translateX(-50%); font-size:10px; letter-spacing:.2em; color:rgba(122,114,103,.7); text-transform:uppercase; z-index:10; }
+
+/* layouts */
+.center { place-items:center; text-align:center; }
+.split { grid-template-columns:1fr 1fr; gap:clamp(24px,4vw,70px); align-items:center; }
+.cover-logo { height:clamp(70px,10vw,130px); margin:0 auto 3vh; }
+.big { font-size:clamp(40px,6.4vw,110px); letter-spacing:.3em; text-indent:.3em; }
+.sub-big { font-size:clamp(15px,1.6vw,24px); letter-spacing:.34em; text-transform:uppercase; color:var(--deep); margin-top:2.4vh; }
+.axes { font-size:clamp(11px,1.1vw,15px); letter-spacing:.4em; margin-top:1.6vh; color:var(--stone); text-transform:uppercase; }
+h2.head { font-size:clamp(30px,4vw,64px); margin:14px 0 3vh; }
+p.body { font-size:clamp(13px,1.25vw,18px); line-height:1.7; color:var(--stone); max-width:56ch; }
+.dark p.body { color:rgba(244,240,232,.72); }
+.ph { overflow:hidden; height:100%; }
+.ph img { width:100%; height:100%; object-fit:cover; }
+.full-bg { position:absolute; inset:0; }
+.full-bg img { width:100%; height:100%; object-fit:cover; }
+.scrim { position:absolute; inset:0; background:linear-gradient(90deg, rgba(17,17,17,.85), rgba(17,17,17,.15)); }
+.overlay-content { position:relative; z-index:2; align-self:center; max-width:640px; color:var(--ivory); }
+.grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(14px,1.8vw,30px); align-content:center; }
+.grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(12px,1.5vw,24px); align-content:center; }
+.card { background:var(--bone); border:1px solid var(--line); }
+.card .im { aspect-ratio:4/4.2; overflow:hidden; }
+.card .im img { width:100%; height:100%; object-fit:cover; }
+.card .cap { padding:14px 18px 18px; }
+.card .cap h3 { font-size:clamp(15px,1.5vw,22px); }
+.card .cap .latin { font-family:var(--serif); font-style:italic; font-size:clamp(11px,1.1vw,15px); color:var(--deep); }
+.card .cap .m { font-size:clamp(10px,.95vw,13px); color:var(--stone); margin-top:6px; }
+.card .cap .pr { font-family:var(--serif); font-size:clamp(13px,1.3vw,19px); margin-top:8px; }
+.kpi { border-top:1px solid var(--line); padding-top:2vh; }
+.kpi .n { font-family:var(--serif); font-size:clamp(30px,3.6vw,58px); color:var(--black); }
+.dark .kpi .n { color:var(--ivory); }
+.kpi .t { font-size:clamp(10px,1vw,13.5px); color:var(--stone); letter-spacing:.08em; max-width:30ch; }
+.dark .kpi .t { color:rgba(244,240,232,.6); }
+.sw-row { display:flex; gap:10px; margin-top:2vh; }
+.sw-row div { flex:1; height:clamp(60px,8vw,110px); border:1px solid var(--line); position:relative; }
+.sw-row span { position:absolute; bottom:-24px; left:0; font-size:10px; letter-spacing:.08em; color:var(--stone); }
+ul.list { list-style:none; font-size:clamp(12.5px,1.2vw,17px); }
+ul.list li { padding:1.1vh 0 1.1vh 28px; border-bottom:1px solid var(--line); position:relative; color:#3d3a35; }
+.dark ul.list li { border-color:var(--line-d); color:rgba(244,240,232,.8); }
+ul.list li::before { content:'—'; position:absolute; left:0; color:var(--deep); }
+.q { font-family:var(--serif); font-style:italic; font-size:clamp(26px,3.4vw,54px); line-height:1.25; }
+
+@page { size: 1280px 720px; margin: 0; }
+@media print {
+  html, body { overflow: visible; height: auto; }
+  .deck { height: auto; }
+  .slide { position: relative; inset: auto; display: grid !important; width: 1280px; height: 720px; page-break-after: always; animation: none; }
+  .hint { display: none; }
+}
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+<!-- 1 · COVER -->
+<section class="slide center on">
+  <div>
+    <img src="../shared/brand/Relictum_lockup_light.png" alt="RELICTUM — Роскошь вне времени" style="width:min(760px,72vw);margin:0 auto">
+    <div class="axes" style="margin-top:3vh">Земля · Жизнь · Космос</div>
+    <div class="label" style="margin-top:5vh;color:var(--stone)">Бренд · Дизайн-система · Сайт · Июль 2026</div>
+  </div>
+</section>
+
+<!-- 2 · MANIFESTO -->
+<section class="slide dark center">
+  <div style="max-width:1000px">
+    <div class="label">Манифест</div>
+    <p class="q" style="margin-top:3vh">Мы не продаём окаменелости.<br>Мы передаём <span style="color:var(--bronze)">время</span>.</p>
+    <p class="body" style="margin:4vh auto 0;text-align:center">Каждый объект дома существовал до человека. Наука дала ему имя, лаборатория — форму, провенанс — биографию. Владельцу остаётся последняя строка.</p>
+  </div>
+  <div class="brandline">RELICTUM</div><div class="pagenum">02</div>
+</section>
+
+<!-- 3 · MARKET -->
+<section class="slide split">
+  <div>
+    <div class="label">Позиционирование</div>
+    <h2 class="head">Между музеем и аукционным домом</h2>
+    <p class="body">Рынок natural history растёт: Sotheby's и Christie's продают скелеты за миллионы долларов, PaleoHunters строит масс-сегмент от 9 900 ₽. Ниша люксовой галереи с арт-подходом — свободна.</p>
+    <div class="grid3" style="margin-top:4vh">
+      <div class="kpi"><div class="n">9 900 ₽</div><div class="t">вход масс-рынка (PaleoHunters)</div></div>
+      <div class="kpi"><div class="n">1,9 млн ₽</div><div class="t">их потолок открытых цен</div></div>
+      <div class="kpi"><div class="n">$ 44,6 млн</div><div class="t">рекорд Sotheby's за стегозавра Apex</div></div>
+    </div>
+  </div>
+  <div class="ph"><img src="../shared/img/int_gallery.jpg" alt=""></div>
+  <div class="brandline">RELICTUM</div><div class="pagenum">03</div>
+</section>
+
+<!-- 4 · IDENTITY -->
+<section class="slide split">
+  <div>
+    <div class="label">Айдентика</div>
+    <h2 class="head">Комета, кость и бронза</h2>
+    <p class="body">Знак — золотая комета: объект, летящий сквозь время. Типографика — музейная антиква Cormorant Garamond с разрядкой и гротеск Inter. Золото занимает не более 5% макета: роскошь создаётся воздухом.</p>
+    <div class="sw-row">
+      <div style="background:#F4F0E8"><span>Ivory</span></div>
+      <div style="background:#111111"><span>Obsidian</span></div>
+      <div style="background:#B08A55"><span>Bronze</span></div>
+      <div style="background:#D8C8AF"><span>Sand</span></div>
+      <div style="background:#0F1B2E"><span>Midnight</span></div>
+    </div>
+  </div>
+  <div style="display:grid;place-items:center;background:#FBF8F1;border:1px solid var(--line);height:100%">
+    <img src="../shared/brand/Relictum_logo_vertical.svg" style="max-width:82%" alt="Логотип Relictum">
+  </div>
+  <div class="brandline">RELICTUM</div><div class="pagenum">04</div>
+</section>
+
+<!-- 5 · WORLDS -->
+<section class="slide">
+  <div style="align-self:start">
+    <div class="label">Архитектура ассортимента</div>
+    <h2 class="head" style="margin-bottom:2vh">Четыре мира дома</h2>
+  </div>
+  <div class="grid4" style="align-self:center">
+    <div class="card"><div class="im"><img src="../shared/img/cat_ammonite.jpg" alt=""></div><div class="cap"><div class="label">Vita</div><h3>Жизнь</h3><div class="m">Динозавры · мегалодон · аммониты · мамонты</div></div></div>
+    <div class="card"><div class="im"><img src="../shared/img/cat_minerals_amethyst.jpg" alt=""></div><div class="cap"><div class="label">Terra</div><h3>Земля</h3><div class="m">Минералы · жеоды · окаменелое дерево</div></div></div>
+    <div class="card"><div class="im"><img src="../shared/img/cat_meteorite.jpg" alt=""></div><div class="cap"><div class="label">Cosmos</div><h3>Космос</h3><div class="m">Метеориты · палласиты · Луна и Марс</div></div></div>
+    <div class="card"><div class="im"><img src="../shared/img/editions_megalodon_vitrine.jpg" alt=""></div><div class="cap"><div class="label">№ 01–12</div><h3>Editions</h3><div class="m">Авторские объекты в бронзе и мраморе</div></div></div>
+  </div>
+  <div class="brandline">RELICTUM</div><div class="pagenum">05</div>
+</section>
+
+<!-- 6 · OBJECTS -->
+<section class="slide">
+  <div style="align-self:start;display:flex;justify-content:space-between;align-items:flex-end">
+    <div>
+      <div class="label">Коллекция · старт</div>
+      <h2 class="head" style="margin-bottom:2vh">Первые экспонаты</h2>
+    </div>
+    <div class="label" style="color:var(--stone)">14 объектов · 340 тыс — 2,9 млн ₽</div>
+  </div>
+  <div class="grid4" style="align-self:center">
+    <div class="card"><div class="im"><img src="../shared/img/prod_pallasite_seymchan.jpg" alt=""></div><div class="cap"><h3>Палласит Сеймчан</h3><div class="latin">Seymchan Pallasite</div><div class="m">Магадан · 4,56 млрд лет</div><div class="pr">2 400 000 ₽</div></div></div>
+    <div class="card"><div class="im"><img src="../shared/img/prod_trex_tooth.jpg" alt=""></div><div class="cap"><h3>Зуб тираннозавра</h3><div class="latin">Tyrannosaurus rex</div><div class="m">Монтана · 66–68 млн лет</div><div class="pr">1 450 000 ₽</div></div></div>
+    <div class="card"><div class="im"><img src="../shared/img/prod_megalodon_tooth.jpg" alt=""></div><div class="cap"><h3>Зуб мегалодона</h3><div class="latin">Otodus megalodon</div><div class="m">Ю. Каролина · 15,4 см</div><div class="pr">1 250 000 ₽</div></div></div>
+    <div class="card"><div class="im"><img src="../shared/img/prod_ichthyosaur_skull.jpg" alt=""></div><div class="cap"><h3>Череп ихтиозавра</h3><div class="latin">Ichthyosauria</div><div class="m">Поволжье · 180 млн лет</div><div class="pr">По запросу</div></div></div>
+  </div>
+  <div class="brandline">RELICTUM</div><div class="pagenum">06</div>
+</section>
+
+<!-- 7 · PROVENANCE -->
+<section class="slide dark split">
+  <div>
+    <div class="label">Стандарт доверия</div>
+    <h2 class="head">Relictum Provenance Card</h2>
+    <p class="body">На этом рынке роскошь строится на происхождении. Каждый объект получает нумерованный паспорт дома:</p>
+    <ul class="list" style="margin-top:3vh;max-width:480px">
+      <li>Атрибуция вида, датировка, экспертное заключение</li>
+      <li>Место и легальность находки, цепочка владения</li>
+      <li>QR-код цифрового досье — передаётся при перепродаже</li>
+      <li>Хлопковая бумага, сургучная печать, подпись эксперта</li>
+    </ul>
+  </div>
+  <div class="ph"><img src="../shared/img/atelier_gloves.jpg" alt=""></div>
+  <div class="brandline">RELICTUM</div><div class="pagenum">07</div>
+</section>
+
+<!-- 8 · RITUAL -->
+<section class="slide">
+  <div style="align-self:start">
+    <div class="label">The Relictum Ritual</div>
+    <h2 class="head" style="margin-bottom:2vh">Обладание начинается с упаковки</h2>
+  </div>
+  <div class="grid3" style="align-self:center">
+    <div class="card"><div class="im" style="aspect-ratio:3/2"><img src="../shared/img/pack_leather_box_open.jpg" alt=""></div><div class="cap"><div class="label">01</div><h3>Футляр</h3><div class="m">Полнозернистая кожа, замша цвета кости, тиснёная комета</div></div></div>
+    <div class="card"><div class="im" style="aspect-ratio:3/2"><img src="../shared/img/pack_gift_box_closed.jpg" alt=""></div><div class="cap"><div class="label">02</div><h3>Досье</h3><div class="m">Сертификат, Provenance Card, льняная папка, сургуч</div></div></div>
+    <div class="card"><div class="im" style="aspect-ratio:3/2"><img src="../shared/img/pack_crate_delivery.jpg" alt=""></div><div class="cap"><div class="label">03</div><h3>Передача</h3><div class="m">Музейный ящик, белые перчатки, монтаж экспоната</div></div></div>
+  </div>
+  <div class="brandline">RELICTUM</div><div class="pagenum">08</div>
+</section>
+
+<!-- GRAND FORMS -->
+<section class="slide dark" style="padding:0">
+  <div class="full-bg"><img src="../shared/img/grand_atrium_skeleton.jpg" alt=""><div class="scrim" style="background:linear-gradient(0deg, rgba(17,17,17,.88) 10%, transparent 60%)"></div></div>
+  <div class="overlay-content" style="padding:clamp(30px,5vw,90px);align-self:end;max-width:820px">
+    <div class="label">Grand Forms · Монументальная коллекция</div>
+    <h2 class="head" style="margin-bottom:1.4vh">Скелет как архитектура</h2>
+    <p class="body" style="color:rgba(244,240,232,.85)">Полные скелеты, черепа трицератопса и мамонта, панно в два метра — экспонаты, вокруг которых строится пространство. Диапазон: 3,2–18,5 млн ₽ и топ-лоты по запросу.</p>
+  </div>
+  <div class="brandline" style="color:rgba(244,240,232,.5)">RELICTUM</div><div class="pagenum"></div>
+</section>
+
+<!-- MOUNTS -->
+<section class="slide">
+  <div style="align-self:start;display:flex;justify-content:space-between;align-items:flex-end">
+    <div>
+      <div class="label">Продуктовая книга</div>
+      <h2 class="head" style="margin-bottom:2vh">Оправа для времени</h2>
+    </div>
+    <div class="label" style="color:var(--stone)">6 оправ дома · мастерская Relictum</div>
+  </div>
+  <div class="grid4" style="align-self:center">
+    <div class="card"><div class="im"><img src="../shared/img/mount_bronze_pin.jpg" alt=""></div><div class="cap"><div class="label">№ 1</div><h3>The Pin</h3><div class="m">Бронзовый коготь · мрамор Marquina</div></div></div>
+    <div class="card"><div class="im"><img src="../shared/img/mount_bronze_cradle.jpg" alt=""></div><div class="cap"><div class="label">№ 2</div><h3>The Cradle</h3><div class="m">Литая скульптурная колыбель</div></div></div>
+    <div class="card"><div class="im"><img src="../shared/img/mount_acrylic_monolith.jpg" alt=""></div><div class="cap"><div class="label">№ 3</div><h3>The Monolith</h3><div class="m">Объект в акриле · латунь</div></div></div>
+    <div class="card"><div class="im"><img src="../shared/img/mount_vitrine_pedestal.jpg" alt=""></div><div class="cap"><div class="label">№ 6</div><h3>The Vitrine</h3><div class="m">Бронза · музейное стекло · климат</div></div></div>
+  </div>
+  <div class="brandline">RELICTUM</div><div class="pagenum"></div>
+</section>
+
+<!-- 9 · EXPEDITIONS -->
+<section class="slide dark" style="padding:0">
+  <div class="full-bg"><img src="../shared/img/expedition_morocco.jpg" alt=""><div class="scrim"></div></div>
+  <div class="overlay-content" style="padding:clamp(30px,5vw,90px)">
+    <div class="label">Relictum Expeditions</div>
+    <h2 class="head">Путешествия к истокам времени</h2>
+    <p class="body" style="color:rgba(244,240,232,.85)">Частные экспедиции с экспертами дома: Сахара (Кем-Кем, зубы спинозавра), Якутия (мамонтовая фауна). Клиент находит объект сам — и его имя навсегда входит в провенанс. От 3,9 млн ₽ за программу.</p>
+  </div>
+  <div class="brandline" style="color:rgba(244,240,232,.5)">RELICTUM</div><div class="pagenum" style="color:rgba(244,240,232,.5)">09</div>
+</section>
+
+<!-- 10 · ECOSYSTEM -->
+<section class="slide split">
+  <div>
+    <div class="label">Экосистема дома</div>
+    <h2 class="head">Больше, чем магазин</h2>
+    <ul class="list" style="max-width:520px">
+      <li><b style="font-weight:500">Галерея</b> — каталог и приватные продажи топ-лотов</li>
+      <li><b style="font-weight:500">Лаборатория</b> — препарация и реставрация музейного уровня</li>
+      <li><b style="font-weight:500">Interior</b> — объекты для архитекторов и дизайнеров</li>
+      <li><b style="font-weight:500">Expeditions</b> — travel-направление люкс-сегмента</li>
+      <li><b style="font-weight:500">Journal</b> — научная редакция, доверие через знание</li>
+      <li><b style="font-weight:500">Editions</b> — авторские тиражи, максимальная маржа</li>
+    </ul>
+  </div>
+  <div class="ph"><img src="../shared/img/int_library.jpg" alt=""></div>
+  <div class="brandline">RELICTUM</div><div class="pagenum">10</div>
+</section>
+
+<!-- 11 · SITE V1 -->
+<section class="slide split">
+  <div>
+    <div class="label">Диджитал · версия 1</div>
+    <h2 class="head">The Gallery</h2>
+    <p class="body">Светлая галерейная версия: слоновая кость, музейная типографика, полный e-commerce путь — каталог с фильтрами по мирам, карточка объекта со спецификацией и провенансом, экспедиции, журнал, консьерж.</p>
+    <p class="body" style="margin-top:2vh"><b style="font-weight:500;color:var(--black)">6 страниц · готовый код</b><br>02_site_v1_gallery/index.html</p>
+  </div>
+  <div class="ph"><img src="../shared/img/hero_light_ivory.jpg" alt=""></div>
+  <div class="brandline">RELICTUM</div><div class="pagenum">11</div>
+</section>
+
+<!-- 12 · SITE V2 -->
+<section class="slide dark split">
+  <div>
+    <div class="label">Диджитал · версия 2</div>
+    <h2 class="head">Monolith</h2>
+    <p class="body">Тёмная иммерсивная версия: один объект на экран, лента геологических эпох, манифест, ритуал. Для запуска бренда, кампаний и показа топ-лотов. Обе версии собраны на одной дизайн-системе.</p>
+    <p class="body" style="margin-top:2vh"><b style="font-weight:500;color:var(--ivory)">One-page manifesto · готовый код</b><br>03_site_v2_monolith/index.html</p>
+  </div>
+  <div class="ph"><img src="../shared/img/hero_dark_skull.jpg" alt=""></div>
+  <div class="brandline">RELICTUM</div><div class="pagenum">12</div>
+</section>
+
+<!-- 13 · INTERIOR -->
+<section class="slide" style="padding:0">
+  <div class="full-bg"><img src="../shared/img/cat_interior_room.jpg" alt=""><div class="scrim" style="background:linear-gradient(90deg, rgba(244,240,232,.92), rgba(244,240,232,.05))"></div></div>
+  <div class="overlay-content" style="padding:clamp(30px,5vw,90px);color:var(--black)">
+    <div class="label">Relictum Interior</div>
+    <h2 class="head">Привилегия обладать исключительным</h2>
+    <p class="body">Объект глубокого времени в современном интерьере — новый статусный код: тише яхты, глубже искусства.</p>
+  </div>
+  <div class="brandline">RELICTUM</div><div class="pagenum">13</div>
+</section>
+
+<!-- 14 · NEXT -->
+<section class="slide split">
+  <div>
+    <div class="label">Дорожная карта</div>
+    <h2 class="head">Что дальше</h2>
+    <ul class="list" style="max-width:520px">
+      <li>Домен и хостинг: relictum.ru / relictum.com</li>
+      <li>Выбор версии сайта (или обе: Gallery — магазин, Monolith — кампания)</li>
+      <li>Закупка первых 20–30 объектов, фотосессия по стандарту дома</li>
+      <li>Печать: Provenance Card, футляры, сургучная печать</li>
+      <li>Запуск: приватный показ для первых клиентов Stargift</li>
+    </ul>
+  </div>
+  <div class="ph"><img src="../shared/img/journal_meteor_sky.jpg" alt=""></div>
+  <div class="brandline">RELICTUM</div><div class="pagenum">14</div>
+</section>
+
+<!-- 15 · FINAL -->
+<section class="slide dark center">
+  <div>
+    <img src="../shared/brand/Relictum_lockup_dark.png" alt="RELICTUM — Роскошь вне времени" style="width:min(700px,70vw);margin:0 auto">
+    <div class="sub-big" style="color:var(--bronze);margin-top:3vh;font-size:clamp(12px,1.3vw,19px)">Formed before us. Kept beyond us.</div>
+    <div class="axes" style="color:rgba(244,240,232,.5)">Земля · Жизнь · Космос · MMXXVI</div>
+  </div>
+</section>
+
+</div>
+<div class="hint">← → или пробел · листать</div>
+
+<script>
+const slides = [...document.querySelectorAll('.slide')];
+slides.forEach((s, k) => { const p = s.querySelector('.pagenum'); if (p) p.textContent = String(k + 1).padStart(2, '0'); });
+let i = 0;
+function go(n) {
+  i = Math.max(0, Math.min(slides.length - 1, n));
+  slides.forEach((s, k) => s.classList.toggle('on', k === i));
+}
+addEventListener('keydown', e => {
+  if (['ArrowRight',' ','PageDown'].includes(e.key)) { e.preventDefault(); go(i+1); }
+  if (['ArrowLeft','PageUp'].includes(e.key)) { e.preventDefault(); go(i-1); }
+  if (e.key === 'Home') go(0);
+});
+addEventListener('click', e => { if (!e.target.closest('a')) go(i+1); });
+let tx = 0;
+addEventListener('touchstart', e => tx = e.touches[0].clientX, {passive:true});
+addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - tx;
+  if (Math.abs(dx) > 50) go(i + (dx < 0 ? 1 : -1));
+}, {passive:true});
+</script>
+</body>
+</html>

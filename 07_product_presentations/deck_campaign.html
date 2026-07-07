@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RELICTUM — Продуктовая презентация · Стиль II «Кампания»</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black:#0C0B0A; --ivory:#F4F0E8; --bronze:#B08A55; --mist:rgba(244,240,232,.62);
+  --serif:'Cormorant Garamond',serif; --sans:'Inter',sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; overflow:hidden; background:#000; }
+body { font-family:var(--sans); font-weight:300; }
+.deck { height:100%; position:relative; }
+.slide { position:absolute; inset:0; display:none; overflow:hidden; background:var(--black); color:var(--ivory); }
+.slide.on { display:grid; animation:fade 1s cubic-bezier(.23,1,.32,1); }
+@keyframes fade { from { opacity:0; } }
+h1,h2 { font-family:var(--serif); font-weight:400; line-height:1.05; }
+.label { font-size:clamp(9px,.85vw,12px); font-weight:400; letter-spacing:.34em; text-transform:uppercase; color:var(--bronze); }
+.pagenum { position:absolute; bottom:24px; right:34px; font-size:10px; letter-spacing:.2em; color:rgba(244,240,232,.35); z-index:6; }
+.hint { position:fixed; bottom:24px; left:50%; transform:translateX(-50%); font-size:10px; letter-spacing:.2em; color:rgba(244,240,232,.28); text-transform:uppercase; z-index:10; }
+.center { place-items:center; text-align:center; padding:clamp(30px,5vw,90px); }
+
+/* полноэкранный кадр с минимумом слов */
+.full { position:relative; }
+.full img.bg { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.full .veil { position:absolute; inset:0; background:linear-gradient(0deg, rgba(12,11,10,.88) 4%, transparent 46%); }
+.full .cap { position:absolute; left:clamp(30px,5vw,90px); bottom:7svh; z-index:3; max-width:760px; }
+.full .cap h2 { font-size:clamp(34px,4.6vw,72px); }
+.full .cap h2 em { font-style:italic; color:var(--bronze); }
+.full .cap .sub { display:flex; gap:26px; align-items:baseline; margin-top:2vh; flex-wrap:wrap; }
+.full .cap .latin { font-family:var(--serif); font-style:italic; font-size:clamp(14px,1.5vw,21px); color:var(--bronze); }
+.full .cap .fact { font-size:clamp(10px,1vw,13px); letter-spacing:.18em; text-transform:uppercase; color:var(--mist); }
+.full .idx { position:absolute; top:34px; right:38px; z-index:3; font-family:var(--serif); font-size:clamp(13px,1.2vw,17px); letter-spacing:.3em; color:rgba(244,240,232,.7); }
+.phrase { font-family:var(--serif); font-style:italic; font-size:clamp(28px,4vw,60px); line-height:1.25; }
+</style>
+</head>
+<body>
+<div class="deck">
+
+<!-- COVER -->
+<section class="slide center on">
+  <div>
+    <img src="../shared/brand/Relictum_lockup_dark.png" alt="RELICTUM" style="width:min(680px,70vw);margin:0 auto">
+    <p class="phrase" style="margin-top:5vh;color:rgba(244,240,232,.9)">Objects older than memory.</p>
+    <div class="label" style="margin-top:4vh">Кампания · Коллекция I · MMXXVI</div>
+  </div>
+</section>
+
+<!-- MANIFesto phrase -->
+<section class="slide center">
+  <div style="max-width:1000px">
+    <p class="phrase">Всё, чем мы владеем, — на время.<br>Некоторые вещи владеют <span style="color:var(--bronze)">временем</span> сами.</p>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- FRAME 1 -->
+<section class="slide full">
+  <img class="bg" src="../shared/img/hero_dark_skull.jpg" alt="">
+  <div class="veil"></div>
+  <div class="idx">I / VI</div>
+  <div class="cap">
+    <div class="label">Шестьдесят шесть миллионов лет тишины</div>
+    <h2>Хищник <em>эпохи</em></h2>
+    <div class="sub"><span class="latin">Theropoda · Поздний мел</span><span class="fact">Монументальная коллекция</span></div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- FRAME 2 -->
+<section class="slide full">
+  <img class="bg" src="../shared/img/grand_mosasaur_dark.jpg" alt="">
+  <div class="veil"></div>
+  <div class="idx">II / VI</div>
+  <div class="cap">
+    <div class="label">Океан, которого больше нет</div>
+    <h2>Плывущий сквозь <em>вечность</em></h2>
+    <div class="sub"><span class="latin">Mosasaurus · 70 млн лет</span><span class="fact">Скелет · 6 метров · подвесной монтаж</span></div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- FRAME 3 -->
+<section class="slide full">
+  <img class="bg" src="../shared/img/journal_meteor_sky.jpg" alt="">
+  <div class="veil"></div>
+  <div class="idx">III / VI</div>
+  <div class="cap">
+    <div class="label">Вещество старше Солнца</div>
+    <h2>Гость из <em>космоса</em></h2>
+    <div class="sub"><span class="latin">Seymchan Pallasite · 4,56 млрд лет</span><span class="fact">Оливины горят на просвет</span></div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- FRAME 4 -->
+<section class="slide full">
+  <img class="bg" src="../shared/img/grand_atrium_skeleton.jpg" alt="">
+  <div class="veil"></div>
+  <div class="idx">IV / VI</div>
+  <div class="cap">
+    <div class="label">Relictum Interior</div>
+    <h2>Архитектура начинается<br>с <em>экспоната</em></h2>
+    <div class="sub"><span class="fact">Проекты для пентхаусов, лобби и частных галерей</span></div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- FRAME 5 -->
+<section class="slide full">
+  <img class="bg" src="../shared/img/pack_leather_box_open.jpg" alt="">
+  <div class="veil"></div>
+  <div class="idx">V / VI</div>
+  <div class="cap">
+    <div class="label">The Relictum Ritual</div>
+    <h2>Сто миллионов лет —<br>в ваших <em>руках</em></h2>
+    <div class="sub"><span class="fact">Кожа · замша · сургуч · белые перчатки</span></div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- FRAME 6 -->
+<section class="slide full">
+  <img class="bg" src="../shared/img/expedition_morocco.jpg" alt="">
+  <div class="veil"></div>
+  <div class="idx">VI / VI</div>
+  <div class="cap">
+    <div class="label">Relictum Expeditions</div>
+    <h2>Или найдите свою вечность <em>сами</em></h2>
+    <div class="sub"><span class="fact">Сахара · Якутия · частные экспедиции дома</span></div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- PRICES (единственный слайд с цифрами) -->
+<section class="slide center">
+  <div style="max-width:860px;width:100%">
+    <div class="label" style="margin-bottom:4vh">Коллекция I · доступные объекты</div>
+    <div style="display:grid;grid-template-columns:1fr auto;gap:2vh 40px;text-align:left;font-size:clamp(13px,1.3vw,18px)">
+      <span style="font-family:var(--serif);font-size:clamp(17px,1.8vw,26px)">Череп трицератопса · <i style="color:var(--bronze)">Triceratops horridus</i></span><span style="font-family:var(--serif)">18 500 000 ₽</span>
+      <span style="font-family:var(--serif);font-size:clamp(17px,1.8vw,26px)">Череп мамонта с бивнями · <i style="color:var(--bronze)">Mammuthus</i></span><span style="font-family:var(--serif)">7 400 000 ₽</span>
+      <span style="font-family:var(--serif);font-size:clamp(17px,1.8vw,26px)">Череп мозазавра · <i style="color:var(--bronze)">Mosasaurus</i></span><span style="font-family:var(--serif)">4 800 000 ₽</span>
+      <span style="font-family:var(--serif);font-size:clamp(17px,1.8vw,26px)">Editions № 01 · Мегалодон в бронзе</span><span style="font-family:var(--serif)">2 900 000 ₽</span>
+      <span style="font-family:var(--serif);font-size:clamp(17px,1.8vw,26px)">Палласит Сеймчан · срез 1 240 г</span><span style="font-family:var(--serif)">2 400 000 ₽</span>
+      <span style="font-family:var(--serif);font-size:clamp(17px,1.8vw,26px)">Скелет хищного динозавра · Гоби</span><span style="font-family:var(--serif);color:var(--bronze)">По запросу</span>
+    </div>
+    <div class="label" style="margin-top:5vh;color:rgba(244,240,232,.4)">Полный каталог — по запросу в галерее</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- CLOSING -->
+<section class="slide center">
+  <div>
+    <img src="../shared/brand/Relictum_lockup_dark.png" alt="RELICTUM" style="width:min(560px,64vw);margin:0 auto">
+    <div class="label" style="margin-top:4vh">concierge@relictum.ru · Москва · по записи</div>
+  </div>
+</section>
+
+</div>
+<div class="hint">← → или пробел · листать</div>
+<script>
+const slides=[...document.querySelectorAll('.slide')];
+slides.forEach((s,k)=>{const p=s.querySelector('.pagenum');if(p)p.textContent=String(k+1).padStart(2,'0')});
+let i=0;
+function go(n){i=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,k)=>s.classList.toggle('on',k===i))}
+addEventListener('keydown',e=>{if(['ArrowRight',' ','PageDown'].includes(e.key)){e.preventDefault();go(i+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();go(i-1)}if(e.key==='Home')go(0)});
+addEventListener('click',e=>{if(!e.target.closest('a'))go(i+1)});
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}.hint{display:none}}</style>
+</body>
+</html>

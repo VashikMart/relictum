@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Каталог — RELICTUM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav scrolled" id="nav">
+  <a class="nav-logo" href="index.html">
+    <img src="../shared/brand/Relictum_final_icon_crop.svg" alt="Relictum">
+    <span>
+      <span class="nav-wordmark">RELICTUM</span>
+      <div class="nav-tag">Роскошь вне времени</div>
+    </span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="catalog.html" class="active">Каталог</a></li>
+    <li><a href="#editions">Editions</a></li>
+    <li><a href="expeditions.html">Экспедиции</a></li>
+    <li><a href="journal.html">Журнал</a></li>
+    <li><a href="maison.html">Дом Relictum</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="maison.html#concierge">Консьерж</a>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Главная</a> · Каталог</div>
+    <h1>Каталог</h1>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="filters">
+    <button class="chip on" data-f="all">Все миры</button>
+    <button class="chip" data-f="vita">Жизнь</button>
+    <button class="chip" data-f="terra">Земля</button>
+    <button class="chip" data-f="cosmos">Космос</button>
+    <button class="chip" data-f="grand">Монументы</button>
+    <button class="chip" data-f="editions">Editions</button>
+    <input id="search" placeholder="Поиск: вид, место, эпоха…" style="border:1px solid var(--hairline);background:transparent;padding:10px 16px;font-family:var(--font-ui);font-size:12px;letter-spacing:.06em;min-width:210px;color:var(--obsidian)">
+    <select id="sort" style="border:1px solid var(--hairline);background:transparent;padding:10px 14px;font-family:var(--font-ui);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--stone)">
+      <option value="default">Кураторский порядок</option>
+      <option value="asc">Цена: по возрастанию</option>
+      <option value="desc">Цена: по убыванию</option>
+    </select>
+    <span class="count" id="count"></span>
+  </div>
+  <div class="grid-objects" id="grid"></div>
+</div>
+
+<section class="concierge" style="margin-top:clamp(72px,9vw,140px);padding:0">
+  <img class="bg" src="../shared/img/atelier_gloves.jpg" alt="">
+  <div class="wrap">
+    <div class="inner">
+      <div class="label" style="color:var(--bronze)">Приватные продажи</div>
+      <h2>Часть коллекции не публикуется</h2>
+      <p>Черепа динозавров, крупные скелеты и уникальные метеориты мы показываем только лично. Запросите закрытый каталог.</p>
+      <a class="btn" style="border-color:#F4F0E8;color:#F4F0E8" href="maison.html#concierge">Запросить доступ</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-bottom" style="border:none;padding-top:0">
+      <span>© 2026 RELICTUM</span>
+      <span>Земля · Жизнь · Космос</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const CATALOG = [
+  {id:"R–0101", world:"cosmos", worldLabel:"Космос", name:"Палласит Сеймчан", latin:"Seymchan Pallasite", meta:"Магаданская область, Россия · ≈ 4,56 млрд лет<br>Срез 18 × 14 см · 1 240 г", price:"2 400 000 ₽", img:"prod_pallasite_seymchan"},
+  {id:"R–0102", world:"cosmos", worldLabel:"Космос", name:"Метеорит Сихотэ-Алинь", latin:"Sikhote-Alin Iron", meta:"Приморский край, Россия · падение 1947 г.<br>Индивидуальный экземпляр · 4,1 кг", price:"890 000 ₽", img:"cat_meteorite"},
+  {id:"R–0201", world:"vita", worldLabel:"Жизнь", name:"Зуб мегалодона", latin:"Otodus megalodon", meta:"Южная Каролина, США · 2,6–23 млн лет<br>15,4 см · музейное качество", price:"1 250 000 ₽", img:"prod_megalodon_tooth"},
+  {id:"R–0202", world:"vita", worldLabel:"Жизнь", name:"Череп ихтиозавра", latin:"Ichthyosauria indet.", meta:"Поволжье, Россия · ≈ 180 млн лет<br>62 см · препарация Relictum", price:"Цена по запросу", img:"prod_ichthyosaur_skull"},
+  {id:"R–0203", world:"vita", worldLabel:"Жизнь", name:"Зуб тираннозавра", latin:"Tyrannosaurus rex", meta:"Хелл-Крик, Монтана, США · 66–68 млн лет<br>9,8 см с корнем", price:"1 450 000 ₽", img:"prod_trex_tooth"},
+  {id:"R–0204", world:"vita", worldLabel:"Жизнь", name:"Коготь теропода", latin:"Dromaeosauridae", meta:"Кем-Кем, Марокко · ≈ 100 млн лет<br>11 см по дуге", price:"720 000 ₽", img:"prod_raptor_claw"},
+  {id:"R–0205", world:"vita", worldLabel:"Жизнь", name:"Трилобит Drotops", latin:"Drotops megalomanicus", meta:"Атласские горы, Марокко · ≈ 390 млн лет<br>Плита 34 × 28 см", price:"480 000 ₽", img:"prod_trilobite"},
+  {id:"R–0206", world:"vita", worldLabel:"Жизнь", name:"Плита с рыбами Грин-Ривер", latin:"Knightia · Diplomystus", meta:"Вайоминг, США · ≈ 50 млн лет<br>90 × 60 см · бронзовая рама", price:"940 000 ₽", img:"prod_fossil_fish"},
+  {id:"R–0207", world:"vita", worldLabel:"Жизнь", name:"Аммонит Cleoniceras", latin:"Cleoniceras besairiei", meta:"Махаджанга, Мадагаскар · ≈ 110 млн лет<br>Ø 28 см · полировка до перламутра", price:"680 000 ₽", img:"cat_ammonite"},
+  {id:"R–0301", world:"vita", worldLabel:"Жизнь", name:"Янтарь с инклюзом", latin:"Succinite · Diptera", meta:"Самбийский полуостров, Россия · ≈ 40 млн лет<br>7,2 × 5,1 см · 68 г", price:"390 000 ₽", img:"prod_amber_insect"},
+  {id:"R–0403", world:"vita", worldLabel:"Жизнь", name:"Бивень мамонта", latin:"Mammuthus primigenius", meta:"Якутия, Россия · ≈ 25 000 лет<br>168 см по дуге", price:"1 800 000 ₽", img:"prod_mammoth_tusk"},
+  {id:"R–0401", world:"terra", worldLabel:"Земля", name:"Спил окаменелого дерева", latin:"Araucarioxylon arizonicum", meta:"Аризона, США · ≈ 220 млн лет<br>Ø 74 см · зеркальная полировка", price:"560 000 ₽", img:"prod_petrified_wood"},
+  {id:"R–0402", world:"terra", worldLabel:"Земля", name:"Аметистовая жеода", latin:"Amethyst Geode", meta:"Артигас, Уругвай · ≈ 130 млн лет<br>Высота 96 см · латунный постамент", price:"340 000 ₽", img:"cat_minerals_amethyst"},
+  {id:"R–0501", world:"editions", worldLabel:"Editions", name:"Мегалодон · бронзовая витрина", latin:"Relictum Editions № 01", meta:"Мастерская Relictum · тираж 12 экз.<br>Бронза, музейное стекло, мрамор", price:"2 900 000 ₽", img:"editions_megalodon_vitrine"},
+  {id:"R–0601", world:"grand", worldLabel:"Монументы", name:"Череп трицератопса", latin:"Triceratops horridus", meta:"Хелл-Крик, США · ≈ 66 млн лет<br>210 × 160 см · гранитный подиум", price:"18 500 000 ₽", img:"grand_triceratops_skull"},
+  {id:"R–0602", world:"grand", worldLabel:"Монументы", name:"Скелет хищного динозавра", latin:"Dromaeosauridae", meta:"Монголия · ≈ 75 млн лет<br>2,1 м · охотничья поза, монтаж Relictum", price:"Цена по запросу", img:"grand_raptor_skeleton"},
+  {id:"R–0603", world:"grand", worldLabel:"Монументы", name:"Череп мозазавра", latin:"Mosasaurus beaugei", meta:"Марокко · ≈ 70 млн лет<br>150 см · бронзовые колонны", price:"4 800 000 ₽", img:"grand_mosasaur_skull"},
+  {id:"R–0604", world:"grand", worldLabel:"Монументы", name:"Скелет пещерного медведя", latin:"Ursus spelaeus", meta:"Карпаты · ≈ 40 000 лет<br>2,5 м в стойке · разборный каркас", price:"5 900 000 ₽", img:"grand_cavebear_skeleton"},
+  {id:"R–0605", world:"grand", worldLabel:"Монументы", name:"Череп мамонта с бивнями", latin:"Mammuthus primigenius", meta:"Якутия · ≈ 30 000 лет<br>Размах бивней 2,4 м", price:"7 400 000 ₽", img:"grand_mammoth_skull"},
+  {id:"R–0606", world:"grand", worldLabel:"Монументы", name:"Панно из аммонитов", latin:"Relictum Grand Wall", meta:"Мастерская Relictum · 110–180 млн лет<br>200 × 120 см · под конкретную стену", price:"3 200 000 ₽", img:"grand_ammonite_wall"}
+];
+
+const grid = document.getElementById('grid');
+const count = document.getElementById('count');
+const searchEl = document.getElementById('search');
+const sortEl = document.getElementById('sort');
+let activeFilter = 'all';
+
+const priceNum = p => { const d = (p.match(/\d/g) || []).join(''); return d ? +d : Infinity; };
+
+function render(filter) {
+  activeFilter = filter;
+  const q = (searchEl.value || '').trim().toLowerCase();
+  let items = CATALOG.filter(o => filter === 'all' || o.world === filter);
+  if (q) items = items.filter(o => (o.name + ' ' + o.latin + ' ' + o.meta + ' ' + o.worldLabel).toLowerCase().includes(q));
+  if (sortEl.value === 'asc') items = [...items].sort((a, b) => priceNum(a.price) - priceNum(b.price));
+  if (sortEl.value === 'desc') items = [...items].sort((a, b) => priceNum(b.price) - priceNum(a.price));
+  grid.innerHTML = items.map(o => `
+    <a class="obj-card" href="object.html">
+      <div class="ph"><img src="../shared/img/${o.img}.jpg" alt="${o.name}" loading="lazy"></div>
+      <div class="body">
+        <div class="id">${o.id} · ${o.worldLabel}</div>
+        <h3>${o.name}</h3>
+        <div class="latin">${o.latin}</div>
+        <div class="meta">${o.meta}</div>
+        <div class="price"><b>${o.price}</b><span>Смотреть</span></div>
+      </div>
+    </a>`).join('');
+  count.textContent = 'Объектов: ' + items.length;
+}
+searchEl.addEventListener('input', () => render(activeFilter));
+sortEl.addEventListener('change', () => render(activeFilter));
+
+document.querySelectorAll('.chip').forEach(ch => ch.addEventListener('click', () => {
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('on'));
+  ch.classList.add('on');
+  render(ch.dataset.f);
+}));
+
+const hash = location.hash.replace('#','');
+const start = ['vita','terra','cosmos','editions','grand'].includes(hash) ? hash : 'all';
+document.querySelectorAll('.chip').forEach(c => c.classList.toggle('on', c.dataset.f === start));
+render(start);
+</script>
+</body>
+</html>

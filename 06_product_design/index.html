@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RELICTUM — Продуктовая книга: оправы, витрины, интеграция, упаковка</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ivory:#F4F0E8; --bone:#FBF8F1; --black:#111111; --bronze:#B08A55; --deep:#9A6D34;
+  --sand:#D8C8AF; --stone:#7A7267; --line:rgba(154,109,52,.28);
+  --serif:'Cormorant Garamond',serif; --sans:'Inter',sans-serif;
+  --gut:clamp(20px,4vw,60px);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--ivory); color:var(--black); font-family:var(--sans); font-weight:300; line-height:1.65; font-size:15.5px; }
+img { max-width:100%; display:block; }
+h1,h2,h3,h4 { font-family:var(--serif); font-weight:400; line-height:1.1; }
+.wrap { max-width:1240px; margin:0 auto; padding:0 var(--gut); }
+.label { font-size:11px; font-weight:500; letter-spacing:.24em; text-transform:uppercase; color:var(--deep); }
+section { padding:72px 0; border-bottom:1px solid var(--line); }
+section h2 { font-size:clamp(30px,3.4vw,50px); margin:14px 0 16px; }
+.intro { color:var(--stone); max-width:660px; }
+.num { font-family:var(--serif); font-size:15px; color:var(--deep); letter-spacing:.12em; }
+
+.cover { min-height:82svh; display:grid; align-items:center; border-bottom:1px solid var(--line); position:relative; overflow:hidden; }
+.cover img.bg { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.98; }
+.cover::after { content:''; position:absolute; inset:0; background:linear-gradient(90deg, rgba(244,240,232,.95) 6%, rgba(244,240,232,.6) 40%, transparent 70%); }
+.cover .inner { position:relative; z-index:2; padding:0 var(--gut); max-width:660px; margin-left:max(calc((100vw - 1240px)/2), 0px); }
+.cover h1 { font-size:clamp(38px,5vw,72px); margin:20px 0 18px; }
+.cover h1 em { font-style:italic; color:var(--deep); }
+.cover p { color:var(--stone); max-width:460px; }
+
+.cards { display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(16px,2.2vw,32px); margin-top:44px; }
+@media (max-width:960px){ .cards{ grid-template-columns:1fr; } }
+.card { background:var(--bone); border:1px solid rgba(154,109,52,.16); display:flex; flex-direction:column; }
+.card .ph { aspect-ratio:4/5; overflow:hidden; }
+.card .ph.wide { aspect-ratio:3/2; }
+.card .ph img { width:100%; height:100%; object-fit:cover; transition:transform 1.2s cubic-bezier(.23,1,.32,1); }
+.card:hover .ph img { transform:scale(1.04); }
+.card .body { padding:22px 24px 26px; flex:1; display:flex; flex-direction:column; }
+.card h3 { font-size:23px; margin:8px 0 8px; }
+.card p { font-size:13.5px; color:var(--stone); }
+.card .specs { margin-top:auto; padding-top:16px; }
+.card .specs dl { display:grid; grid-template-columns:auto 1fr; gap:6px 18px; font-size:12px; border-top:1px solid var(--line); padding-top:14px; }
+.card .specs dt { color:var(--deep); letter-spacing:.14em; text-transform:uppercase; font-size:10px; padding-top:2px; }
+.card .specs dd { color:var(--stone); }
+
+.split { display:grid; grid-template-columns:1fr 1fr; gap:clamp(24px,4vw,70px); align-items:center; margin-top:44px; }
+@media (max-width:900px){ .split{ grid-template-columns:1fr; } }
+.split .media { overflow:hidden; }
+.split .media img { width:100%; height:100%; object-fit:cover; }
+.split h3 { font-size:clamp(24px,2.4vw,34px); margin:12px 0 12px; }
+.split p { color:var(--stone); font-size:14.5px; max-width:480px; margin-bottom:12px; }
+
+.steps { display:grid; grid-template-columns:repeat(6,1fr); gap:14px; margin-top:44px; }
+@media (max-width:1000px){ .steps{ grid-template-columns:repeat(2,1fr); } }
+.step { border-top:1px solid var(--line); padding-top:16px; }
+.step .n { font-family:var(--serif); font-size:26px; color:var(--deep); }
+.step h4 { font-size:17px; margin:8px 0 6px; }
+.step p { font-size:12.5px; color:var(--stone); }
+
+.rules { display:grid; grid-template-columns:1fr 1fr 1fr; gap:30px; margin-top:40px; }
+@media (max-width:900px){ .rules{ grid-template-columns:1fr; } }
+.rule-card { border-left:2px solid var(--bronze); padding:4px 0 4px 22px; }
+.rule-card h4 { font-size:19px; margin-bottom:6px; }
+.rule-card p { font-size:13px; color:var(--stone); }
+
+.band { background:var(--black); color:var(--ivory); }
+.band .label { color:var(--bronze); }
+.band section, .band-inner { border:none; }
+.band p { color:rgba(244,240,232,.72); }
+.band .card { background:#1C1B19; border-color:rgba(176,138,85,.2); }
+.band .card p, .band .card .specs dd { color:rgba(244,240,232,.6); }
+.band .rule-card p { color:rgba(244,240,232,.6); }
+footer { padding:60px var(--gut); text-align:center; }
+footer .word { font-family:var(--serif); font-size:26px; letter-spacing:.34em; text-indent:.34em; }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<header class="cover">
+  <img class="bg" src="../shared/img/mount_bronze_cradle.jpg" alt="Бронзовая колыбель с аммонитом">
+  <div class="inner">
+    <div class="label">Relictum · Продуктовая книга v1.0</div>
+    <h1>Оправа<br>для <em>времени</em></h1>
+    <p>Как объект глубокого времени становится экспонатом: подставки, витрины, интеграция в интерьер, упаковка и документы дома.</p>
+  </div>
+</header>
+
+<!-- 01 ПОДСТАВКИ -->
+<section>
+  <div class="wrap">
+    <div class="num">Раздел 01</div>
+    <h2>Шесть оправ дома</h2>
+    <p class="intro">Ювелирный принцип: оправа подчинена камню. Каждый тип разработан под класс объектов, изготавливается в мастерской Relictum и клеймится номером экспоната.</p>
+
+    <div class="cards">
+      <div class="card">
+        <div class="ph"><img src="../shared/img/mount_bronze_pin.jpg" alt="Бронзовый пин"></div>
+        <div class="body">
+          <div class="label">Оправа № 1 · The Pin</div>
+          <h3>Бронзовый пин</h3>
+          <p>Кованый держатель-коготь на цилиндре чёрного мрамора Marquina. Классика дома для зубов, когтей и небольших костей: объект парит, металл почти невидим.</p>
+          <div class="specs"><dl>
+            <dt>Объекты</dt><dd>Зубы, когти, позвонки до 30 см</dd>
+            <dt>Материалы</dt><dd>Патинированная бронза · мрамор Nero Marquina</dd>
+            <dt>Опция</dt><dd>Гравировка шифра на основании</dd>
+          </dl></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="../shared/img/mount_bronze_cradle.jpg" alt="Скульптурная колыбель"></div>
+        <div class="body">
+          <div class="label">Оправа № 2 · The Cradle</div>
+          <h3>Скульптурная колыбель</h3>
+          <p>Литая бронзовая ветвь, держащая аммонит или минерал. Сама подставка — коллекционный предмет: отливается вручную, полированные срезы на тёмной патине.</p>
+          <div class="specs"><dl>
+            <dt>Объекты</dt><dd>Аммониты, жеоды, янтарь</dd>
+            <dt>Материалы</dt><dd>Литая бронза, два финиша патины</dd>
+            <dt>Опция</dt><dd>Авторская форма под конкретный объект</dd>
+          </dl></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="../shared/img/mount_acrylic_monolith.jpg" alt="Акриловый монолит"></div>
+        <div class="body">
+          <div class="label">Оправа № 3 · The Monolith</div>
+          <h3>Акриловый монолит</h3>
+          <p>Объект, парящий в оптически чистом блоке на латунной плите. Современный музейный приём для метеоритных срезов и хрупких препаратов: защита и невесомость.</p>
+          <div class="specs"><dl>
+            <dt>Объекты</dt><dd>Срезы метеоритов, тонкие плиты, лунное вещество</dd>
+            <dt>Материалы</dt><dd>Акрил museum-grade · латунь</dd>
+            <dt>Опция</dt><dd>УФ-защита, скрытая подсветка снизу</dd>
+          </dl></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="../shared/img/prod_pallasite_seymchan.jpg" alt="Латунный мольберт"></div>
+        <div class="body">
+          <div class="label">Оправа № 4 · The Easel</div>
+          <h3>Латунный мольберт</h3>
+          <p>Срез палласита как картина: латунный мольберт держит пластину вертикально, позволяя свету проходить сквозь оливины. Для всего, что красиво на просвет.</p>
+          <div class="specs"><dl>
+            <dt>Объекты</dt><dd>Срезы палласитов, агатов, окаменелого дерева</dd>
+            <dt>Материалы</dt><dd>Латунь, регулируемый угол</dd>
+            <dt>Опция</dt><dd>Контровая LED-панель в основании</dd>
+          </dl></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="../shared/img/mount_rotating_pedestal.jpg" alt="Поворотный пьедестал"></div>
+        <div class="body">
+          <div class="label">Оправа № 5 · The Orbit</div>
+          <h3>Поворотный пьедестал</h3>
+          <p>Круглый мраморный пьедестал с тихим поворотным механизмом и тёплым кольцом света под стеклом. Объект медленно вращается — как планета. Жест часового бутика.</p>
+          <div class="specs"><dl>
+            <dt>Объекты</dt><dd>Метеориты, черепа, минералы до 40 кг</dd>
+            <dt>Материалы</dt><dd>Мрамор · сталь · стекло · LED 2700K</dd>
+            <dt>Опция</dt><dd>Управление со смартфона, два режима скорости</dd>
+          </dl></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="../shared/img/mount_vitrine_pedestal.jpg" alt="Витрина на пьедестале"></div>
+        <div class="body">
+          <div class="label">Оправа № 6 · The Vitrine</div>
+          <h3>Музейная витрина</h3>
+          <p>Бронзовый каркас, безбликовое стекло, каннелированный мраморный пьедестал и точечный свет внутри. Для главных объектов коллекции — интимно, как в ювелирном сейфе.</p>
+          <div class="specs"><dl>
+            <dt>Объекты</dt><dd>Черепа, скелеты малых форм, Editions</dd>
+            <dt>Материалы</dt><dd>Бронза · low-iron стекло · мрамор</dd>
+            <dt>Опция</dt><dd>Климат-контроль, замок, датчик вибрации</dd>
+          </dl></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 СТЕНЫ -->
+<section>
+  <div class="wrap">
+    <div class="num">Раздел 02</div>
+    <h2>Настенные системы</h2>
+    <p class="intro">Плиты с рыбами, панно из аммонитов и кабинет редкостей — три способа отдать вертикаль времени.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="ph"><img src="../shared/img/mount_wall_system.jpg" alt="Настенная плита"></div>
+        <div class="body">
+          <div class="label">Wall № 1</div>
+          <h3>Плита в бронзовой раме</h3>
+          <p>Скрытый стальной кляймер держит камень вплотную к стене; верхний свет «проявляет» рельеф. Плиты до 120 кг.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="../shared/img/grand_ammonite_wall.jpg" alt="Панно из аммонитов"></div>
+        <div class="body">
+          <div class="label">Wall № 2</div>
+          <h3>Панно Grand Wall</h3>
+          <p>Композиция из десятков аммонитов на каменной плите — проектируется под конкретную стену, от гостиной до лобби отеля.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="../shared/img/int_curiosity_wall.jpg" alt="Кабинет редкостей"></div>
+        <div class="body">
+          <div class="label">Wall № 3</div>
+          <h3>Кабинет редкостей</h3>
+          <p>Сетка бронзовых кубов с микроподсветкой: коллекция малых сокровищ как единая инсталляция. Растёт вместе с коллекцией — куб за кубом.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 ИНТЕГРАЦИЯ -->
+<section>
+  <div class="wrap">
+    <div class="num">Раздел 03</div>
+    <h2>Интеграция в пространство</h2>
+    <p class="intro">От ниши в травертине до скелета в атриуме — сценарии, которые мы проектируем вместе с архитекторами.</p>
+
+    <div class="split">
+      <div class="media"><img src="../shared/img/grand_atrium_skeleton.jpg" alt="Скелет в атриуме"></div>
+      <div>
+        <div class="label">Сценарий · Атриум</div>
+        <h3>Скелет как центр архитектуры</h3>
+        <p>Монументальная форма в двусветном пространстве: чёрный мраморный подиум, музейный свет, обход со всех сторон. Проект включает расчёт нагрузки, логистику через окно/кран и монтаж командой дома за 2–3 дня.</p>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="ph"><img src="../shared/img/int_niche_ammonite.jpg" alt="Ниша с подсветкой"></div>
+        <div class="body">
+          <div class="label">Сценарий · Ниша</div>
+          <h3>Световая ниша</h3>
+          <p>Травертиновая ниша со скрытым контуром света. Планируется на стадии отделки — мы передаём архитектору чертёж и спецификацию света.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="../shared/img/int_library_shelf.jpg" alt="Библиотека"></div>
+        <div class="body">
+          <div class="label">Сценарий · Библиотека</div>
+          <h3>Между книг</h3>
+          <p>Малые объекты в нишах книжного шкафа: трилобит рядом с первыми изданиями. Самый камерный вход в коллекционирование.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="../shared/img/int_boardroom_triceratops.jpg" alt="Переговорная"></div>
+        <div class="body">
+          <div class="label">Сценарий · Офис</div>
+          <h3>Тихая сила переговорной</h3>
+          <p>Череп трицератопса за спиной хозяина кабинета. Для штаб-квартир и family-офисов — аргумент весомее любого арта.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="rules">
+      <div class="rule-card">
+        <h4>Свет · раковый</h4>
+        <p>Плиты и рельефы освещаются под острым углом сверху — тени «проявляют» скелет в камне.</p>
+      </div>
+      <div class="rule-card">
+        <h4>Свет · контровой</h4>
+        <p>Палласиты, агаты и янтарь живут на просвет: LED-панель 2700K позади или под объектом.</p>
+      </div>
+      <div class="rule-card">
+        <h4>Свет · точечный</h4>
+        <p>Черепа и скелеты — один узкий луч 15–24° с золотым контуром. Никогда не заливать общим светом.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 УПАКОВКА (тёмная полоса) -->
+<div class="band">
+<section>
+  <div class="wrap">
+    <div class="num" style="color:var(--bronze)">Раздел 04</div>
+    <h2>Упаковка · The Relictum Ritual</h2>
+    <p class="intro">Три слоя ритуала: футляр, досье, передача. Упаковка проектируется как часть продукта — её сохраняют.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="ph wide"><img src="../shared/img/pack_leather_box_open.jpg" alt="Кожаный футляр"></div>
+        <div class="body">
+          <div class="label">Слой 1</div>
+          <h3>Кожаный футляр</h3>
+          <p>Полнозернистая кожа, тиснёная золотом комета, ложе из замши точно по форме объекта. Для малых форм и Editions.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph wide"><img src="../shared/img/pack_gift_box_closed.jpg" alt="Коробка"></div>
+        <div class="body">
+          <div class="label">Слой 2</div>
+          <h3>Коробка дома</h3>
+          <p>Матовый чёрный картон, золотая комета, бронзовая лента. Внутри — футляр и льняная папка досье.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph wide"><img src="../shared/img/pack_crate_delivery.jpg" alt="Музейный ящик"></div>
+        <div class="body">
+          <div class="label">Слой 3</div>
+          <h3>Музейный ящик</h3>
+          <p>Для крупных форм: деревянный ящик с ложементом, климат-барьер, страхование, white-glove монтаж.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- 05 ДОКУМЕНТЫ -->
+<section>
+  <div class="wrap">
+    <div class="num">Раздел 05</div>
+    <h2>Документы объекта</h2>
+    <p class="intro">Provenance Card — паспорт, который делает вещь коллекционной. Печатается на хлопковой бумаге, живёт дольше владельцев.</p>
+    <div class="split">
+      <div class="media"><img src="../shared/img/prov_kit_flatlay.jpg" alt="Комплект документов"></div>
+      <div>
+        <div class="label">Комплект</div>
+        <h3>Что получает клиент</h3>
+        <p>— Сертификат подлинности с золотой кометой и подписью эксперта<br>
+        — Нумерованная карта образца (шифр R–XXXX)<br>
+        — Льняная папка досье: архивные фото, заключения, история находки<br>
+        — Сургучная печать дома<br>
+        — Бронзовая табличка с QR-кодом цифрового досье</p>
+      </div>
+    </div>
+    <div class="split">
+      <div>
+        <div class="label">Деталь</div>
+        <h3>Бронзовая табличка экспоната</h3>
+        <p>Гравированная табличка крепится к основанию: имя вида, эпоха, шифр. QR ведёт в цифровое досье, которое передаётся при перепродаже — у объекта появляется непрерывная биография.</p>
+      </div>
+      <div class="media"><img src="../shared/img/prov_bronze_plaque.jpg" alt="Бронзовая табличка"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 ПУТЬ -->
+<section style="border:none">
+  <div class="wrap">
+    <div class="num">Раздел 06</div>
+    <h2>Путь объекта к клиенту</h2>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h4>Запрос</h4><p>Каталог, консьерж или закрытый показ. Бриф: объект, пространство, бюджет.</p></div>
+      <div class="step"><div class="n">02</div><h4>Экспертиза</h4><p>Атрибуция, провенанс, легальность экспорта. Отказ от объекта — тоже результат.</p></div>
+      <div class="step"><div class="n">03</div><h4>Оправа</h4><p>Выбор из шести оправ дома или авторская форма под объект. Эскиз — на согласование.</p></div>
+      <div class="step"><div class="n">04</div><h4>Документы</h4><p>Provenance Card, сертификат, цифровое досье, гравировка шифра.</p></div>
+      <div class="step"><div class="n">05</div><h4>Передача</h4><p>Футляр и коробка дома или музейный ящик. White-glove доставка в любую точку мира.</p></div>
+      <div class="step"><div class="n">06</div><h4>Инсталляция</h4><p>Монтаж, свет, консервация раз в год. Дом остаётся рядом с объектом навсегда.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img src="../shared/brand/Relictum_lockup_light.png" alt="RELICTUM" style="width:min(420px,70vw);margin:0 auto;display:block">
+  <div class="label" style="margin-top:14px">Оправа для времени · Продуктовая книга v1.0 · MMXXVI</div>
+</footer>
+
+</body>
+</html>

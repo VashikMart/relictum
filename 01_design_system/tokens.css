@@ -1,0 +1,69 @@
+/* ============================================================
+   RELICTUM — Design Tokens v1.0
+   «Роскошь вне времени» · Земля · Жизнь · Космос
+   ============================================================ */
+
+:root {
+  /* ---- Цвет: ядро ---- */
+  --rel-ivory:        #F4F0E8;  /* фон, светлая тема */
+  --rel-bone:         #FBF8F1;  /* карточки, подложки */
+  --rel-obsidian:     #111111;  /* текст, тёмная тема */
+  --rel-graphite:     #1C1B19;  /* тёмные поверхности */
+  --rel-bronze:       #B08A55;  /* фирменный акцент */
+  --rel-bronze-deep:  #9A6D34;  /* линии, мелкая типографика */
+  --rel-sand:         #D8C8AF;  /* второстепенные поверхности */
+  --rel-midnight:     #0F1B2E;  /* космос, ночная палитра */
+  --rel-stone:        #7A7267;  /* вторичный текст */
+  --rel-hairline:     rgba(154, 109, 52, .28); /* тонкие линии */
+
+  /* ---- Типографика ---- */
+  --font-display: 'Cormorant Garamond', 'Didot', 'Times New Roman', serif;
+  --font-ui:      'Inter', 'Avenir Next', 'Helvetica Neue', sans-serif;
+
+  --fs-hero:    clamp(44px, 6vw, 88px);
+  --fs-h1:      clamp(36px, 4.5vw, 64px);
+  --fs-h2:      clamp(28px, 3.2vw, 44px);
+  --fs-h3:      clamp(22px, 2.2vw, 30px);
+  --fs-body:    16px;
+  --fs-small:   13px;
+  --fs-caption: 11px;
+
+  --ls-wordmark: .34em;  /* R E L I C T U M */
+  --ls-label:    .22em;  /* кнопки, рубрики */
+  --ls-caption:  .14em;
+
+  /* ---- Сетка и ритм ---- */
+  --max-width: 1400px;
+  --gutter: clamp(20px, 4vw, 64px);
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 40px;
+  --space-5: 64px;
+  --space-6: 104px;
+  --space-7: 168px;
+
+  /* ---- Прочее ---- */
+  --radius: 2px;              /* почти прямые углы — музейность */
+  --shadow-soft: 0 24px 60px -30px rgba(17, 17, 17, .25);
+  --transition: .45s cubic-bezier(.23, 1, .32, 1);
+}
+
+/* Тёмная тема (Monolith) переопределяет роли */
+.theme-dark {
+  --bg: var(--rel-obsidian);
+  --surface: var(--rel-graphite);
+  --text: var(--rel-ivory);
+  --text-2: #A79E90;
+  --accent: var(--rel-bronze);
+  --hairline: rgba(176, 138, 85, .22);
+}
+
+.theme-light {
+  --bg: var(--rel-ivory);
+  --surface: var(--rel-bone);
+  --text: var(--rel-obsidian);
+  --text-2: var(--rel-stone);
+  --accent: var(--rel-bronze-deep);
+  --hairline: var(--rel-hairline);
+}

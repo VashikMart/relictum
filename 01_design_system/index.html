@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RELICTUM — Дизайн-система v1.0</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--rel-ivory); color:var(--rel-obsidian); font-family:var(--font-ui); font-weight:300; line-height:1.65; }
+img { max-width:100%; display:block; }
+.wrap { max-width:1200px; margin:0 auto; padding:0 clamp(20px,4vw,60px); }
+h1,h2,h3 { font-family:var(--font-display); font-weight:400; line-height:1.1; }
+.label { font-size:11px; font-weight:500; letter-spacing:.24em; text-transform:uppercase; color:var(--rel-bronze-deep); }
+section { padding:70px 0; border-bottom:1px solid var(--rel-hairline); }
+section h2 { font-size:clamp(30px,3.4vw,48px); margin:14px 0 30px; }
+.side-note { color:var(--rel-stone); font-size:14.5px; max-width:640px; }
+
+/* cover */
+.cover { min-height:88svh; display:grid; place-items:center; text-align:center; border-bottom:1px solid var(--rel-hairline); }
+.cover img { height:120px; margin:0 auto 30px; }
+.cover .word { font-family:var(--font-display); font-size:clamp(44px,6vw,84px); letter-spacing:.34em; text-indent:.34em; }
+.cover .ver { margin-top:26px; }
+
+/* swatches */
+.swatches { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; }
+@media (max-width:800px){ .swatches{ grid-template-columns:repeat(2,1fr);} }
+.sw { border:1px solid var(--rel-hairline); }
+.sw .chip { height:130px; }
+.sw .info { padding:14px 16px; font-size:12px; background:var(--rel-bone); }
+.sw .info b { display:block; font-weight:500; letter-spacing:.06em; }
+.sw .info span { color:var(--rel-stone); }
+
+/* type specimens */
+.spec-row { display:grid; grid-template-columns:220px 1fr; gap:30px; padding:26px 0; border-top:1px solid var(--rel-hairline); align-items:baseline; }
+@media (max-width:700px){ .spec-row{ grid-template-columns:1fr; gap:8px; } }
+.spec-row .meta { font-size:12px; color:var(--rel-stone); letter-spacing:.06em; }
+
+/* grid of components */
+.comp-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+@media (max-width:800px){ .comp-grid{ grid-template-columns:1fr; } }
+.comp { border:1px solid var(--rel-hairline); padding:36px; background:var(--rel-bone); }
+.comp h3 { font-size:22px; margin-bottom:20px; }
+.btn { display:inline-block; padding:16px 34px; font-size:11px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; border:1px solid var(--rel-obsidian); color:var(--rel-obsidian); background:transparent; font-family:var(--font-ui); }
+.btn.solid { background:var(--rel-obsidian); color:var(--rel-ivory); }
+.btn.bronze { border-color:var(--rel-bronze-deep); color:var(--rel-bronze-deep); }
+.dark-demo { background:var(--rel-obsidian); color:var(--rel-ivory); padding:36px; border:none; }
+.dark-demo .btn { border-color:var(--rel-bronze); color:var(--rel-bronze); }
+
+/* photos */
+.ph-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+@media (max-width:700px){ .ph-grid{ grid-template-columns:1fr; } }
+.ph-grid figure { border:1px solid var(--rel-hairline); background:var(--rel-bone); }
+.ph-grid img { aspect-ratio:4/3; object-fit:cover; width:100%; }
+.ph-grid figcaption { padding:12px 16px; font-size:12px; color:var(--rel-stone); }
+
+/* do dont */
+.dd { display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+@media (max-width:700px){ .dd{ grid-template-columns:1fr; } }
+.dd ul { list-style:none; }
+.dd li { padding:12px 0 12px 30px; border-bottom:1px solid var(--rel-hairline); font-size:14.5px; position:relative; }
+.dd li::before { position:absolute; left:0; font-size:14px; }
+.dd .yes li::before { content:'✓'; color:var(--rel-bronze-deep); }
+.dd .no li::before { content:'✕'; color:#8a3a2a; }
+.dd h3 { font-size:20px; margin-bottom:10px; }
+
+/* voice */
+.voice-ex { font-family:var(--font-display); font-size:clamp(22px,2.6vw,32px); font-style:italic; padding:26px 34px; border-left:2px solid var(--rel-bronze); margin:20px 0; background:var(--rel-bone); }
+
+table.tok { width:100%; border-collapse:collapse; font-size:13.5px; }
+table.tok td, table.tok th { text-align:left; padding:12px 14px; border-bottom:1px solid var(--rel-hairline); }
+table.tok th { font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--rel-stone); font-weight:500; }
+code { font-family:ui-monospace, Menlo, monospace; font-size:12.5px; color:var(--rel-bronze-deep); }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div>
+    <img src="../shared/brand/Relictum_lockup_light.png" alt="RELICTUM — Роскошь вне времени" style="width:min(720px,80vw);margin:0 auto">
+    <div class="label ver" style="color:var(--rel-stone);margin-top:26px">Дизайн-система · v1.0 · июль 2026</div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="label">01 · Идея бренда</div>
+    <h2>Rare objects from deep time</h2>
+    <p class="side-note">Relictum — дом редких свидетельств времени. Не магазин окаменелостей и не сувенирная лавка: галерея, в которой предметы старше человечества оформлены как произведения искусства. Тон: Sotheby's Natural History × современный кабинет редкостей × Stargift.</p>
+    <div class="voice-ex">«Мы не продаём окаменелости. Мы передаём время».</div>
+    <table class="tok" style="max-width:640px">
+      <tr><th>Оси бренда</th><th>Содержание</th></tr>
+      <tr><td>Земля · Terra</td><td>Минералы, жеоды, окаменелое дерево</td></tr>
+      <tr><td>Жизнь · Vita</td><td>Динозавры, мегалодон, аммониты, мамонтовая фауна</td></tr>
+      <tr><td>Космос · Cosmos</td><td>Метеориты, палласиты, Луна и Марс</td></tr>
+      <tr><td>Editions</td><td>Авторские объекты дома, лимитированные тиражи</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="label">02 · Логотип</div>
+    <h2>Комета и словесный знак</h2>
+    <p class="side-note">Знак — золотая комета: объект, летящий сквозь время. Словесный знак — антиква с разрядкой .34em. Комета допускается отдельно (фавикон, тиснение, печать). Охранное поле — высота буквы R со всех сторон.</p>
+    <div class="ph-grid" style="margin-top:30px">
+      <figure><div style="padding:34px;background:#FBF8F1"><img src="../shared/brand/Relictum_logo_vertical.svg" style="aspect-ratio:auto" alt="Вертикальный логотип"></div><figcaption>Основной вертикальный лок-ап · светлый фон</figcaption></figure>
+      <figure><div style="padding:34px;background:#111111"><img src="../shared/brand/Relictum_logo_vertical_dark_gold.svg" style="aspect-ratio:auto" alt="Тёмная версия"></div><figcaption>Тёмный фон · золото</figcaption></figure>
+      <figure><div style="padding:34px;background:#FBF8F1;display:grid;place-items:center"><img src="../shared/brand/Relictum_final_icon_crop.svg" style="aspect-ratio:auto;height:120px" alt="Знак"></div><figcaption>Знак-комета · автономное использование</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="label">03 · Палитра</div>
+    <h2>Кость, обсидиан, бронза</h2>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#F4F0E8"></div><div class="info"><b>Ivory</b><span>#F4F0E8 · фон света</span></div></div>
+      <div class="sw"><div class="chip" style="background:#111111"></div><div class="info"><b>Obsidian</b><span>#111111 · текст, тьма</span></div></div>
+      <div class="sw"><div class="chip" style="background:#B08A55"></div><div class="info"><b>Bronze</b><span>#B08A55 · акцент</span></div></div>
+      <div class="sw"><div class="chip" style="background:#9A6D34"></div><div class="info"><b>Deep Bronze</b><span>#9A6D34 · линии, капс</span></div></div>
+      <div class="sw"><div class="chip" style="background:#D8C8AF"></div><div class="info"><b>Warm Sand</b><span>#D8C8AF · поверхности</span></div></div>
+    </div>
+    <p class="side-note" style="margin-top:26px">Дополнительно: Midnight #0F1B2E (космические сюжеты), Stone #7A7267 (вторичный текст), Bone #FBF8F1 (карточки). Правило: золото — не более 5% площади макета. Роскошь создаётся воздухом, а не золотом.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="label">04 · Типографика</div>
+    <h2>Cormorant Garamond + Inter</h2>
+    <div class="spec-row">
+      <div class="meta">Display · Cormorant Garamond 400<br>clamp(44–96px) · 1.08</div>
+      <div style="font-family:var(--font-display);font-size:64px;line-height:1.08">Роскошь вне времени</div>
+    </div>
+    <div class="spec-row">
+      <div class="meta">Italic accent · для одного слова</div>
+      <div style="font-family:var(--font-display);font-size:44px;font-style:italic;color:var(--rel-bronze-deep)">времени · vita · память</div>
+    </div>
+    <div class="spec-row">
+      <div class="meta">Латинское имя вида · Italic 20–22px</div>
+      <div style="font-family:var(--font-display);font-style:italic;font-size:22px;color:var(--rel-bronze-deep)">Tyrannosaurus rex · Seymchan Pallasite</div>
+    </div>
+    <div class="spec-row">
+      <div class="meta">Label · Inter 500 · 11px · .24em · caps</div>
+      <div class="label">Природа · Искусство · Вечность</div>
+    </div>
+    <div class="spec-row">
+      <div class="meta">Body · Inter 300 · 16px · 1.65</div>
+      <div style="max-width:560px">Каждый объект проходит экспертизу и получает Relictum Provenance Card — паспорт с историей происхождения, подписью эксперта и сертификатом подлинности.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="label">05 · Компоненты</div>
+    <h2>Интерфейс галереи</h2>
+    <div class="comp-grid">
+      <div class="comp">
+        <h3>Кнопки · светлая тема</h3>
+        <p style="display:flex;gap:14px;flex-wrap:wrap"><a class="btn solid">Смотреть каталог</a><a class="btn">Персональный подбор</a><a class="btn bronze">Запросить объект</a></p>
+        <p style="font-size:12.5px;color:var(--rel-stone);margin-top:18px">Прямые углы, капс с разрядкой .22em, ховер — инверсия. Никаких скруглений и теней.</p>
+      </div>
+      <div class="comp dark-demo">
+        <h3>Кнопки · тёмная тема</h3>
+        <p style="display:flex;gap:14px;flex-wrap:wrap"><a class="btn">Запросить объект</a><a class="btn" style="border-color:rgba(244,240,232,.5);color:#F4F0E8">Программа сезона</a></p>
+        <p style="font-size:12.5px;color:rgba(244,240,232,.55);margin-top:18px">На тьме кнопки обводятся бронзой или костью. Заливка появляется только на ховере.</p>
+      </div>
+      <div class="comp">
+        <h3>Карточка объекта</h3>
+        <table class="tok">
+          <tr><td>Фото</td><td>4:5 · объект на слоновой кости</td></tr>
+          <tr><td>Шифр</td><td><code>R–0101 · Космос</code></td></tr>
+          <tr><td>Имя</td><td>Serif 24px + латинское имя италиком</td></tr>
+          <tr><td>Мета</td><td>Место · возраст · размер</td></tr>
+          <tr><td>Цена</td><td>Serif 20px или «Цена по запросу»</td></tr>
+        </table>
+      </div>
+      <div class="comp">
+        <h3>Provenance Card</h3>
+        <table class="tok">
+          <tr><td>Номер</td><td>Уникальный шифр дома <code>R–XXXX</code></td></tr>
+          <tr><td>Атрибуция</td><td>Вид · период · возраст · находка</td></tr>
+          <tr><td>Экспертиза</td><td>Подпись профильного эксперта</td></tr>
+          <tr><td>Досье</td><td>QR-код цифрового паспорта</td></tr>
+          <tr><td>Материал</td><td>Хлопковая бумага · сургучная печать</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="label">06 · Фотостиль</div>
+    <h2>Объект как скульптура</h2>
+    <div class="ph-grid">
+      <figure><img src="../shared/img/prod_megalodon_tooth.jpg" alt=""><figcaption>Каталог: слоновая кость, мягкая тень, один объект</figcaption></figure>
+      <figure><img src="../shared/img/hero_dark_skull.jpg" alt=""><figcaption>Кампания: тьма, один луч, золотой контур</figcaption></figure>
+      <figure><img src="../shared/img/cat_interior_room.jpg" alt=""><figcaption>Интерьер: тихая роскошь, тёплый дневной свет</figcaption></figure>
+    </div>
+    <p class="side-note" style="margin-top:24px">Три режима съёмки: каталожный (ivory seamless #F4F0E8), драматический (obsidian, один источник света) и интерьерный. Всегда один герой в кадре. Никаких коллажей, белых боксов и «магазинных» ракурсов.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="label">07 · Голос бренда</div>
+    <h2>Спокойный, точный, вечный</h2>
+    <div class="voice-ex">«Кристаллы оливина, застывшие в никелистом железе, — вещество старше Земли».</div>
+    <div class="dd" style="margin-top:30px">
+      <div class="yes">
+        <h3>Да</h3>
+        <ul>
+          <li>Латинские имена видов и точные датировки</li>
+          <li>Короткие декларативные фразы: «Один объект — одна вечность»</li>
+          <li>История и происхождение прежде цены</li>
+          <li>Русский текст + латинские термины науки</li>
+        </ul>
+      </div>
+      <div class="no">
+        <h3>Нет</h3>
+        <ul>
+          <li>«Купи», «скидка», «хит продаж», восклицательные знаки</li>
+          <li>Мультяшные динозавры и Jurassic Park-эстетика</li>
+          <li>Черепа-эмблемы, готика, хоррор</li>
+          <li>Золото на каждом элементе</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="border:none">
+  <div class="wrap">
+    <div class="label">08 · Токены</div>
+    <h2>Для разработки</h2>
+    <p class="side-note">Все переменные — в файле <code>tokens.css</code> (подключается и в светлой, и в тёмной теме: классы <code>.theme-light</code> / <code>.theme-dark</code>). Сетка: max-width 1400px, желоб clamp(20–64px), вертикальный ритм 8px. Анимации: cubic-bezier(.23,1,.32,1), появление 1s, ховеры 0.4s.</p>
+    <p style="margin-top:30px"><span class="label">Файлы пакета:</span></p>
+    <table class="tok" style="max-width:640px">
+      <tr><td><code>01_design_system/tokens.css</code></td><td>переменные CSS</td></tr>
+      <tr><td><code>00_brand_assets/*.svg</code></td><td>логотипы в векторе</td></tr>
+      <tr><td><code>02_site_v1_gallery/</code></td><td>сайт V1 «The Gallery»</td></tr>
+      <tr><td><code>03_site_v2_monolith/</code></td><td>сайт V2 «Monolith»</td></tr>
+      <tr><td><code>04_presentation/</code></td><td>презентация бренда</td></tr>
+      <tr><td><code>05_art/</code></td><td>арт-материалы 2K (Higgsfield)</td></tr>
+    </table>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RELICTUM — Instagram: лента, посты, тексты</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ivory:#F4F0E8; --bone:#FBF8F1; --black:#111111; --bronze:#B08A55; --deep:#9A6D34;
+  --stone:#7A7267; --line:rgba(154,109,52,.28);
+  --serif:'Cormorant Garamond',serif; --sans:'Inter',sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--ivory); color:var(--black); font-family:var(--sans); font-weight:300; line-height:1.65; font-size:15px; }
+img { max-width:100%; display:block; }
+h1,h2,h3 { font-family:var(--serif); font-weight:400; line-height:1.1; }
+.wrap { max-width:1240px; margin:0 auto; padding:0 clamp(20px,4vw,60px); }
+.label { font-size:11px; font-weight:500; letter-spacing:.24em; text-transform:uppercase; color:var(--deep); }
+section { padding:70px 0; border-bottom:1px solid var(--line); }
+section h2 { font-size:clamp(30px,3.4vw,48px); margin:14px 0 14px; }
+.intro { color:var(--stone); max-width:640px; }
+
+/* header */
+.head { padding:80px 0 50px; text-align:center; border-bottom:1px solid var(--line); }
+.head img.lockup { width:min(480px,80vw); margin:0 auto 10px; }
+
+/* phone frame */
+.phone {
+  width:min(400px,92vw); margin:40px auto 0; background:#000; border-radius:44px; padding:12px;
+  box-shadow:0 40px 90px -40px rgba(17,17,17,.5);
+}
+.screen { background:#fff; border-radius:34px; overflow:hidden; }
+.ig-top { padding:14px 16px 10px; display:flex; align-items:center; gap:12px; border-bottom:1px solid #eee; }
+.ig-top .ava { width:56px; height:56px; border-radius:50%; border:2px solid var(--bronze); display:grid; place-items:center; background:var(--ivory); overflow:hidden; }
+.ig-top .ava img { width:74%; }
+.ig-top .nick { font-weight:600; font-size:14px; letter-spacing:.02em; }
+.ig-top .bio { font-size:11.5px; color:#333; line-height:1.5; }
+.ig-top .bio b { font-weight:600; }
+.stats { display:flex; gap:18px; font-size:12px; margin-top:2px; }
+.stats b { font-weight:600; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:#fff; }
+.tile { aspect-ratio:1/1; overflow:hidden; position:relative; }
+.tile img { width:100%; height:100%; object-fit:cover; }
+.tile.quote { background:var(--black); color:var(--ivory); display:grid; place-items:center; text-align:center; padding:12px; }
+.tile.quote.light { background:var(--ivory); color:var(--black); border:1px solid var(--line); }
+.tile.quote .q { font-family:var(--serif); font-style:italic; font-size:clamp(11px,2.6vw,15px); line-height:1.35; }
+.tile.quote .s { font-size:7px; letter-spacing:.28em; text-transform:uppercase; color:var(--bronze); margin-top:8px; }
+
+/* post cards */
+.posts { display:grid; grid-template-columns:repeat(2,1fr); gap:clamp(20px,3vw,44px); margin-top:44px; }
+@media (max-width:900px){ .posts{ grid-template-columns:1fr; } }
+.post { background:#fff; border:1px solid #e8e2d5; border-radius:8px; overflow:hidden; box-shadow:0 24px 60px -36px rgba(17,17,17,.3); }
+.post .bar { display:flex; align-items:center; gap:10px; padding:12px 14px; }
+.post .bar .ava { width:34px; height:34px; border-radius:50%; border:1.5px solid var(--bronze); display:grid; place-items:center; background:var(--ivory); }
+.post .bar .ava img { width:70%; }
+.post .bar b { font-size:13px; font-weight:600; }
+.post .bar span { font-size:11px; color:#888; display:block; }
+.post .ph { aspect-ratio:1/1; overflow:hidden; }
+.post .ph img { width:100%; height:100%; object-fit:cover; }
+.post .icons { padding:10px 14px 0; font-size:15px; letter-spacing:6px; color:#222; }
+.post .cap { padding:8px 14px 18px; font-size:12.8px; line-height:1.6; color:#222; }
+.post .cap b { font-weight:600; }
+.post .cap .tags { color:#3b5b7a; display:block; margin-top:8px; font-size:12px; }
+.post .cap .likes { font-weight:600; font-size:12.5px; display:block; margin-bottom:6px; }
+
+/* rubrics table */
+table.rub { width:100%; border-collapse:collapse; font-size:14px; margin-top:30px; }
+table.rub th { text-align:left; font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--deep); font-weight:500; padding:12px 14px; border-bottom:1px solid var(--line); }
+table.rub td { padding:13px 14px; border-bottom:1px solid rgba(154,109,52,.14); vertical-align:top; color:#3d3a35; }
+table.rub td:first-child { font-family:var(--serif); font-size:17px; white-space:nowrap; }
+</style>
+</head>
+<body>
+
+<header class="head">
+  <img class="lockup" src="../shared/brand/Relictum_lockup_light.png" alt="RELICTUM">
+  <div class="label">Instagram · лента, посты, тексты · v1.0</div>
+</header>
+
+<!-- ЛЕНТА -->
+<section>
+  <div class="wrap">
+    <div class="label">01 · Раскладка ленты</div>
+    <h2>Профиль @relictum</h2>
+    <p class="intro">Ритм ленты «2+1»: два предметных кадра — одна типографическая карточка-мысль. Никаких коллажей и промо-плашек; цена — никогда в ленте, только в директ и на сайте. Палитра строгая: слоновая кость, обсидиан, бронза.</p>
+
+    <div class="phone">
+      <div class="screen">
+        <div class="ig-top">
+          <div class="ava"><img src="../shared/brand/Relictum_final_icon_crop.svg" alt=""></div>
+          <div>
+            <div class="nick">relictum</div>
+            <div class="stats"><span><b>36</b> постов</span><span><b>12,4K</b> подписчиков</span></div>
+            <div class="bio"><b>RELICTUM · Роскошь вне времени</b><br>Динозавры, метеориты, минералы музейного уровня.<br>Земля · Жизнь · Космос ↓ Консьерж</div>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="tile"><img src="../shared/img/prod_pallasite_seymchan.jpg" alt=""></div>
+          <div class="tile quote"><div><div class="q">«Мы не продаём окаменелости.<br>Мы передаём время»</div><div class="s">Relictum</div></div></div>
+          <div class="tile"><img src="../shared/img/grand_triceratops_skull.jpg" alt=""></div>
+          <div class="tile"><img src="../shared/img/pack_leather_box_open.jpg" alt=""></div>
+          <div class="tile"><img src="../shared/img/hero_dark_skull.jpg" alt=""></div>
+          <div class="tile quote light"><div><div class="q">4 560 000 000<br>лет</div><div class="s">возраст палласита</div></div></div>
+          <div class="tile"><img src="../shared/img/int_niche_ammonite.jpg" alt=""></div>
+          <div class="tile"><img src="../shared/img/journal_ammonite_macro.jpg" alt=""></div>
+          <div class="tile"><img src="../shared/img/expedition_morocco.jpg" alt=""></div>
+          <div class="tile quote"><div><div class="q">«Formed before us.<br>Kept beyond us»</div><div class="s">Editions № 01</div></div></div>
+          <div class="tile"><img src="../shared/img/editions_megalodon_vitrine.jpg" alt=""></div>
+          <div class="tile"><img src="../shared/img/grand_atrium_skeleton.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПОСТЫ -->
+<section>
+  <div class="wrap">
+    <div class="label">02 · Примеры постов</div>
+    <h2>Четыре поста с готовыми текстами</h2>
+    <p class="intro">Формула подписи: цифра-крючок → история за три строки → деталь для знатоков → тихий CTA в консьерж. Без восклицаний, без «скидок», без спама эмодзи — максимум одна комета ☄ или ромб ◆.</p>
+
+    <div class="posts">
+      <div class="post">
+        <div class="bar"><div class="ava"><img src="../shared/brand/Relictum_final_icon_crop.svg" alt=""></div><div><b>relictum</b><span>Магаданская область → Москва</span></div></div>
+        <div class="ph"><img src="../shared/img/prod_pallasite_seymchan.jpg" alt=""></div>
+        <div class="icons">♡ ⌲ ⚑</div>
+        <div class="cap">
+          <span class="likes">1 248 отметок «Нравится»</span>
+          <b>relictum</b> Этому предмету 4 560 000 000 лет. Он старше Земли, на которой вы его держите.
+          <br><br>Палласит Сеймчан — вещество границы ядра и мантии протопланеты, разрушенной в первые миллионы лет Солнечной системы. На просвет оливины горят золотым. ☄
+          <br><br>Срез 18 × 14 см · 1 240 г · латунный мольберт дома. Паспорт объекта R–0101 — в досье.
+          <br><br>Показ в галерее — по записи, ссылка в профиле.
+          <span class="tags">#relictum #палласит #метеорит #сеймчан #коллекционирование #naturalhistory</span>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="bar"><div class="ava"><img src="../shared/brand/Relictum_final_icon_crop.svg" alt=""></div><div><b>relictum</b><span>Монументальная коллекция</span></div></div>
+        <div class="ph"><img src="../shared/img/int_boardroom_triceratops.jpg" alt=""></div>
+        <div class="icons">♡ ⌲ ⚑</div>
+        <div class="cap">
+          <span class="likes">2 031 отметка «Нравится»</span>
+          <b>relictum</b> Самый весомый аргумент в переговорной — возрастом 66 миллионов лет.
+          <br><br>Череп Triceratops horridus из формации Хелл-Крик: 85% оригинальной кости, четырнадцать месяцев препарации, скрытая стальная колыбель. Пространство вокруг такого объекта проектируется, а не обставляется.
+          <br><br>Relictum Interior — подбор монументов для штаб-квартир и частных галерей.
+          <span class="tags">#relictum #triceratops #динозавр #интерьер #officedesign #монументы</span>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="bar"><div class="ava"><img src="../shared/brand/Relictum_final_icon_crop.svg" alt=""></div><div><b>relictum</b><span>Кем-Кем, Марокко</span></div></div>
+        <div class="ph"><img src="../shared/img/expedition_morocco.jpg" alt=""></div>
+        <div class="icons">♡ ⌲ ⚑</div>
+        <div class="cap">
+          <span class="likes">1 764 отметки «Нравится»</span>
+          <b>relictum</b> Сто миллионов лет назад здесь была река, полная монстров. Сегодня — наш осенний лагерь.
+          <br><br>Relictum Expeditions: семь дней на плато Кем-Кем с палеонтологами дома. Вы находите объект своими руками — и провенанс навсегда начинается с вашего имени. Группа сезона: шесть мест, осталось два.
+          <br><br>Программа — по запросу в директ. ◆
+          <span class="tags">#relictum #экспедиция #сахара #палеонтология #luxurytravel #кемкем</span>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="bar"><div class="ava"><img src="../shared/brand/Relictum_final_icon_crop.svg" alt=""></div><div><b>relictum</b><span>Relictum Editions</span></div></div>
+        <div class="ph"><img src="../shared/img/editions_megalodon_vitrine.jpg" alt=""></div>
+        <div class="icons">♡ ⌲ ⚑</div>
+        <div class="cap">
+          <span class="likes">3 402 отметки «Нравится»</span>
+          <b>relictum</b> Двенадцать. Больше не будет.
+          <br><br>Editions № 01: зуб мегалодона музейного качества в витрине ручной работы — бронза, музейное стекло, чёрный мрамор. Клеймо дома, номер издания на основании. Экземпляры № 01 и № 02 нашли владельцев до анонса.
+          <br><br>№ 03/12 — доступен. Директ или консьерж.
+          <span class="tags">#relictum #editions #мегалодон #megalodon #limitededition #collectible</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРАВИЛА -->
+<section style="border:none">
+  <div class="wrap">
+    <div class="label">03 · Система контента</div>
+    <h2>Рубрики и ритм</h2>
+    <table class="rub">
+      <tr><th>Рубрика</th><th>Что это</th><th>Частота</th></tr>
+      <tr><td>Объект недели</td><td>Один предмет, одна история, макросъёмка. Цена — никогда; «по запросу в директ».</td><td>1 × нед</td></tr>
+      <tr><td>Цифра</td><td>Типографическая карточка: возраст, размер, тираж. Держит ритм «2+1» в ленте.</td><td>1 × нед</td></tr>
+      <tr><td>Интерьер</td><td>Объект в пространстве: ниша, библиотека, атриум. Кросс-пост с дизайнерами.</td><td>2 × мес</td></tr>
+      <tr><td>Экспедиции</td><td>Дневники раскопок, «до/после» препарации. Reels: вскрытие породы, свет в лаборатории.</td><td>2 × мес</td></tr>
+      <tr><td>Ритуал</td><td>Упаковка, перчатки, сургуч. ASMR-эстетика передачи объекта.</td><td>1 × мес</td></tr>
+      <tr><td>Editions</td><td>Анонсы тиражей и «осталось N». Единственная рубрика, где допустима срочность.</td><td>по релизам</td></tr>
+    </table>
+    <p class="intro" style="margin-top:26px">Stories: закреплённые хайлайты «Коллекция», «Экспедиции», «Ритуал», «Провенанс». Reels — только макро и процесс: полировка среза, световой тест витрины, распаковка. Тон комментариев — консьерж: на «сколько стоит» отвечаем «ответили в директ ◆».</p>
+  </div>
+</section>
+
+<footer style="padding:50px 0;text-align:center">
+  <img src="../shared/brand/Relictum_lockup_light.png" alt="RELICTUM" style="width:min(360px,60vw);margin:0 auto">
+</footer>
+
+</body>
+</html>
