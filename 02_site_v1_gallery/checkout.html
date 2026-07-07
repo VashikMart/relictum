@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Оформление заказа — RELICTUM</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../shared/shop.css">
+</head>
+<body>
+
+<nav class="nav scrolled" id="nav">
+  <a class="nav-logo" href="index.html">
+    <img src="../shared/brand/Relictum_comet.png" alt="Relictum">
+    <span><span class="nav-wordmark">RELICTUM</span><div class="nav-tag">Роскошь вне времени</div></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="catalog.html">Каталог</a></li>
+    <li><a href="interiors.html">Интерьеры</a></li>
+    <li><a href="expeditions.html">Экспедиции</a></li>
+    <li><a href="journal.html">Журнал</a></li>
+    <li><a href="../15_concepts/eras.html">Эры</a></li><li><a href="maison.html">Дом Relictum</a></li>
+  </ul>
+  <div class="nav-actions"><a href="maison.html#concierge">Консьерж</a></div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Главная</a> · <a href="cart.html">Корзина</a> · Оформление</div>
+    <h1>Оформление заказа</h1>
+  </div>
+</header>
+
+<section style="padding-top:20px"><div class="rl-wrap"><div id="area"></div></div></section>
+
+<footer style="margin-top:clamp(70px,9vw,130px)">
+  <div class="wrap"><div class="f-bottom" style="border:none;padding-top:0"><span>© 2026 RELICTUM</span><span>Земля · Жизнь · Космос</span></div></div>
+</footer>
+
+<script src="../shared/catalog.js"></script>
+<script src="../shared/shop.js"></script>
+<script>
+var S=window.RelictumShop, IMG='../shared/img/', area=document.getElementById('area');
+
+function summary(){
+  var items=S.cartItems();
+  var rows=items.map(function(o){
+    return '<div class="rl-sum"><span>'+o.name+'</span><span>'+S.fmt(o.priceValue)+'</span></div>';
+  }).join('');
+  return '<div class="rl-panel"><div class="rl-label" style="margin-bottom:16px">Ваш заказ</div>'+rows+
+    '<div class="rl-sum total"><span>Итог</span><span>'+S.fmt(S.total())+'</span></div>'+
+    (S.hasRequestItems()?'<div class="rl-note">Часть объектов — по запросу: финальную сумму подтвердит консультант. Карта не будет списана до подтверждения.</div>':'')+
+    '<div class="rl-note">Доставка музейного класса и установка на месте — включены. Страхование на время транспортировки — за счёт дома.</div></div>';
+}
+
+function form(){
+  return '<form id="co"><div class="rl-grid2"><div>'+
+    '<div class="rl-label" style="margin-bottom:16px">Контактные данные</div>'+
+    '<div class="rl-row"><div class="rl-field"><label>Имя</label><input class="rl-input" name="fname" required></div>'+
+      '<div class="rl-field"><label>Фамилия</label><input class="rl-input" name="lname" required></div></div>'+
+    '<div class="rl-row"><div class="rl-field"><label>E-mail</label><input class="rl-input" type="email" name="email" required></div>'+
+      '<div class="rl-field"><label>Телефон</label><input class="rl-input" name="phone" placeholder="+7" required></div></div>'+
+    '<div class="rl-field"><label>Адрес доставки</label><input class="rl-input" name="addr" placeholder="Город, улица, дом" required></div>'+
+
+    '<div class="rl-label" style="margin:28px 0 16px">Оплата</div>'+
+    '<div class="rl-card"><div class="brand">RELICTUM</div>'+
+      '<div class="num" id="cnum">•••• •••• •••• ••••</div>'+
+      '<div class="rowc"><span id="cname">ДЕРЖАТЕЛЬ КАРТЫ</span><span id="cexp">ММ/ГГ</span></div></div>'+
+    '<div class="rl-field"><label>Номер карты</label><input class="rl-input" id="num" inputmode="numeric" placeholder="0000 0000 0000 0000" maxlength="19" required></div>'+
+    '<div class="rl-row"><div class="rl-field"><label>Срок</label><input class="rl-input" id="exp" placeholder="ММ/ГГ" maxlength="5" required></div>'+
+      '<div class="rl-field"><label>CVC</label><input class="rl-input" id="cvc" inputmode="numeric" placeholder="•••" maxlength="4" required></div></div>'+
+    '<div class="rl-field"><label>Имя на карте</label><input class="rl-input" id="holder" placeholder="IVAN PETROV" required></div>'+
+    '<div class="rl-note">🔒 Демо-оформление. Реальные платежи проходят через защищённый шлюз (ЮKassa / CloudPayments) — данные карты не сохраняются и не передаются в этом прототипе.</div>'+
+    '<button class="rl-btn" type="submit" id="pay" style="margin-top:8px">Подтвердить и оплатить</button>'+
+    '</div>'+summary()+'</div></form>';
+}
+
+function money(v){return v.replace(/\D/g,'').replace(/(.{4})/g,'$1 ').trim();}
+
+function bind(){
+  var f=document.getElementById('co');
+  var num=document.getElementById('num'),exp=document.getElementById('exp'),cvc=document.getElementById('cvc'),holder=document.getElementById('holder');
+  num.addEventListener('input',function(){num.value=money(num.value);document.getElementById('cnum').textContent=num.value||'•••• •••• •••• ••••';});
+  exp.addEventListener('input',function(){var v=exp.value.replace(/\D/g,'').slice(0,4);if(v.length>2)v=v.slice(0,2)+'/'+v.slice(2);exp.value=v;document.getElementById('cexp').textContent=v||'ММ/ГГ';});
+  cvc.addEventListener('input',function(){cvc.value=cvc.value.replace(/\D/g,'');});
+  holder.addEventListener('input',function(){document.getElementById('cname').textContent=(holder.value||'ДЕРЖАТЕЛЬ КАРТЫ').toUpperCase();});
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var ok=true;
+    [['num',num.value.replace(/\s/g,'').length>=13],['exp',/^\d\d\/\d\d$/.test(exp.value)],['cvc',cvc.value.length>=3]].forEach(function(p){
+      var el=document.getElementById(p[0]); el.classList.toggle('rl-err',!p[1]); if(!p[1])ok=false;
+    });
+    if(!f.checkValidity()){f.reportValidity();return;}
+    if(!ok)return;
+    var btn=document.getElementById('pay'); btn.disabled=true; btn.textContent='Обработка платежа…';
+    // сохранить контакт в кабинет
+    var u=S.user(); var fd=new FormData(f);
+    u.name=(fd.get('fname')+' '+fd.get('lname')).trim(); u.email=fd.get('email'); u.phone=fd.get('phone'); S.saveUser(u);
+    setTimeout(function(){
+      var ids=S.placeOrder();
+      success(ids.length);
+    }, 1600);
+  });
+}
+
+function success(n){
+  area.innerHTML='<div class="rl-success"><div class="ok">✓</div>'+
+    '<div class="rl-label" style="margin-bottom:12px">Заказ оформлен</div>'+
+    '<h2 class="rl-h" style="font-size:34px;margin-bottom:14px">Спасибо. Объект ваш.</h2>'+
+    '<p class="rl-muted" style="margin-bottom:10px">'+n+' объект'+(n>1?'а':'')+' зарезервировано за вами. Персональный консультант свяжется в течение рабочего дня, чтобы подтвердить детали, доставку и установку.</p>'+
+    '<p class="rl-muted" style="margin-bottom:28px">Объекты добавлены в вашу коллекцию в личном кабинете.</p>'+
+    '<a class="rl-btn" style="width:auto;display:inline-block" href="account.html">Открыть личный кабинет</a> '+
+    '<a class="rl-btn ghost" style="width:auto;display:inline-block" href="catalog.html">В каталог</a></div>';
+  window.scrollTo(0,0);
+}
+
+if(!S.cartItems().length){
+  area.innerHTML='<div class="rl-empty"><h2 class="rl-h" style="font-size:30px;margin-bottom:14px">Корзина пуста</h2>'+
+    '<a class="rl-btn" style="width:auto;display:inline-block" href="catalog.html">Открыть каталог</a></div>';
+}else{ area.innerHTML=form(); bind(); }
+</script>
+<script src="../shared/nav.js"></script>
+</body>
+</html>

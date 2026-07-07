@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Корзина — RELICTUM</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../shared/shop.css">
+</head>
+<body>
+
+<nav class="nav scrolled" id="nav">
+  <a class="nav-logo" href="index.html">
+    <img src="../shared/brand/Relictum_comet.png" alt="Relictum">
+    <span><span class="nav-wordmark">RELICTUM</span><div class="nav-tag">Роскошь вне времени</div></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="catalog.html">Каталог</a></li>
+    <li><a href="interiors.html">Интерьеры</a></li>
+    <li><a href="expeditions.html">Экспедиции</a></li>
+    <li><a href="journal.html">Журнал</a></li>
+    <li><a href="../15_concepts/eras.html">Эры</a></li><li><a href="maison.html">Дом Relictum</a></li>
+  </ul>
+  <div class="nav-actions"><a href="maison.html#concierge">Консьерж</a></div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Главная</a> · Корзина</div>
+    <h1>Корзина</h1>
+  </div>
+</header>
+
+<section style="padding-top:20px">
+  <div class="rl-wrap">
+    <div id="cartArea"></div>
+  </div>
+</section>
+
+<footer style="margin-top:clamp(70px,9vw,130px)">
+  <div class="wrap"><div class="f-bottom" style="border:none;padding-top:0"><span>© 2026 RELICTUM</span><span>Земля · Жизнь · Космос</span></div></div>
+</footer>
+
+<script src="../shared/catalog.js"></script>
+<script src="../shared/shop.js"></script>
+<script>
+var S=window.RelictumShop, IMG='../shared/img/';
+function render(){
+  var items=S.cartItems(), area=document.getElementById('cartArea');
+  if(!items.length){
+    area.innerHTML='<div class="rl-empty"><div class="rl-label" style="margin-bottom:12px">Пусто</div>'+
+      '<h2 class="rl-h" style="font-size:32px;margin-bottom:14px">В корзине пока нет объектов</h2>'+
+      '<p class="rl-muted" style="margin-bottom:26px">Каждый объект дома существует в единственном экземпляре. Начните с каталога или доверьте подбор консьержу.</p>'+
+      '<a class="rl-btn" style="width:auto;display:inline-block" href="catalog.html">Открыть каталог</a> '+
+      '<a class="rl-btn ghost" style="width:auto;display:inline-block" href="request.html">Персональный поиск</a></div>';
+    return;
+  }
+  var rows=items.map(function(o){
+    return '<div class="rl-line-item">'+
+      '<a href="'+(o.href||('object.html?id='+o.id))+'"><img class="thumb" src="'+IMG+o.img+'.jpg" alt="'+o.name+'"></a>'+
+      '<div><div class="rl-label" style="margin-bottom:6px">'+o.id+' · '+o.worldLabel+'</div>'+
+        '<h3>'+o.name+'</h3><div class="lat">'+(o.latin||'')+'</div>'+
+        '<div class="m">'+(o.location||o.region||'')+' · '+(o.age||'')+'</div></div>'+
+      '<div><div class="price">'+S.fmt(o.priceValue)+'</div>'+
+        '<button class="rm" data-id="'+o.id+'">Убрать</button></div>'+
+    '</div>';
+  }).join('');
+  var total=S.total(), req=S.hasRequestItems();
+  area.innerHTML='<div class="rl-grid2"><div>'+rows+'</div>'+
+    '<div class="rl-panel"><div class="rl-label" style="margin-bottom:18px">Итог</div>'+
+      '<div class="rl-sum"><span>Объектов</span><span>'+items.length+'</span></div>'+
+      '<div class="rl-sum"><span>С указанной ценой</span><span>'+S.fmt(total)+'</span></div>'+
+      (req?'<div class="rl-note">Часть объектов — «цена по запросу». Их стоимость и условия подтвердит ваш персональный консультант после оформления.</div>':'')+
+      '<div class="rl-sum total"><span>К оформлению</span><span>'+S.fmt(total)+'</span></div>'+
+      '<a class="rl-btn" style="margin-top:18px" href="checkout.html">Оформить заказ</a>'+
+      '<a class="rl-btn ghost" style="margin-top:10px" href="catalog.html">Продолжить выбор</a>'+
+    '</div></div>';
+  area.querySelectorAll('.rm').forEach(function(b){
+    b.addEventListener('click',function(){ S.removeFromCart(b.dataset.id); S.toast('Объект убран из корзины'); render(); });
+  });
+}
+render();
+</script>
+<script src="../shared/nav.js"></script>
+</body>
+</html>

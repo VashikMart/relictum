@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Личный кабинет — RELICTUM</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../shared/shop.css">
+</head>
+<body>
+
+<nav class="nav scrolled" id="nav">
+  <a class="nav-logo" href="index.html">
+    <img src="../shared/brand/Relictum_comet.png" alt="Relictum">
+    <span><span class="nav-wordmark">RELICTUM</span><div class="nav-tag">Роскошь вне времени</div></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="catalog.html">Каталог</a></li>
+    <li><a href="interiors.html">Интерьеры</a></li>
+    <li><a href="expeditions.html">Экспедиции</a></li>
+    <li><a href="journal.html">Журнал</a></li>
+    <li><a href="../15_concepts/eras.html">Эры</a></li><li><a href="maison.html">Дом Relictum</a></li>
+  </ul>
+  <div class="nav-actions"><a href="maison.html#concierge">Консьерж</a></div>
+</nav>
+
+<header class="rl-hero-account">
+  <div class="rl-wrap" id="hero"></div>
+</header>
+
+<section style="padding-top:34px">
+  <div class="rl-wrap">
+    <div class="rl-tabs" id="tabs">
+      <button class="rl-tab on" data-t="promo">Обзор</button>
+      <button class="rl-tab" data-t="collection">Моя коллекция</button>
+      <button class="rl-tab" data-t="favorites">Избранное</button>
+      <button class="rl-tab" data-t="interests">Интересы</button>
+      <button class="rl-tab" data-t="data">Данные и менеджер</button>
+    </div>
+    <div id="panes"></div>
+  </div>
+</section>
+
+<footer style="margin-top:clamp(70px,9vw,130px)">
+  <div class="wrap"><div class="f-bottom" style="border:none;padding-top:0"><span>© 2026 RELICTUM</span><span>Земля · Жизнь · Космос</span></div></div>
+</footer>
+
+<script src="../shared/catalog.js"></script>
+<script src="../shared/shop.js"></script>
+<script>
+var S=window.RelictumShop, IMG='../shared/img/';
+
+/* демо-наполнение при первом входе */
+(function seed(){
+  var u=S.user();
+  if(!u._seeded){ u._seeded=true; if(!u.purchased||!u.purchased.length){u.purchased=['R–0201','R–0102'];} if(!u.interests.length){u.interests=['Метеориты','Мамонтовая фауна'];} if(u.name==='Гость')u.name='Гость дома'; S.saveUser(u); }
+})();
+
+var ALL_INTERESTS=['Метеориты','Лунные объекты','Динозавры','Мамонтовая фауна','Саблезубые кошки','Аммониты','Трилобиты','Минералы','Окаменелое дерево','Монументы','Editions','Интерьерные объекты'];
+
+function mini(o,favBtn){
+  return '<a class="rl-mini" href="'+(o.href||('object.html?id='+o.id))+'"><img src="'+IMG+o.img+'.jpg" alt="'+o.name+'">'+
+    '<div class="b"><div class="t">'+o.name+'</div><div class="s">'+o.worldLabel+' · '+S.fmt(o.priceValue)+'</div>'+
+    (favBtn?'<button class="rm" data-fav="'+o.id+'" style="margin-top:8px;background:none;border:none;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--rl-stone);cursor:pointer">Убрать из избранного</button>':'')+
+    '</div></a>';
+}
+
+function heroHTML(){
+  var u=S.user(), t=S.tier();
+  return '<div class="rl-label" style="color:#B08A55;margin-bottom:14px">Личный кабинет</div>'+
+    '<h1 class="rl-h" style="font-size:clamp(32px,5vw,52px);color:#F4F0E8">Здравствуйте, '+u.name+'</h1>'+
+    '<div class="rl-tier">'+t.name+' · личная скидка '+t.discount+'%</div>'+
+    '<div style="display:flex;gap:34px;margin-top:26px;flex-wrap:wrap">'+
+      '<div><div class="rl-h" style="font-size:30px;color:#F4F0E8">'+(u.purchased||[]).length+'</div><div style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,240,232,.6)">в коллекции</div></div>'+
+      '<div><div class="rl-h" style="font-size:30px;color:#F4F0E8">'+S.favCount()+'</div><div style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,240,232,.6)">в избранном</div></div>'+
+      '<div><div class="rl-h" style="font-size:30px;color:#F4F0E8">'+t.discount+'%</div><div style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,240,232,.6)">скидка дома</div></div>'+
+    '</div>';
+}
+
+function pane_promo(){
+  var t=S.tier(), next=t.name==='Гость дома'?'Патрон (от 500 000 ₽ в коллекции) — скидка 5%':t.name==='Патрон'?'Бронза (от 2 000 000 ₽) — скидка 8%':t.name==='Бронза'?'Обсидиан (от 5 000 000 ₽) — скидка 12%':'высший статус дома достигнут';
+  return '<div class="rl-grid2"><div>'+
+    '<h2 class="rl-h" style="font-size:30px;margin-bottom:16px">Ваши привилегии</h2>'+
+    '<div class="rl-data">'+
+      '<div><div class="k">Личная скидка</div><div class="v">'+t.discount+'% на объекты с указанной ценой</div></div>'+
+      '<div><div class="k">Ранний доступ</div><div class="v">Новые объекты — до публикации в каталоге</div></div>'+
+      '<div><div class="k">Консьерж</div><div class="v">Персональный поиск объектов под запрос</div></div>'+
+      '<div><div class="k">Экспедиции</div><div class="v">Приглашения на закрытые события дома</div></div>'+
+    '</div>'+
+    '<p class="rl-muted" style="margin-top:22px">Следующий статус: <b style="color:var(--rl-deep)">'+next+'</b></p>'+
+    '</div><div class="rl-panel"><div class="rl-label" style="margin-bottom:12px">Продолжить</div>'+
+    '<a class="rl-btn" href="catalog.html">Смотреть каталог</a>'+
+    '<a class="rl-btn ghost" style="margin-top:10px" href="request.html">Персональный поиск</a>'+
+    '<a class="rl-btn ghost" style="margin-top:10px" href="cart.html">Корзина ('+S.count()+')</a></div></div>';
+}
+function pane_collection(){
+  var items=(S.user().purchased||[]).map(S.item).filter(Boolean);
+  if(!items.length) return '<div class="rl-empty"><h2 class="rl-h" style="font-size:28px;margin-bottom:12px">Коллекция пока пуста</h2><p class="rl-muted" style="margin-bottom:22px">Оформленные объекты появятся здесь.</p><a class="rl-btn" style="width:auto;display:inline-block" href="catalog.html">Начать коллекцию</a></div>';
+  return '<div class="rl-label" style="margin-bottom:16px">Приобретённые объекты · демо-данные</div><div class="rl-cards">'+items.map(function(o){return mini(o,false)}).join('')+'</div>';
+}
+function pane_favorites(){
+  var items=S.favItems();
+  if(!items.length) return '<div class="rl-empty"><h2 class="rl-h" style="font-size:28px;margin-bottom:12px">В избранном пусто</h2><p class="rl-muted" style="margin-bottom:22px">Отмечайте понравившиеся объекты сердечком — они соберутся здесь.</p><a class="rl-btn" style="width:auto;display:inline-block" href="catalog.html">Открыть каталог</a></div>';
+  return '<div class="rl-label" style="margin-bottom:16px">Избранные объекты</div><div class="rl-cards" id="favGrid">'+items.map(function(o){return mini(o,true)}).join('')+'</div>';
+}
+function pane_interests(){
+  var u=S.user();
+  return '<h2 class="rl-h" style="font-size:28px;margin-bottom:8px">Что вам интересно</h2>'+
+    '<p class="rl-muted" style="margin-bottom:20px">Отметьте темы — консультант будет предлагать релевантные объекты и приглашать на события.</p>'+
+    '<div class="rl-chips" id="intChips">'+ALL_INTERESTS.map(function(x){var on=u.interests.indexOf(x)>=0;return '<button class="rl-chip'+(on?' on':'')+'" data-i="'+x+'">'+x+'</button>'}).join('')+'</div>';
+}
+function pane_data(){
+  var u=S.user(),t=S.tier(),initials=(u.manager||'РД').split(' ').map(function(s){return s[0]}).join('').slice(0,2);
+  return '<div class="rl-grid2"><div>'+
+    '<h2 class="rl-h" style="font-size:28px;margin-bottom:18px">Ваши данные</h2>'+
+    '<form id="udata"><div class="rl-row"><div class="rl-field"><label>Имя</label><input class="rl-input" name="name" value="'+u.name+'"></div>'+
+      '<div class="rl-field"><label>Клиент с</label><input class="rl-input" value="'+(u.since||'2026')+' года" disabled></div></div>'+
+    '<div class="rl-row"><div class="rl-field"><label>E-mail</label><input class="rl-input" name="email" value="'+(u.email||'')+'"></div>'+
+      '<div class="rl-field"><label>Телефон</label><input class="rl-input" name="phone" value="'+(u.phone||'')+'"></div></div>'+
+    '<div class="rl-row"><div class="rl-field"><label>Статус</label><input class="rl-input" value="'+t.name+'" disabled></div>'+
+      '<div class="rl-field"><label>Скидка</label><input class="rl-input" value="'+t.discount+'%" disabled></div></div>'+
+    '<button class="rl-btn" type="submit" style="width:auto;padding-left:40px;padding-right:40px">Сохранить</button></form>'+
+    '<p class="rl-muted" style="margin-top:26px;font-size:12px"><a href="#" id="reset" style="color:var(--rl-stone);text-decoration:underline">Сбросить кабинет к демо-состоянию</a></p>'+
+    '</div><div><div class="rl-label" style="margin-bottom:14px">Ваш персональный менеджер</div>'+
+    '<div class="rl-manager"><div class="av">'+initials+'</div><div><b style="font-family:\'Cormorant Garamond\',serif;font-size:20px;display:block">'+u.manager+'</b>'+
+      '<span style="font-size:12px;color:var(--rl-stone)">'+u.managerRole+'</span><br>'+
+      '<a href="maison.html#concierge" style="font-size:12px;color:var(--rl-deep)">Написать менеджеру →</a></div></div>'+
+    '</div></div>';
+}
+
+var PANES={promo:pane_promo,collection:pane_collection,favorites:pane_favorites,interests:pane_interests,data:pane_data};
+
+function show(t){
+  document.querySelectorAll('.rl-tab').forEach(function(b){b.classList.toggle('on',b.dataset.t===t)});
+  document.getElementById('panes').innerHTML=PANES[t]();
+  wire(t);
+}
+function wire(t){
+  if(t==='favorites'){
+    document.querySelectorAll('[data-fav]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();S.toggleFav(b.dataset.fav);document.getElementById('hero').innerHTML=heroHTML();show('favorites');S.toast('Убрано из избранного');});});
+  }
+  if(t==='interests'){
+    document.querySelectorAll('#intChips .rl-chip').forEach(function(c){c.addEventListener('click',function(){var u=S.user();var i=u.interests.indexOf(c.dataset.i);if(i<0)u.interests.push(c.dataset.i);else u.interests.splice(i,1);S.saveUser(u);c.classList.toggle('on');});});
+  }
+  if(t==='data'){
+    document.getElementById('udata').addEventListener('submit',function(e){e.preventDefault();var u=S.user(),fd=new FormData(e.target);u.name=fd.get('name')||u.name;u.email=fd.get('email');u.phone=fd.get('phone');S.saveUser(u);document.getElementById('hero').innerHTML=heroHTML();S.toast('Данные сохранены');});
+    document.getElementById('reset').addEventListener('click',function(e){e.preventDefault();localStorage.removeItem('relictum_user');location.reload();});
+  }
+}
+
+document.getElementById('hero').innerHTML=heroHTML();
+document.getElementById('tabs').addEventListener('click',function(e){var b=e.target.closest('.rl-tab');if(b)show(b.dataset.t);});
+var start=(location.hash||'#promo').slice(1); if(!PANES[start])start='promo';
+show(start);
+</script>
+<script src="../shared/nav.js"></script>
+</body>
+</html>

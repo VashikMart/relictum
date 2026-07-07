@@ -151,6 +151,7 @@
 const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && e.target.classList.add('on')), {threshold:.12});
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
+<script src="../shared/shop.js"></script>
 <script src="../shared/nav.js"></script>
 </body>
 </html>
