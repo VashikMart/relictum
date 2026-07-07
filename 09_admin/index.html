@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RELICTUM Atelier — панель управления (прототип)</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ivory:#F4F0E8; --bone:#FBF8F1; --black:#111111; --bronze:#B08A55; --deep:#9A6D34;
+  --stone:#7A7267; --line:rgba(154,109,52,.24); --ok:#4a7c59; --warn:#b07a2a; --muted:#a8a094;
+  --serif:'Cormorant Garamond',serif; --sans:'Inter',sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#EFEAE0; color:var(--black); font-family:var(--sans); font-weight:400; font-size:13.5px; line-height:1.55; }
+img { display:block; }
+h1,h2,h3 { font-family:var(--serif); font-weight:500; }
+.app { display:grid; grid-template-columns:230px 1fr; min-height:100vh; }
+
+/* sidebar */
+aside { background:var(--black); color:var(--ivory); padding:26px 0; position:sticky; top:0; height:100vh; }
+aside .brand { padding:0 24px 22px; border-bottom:1px solid rgba(176,138,85,.25); }
+aside .brand img { width:130px; }
+aside .brand .sub { font-size:9px; letter-spacing:.26em; text-transform:uppercase; color:var(--bronze); margin-top:6px; }
+aside nav { padding:18px 0; }
+aside nav a { display:flex; justify-content:space-between; align-items:center; padding:11px 24px; color:rgba(244,240,232,.66); text-decoration:none; font-size:13px; cursor:pointer; border-left:2px solid transparent; }
+aside nav a:hover { color:var(--ivory); }
+aside nav a.on { color:var(--ivory); background:rgba(176,138,85,.12); border-left-color:var(--bronze); }
+aside nav a .n { background:var(--bronze); color:var(--black); font-size:10px; font-weight:600; padding:1px 7px; border-radius:9px; }
+aside .user { position:absolute; bottom:20px; left:24px; right:24px; border-top:1px solid rgba(176,138,85,.25); padding-top:14px; font-size:12px; color:rgba(244,240,232,.6); }
+aside .user b { color:var(--ivory); font-weight:500; display:block; }
+
+/* main */
+main { padding:28px 34px 60px; }
+.topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; gap:16px; flex-wrap:wrap; }
+.topbar h1 { font-size:30px; }
+.topbar .crumb { font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--stone); }
+.btn { display:inline-block; padding:11px 22px; background:var(--black); color:var(--ivory); border:none; font-family:var(--sans); font-size:11px; font-weight:500; letter-spacing:.14em; text-transform:uppercase; cursor:pointer; }
+.btn.ghost { background:transparent; color:var(--deep); border:1px solid var(--deep); }
+.btn.sm { padding:7px 14px; font-size:10px; }
+
+/* cards */
+.kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:26px; }
+@media (max-width:1100px){ .kpis{ grid-template-columns:repeat(2,1fr);} }
+.kpi { background:var(--bone); border:1px solid var(--line); padding:18px 20px; }
+.kpi .t { font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--stone); }
+.kpi .v { font-family:var(--serif); font-size:34px; margin-top:4px; }
+.kpi .d { font-size:11.5px; color:var(--deep); margin-top:2px; }
+
+.panel { background:var(--bone); border:1px solid var(--line); margin-bottom:26px; }
+.panel .head { display:flex; justify-content:space-between; align-items:center; padding:16px 20px; border-bottom:1px solid var(--line); }
+.panel .head h2 { font-size:20px; }
+.panel .head .filters { display:flex; gap:8px; }
+.chip { padding:6px 13px; font-size:11px; border:1px solid var(--line); background:transparent; color:var(--stone); cursor:pointer; font-family:var(--sans); }
+.chip.on { background:var(--black); color:var(--ivory); border-color:var(--black); }
+
+table { width:100%; border-collapse:collapse; }
+th { text-align:left; font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:var(--stone); font-weight:500; padding:12px 20px; border-bottom:1px solid var(--line); }
+td { padding:12px 20px; border-bottom:1px solid rgba(154,109,52,.12); vertical-align:middle; }
+tr:hover td { background:rgba(176,138,85,.05); }
+td .ph { width:46px; height:56px; object-fit:cover; border:1px solid var(--line); }
+td .name { font-weight:500; }
+td .latin { font-family:var(--serif); font-style:italic; color:var(--deep); font-size:13px; }
+.status { display:inline-flex; align-items:center; gap:6px; font-size:11px; }
+.status::before { content:''; width:7px; height:7px; border-radius:50%; background:var(--muted); }
+.status.pub::before { background:var(--ok); }
+.status.draft::before { background:var(--warn); }
+.status.res::before { background:var(--bronze); }
+.status.arch::before { background:var(--muted); }
+
+/* editor drawer */
+.editor { display:grid; grid-template-columns:1fr 340px; gap:0; }
+@media (max-width:1100px){ .editor{ grid-template-columns:1fr; } }
+.editor .fields { padding:22px; display:grid; gap:14px; }
+.frow { display:grid; grid-template-columns:150px 1fr; gap:14px; align-items:center; }
+.frow label { font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--stone); }
+.frow input, .frow select, .frow textarea { border:1px solid var(--line); background:#fff; padding:10px 12px; font-family:var(--sans); font-size:13px; width:100%; }
+.frow textarea { resize:vertical; }
+.editor .side { border-left:1px solid var(--line); padding:22px; background:rgba(216,200,175,.14); }
+.editor .side h3 { font-size:17px; margin-bottom:12px; }
+.check { display:flex; gap:10px; align-items:flex-start; font-size:12px; color:#3d3a35; margin-bottom:10px; }
+.check input { margin-top:3px; }
+.hint { font-size:11px; color:var(--stone); }
+
+/* leads */
+.lead { display:grid; grid-template-columns:110px 1fr 200px 160px 120px; gap:14px; padding:14px 20px; border-bottom:1px solid rgba(154,109,52,.12); align-items:center; }
+.lead:hover { background:rgba(176,138,85,.05); }
+.lead .when { font-size:11px; color:var(--stone); }
+.lead .who b { font-weight:500; display:block; }
+.lead .who span { font-size:12px; color:var(--stone); }
+.lead select { border:1px solid var(--line); background:#fff; padding:7px 10px; font-family:var(--sans); font-size:12px; }
+.view { display:none; }
+.view.on { display:block; }
+.note { background:rgba(176,138,85,.1); border-left:3px solid var(--bronze); padding:14px 18px; font-size:12.5px; color:#3d3a35; margin-bottom:22px; }
+</style>
+</head>
+<body>
+<div class="app">
+  <aside>
+    <div class="brand">
+      <img src="../shared/brand/Relictum_lockup_dark.png" alt="RELICTUM">
+      <div class="sub">Atelier · панель дома</div>
+    </div>
+    <nav id="nav">
+      <a data-v="dash" class="on">Дашборд</a>
+      <a data-v="objects">Экспонаты <span class="n">20</span></a>
+      <a data-v="obj-edit">Карточка объекта</a>
+      <a data-v="leads">Заявки консьержа <span class="n">7</span></a>
+      <a data-v="journal">Журнал</a>
+      <a>Экспедиции</a>
+      <a>Подборки и подарки</a>
+      <a>Заказы и резервы</a>
+      <a>Клиенты (CRM)</a>
+      <a>Настройки · роли</a>
+    </nav>
+    <div class="user"><b>Мария К.</b>Куратор каталога · права: издание</div>
+  </aside>
+
+  <main>
+    <!-- DASHBOARD -->
+    <section class="view on" id="v-dash">
+      <div class="topbar">
+        <div><div class="crumb">Relictum Atelier</div><h1>Доброе утро, Мария</h1></div>
+        <button class="btn">+ Новый экспонат</button>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="t">Опубликовано</div><div class="v">14</div><div class="d">+2 за неделю</div></div>
+        <div class="kpi"><div class="t">Черновики / на проверке</div><div class="v">4 / 2</div><div class="d">ждут главреда</div></div>
+        <div class="kpi"><div class="t">Новые заявки</div><div class="v">7</div><div class="d">3 — топ-лоты · SLA 24 ч</div></div>
+        <div class="kpi"><div class="t">Резервы</div><div class="v">2</div><div class="d">Сеймчан · Editions № 03</div></div>
+      </div>
+      <div class="note"><b>Регламент дома:</b> экспонат не публикуется без Provenance Card, экспертизы и минимум 5 фото по стандарту (ivory seamless + макро кромки). Проверка — вторая пара глаз, всегда.</div>
+      <div class="panel">
+        <div class="head"><h2>Требует действия</h2></div>
+        <table>
+          <tr><th>Объект</th><th>Что не так</th><th>Ответственный</th><th></th></tr>
+          <tr><td class="name">Череп мозазавра R–0603</td><td>Нет заключения второго эксперта</td><td>Д. Соколов</td><td><button class="btn ghost sm">Открыть</button></td></tr>
+          <tr><td class="name">Трилобит Drotops R–0205</td><td>Фото не по стандарту (тень)</td><td>Фотостудия</td><td><button class="btn ghost sm">Открыть</button></td></tr>
+          <tr><td class="name">Заявка №1042 · «скелет для лобби»</td><td>Без ответа 20 часов — SLA</td><td>Консьерж</td><td><button class="btn ghost sm">Открыть</button></td></tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- OBJECTS LIST -->
+    <section class="view" id="v-objects">
+      <div class="topbar">
+        <div><div class="crumb">Каталог</div><h1>Экспонаты</h1></div>
+        <div style="display:flex;gap:10px"><button class="btn ghost">Импорт CSV</button><button class="btn">+ Новый экспонат</button></div>
+      </div>
+      <div class="panel">
+        <div class="head">
+          <h2>20 объектов</h2>
+          <div class="filters">
+            <button class="chip on">Все</button><button class="chip">Опубликованы</button><button class="chip">Черновики</button><button class="chip">На проверке</button><button class="chip">Резерв</button><button class="chip">Архив (проданы)</button>
+          </div>
+        </div>
+        <table>
+          <tr><th></th><th>Объект</th><th>Мир</th><th>Цена</th><th>Статус</th><th>Досье</th><th></th></tr>
+          <tr>
+            <td><img class="ph" src="../shared/img/prod_pallasite_seymchan.jpg"></td>
+            <td><div class="name">Палласит Сеймчан</div><div class="latin">Seymchan Pallasite · R–0101</div></td>
+            <td>Космос</td><td>2 400 000 ₽</td>
+            <td><span class="status res">Резерв до 12.07</span></td>
+            <td>✓ полное</td>
+            <td><button class="btn ghost sm" onclick="go('obj-edit')">Изменить</button></td>
+          </tr>
+          <tr>
+            <td><img class="ph" src="../shared/img/grand_triceratops_skull.jpg"></td>
+            <td><div class="name">Череп трицератопса</div><div class="latin">Triceratops horridus · R–0601</div></td>
+            <td>Монументы</td><td>18 500 000 ₽</td>
+            <td><span class="status pub">Опубликован</span></td>
+            <td>✓ полное</td>
+            <td><button class="btn ghost sm" onclick="go('obj-edit')">Изменить</button></td>
+          </tr>
+          <tr>
+            <td><img class="ph" src="../shared/img/grand_mosasaur_skull.jpg"></td>
+            <td><div class="name">Череп мозазавра</div><div class="latin">Mosasaurus beaugei · R–0603</div></td>
+            <td>Монументы</td><td>4 800 000 ₽</td>
+            <td><span class="status draft">На проверке</span></td>
+            <td>⚠ нет 2-й экспертизы</td>
+            <td><button class="btn ghost sm" onclick="go('obj-edit')">Изменить</button></td>
+          </tr>
+          <tr>
+            <td><img class="ph" src="../shared/img/prod_trex_tooth.jpg"></td>
+            <td><div class="name">Зуб тираннозавра</div><div class="latin">Tyrannosaurus rex · R–0203</div></td>
+            <td>Жизнь</td><td>1 450 000 ₽</td>
+            <td><span class="status pub">Опубликован</span></td>
+            <td>✓ полное</td>
+            <td><button class="btn ghost sm" onclick="go('obj-edit')">Изменить</button></td>
+          </tr>
+          <tr>
+            <td><img class="ph" src="../shared/img/prod_amber_insect.jpg"></td>
+            <td><div class="name">Янтарь с инклюзом</div><div class="latin">Succinite · R–0301</div></td>
+            <td>Жизнь</td><td>390 000 ₽</td>
+            <td><span class="status arch">Продан · 28.06</span></td>
+            <td>✓ передано владельцу</td>
+            <td><button class="btn ghost sm">История</button></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- OBJECT EDITOR -->
+    <section class="view" id="v-obj-edit">
+      <div class="topbar">
+        <div><div class="crumb">Экспонаты · R–0603</div><h1>Череп мозазавра</h1></div>
+        <div style="display:flex;gap:10px">
+          <button class="btn ghost">Сохранить черновик</button>
+          <button class="btn">Отправить на проверку</button>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="editor">
+          <div class="fields">
+            <div class="frow"><label>Название</label><input value="Череп мозазавра"></div>
+            <div class="frow"><label>Латинское имя</label><input value="Mosasaurus beaugei"></div>
+            <div class="frow"><label>Шифр дома</label><input value="R–0603" disabled></div>
+            <div class="frow"><label>Мир</label><select><option>Монументы</option><option>Жизнь</option><option>Земля</option><option>Космос</option><option>Editions</option></select></div>
+            <div class="frow"><label>Период / возраст</label><input value="Поздний мел · ≈ 70 млн лет"></div>
+            <div class="frow"><label>Место находки</label><input value="Фосфатные бассейны, Марокко"></div>
+            <div class="frow"><label>Размер / оправа</label><input value="150 см · бронзовые колонны, мраморное основание"></div>
+            <div class="frow"><label>Цена</label><input value="4 800 000 ₽"> </div>
+            <div class="frow"><label>Показ цены</label><select><option>Показывать</option><option>«Цена по запросу»</option><option>Только в закрытом каталоге</option></select></div>
+            <div class="frow"><label>История (витрина)</label><textarea rows="4">Морской ящер, властвовавший в меловых океанах. Полутораметровый череп с сомкнутыми рядами зубов — экспонат уровня естественно-научного музея.</textarea></div>
+            <div class="frow"><label>SEO title / description</label><textarea rows="2">Череп мозазавра Mosasaurus beaugei 150 см — купить в галерее Relictum | Сертификат и провенанс</textarea></div>
+          </div>
+          <div class="side">
+            <h3>Чек-лист публикации</h3>
+            <label class="check"><input type="checkbox" checked> Provenance Card заполнена</label>
+            <label class="check"><input type="checkbox" checked> Экспертиза № 1 (палеонтолог дома)</label>
+            <label class="check"><input type="checkbox"> Экспертиза № 2 (внешний институт)</label>
+            <label class="check"><input type="checkbox" checked> Легальность экспорта · документы</label>
+            <label class="check"><input type="checkbox" checked> 5+ фото по стандарту дома</label>
+            <label class="check"><input type="checkbox"> Видео 360° для топ-лота</label>
+            <label class="check"><input type="checkbox" checked> Оправа и упаковка назначены</label>
+            <p class="hint" style="margin-top:12px">Кнопка «Опубликовать» доступна главному редактору после всех пунктов. Каждое изменение пишется в журнал версий — можно откатить.</p>
+            <h3 style="margin-top:22px">Версии</h3>
+            <p class="hint">v7 · сегодня 14:02 · Мария К. — цена<br>v6 · вчера · Д. Соколов — описание<br>v5 · 02.07 · импорт из экспедиции</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADS -->
+    <section class="view" id="v-leads">
+      <div class="topbar">
+        <div><div class="crumb">Консьерж</div><h1>Заявки</h1></div>
+        <button class="btn ghost">Экспорт в amoCRM</button>
+      </div>
+      <div class="panel">
+        <div class="head">
+          <h2>Новые и в работе</h2>
+          <div class="filters"><button class="chip on">Все</button><button class="chip">Новые</button><button class="chip">В работе</button><button class="chip">Показ назначен</button><button class="chip">Закрыты</button></div>
+        </div>
+        <div class="lead">
+          <div class="when">Сегодня 09:14<br>сайт · карточка R–0101</div>
+          <div class="who"><b>Андрей В.</b><span>+7 916 ··· 41 20 · «Интересует Сеймчан, можно посмотреть вживую?»</span></div>
+          <div><span class="status draft">Новая · SLA 22 ч</span></div>
+          <select><option>Назначить: Консьерж-1</option><option>Консьерж-2</option><option>Куратор</option></select>
+          <button class="btn sm">Открыть</button>
+        </div>
+        <div class="lead">
+          <div class="when">Вчера 18:40<br>Instagram · директ</div>
+          <div class="who"><b>Studio Arch M.</b><span>«Ищем монумент для лобби БЦ, потолки 6 м, бюджет до 20 млн»</span></div>
+          <div><span class="status res">В работе · показ 09.07</span></div>
+          <select><option>Куратор</option></select>
+          <button class="btn sm">Открыть</button>
+        </div>
+        <div class="lead">
+          <div class="when">Вчера 12:05<br>сайт · форма «подбор»</div>
+          <div class="who"><b>Елена С.</b><span>«Подарок мужу-геологу на 50 лет, до 500 тыс.»</span></div>
+          <div><span class="status res">Предложение отправлено</span></div>
+          <select><option>Консьерж-2</option></select>
+          <button class="btn sm">Открыть</button>
+        </div>
+        <div class="lead">
+          <div class="when">04.07<br>звонок</div>
+          <div class="who"><b>Family office K.</b><span>Закрытый каталог монументов · NDA подписан</span></div>
+          <div><span class="status pub">Показ проведён</span></div>
+          <select><option>Основатель</option></select>
+          <button class="btn sm">Открыть</button>
+        </div>
+      </div>
+      <div class="note">Правило дома: у каждой заявки ответственный и следующий шаг с датой. «Подумает» — не статус. Синк с amoCRM/Bitrix24 двусторонний: сделки и стадии там, карточка объекта — здесь.</div>
+    </section>
+
+    <!-- JOURNAL -->
+    <section class="view" id="v-journal">
+      <div class="topbar">
+        <div><div class="crumb">Контент</div><h1>Журнал</h1></div>
+        <button class="btn">+ Новая статья</button>
+      </div>
+      <div class="panel">
+        <table>
+          <tr><th>Статья</th><th>Рубрика</th><th>Автор</th><th>Статус</th><th>SEO</th><th></th></tr>
+          <tr><td class="name">Геометрия, которой 110 миллионов лет</td><td>Глубокое время</td><td>Редакция · AI-драфт + науч. ред.</td><td><span class="status pub">Опубликована</span></td><td>✓ 96</td><td><button class="btn ghost sm">Изменить</button></td></tr>
+          <tr><td class="name">Вещество старше Солнца</td><td>Космос</td><td>Д. Соколов</td><td><span class="status pub">Опубликована</span></td><td>✓ 91</td><td><button class="btn ghost sm">Изменить</button></td></tr>
+          <tr><td class="name">Как читать провенанс</td><td>Экспертиза</td><td>Мария К.</td><td><span class="status draft">Черновик</span></td><td>— нет мета</td><td><button class="btn ghost sm">Изменить</button></td></tr>
+          <tr><td class="name">Кем-Кем: дневник экспедиции</td><td>Экспедиции</td><td>Полевая команда</td><td><span class="status draft">На проверке</span></td><td>✓ 88</td><td><button class="btn ghost sm">Изменить</button></td></tr>
+        </table>
+      </div>
+      <div class="note">Пайплайн статьи: AI-черновик (Opus/Sonnet по брифу рубрики) → научный редактор проверяет факты и датировки → главред → публикация с перелинковкой на 2–3 экспоната.</div>
+    </section>
+  </main>
+</div>
+
+<script>
+const links = document.querySelectorAll('#nav a[data-v]');
+function go(v) {
+  document.querySelectorAll('.view').forEach(s => s.classList.toggle('on', s.id === 'v-' + v));
+  links.forEach(a => a.classList.toggle('on', a.dataset.v === v));
+  window.scrollTo(0, 0);
+}
+links.forEach(a => a.addEventListener('click', () => go(a.dataset.v)));
+</script>
+</body>
+</html>
