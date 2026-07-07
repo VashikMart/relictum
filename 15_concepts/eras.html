@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RELICTUM — Живые эры · существа в своей среде</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0A0908; --ivory:#F4F0E8; --bronze:#B08A55; --gold:#E9C98A;
+  --mist:rgba(244,240,232,.66);
+  --serif:'Cormorant Garamond',serif; --sans:'Inter',sans-serif;
+  --ease:cubic-bezier(.23,1,.32,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--black);color:var(--ivory);font-family:var(--sans);font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+h1,h2{font-family:var(--serif);font-weight:400;line-height:1.05}
+.label{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+
+/* HUD */
+.hud{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:flex-start;padding:16px clamp(16px,4vw,44px);background:linear-gradient(180deg,rgba(10,9,8,.8),transparent);pointer-events:none}
+.hud .mark{font-family:var(--serif);letter-spacing:.32em;font-size:15px;text-indent:.32em;padding-top:2px}
+.hud .era{text-align:right}
+.hud .era .n{font-family:var(--serif);font-size:clamp(17px,4.4vw,24px)}
+.hud .era .y{font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-top:3px}
+
+/* сцена эры */
+.era{position:relative;min-height:132svh}
+.era .frame{position:sticky;top:0;height:100svh;overflow:hidden}
+.era .frame .media{position:absolute;inset:0}
+.era .frame img,.era .frame video{width:100%;height:100%;object-fit:cover}
+.era .frame::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,9,8,.42) 0%,transparent 26%,transparent 52%,rgba(10,9,8,.86) 100%)}
+.era .cap{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:0 clamp(18px,5vw,60px) 6svh}
+.era .cap .inner{max-width:640px;opacity:0;transform:translateY(30px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.era.on .cap .inner{opacity:1;transform:none}
+.era .yrs{font-family:var(--serif);font-style:italic;font-size:clamp(14px,3.8vw,19px);color:var(--gold);margin-bottom:8px}
+.era h2{font-size:clamp(36px,9.6vw,72px);margin-bottom:10px;text-shadow:0 2px 26px rgba(10,9,8,.9)}
+.era p{font-size:clamp(13.5px,3.6vw,15.5px);color:var(--ivory);max-width:46ch;text-shadow:0 1px 14px rgba(10,9,8,.95);margin-bottom:16px}
+.era .relic{display:inline-flex;align-items:center;gap:10px;background:rgba(10,9,8,.66);backdrop-filter:blur(8px);border:1px solid rgba(233,201,138,.4);padding:8px 16px 8px 8px;text-decoration:none;color:var(--ivory);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;transition:.35s var(--ease)}
+.era .relic img{width:36px;height:44px;object-fit:cover}
+.era .relic:hover{background:var(--gold);color:var(--black)}
+.era .relic b{font-weight:400}
+.era .relic small{display:block;font-size:8.5px;color:var(--gold);letter-spacing:.2em}
+.era .relic:hover small{color:var(--black)}
+
+/* врата/финал */
+.gate{position:relative;min-height:100svh;display:grid;place-items:center;text-align:center;overflow:hidden}
+.gate .bg{position:absolute;inset:0;z-index:-2}
+.gate .bg img{width:100%;height:100%;object-fit:cover;opacity:.55}
+.gate .veil{position:absolute;inset:0;z-index:-1;background:radial-gradient(100% 70% at 50% 30%,transparent,rgba(10,9,8,.9))}
+.gate .in{padding:100px 22px 70px}
+.gate img.lockup{width:min(420px,70vw);margin:0 auto 4vh}
+.gate h1{font-size:clamp(40px,10.5vw,88px)}
+.gate h1 em{font-style:italic;color:var(--gold)}
+.gate p{color:var(--mist);max-width:46ch;margin:18px auto 0;font-size:14.5px}
+.hint{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--mist);animation:bob 2.4s ease-in-out infinite;z-index:2}
+@keyframes bob{50%{transform:translate(-50%,8px)}}
+.finale{background:var(--black)}
+.finale .btns{margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.finale .btn{display:inline-block;padding:15px 30px;border:1px solid var(--bronze);color:var(--gold);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;text-decoration:none;transition:.4s var(--ease)}
+.finale .btn:hover{background:var(--gold);color:var(--black)}
+</style>
+</head>
+<body>
+
+<div class="hud">
+  <span class="mark">RELICTUM</span>
+  <div class="era"><div class="n" id="eN">Сегодня</div><div class="y" id="eY">Живые эры</div></div>
+</div>
+
+<!-- ВРАТА -->
+<header class="gate" data-n="Сегодня" data-y="Живые эры">
+  <div class="bg"><img src="../shared/img/era_mammoth.jpg" alt=""></div>
+  <div class="veil"></div>
+  <div class="in">
+    <img class="lockup" src="../shared/brand/Relictum_lockup_dark.png" alt="RELICTUM">
+    <h1>Они были<br><em>живыми</em></h1>
+    <p>Каждый объект дома когда-то дышал, плавал или падал с неба. Пролистайте вниз — и увидьте миры, из которых они пришли. Насколько это возможно — как в жизни.</p>
+  </div>
+  <div class="hint">Листайте · эры оживают</div>
+</header>
+
+<!-- ПЛЕЙСТОЦЕН -->
+<section class="era" data-n="Плейстоцен" data-y="25 000 лет назад">
+  <div class="frame">
+    <div class="media">
+      <video autoplay muted loop playsinline preload="metadata" poster="../shared/img/era_mammoth.jpg" data-src="../shared/img/era_mammoth.mp4"></video>
+    </div>
+    <div class="cap"><div class="inner">
+      <div class="yrs">25 000 лет назад · ледниковая степь</div>
+      <h2>Шаг мамонтов</h2>
+      <p>Стадо идёт сквозь мороз к низкому солнцу. На гребне — охотники: люди уже здесь, и уже смотрят. Через двадцать пять тысяч лет от этого вечера останется бивень.</p>
+      <a class="relic" href="../02_site_v1_gallery/catalog.html#grand"><img src="../shared/img/grand_mammoth_skull.jpg" alt=""><span><b>Что осталось</b><small>Череп мамонта · R–0605</small></span></a>
+    </div></div>
+  </div>
+</section>
+
+<!-- МЕЛ -->
+<section class="era" data-n="Меловой период" data-y="66–145 млн лет назад">
+  <div class="frame">
+    <div class="media">
+      <video autoplay muted loop playsinline preload="metadata" poster="../shared/img/era_cretaceous.jpg" data-src="../shared/img/era_cretaceous.mp4"></video>
+    </div>
+    <div class="cap"><div class="inner">
+      <div class="yrs">66 миллионов лет назад · папоротниковая саванна</div>
+      <h2>Пастбище гигантов</h2>
+      <p>Трицератопсы пасутся в золотом свету, тираннозавр ждёт в дымке. Обычный вечер мелового периода — за мгновение до конца эпохи.</p>
+      <a class="relic" href="../02_site_v1_gallery/catalog.html#grand"><img src="../shared/img/grand_triceratops_skull.jpg" alt=""><span><b>Что осталось</b><small>Череп трицератопса · R–0601</small></span></a>
+    </div></div>
+  </div>
+</section>
+
+<!-- ЮРСКОЕ МОРЕ -->
+<section class="era" data-n="Юрское море" data-y="145–200 млн лет назад">
+  <div class="frame">
+    <div class="media">
+      <video autoplay muted loop playsinline preload="metadata" poster="../shared/img/era_jurassic_sea.jpg" data-src="../shared/img/era_jurassic_sea.mp4"></video>
+    </div>
+    <div class="cap"><div class="inner">
+      <div class="yrs">150 миллионов лет назад · открытая вода</div>
+      <h2>Флот аммонитов</h2>
+      <p>Спиральные раковины дрейфуют в столбах света, выше скользит ихтиозавр. Каждая спираль считает золотое сечение — просто живя.</p>
+      <a class="relic" href="../02_site_v1_gallery/journal-ammonite.html"><img src="../shared/img/cat_ammonite.jpg" alt=""><span><b>Что осталось</b><small>Аммонит Cleoniceras · R–0207</small></span></a>
+    </div></div>
+  </div>
+</section>
+
+<!-- ПАЛЕОЗОЙ -->
+<section class="era" data-n="Палеозой" data-y="252–541 млн лет назад">
+  <div class="frame">
+    <div class="media"><img src="../shared/img/era_paleozoic_sea.jpg" alt=""></div>
+    <div class="cap"><div class="inner">
+      <div class="yrs">400 миллионов лет назад · морское дно</div>
+      <h2>Первые глаза</h2>
+      <p>Трилобиты ползут между качающихся морских лилий. Их фасеточные глаза из кальцита — одни из первых, что вообще видели этот мир.</p>
+      <a class="relic" href="../02_site_v1_gallery/catalog.html#vita"><img src="../shared/img/prod_trilobite.jpg" alt=""><span><b>Что осталось</b><small>Трилобит Drotops · R–0205</small></span></a>
+    </div></div>
+  </div>
+</section>
+
+<!-- ДОКЕМБРИЙ -->
+<section class="era" data-n="Докембрий" data-y="0,5–4 млрд лет назад">
+  <div class="frame">
+    <div class="media"><img src="../shared/img/era_precambrian.jpg" alt=""></div>
+    <div class="cap"><div class="inner">
+      <div class="yrs">2 миллиарда лет назад · мелководная лагуна</div>
+      <h2>Планета без свидетелей</h2>
+      <p>Только строматолиты — купола первых бактерий — и огромная близкая Луна в зеркале воды. Тишина, которая длилась дольше, чем вся остальная история жизни.</p>
+      <a class="relic" href="../02_site_v1_gallery/catalog.html#terra"><img src="../shared/img/cat_minerals_amethyst.jpg" alt=""><span><b>Что осталось</b><small>Минералы Земли · Terra</small></span></a>
+    </div></div>
+  </div>
+</section>
+
+<!-- ГАДЕЙ -->
+<section class="era" data-n="Гадей" data-y="4,5 млрд лет назад">
+  <div class="frame">
+    <div class="media"><img src="../shared/img/era_hadean.jpg" alt=""></div>
+    <div class="cap"><div class="inner">
+      <div class="yrs">4,5 миллиарда лет назад · рождение планеты</div>
+      <h2>Огонь и кометы</h2>
+      <p>Океан магмы, чёрные острова остывающей коры, метеоры в дымном небе. Отсюда — вещество палласитов: гости из этого времени всё ещё падают к нам.</p>
+      <a class="relic" href="../02_site_v1_gallery/journal-meteorite.html"><img src="../shared/img/prod_pallasite_seymchan.jpg" alt=""><span><b>Что осталось</b><small>Палласит Сеймчан · R–0101</small></span></a>
+    </div></div>
+  </div>
+</section>
+
+<!-- ФИНАЛ -->
+<section class="gate finale" data-n="Сегодня" data-y="Галерея Relictum">
+  <div class="in">
+    <h1>Их эры прошли.<br><em>Их время — у вас</em></h1>
+    <p>Свидетели каждого из этих миров — в каталоге дома: атрибутированные, оправленные, с паспортом происхождения.</p>
+    <div class="btns">
+      <a class="btn" href="../02_site_v1_gallery/catalog.html">Каталог</a>
+      <a class="btn" href="strata.html">Спуск вглубь Земли</a>
+      <a class="btn" href="lab.html">Лаборатория</a>
+    </div>
+    <img src="../shared/brand/Relictum_lockup_dark.png" alt="RELICTUM" style="width:min(300px,56vw);margin:7vh auto 0">
+  </div>
+</section>
+
+<script>
+/* HUD-эра по секциям */
+var secs=[...document.querySelectorAll('[data-n]')];
+var eN=document.getElementById('eN'),eY=document.getElementById('eY');
+function onS(){
+  var pos=scrollY+innerHeight*0.5;
+  for(var i=secs.length-1;i>=0;i--){
+    var s=secs[i];
+    if(pos>=s.offsetTop){eN.textContent=s.dataset.n;eY.textContent=s.dataset.y;break;}
+  }
+}
+/* появление подписи + ленивые видео — на скролле, без IntersectionObserver */
+var eras=[...document.querySelectorAll('section.era')];
+function reveal(){
+  eras.forEach(function(s){
+    var r=s.getBoundingClientRect();
+    var vis=r.top<innerHeight*0.75 && r.bottom>innerHeight*0.25;
+    s.classList.toggle('on',vis);
+    if(vis){
+      var v=s.querySelector('video[data-src]');
+      if(v&&!v.getAttribute('src')){v.muted=true;v.src=v.dataset.src;v.load();v.play().catch(function(){});}
+    }
+  });
+}
+function all(){onS();reveal();}
+addEventListener('scroll',all,{passive:true});
+addEventListener('load',all);
+all();
+/* если автоплей заблокирован — первый жест запускает все видео */
+function kick(){document.querySelectorAll('video[src]').forEach(function(v){v.muted=true;if(v.paused)v.play().catch(function(){})})}
+['touchstart','pointerdown','scroll'].forEach(function(ev){addEventListener(ev,kick,{passive:true,once:false})});
+</script>
+</body>
+</html>
