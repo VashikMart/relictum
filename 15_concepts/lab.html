@@ -113,7 +113,7 @@ footer a{color:var(--gold);text-decoration:none}
 
 <header class="top">
   <img src="../shared/brand/Relictum_lockup_dark.png" alt="RELICTUM">
-  <div class="label">Лаборатория концептов · 8 живых прототипов</div>
+  <div class="label">Лаборатория концептов · 9 живых прототипов</div>
   <p>Интерактивные механики для сайта дома. Каждую можно потрогать прямо здесь — а потом перенести в каталог, карточки объектов и кампании.</p>
 </header>
 
@@ -186,10 +186,23 @@ footer a{color:var(--gold);text-decoration:none}
   </div>
 </section>
 
-<!-- 05 · ПЫЛЬ -->
+<!-- 04b · ЛУПА -->
 <section class="demo">
   <div class="wrap">
-    <div class="head"><span class="num">05</span><h2>Пыль времени</h2></div>
+    <div class="head"><span class="num">05</span><h2>Лупа эксперта</h2></div>
+    <p class="sub">Наведите на объект — и рассмотрите его вблизи, как под лупой в галерее: зазубрины зуба, кристаллы, суту́ры. Один жест вместо десяти фото «в деталях».</p>
+    <div class="stage loupe" id="loupe" style="max-width:520px;margin:0 auto;position:relative;aspect-ratio:4/5;overflow:hidden;cursor:none">
+      <img src="../shared/img/prod_megalodon_tooth.jpg" alt="" style="width:100%;height:100%;object-fit:cover">
+      <div id="lens" style="position:absolute;width:150px;height:150px;border-radius:50%;border:2px solid var(--gold);box-shadow:0 0 0 3px rgba(10,9,8,.5),0 10px 30px rgba(0,0,0,.6);background-repeat:no-repeat;pointer-events:none;opacity:0;transform:translate(-50%,-50%);transition:opacity .25s"></div>
+    </div>
+    <div class="hint">наведите курсор / палец</div>
+  </div>
+</section>
+
+<!-- 06 · ПЫЛЬ -->
+<section class="demo">
+  <div class="wrap">
+    <div class="head"><span class="num">06</span><h2>Пыль времени</h2></div>
     <p class="sub">Объект собирается из золотых частиц — как комета логотипа, рассыпанная и собранная заново. Клик — пересобрать.</p>
     <div class="stage dust" id="dust"><canvas id="dustC"></canvas></div>
     <div class="hint">кликните, чтобы пересобрать</div>
@@ -199,7 +212,7 @@ footer a{color:var(--gold);text-decoration:none}
 <!-- 06 · НОЧЬ -->
 <section class="demo">
   <div class="wrap">
-    <div class="head"><span class="num">06</span><h2>Ночной режим галереи</h2></div>
+    <div class="head"><span class="num">07</span><h2>Ночной режим галереи</h2></div>
     <p class="sub">Не «тёмная тема», а выключенный свет в музее: зал гаснет, объекты остаются в лучах витринных спотов.</p>
     <div class="stage night-stage">
       <div class="night-grid" id="nightGrid">
@@ -215,7 +228,7 @@ footer a{color:var(--gold);text-decoration:none}
 <!-- 07 · ПРОВЕНАНС-НИТЬ -->
 <section class="demo">
   <div class="wrap">
-    <div class="head"><span class="num">07</span><h2>Провенанс-нить</h2></div>
+    <div class="head"><span class="num">08</span><h2>Провенанс-нить</h2></div>
     <p class="sub">Биография объекта — не текст, а нить. Кликайте по точкам: каждая — задокументированный этап жизни палласита R–0101.</p>
     <div class="stage prov">
       <div class="line" id="provLine">
@@ -229,7 +242,7 @@ footer a{color:var(--gold);text-decoration:none}
 <!-- 08 · СУТУРЫ -->
 <section class="demo">
   <div class="wrap">
-    <div class="head"><span class="num">08</span><h2>Живые сутуры</h2></div>
+    <div class="head"><span class="num">09</span><h2>Живые сутуры</h2></div>
     <p class="sub">Лопастные линии аммонита — фрактальная подпись вида — медленно рисуются, когда секция попадает в кадр. Научный орнамент вместо декоративного.</p>
     <div class="stage suture-stage" id="suture">
       <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
@@ -366,6 +379,27 @@ footer a{color:var(--gold);text-decoration:none}
   img.onload=build;
   box.addEventListener('click',build);
   addEventListener('resize',function(){if(img.complete)build()});
+})();
+
+/* ============ 04b · LOUPE ============ */
+(function(){
+  var box=document.getElementById('loupe'); if(!box) return;
+  var img=box.querySelector('img'), lens=document.getElementById('lens');
+  var ZOOM=2.6, LS=150;
+  function bg(){ lens.style.backgroundImage='url('+img.src+')'; lens.style.backgroundSize=(box.clientWidth*ZOOM)+'px '+(box.clientHeight*ZOOM)+'px'; }
+  img.complete?bg():img.addEventListener('load',bg);
+  function move(e){
+    var r=box.getBoundingClientRect();
+    var x=(e.touches?e.touches[0].clientX:e.clientX)-r.left;
+    var y=(e.touches?e.touches[0].clientY:e.clientY)-r.top;
+    if(x<0||y<0||x>r.width||y>r.height){lens.style.opacity=0;return;}
+    lens.style.opacity=1;
+    lens.style.left=x+'px'; lens.style.top=y+'px';
+    lens.style.backgroundPosition='-'+(x*ZOOM-LS/2)+'px -'+(y*ZOOM-LS/2)+'px';
+  }
+  box.addEventListener('pointermove',move);
+  box.addEventListener('pointerleave',function(){lens.style.opacity=0});
+  box.addEventListener('touchmove',function(e){e.preventDefault();move(e)},{passive:false});
 })();
 
 /* ============ 06 · NIGHT ============ */
