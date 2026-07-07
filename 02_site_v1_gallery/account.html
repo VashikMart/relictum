@@ -6,6 +6,25 @@
 <title>Личный кабинет — RELICTUM</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="../shared/shop.css">
+
+<!-- rl-seo -->
+<link rel="icon" type="image/png" sizes="32x32" href="../shared/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../shared/brand/favicon-16.png">
+<link rel="icon" href="../shared/brand/favicon.ico">
+<link rel="apple-touch-icon" href="../shared/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#0A0908">
+<meta name="description" content="Личный кабинет RELICTUM: ваша коллекция, статус и персональная скидка, избранное, интересы и персональный консультант дома.">
+<link rel="canonical" href="https://vashikmart.github.io/relictum/02_site_v1_gallery/account.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RELICTUM">
+<meta property="og:title" content="Личный кабинет — RELICTUM">
+<meta property="og:description" content="Личный кабинет RELICTUM: ваша коллекция, статус и персональная скидка, избранное, интересы и персональный консультант дома.">
+<meta property="og:image" content="https://vashikmart.github.io/relictum/shared/img/hero_light_ivory.jpg">
+<meta property="og:url" content="https://vashikmart.github.io/relictum/02_site_v1_gallery/account.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Личный кабинет — RELICTUM">
+<meta name="twitter:description" content="Личный кабинет RELICTUM: ваша коллекция, статус и персональная скидка, избранное, интересы и персональный консультант дома.">
+<meta name="twitter:image" content="https://vashikmart.github.io/relictum/shared/img/hero_light_ivory.jpg">
 </head>
 <body>
 
@@ -68,7 +87,7 @@ function mini(o,favBtn){
 function heroHTML(){
   var u=S.user(), t=S.tier();
   return '<div class="rl-label" style="color:#B08A55;margin-bottom:14px">Личный кабинет</div>'+
-    '<h1 class="rl-h" style="font-size:clamp(32px,5vw,52px);color:#F4F0E8">Здравствуйте, '+u.name+'</h1>'+
+    '<h1 class="rl-h" style="font-size:clamp(32px,5vw,52px);color:#F4F0E8">Здравствуйте, '+S.esc(u.name)+'</h1>'+
     '<div class="rl-tier">'+t.name+' · личная скидка '+t.discount+'%</div>'+
     '<div style="display:flex;gap:34px;margin-top:26px;flex-wrap:wrap">'+
       '<div><div class="rl-h" style="font-size:30px;color:#F4F0E8">'+(u.purchased||[]).length+'</div><div style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,240,232,.6)">в коллекции</div></div>'+
@@ -113,10 +132,10 @@ function pane_data(){
   var u=S.user(),t=S.tier(),initials=(u.manager||'РД').split(' ').map(function(s){return s[0]}).join('').slice(0,2);
   return '<div class="rl-grid2"><div>'+
     '<h2 class="rl-h" style="font-size:28px;margin-bottom:18px">Ваши данные</h2>'+
-    '<form id="udata"><div class="rl-row"><div class="rl-field"><label>Имя</label><input class="rl-input" name="name" value="'+u.name+'"></div>'+
-      '<div class="rl-field"><label>Клиент с</label><input class="rl-input" value="'+(u.since||'2026')+' года" disabled></div></div>'+
-    '<div class="rl-row"><div class="rl-field"><label>E-mail</label><input class="rl-input" name="email" value="'+(u.email||'')+'"></div>'+
-      '<div class="rl-field"><label>Телефон</label><input class="rl-input" name="phone" value="'+(u.phone||'')+'"></div></div>'+
+    '<form id="udata"><div class="rl-row"><div class="rl-field"><label>Имя</label><input class="rl-input" name="name" value="'+S.esc(u.name)+'"></div>'+
+      '<div class="rl-field"><label>Клиент с</label><input class="rl-input" value="'+S.esc(u.since||'2026')+' года" disabled></div></div>'+
+    '<div class="rl-row"><div class="rl-field"><label>E-mail</label><input class="rl-input" name="email" value="'+S.esc(u.email||'')+'"></div>'+
+      '<div class="rl-field"><label>Телефон</label><input class="rl-input" name="phone" value="'+S.esc(u.phone||'')+'"></div></div>'+
     '<div class="rl-row"><div class="rl-field"><label>Статус</label><input class="rl-input" value="'+t.name+'" disabled></div>'+
       '<div class="rl-field"><label>Скидка</label><input class="rl-input" value="'+t.discount+'%" disabled></div></div>'+
     '<button class="rl-btn" type="submit" style="width:auto;padding-left:40px;padding-right:40px">Сохранить</button></form>'+

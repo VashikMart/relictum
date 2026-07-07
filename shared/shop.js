@@ -53,7 +53,9 @@
       if(spent>=500000)  return {name:'Патрон',discount:5,spent:spent};
       return {name:'Гость дома',discount:0,spent:spent};
     },
-    fmt:function(v){ return v==null?'Цена по запросу':(v.toLocaleString('ru-RU')+' ₽'); }
+    fmt:function(v){ return v==null?'Цена по запросу':(v.toLocaleString('ru-RU')+' ₽'); },
+    /* экранирование пользовательского ввода перед вставкой в HTML/атрибуты (защита от self-XSS) */
+    esc:function(s){ return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
   };
   window.RelictumShop=Shop;
 

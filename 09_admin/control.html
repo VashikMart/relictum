@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Панель управления — RELICTUM</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="../shared/brand/favicon-32.png">
+<link rel="icon" href="../shared/brand/favicon.ico">
+<meta name="theme-color" content="#0A0908">
+<style>
+:root{--coal:#14110E;--ink:#0A0908;--ivory:#F4F0E8;--bronze:#B08A55;--gold:#E9C98A;--deep:#8F6530;--stone:#8a8175;--line:#2a2620;--panel:#191510}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--ink);color:var(--ivory);font-family:'Inter',sans-serif;font-weight:300;line-height:1.6}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:400}
+a{color:var(--gold)}
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(10,9,8,.94);backdrop-filter:blur(8px);z-index:20}
+.top .mk{font-family:'Cormorant Garamond',serif;letter-spacing:.28em;font-size:16px}
+.top .mk small{display:block;font-family:'Inter';font-size:9px;letter-spacing:.24em;color:var(--stone);text-transform:uppercase}
+.wrap{max-width:1180px;margin:0 auto;padding:28px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin-bottom:26px}
+.tab{background:none;border:none;color:var(--stone);padding:14px 4px;margin-right:24px;font-size:13px;letter-spacing:.06em;cursor:pointer;border-bottom:2px solid transparent}
+.tab.on{color:var(--ivory);border-bottom-color:var(--bronze)}
+.card{background:var(--panel);border:1px solid var(--line);padding:22px;margin-bottom:16px;border-radius:4px}
+.label{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--deep)}
+.muted{color:var(--stone);font-size:13px}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line);font-size:13px;vertical-align:middle}
+th{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--stone);font-weight:500}
+td .id{color:var(--stone);font-size:11px}
+td b{font-weight:400;font-family:'Cormorant Garamond',serif;font-size:16px}
+.thumb{width:44px;height:54px;object-fit:cover;border:1px solid var(--line);background:#000}
+.sw{position:relative;display:inline-block;width:42px;height:23px}
+.sw input{opacity:0;width:0;height:0}
+.sl{position:absolute;inset:0;background:#3a352c;border-radius:20px;cursor:pointer;transition:.25s}
+.sl::before{content:'';position:absolute;width:17px;height:17px;left:3px;top:3px;background:#fff;border-radius:50%;transition:.25s}
+.sw input:checked+.sl{background:var(--deep)}
+.sw input:checked+.sl::before{transform:translateX(19px)}
+.btn{display:inline-block;padding:11px 20px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--bronze);background:transparent;color:var(--gold);cursor:pointer;text-decoration:none;transition:.3s;font-family:'Inter'}
+.btn:hover{background:var(--gold);color:var(--ink)}
+.btn.solid{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.btn.sm{padding:7px 13px;font-size:10px}
+.btn.warn{border-color:#7a4a3a;color:#d99}
+.pill{display:inline-block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:20px}
+.pill.on{background:rgba(176,138,85,.2);color:var(--gold)}
+.pill.off{background:#241f19;color:var(--stone)}
+input.f,textarea.f,select.f{width:100%;background:#0f0d0a;border:1px solid var(--line);color:var(--ivory);padding:11px 13px;font-family:'Inter';font-size:13px;border-radius:3px}
+textarea.f{min-height:70px;resize:vertical}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--deep);margin-bottom:6px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;place-items:center;z-index:50;padding:20px}
+.modal.on{display:grid}
+.modal .box{background:var(--panel);border:1px solid var(--line);max-width:640px;width:100%;max-height:88vh;overflow:auto;padding:28px;border-radius:6px}
+.note{background:rgba(176,138,85,.08);border:1px solid var(--line);border-left:2px solid var(--bronze);padding:14px 16px;font-size:12.5px;color:var(--stone);margin:14px 0;border-radius:3px}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--gold);color:var(--ink);padding:12px 22px;font-size:13px;border-radius:4px;opacity:0;transition:.35s;z-index:99}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+.grid3{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.pick{border:1px solid var(--line);border-radius:4px;overflow:hidden;cursor:pointer;position:relative}
+.pick img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.pick .cap{padding:8px 10px;font-size:12px}
+.pick.sel{outline:2px solid var(--gold)}
+.pick .badge{position:absolute;top:8px;right:8px;background:var(--gold);color:var(--ink);font-size:10px;padding:2px 7px;border-radius:10px}
+</style>
+</head>
+<body>
+<div class="top">
+  <span class="mk">RELICTUM<small>Панель управления · демо</small></span>
+  <a class="btn sm" href="index.html">← Старая админка</a>
+</div>
+
+<div class="wrap">
+  <div class="tabs" id="tabs">
+    <button class="tab on" data-t="exhibits">Экспонаты и промо</button>
+    <button class="tab" data-t="home">Главная</button>
+    <button class="tab" data-t="content">Промо-контент</button>
+    <button class="tab" data-t="export">Экспорт и деплой</button>
+    <button class="tab" data-t="inbox">Заявки и заказы</button>
+  </div>
+  <div id="pane"></div>
+</div>
+
+<div class="modal" id="modal"><div class="box" id="modalBox"></div></div>
+<div class="toast" id="toast"></div>
+
+<script src="../shared/catalog.js"></script>
+<script src="../16_product_promos/promo-data.js"></script>
+<script>
+var CAT = window.RELICTUM_CATALOG||[];
+var PROMO = window.RELICTUM_PROMO||{};
+var CFG_KEY='relictum_admin';
+function cfg(){ try{return JSON.parse(localStorage.getItem(CFG_KEY))||{}}catch(e){return {}} }
+function saveCfg(c){ localStorage.setItem(CFG_KEY,JSON.stringify(c)); }
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function toast(m){var t=document.getElementById('toast');t.textContent=m;t.classList.add('on');clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('on')},2000);}
+
+// начальное состояние из данных
+function initCfg(){
+  var c=cfg();
+  c.promo = c.promo || {};
+  c.hidden = c.hidden || {};      // скрыт из каталога
+  c.featured = c.featured || CAT.filter(function(o){return String(o.href||'').indexOf('exhibit.html')>=0}).slice(0,4).map(function(o){return o.id});
+  c.drafts = c.drafts || {};      // черновики промо-контента
+  CAT.forEach(function(o){ if(c.promo[o.id]===undefined) c.promo[o.id]=String(o.href||'').indexOf('exhibit.html')>=0; });
+  saveCfg(c); return c;
+}
+var C=initCfg();
+var IMG='../shared/img/';
+
+/* ---- Экспонаты и промо ---- */
+function paneExhibits(){
+  var rows=CAT.map(function(o){
+    var hasPromo=C.promo[o.id], hasContent=!!PROMO[o.id]||!!C.drafts[o.id];
+    return '<tr>'+
+      '<td><img class="thumb" src="'+IMG+o.img+'.jpg" onerror="this.style.opacity=.2"></td>'+
+      '<td><b>'+esc(o.name)+'</b><div class="id">'+o.id+' · '+esc(o.worldLabel)+'</div></td>'+
+      '<td><label class="sw"><input type="checkbox" data-promo="'+o.id+'" '+(hasPromo?'checked':'')+'><span class="sl"></span></label></td>'+
+      '<td>'+(hasContent?'<span class="pill on">контент есть</span>':'<span class="pill off">нет контента</span>')+'</td>'+
+      '<td><label class="sw"><input type="checkbox" data-vis="'+o.id+'" '+(C.hidden[o.id]?'':'checked')+'><span class="sl"></span></label></td>'+
+      '<td><button class="btn sm" data-edit="'+o.id+'">'+(hasContent?'Редактировать':'Создать промо')+'</button></td>'+
+    '</tr>';
+  }).join('');
+  return '<div class="card"><div class="label">Управление экспонатами</div>'+
+    '<h2 style="font-size:24px;margin:8px 0 4px">Промо-блоки и видимость</h2>'+
+    '<p class="muted">Включайте промо-страницу для нужных объектов и решайте, что показывать в каталоге. «Создать промо» — сформировать контент промо-страницы.</p>'+
+    '<div style="overflow-x:auto;margin-top:16px"><table><thead><tr><th>Фото</th><th>Объект</th><th>Промо-страница</th><th>Контент</th><th>В каталоге</th><th></th></tr></thead><tbody>'+rows+'</tbody></table></div></div>';
+}
+
+/* ---- Главная ---- */
+function paneHome(){
+  var picks=CAT.map(function(o){
+    var sel=C.featured.indexOf(o.id)>=0;
+    return '<div class="pick'+(sel?' sel':'')+'" data-feat="'+o.id+'"><img src="'+IMG+o.img+'.jpg" onerror="this.style.opacity=.2">'+
+      (sel?'<span class="badge">✓ на главной</span>':'')+
+      '<div class="cap">'+esc(o.name)+'<div class="id" style="color:var(--stone);font-size:10px">'+o.id+'</div></div></div>';
+  }).join('');
+  return '<div class="card"><div class="label">Блок «Только что поступило»</div>'+
+    '<h2 style="font-size:24px;margin:8px 0 4px">Что показывать на главной</h2>'+
+    '<p class="muted">Отметьте до 4 объектов для блока «Только что поступило» на главной странице. Выбрано: <b id="featCount">'+C.featured.length+'</b>/4</p>'+
+    '<div class="note">Порядок = порядок выбора. Изменения применяются после экспорта на вкладке «Экспорт и деплой».</div>'+
+    '<div class="grid3" style="margin-top:14px">'+picks+'</div></div>';
+}
+
+/* ---- Промо-контент (список + быстрый обзор) ---- */
+function paneContent(){
+  var list=CAT.filter(function(o){return C.promo[o.id]}).map(function(o){
+    var p=C.drafts[o.id]||PROMO[o.id];
+    return '<div class="card"><div style="display:flex;justify-content:space-between;align-items:start;gap:14px">'+
+      '<div><div class="id" style="color:var(--stone);font-size:11px">'+o.id+'</div><b style="font-family:\'Cormorant Garamond\';font-size:20px">'+esc(o.name)+'</b>'+
+      '<p class="muted" style="margin-top:6px">'+(p?esc((p.hook||'').slice(0,120)):'<span style="color:#a66">Контент не создан</span>')+'</p></div>'+
+      '<button class="btn sm" data-edit="'+o.id+'">'+(p?'Редактировать':'Создать')+'</button></div></div>';
+  }).join('');
+  return '<div class="card" style="background:none;border:none;padding:0 0 6px"><div class="label">Контент промо-страниц</div>'+
+    '<h2 style="font-size:24px;margin:8px 0 4px">Тексты и медиа промо</h2>'+
+    '<p class="muted">Только объекты с включённой промо-страницей. Правьте хук, историю и медиа.</p></div>'+(list||'<p class="muted">Нет объектов с промо. Включите промо на вкладке «Экспонаты».</p>');
+}
+
+/* ---- Экспорт ---- */
+function paneExport(){
+  return '<div class="card"><div class="label">Применение изменений</div>'+
+    '<h2 style="font-size:24px;margin:8px 0 10px">Экспорт и деплой</h2>'+
+    '<div class="note">Сайт статический (без сервера). Правки хранятся в этом браузере как черновик. Чтобы применить на сайте — скачайте файлы ниже и передайте разработчику (или Claude) для коммита в репозиторий. Так вы управляете контентом, не редактируя код.</div>'+
+    '<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px">'+
+      '<button class="btn solid" id="expPromo">Скачать promo-data.js</button>'+
+      '<button class="btn" id="expCfg">Скачать настройки (JSON)</button>'+
+      '<button class="btn" id="expBrief">Скачать бриф для Claude</button>'+
+      '<button class="btn warn" id="resetCfg">Сбросить черновик</button>'+
+    '</div>'+
+    '<h3 style="font-size:18px;margin:26px 0 8px">Что сейчас в черновике</h3>'+
+    '<div class="muted" id="cfgSummary"></div></div>';
+}
+
+/* ---- Inbox (демо CRM) ---- */
+function paneInbox(){
+  var u=null; try{u=JSON.parse(localStorage.getItem('relictum_user'))}catch(e){}
+  var cart=[]; try{cart=JSON.parse(localStorage.getItem('relictum_cart'))||[]}catch(e){}
+  return '<div class="card"><div class="label">Заявки и заказы</div>'+
+    '<h2 style="font-size:24px;margin:8px 0 6px">Обращения клиентов</h2>'+
+    '<div class="note">В прототипе данные клиента и корзина хранятся в его браузере (localStorage). В боевой версии заявки, заказы и кабинеты собираются на сервере/в CRM (amoCRM) — см. 09_admin/TECH_SPEC.md. Ниже — данные текущего браузера для демонстрации.</div>'+
+    '<table style="margin-top:14px"><tbody>'+
+    '<tr><th>Клиент</th><td>'+(u&&u.name?esc(u.name):'—')+'</td></tr>'+
+    '<tr><th>Контакт</th><td>'+(u?esc((u.email||'')+' '+(u.phone||'')):'—')+'</td></tr>'+
+    '<tr><th>Статус</th><td>'+(u&&u.purchased?u.purchased.length+' объект(ов) в коллекции':'—')+'</td></tr>'+
+    '<tr><th>Корзина сейчас</th><td>'+(cart.length?cart.join(', '):'пусто')+'</td></tr>'+
+    '<tr><th>Интересы</th><td>'+(u&&u.interests&&u.interests.length?esc(u.interests.join(', ')):'—')+'</td></tr>'+
+    '</tbody></table></div>';
+}
+
+var PANES={exhibits:paneExhibits,home:paneHome,content:paneContent,export:paneExport,inbox:paneInbox};
+
+/* ---- редактор промо ---- */
+function openEditor(id){
+  var o=CAT.find(function(x){return x.id===id}); if(!o)return;
+  var p=C.drafts[id]||PROMO[id]||{hook:'',heroKicker:o.worldLabel+' · '+(o.region||''),story:['',''],era:{title:'',line:'',href:'../15_concepts/eras.html'},alive:{title:'',text:'',video:'',poster:o.img+'.jpg'},interior:{img:'int_ph_'+o.slug+'.jpg',text:''}};
+  var box=document.getElementById('modalBox');
+  box.innerHTML='<div class="label">'+o.id+'</div><h2 style="font-size:23px;margin:6px 0 16px">Промо: '+esc(o.name)+'</h2>'+
+    '<div class="field"><label>Хук (одна фраза-крючок)</label><input class="f" id="e_hook" value="'+esc(p.hook)+'"></div>'+
+    '<div class="field"><label>Надпись над заголовком</label><input class="f" id="e_kick" value="'+esc(p.heroKicker||'')+'"></div>'+
+    '<div class="field"><label>История — абзац 1</label><textarea class="f" id="e_s1">'+esc((p.story||[])[0]||'')+'</textarea></div>'+
+    '<div class="field"><label>История — абзац 2</label><textarea class="f" id="e_s2">'+esc((p.story||[])[1]||'')+'</textarea></div>'+
+    '<div class="row2"><div class="field"><label>Эпоха — название</label><input class="f" id="e_era" value="'+esc((p.era||{}).title||'')+'"></div>'+
+      '<div class="field"><label>Эпоха — датировка</label><input class="f" id="e_eraline" value="'+esc((p.era||{}).line||'')+'"></div></div>'+
+    '<div class="field"><label>Ссылка «Войти в эпоху»</label><input class="f" id="e_erahref" value="'+esc((p.era||{}).href||'')+'"></div>'+
+    '<div class="row2"><div class="field"><label>«Встретить живым» — заголовок</label><input class="f" id="e_at" value="'+esc((p.alive||{}).title||'')+'"></div>'+
+      '<div class="field"><label>Видео (файл в shared/img)</label><input class="f" id="e_av" value="'+esc((p.alive||{}).video||'')+'" placeholder="vid_xxx.mp4"></div></div>'+
+    '<div class="field"><label>«Встретить живым» — текст</label><textarea class="f" id="e_atext">'+esc((p.alive||{}).text||'')+'</textarea></div>'+
+    '<div class="field"><label>«В вашем доме» — интерьер (файл)</label><input class="f" id="e_int" value="'+esc((p.interior||{}).img||'')+'"></div>'+
+    '<div class="field"><label>«В вашем доме» — текст</label><textarea class="f" id="e_inttext">'+esc((p.interior||{}).text||'')+'</textarea></div>'+
+    '<div class="note">💡 Видео и интерьер-рендеры под новый объект генерирует Claude (промпты в скилле relictum-product-promo). Впишите имена файлов, которые он вернёт.</div>'+
+    '<div style="display:flex;gap:10px;margin-top:8px"><button class="btn solid" id="e_save">Сохранить в черновик</button><button class="btn" id="e_cancel">Отмена</button></div>';
+  document.getElementById('modal').classList.add('on');
+  document.getElementById('e_cancel').onclick=closeModal;
+  document.getElementById('e_save').onclick=function(){
+    C.drafts[id]={hook:val('e_hook'),heroKicker:val('e_kick'),story:[val('e_s1'),val('e_s2')],
+      era:{title:val('e_era'),line:val('e_eraline'),href:val('e_erahref')},
+      alive:{title:val('e_at'),text:val('e_atext'),video:val('e_av'),poster:(p.alive&&p.alive.poster)||o.img+'.jpg'},
+      interior:{img:val('e_int'),text:val('e_inttext')},
+      gallery:(p.gallery||[])};
+    C.promo[id]=true; saveCfg(C); closeModal(); toast('Черновик промо сохранён'); render();
+  };
+}
+function val(id){return document.getElementById(id).value;}
+function closeModal(){document.getElementById('modal').classList.remove('on');}
+document.getElementById('modal').addEventListener('click',function(e){if(e.target.id==='modal')closeModal();});
+
+/* ---- экспорт файлов ---- */
+function download(name,text,type){
+  var b=new Blob([text],{type:type||'text/plain'}); var a=document.createElement('a');
+  a.href=URL.createObjectURL(b); a.download=name; a.click(); setTimeout(function(){URL.revokeObjectURL(a.href)},1000);
+}
+function buildPromoJS(){
+  var merged={}; Object.keys(PROMO).forEach(function(k){merged[k]=PROMO[k]});
+  Object.keys(C.drafts).forEach(function(k){merged[k]=C.drafts[k]});
+  return '/* RELICTUM — promo-data.js (экспорт из панели управления) */\nwindow.RELICTUM_PROMO = '+JSON.stringify(merged,null,2)+';\n';
+}
+function buildBrief(){
+  var promoOn=CAT.filter(function(o){return C.promo[o.id]}).map(function(o){return o.id+' '+o.name+(C.drafts[o.id]?' (черновик готов)':(PROMO[o.id]?' (есть)':' (нужен контент+медиа)'))});
+  var feat=C.featured.map(function(id){var o=CAT.find(function(x){return x.id===id});return o?o.id+' '+o.name:id});
+  var hidden=Object.keys(C.hidden).filter(function(k){return C.hidden[k]}).map(function(k){var o=CAT.find(function(x){return x.id===k});return o?o.id+' '+o.name:k});
+  return 'БРИФ ДЛЯ CLAUDE — применить настройки панели RELICTUM\n\n'+
+    '1) ПРОМО-СТРАНИЦЫ включены для:\n - '+promoOn.join('\n - ')+'\n\n'+
+    '2) БЛОК «Только что поступило» на главной (до 4):\n - '+feat.join('\n - ')+'\n\n'+
+    '3) СКРЫТЬ из каталога:\n - '+(hidden.length?hidden.join('\n - '):'—')+'\n\n'+
+    '4) Приложен promo-data.js с черновиками. Прогенерируй недостающие видео/интерьеры (скилл relictum-product-promo), проставь href у объектов в catalog.js, обнови блок главной, задеплой.\n';
+}
+function refreshSummary(){
+  var el=document.getElementById('cfgSummary'); if(!el)return;
+  var on=CAT.filter(function(o){return C.promo[o.id]}).length, dr=Object.keys(C.drafts).length;
+  el.innerHTML='Промо включено: <b>'+on+'</b> объект(ов) · черновиков контента: <b>'+dr+'</b> · на главной: <b>'+C.featured.length+'</b> · скрыто: <b>'+Object.keys(C.hidden).filter(function(k){return C.hidden[k]}).length+'</b>';
+}
+
+/* ---- события ---- */
+function bind(t){
+  document.querySelectorAll('[data-promo]').forEach(function(cb){cb.onchange=function(){C.promo[cb.dataset.promo]=cb.checked;saveCfg(C);toast('Обновлено');render();};});
+  document.querySelectorAll('[data-vis]').forEach(function(cb){cb.onchange=function(){C.hidden[cb.dataset.vis]=!cb.checked;saveCfg(C);toast('Видимость обновлена');};});
+  document.querySelectorAll('[data-edit]').forEach(function(b){b.onclick=function(){openEditor(b.dataset.edit);};});
+  document.querySelectorAll('[data-feat]').forEach(function(p){p.onclick=function(){
+    var id=p.dataset.feat, i=C.featured.indexOf(id);
+    if(i>=0)C.featured.splice(i,1); else{ if(C.featured.length>=4){toast('Максимум 4 объекта');return;} C.featured.push(id); }
+    saveCfg(C); render();
+  };});
+  if(t==='export'){
+    document.getElementById('expPromo').onclick=function(){download('promo-data.js',buildPromoJS(),'text/javascript');toast('promo-data.js скачан');};
+    document.getElementById('expCfg').onclick=function(){download('relictum-admin-config.json',JSON.stringify(C,null,2),'application/json');toast('Настройки скачаны');};
+    document.getElementById('expBrief').onclick=function(){download('relictum-brief.txt',buildBrief());toast('Бриф скачан');};
+    document.getElementById('resetCfg').onclick=function(){if(confirm('Сбросить весь черновик панели?')){localStorage.removeItem(CFG_KEY);C=initCfg();render();toast('Сброшено');}};
+    refreshSummary();
+  }
+}
+function render(){
+  var t=document.querySelector('.tab.on').dataset.t;
+  document.getElementById('pane').innerHTML=PANES[t]();
+  bind(t);
+}
+document.getElementById('tabs').addEventListener('click',function(e){
+  var b=e.target.closest('.tab'); if(!b)return;
+  document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on')}); b.classList.add('on');
+  render();
+});
+render();
+</script>
+</body>
+</html>

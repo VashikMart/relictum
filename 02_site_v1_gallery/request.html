@@ -7,6 +7,24 @@
 <meta name="description" content="Не нашли нужный экспонат? Оставьте заявку — дом Relictum найдёт объект под ваш запрос: вид, эпоха, размер, бюджет.">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="../shared/shop.css">
+
+<!-- rl-seo -->
+<link rel="icon" type="image/png" sizes="32x32" href="../shared/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../shared/brand/favicon-16.png">
+<link rel="icon" href="../shared/brand/favicon.ico">
+<link rel="apple-touch-icon" href="../shared/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#0A0908">
+<link rel="canonical" href="https://vashikmart.github.io/relictum/02_site_v1_gallery/request.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RELICTUM">
+<meta property="og:title" content="Персональный поиск — RELICTUM">
+<meta property="og:description" content="Не нашли нужный экспонат? Оставьте заявку — дом Relictum найдёт объект под ваш запрос: вид, эпоха, размер, бюджет.">
+<meta property="og:image" content="https://vashikmart.github.io/relictum/shared/img/hero_light_ivory.jpg">
+<meta property="og:url" content="https://vashikmart.github.io/relictum/02_site_v1_gallery/request.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Персональный поиск — RELICTUM">
+<meta name="twitter:description" content="Не нашли нужный экспонат? Оставьте заявку — дом Relictum найдёт объект под ваш запрос: вид, эпоха, размер, бюджет.">
+<meta name="twitter:image" content="https://vashikmart.github.io/relictum/shared/img/hero_light_ivory.jpg">
 </head>
 <body>
 
@@ -54,8 +72,8 @@ function form(){
       '<select class="rl-select" name="budget"><option value="">Обсудим</option><option>до 500 000 ₽</option><option>500 000 – 2 000 000 ₽</option><option>2 000 000 – 10 000 000 ₽</option><option>от 10 000 000 ₽</option></select></div></div>'+
     '<div class="rl-field"><label>Опишите запрос</label><textarea class="rl-textarea" name="desc" placeholder="Например: ищу зуб спинозавра музейного качества для кабинета, или крупный аммонит под конкретную нишу 90×90 см…"></textarea></div>'+
     '<div class="rl-label" style="margin:24px 0 14px">Как с вами связаться</div>'+
-    '<div class="rl-row"><div class="rl-field"><label>Имя</label><input class="rl-input" name="name" value="'+(u.name==='Гость'?'':u.name)+'" required></div>'+
-      '<div class="rl-field"><label>Телефон или e-mail</label><input class="rl-input" name="contact" value="'+(u.email||u.phone||'')+'" required></div></div>'+
+    '<div class="rl-row"><div class="rl-field"><label>Имя</label><input class="rl-input" name="name" value="'+S.esc(u.name==='Гость'?'':u.name)+'" required></div>'+
+      '<div class="rl-field"><label>Телефон или e-mail</label><input class="rl-input" name="contact" value="'+S.esc(u.email||u.phone||'')+'" required></div></div>'+
     '<button class="rl-btn" type="submit" id="send" style="margin-top:6px">Отправить заявку</button>'+
     '<div class="rl-note" style="margin-top:14px">Отвечаем в течение рабочего дня. Заявка ни к чему не обязывает.</div>'+
   '</form>';
