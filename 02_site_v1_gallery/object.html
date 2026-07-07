@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Палласит Сеймчан — RELICTUM</title>
+<title>Объект — RELICTUM</title>
 <link rel="stylesheet" href="style.css">
+<style>
+@media (max-width:960px){ .object-gallery{position:static} }
+</style>
 </head>
 <body>
 
@@ -18,8 +21,8 @@
   </a>
   <ul class="nav-links">
     <li><a href="catalog.html" class="active">Каталог</a></li>
-    <li><a href="catalog.html#editions">Editions</a></li>
-    <li><a href="interiors.html">Интерьеры</a></li><li><a href="expeditions.html">Экспедиции</a></li>
+    <li><a href="interiors.html">Интерьеры</a></li>
+    <li><a href="expeditions.html">Экспедиции</a></li>
     <li><a href="journal.html">Журнал</a></li>
     <li><a href="maison.html">Дом Relictum</a></li>
   </ul>
@@ -29,32 +32,24 @@
 </nav>
 
 <div class="wrap" style="padding-top:130px">
-  <div class="crumbs" style="margin-bottom:40px"><a href="index.html">Главная</a> · <a href="catalog.html">Каталог</a> · <a href="catalog.html#cosmos">Космос</a> · Палласит Сеймчан</div>
+  <div class="crumbs" style="margin-bottom:40px" id="crumbs"><a href="index.html">Главная</a> · <a href="catalog.html">Каталог</a></div>
 
   <div class="object-layout">
     <div class="object-gallery">
-      <div class="main"><img src="../shared/img/prod_pallasite_seymchan.jpg" alt="Палласит Сеймчан — срез с оливинами"></div>
+      <div class="main"><img id="oImg" src="" alt=""></div>
     </div>
 
     <div class="object-info">
-      <div class="label">R–0101 · Космос · Палласиты</div>
-      <h1>Палласит Сеймчан</h1>
-      <div class="latin">Seymchan Pallasite</div>
+      <div class="label" id="oCode"></div>
+      <h1 id="oName"></h1>
+      <div class="latin" id="oLatin"></div>
 
-      <table class="spec">
-        <tr><td>Тип</td><td>Железно-каменный метеорит, палласит (PMG)</td></tr>
-        <tr><td>Находка</td><td>Магаданская область, Россия · 1967 год</td></tr>
-        <tr><td>Возраст</td><td>≈ 4,56 млрд лет — старше Земли</td></tr>
-        <tr><td>Размер</td><td>Срез 18 × 14 × 0,6 см</td></tr>
-        <tr><td>Масса</td><td>1 240 г</td></tr>
-        <tr><td>Оформление</td><td>Латунный мольберт-подставка Relictum</td></tr>
-        <tr><td>Документы</td><td>Provenance Card · сертификат · экспертиза</td></tr>
-      </table>
+      <table class="spec" id="oSpec"></table>
 
-      <p style="color:var(--stone);font-size:15px">Кристаллы оливина, застывшие в никелистом железе, — вещество границы ядра и мантии протопланеты, разрушенной в первые миллионы лет Солнечной системы. На просвет оливины горят золотисто-зелёным огнём: это самый живописный класс метеоритов и самый желанный среди коллекционеров.</p>
+      <p style="color:var(--stone);font-size:15px" id="oDesc"></p>
 
-      <div class="price">2 400 000 ₽</div>
-      <div style="font-size:12px;color:var(--stone);margin-bottom:26px">Включая футляр, документы и доставку белыми перчатками</div>
+      <div class="price" id="oPrice"></div>
+      <div style="font-size:12px;color:var(--stone);margin-bottom:26px">Включая оправу, футляр, документы и доставку белыми перчатками</div>
 
       <div class="btn-row">
         <a class="btn btn-solid" href="maison.html#concierge">Запросить объект</a>
@@ -81,39 +76,11 @@
     <div class="section-head">
       <div>
         <div class="label">Сопутствующие объекты</div>
-        <h2>Из мира Космос</h2>
+        <h2 id="relTitle">Из коллекции дома</h2>
       </div>
-      <a class="link-arrow" href="catalog.html#cosmos">Весь мир</a>
+      <a class="link-arrow" href="catalog.html" id="relAll">Весь каталог</a>
     </div>
-    <div class="grid-objects">
-      <a class="obj-card" href="catalog.html#cosmos">
-        <div class="ph"><img src="../shared/img/cat_meteorite.jpg" alt="Метеорит Сихотэ-Алинь" loading="lazy"></div>
-        <div class="body">
-          <div class="id">R–0102 · Космос</div>
-          <h3>Метеорит Сихотэ-Алинь</h3>
-          <div class="latin">Sikhote-Alin Iron</div>
-          <div class="price"><b>890 000 ₽</b><span>Смотреть</span></div>
-        </div>
-      </a>
-      <a class="obj-card" href="catalog.html#editions">
-        <div class="ph"><img src="../shared/img/editions_megalodon_vitrine.jpg" alt="Editions № 01" loading="lazy"></div>
-        <div class="body">
-          <div class="id">R–0501 · Editions</div>
-          <h3>Мегалодон · бронзовая витрина</h3>
-          <div class="latin">Relictum Editions № 01</div>
-          <div class="price"><b>2 900 000 ₽</b><span>Смотреть</span></div>
-        </div>
-      </a>
-      <a class="obj-card" href="catalog.html#terra">
-        <div class="ph"><img src="../shared/img/cat_minerals_amethyst.jpg" alt="Аметистовая жеода" loading="lazy"></div>
-        <div class="body">
-          <div class="id">R–0402 · Земля</div>
-          <h3>Аметистовая жеода</h3>
-          <div class="latin">Amethyst Geode</div>
-          <div class="price"><b>340 000 ₽</b><span>Смотреть</span></div>
-        </div>
-      </a>
-    </div>
+    <div class="grid-objects" id="related"></div>
   </div>
 </section>
 
@@ -125,6 +92,52 @@
     </div>
   </div>
 </footer>
+
+<script src="../shared/catalog.js"></script>
+<script>
+(function(){
+  var C = window.RELICTUM_CATALOG || [];
+  var params = new URLSearchParams(location.search);
+  var q = params.get('id')||'';
+  var o = C.find(function(x){return x.id===q || x.id.replace('–','-')===q || x.slug===q});
+  if(!o) o = C[0];
+
+  document.title = o.name + ' — RELICTUM';
+  document.getElementById('oImg').src = '../shared/img/'+o.img+'.jpg';
+  document.getElementById('oImg').alt = o.name;
+  document.getElementById('oCode').textContent = o.id+' · '+o.worldLabel+' · '+o.category;
+  document.getElementById('oName').textContent = o.name;
+  document.getElementById('oLatin').textContent = o.latin;
+  document.getElementById('oDesc').textContent = o.description||'';
+  document.getElementById('oPrice').textContent = o.price;
+  document.getElementById('crumbs').innerHTML =
+    '<a href="index.html">Главная</a> · <a href="catalog.html">Каталог</a> · <a href="catalog.html#'+o.world+'">'+o.worldLabel+'</a> · '+o.name;
+
+  var rows=[];
+  function row(k,v){ if(v) rows.push('<tr><td>'+k+'</td><td>'+v+'</td></tr>'); }
+  row('Категория', o.category);
+  row('Период', o.period && o.period!=='—' ? o.period : null);
+  row('Возраст', o.age);
+  row('Находка', o.location);
+  row('Размер', o.size);
+  row('Документы','Provenance Card · сертификат · экспертиза');
+  document.getElementById('oSpec').innerHTML = rows.join('');
+
+  var rel = C.filter(function(x){return x.world===o.world && x.id!==o.id});
+  if(rel.length<3) rel = rel.concat(C.filter(function(x){return x.world!==o.world && x.id!==o.id}));
+  rel = rel.slice(0,3);
+  document.getElementById('relTitle').textContent = 'Из мира '+o.worldLabel;
+  document.getElementById('relAll').href = 'catalog.html#'+o.world;
+  document.getElementById('related').innerHTML = rel.map(function(r){
+    var href = r.href || ('object.html?id='+encodeURIComponent(r.id));
+    return '<a class="obj-card" href="'+href+'">'+
+      '<div class="ph"><img src="../shared/img/'+r.img+'.jpg" alt="'+r.name+'" loading="lazy"></div>'+
+      '<div class="body"><div class="id">'+r.id+' · '+r.worldLabel+'</div>'+
+      '<h3>'+r.name+'</h3><div class="latin">'+r.latin+'</div>'+
+      '<div class="price"><b>'+r.price+'</b><span>Смотреть</span></div></div></a>';
+  }).join('');
+})();
+</script>
 <script src="../shared/nav.js"></script>
 </body>
 </html>
