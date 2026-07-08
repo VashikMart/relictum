@@ -99,6 +99,8 @@ function initCfg(){
   var c=cfg();
   c.promo = c.promo || {};
   c.hidden = c.hidden || {};      // скрыт из каталога
+  c.deleted = c.deleted || {};    // удалён из каталога
+  c.newObjects = c.newObjects || [];  // добавленные объекты
   c.featured = c.featured || CAT.filter(function(o){return String(o.href||'').indexOf('exhibit.html')>=0}).slice(0,4).map(function(o){return o.id});
   c.drafts = c.drafts || {};      // черновики промо-контента
   CAT.forEach(function(o){ if(c.promo[o.id]===undefined) c.promo[o.id]=String(o.href||'').indexOf('exhibit.html')>=0; });
