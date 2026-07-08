@@ -93,6 +93,7 @@ document.getElementById('rq').addEventListener('submit',function(e){
   // сохранить контакт
   var u=S.user(),fd=new FormData(f); if(fd.get('name'))u.name=fd.get('name');
   var c=fd.get('contact')||''; if(c.indexOf('@')>=0)u.email=c; else u.phone=c; S.saveUser(u);
+  S.addLead({date:new Date().toLocaleString('ru-RU'),type:fd.get('type'),era:fd.get('era'),budget:fd.get('budget'),desc:fd.get('desc'),name:fd.get('name'),contact:c});
   setTimeout(success,1100);
 });
 </script>

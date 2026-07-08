@@ -108,22 +108,62 @@ var C=initCfg();
 var IMG='../shared/img/';
 
 /* ---- Экспонаты и промо ---- */
+function allObjects(){ return CAT.concat(C.newObjects||[]); }
 function paneExhibits(){
-  var rows=CAT.map(function(o){
-    var hasPromo=C.promo[o.id], hasContent=!!PROMO[o.id]||!!C.drafts[o.id];
+  var rows=allObjects().filter(function(o){return !C.deleted[o.id]}).map(function(o){
+    var hasPromo=C.promo[o.id], hasContent=!!PROMO[o.id]||!!C.drafts[o.id], isNew=(C.newObjects||[]).some(function(x){return x.id===o.id});
     return '<tr>'+
       '<td><img class="thumb" src="'+IMG+o.img+'.jpg" onerror="this.style.opacity=.2"></td>'+
-      '<td><b>'+esc(o.name)+'</b><div class="id">'+o.id+' · '+esc(o.worldLabel)+'</div></td>'+
+      '<td><b>'+esc(o.name)+'</b>'+(isNew?' <span class="pill on">новый</span>':'')+'<div class="id">'+o.id+' · '+esc(o.worldLabel||'')+'</div></td>'+
       '<td><label class="sw"><input type="checkbox" data-promo="'+o.id+'" '+(hasPromo?'checked':'')+'><span class="sl"></span></label></td>'+
-      '<td>'+(hasContent?'<span class="pill on">контент есть</span>':'<span class="pill off">нет контента</span>')+'</td>'+
+      '<td>'+(hasContent?'<span class="pill on">контент есть</span>':'<span class="pill off">нет</span>')+'</td>'+
       '<td><label class="sw"><input type="checkbox" data-vis="'+o.id+'" '+(C.hidden[o.id]?'':'checked')+'><span class="sl"></span></label></td>'+
-      '<td><button class="btn sm" data-edit="'+o.id+'">'+(hasContent?'Редактировать':'Создать промо')+'</button></td>'+
+      '<td style="white-space:nowrap"><button class="btn sm" data-edit="'+o.id+'">Промо</button> <button class="btn sm warn" data-del="'+o.id+'">✕</button></td>'+
     '</tr>';
   }).join('');
-  return '<div class="card"><div class="label">Управление экспонатами</div>'+
-    '<h2 style="font-size:24px;margin:8px 0 4px">Промо-блоки и видимость</h2>'+
-    '<p class="muted">Включайте промо-страницу для нужных объектов и решайте, что показывать в каталоге. «Создать промо» — сформировать контент промо-страницы.</p>'+
-    '<div style="overflow-x:auto;margin-top:16px"><table><thead><tr><th>Фото</th><th>Объект</th><th>Промо-страница</th><th>Контент</th><th>В каталоге</th><th></th></tr></thead><tbody>'+rows+'</tbody></table></div></div>';
+  return '<div class="card"><div style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap"><div><div class="label">Управление каталогом</div>'+
+    '<h2 style="font-size:24px;margin:8px 0 4px">Экспонаты, промо и видимость</h2></div>'+
+    '<button class="btn solid" id="addObj">+ Добавить экспонат</button></div>'+
+    '<p class="muted" style="margin-top:6px">Добавляйте и удаляйте объекты, включайте промо-страницу, управляйте видимостью в каталоге. Изменения — в черновик; применяются экспортом.</p>'+
+    '<div style="overflow-x:auto;margin-top:16px"><table><thead><tr><th>Фото</th><th>Объект</th><th>Промо</th><th>Контент</th><th>В каталоге</th><th></th></tr></thead><tbody>'+rows+'</tbody></table></div></div>';
+}
+
+/* ---- редактор объекта (новый) ---- */
+function openNewExhibit(){
+  var box=document.getElementById('modalBox');
+  var worlds=[['vita','Жизнь'],['terra','Земля'],['cosmos','Космос'],['grand','Монументы'],['editions','Editions']];
+  box.innerHTML='<div class="label">Новый объект</div><h2 style="font-size:23px;margin:6px 0 16px">Добавить экспонат в каталог</h2>'+
+    '<div class="row2"><div class="field"><label>Название</label><input class="f" id="n_name" placeholder="Зуб спинозавра"></div>'+
+      '<div class="field"><label>Латинское имя</label><input class="f" id="n_latin" placeholder="Spinosaurus aegyptiacus"></div></div>'+
+    '<div class="row2"><div class="field"><label>Мир</label><select class="f" id="n_world">'+worlds.map(function(w){return '<option value="'+w[0]+'">'+w[1]+'</option>'}).join('')+'</select></div>'+
+      '<div class="field"><label>Категория (фильтр)</label><input class="f" id="n_cat" placeholder="Динозавры"></div></div>'+
+    '<div class="row2"><div class="field"><label>Эпоха (фильтр)</label><input class="f" id="n_period" placeholder="Мел"></div>'+
+      '<div class="field"><label>Регион (фильтр)</label><input class="f" id="n_region" placeholder="Марокко"></div></div>'+
+    '<div class="row2"><div class="field"><label>Цена (число, пусто = по запросу)</label><input class="f" id="n_price" placeholder="920000"></div>'+
+      '<div class="field"><label>Возраст</label><input class="f" id="n_age" placeholder="93–112 млн лет"></div></div>'+
+    '<div class="row2"><div class="field"><label>Место находки</label><input class="f" id="n_loc" placeholder="Кем-Кем, Марокко"></div>'+
+      '<div class="field"><label>Размер</label><input class="f" id="n_size" placeholder="12 см"></div></div>'+
+    '<div class="field"><label>Фото (имя файла в shared/img, без .jpg)</label><input class="f" id="n_img" placeholder="prod_spinosaurus_tooth"></div>'+
+    '<div class="field"><label>Описание</label><textarea class="f" id="n_desc" placeholder="1–2 предложения истории объекта"></textarea></div>'+
+    '<div class="note">💡 Фото объекта генерирует Claude по формуле дома (nano banana, ivory-студия). Впишите имя файла, который он вернёт. Шифр R–XXXX присвоится автоматически.</div>'+
+    '<div style="display:flex;gap:10px;margin-top:8px"><button class="btn solid" id="n_save">Добавить в каталог</button><button class="btn" id="n_cancel">Отмена</button></div>';
+  document.getElementById('modal').classList.add('on');
+  document.getElementById('n_cancel').onclick=closeModal;
+  document.getElementById('n_save').onclick=function(){
+    var name=val('n_name'); if(!name){toast('Впишите название');return;}
+    // авто-id по миру
+    var wmap={vita:'02',terra:'03',cosmos:'01',grand:'06',editions:'05'}, w=val('n_world');
+    var nums=allObjects().map(function(o){return o.id}).filter(function(x){return x.indexOf('R–0'+wmap[w])===0}).map(function(x){return +x.slice(-2)});
+    var next=(Math.max.apply(null,[0].concat(nums))+1); var id='R–0'+wmap[w]+(next<10?'0'+next:next);
+    var wl={vita:'Жизнь',terra:'Земля',cosmos:'Космос',grand:'Монументы',editions:'Editions'}[w];
+    var pv=val('n_price').replace(/\D/g,''); pv=pv?parseInt(pv,10):null;
+    var o={id:id,slug:id.replace('R–','').toLowerCase()+'-'+name.toLowerCase().replace(/[^a-zа-я0-9]+/g,'-'),world:w,worldLabel:wl,
+      category:val('n_cat')||'—',period:val('n_period')||'—',region:val('n_region')||'—',name:name,latin:val('n_latin'),
+      meta:(val('n_loc')||'')+(val('n_age')?' · '+val('n_age'):'')+'<br>'+(val('n_size')||''),
+      price:pv?pv.toLocaleString('ru-RU')+' ₽':'Цена по запросу',img:val('n_img')||'cat_meteorite',priceValue:pv,
+      age:val('n_age'),location:val('n_loc'),size:val('n_size'),description:val('n_desc')};
+    C.newObjects=(C.newObjects||[]); C.newObjects.push(o); saveCfg(C); closeModal(); toast('Объект '+id+' добавлен в черновик'); render();
+  };
 }
 
 /* ---- Главная ---- */
@@ -161,6 +201,7 @@ function paneExport(){
     '<h2 style="font-size:24px;margin:8px 0 10px">Экспорт и деплой</h2>'+
     '<div class="note">Сайт статический (без сервера). Правки хранятся в этом браузере как черновик. Чтобы применить на сайте — скачайте файлы ниже и передайте разработчику (или Claude) для коммита в репозиторий. Так вы управляете контентом, не редактируя код.</div>'+
     '<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px">'+
+      '<button class="btn solid" id="expCat">Скачать catalog.js</button>'+
       '<button class="btn solid" id="expPromo">Скачать promo-data.js</button>'+
       '<button class="btn" id="expCfg">Скачать настройки (JSON)</button>'+
       '<button class="btn" id="expBrief">Скачать бриф для Claude</button>'+
@@ -170,20 +211,26 @@ function paneExport(){
     '<div class="muted" id="cfgSummary"></div></div>';
 }
 
-/* ---- Inbox (демо CRM) ---- */
+/* ---- Inbox (заявки и заказы) ---- */
+function ls(k){ try{return JSON.parse(localStorage.getItem(k))||[]}catch(e){return[]} }
 function paneInbox(){
-  var u=null; try{u=JSON.parse(localStorage.getItem('relictum_user'))}catch(e){}
-  var cart=[]; try{cart=JSON.parse(localStorage.getItem('relictum_cart'))||[]}catch(e){}
-  return '<div class="card"><div class="label">Заявки и заказы</div>'+
-    '<h2 style="font-size:24px;margin:8px 0 6px">Обращения клиентов</h2>'+
-    '<div class="note">В прототипе данные клиента и корзина хранятся в его браузере (localStorage). В боевой версии заявки, заказы и кабинеты собираются на сервере/в CRM (amoCRM) — см. 09_admin/TECH_SPEC.md. Ниже — данные текущего браузера для демонстрации.</div>'+
-    '<table style="margin-top:14px"><tbody>'+
-    '<tr><th>Клиент</th><td>'+(u&&u.name?esc(u.name):'—')+'</td></tr>'+
-    '<tr><th>Контакт</th><td>'+(u?esc((u.email||'')+' '+(u.phone||'')):'—')+'</td></tr>'+
-    '<tr><th>Статус</th><td>'+(u&&u.purchased?u.purchased.length+' объект(ов) в коллекции':'—')+'</td></tr>'+
-    '<tr><th>Корзина сейчас</th><td>'+(cart.length?cart.join(', '):'пусто')+'</td></tr>'+
-    '<tr><th>Интересы</th><td>'+(u&&u.interests&&u.interests.length?esc(u.interests.join(', ')):'—')+'</td></tr>'+
-    '</tbody></table></div>';
+  var leads=ls('relictum_leads'), orders=ls('relictum_orders');
+  var leadRows=leads.length?leads.map(function(l){
+    return '<tr><td>'+esc(l.date||'')+'</td><td><b>'+esc(l.name||'—')+'</b><div class="id">'+esc(l.contact||'')+'</div></td>'+
+      '<td>'+esc(l.type||'')+(l.era?' · '+esc(l.era):'')+'</td><td>'+esc(l.budget||'—')+'</td><td class="muted">'+esc((l.desc||'').slice(0,90))+'</td></tr>';
+  }).join(''):'<tr><td colspan="5" class="muted" style="padding:20px">Пока нет заявок. Оставьте тестовую на странице «Персональный поиск».</td></tr>';
+  var orderRows=orders.length?orders.map(function(o){
+    var sum=o.total?o.total.toLocaleString('ru-RU')+' ₽':'по запросу';
+    return '<tr><td>'+esc(o.date||'')+'</td><td><b>'+esc(o.name||'—')+'</b><div class="id">'+esc((o.email||'')+' '+(o.phone||''))+'</div></td>'+
+      '<td class="muted">'+esc((o.items||[]).join(', '))+'</td><td>'+esc(sum)+'</td></tr>';
+  }).join(''):'<tr><td colspan="4" class="muted" style="padding:20px">Пока нет заказов. Оформите тестовый через корзину.</td></tr>';
+  return '<div class="card"><div style="display:flex;justify-content:space-between;align-items:center"><div><div class="label">CRM</div>'+
+    '<h2 style="font-size:24px;margin:8px 0 4px">Заявки консьержа <span class="pill on">'+leads.length+'</span></h2></div>'+
+    (leads.length||orders.length?'<button class="btn sm warn" id="clearInbox">Очистить</button>':'')+'</div>'+
+    '<div style="overflow-x:auto;margin-top:12px"><table><thead><tr><th>Дата</th><th>Клиент</th><th>Запрос</th><th>Бюджет</th><th>Описание</th></tr></thead><tbody>'+leadRows+'</tbody></table></div></div>'+
+    '<div class="card"><div class="label">Заказы</div><h2 style="font-size:24px;margin:8px 0 4px">Заказы и резервы <span class="pill on">'+orders.length+'</span></h2>'+
+    '<div style="overflow-x:auto;margin-top:12px"><table><thead><tr><th>Дата</th><th>Клиент</th><th>Объекты</th><th>Сумма</th></tr></thead><tbody>'+orderRows+'</tbody></table></div></div>'+
+    '<div class="note">Заявки и заказы собираются с этого сайта в реальном времени (демо — в localStorage браузера). В боевой версии — на сервере/в amoCRM с уведомлениями менеджеру (TECH_SPEC.md).</div>';
 }
 
 var PANES={exhibits:paneExhibits,home:paneHome,content:paneContent,export:paneExport,inbox:paneInbox};
@@ -228,6 +275,15 @@ function download(name,text,type){
   var b=new Blob([text],{type:type||'text/plain'}); var a=document.createElement('a');
   a.href=URL.createObjectURL(b); a.download=name; a.click(); setTimeout(function(){URL.revokeObjectURL(a.href)},1000);
 }
+function buildCatalogJS(){
+  var out=allObjects().filter(function(o){return !C.deleted[o.id]}).map(function(o){
+    var c=JSON.parse(JSON.stringify(o));
+    if(C.promo[o.id]) c.href='../16_product_promos/exhibit.html?id='+o.id; else if(c.href&&c.href.indexOf('exhibit.html')>=0) delete c.href;
+    if(C.hidden[o.id]) c.hidden=true;
+    return c;
+  });
+  return '/* RELICTUM — catalog.js (экспорт из панели управления) */\nwindow.RELICTUM_CATALOG = '+JSON.stringify(out,null,2)+';\n';
+}
 function buildPromoJS(){
   var merged={}; Object.keys(PROMO).forEach(function(k){merged[k]=PROMO[k]});
   Object.keys(C.drafts).forEach(function(k){merged[k]=C.drafts[k]});
@@ -254,12 +310,21 @@ function bind(t){
   document.querySelectorAll('[data-promo]').forEach(function(cb){cb.onchange=function(){C.promo[cb.dataset.promo]=cb.checked;saveCfg(C);toast('Обновлено');render();};});
   document.querySelectorAll('[data-vis]').forEach(function(cb){cb.onchange=function(){C.hidden[cb.dataset.vis]=!cb.checked;saveCfg(C);toast('Видимость обновлена');};});
   document.querySelectorAll('[data-edit]').forEach(function(b){b.onclick=function(){openEditor(b.dataset.edit);};});
+  document.querySelectorAll('[data-del]').forEach(function(b){b.onclick=function(){
+    var id=b.dataset.del; if(!confirm('Удалить объект '+id+' из каталога?'))return;
+    if((C.newObjects||[]).some(function(x){return x.id===id})){ C.newObjects=C.newObjects.filter(function(x){return x.id!==id}); }
+    else { C.deleted[id]=true; }
+    saveCfg(C); toast('Объект удалён'); render();
+  };});
+  var addBtn=document.getElementById('addObj'); if(addBtn)addBtn.onclick=openNewExhibit;
+  var ci=document.getElementById('clearInbox'); if(ci)ci.onclick=function(){if(confirm('Очистить все заявки и заказы?')){localStorage.removeItem('relictum_leads');localStorage.removeItem('relictum_orders');render();toast('Очищено');}};
   document.querySelectorAll('[data-feat]').forEach(function(p){p.onclick=function(){
     var id=p.dataset.feat, i=C.featured.indexOf(id);
     if(i>=0)C.featured.splice(i,1); else{ if(C.featured.length>=4){toast('Максимум 4 объекта');return;} C.featured.push(id); }
     saveCfg(C); render();
   };});
   if(t==='export'){
+    document.getElementById('expCat').onclick=function(){download('catalog.js',buildCatalogJS(),'text/javascript');toast('catalog.js скачан');};
     document.getElementById('expPromo').onclick=function(){download('promo-data.js',buildPromoJS(),'text/javascript');toast('promo-data.js скачан');};
     document.getElementById('expCfg').onclick=function(){download('relictum-admin-config.json',JSON.stringify(C,null,2),'application/json');toast('Настройки скачаны');};
     document.getElementById('expBrief').onclick=function(){download('relictum-brief.txt',buildBrief());toast('Бриф скачан');};

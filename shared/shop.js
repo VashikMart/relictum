@@ -55,7 +55,12 @@
     },
     fmt:function(v){ return v==null?'Цена по запросу':(v.toLocaleString('ru-RU')+' ₽'); },
     /* экранирование пользовательского ввода перед вставкой в HTML/атрибуты (защита от self-XSS) */
-    esc:function(s){ return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
+    esc:function(s){ return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); },
+    /* заявки и заказы (демо-CRM; в бою — на сервере) */
+    getOrders:function(){ try{return JSON.parse(localStorage.getItem('relictum_orders'))||[]}catch(e){return[]} },
+    addOrder:function(rec){ var a=this.getOrders(); a.unshift(rec); localStorage.setItem('relictum_orders',JSON.stringify(a)); },
+    getLeads:function(){ try{return JSON.parse(localStorage.getItem('relictum_leads'))||[]}catch(e){return[]} },
+    addLead:function(rec){ var a=this.getLeads(); a.unshift(rec); localStorage.setItem('relictum_leads',JSON.stringify(a)); }
   };
   window.RelictumShop=Shop;
 

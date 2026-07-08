@@ -115,7 +115,9 @@ function bind(){
     // сохранить контакт в кабинет
     var u=S.user(); var fd=new FormData(f);
     u.name=(fd.get('fname')+' '+fd.get('lname')).trim(); u.email=fd.get('email'); u.phone=fd.get('phone'); S.saveUser(u);
+    var orderItems=S.cartItems().map(function(o){return o.name}); var orderTotal=S.total();
     setTimeout(function(){
+      S.addOrder({date:new Date().toLocaleString('ru-RU'),name:u.name,email:u.email,phone:u.phone,addr:fd.get('addr'),items:orderItems,total:orderTotal});
       var ids=S.placeOrder();
       success(ids.length);
     }, 1600);
