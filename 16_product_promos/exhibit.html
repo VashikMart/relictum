@@ -36,8 +36,11 @@ a{color:inherit;text-decoration:none}
 .hero h1{font-size:clamp(40px,6.6vw,72px);margin-bottom:8px}
 .hero .lat{font-family:var(--serif);font-style:italic;font-size:clamp(18px,2.1vw,25px);color:var(--deep);margin-bottom:22px}
 .hero .hook{font-size:clamp(15px,1.9vw,18.5px);color:#3d3a35;max-width:44ch;margin-bottom:26px}
-.hero .ph{background:var(--bone);border:1px solid var(--linel);overflow:hidden}
-.hero .ph img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.hero .ph{background:var(--bone);border:1px solid var(--linel);overflow:hidden;position:relative}
+.hero .ph img,.hero .ph video{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.hero .ph.vid{background:#0A0908;border-color:rgba(176,138,85,.35)}
+.hero .ph video{position:absolute;inset:0;height:100%;opacity:0;transition:opacity .8s}
+.hero .ph video.on{opacity:1}
 .scrollcue{font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:#8a8175;display:inline-flex;align-items:center;gap:8px}
 .scrollcue::after{content:'';width:1px;height:24px;background:var(--deep);display:inline-block;animation:cue 2s ease-in-out infinite}
 @keyframes cue{0%,100%{transform:scaleY(.4);opacity:.4}50%{transform:scaleY(1);opacity:1}}
@@ -72,8 +75,10 @@ a{color:inherit;text-decoration:none}
 
 /* дома */
 .home{padding:clamp(56px,8vw,110px) 0}
-.home .big{border:1px solid var(--linel);overflow:hidden;margin-bottom:26px}
-.home .big img{width:100%;aspect-ratio:16/8.4;object-fit:cover}
+.home .big{border:1px solid var(--linel);overflow:hidden;margin-bottom:26px;position:relative}
+.home .big img,.home .big video{width:100%;aspect-ratio:16/8.4;object-fit:cover;display:block}
+.home .big video{position:absolute;inset:0;height:100%;opacity:0;transition:opacity .8s}
+.home .big video.on{opacity:1}
 .home .cap{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:start;max-width:820px}
 @media(max-width:680px){.home .cap{grid-template-columns:1fr;gap:10px}}
 .home .cap h3{font-size:clamp(22px,3vw,30px);white-space:nowrap}
@@ -182,7 +187,7 @@ if(!o){
   var homeSec = interior ? (
     '<section class="home"><div class="wrap">'+
       '<div class="label rv" style="margin-bottom:18px">В вашем доме</div>'+
-      '<div class="big rv"><img src="'+IMG+interior.img+'" alt="'+o.name+' в интерьере" loading="lazy"></div>'+
+      '<div class="big rv" id="intBig"'+(interior.video?' data-video="'+IMG+interior.video+'"':'')+'><img src="'+IMG+interior.img+'" alt="'+o.name+' в интерьере" loading="lazy"></div>'+
       '<div class="cap rv"><h3>Как это живёт дома</h3><p>'+interior.text+'</p></div>'+
     '</div></section>') : '';
 
@@ -203,7 +208,9 @@ if(!o){
       '<p class="hook rv">'+hook+'</p>'+
       '<div class="rv"><span class="scrollcue">Листайте</span></div>'+
     '</div>'+
-    '<div class="ph rv"><img src="'+IMG+o.img+'.jpg" alt="'+o.name+'"></div>'+
+    '<div class="ph rv'+(P&&P.heroVideo?' vid':'')+'"><img src="'+IMG+o.img+'.jpg" alt="'+o.name+'">'+
+      (P&&P.heroVideo?'<video id="heroVid" muted loop playsinline preload="auto" src="'+IMG+P.heroVideo+'"></video>':'')+
+    '</div>'+
   '</section>'+
 
   '<section class="pass"><div class="wrap"><div class="grid">'+passCells+'</div></div></section>'+
@@ -263,6 +270,29 @@ if(!o){
   window.addEventListener('scroll',onScroll,{passive:true});
   window.addEventListener('resize',onScroll);
   onScroll();
+
+  /* хиро-видео: играть сразу как готово */
+  var hv=document.getElementById('heroVid');
+  if(hv){
+    hv.addEventListener('canplay',function(){hv.classList.add('on');hv.play().catch(function(){});});
+    hv.load();
+    window.addEventListener('pointerdown',function(){hv.play().catch(function(){});},{once:true,passive:true});
+  }
+  /* интерьерное видео: лениво при подходе к секции */
+  var ib=document.getElementById('intBig');
+  if(ib && ib.dataset.video){
+    var ibLoaded=false;
+    var ibCheck=function(){
+      if(ibLoaded)return; var r=ib.getBoundingClientRect();
+      if(r.top<window.innerHeight*1.2 && r.bottom>0){
+        ibLoaded=true;
+        var v=document.createElement('video'); v.muted=true;v.loop=true;v.playsInline=true;v.setAttribute('playsinline','');v.autoplay=true;v.preload='auto';v.src=ib.dataset.video;
+        v.addEventListener('canplay',function(){v.classList.add('on');v.play().catch(function(){});});
+        ib.appendChild(v);
+      }
+    };
+    window.addEventListener('scroll',ibCheck,{passive:true}); ibCheck();
+  }
 
   if(window.RelictumShop){
     var Sx=window.RelictumShop;

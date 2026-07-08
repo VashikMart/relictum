@@ -3,6 +3,7 @@
    Здесь — история, эпоха, медиа. Открывается: exhibit.html?id=R–XXXX */
 window.RELICTUM_PROMO = {
   "R–0607": {
+    heroVideo: "hero_museum_tusks.mp4",
     hook: "Две дуги слоновой кости, которые несли на себе снег последней ледниковой эпохи.",
     heroKicker: "Мамонтовая фауна · Якутия",
     story: [
@@ -11,10 +12,11 @@ window.RELICTUM_PROMO = {
     ],
     era: { title: "Мамонтовая степь", line: "Плейстоцен · 2,6 млн – 11 тыс лет назад", href: "../15_concepts/era-pleistocene.html" },
     alive: { title: "Когда-то они шли по снегу", text: "Мамонты пересекали замёрзшие реки колоннами, и земля дрожала. Войдите в эпоху, которой принадлежат эти бивни.", video: "era_mammoth.mp4", poster: "beast_mammoth.jpg" },
-    interior: { img: "int_ph_tusks.jpg", text: "На парных подставках бивни образуют единую скульптурную арку — доминанту гостиной или кабинета. Мы проектируем крепление и свет под ваше пространство." },
+    interior: { video: "intv_tusks.mp4", img: "int_ph_tusks.jpg", text: "На парных подставках бивни образуют единую скульптурную арку — доминанту гостиной или кабинета. Мы проектируем крепление и свет под ваше пространство." },
     gallery: ["g_tusks_1.jpg", "g_tusks_2.jpg"]
   },
   "R–0608": {
+    heroVideo: "hero_museum_rhino.mp4",
     hook: "Череп зверя, который смотрел на мир сквозь снежную бурю ледникового периода.",
     heroKicker: "Мамонтовая фауна · Якутия",
     story: [
@@ -23,10 +25,11 @@ window.RELICTUM_PROMO = {
     ],
     era: { title: "Ледниковая степь", line: "Плейстоцен · 2,6 млн – 11 тыс лет назад", href: "../15_concepts/era-pleistocene.html" },
     alive: { title: "Он расчищал снег рогом", text: "Coelodonta antiquitatis шёл сквозь метель ледниковой Евразии. Посмотрите, каким он был при жизни.", video: "vid_rhino.mp4", poster: "ph_rhino_skull.jpg" },
-    interior: { img: "int_ph_rhino.jpg", text: "Череп на чёрном постаменте держит тёмный кабинет как единственный акцент. Направленный свет проявляет рельеф кости и текстуру рогов." },
+    interior: { video: "intv_rhino.mp4", img: "int_ph_rhino.jpg", text: "Череп на чёрном постаменте держит тёмный кабинет как единственный акцент. Направленный свет проявляет рельеф кости и текстуру рогов." },
     gallery: ["g_rhino_1.jpg", "g_rhino_2.jpg"]
   },
   "R–0609": {
+    heroVideo: "hero_museum_dino.mp4",
     hook: "Целый динозавр, застывший в прыжке ста двадцати миллионов лет.",
     heroKicker: "Динозавры · Ляонин, Китай",
     story: [
@@ -35,10 +38,11 @@ window.RELICTUM_PROMO = {
     ],
     era: { title: "Ранний мел", line: "Меловой период · 145 – 66 млн лет назад", href: "../15_concepts/era-cretaceous.html" },
     alive: { title: "Он бегал между папоротников", text: "В лесах раннего мела мелкие динозавры сновали в подлеске под кронами гигантов. Войдите в меловой мир.", video: "vid_jeholo.mp4", poster: "beast_triceratops.jpg" },
-    interior: { img: "int_ph_jeholo.jpg", text: "На консоли в светлой гостиной скелет читается как живая скульптура — тень его силуэта на стене становится частью композиции." },
+    interior: { video: "intv_jeholo.mp4", img: "int_ph_jeholo.jpg", text: "На консоли в светлой гостиной скелет читается как живая скульптура — тень его силуэта на стене становится частью композиции." },
     gallery: ["g_jeholo_1.jpg", "g_jeholo_2.jpg"]
   },
   "R–0208": {
+    heroVideo: "hero_museum_sabertooth.mp4",
     hook: "Клинки, которыми природа вооружила хищника за миллионы лет до человека.",
     heroKicker: "Саблезубые кошки · Ганьсу, Китай",
     story: [
@@ -47,10 +51,11 @@ window.RELICTUM_PROMO = {
     ],
     era: { title: "Неогеновая саванна", line: "Неоген · 23 – 2,6 млн лет назад", href: "../15_concepts/eras.html" },
     alive: { title: "Он выходил на охоту в закат", text: "По сухим саваннам неогена ходили кошки размером со льва, вооружённые клинками. Увидьте хищника живым.", video: "vid_sabertooth.mp4", poster: "ph_sabertooth.jpg" },
-    interior: { img: "int_ph_sabertooth.jpg", text: "В подсвеченной витрине череп превращается в объект созерцания — музейная подача в масштабе жилой комнаты." },
+    interior: { video: "intv_sabertooth.mp4", img: "int_ph_sabertooth.jpg", text: "В подсвеченной витрине череп превращается в объект созерцания — музейная подача в масштабе жилой комнаты." },
     gallery: ["g_sabertooth_1.jpg", "g_sabertooth_2.jpg"]
   },
   "R–0209": {
+    heroVideo: "hero_museum_bothrio.mp4",
     hook: "Существо, которое первым на Земле оделось в костяную броню.",
     heroKicker: "Ископаемые рыбы · девон",
     story: [
@@ -59,10 +64,11 @@ window.RELICTUM_PROMO = {
     ],
     era: { title: "Девонские моря", line: "Девон · 419 – 359 млн лет назад · «век рыб»", href: "../15_concepts/eras.html" },
     alive: { title: "Век, когда жизнь научилась брони", text: "В мутных тёплых морях девона плавали существа в костяных панцирях. Опуститесь в древний океан.", video: "vid_bothrio.mp4", poster: "ph_bothriolepis.jpg" },
-    interior: { img: "int_ph_bothrio.jpg", text: "На парящей полке в кабинете плита с рыбой становится тихим артефактом глубокого времени — тёплый акцентный свет проявляет каждую чешуйку." },
+    interior: { video: "intv_bothrio.mp4", img: "int_ph_bothrio.jpg", text: "На парящей полке в кабинете плита с рыбой становится тихим артефактом глубокого времени — тёплый акцентный свет проявляет каждую чешуйку." },
     gallery: ["g_bothrio_1.jpg", "g_bothrio_2.jpg"]
   },
   "R–0103": {
+    heroVideo: "hero_museum_dronino.mp4",
     hook: "Железо, которое родилось в ядре чужой планеты и старше самой Земли.",
     heroKicker: "Метеориты · Рязанская область",
     story: [
@@ -71,10 +77,11 @@ window.RELICTUM_PROMO = {
     ],
     era: { title: "Рождение Солнечной системы", line: "≈ 4,5 млрд лет назад", href: "../15_concepts/deep-time.html" },
     alive: { title: "Оно летело к нам миллионы лет", text: "Осколок разрушенной планеты кувыркался в пустоте, пока не вспыхнул над Землёй. Посмотрите на его путь.", video: "vid_meteor.mp4", poster: "ph_dronino.jpg" },
-    interior: { img: "int_ph_dronino.jpg", text: "Один драматичный источник света — и метеорит на мраморной консоли превращается в чёрную скульптуру внеземного происхождения." },
+    interior: { video: "intv_dronino.mp4", img: "int_ph_dronino.jpg", text: "Один драматичный источник света — и метеорит на мраморной консоли превращается в чёрную скульптуру внеземного происхождения." },
     gallery: ["g_dronino_1.jpg", "g_dronino_2.jpg"]
   },
   "R–0104": {
+    heroVideo: "hero_museum_meteor.mp4",
     hook: "Космическое железо, поднятое из сибирской земли и поставленное на пьедестал.",
     heroKicker: "Метеориты · Тыва",
     story: [
@@ -83,10 +90,11 @@ window.RELICTUM_PROMO = {
     ],
     era: { title: "Рождение Солнечной системы", line: "≈ 4,5 млрд лет назад", href: "../02_site_v1_gallery/journal-meteorite.html" },
     alive: { title: "Дождь железа над Сибирью", text: "Когда-то небо над Тывой прочертили огненные росчерки. Увидьте, как приходит космос.", video: "vid_meteor.mp4", poster: "ph_chinge.jpg" },
-    interior: { img: "int_ph_chinge.jpg", text: "На тёмном постаменте метеорит становится центром внимания сдержанного интерьера — тёплый свет играет на металлической поверхности." },
+    interior: { video: "intv_chinge.mp4", img: "int_ph_chinge.jpg", text: "На тёмном постаменте метеорит становится центром внимания сдержанного интерьера — тёплый свет играет на металлической поверхности." },
     gallery: ["g_chinge_1.jpg", "g_chinge_2.jpg"]
   },
   "R–0105": {
+    heroVideo: "hero_museum_moon.mp4",
     hook: "Настоящий кусочек Луны, который можно повесить на стену своего дома.",
     heroKicker: "Метеориты · Луна",
     story: [
@@ -95,7 +103,7 @@ window.RELICTUM_PROMO = {
     ],
     era: { title: "Спутник Земли", line: "≈ 4,5 млрд лет · возраст Луны", href: "../15_concepts/deep-time.html" },
     alive: { title: "Он прилетел прямо с Луны", text: "Удар астероида выбросил этот камень с лунной поверхности в космос. Поднимитесь к его дому.", video: "vid_moon.mp4", poster: "ph_moon_frame.jpg" },
-    interior: { img: "int_ph_moon.jpg", text: "Рама с Луной на стене над консолью работает как окно в космос — тихий, но безошибочно узнаваемый акцент интерьера." },
+    interior: { video: "intv_moon.mp4", img: "int_ph_moon.jpg", text: "Рама с Луной на стене над консолью работает как окно в космос — тихий, но безошибочно узнаваемый акцент интерьера." },
     gallery: ["g_moon_1.jpg", "g_moon_2.jpg"]
   }
 };
