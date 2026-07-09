@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STARGIFT — Легенды мирового футбола · Коллекция к ЧМ-2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black:#0B0B0C; --coal:#131315; --panel:#101012; --ivory:#F5F1E8; --white:#FFFFFF;
+  --gold:#C9A96A; --gold-deep:#A98545; --muted:#8E8A82; --line:rgba(201,169,106,.32);
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',-apple-system,'Segoe UI',sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; overflow:hidden; background:#000; }
+body { font-family:var(--sans); font-weight:300; color:var(--ivory); }
+.deck { height:100%; position:relative; }
+.slide { position:absolute; inset:0; display:none; overflow:hidden; background:var(--black); }
+.slide.on { display:grid; animation:fade .7s cubic-bezier(.23,1,.32,1); }
+@keyframes fade { from { opacity:0 } }
+h1,h2,h3 { font-family:var(--serif); font-weight:400; line-height:1.06; }
+.label { font-size:clamp(9px,.8vw,12px); font-weight:500; letter-spacing:.32em; text-transform:uppercase; color:var(--gold); }
+.logo { height:clamp(34px,4.6vw,58px); filter:invert(1); opacity:.95; }
+.logo-corner { position:absolute; top:26px; right:34px; z-index:6; display:flex; flex-direction:column; align-items:flex-end; gap:6px; }
+.logo-corner .tag { font-size:8.5px; letter-spacing:.3em; text-transform:uppercase; color:var(--gold); }
+.pagenum { position:absolute; bottom:22px; right:34px; font-size:11px; letter-spacing:.22em; color:var(--muted); z-index:6; }
+.brandline { position:absolute; bottom:22px; left:34px; font-size:10px; letter-spacing:.3em; text-transform:uppercase; color:var(--muted); z-index:6; }
+.hint { position:fixed; bottom:22px; left:50%; transform:translateX(-50%); font-size:10px; letter-spacing:.2em; color:rgba(142,138,130,.6); text-transform:uppercase; z-index:10; }
+.center { place-items:center; text-align:center; padding:clamp(30px,5vw,90px); }
+
+/* ЭКСПОНАТ: фото слева, паспорт справа */
+.lot { grid-template-columns:1.02fr 1fr; }
+.lot .ph { position:relative; height:100%; overflow:hidden; background:var(--panel); }
+.lot .ph.dark img { width:100%; height:100%; object-fit:cover; }
+.lot .ph.card { display:grid; place-items:center; padding:clamp(26px,3.4vw,56px); }
+.lot .ph.card .mat { background:var(--ivory); border:1px solid var(--line); box-shadow:0 30px 80px rgba(0,0,0,.55); padding:clamp(14px,1.6vw,26px); max-height:100%; display:grid; place-items:center; }
+.lot .ph.card img { max-width:100%; max-height:calc(100vh - 220px); object-fit:contain; display:block; }
+.lot .ph .num { position:absolute; top:28px; left:34px; z-index:4; background:rgba(11,11,12,.78); border:1px solid var(--line); color:var(--gold); padding:9px 16px; font-size:10.5px; letter-spacing:.28em; }
+.lot .pass { padding:clamp(26px,3.6vw,64px) clamp(26px,4vw,74px); display:flex; flex-direction:column; justify-content:center; background:var(--coal); border-left:1px solid rgba(201,169,106,.18); position:relative; }
+.lot h2 { font-size:clamp(24px,2.7vw,42px); color:var(--white); margin:12px 0 4px; }
+.lot .kind { font-family:var(--serif); font-style:italic; font-size:clamp(15px,1.5vw,22px); color:var(--gold); margin-bottom:2.4vh; }
+.lot .story { font-size:clamp(12px,1.05vw,15px); color:#CFC9BE; line-height:1.8; max-width:56ch; margin-bottom:2.6vh; }
+.lot .price { display:flex; align-items:baseline; gap:20px; border-top:1px solid var(--line); padding-top:2.4vh; }
+.lot .price .n { font-family:var(--serif); font-size:clamp(24px,2.6vw,40px); color:var(--gold); }
+.lot .price .t { font-size:10px; letter-spacing:.24em; text-transform:uppercase; color:var(--muted); }
+.lot .cert { margin-top:1.6vh; font-size:clamp(10px,.9vw,12.5px); color:var(--muted); letter-spacing:.04em; border-left:2px solid var(--gold-deep); padding-left:14px; line-height:1.7; }
+
+/* РАЗДЕЛИТЕЛЬ: фото матча на весь экран */
+.divider { grid-template-columns:1fr; }
+.divider .bg { position:absolute; inset:0; }
+.divider .bg img { width:100%; height:100%; object-fit:cover; opacity:.62; }
+.divider .bg::after { content:''; position:absolute; inset:0; background:linear-gradient(100deg,rgba(11,11,12,.94) 26%,rgba(11,11,12,.45) 62%,rgba(11,11,12,.25)); }
+.divider .txt { position:relative; z-index:2; align-self:center; padding:clamp(30px,6vw,110px); max-width:760px; }
+.divider h2 { font-size:clamp(30px,4vw,64px); color:var(--white); margin:2.2vh 0 2.6vh; }
+.divider p { font-size:clamp(12px,1.1vw,16px); color:#D8D2C6; line-height:1.85; max-width:52ch; }
+.divider .roman { font-family:var(--serif); font-size:clamp(15px,1.5vw,22px); color:var(--gold); letter-spacing:.14em; }
+
+/* ОГЛАВЛЕНИЕ */
+.index-table { width:min(1060px,90vw); text-align:left; }
+.index-table .row { display:grid; grid-template-columns:34px 1fr auto; gap:22px; align-items:baseline; padding:.95vh 0; border-bottom:1px solid rgba(201,169,106,.16); }
+.index-table .row .no { font-family:var(--serif); color:var(--gold); font-size:clamp(13px,1.2vw,17px); }
+.index-table .row .nm { font-size:clamp(12px,1.15vw,16px); color:#E7E2D7; }
+.index-table .row .nm em { font-family:var(--serif); font-style:italic; color:var(--muted); font-size:.92em; margin-left:8px; }
+.index-table .row .pr { font-family:var(--serif); color:var(--gold); font-size:clamp(13px,1.25vw,18px); white-space:nowrap; }
+.index-table .sec { padding-top:2.6vh; }
+</style>
+</head>
+<body>
+<div class="deck">
+
+<!-- 01 · ОБЛОЖКА -->
+<section class="slide on" style="grid-template-columns:1fr 1fr">
+  <div style="position:relative;z-index:2;align-self:center;padding:clamp(30px,5.5vw,100px)">
+    <img class="logo" src="img/stargift_logo.png" alt="Stargift" style="height:clamp(84px,11vw,150px);margin-left:-14px">
+    <div class="label" style="margin-top:1.6vh;color:var(--gold)">Подарок для того, у кого есть всё</div>
+    <h1 style="font-size:clamp(36px,4.6vw,74px);color:var(--white);margin:5vh 0 2.4vh">Легенды<br>мирового футбола</h1>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(16px,1.7vw,25px);color:var(--gold)">Коллекция автографов к чемпионату мира — 2026</p>
+    <div class="label" style="margin-top:5vh;color:var(--muted)">12 экспонатов · Международная сертификация Beckett &amp; JSA</div>
+  </div>
+  <div style="position:relative;overflow:hidden">
+    <img src="img/ronaldo_gold.jpg" alt="" style="width:100%;height:100%;object-fit:cover">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,var(--black),rgba(11,11,12,0) 45%)"></div>
+  </div>
+</section>
+
+<!-- 02 · СОСТАВ КОЛЛЕКЦИИ -->
+<section class="slide center">
+  <div class="index-table">
+    <div class="label" style="text-align:center">Состав коллекции</div>
+    <h2 style="font-size:clamp(24px,2.6vw,40px);color:var(--white);text-align:center;margin:1.6vh 0 2.6vh">Двенадцать экспонатов — шесть глав футбольной истории</h2>
+    <div class="row"><span class="no">01</span><span class="nm">Диего Марадона<em>футболка сборной Аргентины</em></span><span class="pr">650 000 ₽</span></div>
+    <div class="row"><span class="no">02</span><span class="nm">Пеле<em>ретро-футболка сборной Бразилии</em></span><span class="pr">450 000 ₽</span></div>
+    <div class="row"><span class="no">03</span><span class="nm">Франц Беккенбауэр<em>футболка сборной Германии</em></span><span class="pr">550 000 ₽</span></div>
+    <div class="row"><span class="no">04</span><span class="nm">Эйсебио<em>футболка сборной Португалии</em></span><span class="pr">650 000 ₽</span></div>
+    <div class="row"><span class="no">05</span><span class="nm">Марко ван Бастен<em>футболка «Милан»</em></span><span class="pr">300 000 ₽</span></div>
+    <div class="row"><span class="no">06</span><span class="nm">Мяч финала Лиги чемпионов — 2006<em>11 автографов «Барселоны»</em></span><span class="pr">2 200 000 ₽</span></div>
+    <div class="row"><span class="no">07</span><span class="nm">Дэвид Бекхэм<em>официальный мяч чемпионата мира — 2002</em></span><span class="pr">500 000 ₽</span></div>
+    <div class="row"><span class="no">08</span><span class="nm">Криштиану Роналду<em>золотой коллекционный мяч</em></span><span class="pr">550 000 ₽</span></div>
+    <div class="row"><span class="no">09</span><span class="nm">Килиан Мбаппе<em>футболка «Реал Мадрид»</em></span><span class="pr">600 000 ₽</span></div>
+    <div class="row"><span class="no">10</span><span class="nm">Ламин Ямаль<em>футболка «Барселоны»</em></span><span class="pr">360 000 ₽</span></div>
+    <div class="row"><span class="no">11</span><span class="nm">Эрлинг Холанд<em>футболка сборной Норвегии</em></span><span class="pr">450 000 ₽</span></div>
+    <div class="row"><span class="no">12</span><span class="nm">Кака<em>футболка сборной Бразилии</em></span><span class="pr">230 000 ₽</span></div>
+  </div>
+  <div class="logo-corner"><img class="logo" src="img/stargift_logo.png" alt=""></div>
+  <div class="brandline">Stargift · stargift.ru</div><div class="pagenum"></div>
+</section>
+
+<!-- 03 · ГЛАВА I -->
+<section class="slide divider">
+  <div class="bg"><img src="img/moment_maradona1986.jpg" alt=""></div>
+  <div class="txt">
+    <div class="roman">Глава I</div>
+    <h2>Легенды, изменившие историю футбола</h2>
+    <p>Футбол — это история великих личностей, каждая из которых определила целую эпоху. Именно такие игроки превращали отдельные матчи в легенды, а чемпионаты мира — в события, которые навсегда остаются в памяти миллионов болельщиков. Особенно символично обращаться к этим реликвиям во время чемпионата мира, когда внимание всего футбольного сообщества вновь приковано к величайшему турниру планеты.</p>
+  </div>
+  <div class="logo-corner"><img class="logo" src="img/stargift_logo.png" alt=""></div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- 04 · МАРАДОНА -->
+<section class="slide lot">
+  <div class="ph dark"><div class="num">Экспонат 01</div><img src="img/maradona.jpg" alt=""></div>
+  <div class="pass">
+    <div class="label">Легенды, изменившие историю футбола</div>
+    <h2>Диего Марадона</h2>
+    <div class="kind">Футболка сборной Аргентины с автографом</div>
+    <p class="story">Диего Марадона — один из величайших футболистов в истории мирового спорта. Именно он привёл сборную Аргентины к победе на чемпионате мира 1986 года, создав одни из самых знаменитых моментов в истории футбола. Автограф Марадоны — центральный экспонат практически любой серьёзной футбольной коллекции.</p>
+    <div class="price"><span class="t">Стоимость</span><span class="n">650 000 ₽</span></div>
+    <div class="cert">Международная сертификация подлинности: Beckett. Оформление в багет с латунной табличкой — мастерская Stargift.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- 05 · ПЕЛЕ -->
+<section class="slide lot">
+  <div class="ph dark"><div class="num">Экспонат 02</div><img src="img/pele.jpg" alt=""></div>
+  <div class="pass">
+    <div class="label">Легенды, изменившие историю футбола</div>
+    <h2>Пеле</h2>
+    <div class="kind">Ретро-футболка сборной Бразилии с автографом</div>
+    <p class="story">Пеле — величайшая легенда мирового футбола и единственный в истории трёхкратный чемпион мира. Именно его имя стало символом красивой игры и эпохи безоговорочного доминирования сборной Бразилии. Автограф Пеле считается одним из самых востребованных среди коллекционеров и занимает особое место в любой серьёзной коллекции футбольных реликвий.</p>
+    <div class="price"><span class="t">Стоимость</span><span class="n">450 000 ₽</span></div>
+    <div class="cert">Международная сертификация подлинности: Beckett.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- 06 · БЕККЕНБАУЭР -->
+<section class="slide lot">
+  <div class="ph card"><div class="num">Экспонат 03</div><div class="mat"><img src="img/beckenbauer.jpg" alt=""></div></div>
+  <div class="pass">
+    <div class="label">Легенды, изменившие историю футбола</div>
+    <h2>Франц Беккенбауэр</h2>
+    <div class="kind">Футболка сборной Германии с автографом</div>
+    <p class="story">Франц Беккенбауэр — «Кайзер» мирового футбола, чемпион мира как игрок и как главный тренер. Он считается создателем современного амплуа свободного защитника и одной из самых влиятельных фигур в истории футбола XX века. Автограф Беккенбауэра относится к числу наиболее статусных немецких футбольных реликвий.</p>
+    <div class="price"><span class="t">Стоимость</span><span class="n">550 000 ₽</span></div>
+    <div class="cert">Международная сертификация подлинности: Beckett.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- 07 · ЭЙСЕБИО -->
+<section class="slide lot">
+  <div class="ph dark"><div class="num">Экспонат 04</div><img src="img/eusebio.jpg" alt="" style="object-fit:contain;background:#000"></div>
+  <div class="pass">
+    <div class="label">Легенды, изменившие историю футбола</div>
+    <h2>Эйсебио</h2>
+    <div class="kind">Футболка сборной Португалии с автографом</div>
+    <p class="story">Эйсебио — легенда мирового футбола, обладатель «Золотого мяча» и главный герой сборной Португалии задолго до эпохи Криштиану Роналду. Его считают одним из величайших нападающих XX века, а автографы Эйсебио встречаются значительно реже, чем подписи большинства современных футболистов.</p>
+    <div class="price"><span class="t">Стоимость</span><span class="n">650 000 ₽</span></div>
+    <div class="cert">Международная сертификация подлинности: Beckett.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- 08 · ГЛАВА II -->
+<section class="slide divider">
+  <div class="bg"><img src="img/moment_galacticos.jpg" alt=""></div>
+  <div class="txt">
+    <div class="roman">Глава II</div>
+    <h2>Золотые эпохи великих клубов</h2>
+    <p>«Милан» Сакки и Капелло, «Барселона» золотого поколения, «Реал Мадрид» эпохи Galácticos — команды, которые меняли само представление о футболе. Автографы их легенд символизируют расцвет европейского клубного футбола и считаются одними из самых востребованных среди коллекционеров.</p>
+  </div>
+  <div class="logo-corner"><img class="logo" src="img/stargift_logo.png" alt=""></div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- 09 · ВАН БАСТЕН -->
+<section class="slide lot">
+  <div class="ph card"><div class="num">Экспонат 05</div><div class="mat"><img src="img/vanbasten.jpg" alt=""></div></div>
+  <div class="pass">
+    <div class="label">Великий «Милан» · Золотая эпоха</div>
+    <h2>Марко ван Бастен</h2>
+    <div class="kind">Футболка «Милан» с автографом</div>
+    <p class="story">Именно в составе «Милана» ван Бастен достиг вершины своей клубной карьеры, выиграв Кубок европейских чемпионов, чемпионаты Италии и завоевав мировое признание. Его связка с Франко Барези, Паоло Мальдини и Руудом Гуллитом считается одной из сильнейших в истории клуба.</p>
+    <div class="price"><span class="t">Стоимость</span><span class="n">300 000 ₽</span></div>
+    <div class="cert">Международная сертификация подлинности: Beckett.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- 10 · МЯЧ ЛЧ-2006 · ТОП-ЛОТ -->
+<section class="slide lot" style="grid-template-columns:1.15fr 1fr">
+  <div class="ph dark"><div class="num" style="border-color:var(--gold);color:var(--ivory);background:rgba(169,133,69,.35)">Топ-лот коллекции</div><img src="img/ball_ucl2006.jpg" alt=""></div>
+  <div class="pass">
+    <div class="label">«Барселона» · Золотое поколение</div>
+    <h2 style="font-size:clamp(21px,2.2vw,34px)">Мяч финала Лиги чемпионов УЕФА — 2006</h2>
+    <div class="kind">11 автографов чемпионского состава «Барселоны»</div>
+    <p class="story">Официальный памятный мяч финала в Париже, где «Барселона» победила «Арсенал» со счётом 2:1. Автографы: Лионель Месси, Роналдиньо, Хави, Деку, Эдмилсон, Беллетти, Жюли, Силвиньо, Пуйоль, Вальдес, Маркес. Состав, открывший эпоху доминирования клуба; для молодого Месси тот сезон стал началом пути к статусу величайшего игрока поколения. Один из самых масштабных футбольных экспонатов коллекции.</p>
+    <div class="price"><span class="t">Стоимость</span><span class="n">2 200 000 ₽</span></div>
+    <div class="cert">Международная сертификация подлинности: JSA. Витринная подставка в комплекте.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- 11 · БЕКХЭМ -->
+<section class="slide lot">
+  <div class="ph dark"><div class="num">Экспонат 07</div><img src="img/beckham_wc2002.jpg" alt=""></div>
+  <div class="pass">
+    <div class="label">«Реал Мадрид» · Эпоха Galácticos</div>
+    <h2>Дэвид Бекхэм</h2>
+    <div class="kind">Официальный мяч чемпионата мира — 2002 с автографом</div>
+    <p class="story">Чемпионат мира 2002 года стал одним из самых эмоциональных турниров в карьере Бекхэма: именно тогда он вывел сборную Англии на поле в статусе капитана и окончательно закрепил за собой репутацию одного из главных лидеров мирового футбола. Официальный мяч чемпионата мира с его автографом — предмет, напрямую связанный с крупнейшим футбольным событием планеты.</p>
+    <div class="price"><span class="t">Стоимость</span><span class="n">500 000 ₽</span></div>
+    <div class="cert">Международная сертификация подлинности: JSA. Витринная подставка в комплекте.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- 12 · РОНАЛДУ -->
+<section class="slide lot">
+  <div class="ph dark"><div class="num">Экспонат 08</div><img src="img/ronaldo_gold.jpg" alt=""></div>
+  <div class="pass">
+    <div class="label">«Реал Мадрид» · Эпоха Galácticos</div>
+    <h2>Криштиану Роналду</h2>
+    <div class="kind">Золотой коллекционный мяч с автографом</div>
+    <p class="story">Золотой мяч символично перекликается с главным индивидуальным трофеем мирового футбола — «Золотым мячом», который Криштиану Роналду выигрывал пять раз. Лучший бомбардир в истории футбола и один из самых титулованных игроков всех времён. Такой экспонат — не просто предмет с автографом, а символ целой эпохи, связанной с именем одного из величайших спортсменов XXI века.</p>
+    <div class="price"><span class="t">Стоимость</span><span class="n">550 000 ₽</span></div>
+    <div class="cert">Международная сертификация подлинности: Beckett. Витринная подставка в комплекте.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- 13 · МБАППЕ -->
+<section class="slide lot">
+  <div class="ph card"><div class="num">Экспонат 09</div><div class="mat"><img src="img/mbappe.jpg" alt=""></div></div>
+  <div class="pass">
+    <div class="label">«Реал Мадрид» · Новая глава</div>
+    <h2>Килиан Мбаппе</h2>
+    <div class="kind">Футболка «Реал Мадрид» с автографом</div>
+    <p class="story">Переход Килиана Мбаппе в мадридский «Реал» стал одним из самых ожидаемых трансферов последних лет. Для клуба это приобретение нового лидера, вокруг которого строится будущее команды. Футболка относится к самому началу новой главы в карьере одного из сильнейших футболистов современности и особенно интересна коллекционерам именно своей актуальностью.</p>
+    <div class="price"><span class="t">Стоимость</span><span class="n">600 000 ₽</span></div>
+    <div class="cert">Международная сертификация подлинности: Beckett.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- 14 · ГЛАВА III -->
+<section class="slide divider">
+  <div class="bg"><img src="img/moment_yamal.jpg" alt=""></div>
+  <div class="txt">
+    <div class="roman">Глава III</div>
+    <h2>Новое поколение суперзвёзд</h2>
+    <p>Сегодня на первый план выходит поколение игроков, которым предстоит определять результаты крупнейших турниров ближайших лет. Многие из них уже стали лицами своих клубов и сборных. Именно такие автографы обладают наибольшим инвестиционным потенциалом — и особенно актуальны в год чемпионата мира.</p>
+  </div>
+  <div class="logo-corner"><img class="logo" src="img/stargift_logo.png" alt=""></div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- 15 · ЯМАЛЬ -->
+<section class="slide lot">
+  <div class="ph card"><div class="num">Экспонат 10</div><div class="mat"><img src="img/yamal.jpg" alt=""></div></div>
+  <div class="pass">
+    <div class="label">Новое поколение суперзвёзд</div>
+    <h2>Ламин Ямаль</h2>
+    <div class="kind">Футболка «Барселоны» с автографом</div>
+    <p class="story">Ламин Ямаль — самый яркий воспитанник академии «Ла Масия» со времён Лионеля Месси. Уже в юном возрасте он стал одним из лидеров «Барселоны», определяющим игру команды своей техникой, скоростью и нестандартными решениями. Домашняя футболка каталонского клуба с его автографом — один из самых востребованных современных коллекционных экспонатов.</p>
+    <div class="price"><span class="t">Стоимость</span><span class="n">360 000 ₽</span></div>
+    <div class="cert">Международная сертификация подлинности: Beckett.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- 16 · ХОЛАНД -->
+<section class="slide lot">
+  <div class="ph card"><div class="num">Экспонат 11</div><div class="mat"><img src="img/haaland.jpg" alt=""></div></div>
+  <div class="pass">
+    <div class="label">Новое поколение суперзвёзд</div>
+    <h2>Эрлинг Холанд</h2>
+    <div class="kind">Футболка сборной Норвегии с автографом</div>
+    <p class="story">Выступая за национальную сборную, Холанд стал главным символом современного норвежского футбола. Несмотря на молодость, он уже является лучшим бомбардиром в истории своей страны. Эта футболка отражает международную карьеру игрока и его особую роль для норвежского футбола.</p>
+    <div class="price"><span class="t">Стоимость</span><span class="n">450 000 ₽</span></div>
+    <div class="cert">Международная сертификация подлинности: Beckett.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- 17 · ГЛАВА IV -->
+<section class="slide divider">
+  <div class="bg"><img src="img/moment_brazil2002.jpg" alt=""></div>
+  <div class="txt">
+    <div class="roman">Глава IV</div>
+    <h2>Чемпионы мира. Национальные легенды</h2>
+    <p>Чемпионат мира — главный турнир в карьере любого футболиста. Именно выступления за национальные сборные превращают выдающихся игроков в настоящие легенды мирового спорта — звёзд, которые прославили свои страны на крупнейших международных турнирах и навсегда вошли в историю.</p>
+  </div>
+  <div class="logo-corner"><img class="logo" src="img/stargift_logo.png" alt=""></div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- 18 · КАКА -->
+<section class="slide lot">
+  <div class="ph card"><div class="num">Экспонат 12</div><div class="mat"><img src="img/kaka.jpg" alt=""></div></div>
+  <div class="pass">
+    <div class="label">Чемпионы мира · Национальные легенды</div>
+    <h2>Кака</h2>
+    <div class="kind">Футболка сборной Бразилии с автографом</div>
+    <p class="story">Кака — обладатель «Золотого мяча» и один из последних футболистов, сумевших выиграть эту награду до эпохи тотального доминирования Месси и Роналду. За сборную Бразилии он провёл более 90 матчей, став одним из главных лиц мирового футбола начала XXI века.</p>
+    <div class="price"><span class="t">Стоимость</span><span class="n">230 000 ₽</span></div>
+    <div class="cert">Международная сертификация подлинности: Beckett.</div>
+  </div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- 19 · ФИНАЛ -->
+<section class="slide center">
+  <div>
+    <img class="logo" src="img/stargift_logo.png" alt="Stargift" style="height:clamp(70px,9vw,116px);margin:0 auto">
+    <div class="label" style="margin-top:2vh">Подарок для того, у кого есть всё</div>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(17px,2vw,28px);margin-top:5vh;color:#D8D2C6">Показ экспонатов — в бутиках Stargift.<br>Каждый предмет сопровождается международным сертификатом подлинности.</p>
+    <div class="label" style="margin-top:4.5vh;color:var(--gold)">stargift.ru · ТЦ «Гименей» · ТЦ «Dream House» · Москва</div>
+  </div>
+</section>
+
+</div>
+<div class="hint">← → или пробел · листать</div>
+<script>
+const slides=[...document.querySelectorAll('.slide')];
+slides.forEach((s,k)=>{const p=s.querySelector('.pagenum');if(p)p.textContent=String(k+1).padStart(2,'0')+' / '+slides.length});
+let i=0;
+function go(n){i=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,k)=>s.classList.toggle('on',k===i));history.replaceState(null,'','#'+(i+1))}
+const h=parseInt(location.hash.slice(1));if(!isNaN(h))go(h-1);
+addEventListener('keydown',e=>{if(['ArrowRight',' ','PageDown'].includes(e.key)){e.preventDefault();go(i+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();go(i-1)}if(e.key==='Home')go(0)});
+addEventListener('click',e=>{if(!e.target.closest('a'))go(i+1)});
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}.hint{display:none}}</style>
+</body>
+</html>
