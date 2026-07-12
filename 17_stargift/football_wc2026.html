@@ -342,6 +342,6 @@ const h=parseInt(location.hash.slice(1));if(!isNaN(h))go(h-1);
 addEventListener('keydown',e=>{if(['ArrowRight',' ','PageDown'].includes(e.key)){e.preventDefault();go(i+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();go(i-1)}if(e.key==='Home')go(0)});
 addEventListener('click',e=>{if(!e.target.closest('a'))go(i+1)});
 </script>
-<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}.hint{display:none}}</style>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}.slide{animation:none !important}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}.hint{display:none}}</style>
 </body>
 </html>
