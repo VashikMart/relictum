@@ -1,0 +1,250 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STARGIFT — Крест 2×2, вырезки и настроение</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:#1A1A1A; --paper:#FFFFFF; --soft:#F7F5F1; --gold:#A98545; --gold-lt:#C9A96A;
+  --grey:#6F6A62; --hair:rgba(169,133,69,.35); --hair-lt:rgba(169,133,69,.18);
+  --bk:#0B0B0C; --coal:#131315; --bk-ivory:#F5F1E8; --bk-muted:#8E8A82; --bk-line:rgba(201,169,106,.32);
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',-apple-system,'Segoe UI',sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; overflow:hidden; background:#000; }
+body { font-family:var(--sans); font-weight:300; color:var(--ink); }
+.deck { height:100%; position:relative; }
+.slide { position:absolute; inset:0; display:none; overflow:hidden; background:var(--paper); }
+.slide.on { display:grid; }
+h1,h2,h3 { font-family:var(--serif); font-weight:400; line-height:1.05; }
+img { display:block; }
+a.lnk { color:inherit; text-decoration:none; border-bottom:1px dotted rgba(169,133,69,.55); }
+.label { font-size:clamp(9px,.8vw,12px); font-weight:500; letter-spacing:.3em; text-transform:uppercase; color:var(--gold); }
+.bk { background:var(--bk); color:var(--bk-ivory); }
+.bk .label { color:var(--gold-lt); }
+.mat { background:#fff; border:1px solid var(--hair-lt); box-shadow:0 14px 44px rgba(26,22,15,.10); padding:clamp(10px,1.1vw,18px); }
+.mat img { width:100%; object-fit:cover; display:block; }
+.cap { padding:1.2vh 4px 0; text-align:left; }
+.cap .nm { font-family:var(--serif); font-size:clamp(13.5px,1.3vw,19px); }
+.cap .tp { font-size:clamp(10px,.85vw,12.5px); color:var(--grey); margin-top:2px; }
+.cap .pr { font-family:var(--serif); font-size:clamp(13px,1.15vw,17px); color:var(--gold); margin-top:4px; }
+/* cross 2x2 */
+.quad { grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; gap:2px; background:rgba(169,133,69,.55); }
+.quad.bkq { background:rgba(201,169,106,.45); }
+.qc { position:relative; overflow:hidden; background:var(--coal); }
+.qc img.ph { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.qplq { position:absolute; left:0; right:0; bottom:0; background:linear-gradient(transparent,rgba(0,0,0,.82)); padding:clamp(28px,4.2vh,44px) 18px 14px; }
+.qplq .nm { font-family:var(--serif); font-size:clamp(12.5px,1.3vw,19px); color:#fff; }
+.qplq .tp { font-size:clamp(9px,.8vw,11.5px); color:#D8D2C6; margin-top:2px; }
+.qplq .pr { font-family:var(--serif); font-size:clamp(11.5px,1.15vw,16px); color:var(--gold-lt); margin-top:3px; }
+.qplq a { color:inherit; text-decoration:none; }
+/* white cross cell: photo + caption bar under */
+.wc { background:var(--paper); display:grid; grid-template-rows:minmax(0,1fr) auto; }
+.wc .ph-box { position:relative; overflow:hidden; background:var(--soft); }
+.wc .ph-box img { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; padding:clamp(8px,1vw,16px); }
+.wc .bar { padding:8px 14px 10px; border-top:1px solid var(--hair-lt); }
+.wc .bar .nm { font-family:var(--serif); font-size:clamp(11.5px,1.15vw,16px); }
+.wc .bar .tp { font-size:clamp(8.5px,.75vw,11px); color:var(--grey); margin-top:1px; }
+.wc .bar .pr { font-family:var(--serif); font-size:clamp(11px,1.05vw,15px); color:var(--gold); margin-top:2px; }
+.corner { position:absolute; top:24px; right:32px; z-index:6; }
+.credit { position:absolute; right:16px; bottom:10px; z-index:5; font-size:9px; letter-spacing:.08em; color:rgba(255,255,255,.55); }
+.pagenum{display:none}
+</style>
+</head><body><div class="deck">
+
+<!-- q01 ═══ КРЕСТ 2×2 · СПОРТ · ЧЁРНЫЙ ═══ -->
+<section class="slide bk quad bkq" id="q01">
+  <div class="qc"><img class="ph" src="img_site/federer.jpg" alt="">
+    <div class="qplq"><div class="nm"><a class="lnk" href="https://stargift.ru/product/679972498301-rodzher-federer">Роджер Федерер</a></div><div class="tp">Фото с автографом</div><div class="pr">260 000 ₽</div></div></div>
+  <div class="qc"><img class="ph" src="img_site/ali.jpg" alt="">
+    <div class="qplq"><div class="nm"><a class="lnk" href="https://stargift.ru/product/287564502502-mukhammed-ali">Мухаммед Али</a></div><div class="tp">Статуэтка с автографом</div><div class="pr">900 000 ₽</div></div></div>
+  <div class="qc"><img class="ph" src="img_site/karpov.jpg" alt="">
+    <div class="qplq"><div class="nm"><a class="lnk" href="https://stargift.ru/product/856091122712-anatoliy-karpov">Анатолий Карпов</a></div><div class="tp">Шахматные часы</div><div class="pr">300 000 ₽</div></div></div>
+  <div class="qc"><img class="ph" src="img_site/kobe.jpg" alt="" style="object-position:24% center">
+    <div class="qplq"><div class="nm"><a class="lnk" href="https://stargift.ru/product/322237614912-kobi-brayant">Коби Брайант</a></div><div class="tp">Майка с автографом</div><div class="pr">900 000 ₽</div></div></div>
+  <div style="position:absolute;top:24px;left:32px;z-index:6;background:rgba(11,11,12,.82);border:1px solid var(--bk-line);padding:10px 18px"><span style="font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-lt)">Четыре легенды</span><div style="font-family:var(--serif);color:#fff;font-size:clamp(15px,1.5vw,22px);margin-top:2px">Спорт</div></div>
+</section>
+
+<!-- q02 ═══ КРЕСТ 2×2 · КИНО · БЕЛЫЙ (подписи под фото) ═══ -->
+<section class="slide quad" id="q02">
+  <div class="wc"><div class="ph-box"><img src="img_site/pacino_poster.jpg" alt=""></div>
+    <div class="bar"><div class="nm"><a class="lnk" href="https://stargift.ru/product/sg_1777915174_52dc4023-al-pachino">Аль Пачино</a></div><div class="tp">Постер к к/ф «Крёстный отец» с автографом</div><div class="pr">320 000 ₽</div></div></div>
+  <div class="wc"><div class="ph-box"><img src="img_site/radcliffe_script.jpg" alt=""></div>
+    <div class="bar"><div class="nm"><a class="lnk" href="https://stargift.ru/product/405911540572-deniel-redkliff">Дэниэл Рэдклифф</a></div><div class="tp">Сценарий фильма «Гарри Поттер и Философский камень» с автографом</div><div class="pr">290 000 ₽</div></div></div>
+  <div class="wc"><div class="ph-box"><img src="img_site/lloyd_bttf.jpg" alt=""></div>
+    <div class="bar"><div class="nm"><a class="lnk" href="https://stargift.ru/product/951871023942-kristofer-lloyd-i-maykl-dzhey-foks">Кристофер Ллойд и Майкл Джей Фокс</a></div><div class="tp">Реплика дисплея временных контуров из к/ф «Назад в будущее» с 2-мя автографами</div><div class="pr">700 000 ₽</div></div></div>
+  <div class="wc"><div class="ph-box"><img src="img_site/richie_snatch.jpg" alt=""></div>
+    <div class="bar"><div class="nm"><a class="lnk" href="https://stargift.ru/product/239364935632-gay-richi">Гай Ричи</a></div><div class="tp">Сценарий фильма «Большой куш» с автографом</div><div class="pr">350 000 ₽</div></div></div>
+  <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:26px"></div>
+</section>
+
+<!-- q03 ═══ КРЕСТ 2×2 · СПОРТ · МЕДАЛЬОН В ЦЕНТРЕ ═══ -->
+<section class="slide bk quad bkq" id="q03">
+  <div class="qc"><img class="ph" src="img_site/federer.jpg" alt="">
+    <div class="qplq"><div class="nm"><a class="lnk" href="https://stargift.ru/product/679972498301-rodzher-federer">Роджер Федерер</a></div><div class="tp">Фото с автографом</div><div class="pr">260 000 ₽</div></div></div>
+  <div class="qc"><img class="ph" src="img_site/ali.jpg" alt="">
+    <div class="qplq"><div class="nm"><a class="lnk" href="https://stargift.ru/product/287564502502-mukhammed-ali">Мухаммед Али</a></div><div class="tp">Статуэтка с автографом</div><div class="pr">900 000 ₽</div></div></div>
+  <div class="qc"><img class="ph" src="img_site/karpov.jpg" alt="">
+    <div class="qplq"><div class="nm"><a class="lnk" href="https://stargift.ru/product/856091122712-anatoliy-karpov">Анатолий Карпов</a></div><div class="tp">Шахматные часы</div><div class="pr">300 000 ₽</div></div></div>
+  <div class="qc"><img class="ph" src="img_site/kobe.jpg" alt="" style="object-position:24% center">
+    <div class="qplq"><div class="nm"><a class="lnk" href="https://stargift.ru/product/322237614912-kobi-brayant">Коби Брайант</a></div><div class="tp">Майка с автографом</div><div class="pr">900 000 ₽</div></div></div>
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:7;width:clamp(120px,14vw,180px);aspect-ratio:1;border-radius:50%;background:rgba(11,11,12,.94);border:1px solid var(--gold-lt);display:grid;place-items:center;text-align:center;padding:14px">
+    <div><div style="font-size:8.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-lt)">Stargift</div>
+    <div style="font-family:var(--serif);font-size:clamp(15px,1.6vw,23px);color:#fff;margin-top:5px;line-height:1.15">Легенды<br>спорта</div></div>
+  </div>
+</section>
+
+<!-- q04 ═══ ВЫРЕЗКА НА ЧЁРНОМ · СОЛО ═══ -->
+<section class="slide bk" id="q04" style="grid-template-columns:1.15fr 1fr">
+  <div style="position:relative;display:grid;place-items:center;padding:clamp(20px,3vh,40px)">
+    <img src="img_site/cut_mbappe.png" alt="" style="max-width:88%;max-height:82vh;object-fit:contain;filter:drop-shadow(0 34px 60px rgba(0,0,0,.75))">
+    <div style="position:absolute;left:12%;right:12%;bottom:7vh;height:1px;background:linear-gradient(90deg,transparent,rgba(201,169,106,.5),transparent)"></div>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,3.4vw,60px);border-left:1px solid var(--bk-line)">
+    <div class="label">Экспонат крупным планом</div>
+    <h2 style="font-size:clamp(26px,3vw,46px);color:#fff;margin:1.6vh 0 .6vh"><a class="lnk" href="https://stargift.ru/product/799763735532-kilian-mbappe">Килиан Мбаппе</a></h2>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.45vw,21px);color:var(--gold-lt)">Футболка ФК «Реал Мадрид» с автографом</p>
+    <p style="font-size:clamp(11px,.95vw,13.5px);color:var(--bk-muted);line-height:1.8;max-width:44ch;margin-top:2.2vh">Десятый номер «Реала», подписанный золотым маркером. Фон убран — остался только предмет и подпись.</p>
+    <div style="display:flex;align-items:baseline;gap:16px;border-top:1px solid var(--bk-line);padding-top:2vh;margin-top:2.6vh"><span style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--bk-muted)">Стоимость</span><span style="font-family:var(--serif);font-size:clamp(22px,2.3vw,34px);color:var(--gold-lt)">340 000 ₽</span></div>
+  </div>
+</section>
+
+<!-- q05 ═══ ВЫРЕЗКА НА БЕЛОМ · СОЛО ═══ -->
+<section class="slide" id="q05" style="grid-template-columns:1fr 1.05fr;background:var(--paper)">
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,3.6vw,64px)">
+    <div class="label">Экспонат крупным планом</div>
+    <h2 style="font-size:clamp(26px,3vw,46px);margin:1.6vh 0 .6vh"><a class="lnk" href="https://stargift.ru/product/287564502502-mukhammed-ali">Мухаммед Али</a></h2>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.45vw,21px);color:var(--gold)">Статуэтка с автографом</p>
+    <p style="font-size:clamp(11px,.95vw,13.5px);color:#4A463F;line-height:1.8;max-width:44ch;margin-top:2.2vh">Величайший — в бронзовом выпаде, с личной подписью на основании. Чистый предмет, ничего лишнего.</p>
+    <div style="display:flex;align-items:baseline;gap:16px;border-top:1px solid var(--hair);padding-top:2vh;margin-top:2.6vh"><span style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--grey)">Стоимость</span><span style="font-family:var(--serif);font-size:clamp(22px,2.3vw,34px);color:var(--gold)">900 000 ₽</span></div>
+  </div>
+  <div style="background:var(--soft);display:grid;place-items:center;padding:clamp(20px,3vh,40px)">
+    <img src="img_site/cut_ali.png" alt="" style="max-width:86%;max-height:80vh;object-fit:contain;filter:drop-shadow(0 26px 44px rgba(26,22,15,.28))">
+  </div>
+  <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:26px"></div>
+</section>
+
+<!-- q06 ═══ NANO BANANA · ПЛАТЬЕ ШАНЕЛЬ В ТЁМНОМ ЗАЛЕ ═══ -->
+<section class="slide bk" id="q06" style="grid-template-columns:1fr 1.1fr">
+  <div style="position:relative;overflow:hidden"><img src="img_site/nb_chanel_dark.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,3.6vw,64px)">
+    <div class="label">Ночной зал коллекции</div>
+    <h2 style="font-size:clamp(26px,3vw,46px);color:#fff;margin:1.6vh 0 .6vh"><a class="lnk" href="https://stargift.ru/product/313218134672-koko-shanel">Коко Шанель</a></h2>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.45vw,21px);color:var(--gold-lt)">Платье с автографом</p>
+    <p style="font-size:clamp(11px,.95vw,13.5px);color:var(--bk-muted);line-height:1.8;max-width:44ch;margin-top:2.2vh">Бархат двадцатых под единственным лучом света. Так выглядит вещь, которой касалась рука Мадемуазель.</p>
+    <div style="display:flex;align-items:baseline;gap:16px;border-top:1px solid var(--bk-line);padding-top:2vh;margin-top:2.6vh"><span style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--bk-muted)">Стоимость</span><span style="font-family:var(--serif);font-size:clamp(22px,2.3vw,34px);color:var(--gold-lt)">7 000 000 ₽</span></div>
+    <p style="font-size:9.5px;letter-spacing:.06em;color:rgba(245,241,232,.4);margin-top:2.4vh">атмосферная подача · фотографии лота — на stargift.ru</p>
+  </div>
+</section>
+
+<!-- q07 ═══ NANO BANANA · ПЛАТЬЕ ШАНЕЛЬ · МУЗЕЙНЫЙ БЕЛЫЙ ═══ -->
+<section class="slide" id="q07" style="grid-template-columns:1.05fr 1fr;background:var(--paper)">
+  <div style="background:var(--soft);display:grid;place-items:center;padding:clamp(22px,2.8vh,44px)">
+    <div class="mat" style="max-height:84vh"><img src="img_site/nb_chanel_white.jpg" alt="" style="width:auto;max-width:100%;max-height:74vh;object-fit:contain"></div>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,3.6vw,64px)">
+    <div class="label">Музейная подача</div>
+    <h2 style="font-size:clamp(26px,3vw,46px);margin:1.6vh 0 .6vh"><a class="lnk" href="https://stargift.ru/product/313218134672-koko-shanel">Коко Шанель</a></h2>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.45vw,21px);color:var(--gold)">Платье с автографом</p>
+    <p style="font-size:clamp(11px,.95vw,13.5px);color:#4A463F;line-height:1.8;max-width:44ch;margin-top:2.2vh">Как в архиве дома моды: предмет без фона, ровный свет, каждая бусина на виду.</p>
+    <div style="display:flex;align-items:baseline;gap:16px;border-top:1px solid var(--hair);padding-top:2vh;margin-top:2.6vh"><span style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--grey)">Стоимость</span><span style="font-family:var(--serif);font-size:clamp(22px,2.3vw,34px);color:var(--gold)">7 000 000 ₽</span></div>
+    <p style="font-size:9.5px;letter-spacing:.06em;color:rgba(26,26,26,.4);margin-top:2.4vh">атмосферная подача · фотографии лота — на stargift.ru</p>
+  </div>
+  <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:26px"></div>
+</section>
+
+<!-- q08 ═══ NANO BANANA · ПОЯС ТАЙСОНА FULL-BLEED + ВРЕЗКА ФОТО ЛОТА ═══ -->
+<section class="slide bk" id="q08" style="grid-template-columns:1fr">
+  <div style="position:relative;overflow:hidden">
+    <img src="img_site/nb_tyson_dark.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+    <div style="position:absolute;left:0;right:0;bottom:0;height:38%;background:linear-gradient(transparent,rgba(0,0,0,.85))"></div>
+    <div style="position:absolute;left:clamp(26px,3.6vw,64px);bottom:clamp(22px,4vh,44px);max-width:52%">
+      <div class="label">Реликвия ринга</div>
+      <h2 style="font-size:clamp(26px,3.2vw,50px);color:#fff;margin:1.2vh 0 .4vh"><a class="lnk" href="https://stargift.ru/product/770151418350-mayk-tayson">Майк Тайсон</a></h2>
+      <p style="font-family:var(--serif);font-style:italic;font-size:clamp(13px,1.4vw,20px);color:var(--gold-lt)">Реплика пояса чемпиона мира с автографом · 510 000 ₽</p>
+    </div>
+    <div style="position:absolute;top:clamp(20px,3.4vh,36px);right:clamp(22px,3vw,44px);width:clamp(150px,15vw,210px)">
+      <div class="mat" style="padding:8px"><img src="img_site/tyson_belt.jpg" alt="" style="aspect-ratio:4/3"></div>
+      <div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,241,232,.6);margin-top:6px;text-align:right">фото лота</div>
+    </div>
+  </div>
+</section>
+
+<!-- q09 ═══ ВИТРИНА КОЛЛЕКЦИОНЕРА · ДВЕ ВЫРЕЗКИ НА ЧЁРНОМ ═══ -->
+<section class="slide bk" id="q09" style="grid-template-columns:1fr 1fr;gap:0">
+  <div style="display:grid;grid-template-rows:minmax(0,1fr) auto;padding:clamp(22px,3vh,42px) clamp(22px,2.6vw,48px) clamp(18px,2.6vh,34px);min-height:0">
+    <div style="position:relative;display:grid;place-items:center;min-height:0">
+      <img src="img_site/cut_ali.png" alt="" style="max-width:80%;max-height:56vh;object-fit:contain;filter:drop-shadow(0 26px 44px rgba(0,0,0,.7))">
+      <div style="position:absolute;left:14%;right:14%;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,169,106,.55),transparent)"></div>
+    </div>
+    <div style="text-align:center;margin-top:2vh"><div style="font-family:var(--serif);font-size:clamp(14px,1.4vw,20px);color:#fff"><a class="lnk" href="https://stargift.ru/product/287564502502-mukhammed-ali">Мухаммед Али</a></div><div style="font-size:clamp(9.5px,.8vw,11.5px);color:var(--bk-muted);margin-top:2px">Статуэтка с автографом</div><div style="font-family:var(--serif);font-size:clamp(12.5px,1.2vw,17px);color:var(--gold-lt);margin-top:4px">900 000 ₽</div></div>
+  </div>
+  <div style="display:grid;grid-template-rows:minmax(0,1fr) auto;padding:clamp(22px,3vh,42px) clamp(22px,2.6vw,48px) clamp(18px,2.6vh,34px);border-left:1px solid var(--bk-line);min-height:0">
+    <div style="position:relative;display:grid;place-items:center;min-height:0">
+      <img src="img_site/cut_mbappe.png" alt="" style="max-width:84%;max-height:56vh;object-fit:contain;filter:drop-shadow(0 26px 44px rgba(0,0,0,.7))">
+      <div style="position:absolute;left:14%;right:14%;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,169,106,.55),transparent)"></div>
+    </div>
+    <div style="text-align:center;margin-top:2vh"><div style="font-family:var(--serif);font-size:clamp(14px,1.4vw,20px);color:#fff"><a class="lnk" href="https://stargift.ru/product/799763735532-kilian-mbappe">Килиан Мбаппе</a></div><div style="font-size:clamp(9.5px,.8vw,11.5px);color:var(--bk-muted);margin-top:2px">Футболка ФК «Реал Мадрид» с автографом</div><div style="font-family:var(--serif);font-size:clamp(12.5px,1.2vw,17px);color:var(--gold-lt);margin-top:4px">340 000 ₽</div></div>
+  </div>
+  <div style="position:absolute;top:24px;left:32px;z-index:6;background:rgba(11,11,12,.82);border:1px solid var(--bk-line);padding:10px 18px"><span style="font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-lt)">Витрина коллекционера</span></div>
+</section>
+
+<!-- q10 ═══ НАСТРОЕНИЕ · 14 ФЕВРАЛЯ · РИМСКИЕ КАНИКУЛЫ ═══ -->
+<section class="slide bk" id="q10" style="grid-template-columns:1fr">
+  <div style="position:relative;overflow:hidden">
+    <img src="img_site/wiki_vespa.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%">
+    <div style="position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(0,0,0,.88))"></div>
+    <div style="position:absolute;left:clamp(26px,3.6vw,64px);right:clamp(26px,3.6vw,64px);bottom:clamp(20px,3.4vh,40px)">
+      <div class="label">14 февраля · идеи подарков</div>
+      <h2 style="font-size:clamp(28px,3.6vw,56px);color:#fff;margin:1.2vh 0 .8vh;max-width:22ch">История любви начинается с жеста</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.6vw,28px);margin-top:1.8vh;border-top:1px solid rgba(201,169,106,.4);padding-top:1.8vh">
+        <div><div style="font-family:var(--serif);font-size:clamp(12px,1.2vw,17px);color:#fff"><a class="lnk" href="https://stargift.ru/product/628607883951-mark-shagal">Марк Шагал</a></div><div style="font-size:clamp(8.5px,.75vw,11px);color:#D8D2C6">Рукописная открытка с пожеланием</div><div style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(11px,1.05vw,15px);margin-top:2px">4 000 000 ₽</div></div>
+        <div><div style="font-family:var(--serif);font-size:clamp(12px,1.2vw,17px);color:#fff"><a class="lnk" href="https://stargift.ru/product/358594171272-chistaya-lyubov-vesenniy-rastsvet-pure-love-spring-blossom">«Чистая любовь» — Yoomoota</a></div><div style="font-size:clamp(8.5px,.75vw,11px);color:#D8D2C6">Скульптура Тараса Желтышева</div><div style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(11px,1.05vw,15px);margin-top:2px">3 000 000 ₽</div></div>
+        <div><div style="font-family:var(--serif);font-size:clamp(12px,1.2vw,17px);color:#fff"><a class="lnk" href="https://stargift.ru/product/sg_1782657497_724a1e3c-greys-kelli-i-rene-iii-knyaz-monako">Грейс Келли и Ренье III</a></div><div style="font-size:clamp(8.5px,.75vw,11px);color:#D8D2C6">Фото с 2-мя автографами</div><div style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(11px,1.05vw,15px);margin-top:2px">750 000 ₽</div></div>
+      </div>
+    </div>
+    <div class="credit">кадр: «Римские каникулы», 1953 · Wikimedia Commons · public domain</div>
+  </div>
+</section>
+
+<!-- q11 ═══ НАСТРОЕНИЕ · 14 ФЕВРАЛЯ · ВЕЧЕР · КАСАБЛАНКА ═══ -->
+<section class="slide bk" id="q11" style="grid-template-columns:1fr 1fr">
+  <div style="display:grid;place-items:center;padding:clamp(24px,3vh,44px)">
+    <div>
+      <div class="mat" style="padding:clamp(10px,1.2vw,18px);background:#0f0f10;border-color:rgba(201,169,106,.4)"><img src="img_site/wiki_casablanca.jpg" alt="" style="aspect-ratio:4/3;filter:sepia(.12) contrast(1.02)"></div>
+      <div style="font-size:9px;letter-spacing:.1em;color:rgba(245,241,232,.5);margin-top:8px;text-align:center">«Касабланка», 1942 · Wikimedia Commons · public domain</div>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,3.4vw,60px);border-left:1px solid var(--bk-line)">
+    <div class="label">14 февраля · вечер вдвоём</div>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(19px,2.1vw,32px);color:#fff;line-height:1.35;margin-top:1.6vh">«У нас всегда будет Париж»</p>
+    <p style="font-size:clamp(10.5px,.92vw,13px);color:var(--bk-muted);line-height:1.8;max-width:44ch;margin-top:1.6vh">Великие истории любви оставляют вещи. Подарите одну из них.</p>
+    <div style="margin-top:2.6vh;display:grid;gap:1.4vh">
+      <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;border-bottom:1px solid var(--bk-line);padding-bottom:1.2vh"><span style="font-size:clamp(10.5px,.95vw,13px);color:#F5F1E8"><a class="lnk" href="https://stargift.ru/product/616978442592-koko-shanel">Коко Шанель</a> — Пинетки с автографом</span><span style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(12.5px,1.25vw,17px);white-space:nowrap">4 600 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;border-bottom:1px solid var(--bk-line);padding-bottom:1.2vh"><span style="font-size:clamp(10.5px,.95vw,13px);color:#F5F1E8"><a class="lnk" href="https://stargift.ru/product/326991928512-odri-khepbern">Одри Хепбёрн</a> — Фото с автографом</span><span style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(12.5px,1.25vw,17px);white-space:nowrap">1 250 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;border-bottom:1px solid var(--bk-line);padding-bottom:1.2vh"><span style="font-size:clamp(10.5px,.95vw,13px);color:#F5F1E8"><a class="lnk" href="https://stargift.ru/product/628607883951-mark-shagal">Марк Шагал</a> — Открытка с пожеланием</span><span style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(12.5px,1.25vw,17px);white-space:nowrap">4 000 000 ₽</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- q12 ═══ НАСТРОЕНИЕ · РАЗДЕЛИТЕЛЬ ТЕМЫ · СВАДЕБНЫЙ СЕЗОН ═══ -->
+<section class="slide" id="q12" style="grid-template-columns:1fr 1.25fr;background:var(--paper)">
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(28px,4vw,72px)">
+    <div style="font-family:var(--serif);font-style:italic;font-size:clamp(13px,1.35vw,20px);color:var(--gold)">Глава первая</div>
+    <h2 style="font-size:clamp(30px,4vw,62px);margin:1.8vh 0">Свадебный сезон</h2>
+    <p style="font-size:clamp(11.5px,1vw,14.5px);color:#4A463F;line-height:1.85;max-width:40ch">Княжеская свадьба Монако, платья и эскизы великих домов, письма о любви. Подарки для дня, который запомнится навсегда.</p>
+    <div style="width:64px;height:1px;background:var(--gold);margin-top:3.4vh"></div>
+  </div>
+  <div style="position:relative;overflow:hidden;background:var(--soft)">
+    <img src="img_site/wiki_grace_wedding.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%">
+    <div style="position:absolute;right:14px;bottom:10px;font-size:9px;letter-spacing:.08em;color:rgba(255,255,255,.75);text-shadow:0 1px 4px rgba(0,0,0,.6)">архив: Wikimedia Commons · public domain</div>
+  </div>
+</section>
+
+</div>
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^q/,'');const id=n?('q'+n.padStart(2,'0')):'q01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));
+scrollTo(0,0);document.body.scrollTop=0;document.documentElement.scrollTop=0;}
+show();addEventListener('hashchange',show);
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
+</body></html>
