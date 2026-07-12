@@ -1,0 +1,381 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STARGIFT — Литература · Подборка для тех, кто живёт книгами</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1A1A1A; --paper:#FFFFFF; --soft:#F7F5F1; --gold:#A98545; --gold-lt:#C9A96A;
+  --grey:#6F6A62; --hair:rgba(169,133,69,.35); --hair-lt:rgba(169,133,69,.18);
+  --bk:#0B0B0C; --coal:#131315; --bk-ivory:#F5F1E8; --bk-muted:#8E8A82; --bk-line:rgba(201,169,106,.32);
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',-apple-system,'Segoe UI',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000}
+body{font-family:var(--sans);font-weight:300;color:var(--ink)}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden;background:#fff}
+.slide.on{display:grid}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.05}
+img{display:block}
+a.lnk{color:inherit;text-decoration:none;border-bottom:1px dotted rgba(169,133,69,.55)}
+.label{font-size:clamp(9px,.8vw,12px);font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.bk{background:var(--bk);color:var(--bk-ivory)}
+.bk .label{color:var(--gold-lt)}
+.price{font-family:var(--serif);color:var(--gold);white-space:nowrap}
+.mat{background:#fff;border:1px solid var(--hair-lt);box-shadow:0 14px 44px rgba(26,22,15,.10);padding:8px}
+.mat img{width:100%;object-fit:cover;display:block}
+.credit{position:absolute;right:14px;bottom:9px;z-index:5;font-size:9px;letter-spacing:.08em;color:rgba(120,114,104,.55)}
+/* градиентная плашка для чёрных страниц поверх фото */
+.plate{position:absolute;left:0;right:0;bottom:0;padding:26% 8% 7%;
+  background:linear-gradient(0deg,rgba(0,0,0,.9) 4%,rgba(0,0,0,.62) 46%,transparent);color:#fff}
+
+/* lo03 — экспонат под лупой (соло топ-лот) */
+.loupe{position:relative;width:clamp(320px,30vw,440px);aspect-ratio:1/1;border-radius:50%;overflow:hidden;
+  border:1px solid rgba(201,169,106,.55);box-shadow:0 0 0 9px rgba(201,169,106,.06),0 34px 90px rgba(0,0,0,.6),inset 0 0 60px rgba(0,0,0,.55)}
+.loupe img{width:100%;height:100%;object-fit:cover;object-position:center 46%;filter:contrast(1.05) saturate(1.02)}
+.glow{position:absolute;width:74vh;height:74vh;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(201,169,106,.16),rgba(201,169,106,.04) 45%,transparent 66%);pointer-events:none}
+.ghost{position:absolute;font-family:var(--serif);font-weight:300;font-size:min(46vh,540px);line-height:.8;
+  color:rgba(201,169,106,.05);left:50%;top:52%;transform:translate(-50%,-50%);pointer-events:none;user-select:none;z-index:0}
+
+/* белые подборки — подпись строго под фото */
+.gcap{text-align:center;margin-top:1.6vh}
+.gcap .cap-n{font-size:clamp(8.5px,.72vw,10.5px);letter-spacing:.22em;text-transform:uppercase;color:var(--grey)}
+.gcap .cap-t{font-family:var(--serif);font-size:clamp(12px,1.18vw,17px);line-height:1.28;margin-top:.7vh;max-width:26ch;margin-left:auto;margin-right:auto}
+.gcap .cap-p{font-family:var(--serif);color:var(--gold);font-size:clamp(14px,1.35vw,20px);margin-top:.7vh}
+
+/* lo07 — ЛЕСТНИЦА ЦЕН (авторский формат) */
+.ladder{position:relative;display:flex;flex-direction:column;justify-content:center;gap:0;
+  padding:clamp(24px,3.4vh,44px) clamp(34px,4.4vw,80px)}
+.rung{display:grid;grid-template-columns:64px auto 1fr auto;align-items:center;gap:clamp(14px,1.6vw,26px);
+  padding:clamp(6px,1vh,12px) 0;border-bottom:1px solid var(--bk-line);position:relative}
+.rung:last-child{border-bottom:none}
+.rung .rk{font-family:var(--serif);font-size:clamp(20px,2vw,30px);color:var(--gold-lt);opacity:.55}
+.rung .rthumb{width:clamp(52px,4.4vw,72px);height:clamp(40px,3.4vw,54px);object-fit:cover;
+  border:1px solid var(--bk-line);filter:grayscale(.15)}
+.rung .rname{font-family:var(--serif);font-size:clamp(14px,1.5vw,22px);color:#fff;line-height:1.15}
+.rung .rname small{display:block;font-family:var(--sans);font-size:clamp(9px,.72vw,11px);letter-spacing:.16em;
+  text-transform:uppercase;color:var(--bk-muted);margin-top:.5vh;font-weight:400}
+.rung .rprice{font-family:var(--serif);color:var(--gold-lt);font-size:clamp(16px,1.7vw,26px);white-space:nowrap;justify-self:end}
+.rbar{position:absolute;left:64px;bottom:-1px;height:2px;background:linear-gradient(90deg,var(--gold),rgba(201,169,106,.15))}
+
+/* lo08 — полный индекс подборки */
+.idx{display:grid;grid-template-columns:auto 1fr auto;gap:0 clamp(16px,1.8vw,30px);align-items:baseline;
+  padding:1.15vh 0;border-bottom:1px solid var(--hair-lt)}
+.idx:last-child{border-bottom:none}
+.idx .in{font-family:var(--serif);color:var(--gold);font-size:clamp(14px,1.4vw,20px);width:2ch}
+.idx .it{font-family:var(--serif);font-size:clamp(14px,1.5vw,21px);line-height:1.2}
+.idx .it small{display:block;font-family:var(--sans);font-size:clamp(9px,.68vw,10.5px);letter-spacing:.16em;
+  text-transform:uppercase;color:var(--grey);margin-top:.4vh;font-weight:400}
+.idx .ip{font-family:var(--serif);color:var(--gold);font-size:clamp(14px,1.4vw,20px);white-space:nowrap}
+</style>
+</head><body><div class="deck">
+
+<!-- lo01 · ОБЛОЖКА -->
+<section class="slide bk" id="lo01" style="grid-template-columns:1.15fr .85fr;position:relative">
+  <div class="ghost" style="left:76%;top:50%">A</div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(40px,5vw,96px);position:relative;z-index:1">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:clamp(26px,2.6vw,40px);width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.92;margin-bottom:5vh">
+    <div class="label" style="letter-spacing:.36em">Клиентская подборка · Литература</div>
+    <h1 style="font-size:clamp(48px,6.2vw,104px);color:#fff;margin:2.2vh 0 0;letter-spacing:-.01em">Литература</h1>
+    <div style="width:60px;height:1px;background:var(--gold);margin:3vh 0"></div>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(19px,2.3vw,34px);color:var(--gold-lt);line-height:1.3;max-width:22ch">
+      Подборка для тех,<br>кто живёт книгами</p>
+    <p style="font-size:clamp(11px,1vw,14px);color:var(--bk-muted);line-height:1.9;max-width:40ch;margin-top:3.4vh">
+      Восемь подлинных предметов, которых касались руки писателей и художников. Автографы, письма, личные книги —
+      с экспертизой и сертификатом Stargift.</p>
+  </div>
+  <div style="position:relative;overflow:hidden">
+    <img src="img_site/repin.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:brightness(.82) contrast(1.04)">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,var(--bk) 1%,rgba(11,11,12,.35) 22%,transparent 55%)"></div>
+    <div class="plate" style="padding:30% 9% 8%">
+      <div class="label" style="color:var(--gold-lt)">Экспонат подборки · 1</div>
+      <div style="font-family:var(--serif);font-size:clamp(16px,1.7vw,25px);margin-top:.8vh;line-height:1.2">Илья Репин</div>
+    </div>
+  </div>
+</section>
+
+<!-- lo02 · МАНИФЕСТ / НАСТРОЕНИЕ -->
+<section class="slide bk" id="lo02" style="place-items:center;position:relative">
+  <div class="ghost" style="top:50%">«»</div>
+  <div style="position:relative;z-index:1;text-align:center;max-width:60ch;padding:0 clamp(40px,6vw,120px)">
+    <div class="label" style="letter-spacing:.4em">Манифест подборки</div>
+    <p style="font-family:var(--serif);font-weight:300;font-size:clamp(28px,3.6vw,58px);color:#fff;line-height:1.24;margin-top:3.2vh">
+      Книгу можно купить в магазине.<br>
+      <span style="color:var(--gold-lt);font-style:italic">Ту, которую держали их руки, —</span><br>
+      только у нас.</p>
+    <div style="width:56px;height:1px;background:var(--gold);margin:4vh auto"></div>
+    <p style="font-size:clamp(12px,1.1vw,15.5px);color:var(--bk-muted);line-height:2;max-width:52ch;margin:0 auto">
+      Автограф на титуле. Пометки на полях. Письмо, отправленное сто лет назад. Это не иллюстрации к биографии —
+      это сама биография, к которой можно прикоснуться. Для того, кто читает не глазами, а сердцем.</p>
+    <div style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.4vw,20px);color:var(--gold-lt);margin-top:4vh">Stargift · подарки-легенды</div>
+  </div>
+</section>
+
+<!-- lo03 · СОЛО ТОП-ЛОТ: РЕПИН ПОД ЛУПОЙ -->
+<section class="slide bk" id="lo03" style="grid-template-columns:1.06fr 1fr;position:relative">
+  <div class="ghost">1900</div>
+  <div style="position:relative;display:grid;place-items:center;min-height:0;z-index:1">
+    <div class="glow"></div>
+    <div style="position:relative;display:flex;flex-direction:column;align-items:center">
+      <div class="loupe"><img src="img_site/repin.jpg" alt=""></div>
+      <div class="label" style="margin-top:2.6vh;letter-spacing:.34em">Экспонат № 1 · под лупой коллекционера</div>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(28px,3.6vw,68px) clamp(30px,4vw,72px) clamp(28px,3.6vw,68px) 0;position:relative;z-index:1">
+    <div style="font-family:var(--serif);font-style:italic;font-size:clamp(13px,1.4vw,21px);color:var(--gold-lt)">Гений русской живописи</div>
+    <h2 style="font-size:clamp(30px,3.7vw,60px);color:#fff;margin:1.4vh 0 0">
+      <a class="lnk" style="border-bottom-color:rgba(201,169,106,.5)" href="https://stargift.ru/product/109986076251-ilya-repin">Илья Репин</a>
+    </h2>
+    <div style="font-family:var(--serif);font-size:clamp(17px,1.9vw,28px);color:var(--bk-ivory);margin-top:.8vh">Собственноручное письмо с автографом</div>
+    <p style="font-size:clamp(11px,1vw,14px);color:var(--bk-muted);line-height:1.9;max-width:44ch;margin-top:2.6vh">
+      Рука, написавшая «Бурлаков» и «Ивана Грозного». Подлинное письмо, выведенное самим художником, —
+      с автографом, экспертизой и сертификатом подлинности Stargift.</p>
+    <div style="width:56px;height:1px;background:var(--gold);margin:3.2vh 0 2.4vh"></div>
+    <div style="display:flex;align-items:baseline;gap:14px">
+      <span class="label" style="letter-spacing:.28em">Стоимость</span>
+      <span class="price" style="font-size:clamp(28px,3.2vw,50px);color:var(--gold-lt)">10 000 000 ₽</span>
+    </div>
+  </div>
+  <div class="credit" style="color:rgba(201,169,106,.4)">Stargift · подлинник с экспертизой</div>
+</section>
+
+<!-- lo04 · ДУЭТ ТОЛСТОГО (белая, подписи под фото) -->
+<section class="slide" id="lo04" style="grid-template-rows:auto minmax(0,1fr);background:var(--paper)">
+  <div style="padding:clamp(26px,3.4vh,44px) clamp(40px,5vw,90px) 0">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px">
+      <div>
+        <div class="label">Подборка · две вещи одной руки</div>
+        <h2 style="font-size:clamp(28px,3.2vw,52px);margin-top:1.1vh">Лев Толстой</h2>
+      </div>
+      <div style="font-family:var(--serif);font-style:italic;font-size:clamp(13px,1.35vw,20px);color:var(--gold);text-align:right;max-width:30ch;padding-bottom:.4vh">
+        Автограф человека,<br>переписавшего «Войну и мир» семь раз
+      </div>
+    </div>
+    <div style="width:100%;height:1px;background:var(--hair-lt);margin-top:2vh"></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,4vw,80px);align-content:center;
+    padding:clamp(16px,2vh,32px) clamp(40px,6vw,120px);min-height:0">
+    <div>
+      <div class="mat"><img src="img_site/tolstoy.jpg" alt="" style="aspect-ratio:4/3"></div>
+      <div class="gcap">
+        <div class="cap-n">Ясная Поляна · фотография</div>
+        <div class="cap-t"><a class="lnk" href="https://stargift.ru/product/675565670552-lev-tolstoy">Лев Толстой — Фото с автографом</a></div>
+        <div class="cap-p">1 500 000 ₽</div>
+      </div>
+    </div>
+    <div>
+      <div class="mat"><img src="img_site/tolstoy_book.jpg" alt="" style="aspect-ratio:4/3"></div>
+      <div class="gcap">
+        <div class="cap-n">Личная библиотека · том</div>
+        <div class="cap-t"><a class="lnk" href="https://stargift.ru/product/989283717622-lev-tolstoy">Лев Толстой — Книга с автографом</a></div>
+        <div class="cap-p">1 100 000 ₽</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- lo05 · ТРИО (белая, подписи под фото) -->
+<section class="slide" id="lo05" style="grid-template-rows:auto minmax(0,1fr);background:var(--soft)">
+  <div style="padding:clamp(26px,3.4vh,44px) clamp(40px,5vw,90px) 0">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px">
+      <div>
+        <div class="label">Подборка · перо, кисть и почта</div>
+        <h2 style="font-size:clamp(28px,3.2vw,52px);margin-top:1.1vh">Три руки, три эпохи</h2>
+      </div>
+      <div style="font-family:var(--serif);font-style:italic;font-size:clamp(13px,1.35vw,20px);color:var(--gold);text-align:right;max-width:32ch;padding-bottom:.4vh">
+        Открытка художника, книга поэтессы<br>и письмо большого романиста
+      </div>
+    </div>
+    <div style="width:100%;height:1px;background:var(--hair-lt);margin-top:2vh"></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:clamp(22px,2.6vw,50px);align-content:center;
+    padding:clamp(14px,1.8vh,28px) clamp(34px,4vw,72px);min-height:0">
+    <div>
+      <div class="mat"><img src="img_site/chagall_card.jpg" alt="" style="aspect-ratio:4/3"></div>
+      <div class="gcap">
+        <div class="cap-n">Париж · открытка</div>
+        <div class="cap-t"><a class="lnk" href="https://stargift.ru/product/628607883951-mark-shagal">Марк Шагал — Рукописная открытка с автографом и пожеланием</a></div>
+        <div class="cap-p">4 000 000 ₽</div>
+      </div>
+    </div>
+    <div>
+      <div class="mat"><img src="img_site/akhmatova.jpg" alt="" style="aspect-ratio:4/3"></div>
+      <div class="gcap">
+        <div class="cap-n">Серебряный век · книга</div>
+        <div class="cap-t"><a class="lnk" href="https://stargift.ru/product/335007905361-anna-akhmatova">Анна Ахматова — Личная книга с автографом и пометками</a></div>
+        <div class="cap-p">1 300 000 ₽</div>
+      </div>
+    </div>
+    <div>
+      <div class="mat"><img src="img_site/dreiser.jpg" alt="" style="aspect-ratio:4/3"></div>
+      <div class="gcap">
+        <div class="cap-n">Америка · письмо</div>
+        <div class="cap-t"><a class="lnk" href="https://stargift.ru/product/379544408532-teodor-drayzer">Теодор Драйзер — Личное письмо с автографом</a></div>
+        <div class="cap-p">900 000 ₽</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- lo06 · ДУЭТ «ДОСТУПНЫЙ ВХОД» (белая, подписи под фото) -->
+<section class="slide" id="lo06" style="grid-template-rows:auto minmax(0,1fr);background:var(--paper)">
+  <div style="padding:clamp(26px,3.4vh,44px) clamp(40px,5vw,90px) 0">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px">
+      <div>
+        <div class="label">Подборка · первый шаг в коллекцию</div>
+        <h2 style="font-size:clamp(28px,3.2vw,52px);margin-top:1.1vh">С чего начать</h2>
+      </div>
+      <div style="font-family:var(--serif);font-style:italic;font-size:clamp(13px,1.35vw,20px);color:var(--gold);text-align:right;max-width:30ch;padding-bottom:.4vh">
+        Легенда, которая по силам<br>первому подарку
+      </div>
+    </div>
+    <div style="width:100%;height:1px;background:var(--hair-lt);margin-top:2vh"></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,4vw,80px);align-content:center;
+    padding:clamp(16px,2vh,32px) clamp(40px,6vw,120px);min-height:0">
+    <div>
+      <div class="mat"><img src="img_site/uspensky.jpg" alt="" style="aspect-ratio:4/3"></div>
+      <div class="gcap">
+        <div class="cap-n">Автор Чебурашки · черновик</div>
+        <div class="cap-t"><a class="lnk" href="https://stargift.ru/product/687674229861-eduard-uspenskiy">Эдуард Успенский — Рукописный черновик с рисунками</a></div>
+        <div class="cap-p">580 000 ₽</div>
+      </div>
+    </div>
+    <div>
+      <div class="mat"><img src="img_site/esenin.jpg" alt="" style="aspect-ratio:4/3"></div>
+      <div class="gcap">
+        <div class="cap-n">Русский поэт · скульптура</div>
+        <div class="cap-t"><a class="lnk" href="https://stargift.ru/product/145482422791-sergey-esenin">Сергей Есенин — Бюст</a></div>
+        <div class="cap-p">45 000 ₽</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- lo07 · АВТОРСКИЙ ФОРМАТ: ЛЕСТНИЦА ЦЕН -->
+<section class="slide bk" id="lo07" style="grid-template-rows:auto minmax(0,1fr);position:relative">
+  <div style="padding:clamp(26px,3.4vh,44px) clamp(34px,4.4vw,80px) 0">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px">
+      <div>
+        <div class="label" style="letter-spacing:.34em">Авторский формат · лестница цен</div>
+        <h2 style="font-size:clamp(28px,3.2vw,52px);color:#fff;margin-top:1.1vh">Вся подборка — от 10 миллионов до 45 тысяч</h2>
+      </div>
+      <div style="font-family:var(--serif);font-style:italic;font-size:clamp(13px,1.35vw,20px);color:var(--gold-lt);text-align:right;padding-bottom:.4vh">8 предметов · один клик до&nbsp;лота</div>
+    </div>
+    <div style="width:100%;height:1px;background:var(--bk-line);margin-top:2vh"></div>
+  </div>
+  <div class="ladder">
+    <div class="rung"><span class="rk">01</span><img class="rthumb" src="img_site/repin.jpg" alt="">
+      <span class="rname"><a class="lnk" style="border-bottom-color:rgba(201,169,106,.45)" href="https://stargift.ru/product/109986076251-ilya-repin">Илья Репин — Собственноручное письмо с автографом</a><small>Живопись · автограф</small></span>
+      <span class="rprice">10 000 000 ₽</span><span class="rbar" style="right:8%"></span></div>
+    <div class="rung"><span class="rk">02</span><img class="rthumb" src="img_site/chagall_card.jpg" alt="">
+      <span class="rname"><a class="lnk" style="border-bottom-color:rgba(201,169,106,.45)" href="https://stargift.ru/product/628607883951-mark-shagal">Марк Шагал — Рукописная открытка с автографом и пожеланием</a><small>Живопись · открытка</small></span>
+      <span class="rprice">4 000 000 ₽</span><span class="rbar" style="right:34%"></span></div>
+    <div class="rung"><span class="rk">03</span><img class="rthumb" src="img_site/tolstoy.jpg" alt="">
+      <span class="rname"><a class="lnk" style="border-bottom-color:rgba(201,169,106,.45)" href="https://stargift.ru/product/675565670552-lev-tolstoy">Лев Толстой — Фото с автографом</a><small>Литература · фотография</small></span>
+      <span class="rprice">1 500 000 ₽</span><span class="rbar" style="right:52%"></span></div>
+    <div class="rung"><span class="rk">04</span><img class="rthumb" src="img_site/akhmatova.jpg" alt="">
+      <span class="rname"><a class="lnk" style="border-bottom-color:rgba(201,169,106,.45)" href="https://stargift.ru/product/335007905361-anna-akhmatova">Анна Ахматова — Личная книга с автографом и пометками</a><small>Литература · книга</small></span>
+      <span class="rprice">1 300 000 ₽</span><span class="rbar" style="right:56%"></span></div>
+    <div class="rung"><span class="rk">05</span><img class="rthumb" src="img_site/tolstoy_book.jpg" alt="">
+      <span class="rname"><a class="lnk" style="border-bottom-color:rgba(201,169,106,.45)" href="https://stargift.ru/product/989283717622-lev-tolstoy">Лев Толстой — Книга с автографом</a><small>Литература · книга</small></span>
+      <span class="rprice">1 100 000 ₽</span><span class="rbar" style="right:60%"></span></div>
+    <div class="rung"><span class="rk">06</span><img class="rthumb" src="img_site/dreiser.jpg" alt="">
+      <span class="rname"><a class="lnk" style="border-bottom-color:rgba(201,169,106,.45)" href="https://stargift.ru/product/379544408532-teodor-drayzer">Теодор Драйзер — Личное письмо с автографом</a><small>Литература · письмо</small></span>
+      <span class="rprice">900 000 ₽</span><span class="rbar" style="right:66%"></span></div>
+    <div class="rung"><span class="rk">07</span><img class="rthumb" src="img_site/uspensky.jpg" alt="">
+      <span class="rname"><a class="lnk" style="border-bottom-color:rgba(201,169,106,.45)" href="https://stargift.ru/product/687674229861-eduard-uspenskiy">Эдуард Успенский — Рукописный черновик с рисунками</a><small>Литература · рукопись</small></span>
+      <span class="rprice">580 000 ₽</span><span class="rbar" style="right:74%"></span></div>
+    <div class="rung"><span class="rk">08</span><img class="rthumb" src="img_site/esenin.jpg" alt="">
+      <span class="rname"><a class="lnk" style="border-bottom-color:rgba(201,169,106,.45)" href="https://stargift.ru/product/145482422791-sergey-esenin">Сергей Есенин — Бюст</a><small>Поэзия · скульптура</small></span>
+      <span class="rprice">45 000 ₽</span><span class="rbar" style="right:88%"></span></div>
+  </div>
+</section>
+
+<!-- lo08 · ПОЛНЫЙ ИНДЕКС ПОДБОРКИ СО ССЫЛКАМИ -->
+<section class="slide" id="lo08" style="grid-template-columns:.92fr 1.08fr;background:var(--paper)">
+  <div style="position:relative;overflow:hidden">
+    <img src="img_site/tolstoy.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%;filter:contrast(1.03)">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.15),transparent 40%,rgba(247,245,241,.9) 96%)"></div>
+    <div style="position:absolute;left:clamp(28px,3vw,52px);bottom:clamp(26px,4vh,52px);right:auto">
+      <div class="label" style="color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.5)">Литература · вся подборка</div>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(30px,3.4vh,50px) clamp(38px,4vw,72px)">
+    <h2 style="font-size:clamp(24px,2.7vw,42px)">Восемь легенд подборки</h2>
+    <p style="font-size:clamp(10.5px,.92vw,13px);color:var(--grey);letter-spacing:.02em;margin-top:1vh">Названия — ссылки на страницы лотов на stargift.ru</p>
+    <div style="margin-top:2.2vh">
+      <div class="idx"><span class="in">1</span><span class="it"><a class="lnk" href="https://stargift.ru/product/109986076251-ilya-repin">Илья Репин — Собственноручное письмо с автографом</a><small>Живопись · автограф</small></span><span class="ip">10 000 000 ₽</span></div>
+      <div class="idx"><span class="in">2</span><span class="it"><a class="lnk" href="https://stargift.ru/product/628607883951-mark-shagal">Марк Шагал — Рукописная открытка с автографом и пожеланием</a><small>Живопись · открытка</small></span><span class="ip">4 000 000 ₽</span></div>
+      <div class="idx"><span class="in">3</span><span class="it"><a class="lnk" href="https://stargift.ru/product/675565670552-lev-tolstoy">Лев Толстой — Фото с автографом</a><small>Литература · фотография</small></span><span class="ip">1 500 000 ₽</span></div>
+      <div class="idx"><span class="in">4</span><span class="it"><a class="lnk" href="https://stargift.ru/product/335007905361-anna-akhmatova">Анна Ахматова — Личная книга с автографом и пометками</a><small>Литература · книга</small></span><span class="ip">1 300 000 ₽</span></div>
+      <div class="idx"><span class="in">5</span><span class="it"><a class="lnk" href="https://stargift.ru/product/989283717622-lev-tolstoy">Лев Толстой — Книга с автографом</a><small>Литература · книга</small></span><span class="ip">1 100 000 ₽</span></div>
+      <div class="idx"><span class="in">6</span><span class="it"><a class="lnk" href="https://stargift.ru/product/379544408532-teodor-drayzer">Теодор Драйзер — Личное письмо с автографом</a><small>Литература · письмо</small></span><span class="ip">900 000 ₽</span></div>
+      <div class="idx"><span class="in">7</span><span class="it"><a class="lnk" href="https://stargift.ru/product/687674229861-eduard-uspenskiy">Эдуард Успенский — Рукописный черновик с рисунками</a><small>Литература · рукопись</small></span><span class="ip">580 000 ₽</span></div>
+      <div class="idx"><span class="in">8</span><span class="it"><a class="lnk" href="https://stargift.ru/product/145482422791-sergey-esenin">Сергей Есенин — Бюст</a><small>Поэзия · скульптура</small></span><span class="ip">45 000 ₽</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- lo09 · ПРОМО-ЭМОЦИЯ -->
+<section class="slide bk" id="lo09" style="grid-template-columns:1.12fr 1fr;position:relative">
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(30px,4.2vw,80px)">
+    <div class="label">Подарок для того, кто читал всё</div>
+    <h2 style="font-size:clamp(34px,4.4vw,74px);color:#fff;margin:2.2vh 0 0">Не книгу.<br>Того, кто её&nbsp;написал.</h2>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(16px,1.9vw,28px);color:var(--gold-lt);margin-top:1.8vh;line-height:1.35">
+      Подарок, который ставят не на полку —<br>а под стекло, ближе к сердцу.</p>
+    <p style="font-size:clamp(11px,1vw,14px);color:var(--bk-muted);line-height:1.9;max-width:46ch;margin-top:2.6vh">
+      У него уже есть все собрания сочинений. Подарите то, чего нет ни в одной библиотеке мира:
+      подлинную строку, выведенную рукой самого автора.</p>
+    <div style="margin-top:4vh;display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+      <span style="border:1px solid var(--bk-line);color:var(--gold-lt);font-family:var(--serif);font-size:clamp(15px,1.5vw,21px);padding:.9vh 1.6vw;letter-spacing:.02em">Выбрать легенду →</span>
+      <span class="label" style="color:var(--gold-lt)">stargift.ru · +7 495 233-51-11</span>
+    </div>
+  </div>
+  <div style="position:relative;overflow:hidden">
+    <img src="img_site/chagall_card.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.86) contrast(1.05)">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,var(--bk),rgba(11,11,12,.28) 34%,transparent 62%)"></div>
+    <div class="plate">
+      <div class="label" style="color:var(--gold-lt)">Из подборки</div>
+      <div style="font-family:var(--serif);font-size:clamp(16px,1.7vw,25px);margin-top:.7vh;line-height:1.2">
+        <a class="lnk" style="border-bottom-color:rgba(201,169,106,.5)" href="https://stargift.ru/product/628607883951-mark-shagal">Марк Шагал — Рукописная открытка с автографом и пожеланием</a></div>
+      <div class="price" style="color:var(--gold-lt);font-size:clamp(18px,1.9vw,28px);margin-top:.8vh">4 000 000 ₽</div>
+    </div>
+  </div>
+</section>
+
+<!-- lo10 · КОНТАКТЫ -->
+<section class="slide bk" id="lo10" style="place-items:center;position:relative">
+  <div class="ghost" style="top:50%">★</div>
+  <div style="position:relative;z-index:1;text-align:center;padding:0 clamp(40px,6vw,120px)">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:clamp(30px,3vw,46px);width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.94;margin:0 auto 4vh">
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.6vw,38px);color:var(--gold-lt);line-height:1.3">
+      Подарки-легенды: автографы<br>и личные вещи знаменитостей</p>
+    <div style="width:56px;height:1px;background:var(--gold);margin:4vh auto"></div>
+    <div style="display:flex;justify-content:center;gap:clamp(20px,3vw,56px);flex-wrap:wrap;font-size:clamp(11px,1vw,14px);color:var(--bk-ivory);line-height:1.9">
+      <div style="text-align:left">
+        <div class="label" style="color:var(--gold-lt);margin-bottom:1vh">Галереи</div>
+        Кутузовский проспект, 48<br>
+        Галереи «Времена года» — Большая Якиманка, 22<br>
+        ТЦ «Гименей» — Барвиха · ТЦ «Дрим Хаус»
+      </div>
+      <div style="text-align:left">
+        <div class="label" style="color:var(--gold-lt);margin-bottom:1vh">Связь</div>
+        stargift.ru<br>
+        +7 495 233-51-11<br>
+        t.me/stargift_collection
+      </div>
+    </div>
+    <p style="font-size:clamp(10px,.85vw,12px);color:var(--bk-muted);letter-spacing:.16em;text-transform:uppercase;margin-top:4.5vh">
+      Каждый предмет — с экспертизой и сертификатом подлинности</p>
+  </div>
+</section>
+
+</div>
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^lo/,'');const id=n?('lo'+n.padStart(2,'0')):'lo01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+show();addEventListener('hashchange',show);
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
+</body></html>

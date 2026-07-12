@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Stargift — Подарки легенд</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+* {margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden;background:#fff}
+.slide.on{display:grid}
+</style>
+
+<div class="deck">
+  <!-- СЛАЙД 1: Книжный разворот "23 февраля" -->
+  <section class="slide" id="h01" style="background:#fff;display:flex;flex-direction:column;padding:60px;position:relative;">
+    <div style="text-align:center;margin-bottom:40px;">
+      <h1 style="font-family:'Cormorant Garamond',serif;font-size:48px;color:#0B0B0C;margin-bottom:8px;font-weight:400;">23 февраля</h1>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:24px;color:#A98545;font-weight:300;letter-spacing:3px;">Подарки легенд</p>
+    </div>
+
+    <div style="flex:1;display:flex;gap:40px;justify-content:center;align-items:center;">
+      <!-- Левая страница -->
+      <div style="flex:0 0 300px;display:flex;flex-direction:column;gap:30px;justify-content:center;">
+        <div>
+          <img src="img_site/zhukov.jpg" style="width:100%;height:140px;object-fit:cover;margin-bottom:12px;">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:16px;color:#0B0B0C;line-height:1.4;margin-bottom:8px;font-weight:400;">
+            <a href="https://stargift.ru/product/sg_1775903900_464d94c6-georgiy-zhukov" style="color:inherit;text-decoration:none;border-bottom:1px dotted rgba(169,133,69,.55);">Георгий Жуков. Книга с дарственной надписью и автографом</a>
+          </h3>
+          <p style="font-family:'Cormorant Garamond',serif;font-size:18px;color:#A98545;font-weight:400;">1 500 000 ₽</p>
+        </div>
+
+        <div>
+          <img src="img_site/gagarin_photo.jpg" style="width:100%;height:140px;object-fit:cover;margin-bottom:12px;">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:16px;color:#0B0B0C;line-height:1.4;margin-bottom:8px;font-weight:400;">
+            <a href="https://stargift.ru/product/214273820821-yuriy-gagarin" style="color:inherit;text-decoration:none;border-bottom:1px dotted rgba(169,133,69,.55);">Юрий Гагарин. Фото с рукописным пожеланием и автографом</a>
+          </h3>
+          <p style="font-family:'Cormorant Garamond',serif;font-size:18px;color:#A98545;font-weight:400;">1 600 000 ₽</p>
+        </div>
+      </div>
+
+      <!-- Золотой корешок -->
+      <div style="width:3px;height:100%;background:linear-gradient(to bottom, #C9A96A 0%, #A98545 50%, #C9A96A 100%);min-height:350px;opacity:0.8;"></div>
+
+      <!-- Правая страница -->
+      <div style="flex:0 0 300px;display:flex;flex-direction:column;gap:30px;justify-content:center;">
+        <div>
+          <img src="img_site/kutuzov.jpg" style="width:100%;height:140px;object-fit:cover;margin-bottom:12px;">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:16px;color:#0B0B0C;line-height:1.4;margin-bottom:8px;font-weight:400;">
+            <a href="https://stargift.ru/product/sg_1775381744_c323faf0-mikhail-kutuzov" style="color:inherit;text-decoration:none;border-bottom:1px dotted rgba(169,133,69,.55);">Михаил Кутузов. Книга с автографом</a>
+          </h3>
+          <p style="font-family:'Cormorant Garamond',serif;font-size:18px;color:#A98545;font-weight:400;">5 000 000 ₽</p>
+        </div>
+
+        <div>
+          <img src="img_site/pokryshkin.jpg" style="width:100%;height:140px;object-fit:cover;margin-bottom:12px;">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:16px;color:#0B0B0C;line-height:1.4;margin-bottom:8px;font-weight:400;">
+            <a href="https://stargift.ru/product/sg_1775904344_-aleksandr-pokryshkin" style="color:inherit;text-decoration:none;border-bottom:1px dotted rgba(169,133,69,.55);">Александр Покрышкин. Документ с надписью и автографом</a>
+          </h3>
+          <p style="font-family:'Cormorant Garamond',serif;font-size:18px;color:#A98545;font-weight:400;">250 000 ₽</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- СЛАЙД 2: Кутузов соло на черном -->
+  <section class="slide" id="h02" style="background:#0B0B0C;display:flex;align-items:center;justify-content:space-between;padding:80px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:0;left:0;width:250px;height:250px;background:radial-gradient(circle, rgba(201,169,106,0.12) 0%, transparent 70%);border-radius:50%;"></div>
+
+    <div style="flex:1;z-index:10;">
+      <p style="font-family:'Inter',sans-serif;font-size:12px;color:#C9A96A;letter-spacing:4px;text-transform:uppercase;margin-bottom:40px;font-weight:500;">Шедевр коллекции</p>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:52px;color:#F5F1E8;margin-bottom:20px;line-height:1.2;font-weight:400;">
+        <a href="https://stargift.ru/product/sg_1775381744_c323faf0-mikhail-kutuzov" style="color:#F5F1E8;text-decoration:none;border-bottom:1px dotted rgba(201,169,106,.4);">Михаил Кутузов<br/>Книга с автографом</a>
+      </h2>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:44px;color:#C9A96A;margin:30px 0;font-weight:300;">5 000 000 ₽</p>
+      <p style="font-family:'Inter',sans-serif;font-size:15px;color:#aaa;line-height:1.7;max-width:420px;">Раритетная книга с личным автографом великого полководца Российской империи. Экземпляр из приватной коллекции европейского аристократа. Предмет для истинных ценителей военной истории и редких артефактов.</p>
+    </div>
+
+    <div style="flex:1;display:flex;align-items:center;justify-content:flex-end;z-index:5;">
+      <div style="position:relative;max-width:360px;">
+        <div style="position:absolute;inset:-15px;border:2px solid #A98545;opacity:0.4;"></div>
+        <img src="img_site/kutuzov.jpg" style="width:100%;height:auto;max-height:480px;object-fit:cover;position:relative;z-index:10;border:1px solid #C9A96A;">
+      </div>
+    </div>
+  </section>
+
+  <!-- СЛАЙД 3: Промо-страница дарения -->
+  <section class="slide" id="h03" style="background:#F7F5F1;display:flex;align-items:center;justify-content:space-between;padding:80px 100px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle, rgba(201,169,106,0.08) 0%, transparent 70%);border-radius:50%;"></div>
+    <div style="position:absolute;bottom:-80px;left:-80px;width:300px;height:300px;background:radial-gradient(circle, rgba(169,133,69,0.05) 0%, transparent 70%);border-radius:50%;"></div>
+
+    <div style="flex:1;z-index:10;">
+      <p style="font-family:'Cormorant Garamond',serif;font-size:28px;color:#0B0B0C;font-style:italic;line-height:1.5;margin-bottom:40px;font-weight:300;">
+        Подарить историю.<br/>Подарить легенду.
+      </p>
+      <p style="font-family:'Inter',sans-serif;font-size:15px;color:#666;line-height:1.8;max-width:360px;margin-bottom:50px;">Каждый предмет коллекции Stargift — это не просто подарок. Это прикосновение к величию, передача наследия, связь с людьми, которые изменили мир.</p>
+      <div style="display:inline-flex;align-items:center;gap:10px;">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:18px;color:#A98545;letter-spacing:2px;font-weight:400;">Откройте каталог</p>
+        <div style="width:20px;height:2px;background:#A98545;"></div>
+      </div>
+    </div>
+
+    <div style="flex:1;display:flex;gap:50px;justify-content:flex-end;align-items:flex-end;z-index:5;">
+      <div style="text-align:center;">
+        <img src="img_site/gagarin_photo.jpg" style="width:130px;height:170px;object-fit:cover;border:2px solid #A98545;margin-bottom:16px;">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:15px;color:#0B0B0C;font-weight:400;line-height:1.4;">Юрий Гагарин<br/><span style="color:#A98545;font-size:14px;">1 600 000 ₽</span></p>
+      </div>
+      <div style="text-align:center;">
+        <img src="img_site/zhukov.jpg" style="width:130px;height:170px;object-fit:cover;border:2px solid #A98545;margin-bottom:16px;">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:15px;color:#0B0B0C;font-weight:400;line-height:1.4;">Георгий Жуков<br/><span style="color:#A98545;font-size:14px;">1 500 000 ₽</span></p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^h/,'');const id=n?('h'+n.padStart(2,'0')):'h01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+show();addEventListener('hashchange',show);
+</script>
+
+<style>
+@page{size:1280px 720px;margin:0}
+@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}
+</style>
+
+</body>
+</html>

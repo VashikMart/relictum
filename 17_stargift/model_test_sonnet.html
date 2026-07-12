@@ -1,0 +1,220 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><title>Stargift — 23 февраля</title><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"></head><body>
+<style>
+* {margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden;background:#fff}
+.slide.on{display:grid}
+
+/* ============ shared ============ */
+.slide{width:1280px;height:720px;font-family:'Inter',sans-serif}
+a{cursor:pointer}
+.logo-mark{position:absolute;width:26px;height:auto;opacity:.85}
+
+/* ============ n01 — investigation board / corkboard ============ */
+#n01{background:#F7F5F1;
+  background-image:linear-gradient(rgba(169,133,69,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(169,133,69,.06) 1px,transparent 1px);
+  background-size:40px 40px;}
+#n01 .board-head{position:absolute;left:60px;top:54px;width:460px}
+#n01 .kicker{font-family:'Inter',sans-serif;font-weight:500;font-size:11px;letter-spacing:3px;color:#A98545;text-transform:uppercase}
+#n01 .board-head h1{font-family:'Cormorant Garamond',serif;font-weight:400;font-style:italic;font-size:88px;color:#1A1A1A;line-height:.92;margin-top:8px}
+#n01 .board-head p{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:16px;color:#5b574f;line-height:1.5;margin-top:18px;max-width:420px}
+
+#n01 .medal{position:absolute;left:770px;top:80px;width:100px;height:100px;border-radius:50%;border:1px solid rgba(169,133,69,.55);
+  background:radial-gradient(circle,#fffdf8 0%,#f3ede0 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;
+  box-shadow:0 8px 22px rgba(169,133,69,.18);z-index:3}
+#n01 .medal b{font-family:'Cormorant Garamond',serif;font-size:30px;color:#A98545;font-weight:500;line-height:1}
+#n01 .medal span{font-family:'Inter',sans-serif;font-size:8px;letter-spacing:2px;color:#8a7a58;margin-top:4px;text-transform:uppercase}
+
+#n01 .thread{position:absolute;left:820px;top:130px;height:1px;border-top:1px dashed rgba(169,133,69,.45);transform-origin:0 0;z-index:1}
+
+#n01 .card{position:absolute;background:#fff;padding:10px 10px 12px;box-shadow:0 20px 40px rgba(0,0,0,.16),0 2px 8px rgba(0,0,0,.08);z-index:2}
+#n01 .card img{display:block;width:100%;height:auto;object-fit:cover}
+#n01 .pin{position:absolute;top:-6px;left:50%;transform:translateX(-50%);width:10px;height:10px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#f0d89a,#A98545 60%,#7c5f34);box-shadow:0 3px 5px rgba(0,0,0,.4);z-index:4}
+#n01 .cap{padding-top:10px}
+#n01 .lotname{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:14.5px;line-height:1.28;
+  color:#1A1A1A;border-bottom:1px dotted rgba(169,133,69,.55);text-decoration:none;padding-bottom:4px;margin-bottom:6px}
+#n01 .price{display:block;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:15px;color:#A98545}
+
+#n01 .footline{position:absolute;left:60px;bottom:30px;font-size:10px;letter-spacing:2px;color:#8a8577;text-transform:uppercase}
+
+/* ============ n02 — museum vitrine / solo ============ */
+#n02{background:#0B0B0C;color:#F5F1E8}
+#n02 .glow{position:absolute;left:640px;top:297px;width:1px;height:1px;
+  background:radial-gradient(ellipse 520px 480px at 0 0,rgba(169,133,69,.16),transparent 65%)}
+#n02 .ring{position:absolute;border-radius:50%;border:1px solid rgba(169,133,69,.10)}
+#n02 .ring.r1{left:380px;top:38px;width:520px;height:520px}
+#n02 .ring.r2{left:430px;top:88px;width:420px;height:420px;border-color:rgba(169,133,69,.16)}
+
+#n02 .kicker{position:absolute;left:0;right:0;top:52px;text-align:center;font-size:11px;letter-spacing:5px;color:#C9A96A;text-transform:uppercase}
+
+#n02 .frame{position:absolute;left:470px;top:170px;width:340px;padding:10px;background:#111;border:1px solid rgba(201,169,106,.5);
+  box-shadow:0 30px 70px rgba(0,0,0,.6)}
+#n02 .frame img{display:block;width:100%;height:auto}
+#n02 .frame::after{content:"";position:absolute;left:10px;top:10px;right:10px;bottom:10px;
+  background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.10) 50%,transparent 60%)}
+
+#n02 .info{position:absolute;left:0;right:0;top:462px;text-align:center}
+#n02 .info .name{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:42px;color:#F5F1E8;margin-bottom:6px}
+#n02 .info .link{display:inline-block;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:inherit;
+  border-bottom:1px dotted rgba(201,169,106,.6);text-decoration:none;padding-bottom:3px}
+
+#n02 .plaque{position:absolute;left:0;right:0;top:560px;text-align:center}
+#n02 .plaque .rule{width:60px;height:1px;background:rgba(201,169,106,.5);margin:0 auto 18px}
+#n02 .plaque .price{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:58px;color:#C9A96A;letter-spacing:1px}
+
+#n02 .side{position:absolute;top:150px;writing-mode:vertical-rl;font-size:10px;letter-spacing:4px;color:rgba(245,241,232,.35);text-transform:uppercase}
+#n02 .side.left{left:48px}
+#n02 .side.right{right:48px;transform:rotate(180deg)}
+
+#n02 .logo-mark{right:56px;bottom:44px;opacity:.5;filter:brightness(1.6)}
+
+/* ============ n03 — promo / gifting emotion ============ */
+#n03{background:#0B0B0C;grid-template-columns:800px 480px;color:#F5F1E8}
+#n03 .hero{position:relative;width:800px;height:720px;background-image:url('img_site/gagarin_photo.jpg');background-size:cover;background-position:center}
+#n03 .hero .shade{position:absolute;left:0;right:0;bottom:0;height:300px;
+  background:linear-gradient(to top,rgba(0,0,0,.94) 0%,rgba(0,0,0,.62) 45%,transparent 100%)}
+#n03 .hero .htxt{position:absolute;left:52px;bottom:40px;max-width:640px}
+#n03 .hero .htxt .kicker{font-size:11px;letter-spacing:3px;color:#C9A96A;text-transform:uppercase;margin-bottom:10px}
+#n03 .hero .htxt a.name{display:inline-block;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:25px;
+  color:#F5F1E8;line-height:1.3;border-bottom:1px dotted rgba(201,169,106,.6);text-decoration:none;padding-bottom:3px;margin-bottom:12px}
+#n03 .hero .htxt .price{display:block;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:30px;color:#C9A96A}
+
+#n03 .panel{width:480px;height:720px;padding:56px 48px;display:flex;flex-direction:column;justify-content:center;gap:22px}
+#n03 .panel .kicker{font-size:11px;letter-spacing:3px;color:#C9A96A;text-transform:uppercase}
+#n03 .panel h2{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:37px;color:#F5F1E8;line-height:1.12}
+#n03 .panel .sub{font-family:'Inter',sans-serif;font-weight:300;font-size:13.5px;line-height:1.65;color:rgba(245,241,232,.72)}
+
+#n03 .mini{display:flex;gap:14px;align-items:flex-start;border-top:1px solid rgba(201,169,106,.25);padding-top:20px}
+#n03 .mini img{width:118px;height:88.5px;object-fit:cover;flex:none}
+#n03 .mini .cap a{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14.5px;line-height:1.3;
+  color:#F5F1E8;border-bottom:1px dotted rgba(201,169,106,.6);text-decoration:none;padding-bottom:3px;margin-bottom:6px}
+#n03 .mini .cap .price{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:15px;color:#C9A96A}
+
+#n03 .cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#C9A96A,#A98545);color:#0B0B0C;
+  font-family:'Inter',sans-serif;font-weight:500;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;
+  padding:15px 26px;border-radius:999px;width:fit-content;text-decoration:none}
+#n03 .fine{font-size:10.5px;letter-spacing:.5px;color:rgba(245,241,232,.4)}
+</style>
+
+<div class="deck">
+
+<!-- ================= n01 ================= -->
+<section class="slide on" id="n01">
+  <div class="board-head">
+    <div class="kicker">Stargift · подборка</div>
+    <h1>23 февраля</h1>
+    <p>Вещи и автографы людей, что определяли исход сражений. Подарок для тех, кто ценит силу и историю.</p>
+  </div>
+
+  <div class="medal"><b>23</b><span>февраля</span></div>
+
+  <div class="thread" style="width:669.8px;transform:rotate(150deg)"></div>
+  <div class="thread" style="width:504.3px;transform:rotate(124.4deg)"></div>
+  <div class="thread" style="width:247.5px;transform:rotate(77.8deg)"></div>
+  <div class="thread" style="width:489.7px;transform:rotate(57.9deg)"></div>
+
+  <div class="card" style="left:110px;top:330px;width:260px;transform:rotate(-4deg)">
+    <span class="pin"></span>
+    <img src="img_site/kutuzov.jpg" alt="Михаил Кутузов">
+    <div class="cap">
+      <a class="lotname" href="https://stargift.ru/product/sg_1775381744_c323faf0-mikhail-kutuzov" target="_blank" rel="noopener">Михаил Кутузов, Книга с автографом</a>
+      <span class="price">5&nbsp;000&nbsp;000&nbsp;₽</span>
+    </div>
+  </div>
+
+  <div class="card" style="left:430px;top:430px;width:210px;transform:rotate(3deg)">
+    <span class="pin"></span>
+    <img src="img_site/zhukov.jpg" alt="Георгий Жуков">
+    <div class="cap">
+      <a class="lotname" href="https://stargift.ru/product/sg_1775903900_464d94c6-georgiy-zhukov" target="_blank" rel="noopener">Георгий Жуков, Книга с дарственной надписью и автографом</a>
+      <span class="price">1&nbsp;500&nbsp;000&nbsp;₽</span>
+    </div>
+  </div>
+
+  <div class="card" style="left:760px;top:250px;width:225px;transform:rotate(-2deg)">
+    <span class="pin"></span>
+    <img src="img_site/gagarin_photo.jpg" alt="Юрий Гагарин">
+    <div class="cap">
+      <a class="lotname" href="https://stargift.ru/product/214273820821-yuriy-gagarin" target="_blank" rel="noopener">Юрий Гагарин, Фото с рукописным пожеланием и автографом</a>
+      <span class="price">1&nbsp;600&nbsp;000&nbsp;₽</span>
+    </div>
+  </div>
+
+  <div class="card" style="left:990px;top:440px;width:180px;transform:rotate(5deg)">
+    <span class="pin"></span>
+    <img src="img_site/pokryshkin.jpg" alt="Александр Покрышкин">
+    <div class="cap">
+      <a class="lotname" href="https://stargift.ru/product/sg_1775904344_-aleksandr-pokryshkin" target="_blank" rel="noopener">Александр Покрышкин, Документ с надписью и автографом</a>
+      <span class="price">250&nbsp;000&nbsp;₽</span>
+    </div>
+  </div>
+
+  <div class="footline">Stargift.ru — подарки-легенды</div>
+  <img class="logo-mark" src="img/stargift_logo.png" alt="Stargift" style="right:56px;bottom:28px">
+</section>
+
+<!-- ================= n02 ================= -->
+<section class="slide" id="n02">
+  <div class="glow"></div>
+  <div class="ring r1"></div>
+  <div class="ring r2"></div>
+
+  <div class="kicker">Лот вечера · Solo</div>
+
+  <div class="frame"><img src="img_site/kutuzov.jpg" alt="Михаил Кутузов — книга с автографом"></div>
+
+  <div class="info">
+    <div class="name">Михаил Кутузов</div>
+    <a class="link" href="https://stargift.ru/product/sg_1775381744_c323faf0-mikhail-kutuzov" target="_blank" rel="noopener">Книга с автографом</a>
+  </div>
+
+  <div class="plaque">
+    <div class="rule"></div>
+    <div class="price">5&nbsp;000&nbsp;000&nbsp;₽</div>
+  </div>
+
+  <div class="side left">Provenance · Российская империя</div>
+  <div class="side right">Stargift · Подлинность подтверждена</div>
+
+  <img class="logo-mark" src="img/stargift_logo.png" alt="Stargift">
+</section>
+
+<!-- ================= n03 ================= -->
+<section class="slide" id="n03">
+  <div class="hero">
+    <div class="shade"></div>
+    <div class="htxt">
+      <div class="kicker">Stargift · герой дня</div>
+      <a class="name" href="https://stargift.ru/product/214273820821-yuriy-gagarin" target="_blank" rel="noopener">Юрий Гагарин, Фото с рукописным пожеланием и автографом</a>
+      <span class="price">1&nbsp;600&nbsp;000&nbsp;₽</span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="kicker">23 февраля · подарок-легенда</div>
+    <h2>Дарите не вещь.<br>Дарите присутствие истории.</h2>
+    <p class="sub">Автограф человека, изменившего ход времени, — подарок, который не забывается на следующий день. Есть вещи, которые становятся семейной легендой.</p>
+
+    <div class="mini">
+      <img src="img_site/pokryshkin.jpg" alt="Александр Покрышкин">
+      <div class="cap">
+        <a href="https://stargift.ru/product/sg_1775904344_-aleksandr-pokryshkin" target="_blank" rel="noopener">Александр Покрышкин, Документ с надписью и автографом</a>
+        <span class="price">250&nbsp;000&nbsp;₽</span>
+      </div>
+    </div>
+
+    <a class="cta" href="https://stargift.ru" target="_blank" rel="noopener">Оформить подарок →</a>
+    <div class="fine">Сертификат подлинности · Индивидуальная доставка по России</div>
+  </div>
+</section>
+
+</div>
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^n/,'');const id=n?('n'+n.padStart(2,'0')):'n01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+show();addEventListener('hashchange',show);
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
+</body></html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STARGIFT — Кино. Подборка для тех, кто пересматривает любимое</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1A1A1A; --paper:#FFFFFF; --soft:#F7F5F1; --gold:#A98545; --gold-lt:#C9A96A;
+  --grey:#6F6A62; --hair:rgba(169,133,69,.35); --hair-lt:rgba(169,133,69,.18);
+  --bk:#0B0B0C; --coal:#131315; --bk-ivory:#F5F1E8; --bk-muted:#8E8A82; --bk-line:rgba(201,169,106,.32);
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',-apple-system,'Segoe UI',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000}
+body{font-family:var(--sans);font-weight:300;color:var(--ink)}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:grid}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.05}
+img{display:block}
+a.lnk{color:inherit;text-decoration:none;border-bottom:1px dotted rgba(169,133,69,.55)}
+.label{font-size:clamp(9px,.8vw,12px);font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.bk{background:var(--bk);color:var(--bk-ivory)}
+.bk .label{color:var(--gold-lt)}
+.wh{background:var(--paper)}
+.price{font-family:var(--serif);color:var(--gold);white-space:nowrap}
+.mat{background:#fff;border:1px solid var(--hair-lt);box-shadow:0 14px 44px rgba(26,22,15,.10);padding:10px}
+.mat img{width:100%;object-fit:cover;display:block}
+.credit{position:absolute;z-index:5;font-size:9px;letter-spacing:.08em;color:rgba(245,241,232,.7);text-shadow:0 1px 4px rgba(0,0,0,.6)}
+.credit.dark{color:rgba(90,84,74,.75);text-shadow:none}
+/* sc01 letterbox cover */
+.reel{position:relative;height:100%;background:radial-gradient(circle,#141416,#000)}
+.reel::before,.reel::after{content:"";position:absolute;left:0;right:0;height:16px;
+  background-image:radial-gradient(circle,rgba(201,169,106,.5) 2.5px,transparent 2.6px);
+  background-size:26px 16px;background-repeat:repeat-x;background-position:center}
+.reel::before{top:0}.reel::after{bottom:0}
+/* sc02 filmstrip */
+.strip{position:relative;padding:10px 0}
+.strip::before,.strip::after{content:"";position:absolute;left:0;right:0;height:14px;
+  background-image:radial-gradient(circle,rgba(201,169,106,.42) 2.2px,transparent 2.3px);
+  background-size:24px 14px;background-repeat:repeat-x;background-position:center}
+.strip::before{top:0}.strip::after{bottom:0}
+.frame{background:#101011;border:1px solid var(--bk-line);padding:9px}
+.frame img{width:100%;object-fit:cover;display:block}
+.fcap{font-size:9.5px;letter-spacing:.09em;color:rgba(245,241,232,.6);margin-top:8px;text-align:center;line-height:1.5}
+/* sc04 passport / dossier card */
+.passport{background:#fff;border:1px solid var(--hair);box-shadow:0 20px 60px rgba(26,22,15,.12);display:grid;grid-template-columns:290px 1fr}
+.pp-photo{position:relative;background:var(--soft);border-right:1px solid var(--hair-lt)}
+.pp-photo img{width:100%;height:100%;object-fit:cover}
+.pp-stamp{position:absolute;top:14px;left:14px;border:1px solid rgba(169,133,69,.55);color:var(--gold);
+  font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;padding:5px 9px;background:rgba(255,255,255,.86)}
+.pp-field{display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+  border-bottom:1px dotted var(--hair-lt);padding:9px 0}
+.pp-k{font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--grey);white-space:nowrap}
+.pp-v{font-family:var(--serif);font-size:clamp(12.5px,1.15vw,16px);text-align:right}
+/* sc08 price ladder */
+.step{display:flex;align-items:center;gap:18px;padding:9px 0;border-bottom:1px solid var(--hair-lt);position:relative}
+.step .n{font-family:var(--serif);font-size:13px;color:var(--gold);width:20px;flex:none}
+.step .th{width:52px;height:40px;object-fit:cover;border:1px solid var(--hair-lt);flex:none}
+.step .nm{font-size:clamp(10.5px,.95vw,13px);flex:1;min-width:0}
+.step .pr{font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.2vw,17px);white-space:nowrap;flex:none}
+</style>
+</head><body><div class="deck">
+
+<!-- sc01 · ОБЛОЖКА · ЛЕТТЕРБОКС-ЭКРАН -->
+<section class="slide bk" id="sc01" style="grid-template-rows:auto minmax(0,1fr) auto">
+  <div style="padding:clamp(20px,2.8vh,30px) clamp(40px,4.6vw,64px) clamp(10px,1.6vh,16px);display:flex;justify-content:space-between;align-items:flex-end;gap:24px">
+    <div>
+      <div class="label">Stargift · подборка для домашнего кинозала</div>
+      <h1 style="font-size:clamp(38px,5.4vw,78px);color:#fff;margin-top:.6vh">Кино</h1>
+    </div>
+    <div style="font-family:var(--serif);font-style:italic;font-size:clamp(13px,1.35vw,19px);color:var(--gold-lt);text-align:right;max-width:30ch;padding-bottom:.6vh;line-height:1.35">
+      Для тех, кто пересматривает<br>любимое — снова и снова
+    </div>
+  </div>
+  <div class="reel" style="min-height:0">
+    <div style="position:absolute;inset:16px 0">
+      <img src="img_site/wiki_vespa.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%;opacity:.92">
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,12,.25),transparent 22%,transparent 78%,rgba(11,11,12,.35))"></div>
+    </div>
+    <div class="credit" style="right:26px;bottom:26px">«Римские каникулы», 1953 · Wikimedia Commons · public domain</div>
+  </div>
+  <div style="padding:clamp(14px,2vh,20px) clamp(40px,4.6vw,64px) clamp(20px,2.8vh,30px);display:flex;justify-content:space-between;align-items:flex-end;gap:32px">
+    <p style="font-size:clamp(10.5px,.95vw,13.5px);color:var(--bk-muted);line-height:1.75;max-width:56ch">
+      Одни и те же реплики наизусть, один и тот же вечер пятницы. Восемь вещей из мира кино с подлинными
+      автографами их создателей и героев — чтобы ритуал пересмотра стал чуть более личным.
+    </p>
+    <div class="label" style="white-space:nowrap">8 экспонатов · от 290 000 ₽</div>
+  </div>
+</section>
+
+<!-- sc02 · НАСТРОЕНИЕ · КИНОЛЕНТА ИЗ ЧЕТЫРЁХ КАДРОВ (ТЕТРАПТИХ) — новый формат -->
+<section class="slide bk" id="sc02" style="grid-template-rows:auto minmax(0,1fr)">
+  <div style="padding:clamp(26px,3.6vh,42px) clamp(32px,4.2vw,68px) 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 style="font-size:clamp(23px,2.7vw,42px);color:#fff">Кадры, которые не устают от пересмотра</h2>
+    <div class="label">Настроение подборки</div>
+  </div>
+  <div class="strip" style="display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,1.6vw,26px);padding:clamp(20px,2.8vh,32px) clamp(32px,4.2vw,68px) clamp(20px,2.8vh,30px);align-content:center;min-height:0">
+    <div><div class="frame"><img src="img_site/wiki_audrey.jpg" alt="" style="aspect-ratio:3/3.7;object-position:center 12%"></div><div class="fcap">«Завтрак у Тиффани»<br>1961</div></div>
+    <div><div class="frame"><img src="img_site/wiki_casablanca.jpg" alt="" style="aspect-ratio:3/3.7"></div><div class="fcap">«Касабланка»<br>1942</div></div>
+    <div><div class="frame"><img src="img_site/wiki_chaplin.jpg" alt="" style="aspect-ratio:3/3.7;object-position:center 14%"></div><div class="fcap">«Малыш»<br>1921</div></div>
+    <div><div class="frame"><img src="img_site/wiki_monroe.jpg" alt="" style="aspect-ratio:3/3.7;object-position:center 22%"></div><div class="fcap">«Джентльмены предпочитают блондинок»<br>1953</div></div>
+  </div>
+</section>
+
+<!-- sc03 · СОЛО · АЛЬ ПАЧИНО -->
+<section class="slide bk" id="sc03" style="grid-template-columns:1fr 1.1fr">
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(30px,4vw,68px);border-right:1px solid var(--bk-line)">
+    <div class="label">1972 · дебют, который смотрят каждое Рождество</div>
+    <h2 style="font-size:clamp(28px,3.3vw,50px);color:#fff;margin:1.6vh 0 .8vh">
+      <a class="lnk" style="border-bottom-color:rgba(201,169,106,.5)" href="https://stargift.ru/product/sg_1777915174_52dc4023-al-pachino">Аль Пачино</a>
+    </h2>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.5vw,22px);color:var(--gold-lt)">Постер к к/ф «Крёстный отец» с автографом</p>
+    <p style="font-size:clamp(11px,.98vw,14px);color:var(--bk-muted);line-height:1.85;max-width:42ch;margin-top:2.4vh">
+      Путь Майкла Корлеоне от чужака в семье до её главы — сыгран человеком, чья подпись теперь на этом
+      постере. Кадр, который узнают с первой секунды даже на сотом пересмотре.
+    </p>
+    <div style="display:flex;align-items:baseline;gap:16px;border-top:1px solid var(--bk-line);padding-top:2.2vh;margin-top:3vh">
+      <span style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--bk-muted)">Стоимость</span>
+      <span class="price" style="font-size:clamp(24px,2.5vw,36px);color:var(--gold-lt)">320 000 ₽</span>
+    </div>
+  </div>
+  <div style="position:relative;overflow:hidden"><img src="img_site/pacino_poster.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+</section>
+
+<!-- sc04 · ПАСПОРТ ЭКСПОНАТА · ОДРИ ХЕПБЁРН — новый формат -->
+<section class="slide wh" id="sc04" style="place-items:center;padding:clamp(24px,3.4vh,40px) clamp(40px,4.6vw,80px)">
+  <div style="width:100%;max-width:1080px">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2vh">
+      <div class="label">Паспорт экспоната</div>
+      <div class="label" style="color:var(--grey)">№ ST-CIN-08</div>
+    </div>
+    <div class="passport">
+      <div class="pp-photo"><div class="pp-stamp">Подлинность подтверждена</div>
+        <img src="img_site/hepburn_lot.jpg" alt="" style="aspect-ratio:4/3.3">
+      </div>
+      <div style="padding:clamp(20px,2.6vw,36px) clamp(24px,3vw,44px);display:flex;flex-direction:column;justify-content:center">
+        <h2 style="font-size:clamp(24px,2.6vw,38px)"><a class="lnk" href="https://stargift.ru/product/326991928512-odri-khepbern">Одри Хепбёрн</a></h2>
+        <p style="font-family:var(--serif);font-style:italic;font-size:clamp(13.5px,1.35vw,19px);color:var(--gold);margin-top:.6vh">Фото с автографом</p>
+        <div style="margin-top:2vh">
+          <div class="pp-field"><span class="pp-k">Известна по</span><span class="pp-v">«Завтрак у Тиффани», «Римские каникулы»</span></div>
+          <div class="pp-field"><span class="pp-k">Категория</span><span class="pp-v">Личный автограф на фотографии</span></div>
+          <div class="pp-field"><span class="pp-k">Состояние</span><span class="pp-v">Оформлено в раму, музейное стекло</span></div>
+          <div class="pp-field"><span class="pp-k">Сопровождение</span><span class="pp-v">Сертификат подлинности Stargift</span></div>
+          <div class="pp-field" style="border-bottom:none"><span class="pp-k">Стоимость</span><span class="pp-v price" style="font-size:clamp(19px,1.9vw,28px)">1 250 000 ₽</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- sc05 · ДУЭТ · ОСТРЫЕ РЕПЛИКИ: ТАРАНТИНО И ГАЙ РИЧИ -->
+<section class="slide wh" id="sc05" style="grid-template-rows:auto minmax(0,1fr)">
+  <div style="padding:clamp(24px,3.2vh,38px) clamp(36px,4.4vw,72px) 0">
+    <div class="label">Диалоги, которые знают наизусть</div>
+    <h2 style="font-size:clamp(22px,2.6vw,40px);margin-top:1.2vh">Два сценария — один острый почерк</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,3.2vw,56px);padding:clamp(20px,2.8vh,32px) clamp(36px,4.4vw,72px) clamp(24px,3vh,36px);align-content:center;min-height:0">
+    <div>
+      <div class="mat"><img src="img_site/tarantino_script.jpg" alt="" style="aspect-ratio:4/3.1"></div>
+      <div style="padding:1.4vh 4px 0">
+        <div style="font-family:var(--serif);font-size:clamp(15px,1.5vw,21px)"><a class="lnk" href="https://stargift.ru/product/895429086532-kventin-tarantino">Квентин Тарантино</a></div>
+        <div style="font-size:clamp(10px,.9vw,12.5px);color:var(--grey);margin-top:3px">Сценарий фильма «Криминальное чтиво» с автографом</div>
+        <div class="price" style="font-size:clamp(15px,1.4vw,20px);margin-top:6px">300 000 ₽</div>
+      </div>
+    </div>
+    <div>
+      <div class="mat"><img src="img_site/richie_snatch.jpg" alt="" style="aspect-ratio:4/3.1"></div>
+      <div style="padding:1.4vh 4px 0">
+        <div style="font-family:var(--serif);font-size:clamp(15px,1.5vw,21px)"><a class="lnk" href="https://stargift.ru/product/239364935632-gay-richi">Гай Ричи</a></div>
+        <div style="font-size:clamp(10px,.9vw,12.5px);color:var(--grey);margin-top:3px">Сценарий фильма «Большой куш» с автографом</div>
+        <div class="price" style="font-size:clamp(15px,1.4vw,20px);margin-top:6px">350 000 ₽</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- sc06 · ТРИО · ФРАНШИЗЫ, КОТОРЫЕ ВЫРОСЛИ ВМЕСТЕ С НАМИ -->
+<section class="slide wh" id="sc06" style="grid-template-rows:auto minmax(0,1fr)">
+  <div style="padding:clamp(24px,3.2vh,38px) clamp(34px,4.2vw,68px) 0">
+    <div class="label">Франшизы, которые выросли вместе с нами</div>
+    <h2 style="font-size:clamp(22px,2.6vw,40px);margin-top:1.2vh">Пересматриваем целиком — трилогию за трилогией</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:clamp(18px,2.2vw,32px);padding:clamp(18px,2.6vh,30px) clamp(34px,4.2vw,68px) clamp(22px,2.8vh,32px);align-content:center;min-height:0">
+    <div>
+      <div class="mat"><img src="img_site/hford_sw.jpg" alt="" style="aspect-ratio:4/3.2"></div>
+      <div style="padding:1.2vh 4px 0">
+        <div style="font-family:var(--serif);font-size:clamp(13.5px,1.3vw,18px)"><a class="lnk" href="https://stargift.ru/product/541138350512-kharrison-ford">Харрисон Форд</a></div>
+        <div style="font-size:clamp(9px,.8vw,11px);color:var(--grey);margin-top:3px">Сценарий фильма «Звёздные войны» с автографом</div>
+        <div class="price" style="font-size:clamp(13px,1.2vw,17px);margin-top:6px">630 000 ₽</div>
+      </div>
+    </div>
+    <div>
+      <div class="mat"><img src="img_site/radcliffe_script.jpg" alt="" style="aspect-ratio:4/3.2"></div>
+      <div style="padding:1.2vh 4px 0">
+        <div style="font-family:var(--serif);font-size:clamp(13.5px,1.3vw,18px)"><a class="lnk" href="https://stargift.ru/product/405911540572-deniel-redkliff">Дэниэл Рэдклифф</a></div>
+        <div style="font-size:clamp(9px,.8vw,11px);color:var(--grey);margin-top:3px">Сценарий «Гарри Поттер и Философский камень» с автографом</div>
+        <div class="price" style="font-size:clamp(13px,1.2vw,17px);margin-top:6px">290 000 ₽</div>
+      </div>
+    </div>
+    <div>
+      <div class="mat"><img src="img_site/lloyd_bttf.jpg" alt="" style="aspect-ratio:4/3.2"></div>
+      <div style="padding:1.2vh 4px 0">
+        <div style="font-family:var(--serif);font-size:clamp(13.5px,1.3vw,18px)"><a class="lnk" href="https://stargift.ru/product/951871023942-kristofer-lloyd-i-maykl-dzhey-foks">Кристофер Ллойд и Майкл Джей Фокс</a></div>
+        <div style="font-size:clamp(9px,.8vw,11px);color:var(--grey);margin-top:3px">Реплика дисплея временных контуров «Назад в будущее», 2 автографа</div>
+        <div class="price" style="font-size:clamp(13px,1.2vw,17px);margin-top:6px">700 000 ₽</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- sc07 · СОЛО С АРХИВНОЙ ВСТАВКОЙ · ЧАРЛИ ЧАПЛИН -->
+<section class="slide wh" id="sc07" style="grid-template-columns:1.05fr 1fr">
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(30px,4vw,68px)">
+    <div class="label">С этого всё начиналось</div>
+    <h2 style="font-size:clamp(26px,3vw,46px);margin:1.6vh 0 .8vh"><a class="lnk" href="https://stargift.ru/product/704582569971-charli-chaplin">Чарли Чаплин</a></h2>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.45vw,21px);color:var(--gold)">Фото с автографом</p>
+    <p style="font-size:clamp(11px,.98vw,14px);color:#4A463F;line-height:1.85;max-width:42ch;margin-top:2.2vh">
+      Задолго до стриминга и повторов по кнопке зрители пересматривали немые ленты в тех же залах —
+      неделю за неделей. Чаплин придумал этот азарт первым. Его подпись — начало традиции, которую
+      продолжает каждый, кто нажимает «смотреть ещё раз».
+    </p>
+    <div style="display:flex;align-items:baseline;gap:16px;border-top:1px solid var(--hair);padding-top:2.2vh;margin-top:3vh">
+      <span style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--grey)">Стоимость</span>
+      <span class="price" style="font-size:clamp(22px,2.3vw,34px)">540 000 ₽</span>
+    </div>
+  </div>
+  <div style="background:var(--soft);position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:clamp(22px,2.8vh,40px) clamp(24px,2.8vw,40px)">
+    <div class="mat" style="width:100%;max-width:380px"><img src="img_site/chaplin_lot.jpg" alt="" style="aspect-ratio:4/3.2"></div>
+    <div style="width:100%;max-width:380px;display:flex;align-items:center;gap:12px;margin-top:clamp(12px,1.8vh,20px)">
+      <div style="width:78px;flex:none;border:1px solid var(--hair-lt);overflow:hidden"><img src="img_site/wiki_chaplin.jpg" alt="" style="aspect-ratio:3/3.4;object-fit:cover;object-position:center 10%"></div>
+      <div style="font-size:9.5px;color:var(--grey);line-height:1.6">«Малыш», 1921<br>Wikimedia Commons · public domain</div>
+    </div>
+  </div>
+</section>
+
+<!-- sc08 · ЛЕСТНИЦА ЦЕН · ВСЯ ПОДБОРКА — новый формат -->
+<section class="slide wh" id="sc08" style="grid-template-rows:auto minmax(0,1fr)">
+  <div style="padding:clamp(22px,3vh,34px) clamp(36px,4.4vw,72px) 0">
+    <div class="label">Вся подборка «Кино» · по возрастанию цены</div>
+    <h2 style="font-size:clamp(21px,2.4vw,38px);margin-top:1.1vh">Восемь ступеней — от первого автографа до главного</h2>
+  </div>
+  <div style="padding:clamp(14px,2vh,22px) clamp(36px,4.4vw,72px) clamp(18px,2.4vh,26px);min-height:0;display:flex;flex-direction:column;justify-content:center">
+    <div class="step" style="margin-left:0"><span class="n">01</span><img class="th" src="img_site/radcliffe_script.jpg" alt=""><span class="nm"><a class="lnk" href="https://stargift.ru/product/405911540572-deniel-redkliff">Дэниэл Рэдклифф — Сценарий «Гарри Поттер и Философский камень» с автографом</a></span><span class="pr">290 000 ₽</span></div>
+    <div class="step" style="margin-left:14px"><span class="n">02</span><img class="th" src="img_site/pacino_poster.jpg" alt=""><span class="nm"><a class="lnk" href="https://stargift.ru/product/sg_1777915174_52dc4023-al-pachino">Аль Пачино — Постер к к/ф «Крёстный отец» с автографом</a></span><span class="pr">320 000 ₽</span></div>
+    <div class="step" style="margin-left:28px"><span class="n">03</span><img class="th" src="img_site/tarantino_script.jpg" alt=""><span class="nm"><a class="lnk" href="https://stargift.ru/product/895429086532-kventin-tarantino">Квентин Тарантино — Сценарий фильма «Криминальное чтиво» с автографом</a></span><span class="pr">300 000 ₽</span></div>
+    <div class="step" style="margin-left:42px"><span class="n">04</span><img class="th" src="img_site/richie_snatch.jpg" alt=""><span class="nm"><a class="lnk" href="https://stargift.ru/product/239364935632-gay-richi">Гай Ричи — Сценарий фильма «Большой куш» с автографом</a></span><span class="pr">350 000 ₽</span></div>
+    <div class="step" style="margin-left:56px"><span class="n">05</span><img class="th" src="img_site/chaplin_lot.jpg" alt=""><span class="nm"><a class="lnk" href="https://stargift.ru/product/704582569971-charli-chaplin">Чарли Чаплин — Фото с автографом</a></span><span class="pr">540 000 ₽</span></div>
+    <div class="step" style="margin-left:70px"><span class="n">06</span><img class="th" src="img_site/hford_sw.jpg" alt=""><span class="nm"><a class="lnk" href="https://stargift.ru/product/541138350512-kharrison-ford">Харрисон Форд — Сценарий фильма «Звёздные войны» с автографом</a></span><span class="pr">630 000 ₽</span></div>
+    <div class="step" style="margin-left:84px"><span class="n">07</span><img class="th" src="img_site/lloyd_bttf.jpg" alt=""><span class="nm"><a class="lnk" href="https://stargift.ru/product/951871023942-kristofer-lloyd-i-maykl-dzhey-foks">Кристофер Ллойд и Майкл Джей Фокс — Реплика дисплея временных контуров «Назад в будущее» с 2-мя автографами</a></span><span class="pr">700 000 ₽</span></div>
+    <div class="step" style="margin-left:98px;border-bottom:1px solid var(--hair)"><span class="n" style="color:var(--ink);font-size:15px">08</span><img class="th" src="img_site/hepburn_lot.jpg" alt=""><span class="nm" style="font-weight:400"><a class="lnk" href="https://stargift.ru/product/326991928512-odri-khepbern">Одри Хепбёрн — Фото с автографом</a></span><span class="pr" style="font-size:clamp(16px,1.5vw,22px)">1 250 000 ₽</span></div>
+  </div>
+</section>
+
+<!-- sc09 · ПРОМО · ПРИЗЫВ К ДЕЙСТВИЮ -->
+<section class="slide bk" id="sc09" style="place-items:center;text-align:center;padding:clamp(30px,4.4vw,80px)">
+  <div style="max-width:920px">
+    <div class="label">Вечер, который начинается с этой вещи в руках</div>
+    <h2 style="font-size:clamp(30px,3.8vw,62px);color:#fff;margin:2.2vh 0 1.2vh">Не просто пересмотреть.<br>Держать историю в руках.</h2>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(15px,1.6vw,23px);color:var(--gold-lt);line-height:1.4">
+      Экран гаснет, титры заканчиваются — а подпись на постере, сценарии или фотографии остаётся с вами.
+    </p>
+    <p style="font-size:clamp(10.5px,.95vw,13.5px);color:var(--bk-muted);line-height:1.85;max-width:52ch;margin:2.6vh auto 0">
+      Каждый предмет подборки сопровождается сертификатом подлинности Stargift и экспертным заключением.
+      Мы поможем выбрать вещь под тот самый фильм, который пересматривают в вашей семье чаще прочих.
+    </p>
+    <div style="margin-top:4.2vh;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap">
+      <span style="border:1px solid var(--bk-line);color:var(--gold-lt);font-family:var(--serif);font-size:clamp(15px,1.5vw,20px);padding:1vh 1.8vw;letter-spacing:.02em">Подобрать легенду →</span>
+    </div>
+  </div>
+</section>
+
+<!-- sc10 · КОНТАКТЫ -->
+<section class="slide bk" id="sc10" style="grid-template-columns:1fr">
+  <div style="display:grid;place-items:center;text-align:center;padding:clamp(30px,5vw,90px)">
+    <div style="max-width:900px">
+      <div class="label">Stargift · подарки-легенды</div>
+      <h2 style="font-size:clamp(26px,3.4vw,54px);color:#fff;margin:2.2vh 0">Кино заканчивается. Автограф остаётся</h2>
+      <p style="font-family:var(--serif);font-style:italic;font-size:clamp(15px,1.7vw,24px);color:var(--gold-lt);margin-top:1.2vh">Подарите вечер, который захочется пересмотреть ещё раз</p>
+      <div style="margin-top:5vh;font-size:clamp(11px,.95vw,13.5px);color:var(--bk-muted);line-height:2">Кутузовский проспект, 48 · Галереи «Времена года» &nbsp;—&nbsp; Большая Якиманка, 22 · ТЦ «Гименей» &nbsp;—&nbsp; Барвиха · ТЦ «Дрим Хаус»</div>
+      <div class="label" style="margin-top:2.4vh;color:var(--gold-lt)">stargift.ru · +7 495 233-51-11 · t.me/stargift_collection</div>
+    </div>
+  </div>
+</section>
+
+</div>
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^sc/,'');const id=n?('sc'+n.padStart(2,'0')):'sc01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+show();addEventListener('hashchange',show);
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
+</body></html>
