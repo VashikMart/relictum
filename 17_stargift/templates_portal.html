@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stargift — Портал утверждения шаблонов</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:#1A1A1A; --paper:#FAF9F7; --card:#FFFFFF; --gold:#A98545; --gold-lt:#C9A96A;
+  --grey:#6F6A62; --hair:rgba(169,133,69,.3); --ok:#2E7D4F; --mid:#B07E2B; --no:#B0483C;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',-apple-system,'Segoe UI',sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:var(--sans); font-weight:300; color:var(--ink); background:var(--paper); }
+.wrap { max-width:1180px; margin:0 auto; padding:34px 22px 80px; }
+header { display:flex; flex-wrap:wrap; gap:18px; align-items:flex-end; justify-content:space-between; border-bottom:1px solid var(--hair); padding-bottom:22px; margin-bottom:10px; }
+h1 { font-family:var(--serif); font-weight:400; font-size:clamp(26px,4vw,40px); }
+.sub { color:var(--grey); font-size:13px; margin-top:6px; line-height:1.6; max-width:60ch; }
+.label { font-size:10px; font-weight:500; letter-spacing:.28em; text-transform:uppercase; color:var(--gold); }
+.progress { text-align:right; }
+.progress .n { font-family:var(--serif); font-size:30px; color:var(--gold); }
+.progress .t { font-size:11px; color:var(--grey); }
+.toolbar { display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 26px; align-items:center; }
+.btn { font-family:var(--sans); font-size:12.5px; font-weight:500; padding:10px 18px; border:1px solid var(--hair); background:var(--card); cursor:pointer; border-radius:3px; letter-spacing:.04em; }
+.btn:hover { border-color:var(--gold); color:var(--gold); }
+.btn.primary { background:var(--ink); color:#fff; border-color:var(--ink); }
+.btn.primary:hover { background:var(--gold); border-color:var(--gold); color:#fff; }
+.hintline { font-size:11.5px; color:var(--grey); }
+.section-h { font-family:var(--serif); font-size:22px; margin:34px 0 14px; padding-top:10px; border-top:1px solid var(--hair); }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:22px; }
+.tpl { background:var(--card); border:1px solid rgba(0,0,0,.07); border-radius:4px; overflow:hidden; display:flex; flex-direction:column; transition:box-shadow .15s; }
+.tpl.v-ok { border-color:rgba(46,125,79,.5); box-shadow:0 0 0 2px rgba(46,125,79,.18); }
+.tpl.v-mid { border-color:rgba(176,126,43,.55); box-shadow:0 0 0 2px rgba(176,126,43,.18); }
+.tpl.v-no { border-color:rgba(176,72,60,.55); box-shadow:0 0 0 2px rgba(176,72,60,.15); opacity:.85; }
+.tpl .shot { position:relative; cursor:zoom-in; background:#111; }
+.tpl .shot img { width:100%; display:block; aspect-ratio:16/9; object-fit:cover; }
+.tpl .shot .zoom { position:absolute; right:10px; bottom:10px; background:rgba(0,0,0,.55); color:#fff; font-size:10px; padding:4px 9px; border-radius:3px; letter-spacing:.08em; }
+.tpl .body { padding:14px 16px 16px; display:flex; flex-direction:column; gap:9px; flex:1; }
+.tpl .id { font-size:9.5px; letter-spacing:.2em; color:var(--gold); text-transform:uppercase; }
+.tpl h3 { font-family:var(--serif); font-weight:500; font-size:18.5px; line-height:1.2; }
+.tpl .desc { font-size:12px; color:var(--grey); line-height:1.6; flex:1; }
+.verdicts { display:grid; grid-template-columns:1fr 1fr 1fr; gap:7px; }
+.vbtn { font-size:11.5px; font-weight:500; padding:9px 4px; border-radius:3px; border:1px solid rgba(0,0,0,.14); background:#fff; cursor:pointer; color:#555; }
+.vbtn:hover { border-color:currentColor; }
+.vbtn.ok { color:var(--ok); } .vbtn.mid { color:var(--mid); } .vbtn.no { color:var(--no); }
+.vbtn.act.ok { background:var(--ok); color:#fff; border-color:var(--ok); }
+.vbtn.act.mid { background:var(--mid); color:#fff; border-color:var(--mid); }
+.vbtn.act.no { background:var(--no); color:#fff; border-color:var(--no); }
+.cmt { width:100%; font-family:var(--sans); font-size:12px; padding:8px 10px; border:1px solid rgba(0,0,0,.12); border-radius:3px; resize:vertical; min-height:34px; background:#FBFAF8; }
+.cmt:focus { outline:none; border-color:var(--gold); }
+.concept { border:1px dashed var(--gold); background:linear-gradient(135deg,#FFFDF8,#FBF6EC); }
+.concept .shot { aspect-ratio:16/9; display:grid; place-items:center; background:#14120F; cursor:default; }
+.concept .shot .inner { text-align:center; color:#C9A96A; padding:20px; }
+.concept .shot .inner .big { font-family:var(--serif); font-size:22px; }
+.concept .shot .inner .sm { font-size:11px; color:#8E8A82; margin-top:8px; line-height:1.6; }
+#lightbox { position:fixed; inset:0; background:rgba(8,8,8,.93); display:none; place-items:center; z-index:50; cursor:zoom-out; padding:3vh 3vw; }
+#lightbox.on { display:grid; }
+#lightbox img { max-width:100%; max-height:100%; box-shadow:0 30px 90px rgba(0,0,0,.6); }
+#toast { position:fixed; bottom:26px; left:50%; transform:translateX(-50%); background:var(--ink); color:#fff; font-size:13px; padding:12px 22px; border-radius:4px; display:none; z-index:60; }
+footer { margin-top:40px; border-top:1px solid var(--hair); padding-top:16px; font-size:11.5px; color:var(--grey); line-height:1.7; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div>
+    <div class="label">Stargift × Claude · внутренний инструмент</div>
+    <h1>Портал утверждения шаблонов</h1>
+    <p class="sub">Все типы страниц из четырёх собранных дек. Отметь каждый: <b>Принимаю</b> — берём в библиотеку, <b>Средний</b> — напиши в поле, что поправить, <b>Не принимаю</b> — больше не используем. Оценки сохраняются в браузере; в конце нажми «Скопировать отчёт» и пришли его мне в чат.</p>
+  </div>
+  <div class="progress"><div class="n"><span id="done">0</span> / <span id="total">0</span></div><div class="t">страниц оценено</div></div>
+</header>
+<div class="toolbar">
+  <button class="btn primary" onclick="report()">Скопировать отчёт для Claude</button>
+  <button class="btn" onclick="resetAll()">Сбросить все оценки</button>
+  <span class="hintline">Клик по картинке — просмотр в полный экран.</span>
+</div>
+
+<div id="cards"></div>
+
+<footer>
+Скриншоты сняты с рабочих дек: «Летний каталог 2026», «Избранное собрания», «Три стиля», «Легенды футбола». После утверждения библиотека типов фиксируется в репозитории (17_stargift/TEMPLATES.md) — и все следующие каталоги собираются только из принятых форматов.
+</footer>
+</div>
+
+<div id="lightbox" onclick="this.classList.remove('on')"><img id="lbimg" src="" alt=""></div>
+<div id="toast"></div>
+
+<script>
+const TPL = [
+ {g:'Обложки и навигация', items:[
+  {id:'t01', name:'Обложка «вечерняя»', desc:'Чёрная обложка: логотип, название сезона, тёмная предметная съёмка справа. Задаёт люкс-тон с первой страницы.'},
+  {id:'t02', name:'Оглавление глав', desc:'Белая страница с римскими номерами глав и составом. Точка навигации всего каталога.'},
+  {id:'t03', name:'Шмуцтитул главы', desc:'Чёрный разделитель с атмосферным фото (свадьба Грейс Келли, Марадона-1986) и списком имён главы.'},
+  {id:'t04', name:'Шмуцтитул с лотом', desc:'Тот же разделитель, но фон — сам экспонат, и внизу строка «На фото — лот» с ценой. Разделитель, который продаёт.'},
+  {id:'t20', name:'Финальная страница', desc:'Контакты, адреса трёх галерей, телефон и телеграм на чёрном. Закрытие каталога.'}]},
+ {g:'Страницы одного экспоната', items:[
+  {id:'t05', name:'Топ-лот главы (чёрный)', desc:'Самый дорогой лот главы: крупное тёмное фото, плашка «Топ-лот», список автографов, цена золотом.'},
+  {id:'t06', name:'Вечернее соло', desc:'Чёрная страница одного лота: тёмная предметная съёмка на весь блок + паспорт справа. Для лотов со «своим светом» (Пачино, Марадона).'},
+  {id:'t14', name:'Белое соло с интерьером', desc:'Белая страница: интерьерное фото колонкой слева (Гоголь над камином), паспорт справа.'},
+  {id:'t15', name:'Белое соло с паспарту', desc:'Каталожное фото в паспарту на светло-серой панели + паспорт. Основной формат для чистых предметных съёмок.'},
+  {id:'t16', name:'История экспоната', desc:'Разворот-рассказ: история вещи как главный контент (Репин и Чуковский), цена — в конце. Каталог, который читают.'},
+  {id:'t08', name:'Соло + связанные лоты', desc:'Главный лот с фото + 2–3 связанных лота строками с ценами и ссылками (Али + пояс и перчатка Тайсона).'}]},
+ {g:'Несколько экспонатов на странице', items:[
+  {id:'t11', name:'Трио карточек', desc:'Три фото в паспарту в ряд, подписи под фото: имя-ссылка, тип, цена.'},
+  {id:'t10', name:'Квартет 2×2', desc:'Плотная страница на четыре лота: фото + подпись сбоку. Основной «рабочий» формат каталога.'},
+  {id:'t07', name:'Тёмное трио', desc:'Три тёмные предметные съёмки карточками на чёрном (мячи Роналду и Бекхэма, бутса Месси).'},
+  {id:'t17', name:'Сетка 2×3', desc:'Шесть лотов на странице — максимальная плотность для обзорных глав.'},
+  {id:'t12', name:'Топ-список с фото', desc:'Вертикальное фото слева + список 5–6 лотов с ценами и ссылками («Шесть сценариев великого кино»).'},
+  {id:'t09', name:'Индекс-люкс (тёмный)', desc:'Список топ-лотов без фото: номер, имя-ссылка на сайт, цена. Для «Десяти вершин» и бриллиантовой коллекции.'}]},
+ {g:'Промо-страницы', items:[
+  {id:'t13', name:'Интерьер с точками', desc:'Фото комнаты с номерными точками на экспонатах и легендой цен внизу («Стена чемпионов»). В вебе точки кликабельны.'},
+  {id:'t19', name:'Сертификаты', desc:'Четыре чёрные карточки номиналов подарочных сертификатов на белом.'},
+  {id:'t18', name:'Стиль «Слоновая кость»', desc:'Альтернативная тёплая палитра для «Наследия» и арта: ivory-фон, бронза, двойные линии. Утверждаем как третий стиль?'},
+  {id:'t21', name:'Промо с кадрами из интернета', concept:true, desc:'КОНЦЕПТ: страницы-настроения с реальными кадрами — момент финала ЧМ, кадр из «Криминального чтива», историческая хроника. Требует доступа к сети из рабочего окружения (сейчас закрыт) и проверки прав на использование. Утверди идею — реализую, как только откроется доступ.'}]}
+];
+const KEY='sg_tpl_verdicts_v1';
+let state = JSON.parse(localStorage.getItem(KEY)||'{}');
+const cards = document.getElementById('cards');
+let total=0;
+TPL.forEach(sec=>{
+  const h=document.createElement('div'); h.className='section-h'; h.textContent=sec.g; cards.appendChild(h);
+  const g=document.createElement('div'); g.className='grid'; cards.appendChild(g);
+  sec.items.forEach(t=>{
+    total++;
+    const d=document.createElement('div'); d.className='tpl'+(t.concept?' concept':''); d.id='card-'+t.id;
+    const shot = t.concept
+      ? `<div class="shot"><div class="inner"><div class="big">Кадры из фильмов · хроника · спорт</div><div class="sm">макет появится после открытия сетевого доступа —<br>сейчас на утверждение выносится сама идея</div></div></div>`
+      : `<div class="shot" onclick="lb('img_portal/${t.id}.jpg')"><img src="img_portal/${t.id}.jpg" alt=""><span class="zoom">УВЕЛИЧИТЬ</span></div>`;
+    d.innerHTML = `${shot}<div class="body">
+      <div class="id">${t.id}</div><h3>${t.name}</h3><div class="desc">${t.desc}</div>
+      <div class="verdicts">
+        <button class="vbtn ok" onclick="setV('${t.id}','ok')">✓ Принимаю</button>
+        <button class="vbtn mid" onclick="setV('${t.id}','mid')">~ Средний</button>
+        <button class="vbtn no" onclick="setV('${t.id}','no')">✗ Нет</button>
+      </div>
+      <textarea class="cmt" id="cmt-${t.id}" placeholder="Комментарий: что нравится / что поправить" oninput="setC('${t.id}',this.value)"></textarea>
+    </div>`;
+    g.appendChild(d);
+  });
+});
+document.getElementById('total').textContent=total;
+function names(){ const m={}; TPL.forEach(s=>s.items.forEach(t=>m[t.id]=t.name)); return m; }
+function setV(id,v){ state[id]=state[id]||{}; state[id].v = state[id].v===v ? null : v; save(); render(); }
+function setC(id,c){ state[id]=state[id]||{}; state[id].c=c; save(); }
+function save(){ localStorage.setItem(KEY, JSON.stringify(state)); }
+function render(){
+  let done=0;
+  TPL.forEach(s=>s.items.forEach(t=>{
+    const st=state[t.id]||{}; const card=document.getElementById('card-'+t.id);
+    card.classList.remove('v-ok','v-mid','v-no');
+    if(st.v){ card.classList.add('v-'+st.v); done++; }
+    card.querySelectorAll('.vbtn').forEach(b=>b.classList.remove('act'));
+    if(st.v) card.querySelector('.vbtn.'+st.v).classList.add('act');
+    const ta=document.getElementById('cmt-'+t.id); if(ta && st.c!==undefined && ta.value!==st.c) ta.value=st.c;
+  }));
+  document.getElementById('done').textContent=done;
+}
+function report(){
+  const nm=names(); const mark={ok:'✓ ПРИНИМАЮ',mid:'~ СРЕДНИЙ',no:'✗ НЕ ПРИНИМАЮ'};
+  let out='ОТЧЁТ ПО ШАБЛОНАМ STARGIFT\n==========================\n';
+  TPL.forEach(s=>{ out+='\n['+s.g+']\n'; s.items.forEach(t=>{
+    const st=state[t.id]||{};
+    out+=`${t.id} · ${t.name} — ${st.v?mark[st.v]:'(без оценки)'}${st.c?('\n    комментарий: '+st.c):''}\n`;
+  });});
+  navigator.clipboard.writeText(out).then(()=>toast('Отчёт скопирован — пришли его мне в чат'),()=>{
+    const ta=document.createElement('textarea'); ta.value=out; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); ta.remove(); toast('Отчёт скопирован — пришли его мне в чат');
+  });
+}
+function resetAll(){ if(confirm('Сбросить все оценки и комментарии?')){ state={}; save(); render(); } }
+function lb(src){ document.getElementById('lbimg').src=src; document.getElementById('lightbox').classList.add('on'); }
+function toast(t){ const el=document.getElementById('toast'); el.textContent=t; el.style.display='block'; setTimeout(()=>el.style.display='none', 3200); }
+render();
+</script>
+</body>
+</html>
