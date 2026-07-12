@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STARGIFT — 20 новых концептов страниц</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:#1A1A1A; --paper:#FFFFFF; --soft:#F7F5F1; --gold:#A98545; --gold-lt:#C9A96A;
+  --grey:#6F6A62; --hair:rgba(169,133,69,.35); --hair-lt:rgba(169,133,69,.18);
+  --bk:#0B0B0C; --coal:#131315; --bk-ivory:#F5F1E8; --bk-muted:#8E8A82; --bk-line:rgba(201,169,106,.32);
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',-apple-system,'Segoe UI',sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; overflow:hidden; background:#000; }
+body { font-family:var(--sans); font-weight:300; color:var(--ink); }
+.deck { height:100%; position:relative; }
+.slide { position:absolute; inset:0; display:none; overflow:hidden; background:var(--paper); }
+.slide.on { display:grid; }
+h1,h2,h3 { font-family:var(--serif); font-weight:400; line-height:1.05; }
+img { display:block; }
+.label { font-size:clamp(9px,.8vw,12px); font-weight:500; letter-spacing:.3em; text-transform:uppercase; color:var(--gold); }
+.center { place-items:center; text-align:center; padding:clamp(30px,5vw,90px); }
+.bk { background:var(--bk); color:var(--bk-ivory); }
+.bk .label { color:var(--gold-lt); }
+.cap { padding:1.2vh 4px 0; text-align:left; }
+.cap .nm { font-family:var(--serif); font-size:clamp(13.5px,1.3vw,19px); }
+.cap .tp { font-size:clamp(10px,.85vw,12.5px); color:var(--grey); margin-top:2px; }
+.cap .pr { font-family:var(--serif); font-size:clamp(13px,1.15vw,17px); color:var(--gold); margin-top:4px; }
+.mat { background:#fff; border:1px solid var(--hair-lt); box-shadow:0 14px 44px rgba(26,22,15,.10); padding:clamp(10px,1.1vw,18px); }
+.head { display:flex; align-items:baseline; justify-content:space-between; border-bottom:1px solid var(--hair); padding-bottom:1.5vh; margin-bottom:2.6vh; }
+.corner { position:absolute; top:24px; right:32px; z-index:6; }
+.pagenum{display:none}
+</style>
+</head>
+<body>
+<div class="deck">
+
+<!-- n01 МАНИФЕСТ -->
+<section class="slide center on" id="n01">
+  <div style="max-width:980px">
+    <img src="img/stargift_logo.png" alt="" style="height:clamp(44px,5.5vw,70px);margin:0 auto">
+    <h1 style="font-size:clamp(30px,4vw,62px);margin:5vh 0 3vh;line-height:1.15">«Мы продаём подарки людям,<br>у&nbsp;которых есть всё»</h1>
+    <div class="label" style="color:var(--grey)">Известия · о галереях Stargift</div>
+    <div style="display:flex;gap:clamp(20px,4vw,64px);justify-content:center;margin-top:6vh;flex-wrap:wrap">
+      <span style="font-family:var(--serif);font-size:clamp(15px,1.6vw,23px);color:#9B958B">Forbes</span>
+      <span style="font-family:var(--serif);font-size:clamp(15px,1.6vw,23px);color:#9B958B">Harper's Bazaar</span>
+      <span style="font-family:var(--serif);font-size:clamp(15px,1.6vw,23px);color:#9B958B">ТАСС</span>
+      <span style="font-family:var(--serif);font-size:clamp(15px,1.6vw,23px);color:#9B958B">Коммерсантъ</span>
+      <span style="font-family:var(--serif);font-size:clamp(15px,1.6vw,23px);color:#9B958B">National Geographic</span>
+    </div>
+  </div>
+</section>
+
+<!-- n02 ЦИФРЫ ДОМА -->
+<section class="slide bk center" id="n02">
+  <div style="width:min(1050px,92vw)">
+    <div class="label" style="text-align:center">Stargift в цифрах</div>
+    <h2 style="font-size:clamp(24px,2.7vw,42px);color:#fff;text-align:center;margin:1.6vh 0 4.5vh">Дом, который собирает историю</h2>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2vw,36px);text-align:center">
+      <div style="border-top:1px solid var(--gold-lt);padding-top:2.4vh"><div style="font-family:var(--serif);font-size:clamp(34px,4vw,62px);color:var(--gold-lt)">3000+</div><div style="font-size:clamp(10px,.9vw,13px);color:var(--bk-muted);margin-top:1vh;letter-spacing:.08em">экспонатов в собрании</div></div>
+      <div style="border-top:1px solid var(--gold-lt);padding-top:2.4vh"><div style="font-family:var(--serif);font-size:clamp(34px,4vw,62px);color:var(--gold-lt)">3</div><div style="font-size:clamp(10px,.9vw,13px);color:var(--bk-muted);margin-top:1vh;letter-spacing:.08em">галереи в Москве и Барвихе</div></div>
+      <div style="border-top:1px solid var(--gold-lt);padding-top:2.4vh"><div style="font-family:var(--serif);font-size:clamp(34px,4vw,62px);color:var(--gold-lt)">35 млн ₽</div><div style="font-size:clamp(10px,.9vw,13px);color:var(--bk-muted);margin-top:1vh;letter-spacing:.08em">вершина каталога — Apple II Стива Джобса</div></div>
+      <div style="border-top:1px solid var(--gold-lt);padding-top:2.4vh"><div style="font-family:var(--serif);font-size:clamp(34px,4vw,62px);color:var(--gold-lt)">100%</div><div style="font-size:clamp(10px,.9vw,13px);color:var(--bk-muted);margin-top:1vh;letter-spacing:.08em">лотов с сертификацией или экспертизой</div></div>
+    </div>
+    <p style="text-align:center;font-size:clamp(11px,.95vw,14px);color:#CFC9BE;margin-top:5vh;line-height:1.8">От Петра I и Баха — до Месси и Yoomoota. Каждый предмет проверен: Beckett, JSA,<br>научные центры им. Грабаря и ГИМ.</p>
+  </div>
+</section>
+
+<!-- n03 КАК МЫ РАБОТАЕМ -->
+<section class="slide center" id="n03">
+  <div style="width:min(1080px,92vw)">
+    <div class="label" style="text-align:center">Сервис дома</div>
+    <h2 style="font-size:clamp(24px,2.7vw,42px);text-align:center;margin:1.6vh 0 4vh">Четыре шага до идеального подарка</h2>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2vw,34px);text-align:left">
+      <div style="border-top:1px solid var(--gold);padding-top:1.8vh"><div style="font-family:var(--serif);font-size:clamp(20px,2.2vw,32px);color:var(--gold)">I</div><h3 style="font-size:clamp(14px,1.35vw,20px);margin:.8vh 0">Подбор</h3><p style="font-size:clamp(10.5px,.9vw,13px);color:#55504A;line-height:1.7">Личный менеджер подбирает лоты под человека, повод и бюджет — из 3000 предметов.</p></div>
+      <div style="border-top:1px solid var(--gold);padding-top:1.8vh"><div style="font-family:var(--serif);font-size:clamp(20px,2.2vw,32px);color:var(--gold)">II</div><h3 style="font-size:clamp(14px,1.35vw,20px);margin:.8vh 0">Экспертиза</h3><p style="font-size:clamp(10.5px,.9vw,13px);color:#55504A;line-height:1.7">Каждый автограф — с международным сертификатом Beckett/JSA или заключением музейных экспертов.</p></div>
+      <div style="border-top:1px solid var(--gold);padding-top:1.8vh"><div style="font-family:var(--serif);font-size:clamp(20px,2.2vw,32px);color:var(--gold)">III</div><h3 style="font-size:clamp(14px,1.35vw,20px);margin:.8vh 0">Оформление</h3><p style="font-size:clamp(10.5px,.9vw,13px);color:#55504A;line-height:1.7">Мастерская дома: музейный багет, паспарту, латунная табличка, витрина или подставка.</p></div>
+      <div style="border-top:1px solid var(--gold);padding-top:1.8vh"><div style="font-family:var(--serif);font-size:clamp(20px,2.2vw,32px);color:var(--gold)">IV</div><h3 style="font-size:clamp(14px,1.35vw,20px);margin:.8vh 0">Вручение</h3><p style="font-size:clamp(10.5px,.9vw,13px);color:#55504A;line-height:1.7">Доставка, монтаж в интерьере и красивая легенда подарка — расскажем, как вручить.</p></div>
+    </div>
+  </div>
+  <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px"></div>
+</section>
+
+<!-- n04 ПИСЬМО ОСНОВАТЕЛЕЙ -->
+<section class="slide" id="n04" style="grid-template-columns:1.1fr 1fr">
+  <div style="padding:clamp(30px,4vw,70px);display:flex;flex-direction:column;justify-content:center;background:var(--soft)">
+    <div class="label">От основателей</div>
+    <h2 style="font-size:clamp(22px,2.5vw,38px);margin:1.8vh 0 2.6vh">Мы двадцать лет собирали эту коллекцию друг для друга</h2>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.35vw,20px);color:#4A463F;line-height:1.75;max-width:52ch">«Каждый предмет здесь мы когда-то захотели оставить себе. Перчатки Тайсона, письмо Репина, гитару Nirvana. Потом поняли: радость сильнее, когда такая вещь находит своего человека. Так хобби двух коллекционеров стало Stargift».</p>
+    <div style="margin-top:3vh;font-family:var(--serif);font-size:clamp(15px,1.5vw,22px);color:var(--gold)">Вашик Мартиросян · Илья Слуцкин</div>
+    <div style="font-size:clamp(10px,.9vw,12.5px);color:var(--grey);margin-top:.6vh">основатели Stargift</div>
+  </div>
+  <div style="overflow:hidden"><img src="img_spring/gallery.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+</section>
+
+<!-- n05 ГИД ПО БЮДЖЕТУ -->
+<section class="slide center" id="n05">
+  <div style="width:min(1120px,93vw)">
+    <div class="label" style="text-align:center">Навигатор</div>
+    <h2 style="font-size:clamp(24px,2.7vw,42px);text-align:center;margin:1.6vh 0 3.6vh">Подарок под любой бюджет</h2>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,1.8vw,30px);text-align:left">
+      <div style="background:var(--soft);padding:clamp(16px,1.8vw,28px);border-top:2px solid var(--gold)"><div class="label">до 300 000 ₽</div><h3 style="font-size:clamp(14px,1.4vw,21px);margin:1.2vh 0">Первый экспонат</h3><p style="font-size:clamp(10.5px,.9vw,13px);color:#55504A;line-height:1.7">Фото с автографами звёзд кино и музыки: Делон, Бардо, Эмма Стоун, Иэн Пейс.</p></div>
+      <div style="background:var(--soft);padding:clamp(16px,1.8vw,28px);border-top:2px solid var(--gold)"><div class="label">300 — 700 тыс ₽</div><h3 style="font-size:clamp(14px,1.4vw,21px);margin:1.2vh 0">Серьёзный жест</h3><p style="font-size:clamp(10.5px,.9vw,13px);color:#55504A;line-height:1.7">Сценарии культовых фильмов, футболки легенд, гитары рок-звёзд, мячи чемпионов.</p></div>
+      <div style="background:var(--soft);padding:clamp(16px,1.8vw,28px);border-top:2px solid var(--gold)"><div class="label">700 тыс — 3 млн ₽</div><h3 style="font-size:clamp(14px,1.4vw,21px);margin:1.2vh 0">Коллекционный уровень</h3><p style="font-size:clamp(10.5px,.9vw,13px);color:#55504A;line-height:1.7">Королевские реликвии, Черчилль, Высоцкий, Одри Хепбёрн, мяч ЛЧ-2006, Yoomoota.</p></div>
+      <div style="background:var(--bk);color:var(--bk-ivory);padding:clamp(16px,1.8vw,28px);border-top:2px solid var(--gold-lt)"><div class="label" style="color:var(--gold-lt)">от 3 млн ₽</div><h3 style="font-size:clamp(14px,1.4vw,21px);margin:1.2vh 0;color:#fff">Музейный уровень</h3><p style="font-size:clamp(10.5px,.9vw,13px);color:#B9B3A8;line-height:1.7">Гоголь, Репин, Эйнштейн, Пётр I, Бах, Apple II Стива Джобса. Показ — по записи.</p></div>
+    </div>
+  </div>
+  <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px"></div>
+</section>
+
+<!-- n06 СЛОВАРЬ -->
+<section class="slide center" id="n06">
+  <div style="width:min(1000px,90vw)">
+    <div class="label" style="text-align:center">Доверие</div>
+    <h2 style="font-size:clamp(24px,2.7vw,42px);text-align:center;margin:1.6vh 0 3.4vh">Пять слов, за которыми — подлинность</h2>
+    <div style="display:grid;gap:1.6vh;text-align:left">
+      <div style="display:grid;grid-template-columns:220px 1fr;gap:24px;border-bottom:1px solid var(--hair-lt);padding-bottom:1.5vh"><div style="font-family:var(--serif);font-size:clamp(16px,1.6vw,24px);color:var(--gold)">Beckett · BAS</div><p style="font-size:clamp(11px,.95vw,13.5px);color:#4A463F;line-height:1.7;align-self:center">Мировой стандарт №1 аутентификации автографов. Наклейка с номером — проверяется на сайте Beckett за минуту.</p></div>
+      <div style="display:grid;grid-template-columns:220px 1fr;gap:24px;border-bottom:1px solid var(--hair-lt);padding-bottom:1.5vh"><div style="font-family:var(--serif);font-size:clamp(16px,1.6vw,24px);color:var(--gold)">JSA</div><p style="font-size:clamp(11px,.95vw,13.5px);color:#4A463F;line-height:1.7;align-self:center">James Spence Authentication — вторая великая экспертиза США. Ей доверяют главные аукционы мира.</p></div>
+      <div style="display:grid;grid-template-columns:220px 1fr;gap:24px;border-bottom:1px solid var(--hair-lt);padding-bottom:1.5vh"><div style="font-family:var(--serif);font-size:clamp(16px,1.6vw,24px);color:var(--gold)">Экспертиза ГИМ</div><p style="font-size:clamp(11px,.95vw,13.5px);color:#4A463F;line-height:1.7;align-self:center">Русскую классику — Гоголя, Репина, Достоевского — подтверждают научные центры им. Грабаря и Исторический музей.</p></div>
+      <div style="display:grid;grid-template-columns:220px 1fr;gap:24px;border-bottom:1px solid var(--hair-lt);padding-bottom:1.5vh"><div style="font-family:var(--serif);font-size:clamp(16px,1.6vw,24px);color:var(--gold)">Провенанс</div><p style="font-size:clamp(11px,.95vw,13.5px);color:#4A463F;line-height:1.7;align-self:center">История владения предмета: откуда вещь, через чьи руки прошла. Фиксируется в паспорте экспоната.</p></div>
+      <div style="display:grid;grid-template-columns:220px 1fr;gap:24px"><div style="font-family:var(--serif);font-size:clamp(16px,1.6vw,24px);color:var(--gold)">Паспарту и багет</div><p style="font-size:clamp(11px,.95vw,13.5px);color:#4A463F;line-height:1.7;align-self:center">Музейное оформление мастерской дома: бескислотный картон, УФ-стекло, латунная табличка.</p></div>
+    </div>
+  </div>
+  <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px"></div>
+</section>
+
+<!-- n07 МАКРО ПОДПИСЬ -->
+<section class="slide bk" id="n07" style="grid-template-rows:1fr auto">
+  <div style="overflow:hidden;position:relative">
+    <img src="img/beckham_wc2002.jpg" alt="" style="width:140%;height:140%;object-fit:cover;object-position:52% 38%;margin-left:-20%">
+    <div style="position:absolute;top:26px;left:32px;z-index:3">
+      <div class="label">Подача · Макро</div>
+      <h2 style="color:#fff;font-size:clamp(22px,2.4vw,38px);margin-top:.6vh">Подпись как искусство</h2>
+    </div>
+  </div>
+  <div style="background:rgba(11,11,12,.92);border-top:1px solid var(--bk-line);padding:1.8vh clamp(24px,3vw,44px);display:flex;gap:18px;align-items:baseline">
+    <span style="font-size:9.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--bk-muted)">На фото</span>
+    <span style="font-size:clamp(11px,1vw,14px);color:#E7E2D7">Дэвид Бекхэм · автограф на официальном мяче чемпионата мира — 2002 · JSA</span>
+    <span style="font-family:var(--serif);color:var(--gold-lt);margin-left:auto;font-size:clamp(14px,1.3vw,19px)">500 000 ₽</span>
+  </div>
+</section>
+
+<!-- n08 ЭКСПОНАТ + СЕРТИФИКАТ -->
+<section class="slide" id="n08" style="grid-template-columns:1.05fr 1fr">
+  <div style="background:var(--soft);display:grid;place-items:center;padding:clamp(22px,2.8vw,48px)">
+    <img src="img/pele.jpg" alt="" style="max-width:100%;max-height:calc(100vh - 180px);object-fit:contain;box-shadow:0 22px 60px rgba(26,22,15,.16)">
+  </div>
+  <div style="padding:clamp(26px,3.2vw,58px);display:flex;flex-direction:column;justify-content:center;gap:2.2vh">
+    <div>
+      <div class="label">Подача · Лот и его документ</div>
+      <h2 style="font-size:clamp(24px,2.6vw,40px);margin-top:1vh">Пеле</h2>
+      <p style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.4vw,20px);color:var(--gold);margin-top:4px">Ретро-футболка сборной Бразилии с автографом · 450 000 ₽</p>
+    </div>
+    <div style="border:1px solid var(--hair);background:#FDFCF9;padding:clamp(16px,1.8vw,26px);position:relative">
+      <div style="position:absolute;top:14px;right:16px;width:54px;height:54px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-family:var(--serif);color:var(--gold);font-size:10px;letter-spacing:.1em;text-align:center;line-height:1.3">BAS<br>✓</div>
+      <div class="label">Сертификат подлинности</div>
+      <div style="font-family:var(--serif);font-size:clamp(15px,1.5vw,22px);margin-top:1vh">Beckett Authentication Services</div>
+      <div style="display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin-top:1.4vh;font-size:clamp(10.5px,.9vw,12.5px);color:#4A463F">
+        <span style="color:var(--grey)">Номер</span><span>B-XXXXXXX · проверяется на beckett.com</span>
+        <span style="color:var(--grey)">Предмет</span><span>Jersey, personally signed by Pelé</span>
+        <span style="color:var(--grey)">Заключение</span><span>Autograph — Authentic</span>
+      </div>
+    </div>
+    <p style="font-size:clamp(10px,.88vw,12px);color:var(--grey);line-height:1.65">Формат «лот + сертификат»: покупатель видит документ до визита в галерею. Номер печатается на слайде реального каталога.</p>
+  </div>
+</section>
+
+<!-- n09 ПУТЬ ЛОТА -->
+<section class="slide center" id="n09">
+  <div style="width:min(1160px,94vw)">
+    <div class="head">
+      <h2 style="font-size:clamp(21px,2.3vw,36px)">Как предмет становится экспонатом</h2>
+      <div class="label">Подача · Процесс</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,34px)">
+      <div><div class="mat"><img src="img_spring/diana_cake.jpg" alt="" style="aspect-ratio:16/11"></div><div class="cap"><div class="label" style="letter-spacing:.2em">I · Предмет</div><div class="tp" style="margin-top:6px">Кусок торта со свадьбы Карла и Дианы — как он приходит в дом: с аукциона, с провенансом.</div></div></div>
+      <div><div class="mat"><img src="img_spring/william_horseshoe.jpg" alt="" style="aspect-ratio:16/11"></div><div class="cap"><div class="label" style="letter-spacing:.2em">II · Оформление</div><div class="tp" style="margin-top:6px">Мастерская дома: бархат, двойное паспарту, латунная табличка, музейное стекло.</div></div></div>
+      <div><div class="mat"><img src="img_spring/diana_postcard.jpg" alt="" style="aspect-ratio:16/11"></div><div class="cap"><div class="label" style="letter-spacing:.2em">III · В интерьере</div><div class="tp" style="margin-top:6px">Экспонат занимает место в доме — с подсветкой и историей, которую рассказывают гостям.</div></div></div>
+    </div>
+  </div>
+  <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px"></div>
+</section>
+
+<!-- n10 ПОСТЕРНАЯ ПОДАЧА -->
+<section class="slide" id="n10" style="grid-template-columns:1fr 1fr;background:#fff">
+  <div style="display:grid;place-items:center;padding:clamp(20px,2.4vw,40px)">
+    <img src="img/mbappe.jpg" alt="" style="max-width:92%;max-height:calc(100vh - 140px);object-fit:contain;filter:drop-shadow(0 30px 50px rgba(26,22,15,.22))">
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,3.4vw,64px)">
+    <div class="label">Подача · Постер без фона</div>
+    <h2 style="font-size:clamp(34px,4.2vw,66px);margin-top:1.6vh">Мбаппе</h2>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(15px,1.6vw,23px);color:var(--gold);margin-top:.6vh">Футболка «Реал Мадрид» с автографом</p>
+    <div style="font-family:var(--serif);font-size:clamp(40px,5vw,80px);color:var(--gold);margin-top:4vh;line-height:1">600 000 ₽</div>
+    <div style="width:64px;height:1px;background:var(--gold);margin:3vh 0"></div>
+    <p style="font-size:clamp(11px,.95vw,13.5px);color:var(--grey);max-width:44ch;line-height:1.75">Экспонат вырезан без фона и подан как афиша: максимум предмета, минимум всего остального. Формат для соцсетей, рассылок и первых страниц глав.</p>
+  </div>
+</section>
+
+<!-- n11 HERO РАЗВОРОТ -->
+<section class="slide bk" id="n11" style="grid-template-columns:1fr">
+  <div style="position:relative;overflow:hidden">
+    <img src="img/maradona.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:center 30%">
+    <div style="position:absolute;top:0;bottom:0;right:0;width:min(360px,34vw);background:linear-gradient(90deg,transparent,rgba(11,11,12,.88) 22%);padding:clamp(24px,3vw,48px) clamp(24px,2.6vw,40px);display:flex;flex-direction:column;justify-content:center">
+      <div class="label">Подача · Экспонат во весь экран</div>
+      <h2 style="color:#fff;font-size:clamp(24px,2.6vw,40px);margin:1.4vh 0 .6vh">Диего Марадона</h2>
+      <p style="font-family:var(--serif);font-style:italic;font-size:clamp(13px,1.3vw,19px);color:var(--gold-lt)">Футболка сборной Аргентины с автографом</p>
+      <div style="font-family:var(--serif);font-size:clamp(24px,2.6vw,40px);color:var(--gold-lt);margin-top:3vh">650 000 ₽</div>
+      <div style="font-size:clamp(9.5px,.85vw,12px);color:var(--bk-muted);margin-top:1.6vh;line-height:1.7">Beckett · золочёный багет мастерской дома</div>
+    </div>
+  </div>
+</section>
+
+<!-- n12 ДЕТАЛЬ + ОБЩИЙ ПЛАН -->
+<section class="slide" id="n12" style="grid-template-columns:1.35fr 1fr">
+  <div style="background:var(--soft);display:grid;place-items:center;padding:clamp(20px,2.6vw,44px)">
+    <img src="img/maradona.jpg" alt="" style="max-width:100%;max-height:calc(100vh - 150px);object-fit:contain;box-shadow:0 22px 60px rgba(26,22,15,.18)">
+  </div>
+  <div style="padding:clamp(22px,2.6vw,46px);display:flex;flex-direction:column;justify-content:center;gap:2vh">
+    <div>
+      <div class="label">Подача · Аукционный формат</div>
+      <h2 style="font-size:clamp(22px,2.4vw,36px);margin-top:1vh">Общий план + детали</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.4vw,22px)">
+      <div>
+        <div style="overflow:hidden;aspect-ratio:1/1;border:1px solid var(--hair-lt)"><img src="img/maradona.jpg" alt="" style="width:300%;margin-left:-100%;margin-top:-150%"></div>
+        <div class="cap"><div class="tp">Деталь I · автограф на «десятке»</div></div>
+      </div>
+      <div>
+        <div style="overflow:hidden;aspect-ratio:1/1;border:1px solid var(--hair-lt)"><img src="img/maradona.jpg" alt="" style="width:280%;margin-left:-90%;margin-top:-190%"></div>
+        <div class="cap"><div class="tp">Деталь II · латунная табличка</div></div>
+      </div>
+    </div>
+    <p style="font-size:clamp(10px,.88vw,12px);color:var(--grey);line-height:1.65">Кропы с того же кадра: подпись и табличку видно без визита в галерею. Так подают лоты Sotheby's и Christie's.</p>
+  </div>
+</section>
+
+<!-- n13 ДИПТИХ -->
+<section class="slide" id="n13" style="grid-template-columns:1fr 1fr;background:#000">
+  <div style="position:relative;overflow:hidden">
+    <img src="img_spring/chagall_drawing.jpg" alt="" style="width:100%;height:100%;object-fit:cover">
+    <div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.72));padding:22px 26px">
+      <div style="font-family:var(--serif);font-size:clamp(16px,1.7vw,25px);color:#fff">Марк Шагал</div>
+      <div style="font-size:clamp(10px,.9vw,12.5px);color:#D8D2C6;margin-top:3px">Собственноручный рисунок с автографом</div>
+      <div style="font-family:var(--serif);font-size:clamp(14px,1.4vw,20px);color:var(--gold-lt);margin-top:6px">2 000 000 ₽</div>
+    </div>
+  </div>
+  <div style="position:relative;overflow:hidden;border-left:1px solid rgba(201,169,106,.4)">
+    <img src="img_spring/somov_drawing.jpg" alt="" style="width:100%;height:100%;object-fit:cover">
+    <div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.72));padding:22px 26px">
+      <div style="font-family:var(--serif);font-size:clamp(16px,1.7vw,25px);color:#fff">Константин Сомов</div>
+      <div style="font-size:clamp(10px,.9vw,12.5px);color:#D8D2C6;margin-top:3px">Собственноручный рисунок «Поцелуй»</div>
+      <div style="font-family:var(--serif);font-size:clamp(14px,1.4vw,20px);color:var(--gold-lt);margin-top:6px">2 000 000 ₽</div>
+    </div>
+  </div>
+</section>
+
+<!-- n14 ТРИПТИХ -->
+<section class="slide" id="n14" style="grid-template-columns:repeat(3,1fr);background:#000">
+  <div style="position:relative;overflow:hidden"><img src="img_spring/yoo_chess.jpg" alt="" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.74));padding:18px 22px"><div style="font-family:var(--serif);font-size:clamp(14px,1.4vw,20px);color:#fff">Шахматы «Oasis»</div><div style="font-size:clamp(9.5px,.85vw,11.5px);color:#D8D2C6">Yoomoota · 1/21</div><div style="font-family:var(--serif);font-size:clamp(13px,1.25vw,18px);color:var(--gold-lt);margin-top:4px">1 500 000 ₽</div></div></div>
+  <div style="position:relative;overflow:hidden;border-left:1px solid rgba(201,169,106,.4)"><img src="img_spring/yoo_oldmoney.jpg" alt="" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.74));padding:18px 22px"><div style="font-family:var(--serif);font-size:clamp(14px,1.4vw,20px);color:#fff">«Old Money»</div><div style="font-size:clamp(9.5px,.85vw,11.5px);color:#D8D2C6">Yoomoota · 1/50</div><div style="font-family:var(--serif);font-size:clamp(13px,1.25vw,18px);color:var(--gold-lt);margin-top:4px">650 000 ₽</div></div></div>
+  <div style="position:relative;overflow:hidden;border-left:1px solid rgba(201,169,106,.4)"><img src="img_spring/yoo_horse.jpg" alt="" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.74));padding:18px 22px"><div style="font-family:var(--serif);font-size:clamp(14px,1.4vw,20px);color:#fff">«Horse»</div><div style="font-size:clamp(9.5px,.85vw,11.5px);color:#D8D2C6">Yoomoota · 1/3</div><div style="font-family:var(--serif);font-size:clamp(13px,1.25vw,18px);color:var(--gold-lt);margin-top:4px">1 250 000 ₽</div></div></div>
+</section>
+
+<!-- n15 МОЗАИКА 1+2 -->
+<section class="slide" id="n15" style="grid-template-columns:1.5fr 1fr;gap:2px;background:#fff">
+  <div style="position:relative;overflow:hidden">
+    <img src="img_spring/gracekelly.jpg" alt="" style="width:100%;height:100%;object-fit:cover">
+    <div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.66));padding:24px 28px">
+      <div style="font-family:var(--serif);font-size:clamp(18px,2vw,30px);color:#fff">Грейс Келли</div>
+      <div style="font-size:clamp(10px,.9vw,13px);color:#E3DDD2">Открытка с автографом княгини Монако · 450 000 ₽</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-rows:1fr 1fr;gap:2px">
+    <div style="position:relative;overflow:hidden"><img src="img_spring/audrey.jpg" alt="" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.66));padding:14px 18px"><div style="font-family:var(--serif);font-size:clamp(13px,1.35vw,19px);color:#fff">Одри Хепбёрн</div><div style="font-size:clamp(9.5px,.8vw,11.5px);color:#E3DDD2">Автограф · 700 000 ₽</div></div></div>
+    <div style="position:relative;overflow:hidden"><img src="img_spring/dicaprio_winslet.jpg" alt="" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.66));padding:14px 18px"><div style="font-family:var(--serif);font-size:clamp(13px,1.35vw,19px);color:#fff">ДиКаприо и Уинслет</div><div style="font-size:clamp(9.5px,.8vw,11.5px);color:#E3DDD2">Два автографа · 400 000 ₽</div></div></div>
+  </div>
+</section>
+
+<!-- n16 ЛЕНТА 5 -->
+<section class="slide" id="n16" style="grid-template-rows:auto 1fr">
+  <div style="padding:3.2vh clamp(24px,3vw,44px) 0">
+    <div class="head" style="margin-bottom:0">
+      <h2 style="font-size:clamp(21px,2.3vw,36px)">Кино одной лентой</h2>
+      <div class="label">Пять лотов · обзор главы</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(10px,1.2vw,20px);padding:2.4vh clamp(24px,3vw,44px) 3.6vh">
+    <div style="display:flex;flex-direction:column"><div style="overflow:hidden;flex:1"><img src="img_spring/pacino.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div><div class="cap"><div class="nm" style="font-size:clamp(11.5px,1.05vw,15px)">Аль Пачино</div><div class="pr" style="font-size:clamp(11px,1vw,14px)">350 000 ₽</div></div></div>
+    <div style="display:flex;flex-direction:column"><div style="overflow:hidden;flex:1"><img src="img_spring/prowse.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div><div class="cap"><div class="nm" style="font-size:clamp(11.5px,1.05vw,15px)">Дэвид Проуз</div><div class="pr" style="font-size:clamp(11px,1vw,14px)">240 000 ₽</div></div></div>
+    <div style="display:flex;flex-direction:column"><div style="overflow:hidden;flex:1"><img src="img_spring/bttf.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div><div class="cap"><div class="nm" style="font-size:clamp(11.5px,1.05vw,15px)">Кристофер Ллойд</div><div class="pr" style="font-size:clamp(11px,1vw,14px)">250 000 ₽</div></div></div>
+    <div style="display:flex;flex-direction:column"><div style="overflow:hidden;flex:1"><img src="img_spring/radcliffe.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div><div class="cap"><div class="nm" style="font-size:clamp(11.5px,1.05vw,15px)">Дэниэл Рэдклифф</div><div class="pr" style="font-size:clamp(11px,1vw,14px)">290 000 ₽</div></div></div>
+    <div style="display:flex;flex-direction:column"><div style="overflow:hidden;flex:1"><img src="img_spring/audrey.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div><div class="cap"><div class="nm" style="font-size:clamp(11.5px,1.05vw,15px)">Одри Хепбёрн</div><div class="pr" style="font-size:clamp(11px,1vw,14px)">700 000 ₽</div></div></div>
+  </div>
+</section>
+
+<!-- n17 СВЯЗЬ ПОКОЛЕНИЙ -->
+<section class="slide" id="n17" style="grid-template-columns:1fr 1fr">
+  <div style="background:var(--soft);display:grid;place-items:center;padding:clamp(20px,2.6vw,44px);position:relative">
+    <div style="position:absolute;top:24px;left:28px" class="label">1970</div>
+    <img src="img/pele.jpg" alt="" style="max-width:88%;max-height:calc(100vh - 200px);object-fit:contain;box-shadow:0 20px 55px rgba(26,22,15,.18)">
+    <div style="position:absolute;bottom:22px;left:28px;right:28px;display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:var(--serif);font-size:clamp(15px,1.5vw,22px)">Пеле</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.3vw,18px)">450 000 ₽</span></div>
+  </div>
+  <div style="background:#fff;display:grid;place-items:center;padding:clamp(20px,2.6vw,44px);position:relative;border-left:1px solid var(--hair)">
+    <div style="position:absolute;top:24px;left:28px" class="label">2026</div>
+    <img src="img/yamal.jpg" alt="" style="max-width:88%;max-height:calc(100vh - 200px);object-fit:contain;box-shadow:0 20px 55px rgba(26,22,15,.14)">
+    <div style="position:absolute;bottom:22px;left:28px;right:28px;display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:var(--serif);font-size:clamp(15px,1.5vw,22px)">Ламин Ямаль</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.3vw,18px)">360 000 ₽</span></div>
+    <div style="position:absolute;top:50%;left:-24px;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;background:var(--bk);color:var(--gold-lt);display:grid;place-items:center;font-family:var(--serif);font-size:18px;border:1px solid var(--gold)">×</div>
+  </div>
+</section>
+
+<!-- n18 ПОДАРОЧНЫЙ СЦЕНАРИЙ -->
+<section class="slide" id="n18" style="grid-template-columns:1fr 1.25fr">
+  <div style="overflow:hidden;position:relative">
+    <img src="img_spring/grace_wedding.jpg" alt="" style="width:100%;height:100%;object-fit:cover">
+    <div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.66));padding:22px 26px">
+      <div class="label" style="color:#E8D9B8">Сценарий подарка</div>
+      <h2 style="color:#fff;font-size:clamp(19px,2vw,30px);margin-top:4px">Годовщина свадьбы</h2>
+    </div>
+  </div>
+  <div style="padding:clamp(24px,3vw,52px);display:flex;flex-direction:column;justify-content:center;gap:2vh">
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.4vw,20px);color:#4A463F;line-height:1.7">За ужином — коробка с открыткой Грейс Келли: «У всех великих пар есть свои реликвии. Теперь и у нас».</p>
+    <div style="display:grid;gap:1.3vh">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.2vh"><span style="font-size:clamp(11.5px,1vw,14px)"><b style="font-weight:500">Жест</b> — открытка Грейс Келли с автографом</span><span style="font-family:var(--serif);color:var(--gold)">450 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.2vh"><span style="font-size:clamp(11.5px,1vw,14px)"><b style="font-weight:500">История</b> — телеграмма со свадьбы Карла и Дианы</span><span style="font-family:var(--serif);color:var(--gold)">1 250 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.2vh"><span style="font-size:clamp(11.5px,1vw,14px)"><b style="font-weight:500">Наследие</b> — рисунок Шагала, который останется детям</span><span style="font-family:var(--serif);color:var(--gold)">2 000 000 ₽</span></div>
+    </div>
+    <p style="font-size:clamp(10px,.88vw,12px);color:var(--grey);line-height:1.65">Формат «сценарий»: не список лотов, а готовое решение — что дарить, как вручить и что сказать. Три уровня бюджета на один повод.</p>
+  </div>
+</section>
+
+<!-- n19 ЦИТАТА ГЕРОЯ -->
+<section class="slide bk" id="n19" style="grid-template-columns:1fr 1fr">
+  <div style="padding:clamp(30px,4vw,70px);display:flex;flex-direction:column;justify-content:center">
+    <div class="label">Слова и вещь</div>
+    <h2 style="font-family:var(--serif);font-weight:400;color:#fff;font-size:clamp(24px,2.8vw,44px);line-height:1.25;margin-top:2.4vh">«Порхай как бабочка,<br>жаль как пчела»</h2>
+    <div style="font-size:clamp(10px,.9vw,13px);color:var(--bk-muted);margin-top:1.6vh;letter-spacing:.08em">МУХАММЕД АЛИ · 1964</div>
+    <div style="border-top:1px solid var(--bk-line);margin-top:4vh;padding-top:2.6vh;display:flex;justify-content:space-between;align-items:baseline">
+      <div><div style="font-family:var(--serif);font-size:clamp(15px,1.5vw,22px);color:#fff">Статуэтка с автографом Али</div><div style="font-size:clamp(10px,.88vw,12px);color:var(--bk-muted);margin-top:4px">Экспертиза подписи · подставка в комплекте</div></div>
+      <div style="font-family:var(--serif);font-size:clamp(20px,2.2vw,34px);color:var(--gold-lt)">900 000 ₽</div>
+    </div>
+  </div>
+  <div style="overflow:hidden"><img src="img_spring/ali_statue.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+</section>
+
+<!-- n20 СВЕТЛАЯ ОБЛОЖКА -->
+<section class="slide center" id="n20">
+  <div>
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:clamp(84px,11vw,150px);margin:0 auto">
+    <div class="label" style="margin-top:1.6vh">Подарок для того, у кого есть всё</div>
+    <div style="width:76px;height:1px;background:var(--gold);margin:4.5vh auto"></div>
+    <h1 style="font-size:clamp(34px,4.4vw,68px)">Летний каталог 2026</h1>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(15px,1.7vw,24px);color:var(--gold);margin-top:1.8vh">Свадебный сезон · чемпионат мира · великие имена</p>
+    <div class="label" style="margin-top:5vh;color:var(--grey)">Альтернатива тёмной обложке — для дневных и весенних выпусков</div>
+  </div>
+</section>
+
+</div>
+<script>
+const h=location.hash.slice(1);
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===h || (!h && s.id==='n01')));
+addEventListener('hashchange',()=>{const h=location.hash.slice(1);document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===h));});
+</script>
+</body>
+</html>
