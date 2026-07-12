@@ -1,0 +1,173 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STARGIFT — Недра. Подборка для людей нефти</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:#1A1A1A; --paper:#FFFFFF; --soft:#F7F5F1; --gold:#A98545; --gold-lt:#C9A96A;
+  --grey:#6F6A62; --hair:rgba(169,133,69,.35); --hair-lt:rgba(169,133,69,.18);
+  --bk:#0B0B0C; --coal:#131315; --bk-ivory:#F5F1E8; --bk-muted:#8E8A82; --bk-line:rgba(201,169,106,.32);
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',-apple-system,'Segoe UI',sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; overflow:hidden; background:#000; }
+body { font-family:var(--sans); font-weight:300; color:var(--ink); }
+.deck { height:100%; position:relative; }
+.slide { position:absolute; inset:0; display:none; overflow:hidden; background:var(--paper); }
+.slide.on { display:grid; }
+h1,h2,h3 { font-family:var(--serif); font-weight:400; line-height:1.05; }
+img { display:block; }
+a.lnk { color:inherit; text-decoration:none; border-bottom:1px dotted rgba(169,133,69,.55); }
+.label { font-size:clamp(9px,.8vw,12px); font-weight:500; letter-spacing:.3em; text-transform:uppercase; color:var(--gold); }
+.bk { background:var(--bk); color:var(--bk-ivory); }
+.bk .label { color:var(--gold-lt); }
+.mat { background:#fff; border:1px solid var(--hair-lt); box-shadow:0 14px 44px rgba(26,22,15,.10); padding:clamp(10px,1.1vw,18px); }
+.mat img { width:100%; object-fit:cover; display:block; }
+.credit { position:absolute; right:16px; bottom:10px; z-index:5; font-size:9px; letter-spacing:.08em; color:rgba(120,114,104,.8); }
+/* паспорт экспоната */
+.pass { display:grid; gap:0; border-top:1px solid var(--hair); }
+.pass .row { display:grid; grid-template-columns:150px 1fr; gap:18px; padding:1.4vh 0; border-bottom:1px solid var(--hair-lt); }
+.pass .k { font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:var(--grey); padding-top:3px; }
+.pass .v { font-size:clamp(11.5px,1vw,14px); color:#2E2B26; line-height:1.55; }
+.pass .v.big { font-family:var(--serif); font-size:clamp(20px,2vw,30px); color:var(--gold); }
+/* таймлайн */
+.tl { position:relative; }
+.tl .line { position:absolute; left:4%; right:4%; top:50%; height:1px; background:linear-gradient(90deg,transparent,var(--gold) 8%,var(--gold) 92%,transparent); }
+.tl .pt { position:absolute; top:50%; width:9px; height:9px; border-radius:50%; background:var(--bk); border:2px solid var(--gold); transform:translate(-50%,-50%); }
+</style>
+</head><body><div class="deck">
+
+<!-- p01 ОБЛОЖКА -->
+<section class="slide bk" id="p01" style="grid-template-columns:1fr">
+  <div style="position:relative;overflow:hidden">
+    <img src="img_site/gubkin_coll.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5">
+    <div style="position:absolute;inset:0;background:linear-gradient(105deg,rgba(11,11,12,.94) 34%,rgba(11,11,12,.35) 75%,rgba(11,11,12,.15))"></div>
+    <div style="position:absolute;left:clamp(28px,4.4vw,80px);top:50%;transform:translateY(-50%);max-width:56%">
+      <div class="label">Stargift · профессиональная подборка</div>
+      <h1 style="font-size:clamp(38px,5.4vw,86px);color:#fff;margin:2vh 0 1.2vh">Недра</h1>
+      <p style="font-family:var(--serif);font-style:italic;font-size:clamp(15px,1.7vw,25px);color:var(--gold-lt)">Людям нефти и земли — от Менделеева до Губкина</p>
+      <p style="font-size:clamp(10.5px,.95vw,13.5px);color:var(--bk-muted);line-height:1.85;max-width:46ch;margin-top:2.4vh">Семь подлинных вещей о том, как Россия научилась находить и понимать нефть. Подарок для того, у кого есть всё.</p>
+    </div>
+  </div>
+</section>
+
+<!-- p02 ЛЕГЕНДА ТЕМЫ · МЕНДЕЛЕЕВ -->
+<section class="slide" id="p02" style="grid-template-columns:1fr 1.3fr;background:var(--paper)">
+  <div style="position:relative;overflow:hidden;background:var(--soft)">
+    <img src="img_site/wiki_mendeleev.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 12%;filter:grayscale(.15)">
+    <div class="credit" style="color:rgba(255,255,255,.7);text-shadow:0 1px 4px rgba(0,0,0,.6)">архив: Wikimedia Commons · public domain</div>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(28px,3.8vw,70px)">
+    <div style="font-family:var(--serif);font-style:italic;font-size:clamp(13px,1.35vw,20px);color:var(--gold)">Отец русской нефтехимии</div>
+    <h2 style="font-size:clamp(27px,3.3vw,52px);margin:1.6vh 0">«Нефть — не топливо.<br>Топить можно и ассигнациями»</h2>
+    <p style="font-size:clamp(11.5px,1vw,14.5px);color:#4A463F;line-height:1.85;max-width:52ch;margin-top:1vh">Менделеев первым предложил нефтепровод и переработку вместо простого сжигания. Губкин нашёл Второе Баку. В этой подборке — их собственные руки: чертёж, перечень минералов, дарственные надписи.</p>
+    <div style="width:64px;height:1px;background:var(--gold);margin-top:3.2vh"></div>
+  </div>
+</section>
+
+<!-- p03 НОВЫЙ ФОРМАТ · ПАСПОРТ ЭКСПОНАТА -->
+<section class="slide" id="p03" style="grid-template-columns:1.08fr 1fr;background:var(--paper)">
+  <div style="background:var(--soft);display:grid;place-items:center;padding:clamp(22px,2.8vh,44px)">
+    <div class="mat" style="max-width:92%"><img src="img_site/mendeleev_chart.jpg" alt="" style="aspect-ratio:4/3"></div>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,3.2vw,58px)">
+    <div class="label">Паспорт экспоната · № 1 подборки</div>
+    <h2 style="font-size:clamp(24px,2.7vw,42px);margin:1.4vh 0 2.2vh"><a class="lnk" href="https://stargift.ru/product/745638042362-dmitriy-mendeleev">Дмитрий Менделеев</a></h2>
+    <div class="pass">
+      <div class="row"><div class="k">Предмет</div><div class="v">Собственноручный чертёж с рукописными заметками и автографом</div></div>
+      <div class="row"><div class="k">Автор</div><div class="v">Д. И. Менделеев, создатель периодической системы</div></div>
+      <div class="row"><div class="k">Подлинность</div><div class="v">Экспертиза и сертификат Stargift</div></div>
+      <div class="row"><div class="k">Кому дарят</div><div class="v">Руководителю в ТЭК, учёному, человеку недр</div></div>
+      <div class="row"><div class="k">Стоимость</div><div class="v big">8 000 000 ₽</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- p04 ГУБКИН · ДВА СОБРАНИЯ -->
+<section class="slide" id="p04" style="grid-template-columns:1fr 1.35fr;background:var(--paper)">
+  <div style="padding:clamp(28px,3.6vw,64px);display:flex;flex-direction:column;justify-content:center;background:var(--soft)">
+    <div style="font-family:var(--serif);font-style:italic;font-size:clamp(13px,1.3vw,19px);color:var(--gold)">Главный геолог страны</div>
+    <h2 style="font-size:clamp(26px,3.2vw,50px);margin:1.6vh 0">Иван Губкин</h2>
+    <p style="font-size:clamp(11.5px,1vw,14.5px);color:#4A463F;line-height:1.85;max-width:44ch">Человек, который предсказал башкирскую нефть. Две его минералогические коллекции — с рукописным перечнем образцов и автографом.</p>
+  </div>
+  <div style="padding:clamp(20px,2.4vw,40px);display:grid;grid-template-rows:minmax(0,1fr) minmax(0,1fr);gap:clamp(10px,1.2vw,18px);align-content:center;min-height:0">
+    <div><div class="mat"><img src="img_site/gubkin_coll.jpg" alt="" style="aspect-ratio:16/6.9"></div><div style="padding:1vh 4px 0;display:flex;justify-content:space-between;gap:14px;align-items:baseline"><span style="font-family:var(--serif);font-size:clamp(12.5px,1.2vw,17px)"><a class="lnk" href="https://stargift.ru/product/sg_1775384132_59cb2800-ivan-gubkin">Минералогическая коллекция с рукописным перечнем и автографом</a></span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.3vw,18px);white-space:nowrap">7 000 000 ₽</span></div></div>
+    <div><div class="mat"><img src="img_site/gubkin_coll2.jpg" alt="" style="aspect-ratio:16/6.9"></div><div style="padding:1vh 4px 0;display:flex;justify-content:space-between;gap:14px;align-items:baseline"><span style="font-family:var(--serif);font-size:clamp(12.5px,1.2vw,17px)"><a class="lnk" href="https://stargift.ru/product/sg_1775387823_d42fa9a2-ivan-gubkin">Минералогическая коллекция и каталог с рукописной пометкой</a></span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.3vw,18px);white-space:nowrap">5 000 000 ₽</span></div></div>
+  </div>
+</section>
+
+<!-- p05 НОВЫЙ ФОРМАТ · ТАЙМЛАЙН -->
+<section class="slide bk" id="p05" style="grid-template-rows:auto minmax(0,1fr)">
+  <div style="padding:clamp(24px,3.6vh,44px) clamp(28px,4vw,72px) 0">
+    <div class="label">История отрасли — в подлинниках</div>
+    <h2 style="font-size:clamp(24px,2.8vw,44px);color:#fff;margin-top:1.2vh">От чертежа до трубопровода</h2>
+  </div>
+  <div class="tl" style="min-height:0">
+    <div class="line"></div>
+    <div class="pt" style="left:14%"></div>
+    <div class="pt" style="left:38%"></div>
+    <div class="pt" style="left:62%"></div>
+    <div class="pt" style="left:86%"></div>
+    <!-- верхний ряд -->
+    <div style="position:absolute;left:14%;bottom:54%;transform:translateX(-50%);width:20%;text-align:center">
+      <div class="mat" style="padding:7px;background:#101011;border-color:var(--bk-line)"><img src="img_site/mendeleev_chart.jpg" alt="" style="aspect-ratio:4/3"></div>
+      <div style="font-family:var(--serif);font-size:clamp(11px,1.1vw,15px);color:#fff;margin-top:8px"><a class="lnk" href="https://stargift.ru/product/745638042362-dmitriy-mendeleev">Чертёж Менделеева</a></div>
+      <div style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(10.5px,1vw,14px)">8 000 000 ₽</div>
+    </div>
+    <div style="position:absolute;left:62%;bottom:54%;transform:translateX(-50%);width:20%;text-align:center">
+      <div class="mat" style="padding:7px;background:#101011;border-color:var(--bk-line)"><img src="img_site/neft_pipe.jpg" alt="" style="aspect-ratio:4/3"></div>
+      <div style="font-family:var(--serif);font-size:clamp(11px,1.1vw,15px);color:#fff;margin-top:8px"><a class="lnk" href="https://stargift.ru/product/687822076882-ekonomicheskiy-raschet-nefteprovoda">«Экономический расчёт нефтепровода», 1932</a></div>
+      <div style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(10.5px,1vw,14px)">150 000 ₽</div>
+    </div>
+    <!-- нижний ряд -->
+    <div style="position:absolute;left:38%;top:54%;transform:translateX(-50%);width:20%;text-align:center">
+      <div class="mat" style="padding:7px;background:#101011;border-color:var(--bk-line)"><img src="img_site/gubkin_domino.jpg" alt="" style="aspect-ratio:4/3"></div>
+      <div style="font-family:var(--serif);font-size:clamp(11px,1.1vw,15px);color:#fff;margin-top:8px"><a class="lnk" href="https://stargift.ru/product/256028873202-ivan-gubkin">Домино Губкина с дарственной</a></div>
+      <div style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(10.5px,1vw,14px)">1 500 000 ₽</div>
+    </div>
+    <div style="position:absolute;left:86%;top:54%;transform:translateX(-50%);width:20%;text-align:center">
+      <div class="mat" style="padding:7px;background:#101011;border-color:var(--bk-line)"><img src="img_site/neft_book.jpg" alt="" style="aspect-ratio:4/3"></div>
+      <div style="font-family:var(--serif);font-size:clamp(11px,1.1vw,15px);color:#fff;margin-top:8px"><a class="lnk" href="https://stargift.ru/product/661813000382-knizhka-pro-neft">«Книжка про нефть», 1934</a></div>
+      <div style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(10.5px,1vw,14px)">150 000 ₽</div>
+    </div>
+  </div>
+</section>
+
+<!-- p06 НОВЫЙ ФОРМАТ · ЛЕСТНИЦА ЦЕН -->
+<section class="slide" id="p06" style="grid-template-columns:1fr;background:var(--paper)">
+  <div style="padding:clamp(26px,3.6vh,48px) clamp(30px,4.4vw,84px);display:flex;flex-direction:column;justify-content:center">
+    <div class="label">Вся подборка · от жеста до статуса</div>
+    <h2 style="font-size:clamp(24px,2.8vw,44px);margin:1.4vh 0 3vh">Семь недр — по возрастанию</h2>
+    <div style="display:grid;gap:1.55vh">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:18px;border-bottom:1px solid var(--hair-lt);padding-bottom:1.2vh;margin-right:36%"><span style="font-size:clamp(11px,.98vw,14px)"><a class="lnk" href="https://stargift.ru/product/661813000382-knizhka-pro-neft">«Книжка про нефть»</a> — Москва, 1934</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.25vw,18px);white-space:nowrap">150 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:18px;border-bottom:1px solid var(--hair-lt);padding-bottom:1.2vh;margin-right:30%"><span style="font-size:clamp(11px,.98vw,14px)"><a class="lnk" href="https://stargift.ru/product/687822076882-ekonomicheskiy-raschet-nefteprovoda">«Экономический расчёт нефтепровода»</a> — Притула А.Ф., 1932</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.25vw,18px);white-space:nowrap">150 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:18px;border-bottom:1px solid var(--hair-lt);padding-bottom:1.2vh;margin-right:24%"><span style="font-size:clamp(11px,.98vw,14px)"><a class="lnk" href="https://stargift.ru/product/256028873202-ivan-gubkin">Иван Губкин</a> — Карманное домино с дарственной надписью и автографом</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.25vw,18px);white-space:nowrap">1 500 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:18px;border-bottom:1px solid var(--hair-lt);padding-bottom:1.2vh;margin-right:18%"><span style="font-size:clamp(11px,.98vw,14px)"><a class="lnk" href="https://stargift.ru/product/304525070362-dmitriy-mendeleev">Дмитрий Менделеев</a> — Документ с дарственной надписью и автографом</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.25vw,18px);white-space:nowrap">1 800 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:18px;border-bottom:1px solid var(--hair-lt);padding-bottom:1.2vh;margin-right:12%"><span style="font-size:clamp(11px,.98vw,14px)"><a class="lnk" href="https://stargift.ru/product/sg_1775387823_d42fa9a2-ivan-gubkin">Иван Губкин</a> — Минералогическая коллекция и каталог с пометкой</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.25vw,18px);white-space:nowrap">5 000 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:18px;border-bottom:1px solid var(--hair-lt);padding-bottom:1.2vh;margin-right:6%"><span style="font-size:clamp(11px,.98vw,14px)"><a class="lnk" href="https://stargift.ru/product/sg_1775384132_59cb2800-ivan-gubkin">Иван Губкин</a> — Минералогическая коллекция с рукописным перечнем</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.25vw,18px);white-space:nowrap">7 000 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:18px;border-bottom:1px solid var(--hair);padding-bottom:1.2vh"><span style="font-size:clamp(11.5px,1.05vw,15px);font-weight:400"><a class="lnk" href="https://stargift.ru/product/745638042362-dmitriy-mendeleev">Дмитрий Менделеев</a> — Собственноручный чертёж с заметками и автографом</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(16px,1.6vw,23px);white-space:nowrap">8 000 000 ₽</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- p07 ПРОМО + КОНТАКТЫ -->
+<section class="slide bk" id="p07" style="grid-template-columns:1fr">
+  <div style="display:grid;place-items:center;text-align:center;padding:clamp(30px,5vw,90px)">
+    <div style="max-width:900px">
+      <div class="label">Stargift · подарки со смыслом</div>
+      <h2 style="font-size:clamp(26px,3.4vw,54px);color:#fff;margin:2.2vh 0">Подарок человеку,<br>который находит ценное под землёй</h2>
+      <p style="font-family:var(--serif);font-style:italic;font-size:clamp(15px,1.7vw,24px);color:var(--gold-lt);margin-top:1.2vh">Такой подарок не сравнивают по цене. Его пересказывают.</p>
+      <div style="margin-top:5vh;font-size:clamp(11px,.95vw,13.5px);color:var(--bk-muted);line-height:2">Кутузовский проспект, 48 · Галереи «Времена года» &nbsp;—&nbsp; Большая Якиманка, 22 · ТЦ «Гименей» &nbsp;—&nbsp; Барвиха · ТЦ «Дрим Хаус»</div>
+      <div class="label" style="margin-top:2.4vh;color:var(--gold-lt)">stargift.ru · +7 495 233-51-11 · t.me/stargift_collection</div>
+    </div>
+  </div>
+</section>
+
+</div>
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^p/,'');const id=n?('p'+n.padStart(2,'0')):'p01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));
+scrollTo(0,0);document.body.scrollTop=0;document.documentElement.scrollTop=0;}
+show();addEventListener('hashchange',show);
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
+</body></html>

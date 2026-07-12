@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STARGIFT — Капитаны индустрии</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:#1A1A1A; --paper:#FFFFFF; --soft:#F7F5F1; --gold:#A98545; --gold-lt:#C9A96A;
+  --grey:#6F6A62; --hair:rgba(169,133,69,.35); --hair-lt:rgba(169,133,69,.18);
+  --bk:#0B0B0C; --coal:#131315; --bk-ivory:#F5F1E8; --bk-muted:#8E8A82; --bk-line:rgba(201,169,106,.32);
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',-apple-system,'Segoe UI',sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; overflow:hidden; background:#000; }
+body { font-family:var(--sans); font-weight:300; color:var(--ink); }
+.deck { height:100%; position:relative; }
+.slide { position:absolute; inset:0; display:none; overflow:hidden; background:var(--paper); }
+.slide.on { display:grid; }
+h1,h2,h3 { font-family:var(--serif); font-weight:400; line-height:1.05; }
+img { display:block; }
+a.lnk { color:inherit; text-decoration:none; border-bottom:1px dotted rgba(169,133,69,.55); }
+.label { font-size:clamp(9px,.8vw,12px); font-weight:500; letter-spacing:.3em; text-transform:uppercase; color:var(--gold); }
+.bk { background:var(--bk); color:var(--bk-ivory); }
+.bk .label { color:var(--gold-lt); }
+.mat { background:#fff; border:1px solid var(--hair-lt); box-shadow:0 14px 44px rgba(26,22,15,.10); padding:clamp(10px,1.1vw,18px); }
+.mat img { width:100%; object-fit:cover; display:block; }
+/* газетная передовица */
+.news h2 { letter-spacing:-.01em; }
+.news .col { border-left:1px solid var(--hair-lt); padding-left:clamp(14px,1.6vw,26px); }
+.news .col:first-child { border-left:none; padding-left:0; }
+.news .headline { font-family:var(--serif); font-size:clamp(14px,1.4vw,20px); line-height:1.2; }
+.news .body { font-size:clamp(10px,.88vw,12.5px); color:#4A463F; line-height:1.7; margin-top:1vh; }
+.news .price { font-family:var(--serif); color:var(--gold); font-size:clamp(13px,1.3vw,18px); margin-top:1.2vh; }
+/* лестница */
+.step { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:18px; align-items:baseline; border-bottom:1px solid var(--bk-line); padding-bottom:1.3vh; }
+</style>
+</head><body><div class="deck">
+
+<!-- i01 ОБЛОЖКА -->
+<section class="slide bk" id="i01" style="grid-template-columns:1fr">
+  <div style="position:relative;overflow:hidden">
+    <img src="img_site/jobs.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42;object-position:center 35%">
+    <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(11,11,12,.95) 36%,rgba(11,11,12,.4) 72%,rgba(11,11,12,.2))"></div>
+    <div style="position:absolute;left:clamp(28px,4.4vw,80px);top:50%;transform:translateY(-50%);max-width:58%">
+      <div class="label">Stargift · профессиональная подборка</div>
+      <h1 style="font-size:clamp(34px,4.8vw,76px);color:#fff;margin:2vh 0 1.2vh">Капитаны индустрии</h1>
+      <p style="font-family:var(--serif);font-style:italic;font-size:clamp(15px,1.7vw,25px);color:var(--gold-lt)">Деловому партнёру — вещи людей, которые построили новое время</p>
+      <p style="font-size:clamp(10.5px,.95vw,13.5px);color:var(--bk-muted);line-height:1.85;max-width:46ch;margin-top:2.4vh">Форд и Нобель, Джобс и Гейтс. Автографы и предметы тех, чьи решения меняли рынки на век вперёд.</p>
+    </div>
+  </div>
+</section>
+
+<!-- i02 НОВЫЙ ФОРМАТ · ГАЗЕТНАЯ ПЕРЕДОВИЦА -->
+<section class="slide news" id="i02" style="grid-template-rows:auto auto minmax(0,1fr);background:var(--paper)">
+  <div style="padding:clamp(22px,3.2vh,40px) clamp(30px,4.4vw,84px) 0;text-align:center;border-bottom:2px solid var(--ink);margin:0 clamp(30px,4.4vw,84px)">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--grey)"><span>Собрание Stargift</span><span>Подборка для деловых людей</span></div>
+    <h2 style="font-size:clamp(30px,4vw,62px);margin:1.6vh 0 1.8vh">Люди, которые построили XX век</h2>
+  </div>
+  <div style="margin:0 clamp(30px,4.4vw,84px);border-bottom:1px solid var(--hair);padding:.8vh 0;text-align:center;font-family:var(--serif);font-style:italic;font-size:clamp(11px,1.05vw,15px);color:var(--grey)">Их подписи — на документах эпохи. Теперь одна из них может стоять в кабинете вашего партнёра.</div>
+  <div style="display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:clamp(14px,1.8vw,30px);padding:clamp(14px,2vh,26px) clamp(30px,4.4vw,84px) clamp(20px,3vh,36px);min-height:0">
+    <div class="col" style="display:flex;flex-direction:column">
+      <div class="mat" style="padding:8px"><img src="img_site/ford.jpg" alt="" style="aspect-ratio:16/8.6"></div>
+      <div class="headline" style="margin-top:1.4vh"><a class="lnk" href="https://stargift.ru/product/796858694232-genri-ford">Генри Форд</a> — конвейер, который довёз всех</div>
+      <div class="body">Фото с автографом человека, сделавшего автомобиль предметом быта, а не роскоши. Подпись Форда — редкость: он не любил раздавать её.</div>
+      <div class="price">1 300 000 ₽</div>
+    </div>
+    <div class="col" style="display:flex;flex-direction:column">
+      <div class="mat" style="padding:8px"><img src="img_site/nobel.jpg" alt="" style="aspect-ratio:16/8.6"></div>
+      <div class="headline" style="margin-top:1.4vh"><a class="lnk" href="https://stargift.ru/product/356441211812-alfred-nobel">Альфред Нобель</a> — имя, ставшее премией</div>
+      <div class="body">Конверт, подписанный рукой основателя самой известной награды мира. Химик, инженер, промышленник — и вечное имя.</div>
+      <div class="price">1 000 000 ₽</div>
+    </div>
+    <div class="col" style="display:flex;flex-direction:column">
+      <div class="mat" style="padding:8px"><img src="img_site/gates.jpg" alt="" style="aspect-ratio:16/8.6"></div>
+      <div class="headline" style="margin-top:1.4vh"><a class="lnk" href="https://stargift.ru/product/780436808771-bill-geyts">Билл Гейтс</a> — окно в цифровой век</div>
+      <div class="body">Фото с автографом сооснователя Microsoft. Для партнёра из IT — почти семейная реликвия.</div>
+      <div class="price">450 000 ₽</div>
+    </div>
+  </div>
+</section>
+
+<!-- i03 ТОП-ЛОТ · ДЖОБС APPLE II -->
+<section class="slide bk" id="i03" style="grid-template-columns:1.15fr 1fr">
+  <div style="position:relative;overflow:hidden"><img src="img_site/jobs.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,3.4vw,60px);border-left:1px solid var(--bk-line)">
+    <div class="label">Топ-лот подборки</div>
+    <h2 style="font-size:clamp(26px,3vw,46px);color:#fff;margin:1.6vh 0 .6vh"><a class="lnk" href="https://stargift.ru/product/792080275601-stiv-dzhobs">Стив Джобс</a></h2>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.45vw,21px);color:var(--gold-lt)">Ранний компьютер Apple II</p>
+    <p style="font-size:clamp(11px,.95vw,13.5px);color:var(--bk-muted);line-height:1.8;max-width:44ch;margin-top:2.2vh">Машина, с которой начался персональный компьютер — и вся индустрия, в которой мы живём. Предмет уровня музея техники, доступный в частную коллекцию.</p>
+    <div style="display:flex;align-items:baseline;gap:16px;border-top:1px solid var(--bk-line);padding-top:2vh;margin-top:2.6vh"><span style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--bk-muted)">Стоимость</span><span style="font-family:var(--serif);font-size:clamp(22px,2.3vw,34px);color:var(--gold-lt)">35 000 000 ₽</span></div>
+  </div>
+</section>
+
+<!-- i04 НОВЫЙ ФОРМАТ · ЛЕСТНИЦА ЦЕН НА ЧЁРНОМ -->
+<section class="slide bk" id="i04" style="grid-template-columns:1fr">
+  <div style="padding:clamp(26px,3.6vh,48px) clamp(30px,4.4vw,84px);display:flex;flex-direction:column;justify-content:center">
+    <div class="label">Один жест — пять масштабов</div>
+    <h2 style="font-size:clamp(24px,2.8vw,44px);color:#fff;margin:1.4vh 0 3.4vh">Лестница подарка</h2>
+    <div style="display:grid;gap:1.8vh">
+      <div class="step" style="margin-right:44%"><span style="font-size:clamp(11px,.98vw,14px);color:#F5F1E8"><a class="lnk" href="https://stargift.ru/product/780436808771-bill-geyts">Билл Гейтс</a> — Фото с автографом</span><span style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(13px,1.3vw,18px)">450 000 ₽</span></div>
+      <div class="step" style="margin-right:33%"><span style="font-size:clamp(11px,.98vw,14px);color:#F5F1E8"><a class="lnk" href="https://stargift.ru/product/356441211812-alfred-nobel">Альфред Нобель</a> — Конверт с автографом</span><span style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(13px,1.3vw,18px)">1 000 000 ₽</span></div>
+      <div class="step" style="margin-right:22%"><span style="font-size:clamp(11px,.98vw,14px);color:#F5F1E8"><a class="lnk" href="https://stargift.ru/product/796858694232-genri-ford">Генри Форд</a> — Фото с автографом</span><span style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(13px,1.3vw,18px)">1 300 000 ₽</span></div>
+      <div class="step" style="margin-right:11%"><span style="font-size:clamp(11px,.98vw,14px);color:#F5F1E8"><a class="lnk" href="https://stargift.ru/product/841470036872-petr-stolypin">Пётр Столыпин</a> — Собственноручная записка с обращением</span><span style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(13px,1.3vw,18px)">2 200 000 ₽</span></div>
+      <div class="step"><span style="font-size:clamp(11.5px,1.08vw,15.5px);color:#fff"><a class="lnk" href="https://stargift.ru/product/792080275601-stiv-dzhobs">Стив Джобс</a> — Ранний компьютер Apple II</span><span style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(17px,1.7vw,25px)">35 000 000 ₽</span></div>
+    </div>
+    <p style="font-size:clamp(9.5px,.82vw,11.5px);color:var(--bk-muted);margin-top:3vh">Каждая строка — ссылка на лот. Личный менеджер подберёт уровень под повод.</p>
+  </div>
+</section>
+
+<!-- i05 ПРОМО + КОНТАКТЫ -->
+<section class="slide bk" id="i05" style="grid-template-columns:1fr">
+  <div style="display:grid;place-items:center;text-align:center;padding:clamp(30px,5vw,90px)">
+    <div style="max-width:920px">
+      <div class="label">Stargift · подарки со смыслом</div>
+      <h2 style="font-size:clamp(26px,3.4vw,54px);color:#fff;margin:2.2vh 0">Представьте это на подписании сделки</h2>
+      <p style="font-family:var(--serif);font-style:italic;font-size:clamp(15px,1.7vw,24px);color:var(--gold-lt);margin-top:1.2vh">Конверт Нобеля вместо сувенирной ручки.<br>Партнёр запомнит этот день — и вас.</p>
+      <div style="margin-top:5vh;font-size:clamp(11px,.95vw,13.5px);color:var(--bk-muted);line-height:2">Кутузовский проспект, 48 · Галереи «Времена года» &nbsp;—&nbsp; Большая Якиманка, 22 · ТЦ «Гименей» &nbsp;—&nbsp; Барвиха · ТЦ «Дрим Хаус»</div>
+      <div class="label" style="margin-top:2.4vh;color:var(--gold-lt)">stargift.ru · +7 495 233-51-11 · t.me/stargift_collection</div>
+    </div>
+  </div>
+</section>
+
+</div>
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^i/,'');const id=n?('i'+n.padStart(2,'0')):'i01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));
+scrollTo(0,0);document.body.scrollTop=0;document.documentElement.scrollTop=0;}
+show();addEventListener('hashchange',show);
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
+</body></html>
