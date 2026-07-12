@@ -1,0 +1,159 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STARGIFT — Кино. Каталог-подборка</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:#1A1A1A; --paper:#FFFFFF; --soft:#F7F5F1; --gold:#A98545; --gold-lt:#C9A96A;
+  --grey:#6F6A62; --hair:rgba(169,133,69,.35); --hair-lt:rgba(169,133,69,.18);
+  --bk:#0B0B0C; --coal:#131315; --bk-ivory:#F5F1E8; --bk-muted:#8E8A82; --bk-line:rgba(201,169,106,.32);
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',-apple-system,'Segoe UI',sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; overflow:hidden; background:#000; }
+body { font-family:var(--sans); font-weight:300; color:var(--ink); }
+.deck { height:100%; position:relative; }
+.slide { position:absolute; inset:0; display:none; overflow:hidden; background:var(--paper); }
+.slide.on { display:grid; }
+h1,h2,h3 { font-family:var(--serif); font-weight:400; line-height:1.05; }
+img { display:block; }
+a.lnk { color:inherit; text-decoration:none; border-bottom:1px dotted rgba(169,133,69,.55); }
+.label { font-size:clamp(9px,.8vw,12px); font-weight:500; letter-spacing:.3em; text-transform:uppercase; color:var(--gold); }
+.bk { background:var(--bk); color:var(--bk-ivory); }
+.bk .label { color:var(--gold-lt); }
+.mat { background:#fff; border:1px solid var(--hair-lt); box-shadow:0 14px 44px rgba(26,22,15,.10); padding:clamp(10px,1.1vw,18px); }
+.mat img { width:100%; object-fit:cover; display:block; }
+.cap { padding:1.2vh 4px 0; }
+.cap .nm { font-family:var(--serif); font-size:clamp(13px,1.25vw,18px); }
+.cap .tp { font-size:clamp(9.5px,.82vw,12px); color:var(--grey); margin-top:2px; }
+.cap .pr { font-family:var(--serif); font-size:clamp(12.5px,1.15vw,17px); color:var(--gold); margin-top:4px; }
+.credit { position:absolute; right:16px; bottom:10px; z-index:5; font-size:9px; letter-spacing:.08em; color:rgba(255,255,255,.6); text-shadow:0 1px 4px rgba(0,0,0,.55); }
+.frame-dark { background:#0f0f10; border:1px solid rgba(201,169,106,.4); padding:clamp(8px,1vw,14px); }
+.frame-dark img { width:100%; display:block; }
+.fcap { font-size:9.5px; letter-spacing:.1em; color:rgba(245,241,232,.55); margin-top:7px; text-align:center; }
+</style>
+</head><body><div class="deck">
+
+<!-- c01 ОБЛОЖКА · ЗНАКОВЫЙ КАДР -->
+<section class="slide bk" id="c01" style="grid-template-columns:1fr 1.08fr">
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(28px,4.4vw,80px)">
+    <div class="label">Stargift · каталог-подборка</div>
+    <h1 style="font-size:clamp(38px,5.4vw,86px);color:#fff;margin:2vh 0 1.2vh">Кино</h1>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(15px,1.7vw,25px);color:var(--gold-lt)">Кадры, которые мы помним. Вещи, которые можно подарить</p>
+    <p style="font-size:clamp(10.5px,.95vw,13.5px);color:var(--bk-muted);line-height:1.85;max-width:46ch;margin-top:2.4vh">«Завтрак у Тиффани» и «Крёстный отец», Гарри Поттер и «Назад в будущее». Сценарии, постеры и автографы людей, придумавших наши любимые два часа.</p>
+  </div>
+  <div style="position:relative;overflow:hidden">
+    <img src="img_site/wiki_audrey.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 14%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.6),transparent 36%)"></div>
+    <div class="credit">Одри Хепбёрн, «Завтрак у Тиффани», 1961 · Wikimedia Commons · public domain</div>
+  </div>
+</section>
+
+<!-- c02 НОСТАЛЬГИЯ · ТРИ КАДРА ЗОЛОТОГО ВЕКА -->
+<section class="slide bk" id="c02" style="grid-template-rows:auto minmax(0,1fr)">
+  <div style="padding:clamp(24px,3.4vh,42px) clamp(28px,4vw,72px) 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 style="font-size:clamp(24px,2.8vw,44px);color:#fff">Золотой век — в трёх кадрах</h2>
+    <div class="label">Настроение подборки</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.8vw,30px);padding:clamp(16px,2.4vh,30px) clamp(28px,4vw,72px) clamp(20px,3vh,36px);align-content:center;min-height:0">
+    <div><div class="frame-dark"><img src="img_site/wiki_chaplin.jpg" alt="" style="aspect-ratio:3/3.2;object-fit:cover;object-position:center 15%"></div><div class="fcap">Чарли Чаплин · «Малыш», 1921</div></div>
+    <div><div class="frame-dark"><img src="img_site/wiki_casablanca.jpg" alt="" style="aspect-ratio:3/3.2;object-fit:cover"></div><div class="fcap">«Касабланка», 1942</div></div>
+    <div><div class="frame-dark"><img src="img_site/wiki_monroe.jpg" alt="" style="aspect-ratio:3/3.2;object-fit:cover;object-position:center 20%"></div><div class="fcap">Мэрилин Монро · «Джентльмены предпочитают блондинок», 1953</div></div>
+  </div>
+  <div class="credit">кадры: Wikimedia Commons · public domain</div>
+</section>
+
+<!-- c03 КЛАССИКА · КАДР + ДВА ЛОТА -->
+<section class="slide" id="c03" style="grid-template-columns:1fr 1.4fr;background:var(--paper)">
+  <div style="position:relative;overflow:hidden;background:var(--soft)">
+    <img src="img_site/wiki_chaplin.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 12%;filter:grayscale(.1)">
+    <div class="credit">«Малыш», 1921 · public domain</div>
+  </div>
+  <div style="padding:clamp(22px,2.8vw,48px);display:flex;flex-direction:column;justify-content:center">
+    <div class="label">Классика · немое кино и золотой Голливуд</div>
+    <h2 style="font-size:clamp(23px,2.6vw,40px);margin:1.4vh 0 2.4vh">С этого всё началось</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,32px)">
+      <div><div class="mat"><img src="img_site/chaplin_lot.jpg" alt="" style="aspect-ratio:4/3.3"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/704582569971-charli-chaplin">Чарли Чаплин</a></div><div class="tp">Фото с автографом</div><div class="pr">540 000 ₽</div></div></div>
+      <div><div class="mat"><img src="img_site/hepburn_lot.jpg" alt="" style="aspect-ratio:4/3.3"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/326991928512-odri-khepbern">Одри Хепбёрн</a></div><div class="tp">Фото с автографом</div><div class="pr">1 250 000 ₽</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- c04 КУЛЬТОВЫЕ СЦЕНАРИИ · КРЕСТ 2×2 -->
+<section class="slide" id="c04" style="grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2px;background:rgba(169,133,69,.55)">
+  <div style="background:var(--paper);display:grid;grid-template-rows:minmax(0,1fr) auto"><div style="position:relative;overflow:hidden;background:var(--soft)"><img src="img_site/tarantino_script.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:clamp(8px,1vw,16px)"></div>
+    <div style="padding:8px 14px 10px;border-top:1px solid var(--hair-lt)"><div style="font-family:var(--serif);font-size:clamp(11.5px,1.15vw,16px)"><a class="lnk" href="https://stargift.ru/product/895429086532-kventin-tarantino">Квентин Тарантино</a></div><div style="font-size:clamp(8.5px,.75vw,11px);color:var(--grey);margin-top:1px">Сценарий фильма «Криминальное чтиво» с автографом</div><div style="font-family:var(--serif);font-size:clamp(11px,1.05vw,15px);color:var(--gold);margin-top:2px">300 000 ₽</div></div></div>
+  <div style="background:var(--paper);display:grid;grid-template-rows:minmax(0,1fr) auto"><div style="position:relative;overflow:hidden;background:var(--soft)"><img src="img_site/hford_sw.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:clamp(8px,1vw,16px)"></div>
+    <div style="padding:8px 14px 10px;border-top:1px solid var(--hair-lt)"><div style="font-family:var(--serif);font-size:clamp(11.5px,1.15vw,16px)"><a class="lnk" href="https://stargift.ru/product/541138350512-kharrison-ford">Харрисон Форд</a></div><div style="font-size:clamp(8.5px,.75vw,11px);color:var(--grey);margin-top:1px">Сценарий фильма «Звёздные войны» с автографом</div><div style="font-family:var(--serif);font-size:clamp(11px,1.05vw,15px);color:var(--gold);margin-top:2px">630 000 ₽</div></div></div>
+  <div style="background:var(--paper);display:grid;grid-template-rows:minmax(0,1fr) auto"><div style="position:relative;overflow:hidden;background:var(--soft)"><img src="img_site/radcliffe_script.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:clamp(8px,1vw,16px)"></div>
+    <div style="padding:8px 14px 10px;border-top:1px solid var(--hair-lt)"><div style="font-family:var(--serif);font-size:clamp(11.5px,1.15vw,16px)"><a class="lnk" href="https://stargift.ru/product/405911540572-deniel-redkliff">Дэниэл Рэдклифф</a></div><div style="font-size:clamp(8.5px,.75vw,11px);color:var(--grey);margin-top:1px">Сценарий фильма «Гарри Поттер и Философский камень» с автографом</div><div style="font-family:var(--serif);font-size:clamp(11px,1.05vw,15px);color:var(--gold);margin-top:2px">290 000 ₽</div></div></div>
+  <div style="background:var(--paper);display:grid;grid-template-rows:minmax(0,1fr) auto"><div style="position:relative;overflow:hidden;background:var(--soft)"><img src="img_site/richie_snatch.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:clamp(8px,1vw,16px)"></div>
+    <div style="padding:8px 14px 10px;border-top:1px solid var(--hair-lt)"><div style="font-family:var(--serif);font-size:clamp(11.5px,1.15vw,16px)"><a class="lnk" href="https://stargift.ru/product/239364935632-gay-richi">Гай Ричи</a></div><div style="font-size:clamp(8.5px,.75vw,11px);color:var(--grey);margin-top:1px">Сценарий фильма «Большой куш» с автографом</div><div style="font-family:var(--serif);font-size:clamp(11px,1.05vw,15px);color:var(--gold);margin-top:2px">350 000 ₽</div></div></div>
+  <div style="position:absolute;top:24px;left:32px;z-index:6;background:rgba(255,255,255,.92);border:1px solid var(--hair);padding:10px 18px"><span style="font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)">Культовые сценарии</span></div>
+</section>
+
+<!-- c05 КРЁСТНЫЙ ОТЕЦ · ВЕЧЕРНЕЕ СОЛО -->
+<section class="slide bk" id="c05" style="grid-template-columns:1.12fr 1fr">
+  <div style="position:relative;overflow:hidden"><img src="img_site/pacino_poster.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,3.4vw,60px);border-left:1px solid var(--bk-line)">
+    <div class="label">Предложение, от которого нельзя отказаться</div>
+    <h2 style="font-size:clamp(26px,3vw,46px);color:#fff;margin:1.6vh 0 .6vh"><a class="lnk" href="https://stargift.ru/product/sg_1777915174_52dc4023-al-pachino">Аль Пачино</a></h2>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.45vw,21px);color:var(--gold-lt)">Постер к к/ф «Крёстный отец» с автографом</p>
+    <p style="font-size:clamp(11px,.95vw,13.5px);color:var(--bk-muted);line-height:1.8;max-width:44ch;margin-top:2.2vh">1972 год, дебют Майкла Корлеоне. Подпись Пачино на постере фильма, который каждый из нас видел не один раз.</p>
+    <div style="display:flex;align-items:baseline;gap:16px;border-top:1px solid var(--bk-line);padding-top:2vh;margin-top:2.6vh"><span style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--bk-muted)">Стоимость</span><span style="font-family:var(--serif);font-size:clamp(22px,2.3vw,34px);color:var(--gold-lt)">320 000 ₽</span></div>
+  </div>
+</section>
+
+<!-- c06 НАЗАД В БУДУЩЕЕ · СОЛО -->
+<section class="slide" id="c06" style="grid-template-columns:1fr 1.05fr;background:var(--paper)">
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,3.6vw,64px)">
+    <div class="label">Ностальгия · 1985</div>
+    <h2 style="font-size:clamp(24px,2.7vw,42px);margin:1.6vh 0 .6vh"><a class="lnk" href="https://stargift.ru/product/951871023942-kristofer-lloyd-i-maykl-dzhey-foks">Кристофер Ллойд и Майкл Джей Фокс</a></h2>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(13.5px,1.4vw,20px);color:var(--gold)">Реплика дисплея временных контуров из к/ф «Назад в будущее» с 2-мя автографами</p>
+    <p style="font-size:clamp(11px,.95vw,13.5px);color:#4A463F;line-height:1.8;max-width:46ch;margin-top:2.2vh">«Куда угодно, Марти, но не в 2020-й». Табло DeLorean с подписями Дока и Марти — подарок для тех, кто пересматривает трилогию каждый Новый год.</p>
+    <div style="display:flex;align-items:baseline;gap:16px;border-top:1px solid var(--hair);padding-top:2vh;margin-top:2.6vh"><span style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--grey)">Стоимость</span><span style="font-family:var(--serif);font-size:clamp(22px,2.3vw,34px);color:var(--gold)">700 000 ₽</span></div>
+  </div>
+  <div style="background:var(--soft);display:grid;place-items:center;padding:clamp(22px,2.8vh,44px)">
+    <div class="mat" style="max-width:92%"><img src="img_site/lloyd_bttf.jpg" alt="" style="aspect-ratio:4/3"></div>
+  </div>
+</section>
+
+<!-- c07 ВСЯ ПОДБОРКА · СПИСОК С ССЫЛКАМИ -->
+<section class="slide" id="c07" style="grid-template-columns:1fr;background:var(--paper)">
+  <div style="padding:clamp(26px,3.6vh,48px) clamp(30px,4.4vw,84px);display:flex;flex-direction:column;justify-content:center">
+    <div class="label">Вся подборка «Кино»</div>
+    <h2 style="font-size:clamp(24px,2.8vw,44px);margin:1.4vh 0 3vh">Восемь вещей большого экрана</h2>
+    <div style="display:grid;gap:1.5vh">
+      <div style="display:flex;justify-content:space-between;gap:18px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.15vh"><span style="font-size:clamp(11px,.98vw,14px)"><a class="lnk" href="https://stargift.ru/product/405911540572-deniel-redkliff">Дэниэл Рэдклифф</a> — Сценарий «Гарри Поттер и Философский камень»</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.25vw,18px);white-space:nowrap">290 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;gap:18px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.15vh"><span style="font-size:clamp(11px,.98vw,14px)"><a class="lnk" href="https://stargift.ru/product/895429086532-kventin-tarantino">Квентин Тарантино</a> — Сценарий «Криминальное чтиво»</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.25vw,18px);white-space:nowrap">300 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;gap:18px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.15vh"><span style="font-size:clamp(11px,.98vw,14px)"><a class="lnk" href="https://stargift.ru/product/sg_1777915174_52dc4023-al-pachino">Аль Пачино</a> — Постер «Крёстный отец» с автографом</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.25vw,18px);white-space:nowrap">320 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;gap:18px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.15vh"><span style="font-size:clamp(11px,.98vw,14px)"><a class="lnk" href="https://stargift.ru/product/239364935632-gay-richi">Гай Ричи</a> — Сценарий «Большой куш»</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.25vw,18px);white-space:nowrap">350 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;gap:18px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.15vh"><span style="font-size:clamp(11px,.98vw,14px)"><a class="lnk" href="https://stargift.ru/product/704582569971-charli-chaplin">Чарли Чаплин</a> — Фото с автографом</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.25vw,18px);white-space:nowrap">540 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;gap:18px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.15vh"><span style="font-size:clamp(11px,.98vw,14px)"><a class="lnk" href="https://stargift.ru/product/541138350512-kharrison-ford">Харрисон Форд</a> — Сценарий «Звёздные войны»</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.25vw,18px);white-space:nowrap">630 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;gap:18px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.15vh"><span style="font-size:clamp(11px,.98vw,14px)"><a class="lnk" href="https://stargift.ru/product/951871023942-kristofer-lloyd-i-maykl-dzhey-foks">Кристофер Ллойд и Майкл Джей Фокс</a> — Дисплей «Назад в будущее», 2 автографа</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.25vw,18px);white-space:nowrap">700 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;gap:18px;align-items:baseline;border-bottom:1px solid var(--hair);padding-bottom:1.15vh"><span style="font-size:clamp(11.5px,1.05vw,15px);font-weight:400"><a class="lnk" href="https://stargift.ru/product/326991928512-odri-khepbern">Одри Хепбёрн</a> — Фото с автографом</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(16px,1.6vw,23px);white-space:nowrap">1 250 000 ₽</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- c08 КОНТАКТЫ -->
+<section class="slide bk" id="c08" style="grid-template-columns:1fr">
+  <div style="display:grid;place-items:center;text-align:center;padding:clamp(30px,5vw,90px)">
+    <div style="max-width:900px">
+      <div class="label">Stargift · подарки со смыслом</div>
+      <h2 style="font-size:clamp(26px,3.4vw,54px);color:#fff;margin:2.2vh 0">Подарите вечер, который он помнит с детства</h2>
+      <p style="font-family:var(--serif);font-style:italic;font-size:clamp(15px,1.7vw,24px);color:var(--gold-lt);margin-top:1.2vh">Кино заканчивается. Автограф остаётся.</p>
+      <div style="margin-top:5vh;font-size:clamp(11px,.95vw,13.5px);color:var(--bk-muted);line-height:2">Кутузовский проспект, 48 · Галереи «Времена года» &nbsp;—&nbsp; Большая Якиманка, 22 · ТЦ «Гименей» &nbsp;—&nbsp; Барвиха · ТЦ «Дрим Хаус»</div>
+      <div class="label" style="margin-top:2.4vh;color:var(--gold-lt)">stargift.ru · +7 495 233-51-11 · t.me/stargift_collection</div>
+    </div>
+  </div>
+</section>
+
+</div>
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^c/,'');const id=n?('c'+n.padStart(2,'0')):'c01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));
+scrollTo(0,0);document.body.scrollTop=0;document.documentElement.scrollTop=0;}
+show();addEventListener('hashchange',show);
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
+</body></html>
