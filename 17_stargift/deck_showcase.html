@@ -1,0 +1,247 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STARGIFT — Собрание. Двенадцать вещей, у которых есть имя</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:#1A1A1A; --paper:#FFFFFF; --soft:#F7F5F1; --gold:#A98545; --gold-lt:#C9A96A;
+  --grey:#6F6A62; --hair:rgba(169,133,69,.35); --hair-lt:rgba(169,133,69,.18);
+  --bk:#0B0B0C; --coal:#131315; --bk-ivory:#F5F1E8; --bk-muted:#8E8A82; --bk-line:rgba(201,169,106,.32);
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',-apple-system,'Segoe UI',sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; overflow:hidden; background:#000; }
+body { font-family:var(--sans); font-weight:300; color:var(--ink); }
+.deck { height:100%; position:relative; }
+.slide { position:absolute; inset:0; display:none; overflow:hidden; background:var(--paper); }
+.slide.on { display:grid; }
+h1,h2,h3 { font-family:var(--serif); font-weight:400; line-height:1.05; }
+img { display:block; }
+a.lnk { color:inherit; text-decoration:none; border-bottom:1px dotted rgba(169,133,69,.55); }
+.label { font-size:clamp(9px,.8vw,12px); font-weight:500; letter-spacing:.3em; text-transform:uppercase; color:var(--gold); }
+.bk { background:var(--bk); color:var(--bk-ivory); }
+.bk .label { color:var(--gold-lt); }
+.mat { background:#fff; border:1px solid var(--hair-lt); box-shadow:0 14px 44px rgba(26,22,15,.10); padding:clamp(10px,1.1vw,18px); }
+.mat img { width:100%; object-fit:cover; display:block; }
+.cap { padding:1.2vh 4px 0; }
+.cap .nm { font-family:var(--serif); font-size:clamp(13px,1.25vw,18px); }
+.cap .tp { font-size:clamp(9.5px,.82vw,12px); color:var(--grey); margin-top:2px; }
+.cap .pr { font-family:var(--serif); font-size:clamp(12.5px,1.15vw,17px); color:var(--gold); margin-top:4px; }
+.credit { position:absolute; right:16px; bottom:10px; z-index:5; font-size:9px; letter-spacing:.08em; color:rgba(255,255,255,.6); text-shadow:0 1px 4px rgba(0,0,0,.55); }
+.pass { display:grid; gap:0; border-top:1px solid var(--hair); }
+.pass .row { display:grid; grid-template-columns:150px 1fr; gap:18px; padding:1.35vh 0; border-bottom:1px solid var(--hair-lt); }
+.pass .k { font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:var(--grey); padding-top:3px; }
+.pass .v { font-size:clamp(11.5px,1vw,14px); color:#2E2B26; line-height:1.55; }
+.pass .v.big { font-family:var(--serif); font-size:clamp(20px,2vw,30px); color:var(--gold); }
+.qc { position:relative; overflow:hidden; background:var(--coal); }
+.qc img.ph { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.qplq { position:absolute; left:0; right:0; bottom:0; background:linear-gradient(transparent,rgba(0,0,0,.82)); padding:clamp(28px,4.2vh,44px) 18px 14px; }
+.qplq.top { bottom:auto; top:0; background:linear-gradient(rgba(0,0,0,.88) 0%,rgba(0,0,0,.62) 55%,transparent); padding:14px 18px clamp(34px,5vh,54px); }
+.qplq .nm { font-family:var(--serif); font-size:clamp(12px,1.25vw,18px); color:#fff; }
+.qplq .tp { font-size:clamp(9px,.78vw,11.5px); color:#D8D2C6; margin-top:2px; }
+.qplq .pr { font-family:var(--serif); font-size:clamp(11.5px,1.12vw,16px); color:var(--gold-lt); margin-top:3px; }
+.shmuts { position:relative; overflow:hidden; }
+.shmuts .num { font-family:var(--serif); font-style:italic; font-size:clamp(15px,1.6vw,24px); color:var(--gold-lt); }
+</style>
+</head><body><div class="deck">
+
+<!-- s01 ОБЛОЖКА -->
+<section class="slide bk" id="s01" style="grid-template-columns:1fr 1fr">
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(28px,4.4vw,80px)">
+    <div class="label">Stargift · собрание</div>
+    <h1 style="font-size:clamp(30px,3.9vw,62px);color:#fff;margin:2vh 0 1.2vh">Двенадцать вещей,<br>у которых есть имя</h1>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.6vw,24px);color:var(--gold-lt)">Подарок для того, у кого есть всё</p>
+    <p style="font-size:clamp(10.5px,.95vw,13.5px);color:var(--bk-muted);line-height:1.85;max-width:46ch;margin-top:2.4vh">Шанель и Queen, Менделеев и Джобс, Цой и Пеле. Четыре главы о вещах, которые не покупают — их находят.</p>
+  </div>
+  <div style="position:relative;overflow:hidden">
+    <img src="img_site/nb_chanel_dark.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.65),transparent 40%)"></div>
+  </div>
+</section>
+
+<!-- s02 ОГЛАВЛЕНИЕ -->
+<section class="slide" id="s02" style="grid-template-columns:1fr;background:var(--paper)">
+  <div style="padding:clamp(30px,4.6vh,56px) clamp(32px,4.8vw,92px);display:flex;flex-direction:column;justify-content:center">
+    <div class="label">Оглавление</div>
+    <h2 style="font-size:clamp(26px,3.1vw,50px);margin:1.6vh 0 3.6vh">Четыре главы собрания</h2>
+    <div style="display:grid;gap:2.4vh">
+      <div style="display:grid;grid-template-columns:64px 1fr auto;gap:20px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:2vh"><span style="font-family:var(--serif);font-style:italic;font-size:clamp(17px,1.8vw,27px);color:var(--gold)">I</span><div><div style="font-family:var(--serif);font-size:clamp(16px,1.7vw,25px)">Стиль</div><div style="font-size:clamp(10px,.88vw,12.5px);color:var(--grey);margin-top:3px">Платье Шанель · эскизы Диора и Сен-Лорана · пинетки Мадемуазель</div></div><span style="font-size:clamp(10px,.9vw,13px);color:var(--grey)">от 4 000 000 ₽</span></div>
+      <div style="display:grid;grid-template-columns:64px 1fr auto;gap:20px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:2vh"><span style="font-family:var(--serif);font-style:italic;font-size:clamp(17px,1.8vw,27px);color:var(--gold)">II</span><div><div style="font-family:var(--serif);font-size:clamp(16px,1.7vw,25px)">Голоса</div><div style="font-size:clamp(10px,.88vw,12.5px);color:var(--grey);margin-top:3px">Пластинка Queen с четырьмя автографами · галстук Цоя · письмо Высоцкого</div></div><span style="font-size:clamp(10px,.9vw,13px);color:var(--grey)">от 2 500 000 ₽</span></div>
+      <div style="display:grid;grid-template-columns:64px 1fr auto;gap:20px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:2vh"><span style="font-family:var(--serif);font-style:italic;font-size:clamp(17px,1.8vw,27px);color:var(--gold)">III</span><div><div style="font-family:var(--serif);font-size:clamp(16px,1.7vw,25px)">Гений</div><div style="font-size:clamp(10px,.88vw,12.5px);color:var(--grey);margin-top:3px">Рисунки Эйнштейна · Apple II Джобса · чертежи Менделеева и Попова · фото Гагарина</div></div><span style="font-size:clamp(10px,.9vw,13px);color:var(--grey)">от 1 600 000 ₽</span></div>
+      <div style="display:grid;grid-template-columns:64px 1fr auto;gap:20px;align-items:baseline;border-bottom:1px solid var(--hair);padding-bottom:2vh"><span style="font-family:var(--serif);font-style:italic;font-size:clamp(17px,1.8vw,27px);color:var(--gold)">IV</span><div><div style="font-family:var(--serif);font-size:clamp(16px,1.7vw,25px)">Игра</div><div style="font-size:clamp(10px,.88vw,12.5px);color:var(--grey);margin-top:3px">Кроссовки великих НБА · мяч Месси · футболка Марадоны · пояс Тайсона</div></div><span style="font-size:clamp(10px,.9vw,13px);color:var(--grey)">от 510 000 ₽</span></div>
+    </div>
+  </div>
+  <div style="position:absolute;top:24px;right:32px"><img src="img/stargift_logo.png" alt="" style="height:26px"></div>
+</section>
+
+<!-- s03 ШМУЦТИТУЛ I · СТИЛЬ -->
+<section class="slide bk shmuts" id="s03" style="grid-template-columns:1fr">
+  <img src="img_site/wiki_audrey.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 14%">
+  <div style="position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(0,0,0,.9))"></div>
+  <div style="position:absolute;left:clamp(28px,4.4vw,80px);bottom:clamp(24px,4.4vh,52px)">
+    <div class="num">Глава I</div>
+    <h2 style="font-size:clamp(34px,4.6vw,72px);color:#fff;margin:.8vh 0">Стиль</h2>
+    <p style="font-size:clamp(10.5px,.95vw,13.5px);color:#D8D2C6;max-width:52ch">Вещи, которые придумали моду XX века: Шанель, Диор, Сен-Лоран.</p>
+  </div>
+  <div class="credit">Одри Хепбёрн, «Завтрак у Тиффани», 1961 · Wikimedia Commons · public domain</div>
+</section>
+
+<!-- s04 ПАСПОРТ · ПЛАТЬЕ ШАНЕЛЬ -->
+<section class="slide" id="s04" style="grid-template-columns:1fr 1.08fr;background:var(--paper)">
+  <div style="background:var(--soft);display:grid;place-items:center;padding:clamp(22px,2.8vh,44px)">
+    <div class="mat" style="max-height:86vh"><img src="img_site/nb_chanel_white.jpg" alt="" style="width:auto;max-width:100%;max-height:76vh;object-fit:contain"></div>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,3.2vw,58px)">
+    <div class="label">Паспорт экспоната · топ-лот главы</div>
+    <h2 style="font-size:clamp(24px,2.7vw,42px);margin:1.4vh 0 2.2vh"><a class="lnk" href="https://stargift.ru/product/313218134672-koko-shanel">Коко Шанель</a></h2>
+    <div class="pass">
+      <div class="row"><div class="k">Предмет</div><div class="v">Платье с автографом Мадемуазель</div></div>
+      <div class="row"><div class="k">Эпоха</div><div class="v">Бархат двадцатых, эпоха little black dress</div></div>
+      <div class="row"><div class="k">Подлинность</div><div class="v">Экспертиза и сертификат Stargift</div></div>
+      <div class="row"><div class="k">Кому дарят</div><div class="v">Женщине, у которой уже есть всё от Chanel</div></div>
+      <div class="row"><div class="k">Стоимость</div><div class="v big">7 000 000 ₽</div></div>
+    </div>
+    <p style="font-size:9.5px;letter-spacing:.06em;color:rgba(26,26,26,.4);margin-top:1.8vh">подача без фона · фотографии лота — на stargift.ru</p>
+  </div>
+</section>
+
+<!-- s05 СТИЛЬ · ТРИО -->
+<section class="slide" id="s05" style="grid-template-rows:auto minmax(0,1fr);background:var(--paper)">
+  <div style="padding:clamp(24px,3.4vh,42px) clamp(28px,4vw,72px) 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 style="font-size:clamp(23px,2.6vw,40px)">Рука мастера</h2>
+    <div class="label">Глава I · Стиль</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,32px);padding:clamp(14px,2.2vh,28px) clamp(28px,4vw,72px) clamp(20px,3vh,36px);align-content:center;min-height:0">
+    <div><div class="mat"><img src="img_site/dior.jpg" alt="" style="aspect-ratio:4/3.4"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/647576006212-kristian-dior">Кристиан Диор</a></div><div class="tp">Собственноручный двухсторонний эскиз с рукописными пометками</div><div class="pr">5 250 000 ₽</div></div></div>
+    <div><div class="mat"><img src="img_site/chanel_booties.jpg" alt="" style="aspect-ratio:4/3.4"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/616978442592-koko-shanel">Коко Шанель</a></div><div class="tp">Пинетки с автографом</div><div class="pr">4 600 000 ₽</div></div></div>
+    <div><div class="mat"><img src="img_site/ysl.jpg" alt="" style="aspect-ratio:4/3.4"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/926593676932-iv-sen-loran">Ив Сен-Лоран</a></div><div class="tp">Собственноручный эскиз с автографом</div><div class="pr">4 000 000 ₽</div></div></div>
+  </div>
+</section>
+
+<!-- s06 ШМУЦТИТУЛ II · ГОЛОСА -->
+<section class="slide bk shmuts" id="s06" style="grid-template-columns:1fr">
+  <img src="img_site/wiki_beatles_jfk.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%">
+  <div style="position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(0,0,0,.9))"></div>
+  <div style="position:absolute;left:clamp(28px,4.4vw,80px);bottom:clamp(24px,4.4vh,52px)">
+    <div class="num">Глава II</div>
+    <h2 style="font-size:clamp(34px,4.6vw,72px);color:#fff;margin:.8vh 0">Голоса</h2>
+    <p style="font-size:clamp(10.5px,.95vw,13.5px);color:#D8D2C6;max-width:52ch">Музыка, которую мы знаем наизусть — от Ливерпуля до Ленинграда.</p>
+  </div>
+  <div class="credit">The Beatles, аэропорт Кеннеди, 1964 · Wikimedia Commons · public domain</div>
+</section>
+
+<!-- s07 QUEEN СОЛО -->
+<section class="slide bk" id="s07" style="grid-template-columns:1.1fr 1fr">
+  <div style="position:relative;overflow:hidden"><img src="img_site/may_queen.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,3.4vw,60px);border-left:1px solid var(--bk-line)">
+    <div class="label">Глава II · топ-лот</div>
+    <h2 style="font-size:clamp(20px,2.3vw,34px);color:#fff;margin:1.6vh 0 .6vh"><a class="lnk" href="https://stargift.ru/product/413020200892-freddi-merkyuri-brayan-mey-rodzher-teylor-i-dzhon-dikon-queen">Фредди Меркьюри, Брайан Мэй, Роджер Тейлор и Джон Дикон (Queen)</a></h2>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.45vw,21px);color:var(--gold-lt)">Пластинка с 4-мя автографами</p>
+    <p style="font-size:clamp(11px,.95vw,13.5px);color:var(--bk-muted);line-height:1.8;max-width:44ch;margin-top:2.2vh">Все четверо на одном конверте. Show must go on — уже в вашей гостиной.</p>
+    <div style="display:flex;align-items:baseline;gap:16px;border-top:1px solid var(--bk-line);padding-top:2vh;margin-top:2.6vh"><span style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--bk-muted)">Стоимость</span><span style="font-family:var(--serif);font-size:clamp(22px,2.3vw,34px);color:var(--gold-lt)">2 500 000 ₽</span></div>
+  </div>
+</section>
+
+<!-- s08 ЦОЙ + ВЫСОЦКИЙ -->
+<section class="slide" id="s08" style="grid-template-columns:1fr 1.4fr;background:var(--paper)">
+  <div style="padding:clamp(28px,3.6vw,64px);display:flex;flex-direction:column;justify-content:center;background:var(--soft)">
+    <div style="font-family:var(--serif);font-style:italic;font-size:clamp(13px,1.3vw,19px);color:var(--gold)">Глава II · Голоса</div>
+    <h2 style="font-size:clamp(26px,3.2vw,50px);margin:1.6vh 0">Наши</h2>
+    <p style="font-size:clamp(11.5px,1vw,14.5px);color:#4A463F;line-height:1.85;max-width:44ch">Галстук Виктора Цоя с дарственной надписью. Собственноручное письмо Владимира Высоцкого. Две вещи, которые слышны без пластинки.</p>
+  </div>
+  <div style="padding:clamp(20px,2.4vw,40px);display:grid;grid-template-rows:minmax(0,1fr) minmax(0,1fr);gap:clamp(10px,1.2vw,18px);align-content:center;min-height:0">
+    <div><div class="mat"><img src="img_site/tsoi.jpg" alt="" style="aspect-ratio:16/6.9"></div><div style="padding:1vh 4px 0;display:flex;justify-content:space-between;gap:14px;align-items:baseline"><span style="font-family:var(--serif);font-size:clamp(12.5px,1.2vw,17px)"><a class="lnk" href="https://stargift.ru/product/487566710291-viktor-tsoy-kino">Виктор Цой (Кино)</a> — Галстук с дарственной надписью</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.3vw,18px);white-space:nowrap">2 500 000 ₽</span></div></div>
+    <div><div class="mat"><img src="img_site/vysotsky_letter4m.jpg" alt="" style="aspect-ratio:16/6.9"></div><div style="padding:1vh 4px 0;display:flex;justify-content:space-between;gap:14px;align-items:baseline"><span style="font-family:var(--serif);font-size:clamp(12.5px,1.2vw,17px)"><a class="lnk" href="https://stargift.ru/product/547704391141-vladimir-vysotskiy">Владимир Высоцкий</a> — Собственноручное письмо</span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(13px,1.3vw,18px);white-space:nowrap">4 000 000 ₽</span></div></div>
+  </div>
+</section>
+
+<!-- s09 ШМУЦТИТУЛ III · ГЕНИЙ -->
+<section class="slide bk shmuts" id="s09" style="grid-template-columns:1fr">
+  <img src="img_site/wiki_mendeleev.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 10%;filter:grayscale(.2)">
+  <div style="position:absolute;inset:0;background:linear-gradient(transparent 24%,rgba(0,0,0,.92))"></div>
+  <div style="position:absolute;left:clamp(28px,4.4vw,80px);bottom:clamp(24px,4.4vh,52px)">
+    <div class="num">Глава III</div>
+    <h2 style="font-size:clamp(34px,4.6vw,72px);color:#fff;margin:.8vh 0">Гений</h2>
+    <p style="font-size:clamp(10.5px,.95vw,13.5px);color:#D8D2C6;max-width:52ch">Руки, которые двигали науку: от периодической таблицы до персонального компьютера.</p>
+  </div>
+  <div class="credit">Д. И. Менделеев · Wikimedia Commons · public domain</div>
+</section>
+
+<!-- s10 ГЕНИЙ · КРЕСТ 2×2 -->
+<section class="slide bk" id="s10" style="grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2px;background:rgba(201,169,106,.45)">
+  <div class="qc"><img class="ph" src="img_site/einstein.jpg" alt="">
+    <div class="qplq top"><div class="nm"><a class="lnk" href="https://stargift.ru/product/149655654011-albert-eynshteyn">Альберт Эйнштейн</a></div><div class="tp">Рисунки с автографом</div><div class="pr">9 200 000 ₽</div></div></div>
+  <div class="qc"><img class="ph" src="img_site/jobs.jpg" alt="">
+    <div class="qplq top"><div class="nm"><a class="lnk" href="https://stargift.ru/product/792080275601-stiv-dzhobs">Стив Джобс</a></div><div class="tp">Ранний компьютер Apple II</div><div class="pr">35 000 000 ₽</div></div></div>
+  <div class="qc"><img class="ph" src="img_site/mendeleev_chart.jpg" alt="">
+    <div class="qplq"><div class="nm"><a class="lnk" href="https://stargift.ru/product/745638042362-dmitriy-mendeleev">Дмитрий Менделеев</a></div><div class="tp">Собственноручный чертёж с заметками и автографом</div><div class="pr">8 000 000 ₽</div></div></div>
+  <div class="qc"><img class="ph" src="img_site/popov.jpg" alt="">
+    <div class="qplq"><div class="nm"><a class="lnk" href="https://stargift.ru/product/385313543032-aleksandr-popov">Александр Попов</a></div><div class="tp">Собственноручный чертёж с автографом</div><div class="pr">5 000 000 ₽</div></div></div>
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:7;width:clamp(120px,14vw,180px);aspect-ratio:1;border-radius:50%;background:rgba(11,11,12,.94);border:1px solid var(--gold-lt);display:grid;place-items:center;text-align:center;padding:14px">
+    <div><div style="font-size:8.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-lt)">Глава III</div>
+    <div style="font-family:var(--serif);font-size:clamp(15px,1.6vw,23px);color:#fff;margin-top:5px;line-height:1.15">Четыре<br>гения</div></div>
+  </div>
+</section>
+
+<!-- s11 ГАГАРИН · КАДР + ЛОТ -->
+<section class="slide bk" id="s11" style="grid-template-columns:1fr 1fr">
+  <div style="display:grid;place-items:center;padding:clamp(24px,3vh,44px)">
+    <div style="max-width:76%">
+      <div style="background:#0f0f10;border:1px solid rgba(201,169,106,.4);padding:clamp(8px,1vw,14px)"><img src="img_site/wiki_gagarin.jpg" alt="" style="width:100%"></div>
+      <div style="font-size:9.5px;letter-spacing:.1em;color:rgba(245,241,232,.55);margin-top:8px;text-align:center">Юрий Гагарин · Wikimedia Commons · public domain</div>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,3.4vw,60px);border-left:1px solid var(--bk-line)">
+    <div class="label">Поехали!</div>
+    <h2 style="font-size:clamp(26px,3vw,46px);color:#fff;margin:1.6vh 0 .6vh"><a class="lnk" href="https://stargift.ru/product/214273820821-yuriy-gagarin">Юрий Гагарин</a></h2>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.45vw,21px);color:var(--gold-lt)">Фото с рукописным пожеланием и автографом</p>
+    <p style="font-size:clamp(11px,.95vw,13.5px);color:var(--bk-muted);line-height:1.8;max-width:44ch;margin-top:2.2vh">Первый человек в космосе — и его пожелание, написанное от руки. 108 минут, изменивших всё.</p>
+    <div style="display:flex;align-items:baseline;gap:16px;border-top:1px solid var(--bk-line);padding-top:2vh;margin-top:2.6vh"><span style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--bk-muted)">Стоимость</span><span style="font-family:var(--serif);font-size:clamp(22px,2.3vw,34px);color:var(--gold-lt)">1 600 000 ₽</span></div>
+  </div>
+</section>
+
+<!-- s12 ШМУЦТИТУЛ IV · ИГРА -->
+<section class="slide bk shmuts" id="s12" style="grid-template-columns:1fr">
+  <img src="img_site/wiki_pele1970.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%">
+  <div style="position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(0,0,0,.9))"></div>
+  <div style="position:absolute;left:clamp(28px,4.4vw,80px);bottom:clamp(24px,4.4vh,52px)">
+    <div class="num">Глава IV</div>
+    <h2 style="font-size:clamp(34px,4.6vw,72px);color:#fff;margin:.8vh 0">Игра</h2>
+    <p style="font-size:clamp(10.5px,.95vw,13.5px);color:#D8D2C6;max-width:52ch">Моменты, за которые мы любим спорт — и вещи из этих моментов.</p>
+  </div>
+  <div class="credit">Пеле, ЧМ-1970 · Wikimedia Commons · public domain</div>
+</section>
+
+<!-- s13 ИГРА · КРЕСТ 2×2 -->
+<section class="slide bk" id="s13" style="grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2px;background:rgba(201,169,106,.45)">
+  <div class="qc"><img class="ph" src="img_site/sneakers.jpg" alt="">
+    <div class="qplq"><div class="nm"><a class="lnk" href="https://stargift.ru/product/285052867832-kobi-brayant-lebron-dzheyms-tim-dankan-dirk-novitski-allen-ayverson-i-drugie">Коби Брайант, Леброн Джеймс, Тим Данкан, Дирк Новицки и другие</a></div><div class="tp">Кроссовки с автографами</div><div class="pr">3 000 000 ₽</div></div></div>
+  <div class="qc"><img class="ph" src="img_site/messi_ball.jpg" alt="">
+    <div class="qplq"><div class="nm"><a class="lnk" href="https://stargift.ru/product/551578892142-lionel-messi-serkhio-aguero-gonsalo-iguain-ankhel-di-mariya-markos-rokho-i-drugie">Лионель Месси, Серхио Агуэро, Анхель Ди Мария и другие</a></div><div class="tp">Мяч с автографами</div><div class="pr">1 750 000 ₽</div></div></div>
+  <div class="qc"><img class="ph" src="img_site/maradona_850.jpg" alt="">
+    <div class="qplq"><div class="nm"><a class="lnk" href="https://stargift.ru/product/sg_1782725730_9e731ca3-diego-maradona">Диего Марадона</a></div><div class="tp">Футболка сборной Аргентины с автографом</div><div class="pr">850 000 ₽</div></div></div>
+  <div class="qc"><img class="ph" src="img_site/tyson_belt.jpg" alt="">
+    <div class="qplq"><div class="nm"><a class="lnk" href="https://stargift.ru/product/770151418350-mayk-tayson">Майк Тайсон</a></div><div class="tp">Реплика пояса чемпиона мира с автографом</div><div class="pr">510 000 ₽</div></div></div>
+</section>
+
+<!-- s14 ФИНАЛ -->
+<section class="slide bk" id="s14" style="grid-template-columns:1fr">
+  <div style="display:grid;place-items:center;text-align:center;padding:clamp(30px,5vw,90px)">
+    <div style="max-width:920px">
+      <div class="label">Stargift · подарки со смыслом</div>
+      <h2 style="font-size:clamp(26px,3.4vw,54px);color:#fff;margin:2.2vh 0">Представьте, как это выглядит<br>в вашей гостиной</h2>
+      <p style="font-family:var(--serif);font-style:italic;font-size:clamp(15px,1.7vw,24px);color:var(--gold-lt);margin-top:1.2vh">Более 3000 экспонатов — в галереях Stargift.<br>Личный менеджер подберёт вещь под человека и повод.</p>
+      <div style="margin-top:5vh;font-size:clamp(11px,.95vw,13.5px);color:var(--bk-muted);line-height:2">Кутузовский проспект, 48 · Галереи «Времена года» &nbsp;—&nbsp; Большая Якиманка, 22 · ТЦ «Гименей» &nbsp;—&nbsp; Барвиха · ТЦ «Дрим Хаус»</div>
+      <div class="label" style="margin-top:2.4vh;color:var(--gold-lt)">stargift.ru · +7 495 233-51-11 · t.me/stargift_collection</div>
+    </div>
+  </div>
+</section>
+
+</div>
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^s/,'');const id=n?('s'+n.padStart(2,'0')):'s01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));
+scrollTo(0,0);document.body.scrollTop=0;document.documentElement.scrollTop=0;}
+show();addEventListener('hashchange',show);
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
+</body></html>

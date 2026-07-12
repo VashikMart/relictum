@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STARGIFT — Первая коллекция. Легенды до миллиона</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:#1A1A1A; --paper:#FFFFFF; --soft:#F7F5F1; --gold:#A98545; --gold-lt:#C9A96A;
+  --grey:#6F6A62; --hair:rgba(169,133,69,.35); --hair-lt:rgba(169,133,69,.18);
+  --bk:#0B0B0C; --coal:#131315; --bk-ivory:#F5F1E8; --bk-muted:#8E8A82; --bk-line:rgba(201,169,106,.32);
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',-apple-system,'Segoe UI',sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; overflow:hidden; background:#000; }
+body { font-family:var(--sans); font-weight:300; color:var(--ink); }
+.deck { height:100%; position:relative; }
+.slide { position:absolute; inset:0; display:none; overflow:hidden; background:var(--paper); }
+.slide.on { display:grid; }
+h1,h2,h3 { font-family:var(--serif); font-weight:400; line-height:1.05; }
+img { display:block; }
+a.lnk { color:inherit; text-decoration:none; border-bottom:1px dotted rgba(169,133,69,.55); }
+.label { font-size:clamp(9px,.8vw,12px); font-weight:500; letter-spacing:.3em; text-transform:uppercase; color:var(--gold); }
+.bk { background:var(--bk); color:var(--bk-ivory); }
+.bk .label { color:var(--gold-lt); }
+.mat { background:#fff; border:1px solid var(--hair-lt); box-shadow:0 14px 44px rgba(26,22,15,.10); padding:clamp(10px,1.1vw,18px); }
+.mat img { width:100%; object-fit:cover; display:block; }
+.cap { padding:1.2vh 4px 0; }
+.cap .nm { font-family:var(--serif); font-size:clamp(13px,1.25vw,18px); }
+.cap .tp { font-size:clamp(9.5px,.82vw,12px); color:var(--grey); margin-top:2px; }
+.cap .pr { font-family:var(--serif); font-size:clamp(12.5px,1.15vw,17px); color:var(--gold); margin-top:4px; }
+.wc { background:var(--paper); display:grid; grid-template-rows:minmax(0,1fr) auto; }
+.wc .ph-box { position:relative; overflow:hidden; background:var(--soft); }
+.wc .ph-box img { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; padding:clamp(8px,1vw,16px); }
+.wc .bar { padding:8px 14px 10px; border-top:1px solid var(--hair-lt); }
+.wc .bar .nm { font-family:var(--serif); font-size:clamp(11.5px,1.15vw,16px); }
+.wc .bar .tp { font-size:clamp(8.5px,.75vw,11px); color:var(--grey); margin-top:1px; }
+.wc .bar .pr { font-family:var(--serif); font-size:clamp(11px,1.05vw,15px); color:var(--gold); margin-top:2px; }
+</style>
+</head><body><div class="deck">
+
+<!-- f01 ОБЛОЖКА · БЕЛАЯ С ВЫРЕЗКОЙ -->
+<section class="slide" id="f01" style="grid-template-columns:1fr 1fr;background:var(--paper)">
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(28px,4.4vw,80px)">
+    <div class="label">Stargift · подборка для начала</div>
+    <h1 style="font-size:clamp(30px,4vw,64px);margin:2vh 0 1.2vh">Первая<br>коллекция</h1>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.6vw,24px);color:var(--gold)">Легенды — до миллиона</p>
+    <p style="font-size:clamp(10.5px,.95vw,13.5px);color:#4A463F;line-height:1.85;max-width:44ch;margin-top:2.4vh">Коллекция начинается не с бюджета, а с первого экспоната. Восемь вещей с именами, которые знает каждый — от 260 тысяч рублей.</p>
+  </div>
+  <div style="background:var(--soft);display:grid;place-items:center;padding:clamp(22px,3vh,44px)">
+    <img src="img_site/cut_mbappe.png" alt="" style="max-width:82%;max-height:78vh;object-fit:contain;filter:drop-shadow(0 24px 40px rgba(26,22,15,.26))">
+  </div>
+  <div style="position:absolute;top:24px;right:32px"><img src="img/stargift_logo.png" alt="" style="height:26px"></div>
+</section>
+
+<!-- f02 МАНИФЕСТ -->
+<section class="slide bk" id="f02" style="grid-template-columns:1fr">
+  <div style="display:grid;place-items:center;text-align:center;padding:clamp(30px,5vw,90px)">
+    <div style="max-width:860px">
+      <div class="label">Почему это работает</div>
+      <h2 style="font-size:clamp(26px,3.4vw,54px);color:#fff;margin:2.2vh 0">Легенда — это не всегда<br>семь нулей</h2>
+      <p style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.6vw,23px);color:var(--gold-lt);line-height:1.5;margin-top:1.4vh">Подпись Федерера стоит как хорошие часы.<br>Но часы дарят каждый год, а Федерера — один раз в жизни.</p>
+    </div>
+  </div>
+</section>
+
+<!-- f03 СПОРТ · ТРИО -->
+<section class="slide" id="f03" style="grid-template-rows:auto minmax(0,1fr);background:var(--paper)">
+  <div style="padding:clamp(24px,3.4vh,42px) clamp(28px,4vw,72px) 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 style="font-size:clamp(23px,2.6vw,40px)">Спорт: три первых шага</h2>
+    <div class="label">260 — 340 тысяч</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,32px);padding:clamp(14px,2.2vh,28px) clamp(28px,4vw,72px) clamp(20px,3vh,36px);align-content:center;min-height:0">
+    <div><div class="mat"><img src="img_site/federer.jpg" alt="" style="aspect-ratio:4/3.4"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/679972498301-rodzher-federer">Роджер Федерер</a></div><div class="tp">Фото с автографом</div><div class="pr">260 000 ₽</div></div></div>
+    <div><div class="mat"><img src="img_site/karpov.jpg" alt="" style="aspect-ratio:4/3.4"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/856091122712-anatoliy-karpov">Анатолий Карпов</a></div><div class="tp">Шахматные часы</div><div class="pr">300 000 ₽</div></div></div>
+    <div><div class="mat"><img src="img_site/mbappe.jpg" alt="" style="aspect-ratio:4/3.4"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/799763735532-kilian-mbappe">Килиан Мбаппе</a></div><div class="tp">Футболка ФК «Реал Мадрид» с автографом</div><div class="pr">340 000 ₽</div></div></div>
+  </div>
+</section>
+
+<!-- f04 КИНО · КРЕСТ БЕЛЫЙ -->
+<section class="slide" id="f04" style="grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2px;background:rgba(169,133,69,.55)">
+  <div class="wc"><div class="ph-box"><img src="img_site/radcliffe_script.jpg" alt=""></div>
+    <div class="bar"><div class="nm"><a class="lnk" href="https://stargift.ru/product/405911540572-deniel-redkliff">Дэниэл Рэдклифф</a></div><div class="tp">Сценарий фильма «Гарри Поттер и Философский камень» с автографом</div><div class="pr">290 000 ₽</div></div></div>
+  <div class="wc"><div class="ph-box"><img src="img_site/tarantino_script.jpg" alt=""></div>
+    <div class="bar"><div class="nm"><a class="lnk" href="https://stargift.ru/product/895429086532-kventin-tarantino">Квентин Тарантино</a></div><div class="tp">Сценарий фильма «Криминальное чтиво» с автографом</div><div class="pr">300 000 ₽</div></div></div>
+  <div class="wc"><div class="ph-box"><img src="img_site/pacino_poster.jpg" alt=""></div>
+    <div class="bar"><div class="nm"><a class="lnk" href="https://stargift.ru/product/sg_1777915174_52dc4023-al-pachino">Аль Пачино</a></div><div class="tp">Постер к к/ф «Крёстный отец» с автографом</div><div class="pr">320 000 ₽</div></div></div>
+  <div class="wc"><div class="ph-box"><img src="img_site/richie_snatch.jpg" alt=""></div>
+    <div class="bar"><div class="nm"><a class="lnk" href="https://stargift.ru/product/239364935632-gay-richi">Гай Ричи</a></div><div class="tp">Сценарий фильма «Большой куш» с автографом</div><div class="pr">350 000 ₽</div></div></div>
+  <div style="position:absolute;top:24px;left:32px;z-index:6;background:rgba(255,255,255,.92);border:1px solid var(--hair);padding:10px 18px"><span style="font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)">Кино: четыре культовых</span></div>
+</section>
+
+<!-- f05 МУЗЫКА И ИМЕНА · ТРИО -->
+<section class="slide" id="f05" style="grid-template-rows:auto minmax(0,1fr);background:var(--paper)">
+  <div style="padding:clamp(24px,3.4vh,42px) clamp(28px,4vw,72px) 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 style="font-size:clamp(23px,2.6vw,40px)">Громкие имена — негромкие цены</h2>
+    <div class="label">350 — 600 тысяч</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,32px);padding:clamp(14px,2.2vh,28px) clamp(28px,4vw,72px) clamp(20px,3vh,36px);align-content:center;min-height:0">
+    <div><div class="mat"><img src="img_site/pushkin.jpg" alt="" style="aspect-ratio:4/3.4"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/sg_1780155422_1f21ffcb-valeriy-kipelov-margarita-pushkina-vladimir-kholstinin-vitaliy-dubinin-ariya">Валерий Кипелов и «Ария»</a></div><div class="tp">Пластинка с автографами</div><div class="pr">350 000 ₽</div></div></div>
+    <div><div class="mat"><img src="img_site/gates.jpg" alt="" style="aspect-ratio:4/3.4"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/780436808771-bill-geyts">Билл Гейтс</a></div><div class="tp">Фото с автографом</div><div class="pr">450 000 ₽</div></div></div>
+    <div><div class="mat"><img src="img_site/eminem_tape.jpg" alt="" style="aspect-ratio:4/3.4"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/383662606592-eminem">Эминем</a></div><div class="tp">Аудиокассета «Slim Shady» с автографом</div><div class="pr">600 000 ₽</div></div></div>
+  </div>
+</section>
+
+<!-- f06 ЛЕСТНИЦА -->
+<section class="slide bk" id="f06" style="grid-template-columns:1fr">
+  <div style="padding:clamp(26px,3.6vh,48px) clamp(30px,4.4vw,84px);display:flex;flex-direction:column;justify-content:center">
+    <div class="label">Вся подборка</div>
+    <h2 style="font-size:clamp(24px,2.8vw,44px);color:#fff;margin:1.4vh 0 3.2vh">Восемь ступеней первой коллекции</h2>
+    <div style="display:grid;gap:1.6vh">
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:baseline;border-bottom:1px solid var(--bk-line);padding-bottom:1.2vh;margin-right:42%"><span style="font-size:clamp(11px,.95vw,13.5px);color:#F5F1E8"><a class="lnk" href="https://stargift.ru/product/679972498301-rodzher-federer">Роджер Федерер</a> — Фото с автографом</span><span style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(12.5px,1.25vw,17px)">260 000 ₽</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:baseline;border-bottom:1px solid var(--bk-line);padding-bottom:1.2vh;margin-right:36%"><span style="font-size:clamp(11px,.95vw,13.5px);color:#F5F1E8"><a class="lnk" href="https://stargift.ru/product/405911540572-deniel-redkliff">Дэниэл Рэдклифф</a> — Сценарий «Гарри Поттер»</span><span style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(12.5px,1.25vw,17px)">290 000 ₽</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:baseline;border-bottom:1px solid var(--bk-line);padding-bottom:1.2vh;margin-right:30%"><span style="font-size:clamp(11px,.95vw,13.5px);color:#F5F1E8"><a class="lnk" href="https://stargift.ru/product/856091122712-anatoliy-karpov">Анатолий Карпов</a> — Шахматные часы</span><span style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(12.5px,1.25vw,17px)">300 000 ₽</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:baseline;border-bottom:1px solid var(--bk-line);padding-bottom:1.2vh;margin-right:24%"><span style="font-size:clamp(11px,.95vw,13.5px);color:#F5F1E8"><a class="lnk" href="https://stargift.ru/product/sg_1777915174_52dc4023-al-pachino">Аль Пачино</a> — Постер «Крёстный отец»</span><span style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(12.5px,1.25vw,17px)">320 000 ₽</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:baseline;border-bottom:1px solid var(--bk-line);padding-bottom:1.2vh;margin-right:18%"><span style="font-size:clamp(11px,.95vw,13.5px);color:#F5F1E8"><a class="lnk" href="https://stargift.ru/product/799763735532-kilian-mbappe">Килиан Мбаппе</a> — Футболка «Реал Мадрид»</span><span style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(12.5px,1.25vw,17px)">340 000 ₽</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:baseline;border-bottom:1px solid var(--bk-line);padding-bottom:1.2vh;margin-right:12%"><span style="font-size:clamp(11px,.95vw,13.5px);color:#F5F1E8"><a class="lnk" href="https://stargift.ru/product/780436808771-bill-geyts">Билл Гейтс</a> — Фото с автографом</span><span style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(12.5px,1.25vw,17px)">450 000 ₽</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:baseline;border-bottom:1px solid var(--bk-line);padding-bottom:1.2vh;margin-right:6%"><span style="font-size:clamp(11px,.95vw,13.5px);color:#F5F1E8"><a class="lnk" href="https://stargift.ru/product/383662606592-eminem">Эминем</a> — Кассета «Slim Shady»</span><span style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(12.5px,1.25vw,17px)">600 000 ₽</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:baseline;border-bottom:1px solid var(--bk-line);padding-bottom:1.2vh"><span style="font-size:clamp(11.5px,1.02vw,14.5px);color:#fff"><a class="lnk" href="https://stargift.ru/product/408858329082-angus-yang-malkolm-yang-kliff-uilyams">AC/DC</a> — Барабан с 4-мя автографами</span><span style="font-family:var(--serif);color:var(--gold-lt);font-size:clamp(15px,1.5vw,22px)">800 000 ₽</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- f07 ПРОМО -->
+<section class="slide" id="f07" style="grid-template-columns:1.05fr 1fr;background:var(--paper)">
+  <div style="background:var(--soft);display:grid;place-items:center;padding:clamp(22px,2.8vh,44px)">
+    <img src="img_site/cut_ali.png" alt="" style="max-width:62%;max-height:76vh;object-fit:contain;filter:drop-shadow(0 24px 40px rgba(26,22,15,.26))">
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,3.6vw,64px)">
+    <div class="label">Следующий шаг</div>
+    <h2 style="font-size:clamp(24px,2.8vw,44px);margin:1.6vh 0">Коллекции растут</h2>
+    <p style="font-size:clamp(11.5px,1vw,14.5px);color:#4A463F;line-height:1.85;max-width:44ch;margin-top:1vh">Сегодня — Федерер за 260 тысяч. Через год — статуэтка Али за 900. А потом однажды вы поймаете себя на том, что рассматриваете Apple II Стива Джобса.</p>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(14px,1.5vw,21px);color:var(--gold);margin-top:2.4vh">Так это и работает.</p>
+  </div>
+</section>
+
+<!-- f08 КОНТАКТЫ -->
+<section class="slide bk" id="f08" style="grid-template-columns:1fr">
+  <div style="display:grid;place-items:center;text-align:center;padding:clamp(30px,5vw,90px)">
+    <div style="max-width:900px">
+      <div class="label">Stargift · подарки со смыслом</div>
+      <h2 style="font-size:clamp(26px,3.4vw,54px);color:#fff;margin:2.2vh 0">Начните с одной вещи</h2>
+      <p style="font-family:var(--serif);font-style:italic;font-size:clamp(15px,1.7vw,24px);color:var(--gold-lt);margin-top:1.2vh">Личный менеджер подберёт первый экспонат под человека и бюджет.</p>
+      <div style="margin-top:5vh;font-size:clamp(11px,.95vw,13.5px);color:var(--bk-muted);line-height:2">Кутузовский проспект, 48 · Галереи «Времена года» &nbsp;—&nbsp; Большая Якиманка, 22 · ТЦ «Гименей» &nbsp;—&nbsp; Барвиха · ТЦ «Дрим Хаус»</div>
+      <div class="label" style="margin-top:2.4vh;color:var(--gold-lt)">stargift.ru · +7 495 233-51-11 · t.me/stargift_collection</div>
+    </div>
+  </div>
+</section>
+
+</div>
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^f/,'');const id=n?('f'+n.padStart(2,'0')):'f01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));
+scrollTo(0,0);document.body.scrollTop=0;document.documentElement.scrollTop=0;}
+show();addEventListener('hashchange',show);
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
+</body></html>
