@@ -21,6 +21,8 @@ body { font-family:var(--sans); font-weight:300; color:var(--ink); }
 @keyframes fade { from { opacity:0 } }
 h1,h2,h3 { font-family:var(--serif); font-weight:400; line-height:1.05; }
 img { display:block; }
+a.lnk { color:inherit; text-decoration:none; border-bottom:1px dotted rgba(169,133,69,.55); }
+a.lnk:hover { border-bottom-style:solid; color:var(--gold); }
 .label { font-size:clamp(9px,.8vw,12px); font-weight:500; letter-spacing:.3em; text-transform:uppercase; color:var(--gold); }
 .pagenum { position:absolute; bottom:20px; right:32px; font-size:10.5px; letter-spacing:.2em; color:#9B958B; z-index:6; }
 .brandline { position:absolute; bottom:20px; left:32px; font-size:9.5px; letter-spacing:.28em; text-transform:uppercase; color:#9B958B; z-index:6; }
@@ -65,15 +67,17 @@ img { display:block; }
 .bk.lot .price .t { font-size:10px; letter-spacing:.24em; text-transform:uppercase; color:var(--bk-muted); }
 .bk.lot .cert { margin-top:1.6vh; font-size:clamp(10px,.88vw,12px); color:var(--bk-muted); border-left:2px solid var(--gold); padding-left:12px; line-height:1.65; }
 .bk.lot .num { position:absolute; top:26px; left:32px; z-index:4; background:rgba(11,11,12,.78); border:1px solid var(--bk-line); color:var(--gold-lt); padding:8px 15px; font-size:10px; letter-spacing:.26em; }
+.bk .sub { display:grid; grid-template-columns:1fr auto; gap:14px; align-items:baseline; padding:1.2vh 0; border-bottom:1px solid rgba(201,169,106,.18); }
+.bk .sub .n { font-size:clamp(11.5px,1vw,14px); color:#E7E2D7; }
+.bk .sub .n em { font-family:var(--serif); font-style:italic; color:var(--bk-muted); font-size:.92em; margin-left:8px; }
+.bk .sub .p { font-family:var(--serif); color:var(--gold-lt); font-size:clamp(13px,1.2vw,17px); white-space:nowrap; }
 
-/* тёмный дуэт предметных съёмок */
-.bk .duo2 { display:grid; grid-template-columns:1fr 1fr; gap:clamp(20px,2.4vw,44px); }
-.bk .duo2 .card { background:var(--coal); border:1px solid rgba(201,169,106,.2); box-shadow:0 20px 60px rgba(0,0,0,.6); }
-.bk .duo2 .card img { width:100%; aspect-ratio:16/11; object-fit:cover; }
-.bk .duo2 .cap { padding:1.4vh 16px 1.8vh; }
-.bk .duo2 .cap .nm { color:#fff; }
+.bk .trio3 { display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(16px,2vw,36px); }
+.bk .trio3 .card { background:var(--coal); border:1px solid rgba(201,169,106,.2); box-shadow:0 20px 60px rgba(0,0,0,.6); }
+.bk .trio3 .card img { width:100%; aspect-ratio:16/12; object-fit:cover; }
+.bk .trio3 .cap { padding:1.3vh 14px 1.7vh; }
+.bk .trio3 .cap .nm { color:#fff; }
 
-/* шмуцтитул */
 .divider { grid-template-columns:1fr; }
 .divider .bg { position:absolute; inset:0; }
 .divider .bg img { width:100%; height:100%; object-fit:cover; opacity:.55; }
@@ -83,18 +87,25 @@ img { display:block; }
 .divider h2 { font-size:clamp(30px,4vw,62px); color:#fff; margin:2vh 0 2.2vh; }
 .divider p { font-size:clamp(12px,1.05vw,15.5px); color:#D8D2C6; line-height:1.85; max-width:54ch; }
 .divider .items { margin-top:2.6vh; font-size:clamp(10px,.9vw,12.5px); letter-spacing:.12em; text-transform:uppercase; color:var(--gold-lt); }
-.divider .lotline { position:absolute; left:0; right:0; bottom:0; z-index:3; background:rgba(11,11,12,.82); border-top:1px solid var(--bk-line); padding:1.6vh clamp(24px,3vw,44px); display:flex; gap:18px; align-items:baseline; }
+.divider .lotline { position:absolute; left:0; right:0; bottom:0; z-index:3; background:rgba(11,11,12,.82); border-top:1px solid var(--bk-line); padding:1.6vh 120px 1.6vh clamp(24px,3vw,44px); display:flex; gap:18px; align-items:baseline; }
 .divider .lotline .t { font-size:9.5px; letter-spacing:.26em; text-transform:uppercase; color:var(--bk-muted); }
 .divider .lotline .n { font-size:clamp(11px,1vw,14px); color:#E7E2D7; }
 .divider .lotline .p { font-family:var(--serif); color:var(--gold-lt); margin-left:auto; font-size:clamp(13px,1.15vw,17px); }
 
-/* индекс-люкс (тёмный список) */
 .lux { width:min(1040px,90vw); text-align:left; }
-.lux .row { display:grid; grid-template-columns:44px 1fr auto; gap:20px; align-items:baseline; padding:1.5vh 0; border-bottom:1px solid rgba(201,169,106,.18); }
+.lux a.row { display:grid; grid-template-columns:44px 1fr auto; gap:20px; align-items:baseline; padding:1.5vh 0; border-bottom:1px solid rgba(201,169,106,.18); text-decoration:none; }
+.lux a.row:hover { background:rgba(201,169,106,.06); }
 .lux .row .no { font-family:var(--serif); color:var(--gold-lt); font-size:clamp(14px,1.3vw,19px); }
 .lux .row .nm { font-size:clamp(12.5px,1.2vw,17px); color:#EDE8DD; }
 .lux .row .nm em { font-family:var(--serif); font-style:italic; color:var(--bk-muted); font-size:.9em; margin-left:10px; }
 .lux .row .pr { font-family:var(--serif); color:var(--gold-lt); font-size:clamp(14px,1.35vw,20px); white-space:nowrap; font-variant-numeric:tabular-nums; }
+.lux .note { font-size:clamp(10px,.9vw,12.5px); color:var(--bk-muted); margin-top:2.4vh; text-align:center; line-height:1.7; }
+
+/* компактная сетка 2×2: фото + подпись сбоку */
+.quad { display:grid; grid-template-columns:1fr 1fr; gap:clamp(10px,1.2vw,20px) clamp(20px,2.4vw,40px); }
+.quad .q { display:grid; grid-template-columns:auto 1fr; gap:16px; align-items:center; }
+.quad .q .mat { width:clamp(190px,18vw,265px); }
+.quad .q .mat img { aspect-ratio:16/10; }
 
 .legend { display:grid; border-top:1px solid var(--hair); background:rgba(255,255,255,.96); }
 .legend .cell { padding:1.7vh clamp(14px,1.6vw,28px); border-right:1px solid var(--hair-lt); display:flex; gap:12px; align-items:baseline; }
@@ -115,8 +126,8 @@ img { display:block; }
     <img src="img/stargift_logo.png" alt="Stargift" style="height:clamp(84px,11vw,150px);filter:invert(1);margin-left:-14px">
     <div class="label" style="margin-top:1.4vh">Подарок для того, у кого есть всё</div>
     <h1 style="font-size:clamp(36px,4.6vw,72px);color:#fff;margin:5vh 0 2.2vh">Летний каталог<br>2026</h1>
-    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(16px,1.7vw,25px);color:var(--gold-lt)">Свадебный сезон · чемпионат мира · вершины собрания</p>
-    <div class="label" style="margin-top:5vh;color:var(--bk-muted)">55 экспонатов · шесть подборок · июль — сентябрь 2026</div>
+    <p style="font-family:var(--serif);font-style:italic;font-size:clamp(16px,1.7vw,25px);color:var(--gold-lt)">Свадебный сезон · чемпионат мира · великие имена</p>
+    <div class="label" style="margin-top:5vh;color:var(--bk-muted)">60 экспонатов · четыре главы · июль — сентябрь 2026</div>
   </div>
   <div style="position:relative;overflow:hidden">
     <img src="img/beckham_wc2002.jpg" alt="" style="width:100%;height:100%;object-fit:cover">
@@ -126,18 +137,16 @@ img { display:block; }
 
 <!-- 02 · ОГЛАВЛЕНИЕ -->
 <section class="slide w center">
-  <div style="width:min(1000px,90vw)">
+  <div style="width:min(940px,90vw)">
     <div class="label" style="text-align:center">Лето — сезон больших поводов</div>
-    <h2 style="font-size:clamp(24px,2.7vw,42px);text-align:center;margin:1.8vh 0 3vh">Семь подборок ближайших месяцев</h2>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(13px,1.5vw,24px) clamp(24px,3vw,54px);text-align:left">
-      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.1vh"><span><span style="font-family:var(--serif);color:var(--gold);margin-right:14px">I</span>Свадебный сезон</span><span style="font-family:var(--serif);color:var(--gold)">7 лотов</span></div>
-      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.1vh"><span><span style="font-family:var(--serif);color:var(--gold);margin-right:14px">II</span>Чемпионат мира — 2026</span><span style="font-family:var(--serif);color:var(--gold)">11 лотов</span></div>
-      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.1vh"><span><span style="font-family:var(--serif);color:var(--gold);margin-right:14px">III</span>Кино. Вечера воспоминаний</span><span style="font-family:var(--serif);color:var(--gold)">15 лотов</span></div>
-      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.1vh"><span><span style="font-family:var(--serif);color:var(--gold);margin-right:14px">IV</span>Кабинет учёного</span><span style="font-family:var(--serif);color:var(--gold)">6 лотов</span></div>
-      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.1vh"><span><span style="font-family:var(--serif);color:var(--gold);margin-right:14px">V</span>Yoomoota и бриллиантовый век</span><span style="font-family:var(--serif);color:var(--gold)">6 лотов</span></div>
-      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.1vh"><span><span style="font-family:var(--serif);color:var(--gold);margin-right:14px">VI</span>Вершины собрания</span><span style="font-family:var(--serif);color:var(--gold)">10 лотов</span></div>
+    <h2 style="font-size:clamp(24px,2.7vw,42px);text-align:center;margin:1.8vh 0 3vh">Четыре главы ближайших месяцев</h2>
+    <div style="display:grid;gap:clamp(13px,1.5vw,22px);text-align:left">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.2vh"><span><span style="font-family:var(--serif);color:var(--gold);margin-right:16px">I</span>Свадебный сезон</span><span style="font-family:var(--serif);color:var(--gold)">королевские реликвии · рисунки о любви</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.2vh"><span><span style="font-family:var(--serif);color:var(--gold);margin-right:16px">II</span>Чемпионат мира</span><span style="font-family:var(--serif);color:var(--gold)">Месси · Роналду · Марадона · Пеле</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.2vh"><span><span style="font-family:var(--serif);color:var(--gold);margin-right:16px">III</span>Великие имена</span><span style="font-family:var(--serif);color:var(--gold)">Тарантино · Аль Пачино · Тайсон · сценарии · гитары</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.2vh"><span><span style="font-family:var(--serif);color:var(--gold);margin-right:16px">IV</span>И другие топы</span><span style="font-family:var(--serif);color:var(--gold)">учёные · Yoomoota и бриллианты · вершины собрания</span></div>
     </div>
-    <p style="text-align:center;font-size:clamp(10.5px,.9vw,12.5px);color:var(--grey);margin-top:3vh;line-height:1.7">Каждый экспонат — с международной сертификацией или экспертизой. Полный каталог из 1815 позиций — на stargift.ru<br>и у личного менеджера; здесь — избранное лета.</p>
+    <p style="text-align:center;font-size:clamp(10.5px,.9vw,12.5px);color:var(--grey);margin-top:3vh;line-height:1.7">Названия экспонатов в списках — кликабельны и ведут на страницы лотов на stargift.ru.<br>Полный каталог — 1815 позиций; здесь — избранное лета.</p>
   </div>
   <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px"></div>
   <div class="brandline">Stargift · Летний каталог 2026</div><div class="pagenum"></div>
@@ -147,7 +156,7 @@ img { display:block; }
 <section class="slide bk divider">
   <div class="bg"><img src="img_spring/grace_wedding.jpg" alt=""></div>
   <div class="txt">
-    <div class="roman">Подборка I</div>
+    <div class="roman">Глава I</div>
     <h2>Свадебный сезон</h2>
     <p>Лето — время свадеб и годовщин. Артефакты величайших союзов XX века и рисунки о любви руки Шагала и Сомова — подарки, которые говорят на языке вечной романтики и с каждым годом становятся только ценнее.</p>
     <div class="items">Карл III и Диана · Уильям и Кэтрин · Грейс Келли · Шагал · Сомов</div>
@@ -161,80 +170,54 @@ img { display:block; }
   <div style="width:min(1200px,95vw)">
     <div class="head">
       <h2 style="font-size:clamp(21px,2.3vw,36px)">Королевские свадьбы</h2>
-      <div class="label">Подборка I · Свадебный сезон</div>
+      <div class="label">Глава I · Свадебный сезон</div>
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2vw,36px)">
-      <div><div class="mat"><img src="img_spring/diana_cake.jpg" alt="" style="aspect-ratio:4/3.4"></div><div class="cap"><div class="nm">Карл III и принцесса Диана</div><div class="tp">Кусок свадебного торта · Букингемский дворец, 1981</div><div class="pr">1 250 000 ₽</div></div></div>
-      <div><div class="mat"><img src="img_spring/diana_telegram.jpg" alt="" style="aspect-ratio:4/3.4"></div><div class="cap"><div class="nm">Карл III и принцесса Диана</div><div class="tp">Поздравительная открытка с автографами</div><div class="pr">1 250 000 ₽</div></div></div>
-      <div><div class="mat"><img src="img_spring/william_horseshoe.jpg" alt="" style="aspect-ratio:4/3.4"></div><div class="cap"><div class="nm">Принц Уильям и Кэтрин Миддлтон</div><div class="tp">Подкова с королевской свадьбы</div><div class="pr">900 000 ₽</div></div></div>
+      <div><div class="mat"><img src="img_spring/diana_cake.jpg" alt="" style="aspect-ratio:4/3.4"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/765884841991-prints-charlz-korol-karl-iii-i-printsessa-diana">Карл III и принцесса Диана</a></div><div class="tp">Кусок свадебного торта · Букингемский дворец, 1981</div><div class="pr">1 250 000 ₽</div></div></div>
+      <div><div class="mat"><img src="img_spring/diana_telegram.jpg" alt="" style="aspect-ratio:4/3.4"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/558042074651-prints-charlz-korol-karl-iii-i-printsessa-diana">Карл III и принцесса Диана</a></div><div class="tp">Поздравительная открытка с автографами</div><div class="pr">1 250 000 ₽</div></div></div>
+      <div><div class="mat"><img src="img_spring/william_horseshoe.jpg" alt="" style="aspect-ratio:4/3.4"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/991058155841-prints-uilyam-i-ketrin-middlton">Принц Уильям и Кэтрин Миддлтон</a></div><div class="tp">Подкова с королевской свадьбы</div><div class="pr">900 000 ₽</div></div></div>
     </div>
   </div>
   <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px"></div>
-  <div class="brandline">Подборка I · Свадебный сезон</div><div class="pagenum"></div>
+  <div class="brandline">Глава I · Свадебный сезон</div><div class="pagenum"></div>
 </section>
 
-<!-- 05 · РИСУНКИ О ЛЮБВИ -->
+<!-- 05 · СВАДЕБНЫЙ КВАРТЕТ -->
 <section class="slide w center">
-  <div style="width:min(1130px,93vw)">
+  <div style="width:min(1150px,93vw)">
     <div class="head">
-      <h2 style="font-size:clamp(21px,2.3vw,36px)">Рисунки о любви</h2>
-      <div class="label">Подборка I · Дуэт</div>
+      <h2 style="font-size:clamp(21px,2.3vw,36px)">Рисунки о любви и великие пары</h2>
+      <div class="label">Глава I · Четыре лота</div>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,2.4vw,44px)">
-      <div>
-        <div class="mat"><img src="img_spring/chagall_drawing.jpg" alt="" style="aspect-ratio:16/10.2"></div>
-        <div class="cap"><div class="nm">Марк Шагал</div><div class="tp">Собственноручный рисунок с автографом</div><div class="pr">2 000 000 ₽</div></div>
-      </div>
-      <div>
-        <div class="mat"><img src="img_spring/somov_drawing.jpg" alt="" style="aspect-ratio:16/10.2"></div>
-        <div class="cap"><div class="nm">Константин Сомов</div><div class="tp">Собственноручный рисунок «Поцелуй»</div><div class="pr">2 000 000 ₽</div></div>
-      </div>
+    <div class="quad">
+      <div class="q"><div class="mat"><img src="img_spring/chagall_drawing.jpg" alt=""></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/990886391982-mark-shagal">Марк Шагал</a></div><div class="tp">Собственноручный рисунок с автографом</div><div class="pr">2 000 000 ₽</div></div></div>
+      <div class="q"><div class="mat"><img src="img_spring/somov_drawing.jpg" alt=""></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/677112252172-konstantin-somov">Константин Сомов</a></div><div class="tp">Собственноручный рисунок «Поцелуй»</div><div class="pr">2 000 000 ₽</div></div></div>
+      <div class="q"><div class="mat"><img src="img_spring/gracekelly.jpg" alt=""></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/284684183932-greys-kelli">Грейс Келли</a></div><div class="tp">Открытка с автографом княгини Монако</div><div class="pr">450 000 ₽</div></div></div>
+      <div class="q"><div class="mat"><img src="img_spring/dicaprio_winslet.jpg" alt=""></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/947962988062-leonardo-dikaprio-i-keyt-uinslet">ДиКаприо и Уинслет</a></div><div class="tp">Фото «Титаника» с двумя автографами</div><div class="pr">400 000 ₽</div></div></div>
     </div>
   </div>
   <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px"></div>
-  <div class="brandline">Подборка I · Свадебный сезон</div><div class="pagenum"></div>
+  <div class="brandline">Глава I · Свадебный сезон</div><div class="pagenum"></div>
 </section>
 
-<!-- 06 · ПАРЫ ЭКРАНА -->
-<section class="slide w center">
-  <div style="width:min(1130px,93vw)">
-    <div class="head">
-      <h2 style="font-size:clamp(21px,2.3vw,36px)">Великие пары</h2>
-      <div class="label">Подборка I · Дуэт</div>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,2.4vw,44px)">
-      <div>
-        <div class="mat"><img src="img_spring/gracekelly.jpg" alt="" style="aspect-ratio:16/10.2"></div>
-        <div class="cap"><div class="nm">Грейс Келли</div><div class="tp">Открытка с автографом княгини Монако</div><div class="pr">450 000 ₽</div></div>
-      </div>
-      <div>
-        <div class="mat"><img src="img_spring/dicaprio_winslet.jpg" alt="" style="aspect-ratio:16/10.2"></div>
-        <div class="cap"><div class="nm">Леонардо ДиКаприо и Кейт Уинслет</div><div class="tp">Фото «Титаника» с двумя автографами</div><div class="pr">400 000 ₽</div></div>
-      </div>
-    </div>
-  </div>
-  <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px"></div>
-  <div class="brandline">Подборка I · Свадебный сезон</div><div class="pagenum"></div>
-</section>
-
-<!-- 07 · II ШМУЦ ФУТБОЛ -->
+<!-- 06 · II ШМУЦ ЧМ -->
 <section class="slide bk divider">
   <div class="bg"><img src="img/moment_maradona1986.jpg" alt=""></div>
   <div class="txt">
-    <div class="roman">Подборка II</div>
-    <h2>Чемпионат мира — 2026</h2>
-    <p>Планета живёт футболом — лучший момент для реликвий игры. От мяча финала Лиги чемпионов с автографами чемпионской «Барселоны» до футболок нового поколения: подборка для тех, кто этим летом смотрит каждый матч.</p>
-    <div class="items">Мяч ЛЧ-2006 · Марадона · Роналду · Бекхэм · Пеле · Мбаппе · Ямаль · Холанд</div>
+    <div class="roman">Глава II</div>
+    <h2>Чемпионат мира</h2>
+    <p>Планета живёт футболом — лучший момент для реликвий игры. От мяча финала Лиги чемпионов с автографами чемпионской «Барселоны» до бутсы Месси и футболок нового поколения.</p>
+    <div class="items">Месси · Роналду · Марадона · Пеле · Бекхэм · Мбаппе · Ямаль · Холанд</div>
   </div>
   <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:34px;filter:invert(1)"></div>
   <div class="pagenum"></div>
 </section>
 
-<!-- 08 · МЯЧ ЛЧ · ЧЁРНЫЙ ТОП-ЛОТ -->
+<!-- 07 · МЯЧ ЛЧ -->
 <section class="slide bk lot" style="grid-template-columns:1.15fr 1fr">
-  <div class="ph"><div class="num" style="border-color:var(--gold);color:var(--bk-ivory);background:rgba(169,133,69,.35)">Топ-лот подборки</div><img src="img/ball_ucl2006.jpg" alt=""></div>
+  <div class="ph"><div class="num" style="border-color:var(--gold);color:var(--bk-ivory);background:rgba(169,133,69,.35)">Топ-лот главы</div><img src="img/ball_ucl2006.jpg" alt=""></div>
   <div class="pass">
-    <div class="label">Подборка II · Чемпионат мира</div>
+    <div class="label">Глава II · Чемпионат мира</div>
     <h2 style="font-size:clamp(20px,2.1vw,32px)">Мяч финала Лиги чемпионов УЕФА — 2006</h2>
     <div class="kind">11 автографов чемпионской «Барселоны»</div>
     <p class="story">Официальный памятный мяч финала в Париже, где «Барселона» победила «Арсенал» 2:1. Автографы: Месси, Роналдиньо, Хави, Деку, Эдмилсон, Беллетти, Жюли, Силвиньо, Пуйоль, Вальдес, Маркес. Целая эпоха европейского футбола в одном предмете.</p>
@@ -244,9 +227,9 @@ img { display:block; }
   <div class="pagenum"></div>
 </section>
 
-<!-- 09 · МАРАДОНА · ЧЁРНЫЙ -->
+<!-- 08 · МАРАДОНА -->
 <section class="slide bk lot">
-  <div class="ph"><div class="num">Подборка II · Чемпионат мира</div><img src="img/maradona.jpg" alt=""></div>
+  <div class="ph"><div class="num">Глава II · Чемпионат мира</div><img src="img/maradona.jpg" alt=""></div>
   <div class="pass">
     <div class="label">Чемпион мира — 1986</div>
     <h2>Диего Марадона</h2>
@@ -258,51 +241,47 @@ img { display:block; }
   <div class="pagenum"></div>
 </section>
 
-<!-- 10 · ДВА МЯЧА · ЧЁРНЫЙ ДУЭТ -->
+<!-- 09 · ТЁМНОЕ ТРИО: МЯЧИ И БУТСА -->
 <section class="slide bk center">
-  <div style="width:min(1130px,93vw)">
+  <div style="width:min(1220px,95vw)">
     <div style="display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid var(--bk-line);padding-bottom:1.5vh;margin-bottom:2.8vh">
-      <h2 style="font-size:clamp(21px,2.3vw,36px);color:#fff">Мячи великих номеров</h2>
-      <div class="label">Подборка II · Дуэт вечерних съёмок</div>
+      <h2 style="font-size:clamp(21px,2.3vw,36px);color:#fff">Мячи и бутса великих</h2>
+      <div class="label">Глава II · Вечерние съёмки</div>
     </div>
-    <div class="duo2">
-      <div class="card">
-        <img src="img/ronaldo_gold.jpg" alt="">
-        <div class="cap"><div class="nm">Криштиану Роналду</div><div class="tp">Золотой коллекционный мяч с автографом · Beckett</div><div class="pr">550 000 ₽</div></div>
-      </div>
-      <div class="card">
-        <img src="img/beckham_wc2002.jpg" alt="">
-        <div class="cap"><div class="nm">Дэвид Бекхэм</div><div class="tp">Официальный мяч чемпионата мира — 2002 с автографом · JSA</div><div class="pr">500 000 ₽</div></div>
-      </div>
+    <div class="trio3">
+      <div class="card"><img src="img/ronaldo_gold.jpg" alt=""><div class="cap"><div class="nm">Криштиану Роналду</div><div class="tp">Золотой коллекционный мяч с автографом · Beckett</div><div class="pr">550 000 ₽</div></div></div>
+      <div class="card"><img src="img/beckham_wc2002.jpg" alt=""><div class="cap"><div class="nm">Дэвид Бекхэм</div><div class="tp">Мяч чемпионата мира — 2002 с автографом · JSA</div><div class="pr">500 000 ₽</div></div></div>
+      <div class="card"><img src="img_spring/messi_boot.jpg" alt=""><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/841538981431-lionel-messi" style="color:#fff">Лионель Месси</a></div><div class="tp">Бутса с автографом</div><div class="pr">600 000 ₽</div></div></div>
     </div>
   </div>
   <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px;filter:invert(1)"></div>
-  <div class="brandline" style="color:var(--bk-muted)">Подборка II · Чемпионат мира</div><div class="pagenum"></div>
+  <div class="brandline" style="color:var(--bk-muted)">Глава II · Чемпионат мира</div><div class="pagenum"></div>
 </section>
 
-<!-- 11 · ФУТБОЛКИ ТРИО · БЕЛЫЙ -->
+<!-- 10 · ФУТБОЛКИ КВАРТЕТ -->
 <section class="slide w center">
-  <div style="width:min(1200px,95vw)">
+  <div style="width:min(1150px,93vw)">
     <div class="head">
-      <h2 style="font-size:clamp(21px,2.3vw,36px)">Три поколения десяток</h2>
-      <div class="label">Подборка II · Трио</div>
+      <h2 style="font-size:clamp(21px,2.3vw,36px)">Футболки: от «Кайзера» до нового поколения</h2>
+      <div class="label">Глава II · Четыре лота</div>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2vw,36px)">
-      <div><div class="mat"><img src="img/beckenbauer.jpg" alt="" style="aspect-ratio:4/4.1;object-fit:contain;background:#fff"></div><div class="cap"><div class="nm">Франц Беккенбауэр</div><div class="tp">Футболка сборной Германии с автографом</div><div class="pr">550 000 ₽</div></div></div>
-      <div><div class="mat"><img src="img/mbappe.jpg" alt="" style="aspect-ratio:4/4.1;object-fit:contain;background:#fff"></div><div class="cap"><div class="nm">Килиан Мбаппе</div><div class="tp">Футболка «Реал Мадрид» с автографом</div><div class="pr">600 000 ₽</div></div></div>
-      <div><div class="mat"><img src="img/yamal.jpg" alt="" style="aspect-ratio:4/4.1;object-fit:contain;background:#fff"></div><div class="cap"><div class="nm">Ламин Ямаль</div><div class="tp">Футболка «Барселоны» с автографом</div><div class="pr">360 000 ₽</div></div></div>
+    <div class="quad">
+      <div class="q"><div class="mat"><img src="img/beckenbauer.jpg" alt="" style="object-fit:contain;background:#fff"></div><div class="cap"><div class="nm">Франц Беккенбауэр</div><div class="tp">Футболка сборной Германии с автографом</div><div class="pr">550 000 ₽</div></div></div>
+      <div class="q"><div class="mat"><img src="img/mbappe.jpg" alt="" style="object-fit:contain;background:#fff"></div><div class="cap"><div class="nm">Килиан Мбаппе</div><div class="tp">Футболка «Реал Мадрид» с автографом</div><div class="pr">600 000 ₽</div></div></div>
+      <div class="q"><div class="mat"><img src="img/yamal.jpg" alt="" style="object-fit:contain;background:#fff"></div><div class="cap"><div class="nm">Ламин Ямаль</div><div class="tp">Футболка «Барселоны» с автографом</div><div class="pr">360 000 ₽</div></div></div>
+      <div class="q"><div class="mat"><img src="img/haaland.jpg" alt="" style="object-fit:contain;background:#fff"></div><div class="cap"><div class="nm">Эрлинг Холанд</div><div class="tp">Футболка сборной Норвегии с автографом</div><div class="pr">450 000 ₽</div></div></div>
     </div>
   </div>
   <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px"></div>
-  <div class="brandline">Подборка II · Чемпионат мира</div><div class="pagenum"></div>
+  <div class="brandline">Глава II · Чемпионат мира</div><div class="pagenum"></div>
 </section>
 
-<!-- 12 · СТЕНА ЧЕМПИОНОВ -->
+<!-- 11 · СТЕНА ЧЕМПИОНОВ -->
 <section class="slide w" style="grid-template-rows:1fr auto">
   <div style="position:relative;overflow:hidden">
     <img src="img_spring/wall_champions.jpg" alt="" style="width:100%;height:100%;object-fit:cover">
     <div style="position:absolute;top:26px;left:32px;background:rgba(255,255,255,.94);border:1px solid var(--hair);padding:12px 20px">
-      <div class="label">Подборка II · Экспонаты в пространстве</div>
+      <div class="label">Глава II · Экспонаты в пространстве</div>
       <h2 style="font-size:clamp(18px,1.9vw,28px);margin-top:4px">Стена чемпионов в вашей гостиной</h2>
     </div>
     <div class="spot" style="left:22%;top:40%">1</div>
@@ -319,277 +298,212 @@ img { display:block; }
   <div class="pagenum" style="color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.5);bottom:auto;top:26px;right:32px"></div>
 </section>
 
-<!-- 13 · III ШМУЦ КИНО + ЛОТ -->
+<!-- 12 · III ШМУЦ ВЕЛИКИЕ ИМЕНА -->
 <section class="slide bk divider">
   <div class="bg"><img src="img_spring/prowse.jpg" alt="" style="object-position:top;opacity:.78"></div>
   <div class="txt">
-    <div class="roman">Подборка III</div>
-    <h2>Кино. Вечера воспоминаний</h2>
-    <p>Кадры, которые все помнят наизусть, — с подписями тех, кто их создал. Для домашних кинотеатров и коллекций, где каждый вечер начинается со слов «а помнишь?..».</p>
-    <div class="items">Тарантино · Пачино · Одри Хепбёрн · экранные пары · Бардо и Делон · «Титаник»</div>
+    <div class="roman">Глава III</div>
+    <h2>Великие имена</h2>
+    <p>Кино, музыка и спорт — люди, чьи имена знает каждый. Сценарии культовых фильмов, кадры, которые все помнят наизусть, гитары и барабаны легенд рока, перчатки чемпионов.</p>
+    <div class="items">Тарантино · Аль Пачино · Тайсон · Али · Одри Хепбёрн · Nirvana · AC/DC</div>
   </div>
-  <div class="lotline" style="padding-right:120px"><span class="t">На фото — лот</span><span class="n">Дэвид Проуз · фото Дарта Вейдера с автографом · Beckett</span><span class="p">240 000 ₽</span></div>
+  <div class="lotline"><span class="t">На фото — лот</span><span class="n">Дэвид Проуз · фото Дарта Вейдера с автографом · Beckett</span><span class="p">240 000 ₽</span></div>
   <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:34px;filter:invert(1)"></div>
   <div class="pagenum"></div>
 </section>
 
-<!-- 14 · ПАЧИНО · ЧЁРНЫЙ -->
-<section class="slide bk lot">
-  <div class="ph"><div class="num">Подборка III · Кино</div><img src="img_spring/pacino.jpg" alt=""></div>
-  <div class="pass">
-    <div class="label">«Лицо со шрамом» · 1983</div>
-    <h2>Аль Пачино</h2>
-    <div class="kind">Фото с автографом</div>
-    <p class="story">Кадр Тони Монтаны за столом — одна из самых узнаваемых сцен в истории кино, подписанная самим Пачино. Тёмная предметная съёмка на чёрном мраморе: экспонат для кабинета, где вечером горит одна лампа.</p>
-    <div class="price"><span class="t">Стоимость</span><span class="n">340 000 ₽</span></div>
-    <div class="cert">Международная сертификация подлинности: Beckett.</div>
-  </div>
-  <div class="pagenum"></div>
-</section>
-
-<!-- 15 · НАЗАД В БУДУЩЕЕ + ГАРРИ ПОТТЕР -->
-<section class="slide w center">
-  <div style="width:min(1130px,93vw)">
-    <div class="head">
-      <h2 style="font-size:clamp(21px,2.3vw,36px)">Машина времени</h2>
-      <div class="label">Подборка III · Кино · Дуэт</div>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,2.4vw,44px)">
-      <div>
-        <div class="mat"><img src="img_spring/bttf.jpg" alt="" style="aspect-ratio:16/10.6"></div>
-        <div class="cap"><div class="nm">Кристофер Ллойд</div><div class="tp">Номерной знак DeLorean «OUTATIME» с автографом · «Назад в будущее»</div><div class="pr">250 000 ₽</div></div>
-      </div>
-      <div>
-        <div class="mat"><img src="img_spring/radcliffe.jpg" alt="" style="aspect-ratio:16/10.6"></div>
-        <div class="cap"><div class="nm">Дэниэл Рэдклифф</div><div class="tp">Сценарий «Гарри Поттер и узник Азкабана» с автографом</div><div class="pr">290 000 ₽</div></div>
-      </div>
-    </div>
-  </div>
-  <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px"></div>
-  <div class="brandline">Подборка III · Кино</div><div class="pagenum"></div>
-</section>
-
-<!-- 16 · РЕЖИССЁРЫ ТРИО -->
+<!-- 13 · ТОП СЦЕНАРИЕВ -->
 <section class="slide w" style="grid-template-columns:1fr 1.5fr">
   <div style="overflow:hidden;position:relative">
     <img src="img_spring/tarantino_wall.jpg" alt="" style="width:100%;height:100%;object-fit:cover">
     <div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.62));padding:18px 24px 24px">
       <div style="font-size:9.5px;letter-spacing:.26em;text-transform:uppercase;color:#E8D9B8">Кинозал Stargift</div>
-      <div style="font-family:var(--serif);font-size:clamp(13px,1.2vw,17px);color:#fff;margin-top:4px">«Криминальное чтиво» и «Волк с Уолл-стрит» в частной галерее</div>
+      <div style="font-family:var(--serif);font-size:clamp(13px,1.2vw,17px);color:#fff;margin-top:4px">«Криминальное чтиво» в музейном багете — частная галерея клиента</div>
     </div>
   </div>
-  <div style="padding:clamp(22px,2.6vw,46px);display:flex;flex-direction:column;justify-content:center;gap:2vh">
-    <div class="head" style="margin-bottom:0">
-      <h2 style="font-size:clamp(21px,2.3vw,36px)">Режиссёрская ложа</h2>
-      <div class="label">Трио</div>
+  <div style="padding:clamp(22px,2.6vw,46px);display:flex;flex-direction:column;justify-content:center;gap:1.2vh">
+    <div class="head" style="margin-bottom:1vh">
+      <h2 style="font-size:clamp(21px,2.3vw,36px)">Шесть сценариев великого кино</h2>
+      <div class="label">Топ главы</div>
     </div>
-    <div style="display:grid;gap:1.6vh">
-      <div style="display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.4vh">
-        <div><div class="cap" style="padding:0"><div class="nm">Квентин Тарантино</div><div class="tp">Сценарий «Криминального чтива» с автографом · Beckett</div></div></div>
-        <div style="font-family:var(--serif);color:var(--gold);font-size:clamp(14px,1.3vw,19px)">300 000 ₽</div>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.4vh">
-        <div><div class="cap" style="padding:0"><div class="nm">Гай Ричи</div><div class="tp">Режиссёрский нумератор с автографом</div></div></div>
-        <div style="font-family:var(--serif);color:var(--gold);font-size:clamp(14px,1.3vw,19px)">350 000 ₽</div>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.4vh">
-        <div><div class="cap" style="padding:0"><div class="nm">Кристиан Бэйл</div><div class="tp">Сценарий «Тёмного рыцаря» с автографом · Beckett</div></div></div>
-        <div style="font-family:var(--serif);color:var(--gold);font-size:clamp(14px,1.3vw,19px)">250 000 ₽</div>
-      </div>
+    <div style="display:grid;gap:1.2vh">
+      <div style="display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.1vh"><div class="cap" style="padding:0"><div class="nm"><a class="lnk" href="https://stargift.ru/product/895429086532-kventin-tarantino">Квентин Тарантино — «Криминальное чтиво»</a></div><div class="tp">Сценарий с автографом · Beckett</div></div><div style="font-family:var(--serif);color:var(--gold);font-size:clamp(14px,1.3vw,19px)">300 000 ₽</div></div>
+      <div style="display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.1vh"><div class="cap" style="padding:0"><div class="nm"><a class="lnk" href="https://stargift.ru/product/541138350512-kharrison-ford">Харрисон Форд — «Звёздные войны»</a></div><div class="tp">Сценарий с автографом</div></div><div style="font-family:var(--serif);color:var(--gold);font-size:clamp(14px,1.3vw,19px)">630 000 ₽</div></div>
+      <div style="display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.1vh"><div class="cap" style="padding:0"><div class="nm"><a class="lnk" href="https://stargift.ru/product/476891190732-dzhuliya-roberts-i-richard-gir">Джулия Робертс и Ричард Гир — «Красотка»</a></div><div class="tp">Сценарий с двумя автографами</div></div><div style="font-family:var(--serif);color:var(--gold);font-size:clamp(14px,1.3vw,19px)">400 000 ₽</div></div>
+      <div style="display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.1vh"><div class="cap" style="padding:0"><div class="nm"><a class="lnk" href="https://stargift.ru/product/sg_1776437737_e8d4c84d-kristofer-nolan">Кристофер Нолан — «Оппенгеймер»</a></div><div class="tp">Сценарий с автографом</div></div><div style="font-family:var(--serif);color:var(--gold);font-size:clamp(14px,1.3vw,19px)">350 000 ₽</div></div>
+      <div style="display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.1vh"><div class="cap" style="padding:0"><div class="nm"><a class="lnk" href="https://stargift.ru/product/181969829631-dzhon-krasinski-i-emili-blant">Джон Красински и Эмили Блант — «Офис»</a></div><div class="tp">Сценарий серии с автографами и фото</div></div><div style="font-family:var(--serif);color:var(--gold);font-size:clamp(14px,1.3vw,19px)">380 000 ₽</div></div>
+      <div style="display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;border-bottom:1px solid var(--hair-lt);padding-bottom:1.1vh"><div class="cap" style="padding:0"><div class="nm"><a class="lnk" href="https://stargift.ru/product/728135774271-deniel-redkliff">Дэниэл Рэдклифф — «Гарри Поттер и узник Азкабана»</a></div><div class="tp">Сценарий с автографом</div></div><div style="font-family:var(--serif);color:var(--gold);font-size:clamp(14px,1.3vw,19px)">290 000 ₽</div></div>
     </div>
-    <p style="font-size:clamp(10px,.88vw,12px);color:var(--grey);line-height:1.65">Слева — интерьер частного кинозала с экспонатами дома: сценарий «Криминального чтива» и постер «Волка с Уолл-стрит» в музейных багетах.</p>
   </div>
   <div class="pagenum"></div>
 </section>
 
-<!-- 17 · ОДРИ · БЕЛЫЙ СОЛО -->
-<section class="slide w lot">
-  <div class="ph"><img src="img_spring/audrey.jpg" alt=""></div>
+<!-- 14 · ПАЧИНО -->
+<section class="slide bk lot">
+  <div class="ph"><div class="num">Глава III · Великие имена</div><img src="img_spring/pacino.jpg" alt=""></div>
   <div class="pass">
-    <div class="label">Подборка III · Кино</div>
-    <h2>Одри Хепбёрн</h2>
-    <div class="kind">Автограф в оформлении</div>
-    <p class="story">Карточка с подписью Одри Хепбёрн в белом багете с кадрами «Завтрака у Тиффани» — самый элегантный лот подборки. Автографы Хепбёрн ценятся коллекционерами всего мира и с годами дорожают быстрее большинства киноавтографов её эпохи.</p>
-    <div class="price"><span class="t">Стоимость</span><span class="n">700 000 ₽</span></div>
-    <div class="cert">Международная сертификация подлинности.</div>
+    <div class="label">«Лицо со шрамом» · 1983</div>
+    <h2>Аль Пачино</h2>
+    <div class="kind">Фото с автографом</div>
+    <p class="story">Кадр Тони Монтаны за столом — одна из самых узнаваемых сцен в истории кино, подписанная самим Пачино. Тёмная предметная съёмка на чёрном мраморе: экспонат для кабинета, где вечером горит одна лампа.</p>
+    <div class="price"><span class="t">Стоимость</span><span class="n">350 000 ₽</span></div>
+    <div class="cert">Международная сертификация подлинности: Beckett. В собрании также: постер «Крёстного отца» с автографом — 320 000 ₽, кубок с автографом — 1 050 000 ₽.</div>
   </div>
-  <div class="brandline">Подборка III · Кино</div><div class="pagenum"></div>
+  <div class="pagenum"></div>
 </section>
 
-<!-- 17b · ЭКРАННЫЕ ПАРЫ · СЕТКА 2×2 -->
+<!-- 15 · ЭКРАННЫЕ ПАРЫ КВАРТЕТ -->
 <section class="slide w center">
   <div style="width:min(1150px,93vw)">
     <div class="head">
       <h2 style="font-size:clamp(21px,2.3vw,36px)">Экранные пары</h2>
-      <div class="label">Подборка III · Кино · Сетка 2×2</div>
+      <div class="label">Глава III · Четыре лота</div>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(10px,1.2vw,20px) clamp(20px,2.4vw,40px)">
-      <div style="display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center"><div class="mat" style="width:clamp(190px,18vw,265px)"><img src="img_spring/spacey_bening.jpg" alt="" style="aspect-ratio:16/10"></div><div class="cap"><div class="nm">Кевин Спейси и Аннетт Бенинг</div><div class="tp">Фото «Красоты по-американски» с двумя автографами</div><div class="pr">250 000 ₽</div></div></div>
-      <div style="display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center"><div class="mat" style="width:clamp(190px,18vw,265px)"><img src="img_spring/brosnan_goldeneye.jpg" alt="" style="aspect-ratio:16/10"></div><div class="cap"><div class="nm">Пирс Броснан и Изабелла Скорупко</div><div class="tp">Фото «Золотого глаза» с двумя автографами</div><div class="pr">220 000 ₽</div></div></div>
-      <div style="display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center"><div class="mat" style="width:clamp(190px,18vw,265px)"><img src="img_spring/stone_douglas.jpg" alt="" style="aspect-ratio:16/10"></div><div class="cap"><div class="nm">Шэрон Стоун и Майкл Дуглас</div><div class="tp">Фото «Основного инстинкта» с автографами</div><div class="pr">360 000 ₽</div></div></div>
-      <div style="display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center"><div class="mat" style="width:clamp(190px,18vw,265px)"><img src="img_spring/emma_stone.jpg" alt="" style="aspect-ratio:16/10"></div><div class="cap"><div class="nm">Эмма Стоун</div><div class="tp">Кадр «Нового Человека-паука» с автографом</div><div class="pr">100 000 ₽</div></div></div>
+    <div class="quad">
+      <div class="q"><div class="mat"><img src="img_spring/spacey_bening.jpg" alt=""></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/867220166581-kevin-speysi-i-annett-bening">Кевин Спейси и Аннетт Бенинг</a></div><div class="tp">«Красота по-американски» · два автографа</div><div class="pr">250 000 ₽</div></div></div>
+      <div class="q"><div class="mat"><img src="img_spring/brosnan_goldeneye.jpg" alt=""></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/663386035372-pirs-brosnan-i-izabella-skorupko">Пирс Броснан и Изабелла Скорупко</a></div><div class="tp">«Золотой глаз» · два автографа</div><div class="pr">220 000 ₽</div></div></div>
+      <div class="q"><div class="mat"><img src="img_spring/stone_douglas.jpg" alt=""></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/673671370162-sheron-stoun-i-maykl-duglas">Шэрон Стоун и Майкл Дуглас</a></div><div class="tp">«Основной инстинкт» · автографы</div><div class="pr">360 000 ₽</div></div></div>
+      <div class="q"><div class="mat"><img src="img_spring/emma_stone.jpg" alt=""></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/602693926082-emma-stoun">Эмма Стоун</a></div><div class="tp">Кадр «Нового Человека-паука» с автографом</div><div class="pr">100 000 ₽</div></div></div>
     </div>
-    <p style="font-size:clamp(10px,.88vw,12px);color:var(--grey);margin-top:2.2vh">Истории любви большого экрана — подарок для двоих: на годовщину, помолвку или просто вечер вдвоём.</p>
   </div>
   <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px"></div>
-  <div class="brandline">Подборка III · Кино</div><div class="pagenum"></div>
+  <div class="brandline">Глава III · Великие имена</div><div class="pagenum"></div>
 </section>
 
-<!-- 17c · ФРАНЦУЗСКОЕ ЛЕТО · ДУЭТ -->
+<!-- 16 · ЛЕТНИЙ ЭКРАН КВАРТЕТ -->
 <section class="slide w center">
-  <div style="width:min(1130px,93vw)">
+  <div style="width:min(1150px,93vw)">
     <div class="head">
-      <h2 style="font-size:clamp(21px,2.3vw,36px)">Французское лето</h2>
-      <div class="label">Подборка III · Кино · Дуэт</div>
+      <h2 style="font-size:clamp(21px,2.3vw,36px)">Летний экран: Ривьера и океан</h2>
+      <div class="label">Глава III · Четыре лота</div>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,2.4vw,44px)">
-      <div>
-        <div class="mat"><img src="img_spring/bardot_frame.jpg" alt="" style="aspect-ratio:16/10.4"></div>
-        <div class="cap"><div class="nm">Брижит Бардо</div><div class="tp">Фото с автографом · золочёный багет</div><div class="pr">180 000 ₽</div></div>
-      </div>
-      <div>
-        <div class="mat"><img src="img_spring/delon_frame.jpg" alt="" style="aspect-ratio:16/10.4"></div>
-        <div class="cap"><div class="nm">Ален Делон</div><div class="tp">Фото с автографом</div><div class="pr">190 000 ₽</div></div>
-      </div>
+    <div class="quad">
+      <div class="q"><div class="mat"><img src="img_spring/bardot_frame.jpg" alt=""></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/761819845981-brizhit-bardo">Брижит Бардо</a></div><div class="tp">Фото с автографом · золочёный багет</div><div class="pr">180 000 ₽</div></div></div>
+      <div class="q"><div class="mat"><img src="img_spring/delon_frame.jpg" alt=""></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/217502043161-alen-delon">Ален Делон</a></div><div class="tp">Фото с автографом</div><div class="pr">190 000 ₽</div></div></div>
+      <div class="q"><div class="mat"><img src="img_spring/titanic_wall.jpg" alt="" style="object-position:top"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/394409766721-titanik">«Титаник»</a></div><div class="tp">Фрагмент корабля со съёмок фильма</div><div class="pr">290 000 ₽</div></div></div>
+      <div class="q"><div class="mat"><img src="img_spring/audrey.jpg" alt=""></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/741011200062-odri-khepbern">Одри Хепбёрн</a></div><div class="tp">Автограф в оформлении с кадрами «Завтрака у Тиффани»</div><div class="pr">700 000 ₽</div></div></div>
     </div>
-    <p style="font-size:clamp(10px,.88vw,12px);color:var(--grey);margin-top:2.2vh">Пара для летней гостиной: два лица французского кино 1960-х, вместе — за 370 000 ₽.</p>
   </div>
   <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px"></div>
-  <div class="brandline">Подборка III · Кино</div><div class="pagenum"></div>
+  <div class="brandline">Глава III · Великие имена</div><div class="pagenum"></div>
 </section>
 
-<!-- 17d · ТИТАНИК · БЕЛОЕ СОЛО -->
-<section class="slide w lot" style="grid-template-columns:1fr 1.15fr">
-  <div style="overflow:hidden;position:relative">
-    <img src="img_spring/titanic_wall.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top">
+<!-- 17 · МУЗЫКАЛЬНАЯ КОМНАТА КВАРТЕТ -->
+<section class="slide w center">
+  <div style="width:min(1150px,93vw)">
+    <div class="head">
+      <h2 style="font-size:clamp(21px,2.3vw,36px)">Музыкальная комната</h2>
+      <div class="label">Глава III · Гитары, барабаны, голоса</div>
+    </div>
+    <div class="quad">
+      <div class="q"><div class="mat"><img src="img_spring/nirvana_room.jpg" alt=""></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/242265438872-krist-novoselich-nirvana">Крист Новоселич (Nirvana)</a></div><div class="tp">Гитара с автографом</div><div class="pr">400 000 ₽</div></div></div>
+      <div class="q"><div class="mat"><img src="img_spring/ianpaice.jpg" alt=""></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/578917813891-ien-peys-deep-purple">Иэн Пейс (Deep Purple)</a></div><div class="tp">Фото с автографом</div><div class="pr">230 000 ₽</div></div></div>
+      <div class="q"><div class="mat"><img src="img_spring/armstrong.jpg" alt=""></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/474222002532-lui-armstrong-lyusil-armstrong-trammi-yang-denni-barselona-billi-kayl-i-mort-kherbert">Луи Армстронг и All Stars</a></div><div class="tp">Фото с шестью автографами</div><div class="pr">600 000 ₽</div></div></div>
+      <div class="q"><div class="mat"><img src="img_spring/fitzgerald.jpg" alt=""></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/172971705751-ella-fitsdzherald">Элла Фицджеральд</a></div><div class="tp">Концертное меню с обращением и автографом</div><div class="pr">390 000 ₽</div></div></div>
+    </div>
+    <p style="font-size:clamp(10px,.88vw,12px);color:var(--grey);margin-top:2vh">Также в собрании: <a class="lnk" href="https://stargift.ru/product/408858329082-angus-yang-malkolm-yang-kliff-uilyams-i-brayan-dzhonson-ac-dc">барабан AC/DC с четырьмя автографами</a> — 800 000 ₽ · <a class="lnk" href="https://stargift.ru/product/654453973261-bill-uord-black-sabbath">личная барабанная палочка Билла Уорда (Black Sabbath)</a> — 1 150 000 ₽ · <a class="lnk" href="https://stargift.ru/product/547704391141-vladimir-vysotskiy">собственноручное письмо Владимира Высоцкого</a> — 4 000 000 ₽</p>
   </div>
+  <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px"></div>
+  <div class="brandline">Глава III · Великие имена</div><div class="pagenum"></div>
+</section>
+
+<!-- 18 · ЛЕГЕНДЫ РИНГА -->
+<section class="slide bk lot">
+  <div class="ph"><div class="num">Глава III · Великие имена</div><img src="img_spring/ali_statue.jpg" alt=""></div>
   <div class="pass">
-    <div class="label">Подборка III · Кино · Реликвия съёмок</div>
-    <h2>«Титаник»</h2>
-    <div class="kind">Фрагмент корабля со съёмок фильма</div>
-    <p class="story">Подлинный фрагмент декорации легендарного корабля Джеймса Кэмерона, оформленный с постером фильма. История, которую пересматривают уже тридцать лет, — в одном предмете на стене. Идеальная пара к фото ДиКаприо и Уинслет с двумя автографами из свадебной подборки этого каталога.</p>
-    <div class="price"><span class="t">Стоимость</span><span class="n">290 000 ₽</span></div>
-    <div class="cert">Сертификат происхождения реквизита. Оформление мастерской Stargift.</div>
+    <div class="label">Легенды ринга</div>
+    <h2>Мухаммед Али</h2>
+    <div class="kind">Статуэтка с автографом</div>
+    <p class="story">Фигура величайшего боксёра всех времён с подлинной подписью — предмет, который держит на себе весь кабинет. Рядом — реликвии Железного Майка: пояс чемпиона мира и боевые перчатки с автографами.</p>
+    <div class="price"><span class="t">Стоимость</span><span class="n">900 000 ₽</span></div>
+    <div style="margin-top:2vh">
+      <div class="sub"><span class="n"><a class="lnk" href="https://stargift.ru/product/770151418350-mayk-tayson" style="color:#E7E2D7">Майк Тайсон</a><em>реплика пояса чемпиона мира с автографом</em></span><span class="p">510 000 ₽</span></div>
+      <div class="sub"><span class="n"><a class="lnk" href="https://stargift.ru/product/sg_1781971124_e2b80aa1-mayk-tayson" style="color:#E7E2D7">Майк Тайсон</a><em>боксёрская перчатка с автографом</em></span><span class="p">240 000 ₽</span></div>
+    </div>
   </div>
   <div class="pagenum"></div>
 </section>
 
-<!-- 18 · IV ШМУЦ УЧЁНЫЕ -->
+<!-- 19 · IV ШМУЦ ДРУГИЕ ТОПЫ -->
 <section class="slide bk divider">
-  <div class="bg"><img src="img_spring/mendeleev.jpg" alt=""></div>
+  <div class="bg"><img src="img_spring/dostoevsky.jpg" alt=""></div>
   <div class="txt">
-    <div class="roman">Подборка IV</div>
-    <h2>Кабинет учёного</h2>
-    <p>Подарки для тех, кто ценит мысль: автографы Эйнштейна и Менделеева, первых космонавтов и создателей космонавтики. Предметы, которые превращают кабинет в место силы.</p>
-    <div class="items">Эйнштейн · Менделеев · Гагарин · Королёв · Циолковский · Губкин</div>
+    <div class="roman">Глава IV</div>
+    <h2>И другие топы</h2>
+    <p>Кабинет учёного, бриллиантовый век Yoomoota и десять вершин собрания — от Эйнштейна до раннего компьютера Apple II Стива Джобса.</p>
+    <div class="items">Эйнштейн · Менделеев · Гагарин · Gemstone Pillman · Джобс · Пётр I · Гоголь</div>
   </div>
   <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:34px;filter:invert(1)"></div>
   <div class="pagenum"></div>
 </section>
 
-<!-- 19 · МЕНДЕЛЕЕВ + ГАГАРИН -->
+<!-- 20 · НАУКА И КОСМОС ДУЭТ -->
 <section class="slide w center">
   <div style="width:min(1130px,93vw)">
     <div class="head">
-      <h2 style="font-size:clamp(21px,2.3vw,36px)">Наука и космос</h2>
-      <div class="label">Подборка IV · Дуэт</div>
+      <h2 style="font-size:clamp(21px,2.3vw,36px)">Кабинет учёного</h2>
+      <div class="label">Глава IV · Наука и космос</div>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,2.4vw,44px)">
       <div>
         <div class="mat"><img src="img_spring/mendeleev.jpg" alt="" style="aspect-ratio:16/10.5"></div>
-        <div class="cap"><div class="nm">Дмитрий Менделеев</div><div class="tp">Документ с дарственной надписью и автографом</div><div class="pr">1 800 000 ₽</div></div>
+        <div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/304525070362-dmitriy-mendeleev">Дмитрий Менделеев</a></div><div class="tp">Документ с дарственной надписью и автографом</div><div class="pr">1 800 000 ₽</div></div>
       </div>
       <div>
         <div class="mat"><img src="img_spring/gagarin.jpg" alt="" style="aspect-ratio:16/10.5"></div>
-        <div class="cap"><div class="nm">Гагарин · Николаев · Попович · Титов</div><div class="tp">Фото первых космонавтов с четырьмя автографами</div><div class="pr">800 000 ₽</div></div>
+        <div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/501081266441-yuriy-gagarin-andriyan-nikolaev-pavel-popovich-german-titov">Гагарин · Николаев · Попович · Титов</a></div><div class="tp">Фото первых космонавтов с четырьмя автографами</div><div class="pr">800 000 ₽</div></div>
       </div>
+    </div>
+    <div style="margin-top:2vh;border-top:1px solid var(--hair);padding-top:1.4vh;display:grid;gap:.75vh">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:clamp(10.5px,.9vw,12.5px)"><a class="lnk" href="https://stargift.ru/product/149655654011-albert-eynshteyn">Альберт Эйнштейн — рисунки с автографом</a></span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(12px,1.05vw,15px)">9 200 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:clamp(10.5px,.9vw,12.5px)"><a class="lnk" href="https://stargift.ru/product/sg_1775384132_59cb2800-ivan-gubkin">Иван Губкин — минералогическая коллекция с рукописным перечнем</a></span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(12px,1.05vw,15px)">7 000 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:clamp(10.5px,.9vw,12.5px)"><a class="lnk" href="https://stargift.ru/product/959625047371-sergey-korolev">Сергей Королёв — брошюра с автографом</a></span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(12px,1.05vw,15px)">1 500 000 ₽</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:clamp(10.5px,.9vw,12.5px)"><a class="lnk" href="https://stargift.ru/product/797973459541-konstantin-tsiolkovskiy">Константин Циолковский — книга с дарственной надписью</a></span><span style="font-family:var(--serif);color:var(--gold);font-size:clamp(12px,1.05vw,15px)">1 200 000 ₽</span></div>
     </div>
   </div>
   <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px"></div>
-  <div class="brandline">Подборка IV · Кабинет учёного</div><div class="pagenum"></div>
+  <div class="brandline">Глава IV · И другие топы</div><div class="pagenum"></div>
 </section>
 
-<!-- 20 · ИНДЕКС УЧЁНЫХ · ЧЁРНЫЙ -->
-<section class="slide bk center">
-  <div class="lux">
-    <div class="label" style="text-align:center">Подборка IV · Кабинет учёного · Индекс</div>
-    <h2 style="font-size:clamp(23px,2.6vw,40px);color:#fff;text-align:center;margin:1.8vh 0 3vh">Мысль как драгоценность</h2>
-    <div class="row"><span class="no">01</span><span class="nm">Альберт Эйнштейн<em>рисунки с автографом</em></span><span class="pr">9 200 000 ₽</span></div>
-    <div class="row"><span class="no">02</span><span class="nm">Иван Губкин<em>минералогическая коллекция с рукописным перечнем</em></span><span class="pr">7 000 000 ₽</span></div>
-    <div class="row"><span class="no">03</span><span class="nm">Альберт Эйнштейн<em>фото с автографом</em></span><span class="pr">2 300 000 ₽</span></div>
-    <div class="row"><span class="no">04</span><span class="nm">Сергей Королёв<em>брошюра с автографом</em></span><span class="pr">1 500 000 ₽</span></div>
-    <div class="row"><span class="no">05</span><span class="nm">Константин Циолковский<em>книга с автографом и дарственной надписью</em></span><span class="pr">1 200 000 ₽</span></div>
-    <p style="font-size:clamp(10px,.9vw,12.5px);color:var(--bk-muted);margin-top:2.6vh;text-align:center;line-height:1.7">Показ этих лотов — в галереях дома и по видеосвязи с личным менеджером.</p>
-  </div>
-  <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px;filter:invert(1)"></div>
-  <div class="brandline" style="color:var(--bk-muted)">Подборка IV · Кабинет учёного</div><div class="pagenum"></div>
-</section>
-
-<!-- 21 · V ШМУЦ YOOMOOTA -->
-<section class="slide bk divider">
-  <div class="bg"><img src="img_spring/yoo_horse.jpg" alt=""></div>
-  <div class="txt">
-    <div class="roman">Подборка V</div>
-    <h2>Yoomoota и бриллиантовый век</h2>
-    <p>Арт-вселенная Тараса Желтышева — лимитированные скульптуры и предметы коллекционного дизайна. Вершина линейки — «бриллиантовый век»: версии культовых работ с драгоценными камнями.</p>
-    <div class="items">Gemstone Pillman · шахматы «Бриллиантовый век» · Old Money · Horse · Oasis</div>
-  </div>
-  <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:34px;filter:invert(1)"></div>
-  <div class="pagenum"></div>
-</section>
-
-<!-- 22 · YOOMOOTA ТРИО -->
+<!-- 21 · YOOMOOTA ТРИО -->
 <section class="slide w center">
   <div style="width:min(1200px,95vw)">
     <div class="head">
       <h2 style="font-size:clamp(21px,2.3vw,36px)">Yoomoota · Лимитированные тиражи</h2>
-      <div class="label">Подборка V · Трио</div>
+      <div class="label">Глава IV · Современное искусство</div>
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2vw,36px)">
-      <div><div class="mat"><img src="img_spring/yoo_chess.jpg" alt="" style="aspect-ratio:1/1"></div><div class="cap"><div class="nm">Шахматы «Another Kingdom: Oasis»</div><div class="tp">Тарас Желтышев · 1/21</div><div class="pr">1 500 000 ₽</div></div></div>
-      <div><div class="mat"><img src="img_spring/yoo_oldmoney.jpg" alt="" style="aspect-ratio:1/1"></div><div class="cap"><div class="nm">Скульптура «Old Money»</div><div class="tp">Тарас Желтышев · 1/50</div><div class="pr">650 000 ₽</div></div></div>
-      <div><div class="mat"><img src="img_spring/yoo_horse.jpg" alt="" style="aspect-ratio:1/1"></div><div class="cap"><div class="nm">Скульптура «Horse»</div><div class="tp">Тарас Желтышев · 40 см · 1/3</div><div class="pr">1 250 000 ₽</div></div></div>
+      <div><div class="mat"><img src="img_spring/yoo_chess.jpg" alt="" style="aspect-ratio:1/1"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/314639077522-drugoe-korolevstvo-oazis-another-kingdom-oasis">Шахматы «Another Kingdom: Oasis»</a></div><div class="tp">Тарас Желтышев · 1/21</div><div class="pr">1 500 000 ₽</div></div></div>
+      <div><div class="mat"><img src="img_spring/yoo_oldmoney.jpg" alt="" style="aspect-ratio:1/1"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/116561235412-starye-dengi-old-money">Скульптура «Old Money»</a></div><div class="tp">Тарас Желтышев · 1/50</div><div class="pr">650 000 ₽</div></div></div>
+      <div><div class="mat"><img src="img_spring/yoo_horse.jpg" alt="" style="aspect-ratio:1/1"></div><div class="cap"><div class="nm"><a class="lnk" href="https://stargift.ru/product/315578828401-loshad-horse">Скульптура «Horse»</a></div><div class="tp">Тарас Желтышев · 40 см · 1/3</div><div class="pr">1 250 000 ₽</div></div></div>
     </div>
   </div>
   <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px"></div>
-  <div class="brandline">Подборка V · Yoomoota</div><div class="pagenum"></div>
+  <div class="brandline">Глава IV · Yoomoota</div><div class="pagenum"></div>
 </section>
 
-<!-- 23 · БРИЛЛИАНТОВЫЙ ВЕК · ЧЁРНЫЙ ИНДЕКС -->
+<!-- 22 · БРИЛЛИАНТОВЫЙ ВЕК -->
 <section class="slide bk center">
   <div class="lux">
-    <div class="label" style="text-align:center">Подборка V · Бриллиантовая коллекция</div>
+    <div class="label" style="text-align:center">Глава IV · Бриллиантовая коллекция</div>
     <h2 style="font-size:clamp(23px,2.6vw,40px);color:#fff;text-align:center;margin:1.8vh 0 1.2vh">Бриллиантовый век Yoomoota</h2>
-    <p style="text-align:center;font-size:clamp(11px,.95vw,14px);color:#CFC9BE;max-width:60ch;margin:0 auto 3vh;line-height:1.8">Специальные версии работ Тараса Желтышева с инкрустацией драгоценными камнями — единичные экземпляры для главных собраний.</p>
-    <div class="row"><span class="no">01</span><span class="nm">Драгоценный человек-пилюля · Gemstone Pillman<em>скульптура с драгоценными камнями</em></span><span class="pr">10 000 000 ₽</span></div>
-    <div class="row"><span class="no">02</span><span class="nm">Шахматы «Другое королевство: бриллиантовый век»<em>инкрустация бриллиантами</em></span><span class="pr">5 000 000 ₽</span></div>
-    <div class="row"><span class="no">03</span><span class="nm">«Старые деньги: бриллиантовый век»<em>Old Money Brilliant Age</em></span><span class="pr">1 500 000 ₽</span></div>
-    <p style="font-size:clamp(10px,.9vw,12.5px);color:var(--bk-muted);margin-top:2.6vh;text-align:center;line-height:1.7">Показ бриллиантовой коллекции — только в галереях дома, по предварительной записи.</p>
+    <p style="text-align:center;font-size:clamp(11px,.95vw,14px);color:#CFC9BE;max-width:60ch;margin:0 auto 3vh;line-height:1.8">Специальные версии работ Тараса Желтышева с инкрустацией драгоценными камнями — единичные экземпляры для главных собраний. Названия кликабельны.</p>
+    <a class="row" href="https://stargift.ru/product/887010806412-dragotsennyy-chelovek-pilyulya-gemstone-pillman"><span class="no">01</span><span class="nm">Драгоценный человек-пилюля · Gemstone Pillman<em>скульптура с драгоценными камнями</em></span><span class="pr">10 000 000 ₽</span></a>
+    <a class="row" href="https://stargift.ru/product/174555666532-drugoe-korolevstvo-brilliantovyy-vek-another-kingdom-diamond-age"><span class="no">02</span><span class="nm">Шахматы «Другое королевство: бриллиантовый век»<em>инкрустация бриллиантами</em></span><span class="pr">5 000 000 ₽</span></a>
+    <a class="row" href="https://stargift.ru/product/794389421232-starye-dengi-brilliantovyy-vek-old-money-diamond-age"><span class="no">03</span><span class="nm">«Старые деньги: бриллиантовый век»<em>Old Money Diamond Age</em></span><span class="pr">1 500 000 ₽</span></a>
+    <p class="note">Показ бриллиантовой коллекции — только в галереях дома, по предварительной записи.</p>
   </div>
   <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px;filter:invert(1)"></div>
-  <div class="brandline" style="color:var(--bk-muted)">Подборка V · Бриллиантовая коллекция</div><div class="pagenum"></div>
+  <div class="brandline" style="color:var(--bk-muted)">Глава IV · Бриллиантовая коллекция</div><div class="pagenum"></div>
 </section>
 
-<!-- 24 · VI ШМУЦ ВЕРШИНЫ -->
-<section class="slide bk divider">
-  <div class="bg"><img src="img_spring/dostoevsky.jpg" alt=""></div>
-  <div class="txt">
-    <div class="roman">Подборка VI</div>
-    <h2>Вершины собрания</h2>
-    <p>Десять самых значительных лотов дома — от раннего компьютера Apple II Стива Джобса до указа Петра I. Предметы, которые определяют коллекцию поколениями.</p>
-    <div class="items">Джобс · Пётр I · Бах · Мао · Шумахер · Гоголь · Брюс Ли · Репин</div>
-  </div>
-  <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:34px;filter:invert(1)"></div>
-  <div class="pagenum"></div>
-</section>
-
-<!-- 25 · ГОГОЛЬ · БЕЛЫЙ -->
+<!-- 23 · ГОГОЛЬ -->
 <section class="slide w lot" style="grid-template-columns:1fr 1.15fr">
   <div style="overflow:hidden;position:relative">
     <img src="img_spring/gogol_fireplace.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top">
   </div>
   <div class="pass">
-    <div class="label">Подборка VI · Вершины собрания</div>
+    <div class="label">Глава IV · Вершины собрания</div>
     <h2>Николай Гоголь</h2>
     <div class="kind">Собственноручный рисунок с автографом</div>
     <p class="story">Рисунок руки Гоголя — величайшая редкость: графическое наследие писателя исчисляется единицами листов, почти все — в государственных музеях. Экспонат такого уровня появляется на рынке раз в поколение и становится главной вещью любого частного собрания русской культуры.</p>
@@ -599,27 +513,27 @@ img { display:block; }
   <div class="pagenum"></div>
 </section>
 
-<!-- 26 · ТОП-10 ИНДЕКС · ЧЁРНЫЙ -->
+<!-- 24 · ТОП-10 -->
 <section class="slide bk center">
   <div class="lux">
-    <div class="label" style="text-align:center">Подборка VI · Вершины собрания · Индекс</div>
+    <div class="label" style="text-align:center">Глава IV · Вершины собрания · названия кликабельны</div>
     <h2 style="font-size:clamp(23px,2.6vw,40px);color:#fff;text-align:center;margin:1.6vh 0 2.6vh">Десять вершин дома</h2>
-    <div class="row"><span class="no">01</span><span class="nm">Стив Джобс<em>ранний компьютер Apple II</em></span><span class="pr">35 000 000 ₽</span></div>
-    <div class="row"><span class="no">02</span><span class="nm">Пётр I<em>указ с автографом</em></span><span class="pr">33 400 000 ₽</span></div>
-    <div class="row"><span class="no">03</span><span class="nm">Иоганн Себастьян Бах<em>шкатулка с автографом</em></span><span class="pr">25 000 000 ₽</span></div>
-    <div class="row"><span class="no">04</span><span class="nm">Мао Цзэдун<em>печать в футляре с автографом</em></span><span class="pr">20 000 000 ₽</span></div>
-    <div class="row"><span class="no">05</span><span class="nm">Михаэль Шумахер<em>гоночный шлем · Гран-при Малайзии 1999</em></span><span class="pr">17 500 000 ₽</span></div>
-    <div class="row"><span class="no">06</span><span class="nm">Николай Гоголь<em>собственноручный рисунок</em></span><span class="pr">15 000 000 ₽</span></div>
-    <div class="row"><span class="no">07</span><span class="nm">Брюс Ли<em>личная скакалка</em></span><span class="pr">10 000 000 ₽</span></div>
-    <div class="row"><span class="no">08</span><span class="nm">Илья Репин<em>собственноручное письмо с автографом</em></span><span class="pr">10 000 000 ₽</span></div>
-    <div class="row"><span class="no">09</span><span class="nm">Альберт Эйнштейн<em>рисунки с автографом</em></span><span class="pr">9 200 000 ₽</span></div>
-    <div class="row"><span class="no">10</span><span class="nm">Фёдор Достоевский<em>книга с собственноручным рисунком</em></span><span class="pr">8 000 000 ₽</span></div>
+    <a class="row" href="https://stargift.ru/product/792080275601-stiv-dzhobs"><span class="no">01</span><span class="nm">Стив Джобс<em>ранний компьютер Apple II</em></span><span class="pr">35 000 000 ₽</span></a>
+    <a class="row" href="https://stargift.ru/product/188953994231-petr-i"><span class="no">02</span><span class="nm">Пётр I<em>указ с автографом</em></span><span class="pr">33 400 000 ₽</span></a>
+    <a class="row" href="https://stargift.ru/product/558203588172-iogann-sebastyan-bakh"><span class="no">03</span><span class="nm">Иоганн Себастьян Бах<em>шкатулка с автографом</em></span><span class="pr">25 000 000 ₽</span></a>
+    <a class="row" href="https://stargift.ru/product/574195760572-mao-tszedun"><span class="no">04</span><span class="nm">Мао Цзэдун<em>печать в футляре с автографом</em></span><span class="pr">20 000 000 ₽</span></a>
+    <a class="row" href="https://stargift.ru/product/543750099741-mikhael-shumakher"><span class="no">05</span><span class="nm">Михаэль Шумахер<em>гоночный шлем · Гран-при Малайзии 1999</em></span><span class="pr">17 500 000 ₽</span></a>
+    <a class="row" href="https://stargift.ru/product/445831348071-nikolay-gogol"><span class="no">06</span><span class="nm">Николай Гоголь<em>собственноручный рисунок</em></span><span class="pr">15 000 000 ₽</span></a>
+    <a class="row" href="https://stargift.ru/product/135958400161-bryus-li"><span class="no">07</span><span class="nm">Брюс Ли<em>личная скакалка</em></span><span class="pr">10 000 000 ₽</span></a>
+    <a class="row" href="https://stargift.ru/product/109986076251-ilya-repin"><span class="no">08</span><span class="nm">Илья Репин<em>собственноручное письмо с автографом</em></span><span class="pr">10 000 000 ₽</span></a>
+    <a class="row" href="https://stargift.ru/product/149655654011-albert-eynshteyn"><span class="no">09</span><span class="nm">Альберт Эйнштейн<em>рисунки с автографом</em></span><span class="pr">9 200 000 ₽</span></a>
+    <a class="row" href="https://stargift.ru/product/689372620221-fedor-dostoevskiy"><span class="no">10</span><span class="nm">Фёдор Достоевский<em>книга с собственноручным рисунком</em></span><span class="pr">8 000 000 ₽</span></a>
   </div>
   <div class="corner"><img src="img/stargift_logo.png" alt="" style="height:30px;filter:invert(1)"></div>
-  <div class="brandline" style="color:var(--bk-muted)">Подборка VI · Вершины собрания</div><div class="pagenum"></div>
+  <div class="brandline" style="color:var(--bk-muted)">Глава IV · Вершины собрания</div><div class="pagenum"></div>
 </section>
 
-<!-- 27 · ФИНАЛ -->
+<!-- 25 · ФИНАЛ -->
 <section class="slide bk center">
   <div>
     <img src="img/stargift_logo.png" alt="Stargift" style="height:clamp(70px,9vw,116px);margin:0 auto;filter:invert(1)">
@@ -641,6 +555,6 @@ const h=parseInt(location.hash.slice(1));if(!isNaN(h))go(h-1);
 addEventListener('keydown',e=>{if(['ArrowRight',' ','PageDown'].includes(e.key)){e.preventDefault();go(i+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();go(i-1)}if(e.key==='Home')go(0)});
 addEventListener('click',e=>{if(!e.target.closest('a'))go(i+1)});
 </script>
-<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}.slide{animation:none !important}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}.hint{display:none}}</style>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}.slide{animation:none !important}*{box-shadow:none !important;text-shadow:none !important}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}.hint{display:none}}</style>
 </body>
 </html>
