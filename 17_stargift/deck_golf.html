@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <title>Stargift · Большая игра</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{
   --noir:#0B0B0C; --noir2:#141414;
@@ -15,58 +15,51 @@ html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-s
 .slide.on{display:grid}
 img{display:block}
 
-/* generic type */
 .serif{font-family:'Cormorant Garamond',serif}
 .kick{font:500 11px/1 'Inter';letter-spacing:.36em;text-transform:uppercase;color:var(--gold)}
 .kick.d{color:var(--gold2)}
-
-/* page frames */
 .light{background:var(--paper)}
 .dark{background:var(--noir);color:var(--ivory)}
 .wrap{padding:40px 60px}
 
-/* product page header */
+/* product-page header */
 .head{display:flex;align-items:flex-end;justify-content:space-between;
   border-bottom:1px solid rgba(169,133,69,.28);padding-bottom:16px;margin-bottom:26px}
 .head .htitle{font-family:'Cormorant Garamond';font-weight:400;font-size:40px;line-height:1;color:var(--ink)}
 .head .hkick{margin-bottom:10px}
 .head .hcount{font:300 12px/1 'Inter';letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
 
-/* card system */
+/* white cards */
 .grid{display:grid}
-.g2{grid-template-columns:repeat(2,1fr);gap:34px}
-.g3{grid-template-columns:repeat(3,1fr);gap:30px}
-.g4{grid-template-columns:repeat(4,1fr);gap:24px}
+.g2{grid-template-columns:repeat(2,1fr);gap:34px;--ih:330px}
 .card{display:flex;flex-direction:column}
-.mat{background:#fff;padding:14px;border:1px solid rgba(169,133,69,.18);
-  box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.mat{background:#fff;padding:14px;border:1px solid rgba(169,133,69,.18);box-shadow:0 1px 2px rgba(0,0,0,.04)}
 .mat img{width:100%;height:var(--ih,300px);object-fit:cover;object-position:center}
-.meta{padding:14px 2px 0}
+.meta{padding:13px 2px 0}
 .name{font-family:'Cormorant Garamond';font-weight:500;font-size:20px;line-height:1.14;color:var(--ink)}
-.type{font:300 12.5px/1.4 'Inter';color:var(--mute);margin-top:7px;max-width:32ch}
+.type{font:300 12.5px/1.4 'Inter';color:var(--mute);margin-top:7px;max-width:34ch}
 .price{font-family:'Cormorant Garamond';font-weight:500;font-size:23px;color:var(--gold);margin-top:9px}
-.cert{font:400 9.5px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:9px}
+.cert{font:400 9.5px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:8px}
 
-.g2{--ih:330px}
-.g3{--ih:300px}
-.g4{--ih:250px}
+/* ===== CROSS 2×2 full-bleed ===== */
+.cross{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2px;background:var(--gold)}
+.q{position:relative;overflow:hidden;background:#111}
+.q>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.plate{position:absolute;left:0;right:0;bottom:0;padding:16px 20px 15px;
+  background:rgba(255,255,255,.88);backdrop-filter:saturate(1.05)}
+.plate.dk{background:linear-gradient(0deg,rgba(11,11,12,.94) 0%,rgba(11,11,12,.62) 62%,rgba(11,11,12,0) 100%);padding-top:44px}
+.pl-name{font-family:'Cormorant Garamond';font-weight:600;font-size:21px;line-height:1.05;color:#1A1A1A}
+.pl-type{font:300 11.5px/1.35 'Inter';color:#5a5651;margin-top:4px;max-width:42ch}
+.pl-price{font-family:'Cormorant Garamond';font-weight:600;font-size:23px;color:var(--gold);margin-top:6px}
+.pl-cert{font:400 8.5px/1 'Inter';letter-spacing:.18em;text-transform:uppercase;color:#9a958c;margin-top:6px}
+.plate.dk .pl-name{color:var(--ivory)}
+.plate.dk .pl-type{color:#c3bdb1}
+.plate.dk .pl-price{color:var(--gold2)}
+.plate.dk .pl-cert{color:#b6b0a4}
+.q.accent{outline:2px solid var(--gold2);outline-offset:-2px;z-index:2}
+.q.accent .pl-type{color:var(--gold);font-weight:400}
 
-/* dense two-row grids */
-.dense .mat{padding:11px}
-.dense .mat img{height:var(--ih,168px)}
-.dense .meta{padding:11px 2px 0}
-.dense .name{font-size:17px}
-.dense .type{font-size:11.5px;margin-top:5px}
-.dense .price{font-size:19px;margin-top:6px}
-.dense .cert{margin-top:7px}
-.g10grid{grid-template-columns:repeat(2,1fr);gap:18px 34px;--ih:152px}
-.g6grid{grid-template-columns:repeat(3,1fr);gap:16px 22px;--ih:134px}
-
-/* archive caption */
-.arch{position:absolute;font:400 9px/1.3 'Inter';letter-spacing:.14em;text-transform:uppercase;
-  color:rgba(245,241,232,.5)}
-
-/* passport panel (dark solo) */
+/* passport (dark solo) */
 .pp-kick{margin-bottom:18px}
 .pp-name{font-family:'Cormorant Garamond';font-weight:400;font-size:44px;line-height:1.02;color:var(--ivory)}
 .pp-type{font:300 15px/1.5 'Inter';color:#b8b2a6;margin-top:18px;max-width:34ch}
@@ -74,68 +67,87 @@ img{display:block}
 .pp-price{font-family:'Cormorant Garamond';font-weight:500;font-size:42px;color:var(--gold2)}
 .pp-cert{font:400 10px/1 'Inter';letter-spacing:.22em;text-transform:uppercase;color:var(--cert);margin-top:14px}
 .pp-note{font:300 13px/1.7 'Inter';color:#8f897d;margin-top:26px;max-width:34ch}
+
+.arch{position:absolute;font:400 9px/1.3 'Inter';letter-spacing:.14em;text-transform:uppercase;color:rgba(245,241,232,.5)}
 </style>
 
 <div class="deck">
 
 <!-- ============ g01 COVER ============ -->
-<section class="slide dark" id="g01" style="grid-template-columns:1fr 1fr">
+<section class="slide dark on" id="g01" style="grid-template-columns:1fr 1fr">
   <div class="wrap" style="display:flex;flex-direction:column;justify-content:space-between;padding:64px 60px">
     <img src="img/stargift_logo.png" alt="Stargift" style="height:34px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.9">
     <div>
       <div class="kick d" style="margin-bottom:24px">Частное собрание · гольф</div>
       <h1 class="serif" style="font-weight:300;font-size:96px;line-height:.98;color:var(--ivory)">Большая<br>игра</h1>
-      <p style="font:300 16px/1.65 'Inter';color:#b8b2a6;margin-top:30px;max-width:36ch">
-        Собрание автографов великих гольфа — от&nbsp;Бена&nbsp;Хогана 1950-х до&nbsp;Коллина&nbsp;Морикавы,
-        и&nbsp;две реликвии «Мандалорца» с&nbsp;автографом Педро&nbsp;Паскаля.</p>
+      <p style="font:300 16px/1.65 'Inter';color:#b8b2a6;margin-top:30px;max-width:38ch">
+        Автографы великих гольфа — от&nbsp;Бена&nbsp;Хогана 1950-х до&nbsp;Коллина&nbsp;Морикавы,
+        и&nbsp;реликвии «Мандалорца» с&nbsp;автографом Педро&nbsp;Паскаля.</p>
     </div>
-    <div class="kick" style="letter-spacing:.24em">26 предметов · сертификаты JSA · PSA · Beckett · UDA</div>
+    <div class="kick" style="letter-spacing:.24em">62 предмета · сертификаты JSA · PSA · Beckett · UDA</div>
   </div>
   <div style="position:relative">
-    <img src="img_golf/wiki_hogan.jpg" alt="Бен Хоган" style="width:100%;height:100%;object-fit:cover;object-position:50% 28%">
+    <img src="img_golf/wiki_hogan.jpg" alt="Бен Хоган, парад 1953" style="width:100%;height:100%;object-fit:cover;object-position:50% 28%">
     <div style="position:absolute;inset:0;background:linear-gradient(90deg,var(--noir) 0%,rgba(11,11,12,.15) 22%,rgba(11,11,12,0) 55%)"></div>
-    <div class="arch" style="right:18px;bottom:16px;text-align:right">архив: Wikimedia Commons · public domain</div>
+    <div class="arch" style="right:18px;bottom:16px;text-align:right">архив: Wikimedia Commons · public domain · парад Бена Хогана, 1953</div>
   </div>
 </section>
 
 <!-- ============ g02 CONTENTS ============ -->
 <section class="slide light" id="g02" style="grid-template-rows:auto 1fr">
-  <div class="wrap" style="padding:52px 72px 20px">
-    <div class="kick" style="margin-bottom:12px">Каталог</div>
-    <h2 class="serif" style="font-weight:400;font-size:52px;color:var(--ink)">Собрание</h2>
+  <div class="wrap" style="padding:48px 72px 14px">
+    <div class="kick" style="margin-bottom:12px">Каталог · 62 предмета</div>
+    <h2 class="serif" style="font-weight:400;font-size:50px;color:var(--ink)">Собрание</h2>
   </div>
-  <div class="wrap" style="padding:0 72px 48px;display:grid;grid-template-columns:1fr 1fr;column-gap:70px;row-gap:2px;align-content:start">
-    <!-- rows -->
-    <div class="toc-row"><i>01</i><span>Педро Паскаль · «Мандалорец»</span><em>2 предмета</em><b>от 240 000 ₽</b></div>
-    <div class="toc-row"><i>06</i><span>Севе Балестерос</span><em>3 предмета</em><b>от 250 000 ₽</b></div>
-    <div class="toc-row"><i>02</i><span>Тайгер Вудс</span><em>1 предмет</em><b>550 000 ₽</b></div>
-    <div class="toc-row"><i>07</i><span>Норман · Гарсиа</span><em>4 предмета</em><b>от 140 000 ₽</b></div>
-    <div class="toc-row"><i>03</i><span>Бен Хоган</span><em>4 предмета</em><b>от 180 000 ₽</b></div>
-    <div class="toc-row"><i>08</i><span>Фил Микелсон</span><em>3 предмета</em><b>от 180 000 ₽</b></div>
-    <div class="toc-row"><i>04</i><span>Джек Никлаус</span><em>3 предмета</em><b>от 300 000 ₽</b></div>
-    <div class="toc-row"><i>09</i><span>Брайсон Дешамбо</span><em>2 предмета</em><b>от 160 000 ₽</b></div>
-    <div class="toc-row"><i>05</i><span>Никлаус · Плеер</span><em>совместный лот</em><b>450 000 ₽</b></div>
-    <div class="toc-row"><i>10</i><span>Коллин Морикава</span><em>4 предмета</em><b>от 140 000 ₽</b></div>
+  <div class="wrap" style="padding:0 72px 40px;display:grid;grid-template-columns:1fr 1fr;column-gap:70px;row-gap:0;align-content:start">
+    <div class="toc-row"><i>01</i><span>Педро Паскаль · «Мандалорец»</span><em>6 предметов</em><b>от 240 000 ₽</b></div>
+    <div class="toc-row"><i>06</i><span>Грег Норман</span><em>6 предметов</em><b>от 140 000 ₽</b></div>
+    <div class="toc-row"><i>02</i><span>Тайгер Вудс</span><em>5 предметов</em><b>от 380 000 ₽</b></div>
+    <div class="toc-row"><i>07</i><span>Фил Микелсон</span><em>6 предметов</em><b>от 150 000 ₽</b></div>
+    <div class="toc-row"><i>03</i><span>Бен Хоган</span><em>6 предметов</em><b>от 190 000 ₽</b></div>
+    <div class="toc-row"><i>08</i><span>Серхио Гарсиа</span><em>6 предметов</em><b>от 130 000 ₽</b></div>
+    <div class="toc-row"><i>04</i><span>Джек Никлаус</span><em>8 предметов</em><b>от 220 000 ₽</b></div>
+    <div class="toc-row"><i>09</i><span>Брайсон Дешамбо</span><em>6 предметов</em><b>от 150 000 ₽</b></div>
+    <div class="toc-row"><i>05</i><span>Севе Балестерос</span><em>5 предметов</em><b>от 220 000 ₽</b></div>
+    <div class="toc-row"><i>10</i><span>Коллин Морикава</span><em>8 предметов</em><b>от 140 000 ₽</b></div>
   </div>
 </section>
 
-<!-- ============ g03 PASCAL ============ -->
-<section class="slide light" id="g03" style="grid-template-rows:auto auto 1fr">
+<!-- ============ g03 PASCAL cross ============ -->
+<section class="slide cross" id="g03">
+  <div class="q"><img src="img_golf/pascal3.jpg">
+    <div class="plate dk"><div class="pl-name">Педро Паскаль</div>
+      <div class="pl-type">Фото «Мандалорец» 16×20 с автографом и фотопруфом</div>
+      <div class="pl-price">300 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
+  <div class="q"><img src="img_golf/pascal4.jpg">
+    <div class="plate dk"><div class="pl-name">Педро Паскаль</div>
+      <div class="pl-type">Фото «Мандалорец» 16×20 с автографом</div>
+      <div class="pl-price">260 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
+  <div class="q"><img src="img_golf/pascal5.jpg">
+    <div class="plate dk"><div class="pl-name">Педро Паскаль</div>
+      <div class="pl-type">Фото «Мандалорец» 11×14 с автографом</div>
+      <div class="pl-price">250 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
+  <div class="q"><img src="img_golf/pascal6.jpg">
+    <div class="plate dk"><div class="pl-name">Педро Паскаль</div>
+      <div class="pl-type">Фото «Мандалорец» 11×14 с автографом</div>
+      <div class="pl-price">250 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
+</section>
+
+<!-- ============ g04 PASCAL white pair + lead ============ -->
+<section class="slide light" id="g04" style="grid-template-rows:auto auto 1fr">
   <div class="wrap" style="padding:44px 72px 0">
     <div class="head" style="border:none;margin-bottom:0;padding-bottom:0">
-      <div>
-        <div class="kick hkick">Раздел I · кино</div>
-        <div class="htitle serif">Педро Паскаль</div>
-      </div>
-      <div class="hcount">2 предмета · «Мандалорец»</div>
+      <div><div class="kick hkick">Раздел I · кино</div>
+        <div class="htitle serif">Педро Паскаль</div></div>
+      <div class="hcount">6 предметов · «Мандалорец»</div>
     </div>
   </div>
-  <div class="wrap" style="padding:14px 72px 8px">
-    <p style="font:300 14.5px/1.7 'Inter';color:#555;max-width:74ch">
-      Для тех, кто смотрит не только гольф. Два кадра саги «Мандалорец» с&nbsp;личным автографом
+  <div class="wrap" style="padding:12px 72px 6px">
+    <p style="font:300 14.5px/1.7 'Inter';color:#555;max-width:76ch">
+      Для тех, кто смотрит не только гольф. Кадры саги «Мандалорец» с&nbsp;личным автографом
       Педро&nbsp;Паскаля — тихий мост между большим спортом и&nbsp;большим кино в&nbsp;одной коллекции.</p>
   </div>
-  <div class="wrap" style="padding:8px 150px 40px">
+  <div class="wrap" style="padding:6px 160px 40px">
     <div class="grid g2">
       <div class="card"><div class="mat"><img src="img_golf/pascal1.jpg" style="object-position:50% 30%"></div>
         <div class="meta"><div class="name">Педро Паскаль</div>
@@ -149,8 +161,8 @@ img{display:block}
   </div>
 </section>
 
-<!-- ============ g04 WOODS solo ============ -->
-<section class="slide dark" id="g04" style="grid-template-columns:1.55fr 1fr">
+<!-- ============ g05 WOODS solo ============ -->
+<section class="slide dark" id="g05" style="grid-template-columns:1.55fr 1fr">
   <div style="position:relative;background:#000">
     <img src="img_golf/woods1.jpg" alt="Тайгер Вудс" style="width:100%;height:100%;object-fit:cover;object-position:50% 45%">
     <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,0) 60%,rgba(11,11,12,.55) 100%)"></div>
@@ -166,81 +178,110 @@ img{display:block}
   </div>
 </section>
 
-<!-- ============ g05 HOGAN divider ============ -->
-<section class="slide dark" id="g05" style="grid-template-columns:1fr 1.15fr;align-items:center">
+<!-- ============ g06 WOODS cross ============ -->
+<section class="slide cross" id="g06">
+  <div class="q"><img src="img_golf/woods2.jpg">
+    <div class="plate dk"><div class="pl-name">Тайгер Вудс</div>
+      <div class="pl-type">Промо-фото с автографом, слаб PSA/DNA</div>
+      <div class="pl-price">580 000 ₽</div><div class="pl-cert">подлинность: PSA</div></div></div>
+  <div class="q"><img src="img_golf/woods3.jpg">
+    <div class="plate dk"><div class="pl-name">Тайгер Вудс</div>
+      <div class="pl-type">Фото Upper Deck 8×10 с автографом, PSA 10</div>
+      <div class="pl-price">600 000 ₽</div><div class="pl-cert">подлинность: PSA</div></div></div>
+  <div class="q"><img src="img_golf/woods4.jpg">
+    <div class="plate dk"><div class="pl-name">Тайгер Вудс</div>
+      <div class="pl-type">Флаг PGA с автографом</div>
+      <div class="pl-price">600 000 ₽</div><div class="pl-cert">подлинность: PSA</div></div></div>
+  <div class="q"><img src="img_golf/woods5.jpg">
+    <div class="plate dk"><div class="pl-name">Тайгер Вудс</div>
+      <div class="pl-type">Кепка Nike с автографом</div>
+      <div class="pl-price">380 000 ₽</div><div class="pl-cert">подлинность: PSA</div></div></div>
+</section>
+
+<!-- ============ g07 HOGAN divider ============ -->
+<section class="slide dark" id="g07" style="grid-template-columns:1fr 1.15fr;align-items:center">
   <div style="display:flex;justify-content:center;align-items:center;padding:60px">
     <div style="position:relative;background:#0f0f10;padding:20px;border:1px solid rgba(169,133,69,.4);box-shadow:0 30px 60px rgba(0,0,0,.55)">
       <div style="border:1px solid rgba(169,133,69,.25);padding:14px;background:#080808">
-        <img src="img_golf/wiki_hogan_merion.jpg" alt="Хоган, Мерион 1950" style="width:300px;height:300px;object-fit:cover;object-position:50% 30%">
+        <img src="img_golf/wiki_hogan_merion.jpg" alt="Мемориальная табличка на фервее Мериона" style="width:300px;height:300px;object-fit:cover;object-position:50% 30%">
       </div>
-      <div class="arch" style="left:20px;bottom:-22px;color:rgba(245,241,232,.45)">архив: Wikimedia Commons · public domain</div>
+      <div class="arch" style="left:20px;bottom:-22px;color:rgba(245,241,232,.45)">мемориальная табличка на фервее Мериона · Wikimedia Commons · public domain</div>
     </div>
   </div>
   <div style="padding:0 90px 0 20px">
     <div class="kick d" style="margin-bottom:20px">Раздел II · легенды поля</div>
     <h2 class="serif" style="font-weight:300;font-size:64px;line-height:1;color:var(--ivory)">Бен Хоган</h2>
     <p style="font:300 15px/1.75 'Inter';color:#b0aa9e;margin-top:26px;max-width:40ch">
-      Икона 1950-х, эталон удара и характера. На снимке — мемориальная табличка на фервее Мериона: здесь 10 июня 1950 года Хоган выполнил свой легендарный удар 1-айроном. Четыре предмета с автографом мастера открывают гольф-часть собрания.</p>
-    <div class="kick" style="margin-top:30px;letter-spacing:.2em;color:var(--gold)">4 предмета · от 180 000 ₽</div>
+      Икона 1950-х, эталон удара и характера. Табличка отмечает фервей Мериона, где 10 июня 1950 года Хоган выполнил свой легендарный удар 1-айроном. Шесть предметов с автографом мастера открывают гольф-часть собрания.</p>
+    <div class="kick" style="margin-top:30px;letter-spacing:.2em;color:var(--gold)">6 предметов · от 190 000 ₽</div>
   </div>
 </section>
 
-<!-- ============ g06 HOGAN quartet ============ -->
-<section class="slide light" id="g06" style="grid-template-rows:auto 1fr">
-  <div class="wrap" style="padding:42px 60px 0">
+<!-- ============ g08 HOGAN cross ============ -->
+<section class="slide cross" id="g08">
+  <div class="q"><img src="img_golf/hogan1.jpg">
+    <div class="plate dk"><div class="pl-name">Бен Хоган</div>
+      <div class="pl-type">Фото 8×10 с автографом, слаб PSA</div>
+      <div class="pl-price">250 000 ₽</div><div class="pl-cert">подлинность: PSA slab</div></div></div>
+  <div class="q"><img src="img_golf/hogan2.jpg">
+    <div class="plate dk"><div class="pl-name">Бен Хоган</div>
+      <div class="pl-type">Фото 8×10 с автографом, грейд PSA 10</div>
+      <div class="pl-price">260 000 ₽</div><div class="pl-cert">подлинность: PSA 10</div></div></div>
+  <div class="q"><img src="img_golf/hogan4.jpg">
+    <div class="plate dk"><div class="pl-name">Бен Хоган</div>
+      <div class="pl-type">Карточка Mueller 1992 с автографом, PSA 9</div>
+      <div class="pl-price">300 000 ₽</div><div class="pl-cert">подлинность: PSA 9</div></div></div>
+  <div class="q"><img src="img_golf/hogan5.jpg">
+    <div class="plate dk"><div class="pl-name">Бен Хоган</div>
+      <div class="pl-type">Фото 11×14 «Идеальный свинг» с автографом</div>
+      <div class="pl-price">500 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
+</section>
+
+<!-- ============ g09 HOGAN white pair ============ -->
+<section class="slide light" id="g09" style="grid-template-rows:auto 1fr">
+  <div class="wrap" style="padding:44px 72px 0">
     <div class="head">
       <div><div class="kick hkick">Бен Хоган · 1912–1997</div>
-        <div class="htitle serif">Автографы легенды</div></div>
-      <div class="hcount">4 предмета</div>
+        <div class="htitle serif">Документ и портрет</div></div>
+      <div class="hcount">2 из 6 предметов</div>
     </div>
   </div>
-  <div class="wrap" style="padding:0 60px 34px">
-    <div class="grid g4">
-      <div class="card"><div class="mat"><img src="img_golf/hogan1.jpg"></div>
-        <div class="meta"><div class="name">Бен Хоган</div>
-          <div class="type">Фото 8×10 с автографом, слаб PSA</div>
-          <div class="price">250 000 ₽</div><div class="cert">подлинность: PSA slab</div></div></div>
-      <div class="card"><div class="mat"><img src="img_golf/hogan2.jpg"></div>
-        <div class="meta"><div class="name">Бен Хоган</div>
-          <div class="type">Фото 8×10 с автографом, грейд PSA 10</div>
-          <div class="price">260 000 ₽</div><div class="cert">подлинность: PSA 10</div></div></div>
+  <div class="wrap" style="padding:0 160px 40px">
+    <div class="grid g2">
       <div class="card"><div class="mat"><img src="img_golf/hogan3.jpg"></div>
         <div class="meta"><div class="name">Бен Хоган</div>
           <div class="type">Банковский чек 1994 года с автографом</div>
-          <div class="price">180 000 ₽</div><div class="cert">подлинность: PSA DNA</div></div></div>
-      <div class="card"><div class="mat"><img src="img_golf/hogan4.jpg" style="object-position:50% 25%"></div>
+          <div class="price">190 000 ₽</div><div class="cert">подлинность: PSA DNA</div></div></div>
+      <div class="card"><div class="mat"><img src="img_golf/hogan6.jpg"></div>
         <div class="meta"><div class="name">Бен Хоган</div>
-          <div class="type">Коллекционная карточка Mueller 1992 с автографом, PSA 9</div>
-          <div class="price">300 000 ₽</div><div class="cert">подлинность: PSA 9</div></div></div>
+          <div class="type">Фото 16×20 с автографом</div>
+          <div class="price">550 000 ₽</div><div class="cert">подлинность: JSA</div></div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ g07 NICKLAUS pair ============ -->
-<section class="slide light" id="g07" style="grid-template-rows:auto 1fr">
-  <div class="wrap" style="padding:44px 72px 0">
-    <div class="head">
-      <div><div class="kick hkick">Джек Никлаус · «Золотой медведь»</div>
-        <div class="htitle serif">Флаги мэйджоров</div></div>
-      <div class="hcount">2 предмета</div>
-    </div>
-  </div>
-  <div class="wrap" style="padding:0 150px 40px">
-    <div class="grid g2">
-      <div class="card"><div class="mat"><img src="img_golf/nicklaus1.jpg"></div>
-        <div class="meta"><div class="name">Джек Никлаус</div>
-          <div class="type">Флаг турнира Masters с автографом</div>
-          <div class="price">300 000 ₽</div><div class="cert">подлинность: JSA LOA</div></div></div>
-      <div class="card"><div class="mat"><img src="img_golf/nicklaus2.jpg"></div>
-        <div class="meta"><div class="name">Джек Никлаус</div>
-          <div class="type">Флаг Memorial Tournament с автографом</div>
-          <div class="price">300 000 ₽</div><div class="cert">подлинность: PSA/DNA</div></div></div>
-    </div>
-  </div>
+<!-- ============ g10 NICKLAUS cross ============ -->
+<section class="slide cross" id="g10">
+  <div class="q"><img src="img_golf/nicklaus1.jpg">
+    <div class="plate dk"><div class="pl-name">Джек Никлаус</div>
+      <div class="pl-type">Флаг турнира Masters с автографом</div>
+      <div class="pl-price">300 000 ₽</div><div class="pl-cert">подлинность: JSA LOA</div></div></div>
+  <div class="q"><img src="img_golf/nicklaus2.jpg">
+    <div class="plate dk"><div class="pl-name">Джек Никлаус</div>
+      <div class="pl-type">Флаг Memorial Tournament с автографом</div>
+      <div class="pl-price">300 000 ₽</div><div class="pl-cert">подлинность: PSA/DNA</div></div></div>
+  <div class="q"><img src="img_golf/nicklaus4.jpg">
+    <div class="plate dk"><div class="pl-name">Джек Никлаус</div>
+      <div class="pl-type">Фото 8×10 «Мастерс-1986» с автографом, в раме</div>
+      <div class="pl-price">220 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
+  <div class="q"><img src="img_golf/nicklaus8.jpg">
+    <div class="plate dk"><div class="pl-name">Джек Никлаус</div>
+      <div class="pl-type">Фото 11×14 «Чемпион Masters» с автографом</div>
+      <div class="pl-price">240 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
 </section>
 
-<!-- ============ g08 NICKLAUS + PLAYER solo ============ -->
-<section class="slide dark" id="g08" style="grid-template-columns:1.5fr 1fr">
+<!-- ============ g11 NICKLAUS + PLAYER solo ============ -->
+<section class="slide dark" id="g11" style="grid-template-columns:1.5fr 1fr">
   <div style="position:relative;display:flex;align-items:center;justify-content:center;background:radial-gradient(120% 90% at 40% 40%,#1b1a17 0%,var(--noir) 62%)">
     <img src="img_golf/nicklaus3.jpg" alt="Флаг Masters" style="width:82%;height:auto;max-height:82%;object-fit:contain;box-shadow:0 40px 90px rgba(0,0,0,.6)">
   </div>
@@ -255,176 +296,364 @@ img{display:block}
   </div>
 </section>
 
-<!-- ============ g09 SEVE trio ============ -->
-<section class="slide light" id="g09" style="grid-template-rows:auto 1fr">
+<!-- ============ g12 NICKLAUS journals trio ============ -->
+<section class="slide light" id="g12" style="grid-template-rows:auto 1fr">
   <div class="wrap" style="padding:44px 60px 0">
     <div class="head">
-      <div><div class="kick hkick">Севе Балестерос · маэстро Европы</div>
-        <div class="htitle serif">Огаста и Мастерс</div></div>
-      <div class="hcount">3 предмета</div>
+      <div><div class="kick hkick">Джек Никлаус · «Золотой медведь»</div>
+        <div class="htitle serif">Обложки эпохи</div></div>
+      <div class="hcount">3 журнала с автографом</div>
     </div>
   </div>
   <div class="wrap" style="padding:0 60px 38px">
-    <div class="grid g3">
-      <div class="card"><div class="mat"><img src="img_golf/seve1.jpg"></div>
-        <div class="meta"><div class="name">Севе Балестерос</div>
-          <div class="type">Фото 11×14 «Мастерс-1983» с автографом</div>
-          <div class="price">250 000 ₽</div><div class="cert">подлинность: Beckett</div></div></div>
-      <div class="card"><div class="mat"><img src="img_golf/seve2.jpg" style="object-position:50% 30%"></div>
-        <div class="meta"><div class="name">Севе Балестерос и Хосе-Мария Олазабаль</div>
-          <div class="type">Фото 8×10 с двумя автографами</div>
-          <div class="price">300 000 ₽</div><div class="cert">подлинность: Beckett</div></div></div>
-      <div class="card"><div class="mat"><img src="img_golf/seve3.jpg"></div>
-        <div class="meta"><div class="name">Севе Балестерос</div>
-          <div class="type">Счётная карточка Masters (Огаста) с автографом, PSA 10</div>
-          <div class="price">260 000 ₽</div><div class="cert">подлинность: PSA/DNA 10</div></div></div>
+    <div class="grid" style="grid-template-columns:repeat(3,1fr);gap:30px;--ih:300px">
+      <div class="card"><div class="mat"><img src="img_golf/nicklaus5.jpg"></div>
+        <div class="meta"><div class="name">Джек Никлаус</div>
+          <div class="type">Журнал Golf 1975 года с автографом</div>
+          <div class="price">240 000 ₽</div><div class="cert">подлинность: JSA</div></div></div>
+      <div class="card"><div class="mat"><img src="img_golf/nicklaus6.jpg"></div>
+        <div class="meta"><div class="name">Джек Никлаус</div>
+          <div class="type">Журнал Sports Illustrated 1978 года с автографом</div>
+          <div class="price">240 000 ₽</div><div class="cert">подлинность: Beckett</div></div></div>
+      <div class="card"><div class="mat"><img src="img_golf/nicklaus7.jpg"></div>
+        <div class="meta"><div class="name">Джек Никлаус</div>
+          <div class="type">Журнал Sports Illustrated с автографом</div>
+          <div class="price">250 000 ₽</div><div class="cert">подлинность: JSA</div></div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ g10 NORMAN + GARCIA ============ -->
-<section class="slide light" id="g10" style="grid-template-rows:auto 1fr">
-  <div class="wrap" style="padding:34px 72px 0">
-    <div class="head" style="margin-bottom:22px">
-      <div><div class="kick hkick">Норман · Гарсиа</div>
-        <div class="htitle serif">Акулы и чемпионы</div></div>
-      <div class="hcount">4 предмета · 2 × 2</div>
+<!-- ============ g13 SEVE quintet ============ -->
+<section class="slide light" id="g13" style="grid-template-rows:auto 1fr">
+  <div class="wrap" style="padding:40px 60px 0">
+    <div class="head">
+      <div><div class="kick hkick">Севе Балестерос · маэстро Европы</div>
+        <div class="htitle serif">Огаста и Мастерс</div></div>
+      <div class="hcount">5 предметов</div>
     </div>
   </div>
-  <div class="wrap" style="padding:0 96px 26px">
-    <div class="grid dense g10grid">
+  <div class="wrap" style="padding:0 60px 30px;display:grid;grid-template-columns:1fr 1.05fr;column-gap:40px;align-items:start">
+    <div class="card"><div class="mat"><img src="img_golf/seve1.jpg" style="height:420px"></div>
+      <div class="meta"><div class="name">Севе Балестерос</div>
+        <div class="type">Фото 11×14 «Мастерс-1983» с автографом</div>
+        <div class="price">250 000 ₽</div><div class="cert">подлинность: Beckett</div></div></div>
+    <div class="grid" style="grid-template-columns:1fr 1fr;gap:20px 26px;--ih:150px">
+      <div class="card"><div class="mat" style="padding:10px"><img src="img_golf/seve2.jpg" style="object-position:50% 30%"></div>
+        <div class="meta" style="padding-top:9px"><div class="name" style="font-size:16px">Севе Балестерос и Х.-М. Олазабаль</div>
+          <div class="type" style="font-size:11px;margin-top:4px">Фото 8×10 с двумя автографами</div>
+          <div class="price" style="font-size:18px;margin-top:5px">300 000 ₽</div><div class="cert" style="margin-top:6px">подлинность: Beckett</div></div></div>
+      <div class="card"><div class="mat" style="padding:10px"><img src="img_golf/seve3.jpg"></div>
+        <div class="meta" style="padding-top:9px"><div class="name" style="font-size:16px">Севе Балестерос</div>
+          <div class="type" style="font-size:11px;margin-top:4px">Счётная карточка Masters (Огаста), PSA 10</div>
+          <div class="price" style="font-size:18px;margin-top:5px">260 000 ₽</div><div class="cert" style="margin-top:6px">подлинность: PSA/DNA 10</div></div></div>
+      <div class="card"><div class="mat" style="padding:10px"><img src="img_golf/seve4.jpg"></div>
+        <div class="meta" style="padding-top:9px"><div class="name" style="font-size:16px">Севе Балестерос</div>
+          <div class="type" style="font-size:11px;margin-top:4px">Лист с автографом</div>
+          <div class="price" style="font-size:18px;margin-top:5px">220 000 ₽</div><div class="cert" style="margin-top:6px">подлинность: PSA</div></div></div>
+      <div class="card"><div class="mat" style="padding:10px"><img src="img_golf/seve5.jpg" style="object-position:50% 30%"></div>
+        <div class="meta" style="padding-top:9px"><div class="name" style="font-size:16px">Севе и шесть чемпионов</div>
+          <div class="type" style="font-size:11px;margin-top:4px">Фото «Клубный дом Masters», 7 автографов</div>
+          <div class="price" style="font-size:18px;margin-top:5px">300 000 ₽</div><div class="cert" style="margin-top:6px">подлинность: JSA</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ g14 NORMAN cross ============ -->
+<section class="slide cross" id="g14">
+  <div class="q"><img src="img_golf/norman3.jpg">
+    <div class="plate dk"><div class="pl-name">Грег Норман</div>
+      <div class="pl-type">Фото 8×10 с автографом</div>
+      <div class="pl-price">150 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
+  <div class="q"><img src="img_golf/norman4.jpg">
+    <div class="plate dk"><div class="pl-name">Грег Норман</div>
+      <div class="pl-type">Фото 8×10 с автографом (LIV)</div>
+      <div class="pl-price">150 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
+  <div class="q"><img src="img_golf/norman5.jpg">
+    <div class="plate dk"><div class="pl-name">Грег Норман</div>
+      <div class="pl-type">Классическое фото 8×10 с автографом</div>
+      <div class="pl-price">150 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
+  <div class="q"><img src="img_golf/norman6.jpg">
+    <div class="plate dk"><div class="pl-name">Грег Норман</div>
+      <div class="pl-type">Фото 11×14 «Чемпион The Open» с автографом</div>
+      <div class="pl-price">170 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
+</section>
+
+<!-- ============ g15 NORMAN white pair ============ -->
+<section class="slide light" id="g15" style="grid-template-rows:auto 1fr">
+  <div class="wrap" style="padding:44px 72px 0">
+    <div class="head">
+      <div><div class="kick hkick">Грег Норман · «Белая акула»</div>
+        <div class="htitle serif">Австралийская легенда</div></div>
+      <div class="hcount">2 из 6 предметов</div>
+    </div>
+  </div>
+  <div class="wrap" style="padding:0 160px 40px">
+    <div class="grid g2">
       <div class="card"><div class="mat"><img src="img_golf/norman1.jpg"></div>
         <div class="meta"><div class="name">Грег Норман</div>
           <div class="type">Фото 8×10 с автографом</div>
-          <div class="price">140 000 ₽</div><div class="cert">подлинность: JSA</div></div></div>
+          <div class="price">150 000 ₽</div><div class="cert">подлинность: JSA</div></div></div>
       <div class="card"><div class="mat"><img src="img_golf/norman2.jpg" style="object-position:50% 30%"></div>
         <div class="meta"><div class="name">Грег Норман</div>
           <div class="type">Фото поля Masters с автографом</div>
           <div class="price">140 000 ₽</div><div class="cert">подлинность: PSA DNA</div></div></div>
-      <div class="card"><div class="mat"><img src="img_golf/garcia1.jpg"></div>
-        <div class="meta"><div class="name">Серхио Гарсиа</div>
-          <div class="type">Мяч для гольфа с автографом (чемпион Masters 2017)</div>
-          <div class="price">140 000 ₽</div><div class="cert">подлинность: JSA</div></div></div>
-      <div class="card"><div class="mat"><img src="img_golf/garcia2.jpg"></div>
-        <div class="meta"><div class="name">Серхио Гарсиа</div>
-          <div class="type">Фото 8×10 с автографом</div>
-          <div class="price">140 000 ₽</div><div class="cert">подлинность: JSA</div></div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ g11 MICKELSON trio ============ -->
-<section class="slide light" id="g11" style="grid-template-rows:auto 1fr">
-  <div class="wrap" style="padding:44px 60px 0">
+<!-- ============ g16 MICKELSON cross ============ -->
+<section class="slide cross" id="g16">
+  <div class="q"><img src="img_golf/mickelson1.jpg">
+    <div class="plate dk"><div class="pl-name">Фил Микелсон</div>
+      <div class="pl-type">Фото 11×17 «3× чемпион Masters» с автографом</div>
+      <div class="pl-price">220 000 ₽</div><div class="pl-cert">подлинность: BAS</div></div></div>
+  <div class="q"><img src="img_golf/mickelson5.jpg">
+    <div class="plate dk"><div class="pl-name">Фил Микелсон</div>
+      <div class="pl-type">Перчатка для гольфа с автографом</div>
+      <div class="pl-price">200 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
+  <div class="q"><img src="img_golf/mickelson6.jpg">
+    <div class="plate dk"><div class="pl-name">Фил Микелсон</div>
+      <div class="pl-type">Флаг Memorial Tournament с автографом</div>
+      <div class="pl-price">190 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
+  <div class="q"><img src="img_golf/mickelson7.jpg">
+    <div class="plate dk"><div class="pl-name">Фил Микелсон</div>
+      <div class="pl-type">Кепка PGA с автографом</div>
+      <div class="pl-price">180 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
+</section>
+
+<!-- ============ g17 MICKELSON white pair ============ -->
+<section class="slide light" id="g17" style="grid-template-rows:auto 1fr">
+  <div class="wrap" style="padding:44px 72px 0">
     <div class="head">
       <div><div class="kick hkick">Фил Микелсон · «Лефти»</div>
         <div class="htitle serif">Мэйджоры левши</div></div>
-      <div class="hcount">3 предмета</div>
+      <div class="hcount">2 из 6 предметов</div>
     </div>
   </div>
-  <div class="wrap" style="padding:0 60px 38px">
-    <div class="grid g3">
-      <div class="card"><div class="mat"><img src="img_golf/mickelson1.jpg"></div>
-        <div class="meta"><div class="name">Фил Микелсон</div>
-          <div class="type">Фото 11×17 «3× чемпион Masters» с автографом</div>
-          <div class="price">220 000 ₽</div><div class="cert">подлинность: BAS</div></div></div>
-      <div class="card"><div class="mat"><img src="img_golf/mickelson2.jpg" style="object-position:50% 28%"></div>
-        <div class="meta"><div class="name">Фил Микелсон</div>
-          <div class="type">Флаг US Open 2019 (Пеббл-Бич) с автографом</div>
-          <div class="price">280 000 ₽</div><div class="cert">подлинность: Beckett BAS</div></div></div>
+  <div class="wrap" style="padding:0 160px 40px">
+    <div class="grid g2">
       <div class="card"><div class="mat"><img src="img_golf/mickelson3.jpg" style="object-position:50% 25%"></div>
         <div class="meta"><div class="name">Фил Микелсон</div>
           <div class="type">Фото 8×10 с автографом и инскрипцией</div>
           <div class="price">180 000 ₽</div><div class="cert">подлинность: Beckett BAS</div></div></div>
+      <div class="card"><div class="mat"><img src="img_golf/mickelson4.jpg"></div>
+        <div class="meta"><div class="name">Фил Микелсон</div>
+          <div class="type">Автограф с сертификатом Beckett</div>
+          <div class="price">150 000 ₽</div><div class="cert">подлинность: Beckett</div></div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ g12 DECHAMBEAU + MORIKAWA ============ -->
-<section class="slide light" id="g12" style="grid-template-rows:auto 1fr">
-  <div class="wrap" style="padding:34px 60px 0">
-    <div class="head" style="margin-bottom:20px;padding-bottom:14px">
-      <div><div class="kick hkick">Новое поколение</div>
-        <div class="htitle serif">Дешамбо · Морикава</div></div>
-      <div class="hcount">6 предметов</div>
+<!-- ============ g18 GARCIA cross ============ -->
+<section class="slide cross" id="g18">
+  <div class="q"><img src="img_golf/garcia2.jpg">
+    <div class="plate dk"><div class="pl-name">Серхио Гарсиа</div>
+      <div class="pl-type">Фото 8×10 с автографом</div>
+      <div class="pl-price">130 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
+  <div class="q"><img src="img_golf/garcia3.jpg">
+    <div class="plate dk"><div class="pl-name">Серхио Гарсиа</div>
+      <div class="pl-type">Фото 11×14 с автографом</div>
+      <div class="pl-price">140 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
+  <div class="q"><img src="img_golf/garcia4.jpg">
+    <div class="plate dk"><div class="pl-name">Серхио Гарсиа</div>
+      <div class="pl-type">Журнал Golf 2002 года с автографом</div>
+      <div class="pl-price">160 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
+  <div class="q"><img src="img_golf/garcia6.jpg">
+    <div class="plate dk"><div class="pl-name">Серхио Гарсиа</div>
+      <div class="pl-type">Фото 8×10 с автографом</div>
+      <div class="pl-price">130 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
+</section>
+
+<!-- ============ g19 GARCIA white pair (balls) ============ -->
+<section class="slide light" id="g19" style="grid-template-rows:auto 1fr">
+  <div class="wrap" style="padding:44px 72px 0">
+    <div class="head">
+      <div><div class="kick hkick">Серхио Гарсиа · чемпион Masters-2017</div>
+        <div class="htitle serif">Мячи чемпиона Masters-2017</div></div>
+      <div class="hcount">2 из 6 предметов</div>
     </div>
   </div>
-  <div class="wrap" style="padding:0 60px 22px">
-    <div class="grid dense g6grid">
-      <div class="card"><div class="mat"><img src="img_golf/dechambeau1.jpg"></div>
-        <div class="meta"><div class="name">Брайсон Дешамбо</div>
-          <div class="type">Фото 8×10 с автографом</div>
-          <div class="price">160 000 ₽</div><div class="cert">подлинность: PSA/DNA ITP</div></div></div>
+  <div class="wrap" style="padding:0 160px 40px">
+    <div class="grid g2">
+      <div class="card"><div class="mat"><img src="img_golf/garcia1.jpg"></div>
+        <div class="meta"><div class="name">Серхио Гарсиа</div>
+          <div class="type">Мяч для гольфа с автографом (чемпион Masters 2017)</div>
+          <div class="price">140 000 ₽</div><div class="cert">подлинность: JSA</div></div></div>
+      <div class="card"><div class="mat"><img src="img_golf/garcia5.jpg"></div>
+        <div class="meta"><div class="name">Серхио Гарсиа</div>
+          <div class="type">Мяч с полной подписью в защитном кубе</div>
+          <div class="price">150 000 ₽</div><div class="cert">подлинность: JSA</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ g20 DECHAMBEAU cross ============ -->
+<section class="slide cross" id="g20">
+  <div class="q"><img src="img_golf/dechambeau1.jpg">
+    <div class="plate dk"><div class="pl-name">Брайсон Дешамбо</div>
+      <div class="pl-type">Фото 8×10 с автографом</div>
+      <div class="pl-price">160 000 ₽</div><div class="pl-cert">подлинность: PSA/DNA ITP</div></div></div>
+  <div class="q"><img src="img_golf/dechambeau3.jpg">
+    <div class="plate dk"><div class="pl-name">Брайсон Дешамбо</div>
+      <div class="pl-type">Флаг US Open 2020 с автографом и фотопруфом</div>
+      <div class="pl-price">250 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
+  <div class="q"><img src="img_golf/dechambeau5.jpg">
+    <div class="plate dk"><div class="pl-name">Брайсон Дешамбо</div>
+      <div class="pl-type">Фото 8×10 «Мастерс-2016» с автографом</div>
+      <div class="pl-price">160 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
+  <div class="q"><img src="img_golf/dechambeau6.jpg">
+    <div class="plate dk"><div class="pl-name">Брайсон Дешамбо</div>
+      <div class="pl-type">Фото 8×10 «US Open 2020» с автографом</div>
+      <div class="pl-price">150 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
+</section>
+
+<!-- ============ g21 DECHAMBEAU white pair ============ -->
+<section class="slide light" id="g21" style="grid-template-rows:auto 1fr">
+  <div class="wrap" style="padding:44px 72px 0">
+    <div class="head">
+      <div><div class="kick hkick">Брайсон Дешамбо · «Учёный»</div>
+        <div class="htitle serif">Флаг и карточка</div></div>
+      <div class="hcount">2 из 6 предметов</div>
+    </div>
+  </div>
+  <div class="wrap" style="padding:0 160px 40px">
+    <div class="grid g2">
       <div class="card"><div class="mat"><img src="img_golf/dechambeau2.jpg"></div>
         <div class="meta"><div class="name">Брайсон Дешамбо</div>
           <div class="type">Флаг TPC Scottsdale с автографом и фотопруфом</div>
-          <div class="price">260 000 ₽</div><div class="cert">подлинность: JSA</div></div></div>
-      <div class="card"><div class="mat"><img src="img_golf/morikawa1.jpg"></div>
-        <div class="meta"><div class="name">Коллин Морикава</div>
-          <div class="type">Перчатка для гольфа с автографом (2× мэйджора)</div>
-          <div class="price">160 000 ₽</div><div class="cert">подлинность: JSA</div></div></div>
-      <div class="card"><div class="mat"><img src="img_golf/morikawa2.jpg" style="object-position:50% 32%"></div>
-        <div class="meta"><div class="name">Коллин Морикава</div>
-          <div class="type">Мяч Titleist с логотипом PGA Championship, с автографом</div>
-          <div class="price">140 000 ₽</div><div class="cert">подлинность: JSA</div></div></div>
-      <div class="card"><div class="mat"><img src="img_golf/morikawa3.jpg"></div>
-        <div class="meta"><div class="name">Коллин Морикава</div>
-          <div class="type">Флаг Players Championship 2026 с автографом</div>
-          <div class="price">220 000 ₽</div><div class="cert">подлинность: PSA</div></div></div>
-      <div class="card" style="position:relative"><div class="mat" style="border:1.5px solid rgba(169,133,69,.55)"><img src="img_golf/morikawa4.jpg"></div>
-        <div class="meta"><div class="name">Коллин Морикава</div>
-          <div class="type" style="color:var(--gold)">US Open-2026 · Шиннекок-Хиллс</div>
-          <div class="price">220 000 ₽</div><div class="cert">подлинность: PSA</div></div></div>
+          <div class="price">250 000 ₽</div><div class="cert">подлинность: JSA</div></div></div>
+      <div class="card"><div class="mat"><img src="img_golf/dechambeau4.jpg"></div>
+        <div class="meta"><div class="name">Брайсон Дешамбо</div>
+          <div class="type">Счётная карточка Огасты с автографом</div>
+          <div class="price">200 000 ₽</div><div class="cert">подлинность: Beckett</div></div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ g13 FULL INDEX ============ -->
-<section class="slide dark" id="g13" style="grid-template-rows:auto 1fr auto">
-  <div class="wrap" style="padding:30px 68px 10px">
-    <div class="kick d" style="margin-bottom:9px">Полный перечень</div>
-    <h2 class="serif" style="font-weight:300;font-size:36px;color:var(--ivory)">Собрание «Большая игра»</h2>
+<!-- ============ g22 MORIKAWA flags cross ============ -->
+<section class="slide cross" id="g22">
+  <div class="q"><img src="img_golf/morikawa3.jpg">
+    <div class="plate dk"><div class="pl-name">Коллин Морикава</div>
+      <div class="pl-type">Флаг Players Championship 2026 с автографом</div>
+      <div class="pl-price">220 000 ₽</div><div class="pl-cert">подлинность: PSA</div></div></div>
+  <div class="q accent"><img src="img_golf/morikawa4.jpg">
+    <div class="plate dk"><div class="pl-name">Коллин Морикава</div>
+      <div class="pl-type">US Open-2026 · Шиннекок-Хиллс · флаг с автографом</div>
+      <div class="pl-price">220 000 ₽</div><div class="pl-cert">подлинность: PSA</div></div></div>
+  <div class="q"><img src="img_golf/morikawa5.jpg">
+    <div class="plate dk"><div class="pl-name">Коллин Морикава</div>
+      <div class="pl-type">Пин-флаг British Open 2021 с автографом</div>
+      <div class="pl-price">210 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
+  <div class="q"><img src="img_golf/morikawa6.jpg">
+    <div class="plate dk"><div class="pl-name">Коллин Морикава</div>
+      <div class="pl-type">Флаг US Open 2025 с автографом</div>
+      <div class="pl-price">210 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
+</section>
+
+<!-- ============ g23 MORIKAWA cross ============ -->
+<section class="slide cross" id="g23">
+  <div class="q"><img src="img_golf/morikawa1.jpg">
+    <div class="plate dk"><div class="pl-name">Коллин Морикава</div>
+      <div class="pl-type">Перчатка для гольфа с автографом (2× мэйджора)</div>
+      <div class="pl-price">160 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
+  <div class="q"><img src="img_golf/morikawa2.jpg">
+    <div class="plate dk"><div class="pl-name">Коллин Морикава</div>
+      <div class="pl-type">Мяч Titleist PGA Championship с автографом</div>
+      <div class="pl-price">140 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
+  <div class="q"><img src="img_golf/morikawa7.jpg">
+    <div class="plate dk"><div class="pl-name">Коллин Морикава</div>
+      <div class="pl-type">Фото 8×10 «British Open» с автографом</div>
+      <div class="pl-price">160 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
+  <div class="q"><img src="img_golf/morikawa8.jpg">
+    <div class="plate dk"><div class="pl-name">Коллин Морикава</div>
+      <div class="pl-type">Фото 16×20 с автографом</div>
+      <div class="pl-price">180 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
+</section>
+
+<!-- ============ g24 FULL INDEX ============ -->
+<section class="slide dark" id="g24" style="grid-template-rows:auto 1fr auto">
+  <div class="wrap" style="padding:16px 60px 2px">
+    <div class="kick d" style="margin-bottom:8px">Полный перечень · 62 предмета</div>
+    <h2 class="serif" style="font-weight:300;font-size:24px;color:var(--ivory)">Собрание «Большая игра»</h2>
   </div>
-  <div class="wrap" style="padding:4px 68px 6px;display:grid;grid-template-columns:1fr 1fr;column-gap:56px;align-content:start">
+  <div class="wrap" style="padding:2px 60px 4px;display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:34px;align-content:start">
     <div class="idx">
-      <div class="ir"><span class="in">Педро Паскаль</span><span class="it">Фото «Мандалорец» 8×10, автограф</span><span class="ip">240 000</span></div>
+      <div class="ir"><span class="in">Педро Паскаль</span><span class="it">Фото «Мандалорец» 8×10</span><span class="ip">240 000</span></div>
       <div class="ir"><span class="in">Педро Паскаль</span><span class="it">Фото с Грогу, автограф</span><span class="ip">240 000</span></div>
-      <div class="ir"><span class="in">Тайгер Вудс</span><span class="it">Фото 16×20 «Мастерс-2001», в раме</span><span class="ip">550 000</span></div>
+      <div class="ir"><span class="in">Педро Паскаль</span><span class="it">Фото 16×20 + фотопруф</span><span class="ip">300 000</span></div>
+      <div class="ir"><span class="in">Педро Паскаль</span><span class="it">Фото 16×20, автограф</span><span class="ip">260 000</span></div>
+      <div class="ir"><span class="in">Педро Паскаль</span><span class="it">Фото 11×14, автограф</span><span class="ip">250 000</span></div>
+      <div class="ir"><span class="in">Педро Паскаль</span><span class="it">Фото 11×14, автограф</span><span class="ip">250 000</span></div>
+      <div class="ir"><span class="in">Тайгер Вудс</span><span class="it">Фото 16×20 «Мастерс-2001»</span><span class="ip">550 000</span></div>
+      <div class="ir"><span class="in">Тайгер Вудс</span><span class="it">Промо-фото, слаб PSA/DNA</span><span class="ip">580 000</span></div>
+      <div class="ir"><span class="in">Тайгер Вудс</span><span class="it">Фото Upper Deck, PSA 10</span><span class="ip">600 000</span></div>
+      <div class="ir"><span class="in">Тайгер Вудс</span><span class="it">Флаг PGA, автограф</span><span class="ip">600 000</span></div>
+      <div class="ir"><span class="in">Тайгер Вудс</span><span class="it">Кепка Nike, автограф</span><span class="ip">380 000</span></div>
       <div class="ir"><span class="in">Бен Хоган</span><span class="it">Фото 8×10, слаб PSA</span><span class="ip">250 000</span></div>
       <div class="ir"><span class="in">Бен Хоган</span><span class="it">Фото 8×10, PSA 10</span><span class="ip">260 000</span></div>
-      <div class="ir"><span class="in">Бен Хоган</span><span class="it">Банковский чек 1994, автограф</span><span class="ip">180 000</span></div>
+      <div class="ir"><span class="in">Бен Хоган</span><span class="it">Банковский чек 1994</span><span class="ip">190 000</span></div>
       <div class="ir"><span class="in">Бен Хоган</span><span class="it">Карточка Mueller 1992, PSA 9</span><span class="ip">300 000</span></div>
+      <div class="ir"><span class="in">Бен Хоган</span><span class="it">Фото 11×14 «Идеальный свинг»</span><span class="ip">500 000</span></div>
+      <div class="ir"><span class="in">Бен Хоган</span><span class="it">Фото 16×20, автограф</span><span class="ip">550 000</span></div>
       <div class="ir"><span class="in">Джек Никлаус</span><span class="it">Флаг Masters, автограф</span><span class="ip">300 000</span></div>
       <div class="ir"><span class="in">Джек Никлаус</span><span class="it">Флаг Memorial Tournament</span><span class="ip">300 000</span></div>
       <div class="ir"><span class="in">Никлаус · Плеер</span><span class="it">Флаг Masters, два автографа</span><span class="ip">450 000</span></div>
-      <div class="ir"><span class="in">Севе Балестерос</span><span class="it">Фото 11×14 «Мастерс-1983»</span><span class="ip">250 000</span></div>
-      <div class="ir"><span class="in">Севе · Олазабаль</span><span class="it">Фото 8×10, два автографа</span><span class="ip">300 000</span></div>
-      <div class="ir"><span class="in">Севе Балестерос</span><span class="it">Счётная карточка Masters, PSA 10</span><span class="ip">260 000</span></div>
+      <div class="ir"><span class="in">Джек Никлаус</span><span class="it">Фото 8×10 «Мастерс-1986»</span><span class="ip">220 000</span></div>
     </div>
     <div class="idx">
-      <div class="ir"><span class="in">Грег Норман</span><span class="it">Фото 8×10, автограф</span><span class="ip">140 000</span></div>
-      <div class="ir"><span class="in">Грег Норман</span><span class="it">Фото поля Masters, автограф</span><span class="ip">140 000</span></div>
+      <div class="ir"><span class="in">Джек Никлаус</span><span class="it">Журнал Golf 1975</span><span class="ip">240 000</span></div>
+      <div class="ir"><span class="in">Джек Никлаус</span><span class="it">Журнал SI 1978</span><span class="ip">240 000</span></div>
+      <div class="ir"><span class="in">Джек Никлаус</span><span class="it">Журнал Sports Illustrated</span><span class="ip">250 000</span></div>
+      <div class="ir"><span class="in">Джек Никлаус</span><span class="it">Фото 11×14 «Чемпион Masters»</span><span class="ip">240 000</span></div>
+      <div class="ir"><span class="in">Севе Балестерос</span><span class="it">Фото 11×14 «Мастерс-1983»</span><span class="ip">250 000</span></div>
+      <div class="ir"><span class="in">Севе · Олазабаль</span><span class="it">Фото 8×10, два автографа</span><span class="ip">300 000</span></div>
+      <div class="ir"><span class="in">Севе Балестерос</span><span class="it">Карточка Masters, PSA 10</span><span class="ip">260 000</span></div>
+      <div class="ir"><span class="in">Севе Балестерос</span><span class="it">Лист с автографом</span><span class="ip">220 000</span></div>
+      <div class="ir"><span class="in">Севе + 6 чемпионов</span><span class="it">Фото «Клубный дом», 7 подписей</span><span class="ip">300 000</span></div>
+      <div class="ir"><span class="in">Грег Норман</span><span class="it">Фото 8×10, автограф</span><span class="ip">150 000</span></div>
+      <div class="ir"><span class="in">Грег Норман</span><span class="it">Фото поля Masters</span><span class="ip">140 000</span></div>
+      <div class="ir"><span class="in">Грег Норман</span><span class="it">Фото 8×10, автограф</span><span class="ip">150 000</span></div>
+      <div class="ir"><span class="in">Грег Норман</span><span class="it">Фото 8×10 (LIV)</span><span class="ip">150 000</span></div>
+      <div class="ir"><span class="in">Грег Норман</span><span class="it">Классическое фото 8×10</span><span class="ip">150 000</span></div>
+      <div class="ir"><span class="in">Грег Норман</span><span class="it">Фото 11×14 «Чемпион The Open»</span><span class="ip">170 000</span></div>
       <div class="ir"><span class="in">Фил Микелсон</span><span class="it">Фото 11×17 «3× Masters»</span><span class="ip">220 000</span></div>
-      <div class="ir"><span class="in">Фил Микелсон</span><span class="it">Флаг US Open 2019 (Пеббл-Бич)</span><span class="ip">280 000</span></div>
-      <div class="ir"><span class="in">Фил Микелсон</span><span class="it">Фото 8×10, автограф + инскрипция</span><span class="ip">180 000</span></div>
-      <div class="ir"><span class="in">Серхио Гарсиа</span><span class="it">Мяч, автограф (Masters 2017)</span><span class="ip">140 000</span></div>
-      <div class="ir"><span class="in">Серхио Гарсиа</span><span class="it">Фото 8×10, автограф</span><span class="ip">140 000</span></div>
+      <div class="ir"><span class="in">Фил Микелсон</span><span class="it">Фото 8×10 + инскрипция</span><span class="ip">180 000</span></div>
+      <div class="ir"><span class="in">Фил Микелсон</span><span class="it">Автограф, сертификат Beckett</span><span class="ip">150 000</span></div>
+      <div class="ir"><span class="in">Фил Микелсон</span><span class="it">Перчатка, автограф</span><span class="ip">200 000</span></div>
+      <div class="ir"><span class="in">Фил Микелсон</span><span class="it">Флаг Memorial Tournament</span><span class="ip">190 000</span></div>
+      <div class="ir"><span class="in">Фил Микелсон</span><span class="it">Кепка PGA, автограф</span><span class="ip">180 000</span></div>
+    </div>
+    <div class="idx">
+      <div class="ir"><span class="in">Серхио Гарсиа</span><span class="it">Мяч (Masters 2017)</span><span class="ip">140 000</span></div>
+      <div class="ir"><span class="in">Серхио Гарсиа</span><span class="it">Фото 8×10, автограф</span><span class="ip">130 000</span></div>
+      <div class="ir"><span class="in">Серхио Гарсиа</span><span class="it">Фото 11×14, автограф</span><span class="ip">140 000</span></div>
+      <div class="ir"><span class="in">Серхио Гарсиа</span><span class="it">Журнал Golf 2002</span><span class="ip">160 000</span></div>
+      <div class="ir"><span class="in">Серхио Гарсиа</span><span class="it">Мяч в защитном кубе</span><span class="ip">150 000</span></div>
+      <div class="ir"><span class="in">Серхио Гарсиа</span><span class="it">Фото 8×10, автограф</span><span class="ip">130 000</span></div>
       <div class="ir"><span class="in">Брайсон Дешамбо</span><span class="it">Фото 8×10, автограф</span><span class="ip">160 000</span></div>
-      <div class="ir"><span class="in">Брайсон Дешамбо</span><span class="it">Флаг TPC Scottsdale, фотопруф</span><span class="ip">260 000</span></div>
-      <div class="ir"><span class="in">Коллин Морикава</span><span class="it">Перчатка, автограф (2× мэйджора)</span><span class="ip">160 000</span></div>
-      <div class="ir"><span class="in">Коллин Морикава</span><span class="it">Мяч Titleist PGA Championship</span><span class="ip">140 000</span></div>
-      <div class="ir"><span class="in">Коллин Морикава</span><span class="it">Флаг Players Championship 2026</span><span class="ip">220 000</span></div>
+      <div class="ir"><span class="in">Брайсон Дешамбо</span><span class="it">Флаг TPC Scottsdale, фотопруф</span><span class="ip">250 000</span></div>
+      <div class="ir"><span class="in">Брайсон Дешамбо</span><span class="it">Флаг US Open 2020, фотопруф</span><span class="ip">250 000</span></div>
+      <div class="ir"><span class="in">Брайсон Дешамбо</span><span class="it">Карточка Огасты, автограф</span><span class="ip">200 000</span></div>
+      <div class="ir"><span class="in">Брайсон Дешамбо</span><span class="it">Фото 8×10 «Мастерс-2016»</span><span class="ip">160 000</span></div>
+      <div class="ir"><span class="in">Брайсон Дешамбо</span><span class="it">Фото 8×10 «US Open 2020»</span><span class="ip">150 000</span></div>
+      <div class="ir"><span class="in">Коллин Морикава</span><span class="it">Перчатка (2× мэйджора)</span><span class="ip">160 000</span></div>
+      <div class="ir"><span class="in">Коллин Морикава</span><span class="it">Мяч Titleist PGA Champ.</span><span class="ip">140 000</span></div>
+      <div class="ir"><span class="in">Коллин Морикава</span><span class="it">Флаг Players Champ. 2026</span><span class="ip">220 000</span></div>
       <div class="ir"><span class="in">Коллин Морикава</span><span class="it">Флаг US Open 2026 (Шиннекок)</span><span class="ip">220 000</span></div>
+      <div class="ir"><span class="in">Коллин Морикава</span><span class="it">Пин-флаг British Open 2021</span><span class="ip">210 000</span></div>
+      <div class="ir"><span class="in">Коллин Морикава</span><span class="it">Флаг US Open 2025</span><span class="ip">210 000</span></div>
+      <div class="ir"><span class="in">Коллин Морикава</span><span class="it">Фото 8×10 «British Open»</span><span class="ip">160 000</span></div>
+      <div class="ir"><span class="in">Коллин Морикава</span><span class="it">Фото 16×20, автограф</span><span class="ip">180 000</span></div>
     </div>
   </div>
-  <div class="wrap" style="padding:12px 68px 30px;border-top:1px solid rgba(169,133,69,.3);display:flex;justify-content:space-between;align-items:baseline">
-    <span class="kick d" style="letter-spacing:.22em">26 предметов · всё собрание целиком</span>
-    <span class="serif" style="font-weight:500;font-size:34px;color:var(--gold2)">6 280 000 ₽</span>
+  <div class="wrap" style="padding:6px 60px 14px;border-top:1px solid rgba(169,133,69,.3);display:flex;justify-content:space-between;align-items:baseline">
+    <span class="kick d" style="letter-spacing:.22em">62 предмета · всё собрание целиком</span>
+    <span class="serif" style="font-weight:500;font-size:28px;color:var(--gold2)">15 420 000 ₽</span>
   </div>
 </section>
 
-<!-- ============ g14 CONTACTS ============ -->
-<section class="slide dark" id="g14" style="grid-template-rows:1fr auto">
+<!-- ============ g25 CONTACTS ============ -->
+<section class="slide dark" id="g25" style="grid-template-rows:1fr auto">
   <div class="wrap" style="padding:70px 72px 0;display:flex;flex-direction:column;justify-content:center">
     <img src="img/stargift_logo.png" alt="Stargift" style="height:38px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.92;align-self:flex-start">
     <h2 class="serif" style="font-weight:300;font-size:58px;line-height:1.04;color:var(--ivory);margin-top:34px">Подарки-легенды<br>для тех, кто ценит подлинность</h2>
@@ -447,7 +676,8 @@ img{display:block}
     </div>
   </div>
   <div class="wrap" style="padding:22px 72px 34px;border-top:1px solid rgba(169,133,69,.3)">
-    <span class="kick" style="letter-spacing:.2em;color:var(--gold2)">Новое поступление — бронирование у личного менеджера</div><div style="font-size:9px;letter-spacing:.08em;color:rgba(245,241,232,.35);margin-top:1.2vh">часть предметной съёмки прошла студийную обработку · автографы и предметы без изменений</span>
+    <span class="kick" style="letter-spacing:.2em;color:var(--gold2)">Новое поступление — бронирование у личного менеджера</span>
+    <div style="font-size:9px;letter-spacing:.08em;color:rgba(245,241,232,.35);margin-top:10px">часть предметной съёмки прошла студийную обработку · автографы и предметы без изменений</div>
   </div>
 </section>
 
@@ -463,13 +693,13 @@ img{display:block}
   text-transform:uppercase;color:var(--mute);justify-self:end;white-space:nowrap}
 .toc-row>b{font-family:'Cormorant Garamond';font-weight:500;font-size:19px;
   color:var(--gold);justify-self:end;white-space:nowrap}
-/* index rows (g13) */
+/* index rows (g24) */
 .idx{display:flex;flex-direction:column}
-.ir{display:grid;grid-template-columns:1fr auto;column-gap:12px;align-items:baseline;
-  padding:4.5px 0;border-bottom:1px solid rgba(169,133,69,.14)}
-.in{font-family:'Cormorant Garamond';font-weight:500;font-size:15.5px;color:var(--ivory);grid-row:1;grid-column:1}
-.it{font:300 10.5px/1.3 'Inter';color:#8f897d;grid-row:2;grid-column:1;margin-top:1px}
-.ip{font-family:'Cormorant Garamond';font-weight:500;font-size:16px;color:var(--gold2);
+.ir{display:grid;grid-template-columns:1fr auto;column-gap:10px;align-items:baseline;
+  padding:2px 0;border-bottom:1px solid rgba(169,133,69,.14)}
+.in{font-family:'Cormorant Garamond';font-weight:500;font-size:11px;color:var(--ivory);grid-row:1;grid-column:1}
+.it{font:300 7.5px/1.05 'Inter';color:#8f897d;grid-row:2;grid-column:1}
+.ip{font-family:'Cormorant Garamond';font-weight:500;font-size:11px;color:var(--gold2);
   grid-row:1;grid-column:2;white-space:nowrap}
 </style>
 
