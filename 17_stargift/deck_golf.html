@@ -37,21 +37,23 @@ img{display:block}
 .mat{background:#fff;padding:14px;border:1px solid rgba(169,133,69,.18);box-shadow:0 1px 2px rgba(0,0,0,.04)}
 .mat img{width:100%;height:var(--ih,300px);object-fit:cover;object-position:center}
 .meta{padding:13px 2px 0}
-.name{font-family:'Cormorant Garamond';font-weight:500;font-size:20px;line-height:1.14;color:var(--ink)}
+.name{font-family:'Cormorant Garamond';font-weight:500;font-size:18px;line-height:1.14;color:var(--ink)}
 .type{font:300 12.5px/1.4 'Inter';color:var(--mute);margin-top:7px;max-width:34ch}
-.price{font-family:'Cormorant Garamond';font-weight:500;font-size:23px;color:var(--gold);margin-top:9px}
+.price{font-family:'Cormorant Garamond';font-weight:500;font-size:18px;color:var(--gold);margin-top:8px}
 .cert{font:400 9.5px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:8px}
 
 /* ===== CROSS 2×2 full-bleed ===== */
-.cross{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2px;background:var(--gold)}
+.cross{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:1px;background:rgba(169,133,69,.6)}
 .q{position:relative;overflow:hidden;background:#111}
 .q>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
-.plate{position:absolute;left:0;right:0;bottom:0;padding:16px 20px 15px;
+.q.fit{background:#EFE9DE}.q.fit>img{object-fit:contain}
+.q.fitd{background:#0B0B0C}.q.fitd>img{object-fit:contain}
+.plate{position:absolute;left:0;right:0;bottom:0;padding:13px 18px 12px;
   background:rgba(255,255,255,.88);backdrop-filter:saturate(1.05)}
 .plate.dk{background:linear-gradient(0deg,rgba(11,11,12,.94) 0%,rgba(11,11,12,.62) 62%,rgba(11,11,12,0) 100%);padding-top:44px}
-.pl-name{font-family:'Cormorant Garamond';font-weight:600;font-size:21px;line-height:1.05;color:#1A1A1A}
-.pl-type{font:300 11.5px/1.35 'Inter';color:#5a5651;margin-top:4px;max-width:42ch}
-.pl-price{font-family:'Cormorant Garamond';font-weight:600;font-size:23px;color:var(--gold);margin-top:6px}
+.pl-name{font-family:'Cormorant Garamond';font-weight:500;font-size:18px;line-height:1.08;color:#1A1A1A}
+.pl-type{font:300 10.5px/1.3 'Inter';color:#5a5651;margin-top:3px;max-width:42ch}
+.pl-price{font-family:'Cormorant Garamond';font-weight:500;font-size:16.5px;color:var(--gold);margin-top:5px}
 .pl-cert{font:400 8.5px/1 'Inter';letter-spacing:.18em;text-transform:uppercase;color:#9a958c;margin-top:6px}
 .plate.dk .pl-name{color:var(--ivory)}
 .plate.dk .pl-type{color:#c3bdb1}
@@ -74,7 +76,7 @@ img{display:block}
 .pp-name{font-family:'Cormorant Garamond';font-weight:400;font-size:44px;line-height:1.02;color:var(--ivory)}
 .pp-type{font:300 15px/1.5 'Inter';color:#b8b2a6;margin-top:18px;max-width:34ch}
 .pp-rule{height:1px;background:rgba(169,133,69,.35);margin:26px 0}
-.pp-price{font-family:'Cormorant Garamond';font-weight:500;font-size:42px;color:var(--gold2)}
+.pp-price{font-family:'Cormorant Garamond';font-weight:500;font-size:36px;color:var(--gold2)}
 .pp-cert{font:400 10px/1 'Inter';letter-spacing:.22em;text-transform:uppercase;color:var(--cert);margin-top:14px}
 .pp-note{font:300 13px/1.7 'Inter';color:#8f897d;margin-top:26px;max-width:34ch}
 
@@ -94,7 +96,7 @@ img{display:block}
 <!-- ============ g01 COVER ============ -->
 <section class="slide dark on" id="g01" style="grid-template-columns:1fr 1fr">
   <div class="wrap" style="display:flex;flex-direction:column;justify-content:space-between;padding:64px 60px">
-    <img src="img/stargift_logo.png" alt="Stargift" style="height:34px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.9">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:60px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.95">
     <div>
       <div class="kick d" style="margin-bottom:24px">Частное собрание · гольф</div>
       <h1 class="serif" style="font-weight:300;font-size:96px;line-height:.98;color:var(--ivory)">Большая<br>игра</h1>
@@ -186,11 +188,11 @@ img{display:block}
     <div class="plate dk"><div class="pl-name">Тайгер Вудс</div>
       <div class="pl-type">Фото Upper Deck 8×10 с автографом, PSA 10</div>
       <div class="pl-price">600 000 ₽</div><div class="pl-cert">подлинность: PSA</div></div></div>
-  <div class="q"><img src="img_golf/woods4.jpg">
+  <div class="q fit"><img src="img_golf/woods4.jpg">
     <div class="plate dk"><div class="pl-name">Тайгер Вудс</div>
       <div class="pl-type">Флаг PGA с автографом</div>
       <div class="pl-price">600 000 ₽</div><div class="pl-cert">подлинность: PSA</div></div></div>
-  <div class="q"><img src="img_golf/woods5.jpg">
+  <div class="q fit"><img src="img_golf/woods5.jpg">
     <div class="plate dk"><div class="pl-name">Тайгер Вудс</div>
       <div class="pl-type">Кепка Nike с автографом</div>
       <div class="pl-price">380 000 ₽</div><div class="pl-cert">подлинность: PSA</div></div></div>
@@ -226,11 +228,11 @@ img{display:block}
 
 <!-- ============ g07 HOGAN cross ============ -->
 <section class="slide cross" id="g07">
-  <div class="q"><img src="img_golf/hogan1.jpg">
+  <div class="q fit"><img src="img_golf/hogan1.jpg">
     <div class="plate dk"><div class="pl-name">Бен Хоган</div>
       <div class="pl-type">Фото 8×10 с автографом, слаб PSA</div>
       <div class="pl-price">250 000 ₽</div><div class="pl-cert">подлинность: PSA slab</div></div></div>
-  <div class="q"><img src="img_golf/hogan3.jpg">
+  <div class="q fit"><img src="img_golf/hogan3.jpg">
     <div class="plate dk"><div class="pl-name">Бен Хоган</div>
       <div class="pl-type">Банковский чек 1994 года с автографом</div>
       <div class="pl-price">190 000 ₽</div><div class="pl-cert">подлинность: PSA DNA</div></div></div>
@@ -246,15 +248,15 @@ img{display:block}
 
 <!-- ============ g08 NICKLAUS cross ============ -->
 <section class="slide cross" id="g08">
-  <div class="q"><img src="img_golf/nicklaus1.jpg">
+  <div class="q fitd"><img src="img_golf/nicklaus1.jpg">
     <div class="plate dk"><div class="pl-name">Джек Никлаус</div>
       <div class="pl-type">Флаг турнира Masters с автографом</div>
       <div class="pl-price">300 000 ₽</div><div class="pl-cert">подлинность: JSA LOA</div></div></div>
-  <div class="q"><img src="img_golf/nicklaus2.jpg">
+  <div class="q fit"><img src="img_golf/nicklaus2.jpg">
     <div class="plate dk"><div class="pl-name">Джек Никлаус</div>
       <div class="pl-type">Флаг Memorial Tournament с автографом</div>
       <div class="pl-price">300 000 ₽</div><div class="pl-cert">подлинность: PSA/DNA</div></div></div>
-  <div class="q"><img src="img_golf/nicklaus4.jpg">
+  <div class="q fit"><img src="img_golf/nicklaus4.jpg">
     <div class="plate dk"><div class="pl-name">Джек Никлаус</div>
       <div class="pl-type">Фото 8×10 «Мастерс-1986» с автографом, в раме</div>
       <div class="pl-price">220 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
@@ -289,7 +291,7 @@ img{display:block}
 
 <!-- ============ g10 SEVE cross ============ -->
 <section class="slide cross" id="g10">
-  <div class="q"><img src="img_golf/seve1.jpg">
+  <div class="q fit"><img src="img_golf/seve1.jpg">
     <div class="plate dk"><div class="pl-name">Севе Балестерос</div>
       <div class="pl-type">Фото 11×14 «Мастерс-1983» с автографом</div>
       <div class="pl-price">250 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
@@ -297,7 +299,7 @@ img{display:block}
     <div class="plate dk"><div class="pl-name">Севе Балестерос и Х.-М. Олазабаль</div>
       <div class="pl-type">Фото 8×10 с двумя автографами</div>
       <div class="pl-price">300 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
-  <div class="q"><img src="img_golf/seve3.jpg">
+  <div class="q fit"><img src="img_golf/seve3.jpg">
     <div class="plate dk"><div class="pl-name">Севе Балестерос</div>
       <div class="pl-type">Счётная карточка Masters (Огаста), PSA 10</div>
       <div class="pl-price">260 000 ₽</div><div class="pl-cert">подлинность: PSA/DNA 10</div></div></div>
@@ -336,19 +338,19 @@ img{display:block}
 
 <!-- ============ g12 MICKELSON cross ============ -->
 <section class="slide cross" id="g12">
-  <div class="q"><img src="img_golf/mickelson1.jpg">
+  <div class="q fit"><img src="img_golf/mickelson1.jpg">
     <div class="plate dk"><div class="pl-name">Фил Микелсон</div>
       <div class="pl-type">Фото 11×17 «3× чемпион Masters» с автографом</div>
-      <div class="pl-price">220 000 ₽</div><div class="pl-cert">подлинность: BAS</div></div></div>
+      <div class="pl-price">220 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
   <div class="q"><img src="img_golf/mickelson3.jpg">
     <div class="plate dk"><div class="pl-name">Фил Микелсон</div>
       <div class="pl-type">Фото 8×10 с автографом и инскрипцией</div>
-      <div class="pl-price">180 000 ₽</div><div class="pl-cert">подлинность: Beckett BAS</div></div></div>
-  <div class="q"><img src="img_golf/mickelson5.jpg">
+      <div class="pl-price">180 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
+  <div class="q fit"><img src="img_golf/mickelson5.jpg">
     <div class="plate dk"><div class="pl-name">Фил Микелсон</div>
       <div class="pl-type">Перчатка для гольфа с автографом</div>
       <div class="pl-price">200 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
-  <div class="q"><img src="img_golf/mickelson7.jpg">
+  <div class="q fit"><img src="img_golf/mickelson7.jpg">
     <div class="plate dk"><div class="pl-name">Фил Микелсон</div>
       <div class="pl-type">Кепка PGA с автографом</div>
       <div class="pl-price">180 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
@@ -356,7 +358,7 @@ img{display:block}
 
 <!-- ============ g13 GARCIA cross ============ -->
 <section class="slide cross" id="g13">
-  <div class="q"><img src="img_golf/garcia1.jpg">
+  <div class="q fit"><img src="img_golf/garcia1.jpg">
     <div class="plate dk"><div class="pl-name">Серхио Гарсиа</div>
       <div class="pl-type">Мяч для гольфа с автографом (чемпион Masters 2017)</div>
       <div class="pl-price">140 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
@@ -368,7 +370,7 @@ img{display:block}
     <div class="plate dk"><div class="pl-name">Серхио Гарсиа</div>
       <div class="pl-type">Журнал Golf 2002 года с автографом</div>
       <div class="pl-price">160 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
-  <div class="q"><img src="img_golf/garcia6.jpg">
+  <div class="q fit"><img src="img_golf/garcia6.jpg">
     <div class="plate dk"><div class="pl-name">Серхио Гарсиа</div>
       <div class="pl-type">Фото 8×10 с автографом</div>
       <div class="pl-price">130 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
@@ -376,15 +378,15 @@ img{display:block}
 
 <!-- ============ g14 DECHAMBEAU cross ============ -->
 <section class="slide cross" id="g14">
-  <div class="q"><img src="img_golf/dechambeau1.jpg">
+  <div class="q fit"><img src="img_golf/dechambeau1.jpg">
     <div class="plate dk"><div class="pl-name">Брайсон Дешамбо</div>
       <div class="pl-type">Фото 8×10 с автографом</div>
       <div class="pl-price">160 000 ₽</div><div class="pl-cert">подлинность: PSA/DNA ITP</div></div></div>
-  <div class="q"><img src="img_golf/dechambeau3.jpg">
+  <div class="q fit"><img src="img_golf/dechambeau3.jpg">
     <div class="plate dk"><div class="pl-name">Брайсон Дешамбо</div>
       <div class="pl-type">Флаг US Open 2020 с автографом и фотопруфом</div>
       <div class="pl-price">250 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
-  <div class="q"><img src="img_golf/dechambeau4.jpg">
+  <div class="q fit"><img src="img_golf/dechambeau4.jpg">
     <div class="plate dk"><div class="pl-name">Брайсон Дешамбо</div>
       <div class="pl-type">Счётная карточка Огасты с автографом</div>
       <div class="pl-price">200 000 ₽</div><div class="pl-cert">подлинность: Beckett</div></div></div>
@@ -396,15 +398,15 @@ img{display:block}
 
 <!-- ============ g15 MORIKAWA flags cross ============ -->
 <section class="slide cross" id="g15">
-  <div class="q"><img src="img_golf/morikawa3.jpg">
+  <div class="q fitd"><img src="img_golf/morikawa3.jpg">
     <div class="plate dk"><div class="pl-name">Коллин Морикава</div>
       <div class="pl-type">Флаг Players Championship 2026 с автографом</div>
       <div class="pl-price">220 000 ₽</div><div class="pl-cert">подлинность: PSA</div></div></div>
-  <div class="q accent"><img src="img_golf/morikawa4.jpg">
+  <div class="q accent fit"><img src="img_golf/morikawa4.jpg">
     <div class="plate dk"><div class="pl-name">Коллин Морикава</div>
       <div class="pl-type">US Open-2026 · Шиннекок-Хиллс · флаг с автографом</div>
       <div class="pl-price">220 000 ₽</div><div class="pl-cert">подлинность: PSA</div></div></div>
-  <div class="q"><img src="img_golf/morikawa5.jpg">
+  <div class="q fit"><img src="img_golf/morikawa5.jpg">
     <div class="plate dk"><div class="pl-name">Коллин Морикава</div>
       <div class="pl-type">Пин-флаг British Open 2021 с автографом</div>
       <div class="pl-price">210 000 ₽</div><div class="pl-cert">подлинность: JSA</div></div></div>
@@ -544,8 +546,8 @@ img{display:block}
 <!-- ============ g18 CONTACTS ============ -->
 <section class="slide dark" id="g18" style="grid-template-rows:1fr auto">
   <div class="wrap" style="padding:70px 72px 0;display:flex;flex-direction:column;justify-content:center">
-    <img src="img/stargift_logo.png" alt="Stargift" style="height:38px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.92;align-self:flex-start">
-    <h2 class="serif" style="font-weight:300;font-size:58px;line-height:1.04;color:var(--ivory);margin-top:34px">Подарки-легенды<br>для тех, кто ценит подлинность</h2>
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:50px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.95;align-self:flex-start">
+    <h2 class="serif" style="font-weight:300;font-size:58px;line-height:1.04;color:var(--ivory);margin-top:34px">Части истории —<br>для того, у кого есть всё</h2>
     <div style="display:flex;gap:64px;margin-top:44px;flex-wrap:wrap">
       <div>
         <div class="kick d" style="margin-bottom:14px">Салоны</div>
