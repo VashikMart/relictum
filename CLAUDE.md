@@ -3,7 +3,12 @@
 ## Генерация изображений — ГЛАВНОЕ ПРАВИЛО
 - **Всегда использовать Higgsfield nano banana pro, resolution 2k** (`model: nano_banana_pro`, `resolution: "2k"`) для любой обработки и генерации картинок: вырезание фона, красивые фоны (белый студийный / тёмная комната с лучом света), интерьерные кадры, новые ракурсы.
 - У владельца план **creator** — генерации nano banana pro 2k считаем безлимитными, НЕ экономить, генерировать сколько нужно. Не использовать remove_background и другие простые тулзы вместо nano banana — nano banana лучше понимает задачу, принимает несколько референсов.
-- В промпте ОБЯЗАТЕЛЬНО: сохранить предмет и автограф ТОЧНО как в референсе, не перерисовывать/не переводить текст и подпись, фотореализм. Референс подавать через media_upload → media_confirm → medias[{role:"image", value:media_id}].
+- **УНИВЕРСАЛЬНЫЙ ПРОМПТ вырезания (использовать всегда, НЕ описывать имя человека / сюжет / сцену — это вызывает отказы и лишнюю возню).** Один и тот же текст на любой предмет:
+  > *Isolate the single collectible item shown in the reference image. Show it by itself, complete and centered, on a clean seamless pure white studio background. Remove any frame, mat, stand, table, wall, floor and all surroundings. Do not change anything on the item itself — every picture, printed word, label and handwritten signature must stay exactly as in the reference: not redrawn, moved, translated or restyled. Keep it perfectly flat and undistorted if it is a photo, page, card or flat object. Photorealistic, soft even studio light, subtle contact shadow.*
+  - НЕ писать «Pedro Pascal», «Mandalorian», «Phil Mickelson», «swinging», «blaster» и т.п. Никаких имён и описаний содержимого — только «the item you see».
+  - Для по-настоящему переиспользуемого объекта на ПРОЗРАЧНОМ фоне: после nano (белый фон) прогнать через `remove_background` → transparent PNG. Тогда картинку можно ставить любого размера на любой фон.
+  - Если конкретный кадр всё равно блокируется (nsfw по картинке, не по тексту) — вырезать геометрией (perspective-crop реальных пикселей) на чистый фон; так автограф точно не меняется.
+- Референс подавать через media_upload → media_confirm → medias[{role:"image", value:media_id}].
 - После генерации — ДВА круга визуальной проверки самим агентом (Read картинки): не выдуман ли текст/табличка, не потерян ли автограф, чистый ли фон. Брак отклонять и перегенерировать.
 - Атмосферные генерации (тёмный зал, интерьер) в каталоге помечать «атмосферная подача»; при потере автографа в кадре — врезка с настоящим фото лота.
 
