@@ -1,0 +1,306 @@
+<meta charset="utf-8">
+<title>Stargift × YOOMOOTA — концепт подачи</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A0A0E; --ink2:#141419;
+  --ivory:#F3EFE7; --paper:#F6F3EC;
+  --coral:#E7645A; --coral2:#F08A80;
+  --teal:#4F9E90; --sand:#CBB89C;
+  --dk:#1A1A20; --mute:#6d6a63; --mute2:#9a958c;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-serif}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:grid}
+img{display:block}
+.serif{font-family:'Cormorant Garamond',serif}
+.wm{font-family:'Inter';font-weight:600;letter-spacing:.42em;text-transform:uppercase}
+.kick{font:600 11px/1 'Inter';letter-spacing:.34em;text-transform:uppercase;color:var(--coral)}
+.kick.d{color:var(--coral2)}
+.kick.t{color:var(--teal)}
+.light{background:var(--paper);color:var(--ink)}
+.dark{background:var(--ink);color:var(--ivory)}
+.wrap{padding:44px 62px}
+
+/* cover */
+.logo-lock{display:flex;align-items:baseline;gap:14px}
+.logo-lock .mk{font-family:'Inter';font-weight:600;letter-spacing:.44em;text-transform:uppercase;font-size:22px;color:var(--ivory)}
+.logo-lock .by{font:400 10px/1 'Inter';letter-spacing:.28em;text-transform:uppercase;color:var(--mute2)}
+
+/* manifesto */
+.quote{font-family:'Cormorant Garamond';font-weight:300;font-size:44px;line-height:1.16;color:var(--ivory)}
+.quote .c{color:var(--coral2);font-style:italic}
+
+/* section head (light) */
+.head{display:flex;align-items:flex-end;justify-content:space-between;
+  border-bottom:1px solid rgba(10,10,14,.14);padding-bottom:16px;margin-bottom:26px}
+.head .htitle{font-family:'Cormorant Garamond';font-weight:400;font-size:42px;line-height:1;color:var(--ink)}
+.head .hkick{margin-bottom:11px}
+.head .hcount{font:300 12px/1 'Inter';letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+
+/* planet chips */
+.planets{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.planet{border:1px solid rgba(243,239,231,.16);border-radius:2px;padding:18px 16px;background:rgba(255,255,255,.02)}
+.planet .pn{font-family:'Cormorant Garamond';font-weight:500;font-size:22px;color:var(--ivory);line-height:1}
+.planet .pd{font:300 11.5px/1.5 'Inter';color:#b3ada2;margin-top:9px}
+.planet .px{font:600 9px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--teal);margin-top:12px}
+
+/* character cards (light) */
+.chars{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.char{display:flex;flex-direction:column}
+.char .cframe{aspect-ratio:4/5;background:#EDE8DE;border:1px solid rgba(10,10,14,.1);
+  display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.char .cframe img{width:100%;height:100%;object-fit:cover}
+.char .cn{font-family:'Cormorant Garamond';font-weight:500;font-size:21px;color:var(--ink);margin-top:14px}
+.char .cr{font:600 9px/1 'Inter';letter-spacing:.16em;text-transform:uppercase;color:var(--coral);margin-top:6px}
+.char .cd{font:300 12px/1.5 'Inter';color:var(--mute);margin-top:9px;max-width:32ch}
+
+/* object passport (dark solo) */
+.pp-kick{margin-bottom:18px}
+.pp-name{font-family:'Cormorant Garamond';font-weight:400;font-size:46px;line-height:1.02;color:var(--ivory)}
+.pp-type{font:300 15px/1.55 'Inter';color:#b8b2a6;margin-top:18px;max-width:36ch}
+.pp-rule{height:1px;background:rgba(231,100,90,.4);margin:26px 0;width:120px}
+.pp-price{font-family:'Cormorant Garamond';font-weight:500;font-size:34px;color:var(--coral2)}
+.pp-cert{font:400 10px/1.6 'Inter';letter-spacing:.14em;text-transform:uppercase;color:var(--mute2);margin-top:16px}
+.spec{display:flex;gap:38px;margin-top:30px}
+.spec .sl{font:600 9px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--teal)}
+.spec .sv{font-family:'Cormorant Garamond';font-weight:500;font-size:20px;color:var(--ivory);margin-top:8px}
+
+/* exhibitions timeline */
+.tl{display:grid;grid-template-columns:repeat(2,1fr);column-gap:56px;row-gap:0}
+.tl-row{display:grid;grid-template-columns:92px 1fr;align-items:baseline;column-gap:18px;
+  padding:15px 0;border-bottom:1px solid rgba(243,239,231,.12)}
+.tl-row .yr{font-family:'Cormorant Garamond';font-weight:500;font-size:22px;color:var(--coral2)}
+.tl-row .ev{font:300 13.5px/1.4 'Inter';color:#c8c2b6}
+.tl-row .ev b{font-weight:500;color:var(--ivory)}
+
+/* service grid */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(243,239,231,.14);border:1px solid rgba(243,239,231,.14)}
+.svc .s{background:var(--ink);padding:26px 24px}
+.svc .si{font:600 10px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--teal)}
+.svc .st{font-family:'Cormorant Garamond';font-weight:500;font-size:23px;color:var(--ivory);margin-top:14px;line-height:1.08}
+.svc .sd{font:300 12px/1.55 'Inter';color:#a9a399;margin-top:10px}
+
+.arch{position:absolute;font:400 9px/1.3 'Inter';letter-spacing:.14em;text-transform:uppercase;color:rgba(243,239,231,.5)}
+.badge{display:inline-block;font:600 9px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;
+  color:var(--ink);background:var(--coral2);padding:7px 11px;border-radius:2px}
+</style>
+
+<div class="deck">
+
+<!-- ============ y01 COVER ============ -->
+<section class="slide dark on" id="y01" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_yoom/hero_museum.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:70% 50%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,14,.94) 0%,rgba(10,10,14,.72) 34%,rgba(10,10,14,.1) 66%,rgba(10,10,14,0) 100%)"></div>
+    <div style="position:absolute;inset:0;padding:60px 66px;display:flex;flex-direction:column;justify-content:space-between">
+      <div class="logo-lock">
+        <span class="mk">Stargift</span>
+        <span class="by">концепт подачи · для художника</span>
+      </div>
+      <div>
+        <div class="kick d" style="margin-bottom:22px">Арт-вселенная · Тарас Желтышев</div>
+        <h1 class="serif" style="font-weight:300;font-size:104px;line-height:.92;color:var(--ivory);letter-spacing:.01em">yoomoota</h1>
+        <p style="font:300 17px/1.6 'Inter';color:#cbc5ba;margin-top:26px;max-width:40ch">
+          23&nbsp;планеты. Одна вселенная. Биоморфный сюрреализм — из&nbsp;параллельного мира
+          в&nbsp;пространство коллекционера.</p>
+      </div>
+      <div class="kick" style="letter-spacing:.24em;color:var(--mute2)">Maison&amp;Objet · PAD London · Cosmoscow — как это подаёт Stargift</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ y02 MANIFESTO ============ -->
+<section class="slide dark" id="y02" style="grid-template-columns:1.15fr 1fr;align-items:center">
+  <div class="wrap" style="padding:0 40px 0 66px">
+    <div class="kick d" style="margin-bottom:26px">Манифест</div>
+    <div class="quote">Yoomoota — не выдуманная вселенная, а&nbsp;<span class="c">параллельный мир</span>,
+      существующий с&nbsp;начала жизни на&nbsp;Земле.</div>
+    <p style="font:300 14.5px/1.75 'Inter';color:#b3ada2;margin-top:30px;max-width:46ch">
+      Тарас Желтышев — врач по образованию, ушедший в искусство. Его язык — биоморфный сюрреализм:
+      сплав анатомического и природного. Исследуя этот мир, художник замечает его проблемы и образы
+      и переносит их в наш — в форме скульптур, арт-мебели и объектов.</p>
+    <div style="display:flex;gap:44px;margin-top:34px">
+      <div><div class="serif" style="font-weight:500;font-size:38px;color:var(--coral2)">23</div>
+        <div class="kick t" style="margin-top:6px">планеты</div></div>
+      <div><div class="serif" style="font-weight:500;font-size:38px;color:var(--coral2)">30+</div>
+        <div class="kick t" style="margin-top:6px">объектов вселенной</div></div>
+      <div><div class="serif" style="font-weight:500;font-size:38px;color:var(--coral2)">4</div>
+        <div class="kick t" style="margin-top:6px">континента признания</div></div>
+    </div>
+  </div>
+  <div style="position:relative;height:100%">
+    <img src="img_yoom/plinth.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,var(--ink) 0%,rgba(10,10,14,.12) 30%,rgba(10,10,14,0) 60%)"></div>
+  </div>
+</section>
+
+<!-- ============ y03 THE 23 PLANETS ============ -->
+<section class="slide dark" id="y03" style="grid-template-rows:auto 1fr">
+  <div style="position:relative;height:206px">
+    <img src="img_yoom/cosmos.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 44%">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,14,.3) 0%,rgba(10,10,14,.55) 60%,var(--ink) 100%)"></div>
+    <div style="position:absolute;left:66px;bottom:22px">
+      <div class="kick d" style="margin-bottom:12px">География вселенной</div>
+      <h2 class="serif" style="font-weight:300;font-size:52px;line-height:1;color:var(--ivory)">Двадцать три планеты</h2>
+    </div>
+  </div>
+  <div class="wrap" style="padding:26px 66px 40px">
+    <div class="planets">
+      <div class="planet"><div class="pn">Эмоции</div><div class="pd">Радость, тревога, нежность как обитаемые миры.</div><div class="px">планета I</div></div>
+      <div class="planet"><div class="pn">Тело</div><div class="pd">Клетки и органы как персонажи и ландшафты.</div><div class="px">планета II</div></div>
+      <div class="planet"><div class="pn">Зависимости</div><div class="pd">Сахар, привычки, тяга — в лицах и формах.</div><div class="px">планета III</div></div>
+      <div class="planet"><div class="pn">Удовольствия</div><div class="pd">Гедонизм и его двойное дно.</div><div class="px">планета IV</div></div>
+      <div class="planet"><div class="pn">Пороки</div><div class="pd">Слабости, обретшие плоть и характер.</div><div class="px">планета V</div></div>
+      <div class="planet"><div class="pn">Жажда знаний</div><div class="pd">Наука как топливо всей вселенной.</div><div class="px">планета VI</div></div>
+      <div class="planet"><div class="pn">Детство</div><div class="pd">Наивность, игра и первый страх.</div><div class="px">планета VII</div></div>
+      <div class="planet" style="border-color:rgba(231,100,90,.4);background:rgba(231,100,90,.06)"><div class="pn" style="color:var(--coral2)">…и ещё 16</div><div class="pd">Каждый объект принадлежит своей планете — и своей истории.</div><div class="px">полная карта</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ y04 CHARACTERS ============ -->
+<section class="slide light" id="y04" style="grid-template-rows:auto 1fr">
+  <div class="wrap" style="padding:44px 62px 0">
+    <div class="head">
+      <div><div class="kick hkick">Персонажи-смыслы</div>
+        <div class="htitle serif">Имя, которое объясняет</div></div>
+      <div class="hcount">биоморфный сюрреализм</div>
+    </div>
+  </div>
+  <div class="wrap" style="padding:2px 62px 40px">
+    <div class="chars">
+      <div class="char"><div class="cframe"><img src="img_yoom/char1.jpg" alt=""></div>
+        <div class="cn">Pillman</div><div class="cr">планета зависимостей</div>
+        <div class="cd">Ипохондрик во плоти: тело, собранное из таблеток и тревоги о себе.</div></div>
+      <div class="char"><div class="cframe"><img src="img_yoom/char2.jpg" alt=""></div>
+        <div class="cn">Candylady</div><div class="cr">сахарная зависимость</div>
+        <div class="cd">Сладость как соблазн и как ловушка — образ тяги, ставший скульптурой.</div></div>
+      <div class="char"><div class="cframe"><img src="img_yoom/char3.jpg" alt=""></div>
+        <div class="cn">Lymphochair</div><div class="cr">арт-мебель · планета тела</div>
+        <div class="cd">Кресло-лимфоцит: главная клетка иммунитета, на которой можно сидеть.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ y05 OBJECT AS EXHIBIT (solo) ============ -->
+<section class="slide dark" id="y05" style="grid-template-columns:1fr 1fr">
+  <div style="position:relative;background:#000">
+    <img src="img_yoom/plinth.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%">
+    <div style="position:absolute;left:20px;top:20px" class="badge">эдишн 1 / 21</div>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:0 60px 0 54px">
+    <div class="kick d pp-kick">Объект как экспонат</div>
+    <div class="pp-name">Одна работа —<br>одна сцена света</div>
+    <div class="pp-type">Каждый объект Yoomoota Stargift подаёт как музейный экспонат: чистый плинт,
+      направленный свет, воздух вокруг. Не товар на полке — часть вселенной под стеклом.</div>
+    <div class="pp-rule"></div>
+    <div class="spec">
+      <div><div class="sl">Тираж</div><div class="sv">Лимитированный эдишн</div></div>
+      <div><div class="sl">Материал</div><div class="sv">Полимер · ручная роспись</div></div>
+    </div>
+    <div class="pp-cert">Сертификат подлинности художника · паспорт объекта Stargift</div>
+  </div>
+</section>
+
+<!-- ============ y06 PROVENANCE ============ -->
+<section class="slide light" id="y06" style="grid-template-columns:1fr 1.05fr;align-items:center">
+  <div class="wrap" style="padding:0 40px 0 62px">
+    <div class="kick" style="margin-bottom:22px">Провенанс и коллекционность</div>
+    <h2 class="serif" style="font-weight:400;font-size:46px;line-height:1.04;color:var(--ink)">Паспорт каждой планеты</h2>
+    <p style="font:300 14.5px/1.75 'Inter';color:var(--mute);margin-top:22px;max-width:44ch">
+      Ограниченный тираж, номер эдишена, подпись автора и сертификат подлинности. Stargift добавляет
+      кураторский паспорт объекта: планета, история персонажа, год, происхождение — то, что делает
+      арт-объект активом, а не сувениром.</p>
+    <div style="display:flex;gap:14px;margin-top:28px;flex-wrap:wrap">
+      <span class="badge" style="background:var(--ink);color:var(--ivory)">номерной эдишн</span>
+      <span class="badge" style="background:var(--coral2)">подпись автора</span>
+      <span class="badge" style="background:var(--teal);color:#fff">сертификат подлинности</span>
+      <span class="badge" style="background:var(--ink);color:var(--ivory)">паспорт объекта</span>
+    </div>
+  </div>
+  <div style="position:relative;height:100%">
+    <img src="img_yoom/chair.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%">
+  </div>
+</section>
+
+<!-- ============ y07 INTERIOR ============ -->
+<section class="slide dark" id="y07" style="grid-template-columns:1.35fr 1fr">
+  <div style="position:relative;background:#000">
+    <img src="img_yoom/interior.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,14,0) 55%,rgba(10,10,14,.5) 100%)"></div>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:0 58px 0 50px">
+    <div class="kick d pp-kick">Жить с объектом</div>
+    <div class="pp-name">Искусство, <br>в котором живут</div>
+    <div class="pp-type">Скульптуры и арт-мебель Yoomoota созданы для интерьера — от консоли в гостиной
+      до кресла, на котором сидят. Stargift показывает объект в среде: свет, соседство, масштаб.</div>
+    <div class="pp-rule"></div>
+    <div class="pp-cert">Интерьерная интеграция · подбор под пространство · монтаж</div>
+  </div>
+</section>
+
+<!-- ============ y08 EXHIBITIONS ============ -->
+<section class="slide dark" id="y08" style="grid-template-rows:auto 1fr">
+  <div class="wrap" style="padding:44px 66px 6px">
+    <div class="kick d" style="margin-bottom:12px">Признание · выставочная биография</div>
+    <h2 class="serif" style="font-weight:300;font-size:44px;color:var(--ivory)">Вселенная, которую уже видел мир</h2>
+  </div>
+  <div class="wrap" style="padding:12px 66px 40px;display:flex;flex-direction:column;justify-content:center">
+    <div class="tl">
+      <div class="tl-row"><span class="yr">2024</span><span class="ev"><b>Maison&amp;Objet</b>, Париж — арт-вселенная Yoomoota на главной дизайн-выставке Европы</span></div>
+      <div class="tl-row"><span class="yr">2024</span><span class="ev"><b>Atomic Heart</b> — лимитированная скульптура-коллаборация с игровой вселенной</span></div>
+      <div class="tl-row"><span class="yr">2025</span><span class="ev"><b>PAD London</b> — новые объекты на ярмарке коллекционного дизайна</span></div>
+      <div class="tl-row"><span class="yr">2025</span><span class="ev"><b>Cosmoscow</b> — новые работы Yoomoota на главной арт-ярмарке России</span></div>
+      <div class="tl-row"><span class="yr">—</span><span class="ev"><b>Bangkok</b> — четырёхэтажное производство: живопись, скульптура, арт-мебель</span></div>
+      <div class="tl-row"><span class="yr">—</span><span class="ev"><b>Россия · Азия · Европа · США</b> — вселенная, известная на четырёх континентах</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ y09 STARGIFT SERVICE ============ -->
+<section class="slide dark" id="y09" style="grid-template-rows:auto 1fr">
+  <div class="wrap" style="padding:44px 66px 6px">
+    <div class="kick t" style="margin-bottom:12px">Что добавляет Stargift</div>
+    <h2 class="serif" style="font-weight:300;font-size:44px;color:var(--ivory)">Подача уровня частного музея</h2>
+  </div>
+  <div class="wrap" style="padding:14px 66px 44px;display:flex;flex-direction:column;justify-content:center">
+    <div class="svc">
+      <div class="s"><div class="si">01 · кураторство</div><div class="st">История каждой планеты</div><div class="sd">Паспорт объекта, легенда персонажа, место во вселенной — понятно коллекционеру.</div></div>
+      <div class="s"><div class="si">02 · съёмка</div><div class="st">Музейный свет и сцена</div><div class="sd">Плинт, направленный луч, интерьерные кадры — объект как экспонат, а не товар.</div></div>
+      <div class="s"><div class="si">03 · сервис</div><div class="st">Доставка и монтаж</div><div class="sd">Логистика арт-объекта, интеграция в интерьер, сопровождение сделки под ключ.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ y10 CLOSE ============ -->
+<section class="slide dark" id="y10" style="grid-template-rows:1fr auto">
+  <div class="wrap" style="padding:76px 66px 0;display:flex;flex-direction:column;justify-content:center">
+    <div class="logo-lock" style="margin-bottom:32px">
+      <span class="mk">Stargift</span><span class="by">× yoomoota</span>
+    </div>
+    <h2 class="serif" style="font-weight:300;font-size:60px;line-height:1.04;color:var(--ivory)">
+      Искусство из параллельного мира —<br><span style="color:var(--coral2)">в вашем пространстве</span></h2>
+    <p style="font:300 15px/1.8 'Inter';color:#b8b2a6;margin-top:26px;max-width:52ch">
+      Это концепт подачи: как Stargift представил бы вселенную Yoomoota коллекционеру — с музейным
+      светом, паспортом планеты и интерьерной интеграцией. Готовы собрать полный каталог по вашим работам.</p>
+  </div>
+  <div class="wrap" style="padding:22px 66px 40px;border-top:1px solid rgba(231,100,90,.3);display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:18px">
+    <span class="kick" style="letter-spacing:.2em;color:var(--coral2)">stargift.ru · t.me/stargift_collection</span>
+    <span style="font:300 11px/1.5 'Inter';color:var(--mute2)">концепт-презентация · визуалы — атмосферная подача (сгенерированы), не работы автора</span>
+  </div>
+</section>
+
+</div>
+
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^y/,'');const id=n?('y'+n.padStart(2,'0')):'y01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+show();addEventListener('hashchange',show);
+addEventListener('keydown',e=>{const cur=+(location.hash.replace(/[^0-9]/g,'')||1);
+if(e.key==='ArrowRight'||e.key===' ')location.hash='y'+Math.min(10,cur+1);
+if(e.key==='ArrowLeft')location.hash='y'+Math.max(1,cur-1);});
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
