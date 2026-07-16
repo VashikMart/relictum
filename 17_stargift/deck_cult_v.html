@@ -1,0 +1,335 @@
+<meta charset="utf-8">
+<title>Stargift · Культовое кино · вертикаль</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noir:#0B0B0C; --gold:#A98545; --gold2:#C9A96A;
+  --ivory:#F5F1E8; --paper:#F7F5F1; --ink:#1A1A1A; --mute:#6b6b6b; --cert:#9a958c;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-serif}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:grid}
+img{display:block}
+.serif{font-family:'Cormorant Garamond',serif}
+.kick{font:500 15px/1 'Inter';letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+.kick.d{color:var(--gold2)}
+.light{background:var(--paper);color:var(--ink)}
+.dark{background:var(--noir);color:var(--ivory)}
+.badge{display:inline-block;font:600 13px/1 'Inter';letter-spacing:.18em;text-transform:uppercase;
+  color:var(--noir);background:var(--gold2);padding:11px 16px}
+.badge.stock{background:#3f6b4f;color:#eaf3ec}
+/* solo item: image top + info bottom */
+.solo{grid-template-rows:1fr auto}
+.solo .ph{background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.solo .ph img{width:100%;height:100%;object-fit:contain;padding:26px}
+.solo .info{padding:38px 44px 46px;border-top:1px solid rgba(169,133,69,.35)}
+.solo .nm{font-family:'Cormorant Garamond';font-weight:500;font-size:40px;line-height:1.06}
+.solo .tp{font:300 21px/1.5 'Inter';margin-top:12px}
+.solo .pr{font-family:'Cormorant Garamond';font-weight:500;font-size:44px;color:var(--gold2);margin-top:18px}
+.solo .ct{font:400 14px/1.5 'Inter';letter-spacing:.16em;text-transform:uppercase;color:var(--cert);margin-top:12px}
+.solo.dark .info{background:var(--noir)}
+.solo.light .info{background:var(--paper)}
+.solo.light .pr{color:var(--gold)}
+.solo.light .tp{color:var(--mute)}
+.solo.dark .tp{color:#b8b2a6}
+/* full-bleed divider */
+.fb{position:relative}
+.fb img{width:100%;height:100%;object-fit:cover}
+.fb .ov{position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,11,12,.95) 0%,rgba(11,11,12,.45) 34%,rgba(11,11,12,.05) 60%)}
+.fb .tx{position:absolute;left:44px;right:44px;bottom:52px}
+.fb h2{font-family:'Cormorant Garamond';font-weight:300;font-size:64px;line-height:1;color:var(--ivory)}
+.fb p{font:300 20px/1.6 'Inter';color:#cdc7bb;margin-top:16px}
+/* index */
+.ir{display:grid;grid-template-columns:1fr auto;column-gap:16px;align-items:baseline;
+  padding:11px 0;border-bottom:1px solid rgba(169,133,69,.18)}
+.in{font-family:'Cormorant Garamond';font-weight:500;font-size:22px;color:var(--ivory);grid-row:1;grid-column:1;line-height:1.1}
+.it{font:300 14px/1.2 'Inter';color:#8f897d;grid-row:2;grid-column:1;margin-top:2px}
+.ip{font-family:'Cormorant Garamond';font-weight:500;font-size:22px;color:var(--gold2);grid-row:1;grid-column:2;white-space:nowrap}
+</style>
+
+<div class="deck">
+
+<!-- v01 COVER -->
+<section class="slide dark fb on" id="v01">
+  <img src="img_fc/fc_cover.jpg" alt="" style="object-position:60% 30%">
+  <div class="ov"></div>
+  <div style="position:absolute;left:44px;top:48px" class="kick">Stargift · частное собрание</div>
+  <div class="tx" style="bottom:64px">
+    <div class="kick d" style="margin-bottom:20px">Автографы и реликвии экрана</div>
+    <h1 class="serif" style="font-weight:300;font-size:96px;line-height:.96;color:var(--ivory)">Культовое кино</h1>
+    <p style="font:300 21px/1.55 'Inter';color:#cdc7bb;margin-top:22px;max-width:30ch">
+      «Бойцовский клуб» и «Секс в большом городе» — подписи главных лиц и экранные вещи.</p>
+    <div class="kick" style="margin-top:28px;letter-spacing:.2em">12 предметов · JSA · PSA/DNA · Beckett</div>
+  </div>
+</section>
+
+<!-- v02 CONTENTS -->
+<section class="slide light" id="v02" style="grid-template-rows:auto 1fr auto">
+  <div style="padding:52px 44px 10px">
+    <div class="kick" style="margin-bottom:14px">Каталог · 12 предметов</div>
+    <h2 class="serif" style="font-weight:400;font-size:58px;color:var(--ink)">Собрание</h2>
+  </div>
+  <div style="padding:14px 44px;display:flex;flex-direction:column;justify-content:center;gap:38px">
+    <div>
+      <div class="kick" style="margin-bottom:12px">I · Бойцовский клуб</div>
+      <p class="serif" style="font-weight:500;font-size:30px;line-height:1.45;color:var(--ink)">Постер с 4 автографами<br>Брэд Питт · 3 предмета<br>Эдвард Нортон · 2 предмета</p>
+      <div style="font:400 16px/1 'Inter';color:var(--mute);margin-top:12px;letter-spacing:.08em">6 ПРЕДМЕТОВ · ОТ 280 000 ₽</div>
+    </div>
+    <div>
+      <div class="kick" style="margin-bottom:12px">II · Секс в большом городе</div>
+      <p class="serif" style="font-weight:500;font-size:30px;line-height:1.45;color:var(--ink)">Багаж Louis Vuitton (из фильма)<br>Сара Джессика Паркер · 4 предмета</p>
+      <div style="font:400 16px/1 'Inter';color:var(--mute);margin-top:12px;letter-spacing:.08em">5 ПРЕДМЕТОВ · ОТ 180 000 ₽</div>
+    </div>
+    <div>
+      <div class="kick" style="margin-bottom:12px">III · Литература</div>
+      <p class="serif" style="font-weight:500;font-size:30px;line-height:1.45;color:var(--ink)">Чак Паланик — первое издание «Бойцовского клуба»</p>
+      <div style="font:400 16px/1 'Inter';color:var(--mute);margin-top:12px;letter-spacing:.08em">1 ПРЕДМЕТ · 350 000 ₽</div>
+    </div>
+  </div>
+  <div style="padding:20px 44px 44px;border-top:1px solid rgba(26,26,26,.14);display:flex;justify-content:space-between;align-items:baseline">
+    <span class="kick">Итог собрания</span>
+    <span class="serif" style="font-weight:500;font-size:38px;color:var(--gold)">12 240 000 ₽</span>
+  </div>
+</section>
+
+<!-- v03 FC divider -->
+<section class="slide dark fb" id="v03">
+  <img src="img_fc/fc_still.jpg" alt="Тайлер Дёрден" style="object-position:30% 30%">
+  <div class="ov"></div>
+  <div class="tx">
+    <div class="kick d" style="margin-bottom:16px">Раздел I</div>
+    <h2>Бойцовский клуб</h2>
+    <p style="max-width:30ch">Фильм Дэвида Финчера 1999 года — манифест поколения. Шесть предметов с автографами главных лиц.</p>
+    <div class="kick" style="margin-top:22px;color:var(--gold)">6 предметов · от 280 000 ₽</div>
+  </div>
+</section>
+
+<!-- v04 POSTER premium -->
+<section class="slide dark solo" id="v04">
+  <div class="ph" style="background:radial-gradient(120% 90% at 50% 42%,#1a1a17 0%,var(--noir) 66%)">
+    <img src="img_fc/poster_clean.jpg" alt="" style="padding:34px 60px">
+  </div>
+  <div class="info">
+    <div class="badge" style="margin-bottom:18px">Премиум лота</div>
+    <div class="nm">Постер «Бойцовский клуб» — автографы четырёх звёзд</div>
+    <div class="tp">Питт · Нортон · Лето · Бонэм Картер. Весь главный каст на одном экспонате — исключительная редкость.</div>
+    <div class="pr">950 000 ₽</div>
+    <div class="ct">30×46 см · JSA (LOA)</div>
+  </div>
+</section>
+
+<!-- v05 PITT photo -->
+<section class="slide dark solo" id="v05">
+  <div class="ph"><img src="img_fc/pitt_photo.jpg" alt=""></div>
+  <div class="info">
+    <div class="nm">Брэд Питт — фото «Тайлер» с автографом</div>
+    <div class="tp">Кадры фильма, автограф актёра. 28×36 см.</div>
+    <div class="pr">280 000 ₽</div>
+    <div class="ct">подлинность: PSA/DNA</div>
+  </div>
+</section>
+
+<!-- v06 PITT proof -->
+<section class="slide dark solo" id="v06">
+  <div class="ph"><img src="img_fc/pitt_proof.jpg" alt=""></div>
+  <div class="info">
+    <div class="nm">Брэд Питт — фото с фото-пруфом подписания</div>
+    <div class="tp">К лоту прилагается снимок момента подписания. 28×36 см.</div>
+    <div class="pr">300 000 ₽</div>
+    <div class="ct">подлинность: Beckett BAS</div>
+  </div>
+</section>
+
+<!-- v07 PITT slab -->
+<section class="slide dark solo" id="v07">
+  <div class="ph"><img src="img_fc/pitt_slab.jpg" alt=""></div>
+  <div class="info">
+    <div class="nm">Брэд Питт — фото в защитном слабе</div>
+    <div class="tp">Запечатано в коллекционный слаб PSA/DNA. 20×25 см.</div>
+    <div class="pr">300 000 ₽</div>
+    <div class="ct">подлинность: PSA/DNA slab</div>
+  </div>
+</section>
+
+<!-- v08 NORTON -->
+<section class="slide dark solo" id="v08">
+  <div class="ph" style="background:#0B0B0C"><img src="img_fc/norton_photo.jpg" alt=""></div>
+  <div class="info">
+    <div class="nm">Эдвард Нортон — фото «Бойцовский клуб»</div>
+    <div class="tp">Нортон подписывает крайне редко — его автографы дороже большинства голливудских. 28×36 см.</div>
+    <div class="pr">330 000 ₽</div>
+    <div class="ct">подлинность: Beckett BAS</div>
+  </div>
+</section>
+
+<!-- v09 SCRIPT + BOOK -->
+<section class="slide dark" id="v09" style="grid-template-rows:auto 1fr 1fr">
+  <div style="padding:44px 44px 20px">
+    <div class="kick d" style="margin-bottom:12px">Первоисточник и сцена</div>
+    <h2 class="serif" style="font-weight:300;font-size:46px;color:var(--ivory)">Слово, ставшее культом</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center;padding:10px 44px;border-top:1px solid rgba(169,133,69,.25)">
+    <div style="background:#fff;padding:10px"><img src="img_fc/norton_script.jpg" style="width:100%;height:220px;object-fit:contain"></div>
+    <div>
+      <div class="serif" style="font-weight:500;font-size:30px;line-height:1.1;color:var(--ivory)">Эдвард Нортон — сценарий фильма</div>
+      <div style="font:300 17px/1.5 'Inter';color:#a9a399;margin-top:8px">Автограф на обложке · рама с открывающимся механизмом</div>
+      <div class="serif" style="font-weight:500;font-size:32px;color:var(--gold2);margin-top:10px">360 000 ₽</div>
+      <div style="font:400 12.5px/1 'Inter';letter-spacing:.14em;text-transform:uppercase;color:#8f897d;margin-top:8px">Beckett BAS</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center;padding:10px 44px;border-top:1px solid rgba(169,133,69,.25)">
+    <div style="background:#fff;padding:10px"><img src="img_fc/palahniuk.jpg" style="width:100%;height:220px;object-fit:contain"></div>
+    <div>
+      <div class="serif" style="font-weight:500;font-size:30px;line-height:1.1;color:var(--ivory)">Чак Паланик — первое издание романа</div>
+      <div style="font:300 17px/1.5 'Inter';color:#a9a399;margin-top:8px">1996 год, твёрдый переплёт, автограф автора</div>
+      <div class="serif" style="font-weight:500;font-size:32px;color:var(--gold2);margin-top:10px">350 000 ₽</div>
+      <div style="font:400 12.5px/1 'Inter';letter-spacing:.14em;text-transform:uppercase;color:#8f897d;margin-top:8px">Beckett · Литература</div>
+    </div>
+  </div>
+</section>
+
+<!-- v10 SATC divider -->
+<section class="slide dark fb" id="v10">
+  <img src="img_fc/lv_luggage3.jpg" alt="Кадр из фильма" style="object-position:72% 20%">
+  <div class="ov"></div>
+  <div class="tx">
+    <div class="kick d" style="margin-bottom:16px">Раздел II</div>
+    <h2>Секс в большом городе</h2>
+    <p style="max-width:30ch">Нью-Йорк, мода и Кэрри Брэдшоу. Экранный багаж Louis Vuitton и автографы Сары Джессики Паркер.</p>
+    <div class="kick" style="margin-top:22px;color:var(--gold)">5 предметов · от 180 000 ₽</div>
+  </div>
+</section>
+
+<!-- v11 LV premium -->
+<section class="slide dark solo" id="v11">
+  <div class="ph"><img src="img_fc/lv_luggage.jpg" alt="" style="padding:34px"></div>
+  <div class="info">
+    <div class="badge" style="margin-bottom:18px">Премиум лота · из фильма</div>
+    <div class="nm">Комплект багажа Louis Vuitton</div>
+    <div class="tp">Четыре предмета, задействованные в съёмках «Секс в большом городе 2» (production used).</div>
+    <div class="pr">8 500 000 ₽</div>
+    <div class="ct">Provenance — экранное использование</div>
+  </div>
+</section>
+
+<!-- v12 FILM STILLS stacked -->
+<section class="slide dark" id="v12" style="grid-template-rows:1fr 1fr;gap:2px;background:rgba(169,133,69,.5)">
+  <div style="position:relative;overflow:hidden"><img src="img_fc/lv_luggage2.jpg" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%">
+    <div style="position:absolute;top:20px;left:22px"><span class="badge" style="background:rgba(11,11,12,.75);color:var(--gold2);border:1px solid rgba(169,133,69,.5)">Provenance · вещь из фильма</span></div>
+    <div style="position:absolute;left:0;right:0;bottom:0;padding:24px 26px 20px;background:linear-gradient(0deg,rgba(11,11,12,.9),rgba(11,11,12,0))">
+      <div class="serif" style="font-weight:500;font-size:32px;color:var(--ivory)">В кадре фильма</div>
+      <div style="font:300 17px/1.45 'Inter';color:#cdc7bb;margin-top:5px">Тот самый комплект в интерьере «Секс в большом городе 2»</div></div></div>
+  <div style="position:relative;overflow:hidden"><img src="img_fc/lv_luggage3.jpg" style="width:100%;height:100%;object-fit:cover">
+    <div style="position:absolute;left:0;right:0;bottom:0;padding:24px 26px 20px;background:linear-gradient(0deg,rgba(11,11,12,.9),rgba(11,11,12,0))">
+      <div class="serif" style="font-weight:500;font-size:32px;color:var(--ivory)">На экране</div>
+      <div style="font:300 17px/1.45 'Inter';color:#cdc7bb;margin-top:5px">Кадр саги — багаж рядом с героинями</div></div></div>
+</section>
+
+<!-- v13 SJP собрание -->
+<section class="slide light" id="v13" style="grid-template-rows:auto 1fr 1fr">
+  <div style="padding:44px 44px 18px">
+    <div class="kick" style="margin-bottom:12px">Сара Джессика Паркер · собрание</div>
+    <h2 class="serif" style="font-weight:400;font-size:46px;color:var(--ink)">Голос Нью-Йорка</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center;padding:10px 44px;border-top:1px solid rgba(26,26,26,.12)">
+    <div style="background:#fff;padding:10px;border:1px solid rgba(169,133,69,.2)"><img src="img_fc/sjp_script.jpg" style="width:100%;height:220px;object-fit:contain"></div>
+    <div>
+      <div class="serif" style="font-weight:500;font-size:30px;line-height:1.1;color:var(--ink)">Сценарий «Секс в большом городе»</div>
+      <div style="font:300 17px/1.5 'Inter';color:var(--mute);margin-top:8px">Автограф Сары Джессики Паркер · рама с механизмом</div>
+      <div class="serif" style="font-weight:500;font-size:32px;color:var(--gold);margin-top:10px">300 000 ₽</div>
+      <div style="font:400 12.5px/1 'Inter';letter-spacing:.14em;text-transform:uppercase;color:var(--cert);margin-top:8px">JSA</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center;padding:10px 44px;border-top:1px solid rgba(26,26,26,.12)">
+    <div style="background:#fff;padding:10px;border:1px solid rgba(169,133,69,.2)"><img src="img_fc/sjp_photo.jpg" style="width:100%;height:220px;object-fit:contain"></div>
+    <div>
+      <div class="serif" style="font-weight:500;font-size:30px;line-height:1.1;color:var(--ink)">Фото 28×36 см с автографом</div>
+      <div style="font:300 17px/1.5 'Inter';color:var(--mute);margin-top:8px">Один из самых узнаваемых образов телевидения</div>
+      <div class="serif" style="font-weight:500;font-size:32px;color:var(--gold);margin-top:10px">210 000 ₽</div>
+      <div style="font:400 12.5px/1 'Inter';letter-spacing:.14em;text-transform:uppercase;color:var(--cert);margin-top:8px">Beckett</div>
+    </div>
+  </div>
+</section>
+
+<!-- v14 SJP in stock -->
+<section class="slide light" id="v14" style="grid-template-rows:auto 1fr 1fr">
+  <div style="padding:44px 44px 18px">
+    <div class="kick" style="margin-bottom:12px;color:#3f6b4f">В наличии в Москве · готовы сразу</div>
+    <h2 class="serif" style="font-weight:400;font-size:46px;color:var(--ink)">Образы Кэрри — сразу</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:230px 1fr;gap:24px;align-items:center;padding:10px 44px;border-top:1px solid rgba(26,26,26,.12)">
+    <div style="background:#fff;padding:10px;border:1px solid rgba(169,133,69,.2)"><img src="img_fc/site/sjp_photo_site.jpg" style="width:100%;height:230px;object-fit:contain"></div>
+    <div>
+      <span class="badge stock" style="margin-bottom:12px">в наличии</span>
+      <div class="serif" style="font-weight:500;font-size:29px;line-height:1.12;color:var(--ink)">Фото с автографом, в раме</div>
+      <div style="font:300 17px/1.5 'Inter';color:var(--mute);margin-top:8px">Паспарту, табличка · передача сразу</div>
+      <div class="serif" style="font-weight:500;font-size:32px;color:var(--gold);margin-top:10px">180 000 ₽</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:230px 1fr;gap:24px;align-items:center;padding:10px 44px;border-top:1px solid rgba(26,26,26,.12)">
+    <div style="background:#fff;padding:10px;border:1px solid rgba(169,133,69,.2)"><img src="img_fc/site/sjp_photo2.jpg" style="width:100%;height:230px;object-fit:contain"></div>
+    <div>
+      <span class="badge stock" style="margin-bottom:12px">в наличии</span>
+      <div class="serif" style="font-weight:500;font-size:29px;line-height:1.12;color:var(--ink)">Фото с автографом, в раме</div>
+      <div style="font:300 17px/1.5 'Inter';color:var(--mute);margin-top:8px">Классический кадр Кэрри · без ожидания доставки</div>
+      <div class="serif" style="font-weight:500;font-size:32px;color:var(--gold);margin-top:10px">180 000 ₽</div>
+    </div>
+  </div>
+</section>
+
+<!-- v15 INDEX -->
+<section class="slide dark" id="v15" style="grid-template-rows:auto 1fr auto">
+  <div style="padding:44px 44px 8px">
+    <div class="kick d" style="margin-bottom:10px">Полный перечень · 12 предметов</div>
+    <h2 class="serif" style="font-weight:300;font-size:40px;color:var(--ivory)">Собрание «Культовое кино»</h2>
+  </div>
+  <div style="padding:8px 44px;display:flex;flex-direction:column;justify-content:center">
+    <div class="ir"><span class="in">Постер «Бойцовский клуб» — 4 автографа</span><span class="it">30×46 см · JSA LOA</span><span class="ip">950 000</span></div>
+    <div class="ir"><span class="in">Брэд Питт — фото «Тайлер»</span><span class="it">28×36 см · PSA/DNA</span><span class="ip">280 000</span></div>
+    <div class="ir"><span class="in">Брэд Питт — фото с фото-пруфом</span><span class="it">28×36 см · Beckett</span><span class="ip">300 000</span></div>
+    <div class="ir"><span class="in">Брэд Питт — фото в слабе</span><span class="it">20×25 см · PSA/DNA</span><span class="ip">300 000</span></div>
+    <div class="ir"><span class="in">Эдвард Нортон — фото</span><span class="it">28×36 см · Beckett</span><span class="ip">330 000</span></div>
+    <div class="ir"><span class="in">Эдвард Нортон — сценарий</span><span class="it">в раме · Beckett</span><span class="ip">360 000</span></div>
+    <div class="ir"><span class="in">Чак Паланик — первое издание романа</span><span class="it">1996 · Beckett</span><span class="ip">350 000</span></div>
+    <div class="ir"><span class="in">Багаж Louis Vuitton (из фильма)</span><span class="it">4 предмета · production used</span><span class="ip">8 500 000</span></div>
+    <div class="ir"><span class="in">С. Дж. Паркер — сценарий SATC</span><span class="it">в раме · JSA</span><span class="ip">300 000</span></div>
+    <div class="ir"><span class="in">С. Дж. Паркер — фото</span><span class="it">28×36 см · Beckett</span><span class="ip">210 000</span></div>
+    <div class="ir"><span class="in">С. Дж. Паркер — фото (в наличии)</span><span class="it">в раме · в Москве</span><span class="ip">180 000</span></div>
+    <div class="ir"><span class="in">С. Дж. Паркер — фото (в наличии)</span><span class="it">в раме · в Москве</span><span class="ip">180 000</span></div>
+  </div>
+  <div style="padding:16px 44px 40px;border-top:1px solid rgba(169,133,69,.3);display:flex;justify-content:space-between;align-items:baseline">
+    <span class="kick d">12 предметов</span>
+    <span class="serif" style="font-weight:500;font-size:36px;color:var(--gold2)">12 240 000 ₽</span>
+  </div>
+</section>
+
+<!-- v16 CLOSE -->
+<section class="slide dark" id="v16" style="grid-template-rows:1fr auto">
+  <div style="padding:70px 44px 0;display:flex;flex-direction:column;justify-content:center">
+    <div class="kick d" style="margin-bottom:24px">Stargift · частное собрание</div>
+    <h2 class="serif" style="font-weight:300;font-size:62px;line-height:1.04;color:var(--ivory)">Кадр, который стал культом</h2>
+    <p style="font:300 20px/1.7 'Inter';color:#c3bdb1;margin-top:24px;max-width:32ch">
+      Международные сертификаты подлинности. Оформление в раму, доставка и передача — под ключ.</p>
+    <div style="margin-top:44px">
+      <div class="kick d" style="margin-bottom:14px">Связь</div>
+      <p style="font:300 20px/1.9 'Inter';color:#cdc7bb">stargift.ru<br>+7 495 233-51-11<br>t.me/stargift_collection</p>
+    </div>
+  </div>
+  <div style="padding:22px 44px 44px;border-top:1px solid rgba(169,133,69,.3)">
+    <span class="kick" style="color:var(--gold2)">Части поп-культуры — для того, у кого есть всё</span>
+    <div style="font-size:11px;color:rgba(245,241,232,.35);margin-top:10px">часть предметной съёмки прошла студийную обработку · автографы и предметы без изменений</div>
+  </div>
+</section>
+
+</div>
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^v/,'');const id=n?('v'+n.padStart(2,'0')):'v01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+show();addEventListener('hashchange',show);
+addEventListener('keydown',e=>{const cur=+(location.hash.replace(/[^0-9]/g,'')||1);
+if(e.key==='ArrowRight'||e.key===' ')location.hash='v'+Math.min(16,cur+1);
+if(e.key==='ArrowLeft')location.hash='v'+Math.max(1,cur-1);});
+</script>
+<style>@page{size:720px 1280px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:720px;height:1280px;page-break-after:always}}</style>
