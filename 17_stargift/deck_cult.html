@@ -20,8 +20,6 @@ img{display:block}
 .light{background:var(--paper);color:var(--ink)}
 .dark{background:var(--noir);color:var(--ivory)}
 .wrap{padding:44px 60px}
-
-/* section header (light) */
 .head{display:flex;align-items:flex-end;justify-content:space-between;
   border-bottom:1px solid rgba(26,26,26,.16);padding-bottom:16px;margin-bottom:26px}
 .head .htitle{font-family:'Cormorant Garamond';font-weight:400;font-size:40px;line-height:1;color:var(--ink)}
@@ -29,8 +27,7 @@ img{display:block}
 .head .hcount{font:300 12px/1 'Inter';letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
 .head.dk{border-color:rgba(169,133,69,.3)}
 .head.dk .htitle{color:var(--ivory)}
-
-/* white cards */
+.head.dk .hcount{color:var(--gold2)}
 .grid{display:grid}
 .g2{grid-template-columns:repeat(2,1fr);gap:40px;--ih:360px}
 .g3{grid-template-columns:repeat(3,1fr);gap:28px;--ih:322px}
@@ -42,11 +39,9 @@ img{display:block}
 .type{font:300 12.5px/1.45 'Inter';color:var(--mute);margin-top:7px;max-width:36ch}
 .price{font-family:'Cormorant Garamond';font-weight:500;font-size:19px;color:var(--gold);margin-top:9px}
 .cert{font:400 9.5px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:8px}
-/* dark cards */
 .card.dk .mat{background:#111;border-color:rgba(169,133,69,.28)}
 .card.dk .name{color:var(--ivory)}.card.dk .type{color:#a9a399}.card.dk .price{color:var(--gold2)}.card.dk .cert{color:#8f897d}
-
-/* CROSS 2×2 */
+/* CROSS */
 .cross{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:1px;background:rgba(169,133,69,.55)}
 .q{position:relative;overflow:hidden;background:#0f0f10}
 .q>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
@@ -58,43 +53,37 @@ img{display:block}
 .pl-type{font:300 10.5px/1.3 'Inter';color:#c3bdb1;margin-top:3px;max-width:42ch}
 .pl-price{font-family:'Cormorant Garamond';font-weight:500;font-size:17px;color:var(--gold2);margin-top:5px}
 .pl-cert{font:400 8.5px/1 'Inter';letter-spacing:.18em;text-transform:uppercase;color:#b6b0a4;margin-top:6px}
-
-/* passport solo */
+/* passport */
 .pp-kick{margin-bottom:18px}
 .pp-name{font-family:'Cormorant Garamond';font-weight:400;font-size:44px;line-height:1.02;color:var(--ivory)}
-.pp-name.ink{color:var(--ink)}
 .pp-type{font:300 15px/1.55 'Inter';color:#b8b2a6;margin-top:18px;max-width:36ch}
-.pp-type.ink{color:var(--mute)}
 .pp-rule{height:1px;background:rgba(169,133,69,.4);margin:24px 0;width:130px}
 .pp-price{font-family:'Cormorant Garamond';font-weight:500;font-size:38px;color:var(--gold2)}
-.pp-price.ink{color:var(--gold)}
 .pp-cert{font:400 10px/1.6 'Inter';letter-spacing:.14em;text-transform:uppercase;color:var(--cert);margin-top:14px}
-.pp-note{font:300 13px/1.7 'Inter';color:#8f897d;margin-top:22px;max-width:36ch}
-
-/* inset context cards */
-.insets{display:flex;gap:12px;margin-top:26px}
-.inset{display:flex;gap:11px;align-items:center;background:rgba(255,255,255,.04);
-  border:1px solid rgba(169,133,69,.28);padding:9px 11px;max-width:30ch}
-.inset img{width:66px;height:48px;object-fit:cover;flex:none;border:1px solid rgba(169,133,69,.25)}
-.inset .ik{font:400 8.5px/1 'Inter';letter-spacing:.16em;text-transform:uppercase;color:var(--gold2)}
-.inset .iv{font:300 11px/1.4 'Inter';color:#c3bdb1;margin-top:4px}
-
 .arch{position:absolute;font:400 9px/1.3 'Inter';letter-spacing:.14em;text-transform:uppercase;color:rgba(245,241,232,.5)}
 .badge{display:inline-block;font:600 9px/1 'Inter';letter-spacing:.18em;text-transform:uppercase;
   color:var(--noir);background:var(--gold2);padding:7px 11px}
+.badge.stock{background:#3f6b4f;color:#eaf3ec}
+/* film stills */
+.stills{grid-template-columns:1fr 1fr;gap:2px;background:rgba(169,133,69,.5)}
+.still{position:relative;overflow:hidden;background:#000}
+.still>img{width:100%;height:100%;object-fit:cover}
+.still .cap{position:absolute;left:0;right:0;bottom:0;padding:22px 24px 18px;
+  background:linear-gradient(0deg,rgba(11,11,12,.92) 0%,rgba(11,11,12,0) 100%)}
+.still .cn{font-family:'Cormorant Garamond';font-weight:500;font-size:22px;color:var(--ivory)}
+.still .cs{font:300 12px/1.45 'Inter';color:#cdc7bb;margin-top:5px;max-width:40ch}
 /* index */
 .idx{display:flex;flex-direction:column}
 .ir{display:grid;grid-template-columns:1fr auto;column-gap:12px;align-items:baseline;
   padding:6px 0;border-bottom:1px solid rgba(169,133,69,.16)}
 .in{font-family:'Cormorant Garamond';font-weight:500;font-size:14px;color:var(--ivory);grid-row:1;grid-column:1}
 .it{font:300 9.5px/1.05 'Inter';color:#8f897d;grid-row:2;grid-column:1}
-.ip{font-family:'Cormorant Garamond';font-weight:500;font-size:14px;color:var(--gold2);
-  grid-row:1;grid-column:2;white-space:nowrap}
+.ip{font-family:'Cormorant Garamond';font-weight:500;font-size:14px;color:var(--gold2);grid-row:1;grid-column:2;white-space:nowrap}
 </style>
 
 <div class="deck">
 
-<!-- ============ c01 COVER ============ -->
+<!-- c01 COVER -->
 <section class="slide dark on" id="c01" style="grid-template-columns:1.05fr 1fr">
   <div class="wrap" style="display:flex;flex-direction:column;justify-content:space-between;padding:60px 56px">
     <div class="kick" style="letter-spacing:.4em">Stargift · частное собрание</div>
@@ -105,7 +94,7 @@ img{display:block}
         Две легенды рубежа веков — «Бойцовский&nbsp;клуб» Дэвида&nbsp;Финчера и «Секс&nbsp;в&nbsp;большом&nbsp;городе».
         Подписи главных лиц и&nbsp;экранные вещи, подтверждённые мировыми сертификатами.</p>
     </div>
-    <div class="kick" style="letter-spacing:.22em">11 предметов · JSA · PSA/DNA · Beckett</div>
+    <div class="kick" style="letter-spacing:.22em">12 предметов · JSA · PSA/DNA · Beckett</div>
   </div>
   <div style="position:relative">
     <img src="img_fc/cinema_hero.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:60% 50%">
@@ -113,10 +102,10 @@ img{display:block}
   </div>
 </section>
 
-<!-- ============ c02 CONTENTS ============ -->
+<!-- c02 CONTENTS -->
 <section class="slide light" id="c02" style="grid-template-rows:auto 1fr auto">
   <div class="wrap" style="padding:46px 72px 8px">
-    <div class="kick" style="margin-bottom:12px">Каталог · 11 предметов</div>
+    <div class="kick" style="margin-bottom:12px">Каталог · 12 предметов</div>
     <h2 class="serif" style="font-weight:400;font-size:48px;color:var(--ink)">Собрание</h2>
   </div>
   <div class="wrap" style="padding:6px 72px 8px;display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:44px;align-content:center">
@@ -127,8 +116,8 @@ img{display:block}
     </div>
     <div>
       <div class="kick" style="color:var(--gold);margin-bottom:14px">II · Секс в большом городе</div>
-      <p style="font-family:'Cormorant Garamond';font-weight:500;font-size:21px;line-height:1.5;color:var(--ink)">Багаж Louis Vuitton<br>(из фильма)<br>Сара Джессика Паркер · 3</p>
-      <div style="font:300 12px/1 'Inter';color:var(--mute);margin-top:12px;letter-spacing:.1em">4 ПРЕДМЕТА · ОТ 180 000 ₽</div>
+      <p style="font-family:'Cormorant Garamond';font-weight:500;font-size:21px;line-height:1.5;color:var(--ink)">Багаж Louis Vuitton (из фильма)<br>Сара Джессика Паркер · сценарий и фото<br>+ 2 фото в наличии</p>
+      <div style="font:300 12px/1 'Inter';color:var(--mute);margin-top:12px;letter-spacing:.1em">5 ПРЕДМЕТОВ · ОТ 180 000 ₽</div>
     </div>
     <div>
       <div class="kick" style="color:var(--gold);margin-bottom:14px">III · Литература</div>
@@ -138,19 +127,19 @@ img{display:block}
   </div>
   <div class="wrap" style="padding:8px 72px 30px;border-top:1px solid rgba(26,26,26,.14);display:flex;justify-content:space-between;align-items:baseline">
     <span class="kick" style="color:var(--gold)">Итог собрания</span>
-    <span class="serif" style="font-weight:500;font-size:30px;color:var(--gold)">12 060 000 ₽</span>
+    <span class="serif" style="font-weight:500;font-size:30px;color:var(--gold)">12 240 000 ₽</span>
   </div>
 </section>
 
-<!-- ============ c03 FIGHT CLUB divider ============ -->
+<!-- c03 FIGHT CLUB divider -->
 <section class="slide dark" id="c03" style="grid-template-columns:1.15fr 1fr;align-items:center">
   <div class="wrap" style="padding:0 30px 0 64px">
     <div class="kick d" style="margin-bottom:20px">Раздел I</div>
     <h2 class="serif" style="font-weight:300;font-size:60px;line-height:1;color:var(--ivory)">Бойцовский клуб</h2>
     <p style="font:300 15px/1.75 'Inter';color:#b0aa9e;margin-top:24px;max-width:42ch">
       Фильм Дэвида Финчера 1999 года по роману Чака Паланика — манифест поколения и вечная классика.
-      Шесть предметов с автографами главных лиц картины: постер со всем кастом, Брэд Питт в роли
-      Тайлера Дёрдена и Эдвард Нортон — Рассказчик.</p>
+      Шесть предметов с автографами главных лиц: постер со всем кастом, Брэд Питт — Тайлер Дёрден
+      и Эдвард Нортон — Рассказчик.</p>
     <div class="kick" style="margin-top:28px;letter-spacing:.2em;color:var(--gold)">6 предметов · от 280 000 ₽</div>
   </div>
   <div style="position:relative;height:100%">
@@ -159,7 +148,7 @@ img{display:block}
   </div>
 </section>
 
-<!-- ============ c04 POSTER premium solo ============ -->
+<!-- c04 POSTER premium -->
 <section class="slide dark" id="c04" style="grid-template-columns:1fr 1.1fr">
   <div style="display:flex;flex-direction:column;justify-content:center;padding:0 46px 0 60px">
     <div class="badge" style="align-self:flex-start;margin-bottom:22px">Премиум лота</div>
@@ -176,7 +165,7 @@ img{display:block}
   </div>
 </section>
 
-<!-- ============ c05 FIGHT CLUB cross ============ -->
+<!-- c05 FIGHT CLUB cross -->
 <section class="slide cross" id="c05">
   <div class="q fit"><img src="img_fc/pitt_photo.jpg">
     <div class="plate"><div class="pl-name">Брэд Питт</div>
@@ -196,13 +185,13 @@ img{display:block}
       <div class="pl-price">330 000 ₽</div><div class="pl-cert">подлинность: Beckett BAS</div></div></div>
 </section>
 
-<!-- ============ c06 SCRIPT + BOOK ============ -->
+<!-- c06 SCRIPT + BOOK -->
 <section class="slide dark" id="c06" style="grid-template-rows:auto 1fr">
   <div class="wrap" style="padding:44px 60px 0">
     <div class="head dk">
       <div><div class="kick hkick d">Первоисточник и сцена</div>
         <div class="htitle serif">Слово, ставшее культом</div></div>
-      <div class="hcount" style="color:var(--gold2)">сценарий · первое издание</div>
+      <div class="hcount">сценарий · первое издание</div>
     </div>
   </div>
   <div class="wrap" style="padding:2px 60px 40px">
@@ -219,7 +208,7 @@ img{display:block}
   </div>
 </section>
 
-<!-- ============ c07 SATC divider ============ -->
+<!-- c07 SATC divider -->
 <section class="slide light" id="c07" style="grid-template-columns:1fr 1.15fr;align-items:center">
   <div class="wrap" style="padding:0 30px 0 66px">
     <div class="kick" style="margin-bottom:20px;color:var(--gold)">Раздел II</div>
@@ -227,7 +216,7 @@ img{display:block}
     <p style="font:300 15px/1.75 'Inter';color:var(--mute);margin-top:24px;max-width:42ch">
       Сериал и фильмы, определившие эпоху — Нью-Йорк, мода и Кэрри Брэдшоу. В собрании: комплект
       багажа Louis Vuitton, снимавшийся в фильме, и автографы Сары Джессики Паркер.</p>
-    <div class="kick" style="margin-top:28px;letter-spacing:.2em;color:var(--gold)">4 предмета · от 180 000 ₽</div>
+    <div class="kick" style="margin-top:28px;letter-spacing:.2em;color:var(--gold)">5 предметов · от 180 000 ₽</div>
   </div>
   <div style="position:relative;height:100%">
     <img src="img_fc/satc_divider.jpg" alt="" style="width:100%;height:100%;object-fit:cover">
@@ -235,36 +224,40 @@ img{display:block}
   </div>
 </section>
 
-<!-- ============ c08 LV LUGGAGE premium ============ -->
+<!-- c08 LV luggage premium -->
 <section class="slide dark" id="c08" style="grid-template-columns:1.1fr 1fr">
   <div style="position:relative;display:flex;align-items:center;justify-content:center;background:#F4F1EA">
     <img src="img_fc/lv_luggage.jpg" alt="Багаж Louis Vuitton" style="width:92%;height:auto;max-height:90%;object-fit:contain">
   </div>
   <div style="display:flex;flex-direction:column;justify-content:center;padding:0 54px 0 48px">
-    <div class="badge" style="align-self:flex-start;margin-bottom:20px">Премиум лота</div>
+    <div class="badge" style="align-self:flex-start;margin-bottom:20px">Премиум лота · из фильма</div>
     <div class="pp-name">Комплект багажа<br>Louis Vuitton</div>
     <div class="pp-type">Четыре предмета багажа Louis Vuitton, задействованные в съёмках фильма «Секс в большом
       городе 2» (production used). Экранная история и статус люксового дома — вещь для коллекции
       и для интерьера.</div>
     <div class="pp-rule"></div>
     <div class="pp-price">8 500 000 ₽</div>
-    <div class="pp-cert">Provenance — экранное использование · закрытые аукционы</div>
-    <div class="insets">
-      <div class="inset"><img src="img_fc/lv_luggage2.jpg">
-        <div><div class="ik">в интерьере</div><div class="iv">комплект в кадре фильма</div></div></div>
-      <div class="inset"><img src="img_fc/lv_luggage3.jpg">
-        <div><div class="ik">на экране</div><div class="iv">сцена «Секс в большом городе 2»</div></div></div>
-    </div>
+    <div class="pp-cert">Provenance — экранное использование · кадры из фильма далее</div>
   </div>
 </section>
 
-<!-- ============ c09 SJP ============ -->
-<section class="slide light" id="c09" style="grid-template-rows:auto 1fr">
+<!-- c09 FILM STILLS -->
+<section class="slide stills" id="c09">
+  <div class="still"><img src="img_fc/lv_luggage2.jpg" alt="Багаж в интерьере фильма" style="object-position:50% 40%">
+    <div class="cap"><div class="cn">В кадре фильма</div><div class="cs">Тот самый комплект Louis Vuitton в интерьере «Секс в большом городе 2»</div></div></div>
+  <div class="still"><img src="img_fc/lv_luggage3.jpg" alt="Сцена фильма">
+    <div class="cap"><div class="cn">На экране</div><div class="cs">Кадр саги — багаж рядом с героинями «Секс в большом городе»</div></div></div>
+  <div style="position:absolute;top:22px;left:24px;z-index:3">
+    <span class="badge" style="background:rgba(11,11,12,.72);color:var(--gold2);border:1px solid rgba(169,133,69,.5)">Provenance · вещь из фильма</span></div>
+</section>
+
+<!-- c10 SJP собрание -->
+<section class="slide light" id="c10" style="grid-template-rows:auto 1fr">
   <div class="wrap" style="padding:44px 66px 0">
     <div class="head">
       <div><div class="kick hkick">Сара Джессика Паркер · Кэрри Брэдшоу</div>
         <div class="htitle serif">Голос Нью-Йорка</div></div>
-      <div class="hcount">3 предмета</div>
+      <div class="hcount">собрание</div>
     </div>
   </div>
   <div class="wrap" style="padding:2px 66px 40px">
@@ -276,51 +269,74 @@ img{display:block}
       <div class="card"><div class="mat"><img src="img_fc/sjp_photo.jpg"></div>
         <div class="meta"><div class="name">Сара Джессика Паркер — фото 28×36 см с автографом</div>
           <div class="type">Один из самых узнаваемых женских образов телевидения.</div>
-          <div class="price">210 000 ₽</div><div class="cert">подлинность: Beckett</div>
-          <div style="margin-top:12px;padding:9px 12px;background:#F0EBE0;border-left:2px solid var(--gold)">
-            <div style="font:600 8.5px/1 'Inter';letter-spacing:.16em;text-transform:uppercase;color:var(--gold)">в наличии в Москве</div>
-            <div style="font-family:'Cormorant Garamond';font-weight:500;font-size:15px;color:var(--ink);margin-top:4px">Ещё одно фото с автографом · 180 000 ₽ · готово к передаче сразу</div></div></div></div>
+          <div class="price">210 000 ₽</div><div class="cert">подлинность: Beckett</div></div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ c10 FULL INDEX ============ -->
-<section class="slide dark" id="c10" style="grid-template-rows:auto 1fr auto">
-  <div class="wrap" style="padding:34px 60px 6px">
-    <div class="kick d" style="margin-bottom:8px">Полный перечень · 11 предметов</div>
+<!-- c11 SJP в наличии -->
+<section class="slide light" id="c11" style="grid-template-rows:auto 1fr">
+  <div class="wrap" style="padding:44px 66px 0">
+    <div class="head">
+      <div><div class="kick hkick" style="color:#3f6b4f">Сара Джессика Паркер · в наличии в Москве</div>
+        <div class="htitle serif">Образы Кэрри — сразу</div></div>
+      <div class="hcount">2 предмета · готовы к передаче</div>
+    </div>
+  </div>
+  <div class="wrap" style="padding:2px 66px 40px">
+    <div class="grid g2" style="--ih:352px">
+      <div class="card"><div class="mat"><img src="img_fc/site/sjp_photo_site.jpg"></div>
+        <div class="meta"><span class="badge stock" style="margin-bottom:10px">в наличии</span>
+          <div class="name">Сара Джессика Паркер — фото с автографом, в раме</div>
+          <div class="type">Оформлено в раму с паспарту и табличкой. Экспонат уже в Москве — готов к передаче сразу.</div>
+          <div class="price">180 000 ₽</div><div class="cert">сертификат подлинности</div></div></div>
+      <div class="card"><div class="mat"><img src="img_fc/site/sjp_photo2.jpg"></div>
+        <div class="meta"><span class="badge stock" style="margin-bottom:10px">в наличии</span>
+          <div class="name">Сара Джессика Паркер — фото с автографом, в раме</div>
+          <div class="type">Классический кадр Кэрри в раме. Готов к оформлению и передаче без ожидания доставки.</div>
+          <div class="price">180 000 ₽</div><div class="cert">сертификат подлинности</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- c12 FULL INDEX -->
+<section class="slide dark" id="c12" style="grid-template-rows:auto 1fr auto">
+  <div class="wrap" style="padding:32px 60px 6px">
+    <div class="kick d" style="margin-bottom:8px">Полный перечень · 12 предметов</div>
     <h2 class="serif" style="font-weight:300;font-size:30px;color:var(--ivory)">Собрание «Культовое кино»</h2>
   </div>
   <div class="wrap" style="padding:6px 60px 6px;display:grid;grid-template-columns:1fr 1fr;column-gap:54px;align-content:center">
     <div class="idx">
-      <div class="ir"><span class="in">Постер «Бойцовский клуб» — 4 автографа</span><span class="it">Питт · Нортон · Лето · Бонэм Картер · 30×46 см</span><span class="ip">950 000</span></div>
+      <div class="ir"><span class="in">Постер «Бойцовский клуб» — 4 автографа</span><span class="it">30×46 см · JSA LOA</span><span class="ip">950 000</span></div>
       <div class="ir"><span class="in">Брэд Питт — фото «Тайлер»</span><span class="it">28×36 см · PSA/DNA</span><span class="ip">280 000</span></div>
       <div class="ir"><span class="in">Брэд Питт — фото с фото-пруфом</span><span class="it">28×36 см · Beckett</span><span class="ip">300 000</span></div>
-      <div class="ir"><span class="in">Брэд Питт — фото в слабе</span><span class="it">20×25 см · PSA/DNA slab</span><span class="ip">300 000</span></div>
+      <div class="ir"><span class="in">Брэд Питт — фото в слабе</span><span class="it">20×25 см · PSA/DNA</span><span class="ip">300 000</span></div>
       <div class="ir"><span class="in">Эдвард Нортон — фото</span><span class="it">28×36 см · Beckett</span><span class="ip">330 000</span></div>
-      <div class="ir"><span class="in">Эдвард Нортон — сценарий</span><span class="it">полный, в раме · Beckett</span><span class="ip">360 000</span></div>
+      <div class="ir"><span class="in">Эдвард Нортон — сценарий</span><span class="it">в раме · Beckett</span><span class="ip">360 000</span></div>
     </div>
     <div class="idx">
-      <div class="ir"><span class="in">Чак Паланик — первое издание романа</span><span class="it">1996, автограф автора · Beckett</span><span class="ip">350 000</span></div>
+      <div class="ir"><span class="in">Чак Паланик — первое издание романа</span><span class="it">1996 · Beckett</span><span class="ip">350 000</span></div>
       <div class="ir"><span class="in">Багаж Louis Vuitton (из фильма)</span><span class="it">4 предмета · production used</span><span class="ip">8 500 000</span></div>
-      <div class="ir"><span class="in">С. Дж. Паркер — сценарий «Секс в большом городе»</span><span class="it">в раме · JSA</span><span class="ip">300 000</span></div>
+      <div class="ir"><span class="in">С. Дж. Паркер — сценарий SATC</span><span class="it">в раме · JSA</span><span class="ip">300 000</span></div>
       <div class="ir"><span class="in">С. Дж. Паркер — фото</span><span class="it">28×36 см · Beckett</span><span class="ip">210 000</span></div>
-      <div class="ir"><span class="in">С. Дж. Паркер — фото (в наличии)</span><span class="it">в Москве, сразу · сертификат</span><span class="ip">180 000</span></div>
+      <div class="ir"><span class="in">С. Дж. Паркер — фото (в наличии)</span><span class="it">в раме · в Москве</span><span class="ip">180 000</span></div>
+      <div class="ir"><span class="in">С. Дж. Паркер — фото (в наличии)</span><span class="it">в раме · в Москве</span><span class="ip">180 000</span></div>
     </div>
   </div>
   <div class="wrap" style="padding:8px 60px 26px;border-top:1px solid rgba(169,133,69,.3);display:flex;justify-content:space-between;align-items:baseline">
-    <span class="kick d" style="letter-spacing:.22em">11 предметов · всё собрание целиком</span>
-    <span class="serif" style="font-weight:500;font-size:28px;color:var(--gold2)">12 060 000 ₽</span>
+    <span class="kick d" style="letter-spacing:.22em">12 предметов · всё собрание целиком</span>
+    <span class="serif" style="font-weight:500;font-size:28px;color:var(--gold2)">12 240 000 ₽</span>
   </div>
 </section>
 
-<!-- ============ c11 CLOSE ============ -->
-<section class="slide dark" id="c11" style="grid-template-rows:1fr auto">
+<!-- c13 CLOSE -->
+<section class="slide dark" id="c13" style="grid-template-rows:1fr auto">
   <div class="wrap" style="padding:76px 66px 0;display:flex;flex-direction:column;justify-content:center">
     <div class="kick d" style="margin-bottom:26px">Stargift · частное собрание</div>
     <h2 class="serif" style="font-weight:300;font-size:58px;line-height:1.04;color:var(--ivory)">Кадр, который<br>стал культом</h2>
     <p style="font:300 15px/1.8 'Inter';color:#b8b2a6;margin-top:26px;max-width:50ch">
       Каждый предмет сопровождается международным сертификатом подлинности. Оформление в раму,
-      доставка и передача — под ключ.</p>
+      доставка и передача — под ключ. Часть предметов в наличии в Москве.</p>
     <div style="display:flex;gap:60px;margin-top:40px;flex-wrap:wrap">
       <div><div class="kick d" style="margin-bottom:12px">Связь</div>
         <p style="font:300 14px/1.9 'Inter';color:#c3bdb1">stargift.ru<br>+7 495 233-51-11<br>t.me/stargift_collection</p></div>
@@ -340,7 +356,7 @@ function show(){const raw=location.hash.slice(1);const n=raw.replace(/^c/,'');co
 document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
 show();addEventListener('hashchange',show);
 addEventListener('keydown',e=>{const cur=+(location.hash.replace(/[^0-9]/g,'')||1);
-if(e.key==='ArrowRight'||e.key===' ')location.hash='c'+Math.min(11,cur+1);
+if(e.key==='ArrowRight'||e.key===' ')location.hash='c'+Math.min(13,cur+1);
 if(e.key==='ArrowLeft')location.hash='c'+Math.max(1,cur-1);});
 </script>
 <style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
