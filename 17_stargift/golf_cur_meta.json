@@ -1,0 +1,422 @@
+[
+ {
+  "file": "pascal2.jpg",
+  "name": "Педро Паскаль",
+  "desc": "Фото «Мандалорец» с Грогу, с автографом",
+  "price": 240000,
+  "cert": "JSA",
+  "group": "ПАСКАЛЬ",
+  "src": "https://i.ebayimg.com/images/g/RPIAAeSwSg1ohMTj/s-l1600.jpg",
+  "zakupka": 425.0
+ },
+ {
+  "file": "woods1.jpg",
+  "name": "Тайгер Вудс",
+  "desc": "Фото 16x20 «Мастерс-2001, 4 подряд» с автографом, в раме",
+  "price": 550000,
+  "cert": "UDA",
+  "group": "ВУДС",
+  "src": "https://i.ebayimg.com/images/g/XQMAAeSw-jBpXmzQ/s-l1600.jpg",
+  "zakupka": 1899.0
+ },
+ {
+  "file": "hogan1.jpg",
+  "name": "Бен Хоган",
+  "desc": "Фото 8x10 с автографом, слаб PSA",
+  "price": 250000,
+  "cert": "PSA slab",
+  "group": "ХОГАН",
+  "src": "https://i.ebayimg.com/images/g/ZMEAAeSw0XBqUPZT/s-l1600.jpg",
+  "zakupka": "499.99"
+ },
+ {
+  "file": "hogan3.jpg",
+  "name": "Бен Хоган",
+  "desc": "Банковский чек 1994 года с автографом",
+  "price": 190000,
+  "cert": "PSA DNA",
+  "group": "ХОГАН",
+  "src": "https://i.ebayimg.com/images/g/nQ0AAeSwAvxoZ96J/s-l1600.jpg",
+  "zakupka": "179.99"
+ },
+ {
+  "file": "hogan4.jpg",
+  "name": "Бен Хоган",
+  "desc": "Коллекционная карточка Mueller 1992 с автографом, PSA 9",
+  "price": 300000,
+  "cert": "PSA 9",
+  "group": "ХОГАН",
+  "src": "https://i.ebayimg.com/images/g/h6EAAeSwipFpDKXV/s-l1600.jpg",
+  "zakupka": "764.99"
+ },
+ {
+  "file": "nicklaus1.jpg",
+  "name": "Джек Никлаус",
+  "desc": "Флаг турнира Masters с автографом",
+  "price": 300000,
+  "cert": "JSA LOA",
+  "group": "НИКЛАУС",
+  "src": "https://i.ebayimg.com/images/g/lLIAAeSwEHxqOaud/s-l1600.jpg",
+  "zakupka": "399.99"
+ },
+ {
+  "file": "nicklaus2.jpg",
+  "name": "Джек Никлаус",
+  "desc": "Флаг Memorial Tournament с автографом",
+  "price": 300000,
+  "cert": "PSA/DNA",
+  "group": "НИКЛАУС",
+  "src": "https://i.ebayimg.com/images/g/2bEAAeSw3YRqJhEi/s-l1600.jpg",
+  "zakupka": "269.99"
+ },
+ {
+  "file": "nicklaus3.jpg",
+  "name": "Джек Никлаус и Гэри Плеер",
+  "desc": "Флаг Masters с двумя автографами и годами побед",
+  "price": 450000,
+  "cert": "JSA LOA",
+  "group": "НИКЛАУС",
+  "src": "https://i.ebayimg.com/images/g/bU0AAeSwd0tpFzqM/s-l1600.jpg",
+  "zakupka": "649.99"
+ },
+ {
+  "file": "seve1.jpg",
+  "name": "Севе Балестерос",
+  "desc": "Фото 11x14 «Мастерс-1983» с автографом",
+  "price": 250000,
+  "cert": "Beckett",
+  "group": "БАЛЕСТЕРОС",
+  "src": "https://i.ebayimg.com/images/g/mgEAAOSwv1Fmgfgk/s-l1600.jpg",
+  "zakupka": 517.0
+ },
+ {
+  "file": "seve2.jpg",
+  "name": "Севе Балестерос и Хосе-Мария Олазабаль",
+  "desc": "Фото 8x10 с двумя автографами",
+  "price": 300000,
+  "cert": "Beckett",
+  "group": "БАЛЕСТЕРОС",
+  "src": "https://i.ebayimg.com/images/g/bcsAAOSwF5dfg1Z~/s-l1600.jpg",
+  "zakupka": "563.06"
+ },
+ {
+  "file": "seve3.jpg",
+  "name": "Севе Балестерос",
+  "desc": "Счётная карточка Masters (Огаста) с автографом, PSA 10",
+  "price": 260000,
+  "cert": "PSA/DNA 10",
+  "group": "БАЛЕСТЕРОС",
+  "src": "https://i.ebayimg.com/images/g/vDUAAOSwWf9nhtAl/s-l1600.jpg",
+  "zakupka": "593.99"
+ },
+ {
+  "file": "norman2.jpg",
+  "name": "Грег Норман",
+  "desc": "Фото поля Masters с автографом",
+  "price": 140000,
+  "cert": "PSA DNA",
+  "group": "НОРМАН",
+  "src": "https://i.ebayimg.com/images/g/uEkAAeSw2RNqNe5X/s-l1600.jpg",
+  "zakupka": "59.99"
+ },
+ {
+  "file": "mickelson1.jpg",
+  "name": "Фил Микелсон",
+  "desc": "Фото 11x17 «3x чемпион Masters» с автографом",
+  "price": 220000,
+  "cert": "BAS",
+  "group": "МИКЕЛСОН",
+  "src": "https://i.ebayimg.com/images/g/CPoAAeSwAVRp0ssI/s-l1600.jpg",
+  "zakupka": 295.0
+ },
+ {
+  "file": "mickelson3.jpg",
+  "name": "Фил Микелсон",
+  "desc": "Фото 8x10 с автографом и инскрипцией",
+  "price": 180000,
+  "cert": "Beckett BAS",
+  "group": "МИКЕЛСОН",
+  "src": "https://i.ebayimg.com/images/g/TpUAAeSwU9BqDR2b/s-l1600.jpg",
+  "zakupka": "49.99"
+ },
+ {
+  "file": "garcia1.jpg",
+  "name": "Серхио Гарсиа",
+  "desc": "Мяч для гольфа с автографом (чемпион Masters 2017)",
+  "price": 140000,
+  "cert": "JSA",
+  "group": "ГАРСИА",
+  "src": "https://i.ebayimg.com/images/g/NgwAAeSwlD9puU~V/s-l1600.jpg",
+  "zakupka": 69.0
+ },
+ {
+  "file": "dechambeau1.jpg",
+  "name": "Брайсон Дешамбо",
+  "desc": "Фото 8x10 с автографом",
+  "price": 160000,
+  "cert": "PSA/DNA ITP",
+  "group": "ДЕШАМБО",
+  "src": "https://i.ebayimg.com/images/g/MOAAAOSwPv9XMKb2/s-l1600.jpg",
+  "zakupka": "76.49"
+ },
+ {
+  "file": "morikawa1.jpg",
+  "name": "Коллин Морикава",
+  "desc": "Перчатка для гольфа с автографом (2x мэйджора)",
+  "price": 160000,
+  "cert": "JSA",
+  "group": "МОРИКАВА",
+  "src": "https://i.ebayimg.com/images/g/icUAAeSwQUtqSnaz/s-l1600.jpg",
+  "zakupka": "149.99"
+ },
+ {
+  "file": "morikawa2.jpg",
+  "name": "Коллин Морикава",
+  "desc": "Мяч Titleist с логотипом PGA Championship, с автографом",
+  "price": 140000,
+  "cert": "JSA",
+  "group": "МОРИКАВА",
+  "src": "https://i.ebayimg.com/images/g/h3oAAeSwb5ZqOq9-/s-l1600.jpg",
+  "zakupka": "69.99"
+ },
+ {
+  "file": "morikawa3.jpg",
+  "name": "Коллин Морикава",
+  "desc": "Флаг Players Championship 2026 с автографом",
+  "price": 220000,
+  "cert": "PSA",
+  "group": "МОРИКАВА",
+  "src": "https://i.ebayimg.com/images/g/-0MAAeSwrdVpytQp/s-l1600.jpg",
+  "zakupka": "174.99"
+ },
+ {
+  "file": "morikawa4.jpg",
+  "name": "Коллин Морикава",
+  "desc": "Флаг US Open 2026 (Шиннекок) с автографом",
+  "price": 220000,
+  "cert": "PSA",
+  "group": "МОРИКАВА",
+  "src": "https://i.ebayimg.com/images/g/qBoAAeSwF4FqOENE/s-l1600.jpg",
+  "zakupka": "199.99"
+ },
+ {
+  "file": "pascal4.jpg",
+  "name": "Педро Паскаль",
+  "desc": "Фото «Мандалорец» 16x20 с автографом",
+  "price": 260000,
+  "cert": "Beckett",
+  "group": "ПАСКАЛЬ",
+  "src": "https://i.ebayimg.com/images/g/NTQAAeSwJVdp4jsL/s-l1600.jpg",
+  "zakupka": "449.95"
+ },
+ {
+  "file": "pascal5.jpg",
+  "name": "Педро Паскаль",
+  "desc": "Фото «Мандалорец» 11x14 с автографом",
+  "price": 250000,
+  "cert": "Beckett",
+  "group": "ПАСКАЛЬ",
+  "src": "https://i.ebayimg.com/images/g/is4AAeSwtZdpq3sM/s-l1600.jpg",
+  "zakupka": "599.99"
+ },
+ {
+  "file": "woods3.jpg",
+  "name": "Тайгер Вудс",
+  "desc": "Фото Upper Deck 8x10 с автографом, PSA 10",
+  "price": 600000,
+  "cert": "PSA",
+  "group": "ВУДС",
+  "src": "https://i.ebayimg.com/images/g/PTcAAeSwVRpptHGT/s-l1600.jpg",
+  "zakupka": "2495.0"
+ },
+ {
+  "file": "woods4.jpg",
+  "name": "Тайгер Вудс",
+  "desc": "Флаг PGA с автографом",
+  "price": 600000,
+  "cert": "PSA",
+  "group": "ВУДС",
+  "src": "https://i.ebayimg.com/images/g/vycAAOSwGcRnmmD9/s-l1600.jpg",
+  "zakupka": "1999.0"
+ },
+ {
+  "file": "woods5.jpg",
+  "name": "Тайгер Вудс",
+  "desc": "Кепка Nike с автографом",
+  "price": 380000,
+  "cert": "PSA",
+  "group": "ВУДС",
+  "src": "https://i.ebayimg.com/images/g/y98AAOSw57loBohh/s-l1600.jpg",
+  "zakupka": "1499.0"
+ },
+ {
+  "file": "hogan5.jpg",
+  "name": "Бен Хоган",
+  "desc": "Фото 11x14 «Идеальный свинг» с автографом",
+  "price": 500000,
+  "cert": "JSA",
+  "group": "ХОГАН",
+  "src": "https://i.ebayimg.com/images/g/jO0AAeSw5Jpp7NZ7/s-l1600.jpg",
+  "zakupka": "1999.99"
+ },
+ {
+  "file": "nicklaus4.jpg",
+  "name": "Джек Никлаус",
+  "desc": "Фото 8x10 «Мастерс-1986» с автографом, в раме",
+  "price": 220000,
+  "cert": "JSA",
+  "group": "НИКЛАУС",
+  "src": "https://i.ebayimg.com/images/g/pV4AAeSwK6lo8Aaj/s-l1600.jpg",
+  "zakupka": "299.0"
+ },
+ {
+  "file": "nicklaus6.jpg",
+  "name": "Джек Никлаус",
+  "desc": "Журнал Sports Illustrated 1978 года с автографом",
+  "price": 240000,
+  "cert": "Beckett",
+  "group": "НИКЛАУС",
+  "src": "https://i.ebayimg.com/images/g/vBkAAeSwD7RprMQF/s-l1600.jpg",
+  "zakupka": "324.99"
+ },
+ {
+  "file": "nicklaus8.jpg",
+  "name": "Джек Никлаус",
+  "desc": "Фото 11x14 «Чемпион Masters» с автографом",
+  "price": 240000,
+  "cert": "JSA",
+  "group": "НИКЛАУС",
+  "src": "https://i.ebayimg.com/images/g/5WMAAeSwfPhojWqM/s-l1600.jpg",
+  "zakupka": "199.99"
+ },
+ {
+  "file": "seve5.jpg",
+  "name": "Севе Балестерос и шесть чемпионов",
+  "desc": "Фото 8x10 «Клубный дом Masters» с 7-ю автографами",
+  "price": 300000,
+  "cert": "JSA",
+  "group": "БАЛЕСТЕРОС",
+  "src": "https://i.ebayimg.com/images/g/SxUAAeSww9xpGpt0/s-l1600.jpg",
+  "zakupka": "399.0"
+ },
+ {
+  "file": "norman3.jpg",
+  "name": "Грег Норман",
+  "desc": "Фото 8x10 с автографом",
+  "price": 150000,
+  "cert": "JSA",
+  "group": "НОРМАН",
+  "src": "https://i.ebayimg.com/images/g/e0AAAeSwUJ1pHLW0/s-l1600.jpg",
+  "zakupka": "125.0"
+ },
+ {
+  "file": "norman6.jpg",
+  "name": "Грег Норман",
+  "desc": "Фото 11x14 «Чемпион The Open» с автографом",
+  "price": 170000,
+  "cert": "JSA",
+  "group": "НОРМАН",
+  "src": "https://i.ebayimg.com/images/g/skoAAeSwfcVpvMaU/s-l1600.jpg",
+  "zakupka": "149.95"
+ },
+ {
+  "file": "mickelson5.jpg",
+  "name": "Фил Микелсон",
+  "desc": "Перчатка для гольфа с автографом",
+  "price": 200000,
+  "cert": "Beckett",
+  "group": "МИКЕЛСОН",
+  "src": "https://i.ebayimg.com/images/g/tWoAAeSw4YVn4K2h/s-l1600.jpg",
+  "zakupka": "349.99"
+ },
+ {
+  "file": "mickelson7.jpg",
+  "name": "Фил Микелсон",
+  "desc": "Кепка PGA с автографом",
+  "price": 180000,
+  "cert": "Beckett",
+  "group": "МИКЕЛСОН",
+  "src": "https://i.ebayimg.com/images/g/KaEAAeSwejpqRGTo/s-l1600.jpg",
+  "zakupka": "149.95"
+ },
+ {
+  "file": "garcia3.jpg",
+  "name": "Серхио Гарсиа",
+  "desc": "Фото 11x14 с автографом",
+  "price": 140000,
+  "cert": "JSA",
+  "group": "ГАРСИА",
+  "src": "https://i.ebayimg.com/images/g/iR0AAeSw0TVqTmpD/s-l1600.jpg",
+  "zakupka": "94.0"
+ },
+ {
+  "file": "garcia4.jpg",
+  "name": "Серхио Гарсиа",
+  "desc": "Журнал Golf 2002 года с автографом",
+  "price": 160000,
+  "cert": "Beckett",
+  "group": "ГАРСИА",
+  "src": "https://i.ebayimg.com/images/g/oWEAAeSwJqhpvp07/s-l1600.jpg",
+  "zakupka": "49.99"
+ },
+ {
+  "file": "garcia6.jpg",
+  "name": "Серхио Гарсиа",
+  "desc": "Фото 8x10 с автографом",
+  "price": 130000,
+  "cert": "JSA",
+  "group": "ГАРСИА",
+  "src": "https://i.ebayimg.com/images/g/PtwAAOSw3SxlycRt/s-l1600.jpg",
+  "zakupka": "32.99"
+ },
+ {
+  "file": "dechambeau3.jpg",
+  "name": "Брайсон Дешамбо",
+  "desc": "Флаг US Open 2020 с автографом и фотопруфом",
+  "price": 250000,
+  "cert": "Beckett",
+  "group": "ДЕШАМБО",
+  "src": "https://i.ebayimg.com/images/g/syEAAeSwYC5pveGS/s-l1600.jpg",
+  "zakupka": "474.99"
+ },
+ {
+  "file": "dechambeau4.jpg",
+  "name": "Брайсон Дешамбо",
+  "desc": "Счётная карточка Огасты с автографом",
+  "price": 200000,
+  "cert": "Beckett",
+  "group": "ДЕШАМБО",
+  "src": "https://i.ebayimg.com/images/g/qhwAAeSwvqJqUQRI/s-l1600.jpg",
+  "zakupka": "299.99"
+ },
+ {
+  "file": "dechambeau6.jpg",
+  "name": "Брайсон Дешамбо",
+  "desc": "Фото 8x10 «US Open 2020» с автографом",
+  "price": 150000,
+  "cert": "Beckett",
+  "group": "ДЕШАМБО",
+  "src": "https://i.ebayimg.com/images/g/7rUAAOSw-sVkrW5Q/s-l1600.jpg",
+  "zakupka": "84.99"
+ },
+ {
+  "file": "morikawa5.jpg",
+  "name": "Коллин Морикава",
+  "desc": "Пин-флаг British Open 2021 с автографом",
+  "price": 210000,
+  "cert": "JSA",
+  "group": "МОРИКАВА",
+  "src": "https://i.ebayimg.com/images/g/qxEAAOSwjjpnyWmk/s-l1600.jpg",
+  "zakupka": "224.99"
+ },
+ {
+  "file": "morikawa8.jpg",
+  "name": "Коллин Морикава",
+  "desc": "Фото 16x20 с автографом",
+  "price": 180000,
+  "cert": "JSA",
+  "group": "МОРИКАВА",
+  "src": "https://i.ebayimg.com/images/g/GtYAAOSwmORkiJU2/s-l1600.jpg",
+  "zakupka": "199.0"
+ }
+]
