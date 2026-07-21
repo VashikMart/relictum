@@ -1,0 +1,419 @@
+<meta charset="utf-8">
+<title>Чемпионат мира · 2026 — каталог</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noir:#0B0B0C; --gold:#A98545; --gold2:#C9A96A;
+  --ivory:#F5F1E8; --paper:#F7F5F1; --ink:#1A1A1A; --mute:#6b6b6b; --cert:#9a958c;
+  --pitch:#12331f;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-serif}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:grid}
+img{display:block}
+a{color:inherit;text-decoration:none}
+.serif{font-family:'Cormorant Garamond',serif}
+.kick{font:500 13px/1 'Inter';letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.kick.d{color:var(--gold2)}
+.light{background:var(--paper);color:var(--ink)}
+.dark{background:var(--noir);color:var(--ivory)}
+.wrap{padding:36px 46px}
+.head{display:flex;align-items:flex-end;justify-content:space-between;
+  border-bottom:1px solid rgba(26,26,26,.16);padding-bottom:16px;margin-bottom:26px}
+.head .htitle{font-family:'Cormorant Garamond';font-weight:400;font-size:48px;line-height:1;color:var(--ink)}
+.head .hkick{margin-bottom:11px}
+.head .hcount{font:300 14px/1 'Inter';letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.grid{display:grid}
+.g2{grid-template-columns:repeat(2,1fr);gap:30px;--ih:368px}
+.card{display:flex;flex-direction:column}
+.mat{background:#fff;padding:12px;border:1px solid rgba(169,133,69,.2);box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.mat img{width:100%;height:var(--ih,300px);object-fit:contain}
+.meta{padding:13px 2px 0}
+.name{font-family:'Cormorant Garamond';font-weight:500;font-size:23px;line-height:1.14;color:var(--ink)}
+.type{font:300 15.5px/1.45 'Inter';color:var(--mute);margin-top:7px;max-width:36ch}
+.price{font-family:'Cormorant Garamond';font-weight:500;font-size:25px;color:var(--gold);margin-top:9px}
+.cert{font:400 11.5px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:8px}
+/* CROSS 2×2 */
+.cross{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:1px;background:rgba(169,133,69,.55)}
+.q{position:relative;overflow:hidden;background:#0f0f10}
+.q>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.q.fit{background:#fff}.q.fit>img{object-fit:contain}
+.q.fitd{background:#0B0B0C}.q.fitd>img{object-fit:contain}
+.plate{position:absolute;left:0;right:0;bottom:0;padding:16px 20px 15px;
+  background:linear-gradient(0deg,rgba(11,11,12,.95) 0%,rgba(11,11,12,.64) 62%,rgba(11,11,12,0) 100%);padding-top:52px}
+.pl-name{font-family:'Cormorant Garamond';font-weight:500;font-size:24px;line-height:1.08;color:var(--ivory)}
+.pl-type{font:300 14px/1.35 'Inter';color:#c3bdb1;margin-top:3px;max-width:44ch}
+.pl-price{font-family:'Cormorant Garamond';font-weight:500;font-size:22px;color:var(--gold2);margin-top:5px}
+.pl-cert{font:400 10.5px/1 'Inter';letter-spacing:.18em;text-transform:uppercase;color:#b6b0a4;margin-top:6px}
+/* passport */
+.pp-name{font-family:'Cormorant Garamond';font-weight:400;font-size:48px;line-height:1.04;color:var(--ivory)}
+.pp-type{font:300 18px/1.55 'Inter';color:#b8b2a6;margin-top:18px;max-width:34ch}
+.pp-rule{height:1px;background:rgba(169,133,69,.4);margin:24px 0;width:130px}
+.pp-price{font-family:'Cormorant Garamond';font-weight:500;font-size:46px;color:var(--gold2)}
+.pp-cert{font:400 12px/1.6 'Inter';letter-spacing:.14em;text-transform:uppercase;color:var(--cert);margin-top:14px}
+.badge{display:inline-block;font:600 11px/1 'Inter';letter-spacing:.18em;text-transform:uppercase;
+  color:var(--noir);background:var(--gold2);padding:9px 13px}
+.badge.stock{background:#3f6b4f;color:#eaf3ec}
+.insets{display:flex;gap:12px;margin-top:26px}
+.inset{display:flex;gap:12px;align-items:center;background:rgba(255,255,255,.04);
+  border:1px solid rgba(169,133,69,.28);padding:10px 12px;max-width:34ch}
+.inset img{width:74px;height:56px;object-fit:cover;flex:none;border:1px solid rgba(169,133,69,.25)}
+.inset .ik{font:400 9.5px/1 'Inter';letter-spacing:.16em;text-transform:uppercase;color:var(--gold2)}
+.inset .iv{font:300 12.5px/1.4 'Inter';color:#c3bdb1;margin-top:4px}
+/* divider full-bleed */
+.fb{position:relative}
+.fb>img{width:100%;height:100%;object-fit:cover}
+.fb .ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.94) 0%,rgba(11,11,12,.6) 38%,rgba(11,11,12,.08) 72%)}
+.fb .tx{position:absolute;left:52px;top:50%;transform:translateY(-50%);max-width:520px}
+.fb h2{font-family:'Cormorant Garamond';font-weight:300;font-size:62px;line-height:1.02;color:var(--ivory)}
+.fb p{font:300 17.5px/1.65 'Inter';color:#cdc7bb;margin-top:18px}
+.fb .ph-cap{position:absolute;right:16px;bottom:12px;font:400 10px/1.4 'Inter';letter-spacing:.12em;text-transform:uppercase;color:rgba(245,241,232,.55);text-align:right}
+/* index */
+.idx{display:flex;flex-direction:column}
+.ir{display:grid;grid-template-columns:1fr auto;column-gap:14px;align-items:baseline;
+  padding:6.5px 0;border-bottom:1px solid rgba(169,133,69,.16)}
+.in{font-family:'Cormorant Garamond';font-weight:500;font-size:16.5px;color:var(--ivory);grid-row:1;grid-column:1;line-height:1.1}
+.it{font:300 11px/1.1 'Inter';color:#8f897d;grid-row:2;grid-column:1}
+.ip{font-family:'Cormorant Garamond';font-weight:500;font-size:16.5px;color:var(--gold2);grid-row:1;grid-column:2;white-space:nowrap}
+.ihd{font:600 10.5px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:10px 0 4px}
+</style>
+
+<div class="deck">
+
+<!-- w01 COVER -->
+<section class="slide dark fb on" id="w01">
+  <img src="img_wc/hero-main.jpg" alt="" style="object-position:50% 30%">
+  <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,11,12,.96) 0%,rgba(11,11,12,.45) 42%,rgba(11,11,12,.15) 75%)"></div>
+  <div style="position:absolute;left:52px;right:52px;bottom:54px">
+    <div class="kick d" style="margin-bottom:18px">США · Канада · Мексика — 11 июня–19 июля 2026 · 48 сборных</div>
+    <h1 class="serif" style="font-weight:300;font-size:96px;line-height:.96;color:var(--ivory)">Чемпионат мира<br>—&nbsp;у&nbsp;вас&nbsp;дома</h1>
+    <p style="font:300 19px/1.6 'Inter';color:#cdc7bb;margin-top:22px;max-width:52ch">
+      Пока миллиарды смотрят футбол по телевизору, кто-то держит его в руках.
+      Автографы тех, кто делает и делал этот праздник, — всё в наличии, всё с сертификатами.</p>
+    <div class="kick" style="margin-top:26px;letter-spacing:.22em">27 предметов · от Яшина до Месси · частное собрание</div>
+  </div>
+</section>
+
+<!-- w02 CONTENTS -->
+<section class="slide light" id="w02" style="grid-template-rows:auto 1fr auto">
+  <div class="wrap" style="padding:40px 50px 8px">
+    <div class="kick" style="margin-bottom:12px">Каталог к ЧМ-2026 · 27 предметов · всё в наличии</div>
+    <h2 class="serif" style="font-weight:400;font-size:54px;color:var(--ink)">Стартовый состав</h2>
+  </div>
+  <div class="wrap" style="padding:6px 50px 8px;display:grid;grid-template-columns:1fr 1fr;column-gap:56px;row-gap:26px;align-content:center">
+    <div>
+      <div class="kick" style="margin-bottom:12px">I · Звёзды сегодня</div>
+      <p class="serif" style="font-weight:500;font-size:24px;line-height:1.45;color:var(--ink)">Месси · Роналду · Мбаппе · Нойер · Гризманн<br>+ мяч всей сборной Аргентины</p>
+      <div style="font:400 13.5px/1 'Inter';color:var(--mute);margin-top:12px;letter-spacing:.1em">12 ПРЕДМЕТОВ · ОТ 150 000 ₽</div>
+    </div>
+    <div>
+      <div class="kick" style="margin-bottom:12px">II · Легенды</div>
+      <p class="serif" style="font-weight:500;font-size:24px;line-height:1.45;color:var(--ink)">Пеле · Бекхэм · Роберто Карлос · Роналдо</p>
+      <div style="font:400 13.5px/1 'Inter';color:var(--mute);margin-top:12px;letter-spacing:.1em">4 ПРЕДМЕТА · ОТ 220 000 ₽</div>
+    </div>
+    <div>
+      <div class="kick" style="margin-bottom:12px">III · Легенды советского футбола</div>
+      <p class="serif" style="font-weight:500;font-size:24px;line-height:1.45;color:var(--ink)">Яшин · Старостин · Бесков · Нетто · Черенков</p>
+      <div style="font:400 13.5px/1 'Inter';color:var(--mute);margin-top:12px;letter-spacing:.1em">5 ПРЕДМЕТОВ · ОТ 130 000 ₽</div>
+    </div>
+    <div>
+      <div class="kick" style="margin-bottom:12px">IV · Российский футбол</div>
+      <p class="serif" style="font-weight:500;font-size:24px;line-height:1.45;color:var(--ink)">Акинфеев · Дзагоев · Игнашевич · Семак · Мостовой</p>
+      <div style="font:400 13.5px/1 'Inter';color:var(--mute);margin-top:12px;letter-spacing:.1em">6 ПРЕДМЕТОВ · ОТ 200 000 ₽</div>
+    </div>
+  </div>
+  <div class="wrap" style="padding:8px 50px 26px;border-top:1px solid rgba(26,26,26,.14);display:flex;justify-content:space-between;align-items:baseline">
+    <span class="kick">Всё собрание целиком</span>
+    <span class="serif" style="font-weight:500;font-size:36px;color:var(--gold)">18 350 000 ₽</span>
+  </div>
+</section>
+
+<!-- w03 DIVIDER I -->
+<section class="slide dark fb" id="w03">
+  <img src="img_wc/match.jpg" alt="" style="object-position:64% 40%">
+  <div class="ov"></div>
+  <div class="tx">
+    <div class="kick d" style="margin-bottom:16px">Раздел I</div>
+    <h2>Звёзды сегодня</h2>
+    <p>Летом-2026 они выйдут на поля Америки. Их автографы могут выйти в вашу гостиную немного раньше.</p>
+    <div class="kick" style="margin-top:22px">12 предметов · от 150 000 ₽</div>
+  </div>
+</section>
+
+<!-- w04 PREMIUM Месси × Роналду -->
+<section class="slide dark" id="w04" style="grid-template-columns:1.1fr 1fr">
+  <div style="position:relative;background:#000">
+    <img src="img_wc/wc_mr_shirts.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%">
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:0 46px 0 44px">
+    <div class="badge" style="align-self:flex-start;margin-bottom:20px">Величайшее соперничество эпохи</div>
+    <div class="pp-name"><a href="https://stargift.ru/product/160082441041-lionel-messi-i-krishtianu-ronaldu/">Месси × Роналду —<br>две футболки, один дуэт</a></div>
+    <div class="pp-type">Футболки сборных Аргентины и Португалии с автографами Лионеля Месси и Криштиану Роналду.
+      Спор «кто лучший» — в одной раме. Спойлер: выигрывает владелец.</div>
+    <div class="pp-rule"></div>
+    <div class="pp-price">1 300 000 ₽</div>
+    <div class="pp-cert">сертификаты подлинности · оформление в раму</div>
+    <div class="insets">
+      <div class="inset"><img src="img_wc/wc_mr_photo.jpg">
+        <div><div class="ik">и ещё дуэт</div><div class="iv"><a href="https://stargift.ru/product/568875210282-lionel-messi-i-krishtianu-ronaldu/">Фото с двумя автографами · 750 000 ₽</a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- w05 CROSS Месси -->
+<section class="slide cross" id="w05">
+  <div class="q"><img src="img_wc/wc_messi_pers.jpg" style="object-position:50% 30%">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/545971635161-lionel-messi-imennoe-podpisanie/">Лионель Месси — именное подписание</a></div>
+      <div class="pl-type">Персональное пожелание вашему имени, написанное рукой Месси. На фото — момент подписания</div>
+      <div class="pl-price">1 500 000 ₽</div><div class="pl-cert">фото- и видеопруф подписания</div></div></div>
+  <div class="q"><img src="img_wc/wc_messi_barca.jpg">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/864498713121-lionel-messi/">Месси — футболка «Барселоны» с автографом</a></div>
+      <div class="pl-type">Номер 10 эпохи, в которой он забрал шесть «Золотых мячей»</div>
+      <div class="pl-price">810 000 ₽</div><div class="pl-cert">сертификат подлинности · в раме</div></div></div>
+  <div class="q fitd"><img src="img_wc/wc_messi_boot.jpg">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/223503507471-lionel-messi/">Месси — бутса с автографом</a></div>
+      <div class="pl-type">Инструмент, которым выиграли чемпионат мира</div>
+      <div class="pl-price">600 000 ₽</div><div class="pl-cert">сертификат подлинности</div></div></div>
+  <div class="q"><img src="img_wc/wc_messi_ball.jpg">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/884309468742-lionel-messi/">Месси — мяч с автографом</a></div>
+      <div class="pl-type">Главный предмет игры — с подписью главного игрока</div>
+      <div class="pl-price">550 000 ₽</div><div class="pl-cert">сертификат подлинности</div></div></div>
+</section>
+
+<!-- w06 CROSS Роналду/Мбаппе/Нойер -->
+<section class="slide cross" id="w06">
+  <div class="q"><img src="img_wc/wc_ron_shirt.jpg">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/266355374531-krishtianu-ronaldu/">Роналду — футболка сборной Португалии</a></div>
+      <div class="pl-type">Номер 7 человека, который не признаёт слова «хватит»</div>
+      <div class="pl-price">520 000 ₽</div><div class="pl-cert">сертификат подлинности · в раме</div></div></div>
+  <div class="q fitd"><img src="img_wc/wc_ron_ball.jpg">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/361214619752-krishtianu-ronaldu/">Роналду — мяч с автографом</a></div>
+      <div class="pl-type">Siuuu в физической форме</div>
+      <div class="pl-price">520 000 ₽</div><div class="pl-cert">сертификат подлинности</div></div></div>
+  <div class="q"><img src="img_wc/wc_mbappe_fr.jpg">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/691703016462-kilian-mbappe/">Мбаппе — футболка сборной Франции</a></div>
+      <div class="pl-type">Хет-трик в финале ЧМ — и всё ещё только разгоняется</div>
+      <div class="pl-price">340 000 ₽</div><div class="pl-cert">сертификат подлинности · в раме</div></div></div>
+  <div class="q"><img src="img_wc/wc_neuer.jpg">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/792384077801-manuel-noyer/">Нойер — личный игровой свитер сборной Германии</a></div>
+      <div class="pl-type">Сезон-2018, game worn — вещь с поля, а не из магазина</div>
+      <div class="pl-price">860 000 ₽</div><div class="pl-cert">сертификат подлинности · в раме</div></div></div>
+</section>
+
+<!-- w07 PREMIUM Аргентина -->
+<section class="slide dark" id="w07" style="grid-template-columns:1fr 1.1fr">
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:0 44px 0 48px">
+    <div class="badge" style="align-self:flex-start;margin-bottom:20px">Целая сборная на одном мяче</div>
+    <div class="pp-name"><a href="https://stargift.ru/product/551578892142-lionel-messi-serkhio-aguero-gonsalo-iguain-ankhel-di-mariya-markos-rokho-i-drug/">Мяч сборной Аргентины</a></div>
+    <div class="pp-type">Месси, Агуэро, Игуаин, Ди Мария, Рохо и другие — автографы целого поколения
+      альбиселесте на одном футбольном мяче. Такое не покупают — такое добывают.</div>
+    <div class="pp-rule"></div>
+    <div class="pp-price">1 750 000 ₽</div>
+    <div class="pp-cert">сертификаты подлинности</div>
+    <div class="insets">
+      <div class="inset"><img src="img_wc/wc_griezmann.jpg">
+        <div><div class="ik">рядом по духу</div><div class="iv"><a href="https://stargift.ru/product/545423592032-antuan-grizmann/">Гризманн — фото с автографом · 150 000 ₽</a></div></div></div>
+    </div>
+  </div>
+  <div style="position:relative;background:#000">
+    <img src="img_wc/wc_argentina_ball.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 45%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,var(--noir) 0%,rgba(11,11,12,.1) 30%,rgba(11,11,12,0) 55%)"></div>
+  </div>
+</section>
+
+<!-- w08 DIVIDER II -->
+<section class="slide dark fb" id="w08">
+  <img src="img_wc/moment-pele1970.jpg" alt="" style="object-position:70% 25%">
+  <div class="ov"></div>
+  <div class="tx">
+    <div class="kick d" style="margin-bottom:16px">Раздел II</div>
+    <h2>Легенды</h2>
+    <p>Мехико-70, Мадрид, Манчестер. Имена, по которым сверяют всех, кто вышел на поле после них.</p>
+    <div class="kick" style="margin-top:22px">4 предмета · от 220 000 ₽</div>
+  </div>
+  <div class="ph-cap">на фото: Пеле, чемпионат мира — 1970</div>
+</section>
+
+<!-- w09 CROSS Легенды -->
+<section class="slide cross" id="w09">
+  <div class="q"><img src="img_wc/wc_pele.jpg" style="object-position:50% 25%">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/533560143371-pele/">Пеле — ретро-футболка сборной Бразилии</a></div>
+      <div class="pl-type">Автограф единственного в истории трёхкратного чемпиона мира</div>
+      <div class="pl-price">510 000 ₽</div><div class="pl-cert">сертификат подлинности</div></div></div>
+  <div class="q"><img src="img_wc/wc_beckham.jpg">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/232008477892-devid-bekkhem/">Дэвид Бекхэм — фото с автографом</a></div>
+      <div class="pl-type">Человек, из-за которого штрафные стали жанром искусства</div>
+      <div class="pl-price">350 000 ₽</div><div class="pl-cert">сертификат подлинности · в раме</div></div></div>
+  <div class="q"><img src="img_wc/wc_rcarlos.jpg" style="object-position:50% 30%">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/811207855261-roberto-karlos/">Роберто Карлос — футболка сборной Бразилии</a></div>
+      <div class="pl-type">Тот самый штрафной 1997 года до сих пор нарушает законы физики</div>
+      <div class="pl-price">220 000 ₽</div><div class="pl-cert">сертификат подлинности</div></div></div>
+  <div class="q fitd"><img src="img_wc/wc_ronaldo9.jpg">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/665402485781-ronaldo-aleksey-smertin-aleksandr-kerzhakov/">Роналдо · Смертин · Кержаков — мяч с автографами</a></div>
+      <div class="pl-type">«Зубастик» и наши — неожиданный, но честный состав</div>
+      <div class="pl-price">290 000 ₽</div><div class="pl-cert">сертификаты подлинности</div></div></div>
+</section>
+
+<!-- w10 DIVIDER III -->
+<section class="slide dark fb" id="w10">
+  <img src="img_wc/moment-yashin.jpg" alt="" style="object-position:60% 20%">
+  <div class="ov"></div>
+  <div class="tx">
+    <div class="kick d" style="margin-bottom:16px">Раздел III</div>
+    <h2>Легенды советского футбола</h2>
+    <p>Единственный вратарь с «Золотым мячом», братья Старостины, олимпийское золото-1956. История, которую не переиздать.</p>
+    <div class="kick" style="margin-top:22px">5 предметов · от 130 000 ₽</div>
+  </div>
+  <div class="ph-cap">на фото: Лев Яшин</div>
+</section>
+
+<!-- w11 PREMIUM Яшин -->
+<section class="slide dark" id="w11" style="grid-template-columns:1.1fr 1fr">
+  <div style="position:relative;background:#000">
+    <img src="img_wc/wc_yashin.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 45%">
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:0 46px 0 44px">
+    <div class="badge" style="align-self:flex-start;margin-bottom:20px">Гранд собрания</div>
+    <div class="pp-name"><a href="https://stargift.ru/product/507068739632-lev-yashin-albert-shesternyov-valeriy-voronin-igor-chislenko-galimzyan-khusainov/">Лев Яшин и сборная СССР —<br>программка с автографами</a></div>
+    <div class="pp-type">Яшин, Шестернёв, Воронин, Численко, Хусаинов и другие. Подписи золотого состава
+      советского футбола на одном документе эпохи. Музейный уровень.</div>
+    <div class="pp-rule"></div>
+    <div class="pp-price">2 000 000 ₽</div>
+    <div class="pp-cert">сертификат подлинности · оформление в раму</div>
+  </div>
+</section>
+
+<!-- w12 CROSS СССР -->
+<section class="slide cross" id="w12">
+  <div class="q"><img src="img_wc/wc_starostin.jpg">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/375058606312-nikolay-starostin/">Николай Старостин — открытка с дарственной надписью</a></div>
+      <div class="pl-type">Основатель «Спартака» — собственной рукой</div>
+      <div class="pl-price">1 500 000 ₽</div><div class="pl-cert">сертификат подлинности · в раме</div></div></div>
+  <div class="q"><img src="img_wc/wc_beskov.jpg">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/530559961481-konstantin-beskov-lev-yashin-yuriy-istomin-albert-shesternev-yuriy-pshenichniko/">Бесков · Яшин · Шестернёв и другие — блокнот с автографами</a></div>
+      <div class="pl-type">Сборная СССР в одном блокноте — редкость музейного уровня</div>
+      <div class="pl-price">1 500 000 ₽</div><div class="pl-cert">сертификат подлинности</div></div></div>
+  <div class="q"><img src="img_wc/wc_netto.jpg">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/430979619291-igor-netto-gennadiy-logofet-aleksey-paramonov-vladimir-maslachenko-valentin-bub/">Игорь Нетто и олимпийцы — автографы чемпионов</a></div>
+      <div class="pl-type">Капитан золотого Мельбурна-1956 и его команда</div>
+      <div class="pl-price">600 000 ₽</div><div class="pl-cert">сертификат подлинности · в раме</div></div></div>
+  <div class="q"><img src="img_wc/wc_cherenkov.jpg">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/760724386761-fedor-cherenkov/">Фёдор Черенков — книга «Мастер и мяч» с автографом</a></div>
+      <div class="pl-type">Народный футболист — тем, кто понимает</div>
+      <div class="pl-price">130 000 ₽</div><div class="pl-cert">сертификат подлинности</div></div></div>
+</section>
+
+<!-- w13 DIVIDER IV -->
+<section class="slide dark fb" id="w13">
+  <img src="img_wc/moment-zenit2008.jpg" alt="" style="object-position:50% 25%">
+  <div class="ov"></div>
+  <div class="tx">
+    <div class="kick d" style="margin-bottom:16px">Раздел IV</div>
+    <h2>Российский футбол</h2>
+    <p>Пенальти Акинфеева, бронза-2008, Кубок УЕФА. Моменты, после которых весь двор кричал в окна.</p>
+    <div class="kick" style="margin-top:22px">6 предметов · от 200 000 ₽</div>
+  </div>
+  <div class="ph-cap">на фото: «Зенит» с Кубком УЕФА, 2008</div>
+</section>
+
+<!-- w14 CROSS Россия -->
+<section class="slide cross" id="w14">
+  <div class="q"><img src="img_wc/wc_akinfeev.jpg">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/179152164541-igor-akinfeev/">Акинфеев — «Комсомольская правда» от 2 июля 2018</a></div>
+      <div class="pl-type">Утро после ТОЙ САМОЙ ночи с Испанией — с автографом героя</div>
+      <div class="pl-price">250 000 ₽</div><div class="pl-cert">сертификат подлинности · в раме</div></div></div>
+  <div class="q fitd"><img src="img_wc/wc_dzagoev.jpg">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/805605735492-alan-dzagoev-i-aleksandr-golovin/">Дзагоев · Головин — Кубок мира ФИФА 2018</a></div>
+      <div class="pl-type">Золотой трофей домашнего чемпионата с двумя автографами</div>
+      <div class="pl-price">250 000 ₽</div><div class="pl-cert">сертификаты подлинности</div></div></div>
+  <div class="q"><img src="img_wc/wc_ignashevich.jpg">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/631009359871-sergey-ignashevich/">Игнашевич — личная игровая футболка ЦСКА</a></div>
+      <div class="pl-type">Вещь с поля от рекордсмена сборной</div>
+      <div class="pl-price">250 000 ₽</div><div class="pl-cert">сертификат подлинности</div></div></div>
+  <div class="q fitd"><img src="img_wc/wc_semak.jpg">
+    <div class="plate"><div class="pl-name"><a href="https://stargift.ru/product/127777900021-sergey-semak/">Семак — игровой мяч матча «Зенит» — «Уфа»</a></div>
+      <div class="pl-type">07.03.2022 · мяч из игры, подпись чемпионского тренера</div>
+      <div class="pl-price">400 000 ₽</div><div class="pl-cert">сертификат подлинности</div></div></div>
+</section>
+
+<!-- w15 INDEX -->
+<section class="slide dark" id="w15" style="grid-template-rows:auto 1fr auto">
+  <div class="wrap" style="padding:26px 46px 4px">
+    <div class="kick d" style="margin-bottom:8px">Полный перечень · всё в наличии</div>
+    <h2 class="serif" style="font-weight:300;font-size:32px;color:var(--ivory)">Каталог «Чемпионат мира — у вас дома»</h2>
+  </div>
+  <div class="wrap" style="padding:4px 46px;display:grid;grid-template-columns:1fr 1fr;column-gap:50px;align-content:center">
+    <div class="idx">
+      <div class="ihd">I · Звёзды сегодня</div>
+      <div class="ir"><span class="in">Месси × Роналду — две футболки</span><span class="it">Аргентина + Португалия, в раме</span><span class="ip">1 300 000</span></div>
+      <div class="ir"><span class="in">Месси × Роналду — фото, два автографа</span><span class="it">в раме</span><span class="ip">750 000</span></div>
+      <div class="ir"><span class="in">Месси — именное подписание</span><span class="it">пожелание вашему имени · видеопруф</span><span class="ip">1 500 000</span></div>
+      <div class="ir"><span class="in">Месси — футболка «Барселоны»</span><span class="it">в раме</span><span class="ip">810 000</span></div>
+      <div class="ir"><span class="in">Месси — бутса с автографом</span><span class="it"></span><span class="ip">600 000</span></div>
+      <div class="ir"><span class="in">Месси — мяч с автографом</span><span class="it"></span><span class="ip">550 000</span></div>
+      <div class="ir"><span class="in">Мяч сборной Аргентины</span><span class="it">Месси · Агуэро · Ди Мария и др.</span><span class="ip">1 750 000</span></div>
+      <div class="ir"><span class="in">Роналду — футболка Португалии</span><span class="it">в раме</span><span class="ip">520 000</span></div>
+      <div class="ir"><span class="in">Роналду — мяч с автографом</span><span class="it"></span><span class="ip">520 000</span></div>
+      <div class="ir"><span class="in">Мбаппе — футболка Франции</span><span class="it">в раме</span><span class="ip">340 000</span></div>
+      <div class="ir"><span class="in">Нойер — игровой свитер сборной Германии</span><span class="it">game worn · 2018</span><span class="ip">860 000</span></div>
+      <div class="ir"><span class="in">Гризманн — фото с автографом</span><span class="it">в раме</span><span class="ip">150 000</span></div>
+    </div>
+    <div class="idx">
+      <div class="ihd">II · Легенды</div>
+      <div class="ir"><span class="in">Пеле — ретро-футболка Бразилии</span><span class="it"></span><span class="ip">510 000</span></div>
+      <div class="ir"><span class="in">Бекхэм — фото с автографом</span><span class="it">в раме</span><span class="ip">350 000</span></div>
+      <div class="ir"><span class="in">Роберто Карлос — футболка Бразилии</span><span class="it"></span><span class="ip">220 000</span></div>
+      <div class="ir"><span class="in">Роналдо · Смертин · Кержаков — мяч</span><span class="it"></span><span class="ip">290 000</span></div>
+      <div class="ihd" style="margin-top:14px">III · Советский футбол</div>
+      <div class="ir"><span class="in">Яшин и сборная СССР — программка</span><span class="it">гранд собрания</span><span class="ip">2 000 000</span></div>
+      <div class="ir"><span class="in">Старостин — открытка с дарственной</span><span class="it"></span><span class="ip">1 500 000</span></div>
+      <div class="ir"><span class="in">Бесков · Яшин и др. — блокнот</span><span class="it"></span><span class="ip">1 500 000</span></div>
+      <div class="ir"><span class="in">Нетто и олимпийцы — автографы</span><span class="it">Мельбурн-1956</span><span class="ip">600 000</span></div>
+      <div class="ir"><span class="in">Черенков — книга «Мастер и мяч»</span><span class="it"></span><span class="ip">130 000</span></div>
+      <div class="ihd" style="margin-top:14px">IV · Российский футбол</div>
+      <div class="ir"><span class="in">Акинфеев — газета от 2.07.2018</span><span class="it">в раме</span><span class="ip">250 000</span></div>
+      <div class="ir"><span class="in">Дзагоев · Головин — Кубок мира 2018</span><span class="it"></span><span class="ip">250 000</span></div>
+      <div class="ir"><span class="in">Игнашевич — игровая футболка</span><span class="it"></span><span class="ip">250 000</span></div>
+      <div class="ir"><span class="in">Семак — игровой мяч «Зенита»</span><span class="it"></span><span class="ip">400 000</span></div>
+      <div class="ir"><span class="in">Мостовой — футболка с именным обращением</span><span class="it"></span><span class="ip">250 000</span></div>
+      <div class="ir"><span class="in">«Зенит» — чемпионская футболка команды</span><span class="it">Семак · Дзюба и др.</span><span class="ip">200 000</span></div>
+    </div>
+  </div>
+  <div class="wrap" style="padding:6px 46px 22px;border-top:1px solid rgba(169,133,69,.3);display:flex;justify-content:space-between;align-items:baseline">
+    <span class="kick d" style="letter-spacing:.2em">27 предметов · все в наличии · сертификаты подлинности</span>
+    <span class="serif" style="font-weight:500;font-size:30px;color:var(--gold2)">18 350 000 ₽</span>
+  </div>
+</section>
+
+<!-- w16 CLOSE -->
+<section class="slide dark" id="w16" style="grid-template-rows:1fr auto">
+  <div class="wrap" style="padding:60px 50px 0;display:flex;flex-direction:column;justify-content:center">
+    <div class="kick d" style="margin-bottom:24px">Чемпионат мира · 2026</div>
+    <h2 class="serif" style="font-weight:300;font-size:58px;line-height:1.05;color:var(--ivory)">С чемпионата привозят<br>магнитики. Или — историю.</h2>
+    <p style="font:300 18px/1.75 'Inter';color:#c3bdb1;margin-top:24px;max-width:52ch">
+      Каждый предмет каталога — в наличии в Москве, с международным сертификатом подлинности.
+      Оформление в раму, доставка и передача — под ключ. Именное подписание у действующих звёзд — под заказ.</p>
+    <div style="display:flex;gap:60px;margin-top:40px;flex-wrap:wrap">
+      <div><div class="kick d" style="margin-bottom:12px">Детали и резерв</div>
+        <p style="font:300 16.5px/1.85 'Inter';color:#cdc7bb">+7 495 233-51-11<br>t.me/stargift_collection</p></div>
+      <div><div class="kick d" style="margin-bottom:12px">Подлинность</div>
+        <p style="font:300 16.5px/1.85 'Inter';color:#cdc7bb">международные сертификаты<br>фото- и видеопруфы подписаний</p></div>
+    </div>
+  </div>
+  <div class="wrap" style="padding:18px 50px 30px;border-top:1px solid rgba(169,133,69,.3)">
+    <span class="kick" style="letter-spacing:.2em;color:var(--gold2)">Подарок для того, у кого есть всё — кроме этого</span>
+  </div>
+</section>
+
+</div>
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^w/,'');const id=n?('w'+n.padStart(2,'0')):'w01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+show();addEventListener('hashchange',show);
+addEventListener('keydown',e=>{const cur=+(location.hash.replace(/[^0-9]/g,'')||1);
+if(e.key==='ArrowRight'||e.key===' ')location.hash='w'+Math.min(16,cur+1);
+if(e.key==='ArrowLeft')location.hash='w'+Math.max(1,cur-1);});
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
