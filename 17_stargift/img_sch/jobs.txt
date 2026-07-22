@@ -1,0 +1,11 @@
+framed_players fd370392-35f1-4629-aa77-1b1831b0120f
+framed_arnold dbced1f2-2f6c-4c18-9359-bc783731a721
+framed_masters24 a366c35e-0ec6-4cec-a068-8b042a6f489f
+white_players 8d8b80f5-c0a0-494c-b2d0-3f4324fdc2cb
+white_arnold cee6edf8-bf9a-4c3b-add7-36e54b41db35
+white_masters24 55a72bcc-b433-40e4-aeae-4198c4137bc3
+ball 188fd031-59ed-4ccd-8f4a-09f6f1de505c
+cap f556b490-a28f-4b58-8ee8-71f5e86b4ab7
+duo 8f668686-cb1f-4263-bada-0370082e8b03
+badge 9f748ad1-ad76-4e99-8733-9504840ca275
+scorecard 3bec2382-356b-4358-99f1-17754c8bc228
