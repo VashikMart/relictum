@@ -3,6 +3,7 @@
    Здесь — история, эпоха, медиа. Открывается: exhibit.html?id=R–XXXX */
 window.RELICTUM_PROMO = {
   "R–0607": {
+    spin: "https://d8j0ntlcm91z4.cloudfront.net/user_2yNZpqvl4ZCmsV4r2wgVHlwv5Lt/hf_20260708_110731_7d44965c-a6f8-46c0-9be7-4891c483e1e0.mp4",
     heroVideo: "hero_museum_tusks.mp4",
     hook: "Две дуги слоновой кости, которые несли на себе снег последней ледниковой эпохи.",
     heroKicker: "Мамонтовая фауна · Якутия",
@@ -16,6 +17,7 @@ window.RELICTUM_PROMO = {
     gallery: ["g_tusks_1.jpg", "g_tusks_2.jpg"]
   },
   "R–0608": {
+    spin: "https://d8j0ntlcm91z4.cloudfront.net/user_2yNZpqvl4ZCmsV4r2wgVHlwv5Lt/hf_20260708_110733_1810c96e-a3cd-4db0-88ff-ac2ee01d5f4d.mp4",
     heroVideo: "hero_museum_rhino.mp4",
     hook: "Череп зверя, который смотрел на мир сквозь снежную бурю ледникового периода.",
     heroKicker: "Мамонтовая фауна · Якутия",
@@ -29,6 +31,7 @@ window.RELICTUM_PROMO = {
     gallery: ["g_rhino_1.jpg", "g_rhino_2.jpg"]
   },
   "R–0609": {
+    spin: "https://d8j0ntlcm91z4.cloudfront.net/user_2yNZpqvl4ZCmsV4r2wgVHlwv5Lt/hf_20260708_110737_6e976e81-05a2-42e2-9447-5b24396944aa.mp4",
     heroVideo: "hero_museum_dino.mp4",
     hook: "Целый динозавр, застывший в прыжке ста двадцати миллионов лет.",
     heroKicker: "Динозавры · Ляонин, Китай",
@@ -42,6 +45,7 @@ window.RELICTUM_PROMO = {
     gallery: ["g_jeholo_1.jpg", "g_jeholo_2.jpg"]
   },
   "R–0208": {
+    spin: "https://d8j0ntlcm91z4.cloudfront.net/user_2yNZpqvl4ZCmsV4r2wgVHlwv5Lt/hf_20260708_110739_bf4ec5ef-e31f-4b5b-a45b-047286201809.mp4",
     heroVideo: "hero_museum_sabertooth.mp4",
     hook: "Клинки, которыми природа вооружила хищника за миллионы лет до человека.",
     heroKicker: "Саблезубые кошки · Ганьсу, Китай",
@@ -55,6 +59,7 @@ window.RELICTUM_PROMO = {
     gallery: ["g_sabertooth_1.jpg", "g_sabertooth_2.jpg"]
   },
   "R–0209": {
+    spin: "https://d8j0ntlcm91z4.cloudfront.net/user_2yNZpqvl4ZCmsV4r2wgVHlwv5Lt/hf_20260708_110742_844c6e5a-6240-4edb-a2bf-0c8bdb42f21d.mp4",
     heroVideo: "hero_museum_bothrio.mp4",
     hook: "Существо, которое первым на Земле оделось в костяную броню.",
     heroKicker: "Ископаемые рыбы · девон",
@@ -68,6 +73,7 @@ window.RELICTUM_PROMO = {
     gallery: ["g_bothrio_1.jpg", "g_bothrio_2.jpg"]
   },
   "R–0103": {
+    spin: "https://d8j0ntlcm91z4.cloudfront.net/user_2yNZpqvl4ZCmsV4r2wgVHlwv5Lt/hf_20260708_110744_4c6222e6-d28d-4505-a2c8-979ba0e7bdf7.mp4",
     heroVideo: "hero_museum_dronino.mp4",
     hook: "Железо, которое родилось в ядре чужой планеты и старше самой Земли.",
     heroKicker: "Метеориты · Рязанская область",
@@ -81,6 +87,7 @@ window.RELICTUM_PROMO = {
     gallery: ["g_dronino_1.jpg", "g_dronino_2.jpg"]
   },
   "R–0104": {
+    spin: "https://d8j0ntlcm91z4.cloudfront.net/user_2yNZpqvl4ZCmsV4r2wgVHlwv5Lt/hf_20260708_110748_d01db8eb-65bd-4a30-b0c6-57c4d7c27da2.mp4",
     heroVideo: "hero_museum_meteor.mp4",
     hook: "Космическое железо, поднятое из сибирской земли и поставленное на пьедестал.",
     heroKicker: "Метеориты · Тыва",
@@ -94,6 +101,7 @@ window.RELICTUM_PROMO = {
     gallery: ["g_chinge_1.jpg", "g_chinge_2.jpg"]
   },
   "R–0105": {
+    spin: "https://d8j0ntlcm91z4.cloudfront.net/user_2yNZpqvl4ZCmsV4r2wgVHlwv5Lt/hf_20260708_110751_a1c82980-2ccb-49c0-81e1-76280eea0927.mp4",
     heroVideo: "hero_museum_moon.mp4",
     hook: "Настоящий кусочек Луны, который можно повесить на стену своего дома.",
     heroKicker: "Метеориты · Луна",
