@@ -1,0 +1,516 @@
+<meta charset="utf-8">
+<title>Stargift · Легенды экрана</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noir:#0B0B0C; --noir2:#141414;
+  --gold:#A98545; --gold2:#C9A96A;
+  --ivory:#F5F1E8; --paper:#F7F5F1;
+  --ink:#1A1A1A; --mute:#6b6b6b; --cert:#9a958c;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-serif}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:grid}
+img{display:block}
+
+.serif{font-family:'Cormorant Garamond',serif}
+.kick{font:500 11px/1 'Inter';letter-spacing:.36em;text-transform:uppercase;color:var(--gold)}
+.kick.d{color:var(--gold2)}
+.white{background:#FFFFFF;color:var(--ink)}
+.dark{background:var(--noir);color:var(--ivory)}
+.wrap{padding:40px 60px}
+
+/* ===== single white lot ===== */
+.lot{grid-template-rows:1fr auto}
+.lot-ph{display:flex;align-items:center;justify-content:center;background:#FFFFFF;padding:34px 60px 6px;min-height:0}
+.lot-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.lot-cap{padding:14px 60px 42px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.lot-name{font-family:'Cormorant Garamond';font-weight:500;font-size:32px;line-height:1.1;color:var(--ink);max-width:44ch}
+.lot-text{font:300 17px/1.6 'Inter';color:#4a4a4a;margin-top:12px;max-width:82ch}
+.lot-price{font-family:'Cormorant Garamond';font-weight:500;font-size:30px;color:var(--gold);margin-top:18px}
+.lot-cert{font:400 10px/1 'Inter';letter-spacing:.22em;text-transform:uppercase;color:var(--cert);margin-top:11px}
+
+/* ===== two-photo white lot ===== */
+.duo{display:flex;gap:30px;align-items:center;justify-content:center;width:100%;height:100%}
+.duo .duo-main{max-height:100%;max-width:58%;object-fit:contain}
+.duo .duo-side{max-height:82%;max-width:36%;object-fit:contain;box-shadow:0 18px 40px rgba(0,0,0,.12)}
+
+/* ===== typographic no-photo card ===== */
+.typo{place-content:center;justify-items:center;text-align:center}
+.typo-in{max-width:60ch;padding:0 60px;display:flex;flex-direction:column;align-items:center}
+.typo-name{font-family:'Cormorant Garamond';font-weight:500;font-size:44px;line-height:1.08;color:var(--ink);max-width:26ch}
+.typo-rule{height:1px;width:64px;background:rgba(169,133,69,.5);margin:26px 0}
+.typo-text{font:300 18px/1.7 'Inter';color:#4a4a4a;max-width:52ch}
+.typo-price{font-family:'Cormorant Garamond';font-weight:500;font-size:34px;color:var(--gold);margin-top:26px}
+.typo-cert{font:400 10px/1 'Inter';letter-spacing:.22em;text-transform:uppercase;color:var(--cert);margin-top:12px}
+
+/* ===== two white cards (pair) ===== */
+.pair{grid-template-rows:1fr;align-items:stretch}
+.pair-in{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:44px 84px;align-items:start}
+.pcard{display:flex;flex-direction:column;align-items:center;text-align:center}
+.pcard-ph{width:100%;height:392px;display:flex;align-items:center;justify-content:center;background:#FFFFFF}
+.pcard-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.pcard-name{font-family:'Cormorant Garamond';font-weight:500;font-size:24px;line-height:1.14;color:var(--ink);margin-top:18px;max-width:28ch}
+.pcard-text{font:300 15.5px/1.55 'Inter';color:#4a4a4a;margin-top:11px;max-width:46ch}
+.pcard-price{font-family:'Cormorant Garamond';font-weight:500;font-size:24px;color:var(--gold);margin-top:13px}
+.pcard-cert{font:400 9.5px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:9px}
+
+/* ===== dark premium solo ===== */
+.pp-kick{margin-bottom:18px}
+.pp-name{font-family:'Cormorant Garamond';font-weight:400;font-size:38px;line-height:1.06;color:var(--ivory)}
+.pp-text{font:300 17px/1.7 'Inter';color:#c3bdb1;margin-top:22px;max-width:42ch}
+.pp-rule{height:1px;background:rgba(169,133,69,.35);margin:26px 0}
+.pp-price{font-family:'Cormorant Garamond';font-weight:500;font-size:40px;color:var(--gold2)}
+.pp-cert{font:400 10px/1 'Inter';letter-spacing:.22em;text-transform:uppercase;color:var(--cert);margin-top:14px}
+.pp-stage{position:relative;display:flex;align-items:center;justify-content:center;background:radial-gradient(120% 90% at 45% 45%,#1b1a17 0%,var(--noir) 64%)}
+.pp-stage img{width:auto;height:auto;max-height:600px;max-width:82%;object-fit:contain;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.pp-side{display:flex;flex-direction:column;justify-content:center;padding:0 62px 0 50px}
+
+/* ===== divider ===== */
+.div-in{place-content:center;justify-items:center;text-align:center}
+.div-huge{font-family:'Cormorant Garamond';font-weight:300;line-height:.96;color:var(--ivory)}
+.div-rule{height:1px;width:120px;background:rgba(169,133,69,.55);margin:38px auto}
+.div-sub{font:300 19px/1.65 'Inter';color:#c3bdb1;max-width:54ch;margin:0 auto}
+
+/* ===== cover / intro frames ===== */
+.frame{background:#0e0e0f;border:1px solid rgba(169,133,69,.32);padding:12px;display:flex;align-items:center;justify-content:center;min-height:0;overflow:hidden}
+.frame img{max-width:100%;max-height:100%;object-fit:contain}
+</style>
+
+<div class="deck">
+
+<!-- ============ s01 COVER ============ -->
+<section class="slide dark on" id="s01" style="grid-template-columns:1.04fr 1fr">
+  <div class="wrap" style="display:flex;flex-direction:column;justify-content:space-between;padding:64px 58px">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:150px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97">
+    <div>
+      <div class="kick d" style="margin-bottom:24px">STARGIFT · ЧАСТНАЯ ПОДБОРКА</div>
+      <h1 class="serif" style="font-weight:300;font-size:92px;line-height:.98;color:var(--ivory)">Легенды<br>экрана</h1>
+      <p style="font:300 18px/1.65 'Inter';color:#b8b2a6;margin-top:30px;max-width:38ch">28&nbsp;предметов из&nbsp;культовых франшиз&nbsp;— на&nbsp;выбор</p>
+    </div>
+    <div class="kick" style="letter-spacing:.24em">28&nbsp;предметов · опции на&nbsp;выбор · июль 2026</div>
+  </div>
+  <div style="position:relative;background:radial-gradient(130% 100% at 62% 40%,#1b1a17 0%,var(--noir) 70%);display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:24px;padding:52px 56px 52px 20px">
+    <div class="frame"><img src="img_cine/cine_rdj_helmet.jpg" alt="Шлем Железного человека"></div>
+    <div class="frame"><img src="img_cine/cine_nicholson_joker.jpg" alt="Джек Николсон — Джокер"></div>
+    <div class="frame"><img src="img_cine/cine_pirates_depp_hat.jpg" alt="Шляпа Джека Воробья"></div>
+    <div class="frame"><img src="img_cine/cine_hayden_lightsaber.jpg" alt="Световой меч"></div>
+  </div>
+</section>
+
+<!-- ============ s02 INTRO ============ -->
+<section class="slide dark" id="s02" style="grid-template-columns:1fr .82fr">
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:0 54px 0 60px">
+    <div class="kick d" style="margin-bottom:22px">О подборке</div>
+    <h2 class="serif" style="font-weight:300;font-size:50px;line-height:1.02;color:var(--ivory)">Легенды экрана</h2>
+    <p style="font:300 16.5px/1.7 'Inter';color:#c3bdb1;margin-top:26px;max-width:52ch">Подборка собрана вокруг главных франшиз современного кино&nbsp;— «Пиратов Карибского моря», вселенной Marvel, «Звёздных войн» и&nbsp;историй о&nbsp;Бэтмене и&nbsp;Джокере. В&nbsp;неё вошли автографы актёров и&nbsp;создателей, экранный реквизит и&nbsp;производственные артефакты со&nbsp;съёмочных площадок. Каждый предмет представлен отдельным лотом, на&nbsp;выбор.</p>
+  </div>
+  <div style="position:relative;display:flex;flex-direction:column;justify-content:center;gap:26px;padding:48px 56px;background:radial-gradient(120% 90% at 50% 45%,#1b1a17 0%,var(--noir) 66%)">
+    <div class="frame" style="height:300px"><img src="img_cine/cine_efx_stormtrooper_9.jpg" alt="Шлем штурмовика EFX с автографами"></div>
+    <div class="frame" style="height:300px"><img src="img_cine/cine_empire_17.jpg" alt="Постер «Империя наносит ответный удар» с автографами"></div>
+  </div>
+</section>
+
+<!-- ============================================================ PIRATES ============================================================ -->
+<!-- ============ s03 DIVIDER · pirates ============ -->
+<section class="slide dark div-in" id="s03">
+  <!-- MOVIE-STILL SLOT: pirates -->
+  <div style="padding:0 60px">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:30px">Франшиза&nbsp;· I</div>
+    <h2 class="div-huge" style="font-size:96px">Пираты<br>Карибского моря</h2>
+    <div class="div-rule"></div>
+    <p class="div-sub">Автографы каста и&nbsp;экранный реквизит легендарной пиратской саги.</p>
+  </div>
+</section>
+
+<!-- ============ s04 PAIR · Depp script + Bloom script ============ -->
+<section class="slide white pair" id="s04">
+  <div class="pair-in">
+    <div class="pcard">
+      <div class="pcard-ph"><img src="img_cine/cine_pirates_depp_script.jpg" alt="Джонни Депп — сценарий «Пиратов Карибского моря»"></div>
+      <div class="pcard-name">Джонни Депп&nbsp;— сценарий «Пиратов Карибского моря» с&nbsp;автографом</div>
+      <div class="pcard-text">Полный сценарий саги, автограф Джонни Деппа в&nbsp;образе Джека Воробья. Оформлен в&nbsp;раму с&nbsp;открывающимся механизмом.</div>
+      <div class="pcard-price">260&#8239;000&nbsp;₽</div>
+      <div class="pcard-cert">Beckett (BAS)</div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-ph"><img src="img_cine/cine_pirates_bloom_script.jpg" alt="Орландо Блум — сценарий «Пиратов Карибского моря»"></div>
+      <div class="pcard-name">Орландо Блум&nbsp;— сценарий «Пиратов Карибского моря» с&nbsp;автографом</div>
+      <div class="pcard-text">Полный сценарий фильма с&nbsp;автографом Орландо Блума, сыгравшего Уилла Тёрнера. Рама с&nbsp;открывающимся механизмом.</div>
+      <div class="pcard-price">300&#8239;000&nbsp;₽</div>
+      <div class="pcard-cert">Beckett (BAS)</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ s05 LOT · Depp hat ============ -->
+<section class="slide white lot" id="s05">
+  <div class="lot-ph"><img src="img_cine/cine_pirates_depp_hat.jpg" alt="Джонни Депп — шляпа Джека Воробья с автографом"></div>
+  <div class="lot-cap">
+    <div class="lot-name">Джонни Депп&nbsp;— шляпа Джека Воробья с&nbsp;автографом</div>
+    <div class="lot-text">Пиратская треуголка из&nbsp;образа Джека Воробья с&nbsp;автографом Джонни Деппа.</div>
+    <div class="lot-price">500&#8239;000&nbsp;₽</div>
+    <div class="lot-cert">Beckett (BAS)</div>
+  </div>
+</section>
+
+<!-- ============ s06 LOT · armourer script (2 photos) ============ -->
+<section class="slide white lot" id="s06">
+  <div class="lot-ph"><div class="duo">
+    <img class="duo-main" src="img_cine/cine_pirates4_armourer.jpg" alt="Производственный сценарий «Пиратов Карибского моря 4», основной вид">
+    <img class="duo-side" src="img_cine/cine_pirates4_armourer_2.jpg" alt="Производственный сценарий «Пиратов Карибского моря 4», второй кадр">
+  </div></div>
+  <div class="lot-cap">
+    <div class="lot-name">«Пираты Карибского моря 4»&nbsp;— производственный сценарий со&nbsp;съёмок</div>
+    <div class="lot-text">Рабочий сценарий оружейника картины со&nbsp;съёмок «На&nbsp;странных берегах»: датировка, пометки, именной водяной знак.</div>
+    <div class="lot-price">400&#8239;000&nbsp;₽</div>
+    <div class="lot-cert">Propstore · полный провенанс</div>
+  </div>
+</section>
+
+<!-- ============ s07 LOT · treasurer props ============ -->
+<section class="slide white lot" id="s07">
+  <div class="lot-ph"><img src="img_cine/cine_pirates_treasurer_props.jpg" alt="«Пираты Карибского моря» — экранный реквизит: набор казначея"></div>
+  <div class="lot-cap">
+    <div class="lot-name">«Пираты Карибского моря»&nbsp;— экранный реквизит: набор казначея</div>
+    <div class="lot-text">Экранный набор аксессуаров судового казначея, использовался непосредственно в&nbsp;съёмках. Такие вещи существуют в&nbsp;единственном экземпляре.</div>
+    <div class="lot-price">600&#8239;000&nbsp;₽</div>
+    <div class="lot-cert">магазинный COA</div>
+  </div>
+</section>
+
+<!-- ============================================================ IRON MAN ============================================================ -->
+<!-- ============ s08 DIVIDER · ironman ============ -->
+<section class="slide dark div-in" id="s08">
+  <!-- MOVIE-STILL SLOT: ironman -->
+  <div style="padding:0 60px">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:30px">Франшиза&nbsp;· II</div>
+    <h2 class="div-huge" style="font-size:112px">Железный<br>человек</h2>
+    <div class="div-rule"></div>
+    <p class="div-sub">Автографы фильма, с&nbsp;которого началась кинематографическая вселенная Marvel.</p>
+  </div>
+</section>
+
+<!-- ============ s09 PAIR · Bettany + RDJ script ============ -->
+<section class="slide white pair" id="s09">
+  <div class="pair-in">
+    <div class="pcard">
+      <div class="pcard-ph"><img src="img_cine/cine_bettany_script.jpg" alt="Пол Беттани — сценарий «Железного человека»"></div>
+      <div class="pcard-name">Пол Беттани&nbsp;— полный сценарий «Железного человека» с&nbsp;автографом</div>
+      <div class="pcard-text">Полный сценарий фильма 2008&nbsp;года, открывшего вселенную Marvel, автограф Пола Беттани&nbsp;— голоса Дж.А.Р.В.И.С., позже сыгравшего Вижена.</div>
+      <div class="pcard-price">230&#8239;000&nbsp;₽</div>
+      <div class="pcard-cert">PSA/DNA</div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-ph"><img src="img_cine/cine_rdj_script.jpg" alt="Роберт Дауни-мл. — сценарий «Железного человека»"></div>
+      <div class="pcard-name">Роберт Дауни-мл.&nbsp;— полный сценарий «Железного человека» с&nbsp;автографом</div>
+      <div class="pcard-text">Полный сценарий с&nbsp;автографом Роберта Дауни-мл. в&nbsp;роли Тони Старка. Сценарии с&nbsp;его подписью единичны. Рама с&nbsp;открывающимся механизмом.</div>
+      <div class="pcard-price">340&#8239;000&nbsp;₽</div>
+      <div class="pcard-cert">сертификация ACOA</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ s10 PREMIUM · RDJ helmet ============ -->
+<section class="slide dark" id="s10" style="grid-template-columns:1fr 1.05fr">
+  <div class="pp-stage"><img src="img_cine/cine_rdj_helmet.jpg" alt="Роберт Дауни-мл. — шлем Железного человека с автографом"></div>
+  <div class="pp-side">
+    <div class="kick d pp-kick">Премиум · знаковый предмет Marvel</div>
+    <div class="pp-name">Роберт Дауни-мл.&nbsp;— шлем Железного человека с&nbsp;автографом</div>
+    <div class="pp-text">Красно-золотой шлем Тони Старка с&nbsp;автографом Роберта Дауни-мл.&nbsp;— знаковый предмет вселенной Marvel.</div>
+    <div class="pp-rule"></div>
+    <div class="pp-price">850&#8239;000&nbsp;₽</div>
+    <div class="pp-cert">Beckett (BAS)</div>
+  </div>
+</section>
+
+<!-- ============ s11 PREMIUM · Avengers helmet 5 sigs ============ -->
+<section class="slide dark" id="s11" style="grid-template-columns:1fr 1.05fr">
+  <div class="pp-stage"><img src="img_cine/cine_avengers_helmet_5.jpg" alt="«Мстители» — шлем Железного человека с 5 автографами"></div>
+  <div class="pp-side">
+    <div class="kick d pp-kick">Премиум · пять подписей вселенной Marvel</div>
+    <div class="pp-name">«Мстители»&nbsp;— шлем Железного человека с&nbsp;5&nbsp;автографами</div>
+    <div class="pp-text">Шлем с&nbsp;пятью подписями вселенной Marvel: Стэн Ли, Сэмюэл Л.&nbsp;Джексон (Ник Фьюри), Пол Радд (Человек-муравей) и&nbsp;другие. Автографов Стэна Ли больше не&nbsp;будет.</div>
+    <div class="pp-rule"></div>
+    <div class="pp-price">1&#8239;000&#8239;000&nbsp;₽</div>
+    <div class="pp-cert">Beckett (BAS)</div>
+  </div>
+</section>
+
+<!-- ============================================================ STAR WARS ============================================================ -->
+<!-- ============ s12 DIVIDER · starwars ============ -->
+<section class="slide dark div-in" id="s12">
+  <!-- MOVIE-STILL SLOT: starwars -->
+  <div style="padding:0 60px">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:30px">Франшиза&nbsp;· III</div>
+    <h2 class="div-huge" style="font-size:120px">Звёздные<br>войны</h2>
+    <div class="div-rule"></div>
+    <p class="div-sub">Автографы, реквизит и&nbsp;производственные материалы саги «Звёздные войны».</p>
+  </div>
+</section>
+
+<!-- ============ s13 PAIR · Serkis + Edgerton script ============ -->
+<section class="slide white pair" id="s13">
+  <div class="pair-in">
+    <div class="pcard">
+      <div class="pcard-ph"><img src="img_cine/cine_serkis_script.jpg" alt="Энди Сёркис — сценарий «Последние джедаи»"></div>
+      <div class="pcard-name">Энди Сёркис&nbsp;— полный сценарий «Звёздные войны: Последние джедаи»</div>
+      <div class="pcard-text">Полный сценарий эпизода&nbsp;VIII с&nbsp;автографом Энди Сёркиса, сыгравшего Сноука,&nbsp;— мастера технологии захвата движения (Голлум, Кинг-Конг, Цезарь).</div>
+      <div class="pcard-price">210&#8239;000&nbsp;₽</div>
+      <div class="pcard-cert">Beckett (BAS)</div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-ph"><img src="img_cine/cine_edgerton_script.jpg" alt="Джоэл Эджертон — сценарий «Месть ситхов»"></div>
+      <div class="pcard-name">Джоэл Эджертон&nbsp;— полный сценарий «Звёздные войны: Месть ситхов»</div>
+      <div class="pcard-text">Полный сценарий эпизода&nbsp;III с&nbsp;автографом Джоэла Эджертона, сыгравшего Оуэна Ларса, приёмного дядю Люка Скайуокера.</div>
+      <div class="pcard-price">210&#8239;000&nbsp;₽</div>
+      <div class="pcard-cert">Beckett (BAS)</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ s14 LOT · Hayden lightsaber ============ -->
+<section class="slide white lot" id="s14">
+  <div class="lot-ph"><img src="img_cine/cine_hayden_lightsaber.jpg" alt="Хейден Кристенсен — световой меч с автографом"></div>
+  <div class="lot-cap">
+    <div class="lot-name">Хейден Кристенсен&nbsp;— световой меч с&nbsp;автографом</div>
+    <div class="lot-text">Полноразмерный световой меч с&nbsp;автографом Хейдена Кристенсена&nbsp;— Энакина Скайуокера. Самый узнаваемый предмет вселенной.</div>
+    <div class="lot-price">500&#8239;000&nbsp;₽</div>
+    <div class="lot-cert">JSA</div>
+  </div>
+</section>
+
+<!-- ============ s15 TYPO · Boyega stormtrooper (no photo) ============ -->
+<section class="slide white typo" id="s15">
+  <div class="typo-in">
+    <div class="kick" style="margin-bottom:22px;color:var(--gold)">Star Wars · Первый орден</div>
+    <div class="typo-name">Джон Бойега&nbsp;— шлем штурмовика Первого ордена с&nbsp;автографом</div>
+    <div class="typo-rule"></div>
+    <div class="typo-text">Шлем штурмовика Первого ордена Black Series с&nbsp;автографом Джона Бойеги, сыгравшего Финна.</div>
+    <div class="typo-price">400&#8239;000&nbsp;₽</div>
+    <div class="typo-cert">международная сертификация</div>
+  </div>
+</section>
+
+<!-- ============ s16 LOT · SW storyboard 1977 (2 photos) ============ -->
+<section class="slide white lot" id="s16">
+  <div class="lot-ph"><div class="duo">
+    <img class="duo-main" src="img_cine/cine_sw_storyboard_1977.jpg" alt="Производственная раскадровка «Новой надежды» (1977), основной вид">
+    <img class="duo-side" src="img_cine/cine_sw_storyboard_1977_2.jpg" alt="Производственная раскадровка «Новой надежды» (1977), второй кадр">
+  </div></div>
+  <div class="lot-cap">
+    <div class="lot-name">«Звёздные войны: Новая надежда» (1977)&nbsp;— производственная раскадровка</div>
+    <div class="lot-text">Раскадровка оригинального фильма, сцена «Лазерные лучи в&nbsp;небе», с&nbsp;подписью Бена Бёртта&nbsp;— звукодизайнера саги, автора звучания световых мечей и&nbsp;R2-D2. Музейная редкость.</div>
+    <div class="lot-price">400&#8239;000&nbsp;₽</div>
+    <div class="lot-cert">Propstore · полный провенанс</div>
+  </div>
+</section>
+
+<!-- ============ s17 PREMIUM · EFX stormtrooper 9 sigs ============ -->
+<section class="slide dark" id="s17" style="grid-template-columns:1fr 1.05fr">
+  <div class="pp-stage"><img src="img_cine/cine_efx_stormtrooper_9.jpg" alt="Шлем штурмовика EFX — 9 автографов легенд «Звёздных войн»"></div>
+  <div class="pp-side">
+    <div class="kick d pp-kick">Премиум · девять подписей легенд</div>
+    <div class="pp-name">Шлем штурмовика EFX&nbsp;— 9&nbsp;автографов легенд «Звёздных войн»</div>
+    <div class="pp-text">Шлем EFX с&nbsp;девятью подписями: Форд, Хэмилл, Фишер, Билли Ди&nbsp;Уильямс, МакДиармид, Буллок, Мейхью, Дэниелс, Проуз. Многих уже нет&nbsp;— состав неповторим.</div>
+    <div class="pp-rule"></div>
+    <div class="pp-price">1&#8239;450&#8239;000&nbsp;₽</div>
+    <div class="pp-cert">JSA</div>
+  </div>
+</section>
+
+<!-- ============ s18 PREMIUM · Empire 17 sigs ============ -->
+<section class="slide dark" id="s18" style="grid-template-columns:1fr 1.06fr">
+  <div class="pp-stage"><img src="img_cine/cine_empire_17.jpg" alt="«Империя наносит ответный удар» — 17 автографов каста и создателей"></div>
+  <div class="pp-side">
+    <div class="kick d pp-kick">Высшая категория · неповторимый состав</div>
+    <div class="pp-name">«Империя наносит ответный удар»&nbsp;— 17&nbsp;автографов каста и&nbsp;создателей</div>
+    <div class="pp-text">17&nbsp;подписей: Форд, Фишер, Хэмилл, Джордж Лукас, композитор Джон Уильямс, Проуз, Бейкер, Дэниелс, Фрэнк Оз и&nbsp;другие. Собрать такой состав сегодня невозможно.</div>
+    <div class="pp-rule"></div>
+    <div class="pp-price">8&#8239;900&#8239;000&nbsp;₽</div>
+    <div class="pp-cert">Beckett (LOA)</div>
+  </div>
+</section>
+
+<!-- ============ s19 PREMIUM · SW poster ============ -->
+<section class="slide dark" id="s19" style="grid-template-columns:1fr 1.05fr">
+  <div class="pp-stage"><img src="img_cine/cine_sw_poster.jpg" alt="«Звёздные войны» — постер 69×102 см с автографами каста"></div>
+  <div class="pp-side">
+    <div class="kick d pp-kick">Высшая категория · оригинальный киноплакат</div>
+    <div class="pp-name">«Звёздные войны»&nbsp;— постер 69×102&nbsp;см с&nbsp;автографами каста</div>
+    <div class="pp-text">Оригинальный киноплакат 69×102&nbsp;см с&nbsp;автографами каста во&nbsp;главе с&nbsp;Харрисоном Фордом и&nbsp;Марком Хэмиллом.</div>
+    <div class="pp-rule"></div>
+    <div class="pp-price">4&#8239;400&#8239;000&nbsp;₽</div>
+    <div class="pp-cert">Beckett (LOA)</div>
+  </div>
+</section>
+
+<!-- ============================================================ DC ============================================================ -->
+<!-- ============ s20 DIVIDER · dc ============ -->
+<section class="slide dark div-in" id="s20">
+  <!-- MOVIE-STILL SLOT: dc -->
+  <div style="padding:0 60px">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:30px">Франшиза&nbsp;· IV</div>
+    <h2 class="div-huge" style="font-size:104px">Бэтмен<br>и&nbsp;Джокер</h2>
+    <div class="div-rule"></div>
+    <p class="div-sub">Сценарии трилогии Нолана и&nbsp;экспонаты, связанные с&nbsp;Бэтменом и&nbsp;Джокером.</p>
+  </div>
+</section>
+
+<!-- ============ s21 PAIR · Bale BB script 1 + 2 ============ -->
+<section class="slide white pair" id="s21">
+  <div class="pair-in">
+    <div class="pcard">
+      <div class="pcard-ph"><img src="img_cine/cine_bale_bb_script1.jpg" alt="Кристиан Бейл — сценарий «Бэтмен: Начало»"></div>
+      <div class="pcard-name">Кристиан Бейл&nbsp;— сценарий «Бэтмен: Начало» с&nbsp;автографом</div>
+      <div class="pcard-text">Полный сценарий первого фильма трилогии Кристофера Нолана с&nbsp;автографом Кристиана Бейла. Рама с&nbsp;открывающимся механизмом.</div>
+      <div class="pcard-price">330&#8239;000&nbsp;₽</div>
+      <div class="pcard-cert">Beckett (BAS)</div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-ph"><img src="img_cine/cine_bale_bb_script2.jpg" alt="Кристиан Бейл — сценарий «Бэтмен: Начало», вариант 2"></div>
+      <div class="pcard-name">Кристиан Бейл&nbsp;— сценарий «Бэтмен: Начало» с&nbsp;автографом (вариант&nbsp;2)</div>
+      <div class="pcard-text">Второй экземпляр сценария с&nbsp;иным оформлением обложки, автограф Кристиана Бейла.</div>
+      <div class="pcard-price">330&#8239;000&nbsp;₽</div>
+      <div class="pcard-cert">Beckett (BAS)</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ s22 LOT · Bale TDK script ============ -->
+<section class="slide white lot" id="s22">
+  <div class="lot-ph"><img src="img_cine/cine_bale_tdk_script.jpg" alt="Кристиан Бейл — сценарий «Тёмный рыцарь» с автографом"></div>
+  <div class="lot-cap">
+    <div class="lot-name">Кристиан Бейл&nbsp;— сценарий «Тёмный рыцарь» с&nbsp;автографом</div>
+    <div class="lot-text">Полный сценарий одной из&nbsp;значительных картин XXI&nbsp;века с&nbsp;автографом Кристиана Бейла. Рама с&nbsp;открывающимся механизмом.</div>
+    <div class="lot-price">350&#8239;000&nbsp;₽</div>
+    <div class="lot-cert">Beckett (BAS)</div>
+  </div>
+</section>
+
+<!-- ============ s23 PAIR · Joker photos (Phoenix + Nicholson) ============ -->
+<section class="slide white pair" id="s23">
+  <div class="pair-in">
+    <div class="pcard">
+      <div class="pcard-ph"><img src="img_cine/cine_joker_phoenix_photo.jpg" alt="Хоакин Феникс и Тодд Филлипс — фото «Джокер»"></div>
+      <div class="pcard-name">Хоакин Феникс и&nbsp;Тодд Филлипс&nbsp;— фото «Джокер» с&nbsp;двумя автографами</div>
+      <div class="pcard-text">Фото 20×25&nbsp;см со&nbsp;съёмок «Джокера» (2019) с&nbsp;автографами Хоакина Феникса, получившего за&nbsp;роль «Оскар», и&nbsp;режиссёра Тодда Филлипса.</div>
+      <div class="pcard-price">440&#8239;000&nbsp;₽</div>
+      <div class="pcard-cert">PSA/DNA</div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-ph"><img src="img_cine/cine_nicholson_joker.jpg" alt="Джек Николсон — Джокер, фото с автографом"></div>
+      <div class="pcard-name">Джек Николсон&nbsp;— Джокер, фото 28×36&nbsp;см с&nbsp;автографом</div>
+      <div class="pcard-text">Джек Николсон в&nbsp;роли Джокера у&nbsp;Тима Бёртона (1989), фото 28×36&nbsp;см с&nbsp;автографом. Николсон подписывает крайне редко.</div>
+      <div class="pcard-price">700&#8239;000&nbsp;₽</div>
+      <div class="pcard-cert">PSA/DNA</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ s24 PREMIUM · Ledger Joker ============ -->
+<section class="slide dark" id="s24" style="grid-template-columns:1fr 1.05fr">
+  <div class="pp-stage"><img src="img_cine/cine_ledger_joker.jpg" alt="Хит Леджер — Джокер, фото с автографом"></div>
+  <div class="pp-side">
+    <div class="kick d pp-kick">Премиум · редчайший автограф</div>
+    <div class="pp-name">Хит Леджер&nbsp;— Джокер, фото 20×25&nbsp;см с&nbsp;автографом</div>
+    <div class="pp-text">Хит Леджер в&nbsp;роли Джокера («Тёмный рыцарь»), фото 20×25&nbsp;см с&nbsp;автографом. Автографы Леджера, удостоенного посмертного «Оскара»,&nbsp;— среди редчайших в&nbsp;кино.</div>
+    <div class="pp-rule"></div>
+    <div class="pp-price">950&#8239;000&nbsp;₽</div>
+    <div class="pp-cert">JSA</div>
+  </div>
+</section>
+
+<!-- ============ s25 LOT · Batman bat prop (2 photos) ============ -->
+<section class="slide white lot" id="s25">
+  <div class="lot-ph"><div class="duo">
+    <img class="duo-main" src="img_cine/cine_batman_bat_prop.jpg" alt="Экранная летучая мышь из Бэткейва, основной вид">
+    <img class="duo-side" src="img_cine/cine_batman_bat_prop_2.jpg" alt="Экранная летучая мышь из Бэткейва, второй кадр">
+  </div></div>
+  <div class="lot-cap">
+    <div class="lot-name">«Бэтмен: Начало»&nbsp;— экранная летучая мышь из&nbsp;Бэткейва</div>
+    <div class="lot-text">Экранная летучая мышь из&nbsp;Бэткейва&nbsp;— реквизит фильма Кристофера Нолана, использовался непосредственно в&nbsp;съёмках.</div>
+    <div class="lot-price">500&#8239;000&nbsp;₽</div>
+    <div class="lot-cert">Propstore COA</div>
+  </div>
+</section>
+
+<!-- ============ s26 PAIR · BvS grapple + Penguin hands ============ -->
+<section class="slide white pair" id="s26">
+  <div class="pair-in">
+    <div class="pcard">
+      <div class="pcard-ph"><img src="img_cine/cine_bvs_grapple.jpg" alt="«Бэтмен против Супермена» — прототип гарпунного пистолета"></div>
+      <div class="pcard-name">«Бэтмен против Супермена»&nbsp;— прототип гарпунного пистолета Бэтмена</div>
+      <div class="pcard-text">Производственный прототип гарпунного пистолета Бэтмена из&nbsp;фильма (2016)&nbsp;— часть работы над&nbsp;образом героя Бена Аффлека.</div>
+      <div class="pcard-price">500&#8239;000&nbsp;₽</div>
+      <div class="pcard-cert">Propstore COA</div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-ph"><img src="img_cine/cine_penguin_hands.jpg" alt="«Бэтмен возвращается» — грим-реквизит Дэнни ДеВито (Пингвин)"></div>
+      <div class="pcard-name">«Бэтмен возвращается»&nbsp;— экранный грим-реквизит Дэнни ДеВито (Пингвин)</div>
+      <div class="pcard-text">Экранные грим-накладки рук Дэнни ДеВито в&nbsp;роли Пингвина&nbsp;— реквизит фильма Тима Бёртона (1992).</div>
+      <div class="pcard-price">800&#8239;000&nbsp;₽</div>
+      <div class="pcard-cert">Propstore COA</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ MARVEL ============================================================ -->
+<!-- ============ s27 DIVIDER · marvel ============ -->
+<section class="slide dark div-in" id="s27">
+  <!-- MOVIE-STILL SLOT: marvel -->
+  <div style="padding:0 60px">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:30px">Франшиза&nbsp;· V</div>
+    <h2 class="div-huge" style="font-size:104px">Человек-паук<br>· Мстители</h2>
+    <div class="div-rule"></div>
+    <p class="div-sub">Автограф Тома Холланда&nbsp;— Человека-паука вселенной Marvel.</p>
+  </div>
+</section>
+
+<!-- ============ s28 TYPO · Holland IW script (no photo) ============ -->
+<section class="slide white typo" id="s28">
+  <div class="typo-in">
+    <div class="kick" style="margin-bottom:22px;color:var(--gold)">Marvel · Том Холланд</div>
+    <div class="typo-name">Том Холланд&nbsp;— сценарий «Мстители: Война бесконечности» с&nbsp;автографом</div>
+    <div class="typo-rule"></div>
+    <div class="typo-text">Полный сценарий «Войны бесконечности» с&nbsp;автографом Тома Холланда в&nbsp;роли Человека-паука. Рама с&nbsp;открывающимся механизмом.</div>
+    <div class="typo-price">340&#8239;000&nbsp;₽</div>
+    <div class="typo-cert">PSA/DNA</div>
+  </div>
+</section>
+
+<!-- ============ s29 LOT · Holland Endgame script ============ -->
+<section class="slide white lot" id="s29">
+  <div class="lot-ph"><img src="img_cine/cine_holland_endgame_script.jpg" alt="Том Холланд — сценарий «Мстители: Финал» с автографом"></div>
+  <div class="lot-cap">
+    <div class="lot-name">Том Холланд&nbsp;— сценарий «Мстители: Финал» с&nbsp;автографом</div>
+    <div class="lot-text">Полный сценарий самого кассового фильма в&nbsp;истории кино с&nbsp;автографом Тома Холланда.</div>
+    <div class="lot-price">360&#8239;000&nbsp;₽</div>
+    <div class="lot-cert">Beckett (BAS)</div>
+  </div>
+</section>
+
+<!-- ============ s30 FINAL ============ -->
+<section class="slide dark" id="s30" style="grid-template-rows:1fr auto">
+  <div class="wrap" style="padding:78px 72px 0;display:flex;flex-direction:column;justify-content:center">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:130px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97;align-self:flex-start">
+    <h2 class="serif" style="font-weight:300;font-size:52px;line-height:1.12;color:var(--ivory);margin-top:40px;max-width:26ch">Каждый предмет&nbsp;— отдельная опция.</h2>
+  </div>
+  <div class="wrap" style="padding:26px 72px 40px;border-top:1px solid rgba(169,133,69,.3)">
+    <span class="kick" style="letter-spacing:.24em;color:var(--gold2)">stargift.ru</span>
+  </div>
+</section>
+
+</div>
+
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^s/,'');const id=n?('s'+n.padStart(2,'0')):'s01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+function go(d){const cur=+((location.hash.slice(1).replace(/^s/,''))||1);let x=cur+d;if(x<1)x=1;if(x>30)x=30;location.hash='s'+x;}
+show();addEventListener('hashchange',show);
+addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')go(1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(-1);});
+addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX<innerWidth*0.32?-1:1);});
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.slide{animation:none}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
