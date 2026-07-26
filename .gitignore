@@ -1,0 +1,6 @@
+
+# секреты — никогда в git
+*.env
+.ebay.env
+secret/
+*.token

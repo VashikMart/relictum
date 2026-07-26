@@ -81,6 +81,19 @@ eBay-фото качать в `s-l1600`. Higgsfield workflow: media_upload → P
 Print CSS уже внутри деков (@page 1280x720 или 720x1280). Постраничная проверка:
 `pdftoppm -r 92 -jpeg` → монтаж → смотреть глазами.
 
+### 0. Поиск лотов на eBay → CSV  (`17_stargift/tools_ebay_search.py`)
+Официальное **eBay Browse API** работает из песочницы напрямую (веб-страницы `ebay.com/itm/...`
+блокируются — API нет). Приложение `VashStar`, ключи Production.
+**Ключи в репозиторий не кладём** — только `EBAY_CLIENT_ID` / `EBAY_CLIENT_SECRET`
+в переменных окружения либо в файле из `EBAY_ENV_FILE` (в `.gitignore` уже закрыто).
+```
+python3 tools_ebay_search.py "Messi signed Beckett" --min 700 --max 9000         --limit 30 --no-frame --certified --details --group МЕССИ --out messi.csv
+```
+Отдаёт CSV ровно в формате каталога: название, полное описание, сертификат, фото
+в s-l1600 (карточка лота отдаёт ВСЕ ракурсы — до 24 штук), закупка USD, eBay URL.
+Только фиксированная цена (аукционы не берём). Колонка «Цена» пустая — рубли ставит человек.
+Сертификатор нормализуется до Beckett / JSA / PSA-DNA, остальное → пусто.
+
 ### 3a. Дек → редактируемый PPTX (Keynote/PowerPoint)
 `17_stargift/tools_deck_extract.py` (Playwright) снимает с дека геометрию: для каждого
 слайда — фон, картинки (object-fit/position → crop), все текстовые узлы с рантайм-стилями
