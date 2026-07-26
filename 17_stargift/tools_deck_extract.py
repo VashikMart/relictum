@@ -2,6 +2,7 @@
 
     python3 tools_deck_extract.py deck_museum.html --out build/museum
 """
+import shutil
 import argparse, json, os, asyncio
 from playwright.async_api import async_playwright
 
@@ -12,7 +13,9 @@ _A = _ap.parse_args()
 DECK = os.path.abspath(_A.deck)
 OUT = os.path.abspath(_A.out or ('build/' + os.path.basename(DECK).replace('.html','')))
 os.makedirs(OUT, exist_ok=True)
-PLATE=os.path.join(OUT,'plates'); os.makedirs(PLATE,exist_ok=True)
+PLATE=os.path.join(OUT,'plates')
+shutil.rmtree(PLATE, ignore_errors=True)   # чтобы старые плейты не подмешивались
+os.makedirs(PLATE, exist_ok=True)
 
 JS_COLLECT = r"""
 (sid) => {
@@ -128,15 +131,23 @@ JS_COLLECT = r"""
 }
 """
 
-# слайды, где фото лежит под градиентной заливкой — их снимаем одним «плейтом»
-# (определяем автоматически: прямой ребёнок слайда содержит img И абсолютный градиент)
+# блоки, где фото лежит под градиентной заливкой, — снимаем «плейтом».
+# Возвращаем НОМЕРА нужных детей слайда: на обложке первый ребёнок с картинкой —
+# это колонка с логотипом, и раньше плейтом уезжала именно она, а фото теряло градиент.
 JS_FLATTEN = """
-() => [...document.querySelectorAll('.slide')].filter(s =>
-  [...s.children].some(c =>
-    c.querySelector(':scope > img') &&
-    [...c.children].some(g => getComputedStyle(g).backgroundImage.includes('gradient'))
-  )
-).map(s => s.id)
+() => {
+  const out = [];
+  for (const s of document.querySelectorAll('.slide')) {
+    const idx = [];
+    [...s.children].forEach((c, i) => {
+      if (c.querySelector(':scope > img') &&
+          [...c.children].some(g => getComputedStyle(g).backgroundImage.includes('gradient')))
+        idx.push(i);
+    });
+    if (idx.length) out.push([s.id, idx]);
+  }
+  return out;
+}
 """
 
 async def main():
@@ -155,11 +166,10 @@ async def main():
             data[sid] = await pg.evaluate(JS_COLLECT, sid)
         # flattened plates: hide all text, screenshot the photo container
         flatten = await pg.evaluate(JS_FLATTEN)
-        print('плейтов:', flatten or '—')
-        for sid in flatten:
+        print('плейтов:', ', '.join(f'{s}:{len(i)}' for s, i in flatten) or '—')
+        for sid, idxs in flatten:
             await pg.evaluate("(sid)=>{document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===sid))}", sid)
             await pg.wait_for_timeout(220)
-            sel = f'#{sid} > div:has(> img)'
             await pg.evaluate("""(sid)=>{
                const s=document.getElementById(sid);
                s.querySelectorAll('*').forEach(e=>{
@@ -167,22 +177,26 @@ async def main():
                });
             }""", sid)
             await pg.wait_for_timeout(300)
-            el = await pg.query_selector(sel)
-            if el is None:
-                await pg.evaluate("""(sid)=>{document.getElementById(sid).querySelectorAll('*').forEach(e=>e.style.visibility='')}""", sid)
-                continue
-            await el.screenshot(path=os.path.join(PLATE, sid+'_plate.png'))
-            data[sid]['plate'] = {'file': sid+'_plate.png',
-                                 'rect': await pg.evaluate("""(sid)=>{
-                                    const s=document.getElementById(sid);
-                                    const c=[...s.children].find(d=>d.querySelector('img'));
-                                    const sr=s.getBoundingClientRect(), r=c.getBoundingClientRect();
-                                    return {x:r.left-sr.left,y:r.top-sr.top,w:r.width,h:r.height};
-                                 }""", sid)}
+            plates = []
+            for k in idxs:
+                el = await pg.query_selector(f'#{sid} > *:nth-child({k + 1})')
+                if el is None:
+                    continue
+                name = f'{sid}_{k}_plate.png'
+                await el.screenshot(path=os.path.join(PLATE, name))
+                rect = await pg.evaluate("""([sid,k])=>{
+                   const s=document.getElementById(sid);
+                   const sr=s.getBoundingClientRect(), r=s.children[k].getBoundingClientRect();
+                   return {x:r.left-sr.left,y:r.top-sr.top,w:r.width,h:r.height};
+                }""", [sid, k])
+                plates.append({'file': name, 'rect': rect})
+            if plates:
+                data[sid]['plates'] = plates
             await pg.evaluate("""(sid)=>{document.getElementById(sid).querySelectorAll('*').forEach(e=>e.style.visibility='')}""", sid)
         await b.close()
     json.dump(data, open(os.path.join(OUT,'geom.json'),'w'), ensure_ascii=False, indent=1)
     for k,v in data.items():
-        print(k, 'imgs',len(v['imgs']), 'texts',len(v['texts']), 'plate' if 'plate' in v else '')
+        print(k, 'imgs',len(v['imgs']), 'texts',len(v['texts']),
+              f"plates:{len(v['plates'])}" if 'plates' in v else '')
 
 asyncio.run(main())

@@ -145,17 +145,23 @@ for sid in sorted(GEOM.keys()):
         sh.fill.solid(); sh.fill.fore_color.rgb=blend(d['color'], g['bg'])
         sh.line.fill.background(); sh.shadow.inherit=False
 
-    plate=g.get('plate')
-    if plate:
+    plates=g.get('plates') or ([g['plate']] if g.get('plate') else [])
+    for plate in plates:
         pr=plate['rect']
         add_pic(sl, os.path.join(SP,'plates',plate['file']), pr['x'],pr['y'],pr['w'],pr['h'])
 
+    def in_plate(r):
+        for p in plates:
+            q=p['rect']
+            if (r['x']>=q['x']-1 and r['y']>=q['y']-1
+                    and r['x']+r['w']<=q['x']+q['w']+1
+                    and r['y']+r['h']<=q['y']+q['h']+1):
+                return True
+        return False
+
     for im in g['imgs']:
         r=im['rect']
-        if plate:
-            prr=plate['rect']
-            inside = r['x']>=prr['x']-1 and r['y']>=prr['y']-1 and r['x']+r['w']<=prr['x']+prr['w']+1
-            if inside: continue
+        if in_plate(r): continue          # картинка уже впечатана в плейт
         src=os.path.join(ROOT, im['src'])
         if 'invert' in (im.get('filter') or ''): src=LOGO_W
         x,y,w,h,crop=fit_rect(im['nat'],(r['x'],r['y'],r['w'],r['h']),im['fit'],im['pos'])

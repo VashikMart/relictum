@@ -139,11 +139,11 @@ img{display:block}
 .toc-c{font:400 10px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--gold2);margin-top:8px}
 
 /* лестница цен */
-.lad{display:flex;flex-direction:column}
+.lad{display:flex;flex-direction:column;height:100%;justify-content:space-between}
 .lad-row{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:baseline;
-  padding:7.5px 0;border-bottom:1px solid rgba(169,133,69,.2)}
+  padding:6px 0;border-bottom:1px solid rgba(169,133,69,.2)}
 .lad-nm{font:300 13.5px/1.3 'Inter';color:#d5cfc3}
-.lad-pr{font-family:'Cormorant Garamond';font-weight:500;font-size:20px;color:var(--gold2);white-space:nowrap}
+.lad-pr{font-family:'Cormorant Garamond';font-weight:500;font-size:19px;color:var(--gold2);white-space:nowrap}
 """
 
 
@@ -297,7 +297,7 @@ def main():
 
     # ---- лестница цен
     allx = sorted(lots, key=lambda x: -x["price"])
-    pages = max(1, -(-len(allx) // 24))          # чтобы последняя страница не была огрызком
+    pages = max(1, -(-len(allx) // 18))          # 18 строк — предел высоты слайда
     per = -(-len(allx) // pages)
     for pi in range(0, len(allx), per):
         part = allx[pi:pi + per]
