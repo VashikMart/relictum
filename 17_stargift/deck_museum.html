@@ -44,6 +44,17 @@ img{display:block}
 .qc-price{font-family:'Cormorant Garamond';font-weight:500;font-size:20px;color:var(--gold);margin-top:8px}
 .qc-cert{font:400 9px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:6px}
 
+/* дуэт — два экспоната, фото сверху целиком */
+.duo2{grid-template-rows:auto 1fr}
+.duo2-in{display:grid;grid-template-columns:1fr 1fr;gap:46px;padding:16px 72px 30px;align-items:start}
+.dc{display:flex;flex-direction:column;align-items:center;text-align:center}
+.dc-ph{width:100%;height:326px;display:flex;align-items:center;justify-content:center;background:#fff}
+.dc-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.dc-name{font-family:'Cormorant Garamond';font-weight:500;font-size:24px;line-height:1.14;color:var(--ink);margin-top:18px;max-width:28ch}
+.dc-text{font:300 14.5px/1.55 'Inter';color:#4a4a4a;margin-top:9px;max-width:48ch}
+.dc-price{font-family:'Cormorant Garamond';font-weight:500;font-size:24px;color:var(--gold);margin-top:11px}
+.dc-cert{font:400 9.5px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:8px}
+
 /* поле — символическая сборная */
 .pitch{position:relative;width:100%;height:100%;background:linear-gradient(180deg,#101110 0%,#0b0b0c 100%)}
 .pitch .ln{position:absolute;border:1px solid rgba(169,133,69,.20)}
@@ -80,864 +91,695 @@ img{display:block}
     <div>
       <div class="kick d" style="margin-bottom:22px">Частное собрание · футбол</div>
       <h1 class="serif" style="font-weight:300;font-size:82px;line-height:1;color:var(--ivory)">Музей<br>футбола</h1>
-      <p style="font:300 17px/1.65 'Inter';color:#b8b2a6;margin-top:28px;max-width:44ch">Шестьдесят восемь предметов с автографами для домашнего футбольного музея. Собрание разложено по амплуа — вратари, защитники, полузащитники, нападающие, — с отдельными разделами Месси, легенд, бутс и мячей.</p>
+      <p style="font:300 17px/1.65 'Inter';color:#b8b2a6;margin-top:28px;max-width:44ch">Пятьдесят пять предметов с автографами для домашнего футбольного музея. Собрание разложено по амплуа — вратари, защитники, полузащитники, нападающие — и дополнено разделами легенд, бутс, мячей и нового поколения.</p>
     </div>
-    <div class="kick" style="letter-spacing:.24em">63 предметов · июль 2026</div>
+    <div class="kick" style="letter-spacing:.24em">55 предметов · июль 2026</div>
   </div>
-  <div style="height:720px;overflow:hidden;background:#0e0f0e;display:flex;align-items:center;justify-content:center;padding:56px">
-    <img src="img_museum2/clean_7884a761ea.jpg" alt="«Барселона» 2009 — командный мяч с автографами, включая Лионеля Месси" style="max-width:100%;max-height:100%;object-fit:contain;box-shadow:0 40px 90px rgba(0,0,0,.6)">
+  <div style="position:relative;height:720px;overflow:hidden">
+    <img src="img_museum2/hero/legends.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,var(--noir) 0%,rgba(11,11,12,.34) 20%,rgba(11,11,12,0) 52%)"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,11,12,.5) 0%,rgba(11,11,12,0) 26%)"></div>
+    <span style="position:absolute;right:16px;bottom:12px;font:400 8.5px/1.3 'Inter';letter-spacing:.08em;color:rgba(245,241,232,.55)">Фото: Wikimedia Commons · public domain</span>
   </div>
 </section>
-<section class="slide dark" id="s02" style="grid-template-rows:auto 1fr">
-  <div class="wrap" style="padding:44px 60px 0">
-    <div class="kick d" style="margin-bottom:13px">Собрание по амплуа</div>
-    <h2 class="serif" style="font-weight:300;font-size:48px;line-height:1;color:var(--ivory)">Девять разделов</h2>
-  </div>
-  <div style="display:flex;align-items:center"><div class="toc"><div class="toc-i"><div class="toc-n">Лионель Месси</div>
-      <div class="toc-c">8 предметов</div></div><div class="toc-i"><div class="toc-n">Легенды</div>
-      <div class="toc-c">8 предметов</div></div><div class="toc-i"><div class="toc-n">Вратари</div>
-      <div class="toc-c">10 предметов</div></div><div class="toc-i"><div class="toc-n">Защитники</div>
-      <div class="toc-c">7 предметов</div></div><div class="toc-i"><div class="toc-n">Полузащитники</div>
-      <div class="toc-c">9 предметов</div></div><div class="toc-i"><div class="toc-n">Нападающие</div>
-      <div class="toc-c">8 предметов</div></div><div class="toc-i"><div class="toc-n">Бутсы</div>
-      <div class="toc-c">3 предметов</div></div><div class="toc-i"><div class="toc-n">Мячи</div>
-      <div class="toc-c">6 предметов</div></div><div class="toc-i"><div class="toc-n">Новое поколение</div>
-      <div class="toc-c">4 предметов</div></div></div></div>
-</section>
-<section class="slide dark" id="s03" style="grid-template-rows:auto 1fr auto">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:flex-end">
-    <div>
-      <div class="kick d" style="margin-bottom:13px">Символическая сборная всех времён · France&nbsp;Football</div>
-      <h2 class="serif" style="font-weight:300;font-size:44px;line-height:1;color:var(--ivory)">Подборка закрывает 7 позиций из&nbsp;одиннадцати</h2>
-    </div>
-    <div style="display:flex;gap:24px;align-items:center;padding-bottom:5px">
-      <span style="display:flex;align-items:center;gap:8px;font:400 10px/1 'Inter';letter-spacing:.18em;text-transform:uppercase;color:var(--gold2)">
-        <i style="width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 38% 32%,#E4C88A,#A98545 70%);display:block"></i> есть в подборке</span>
-      <span style="display:flex;align-items:center;gap:8px;font:400 10px/1 'Inter';letter-spacing:.18em;text-transform:uppercase;color:rgba(245,241,232,.4)">
-        <i style="width:12px;height:12px;border-radius:50%;border:1px dashed rgba(245,241,232,.42);display:block"></i> открытая позиция</span>
-    </div>
-  </div>
-  <div style="position:relative;padding:4px 60px 0"><div class="pitch">
-      <div class="ln" style="left:8%;right:8%;top:4%;bottom:4%"></div>
-      <div class="ln" style="left:8%;right:8%;top:50%;height:0"></div>
-      <div class="ln" style="left:calc(50% - 60px);top:calc(50% - 60px);width:120px;height:120px;border-radius:50%"></div>
-      <div class="ln" style="left:28%;right:28%;bottom:4%;height:15%"></div>
-      <div class="ln" style="left:39%;right:39%;bottom:4%;height:5.5%"></div>
-      <div class="pos have" style="left:50%;top:90%"><div class="dot">Я</div><div class="pname">Яшин</div><div class="pwhat">Лев Яшин — подписной лист</div></div><div class="pos have" style="left:16%;top:73%"><div class="dot">К</div><div class="pname">Кафу</div><div class="pwhat">Кафу — мяч сборной Бразилии</div></div><div class="pos miss" style="left:50%;top:76%"><div class="dot">Б</div><div class="pname">Беккенбауэр</div><div class="pmiss">открыта</div></div><div class="pos have" style="left:84%;top:73%"><div class="dot">М</div><div class="pname">Мальдини</div><div class="pwhat">Паоло Мальдини — футболка сборной Италии</div></div><div class="pos miss" style="left:50%;top:57%"><div class="dot">М</div><div class="pname">Маттеус</div><div class="pmiss">открыта</div></div><div class="pos have" style="left:17%;top:39%"><div class="dot">П</div><div class="pname">Пеле</div><div class="pwhat">Пеле — футболка «Сантос»</div></div><div class="pos miss" style="left:50%;top:35%"><div class="dot">Х</div><div class="pname">Хави</div><div class="pmiss">открыта</div></div><div class="pos miss" style="left:83%;top:39%"><div class="dot">М</div><div class="pname">Марадона</div><div class="pmiss">открыта</div></div><div class="pos have" style="left:18%;top:16%"><div class="dot">М</div><div class="pname">Месси</div><div class="pwhat">Лионель Месси — футболка сборной Аргентины</div></div><div class="pos have" style="left:50%;top:12%"><div class="dot">Р</div><div class="pname">Роналдо</div><div class="pwhat">Роналдо и Роналдиньо — бутса</div></div><div class="pos have" style="left:82%;top:16%"><div class="dot">К</div><div class="pname">Криштиану</div><div class="pwhat">Пеле, Месси, Роналду — мяч</div></div>
-  </div></div>
-  <div class="wrap" style="padding:8px 60px 22px">
-    <p style="font:300 14.5px/1.6 'Inter';color:#9d978b;max-width:106ch">Символическая сборная всех времён по версии France Football: Яшин — Кафу, Беккенбауэр, Мальдини — Маттеус, Хави, Марадона, Пеле — Месси, Роналдо, Криштиану Роналду. В этой подборке закрыты семь позиций из одиннадцати: Яшин, Кафу, Мальдини, Пеле, Месси, Роналдо и Криштиану Роналду. Незакрытыми остаются четыре имени — Беккенбауэр, Маттеус, Хави и Марадона.</p>
-  </div>
-</section>
-<section class="slide dark" id="s04" style="place-content:center;justify-items:center;text-align:center">
+<section class="slide dark" id="s02" style="place-content:center;justify-items:center;text-align:center">
   <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
     <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Раздел&nbsp;первый · 8 предметов</div>
-    <h2 class="div-huge" style="font-size:74px">Лионель Месси</h2>
-    <div class="div-rule" style="margin:34px 0"></div>
-    <p class="div-sub" style="text-align:center">Восемь предметов одного игрока: клуб и сборная, мяч финала 2022 года, реплика Кубка мира, футболки и бутсы.</p>
-  </div>
-</section>
-<section class="slide white solo" id="s05">
-  <div class="solo-ph"><img src="img_museum2/clean_7884a761ea.jpg" alt="«Барселона» 2009 — командный мяч с автографами, включая Лионеля Месси"></div>
-  <div class="solo-side">
-    <div class="kick" style="margin-bottom:16px">Лионель Месси</div>
-    <div class="solo-name">«Барселона» 2009 — командный мяч с автографами, включая Лионеля Месси</div>
-    <div class="solo-text">Мяч Adidas Суперкубка УЕФА подписан составом «Барселоны» 2009/10: Месси, Иньеста, Хави, Пике, Бускетс, Это’О, Дани Алвес — более пятнадцати автографов. В 2009 году эта команда Пепа Гвардиолы выиграла все шесть возможных трофеев.</div>
-    <div class="solo-price">2 400 000&nbsp;₽</div>
-    <div class="solo-cert">JSA</div>
-  </div>
-</section>
-<section class="slide white quad" id="s06">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">Лионель Месси</h2>
-    <span class="kick" style="letter-spacing:.2em">2–5 из&nbsp;8</span>
-  </div>
-  <div class="quad-in">
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_ef202efcdf.jpg" alt="Лионель Месси — мяч чемпионата мира 2022 года с автографом"></div>
-        <div>
-          <div class="qc-name">Лионель Месси — мяч чемпионата мира 2022 года с автографом</div>
-          <div class="qc-text">Мяч чемпионата мира 2022 года с автографом. Лионель Месси — восьмикратный обладатель «Золотого мяча» и чемпион мира. В финале в Лусаиле он забил дважды, Аргентина победила в серии пенальти, а Месси был признан лучшим игроком турнира.</div>
-          <div class="qc-price">950 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_ca1140005d.jpg" alt="Лионель Месси — полноразмерная реплика Кубка мира с автографом"></div>
-        <div>
-          <div class="qc-name">Лионель Месси — полноразмерная реплика Кубка мира с автографом</div>
-          <div class="qc-text">Полноразмерная реплика трофея чемпионата мира с автографом — не оригинальный кубок ФИФА, который остаётся в распоряжении федерации. Лионель Месси выиграл чемпионат мира 2022 года и был признан лучшим игроком того турнира.</div>
-          <div class="qc-price">750 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_f8b7254038.jpg" alt="Лионель Месси — гостевая футболка «Барселоны» 2008–2010 с автографом"></div>
-        <div>
-          <div class="qc-name">Лионель Месси — гостевая футболка «Барселоны» 2008–2010 с автографом</div>
-          <div class="qc-text">Гостевая футболка «Барселоны» образца 2008–2010 годов с автографом. В эти сезоны Лионель Месси получил первый из восьми «Золотых мячей», а клуб под руководством Пепа Гвардиолы выиграл требл 2009 года.</div>
-          <div class="qc-price">650 000&nbsp;₽</div>
-          
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_0ce8e716c6.jpg" alt="Лионель Месси — домашняя футболка сборной Аргентины №10 с автографом"></div>
-        <div>
-          <div class="qc-name">Лионель Месси — домашняя футболка сборной Аргентины №10 с автографом</div>
-          <div class="qc-text">Домашняя футболка сборной Аргентины с десятым номером — тем самым, что перешёл к Месси по прямой линии от Диего Марадоны. В этой форме он выиграл Кубок Америки 2021 года, чемпионат мира 2022 года и Кубок Америки 2024-го.</div>
-          <div class="qc-price">650 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-  </div>
-</section>
-<section class="slide white quad" id="s07">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">Лионель Месси</h2>
-    <span class="kick" style="letter-spacing:.2em">6–8 из&nbsp;8</span>
-  </div>
-  <div class="quad-in">
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_3a24144587.jpg" alt="Лионель Месси — футбольный мяч с автографом"></div>
-        <div>
-          <div class="qc-name">Лионель Месси — футбольный мяч с автографом</div>
-          <div class="qc-text">Мяч с автографом. Лионель Месси — восьмикратный обладатель «Золотого мяча», лучший бомбардир в истории «Барселоны» и чемпионата Испании. В 2012 году он забил 91 гол за календарный год — рекорд, никем не превзойдённый.</div>
-          <div class="qc-price">600 000&nbsp;₽</div>
-          
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_ba2fa55344.jpg" alt="Лионель Месси — бутса сборной Аргентины с автографом"></div>
-        <div>
-          <div class="qc-name">Лионель Месси — бутса сборной Аргентины с автографом</div>
-          <div class="qc-text">Бутса в цветах сборной Аргентины с автографом. Со сборной Лионель Месси прошёл путь от поражения в финале чемпионата мира 2014 года до титула чемпиона мира в 2022-м. Подписанные бутсы появляются в обороте реже футболок и мячей.</div>
-          <div class="qc-price">600 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/2c2281faa6.jpg" alt="Лионель Месси — бутса Adidas «Барселоны» (левая) с автографом"></div>
-        <div>
-          <div class="qc-name">Лионель Месси — бутса Adidas «Барселоны» (левая) с автографом</div>
-          <div class="qc-text">Бутса Adidas периода «Барселоны» с автографом. Adidas сопровождает Лионеля Месси почти всю профессиональную карьеру. За годы в клубе он выиграл четыре Лиги чемпионов, десять чемпионатов Испании и первые «Золотые мячи».</div>
-          <div class="qc-price">600 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-  </div>
-</section>
-<section class="slide dark" id="s08" style="place-content:center;justify-items:center;text-align:center">
-  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
-    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Раздел&nbsp;второй · 8 предметов</div>
     <h2 class="div-huge" style="font-size:74px">Легенды</h2>
     <div class="div-rule" style="margin:34px 0"></div>
     <p class="div-sub" style="text-align:center">Пеле, Ди Стефано, Яшин, Платини, Кафу, Пирло — имена, с которых начинается история чемпионатов мира и европейских кубков.</p>
   </div>
 </section>
-<section class="slide white solo" id="s09">
+<section class="slide white solo" id="s03">
   <div class="solo-ph"><img src="img_museum2/7520b31186.jpg" alt="Лев Яшин — подписной лист с автографом"></div>
   <div class="solo-side">
-    <div class="kick" style="margin-bottom:16px">Легенды</div>
+    <div class="kick" style="margin-bottom:16px">Легенды · 1 из&nbsp;8</div>
     <div class="solo-name">Лев Яшин — подписной лист с автографом</div>
     <div class="solo-text">Подписной лист с автографом. Лев Яшин — единственный вратарь, получивший «Золотой мяч»: награда 1963 года не повторена ни одним голкипером мира. Олимпийский чемпион 1956 года и чемпион Европы 1960 года, всю карьеру провёл в московском «Динамо».</div>
     <div class="solo-price">700 000&nbsp;₽</div>
     <div class="solo-cert">PSA/DNA</div>
   </div>
 </section>
-<section class="slide white quad" id="s10">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">Легенды</h2>
-    <span class="kick" style="letter-spacing:.2em">2–5 из&nbsp;8</span>
-  </div>
-  <div class="quad-in">
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_2a1f21dbfd.jpg" alt="Пеле — футболка «Сантос» с автографом"></div>
-        <div>
-          <div class="qc-name">Пеле — футболка «Сантос» с автографом</div>
-          <div class="qc-text">Футболка «Сантоса» с автографом. Эдсон Арантис ду Насименту, известный миру как Пеле, — единственный трёхкратный чемпион мира. Он пришёл в «Сантос» пятнадцатилетним и взял с клубом два Кубка Либертадорес и два Межконтинентальных кубка.</div>
-          <div class="qc-price">500 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_47cb362841.jpg" alt="Альфредо Ди Стефано — фотография «Реал Мадрид» с автографом"></div>
-        <div>
-          <div class="qc-name">Альфредо Ди Стефано — фотография «Реал Мадрид» с автографом</div>
-          <div class="qc-text">Фотография с автографом. Альфредо Ди Стефано — центральная фигура «Реал Мадрида», выигравшего пять первых розыгрышей Кубка европейских чемпионов подряд, с 1956 по 1960 год. Он забивал в каждом из этих пяти финалов.</div>
-          <div class="qc-price">500 000&nbsp;₽</div>
-          <div class="qc-cert">PSA/DNA</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_ab324d08e3.jpg" alt="Мишель Платини — футболка сборной Франции №10 с автографом"></div>
-        <div>
-          <div class="qc-name">Мишель Платини — футболка сборной Франции №10 с автографом</div>
-          <div class="qc-text">Футболка сборной Франции с автографом. Мишель Платини — обладатель трёх «Золотых мячей» подряд, в 1983, 1984 и 1985 годах. В 1984 году он привёл Францию к первому титулу чемпиона Европы, забив на турнире девять мячей.</div>
-          <div class="qc-price">470 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/e1dd454f81.jpg" alt="Пеле и Гордон Бэнкс — фотография «величайшего сейва» с двумя автографами"></div>
-        <div>
-          <div class="qc-name">Пеле и Гордон Бэнкс — фотография «величайшего сейва» с двумя автографами</div>
-          <div class="qc-text">Фотография с двумя автографами. 7 июня 1970 года в Гвадалахаре Пеле пробил головой в дальний угол, а Гордон Бэнкс в броске выбил мяч из-под перекладины — эпизод вошёл в историю как «величайший сейв всех времён».</div>
-          <div class="qc-price">450 000&nbsp;₽</div>
-          <div class="qc-cert">JSA</div>
-        </div>
-      </div>
-  </div>
-</section>
-<section class="slide white quad" id="s11">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">Легенды</h2>
-    <span class="kick" style="letter-spacing:.2em">6–8 из&nbsp;8</span>
-  </div>
-  <div class="quad-in">
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_f3ae11fdfe.jpg" alt="Кафу — 3D-реплика Кубка Лиги чемпионов 2007 с автографом"></div>
-        <div>
-          <div class="qc-name">Кафу — объёмная реплика Кубка Лиги чемпионов 2007 с автографом</div>
-          <div class="qc-text">Объёмная лицензированная реплика Кубка европейских чемпионов с автографом. Кафу выиграл этот трофей с «Миланом» в 2007 году, а со сборной Бразилии стал единственным футболистом, сыгравшим в трёх финалах чемпионата мира подряд.</div>
-          <div class="qc-price">400 000&nbsp;₽</div>
-          
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_a3db28a1dc.jpg" alt="Андреа Пирло — 3D-реплика Кубка Лиги чемпионов 2007 на подставке с автографом"></div>
-        <div>
-          <div class="qc-name">Андреа Пирло — объёмная реплика Кубка Лиги чемпионов 2007 на подставке с автографом</div>
-          <div class="qc-text">Объёмная лицензированная реплика Кубка европейских чемпионов на подставке с автографом. Андреа Пирло выигрывал этот турнир с «Миланом» дважды, в 2003 и 2007 годах, а в 2006-м стал чемпионом мира со сборной Италии.</div>
-          <div class="qc-price">400 000&nbsp;₽</div>
-          
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/e19f81d305.jpg" alt="Пеле — фотография сборной Бразилии 16×20 с автографом"></div>
-        <div>
-          <div class="qc-name">Пеле — фотография сборной Бразилии с автографом</div>
-          <div class="qc-text">Фотография 41×51 см с автографом. Пеле — единственный трёхкратный чемпион мира, победитель турниров 1958, 1962 и 1970 годов, автор более тысячи голов за карьеру. Жёлтая футболка сборной Бразилии стала символом игры благодаря ему.</div>
-          <div class="qc-price">300 000&nbsp;₽</div>
-          <div class="qc-cert">JSA</div>
-        </div>
-      </div>
-  </div>
-</section>
-<section class="slide dark" id="s12" style="place-content:center;justify-items:center;text-align:center">
-  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
-    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Раздел&nbsp;третий · 10 предметов</div>
-    <h2 class="div-huge" style="font-size:74px">Вратари</h2>
-    <div class="div-rule" style="margin:34px 0"></div>
-    <p class="div-sub" style="text-align:center">Дзофф, Кан, Касильяс, Шмейхель, Нойер, Дида, Леманн: футболки, перчатки, мяч, фотографии и карточка.</p>
-  </div>
-</section>
-<section class="slide white solo" id="s13">
-  <div class="solo-ph"><img src="img_museum2/clean_b09aee8062.jpg" alt="Дино Дзофф — ретро-футболка «Ювентуса» с автографом"></div>
+<section class="slide white solo" id="s04">
+  <div class="solo-ph"><img src="img_museum2/clean_2a1f21dbfd.jpg" alt="Пеле — футболка «Сантос» с автографом"></div>
   <div class="solo-side">
-    <div class="kick" style="margin-bottom:16px">Вратари</div>
+    <div class="kick" style="margin-bottom:16px">Легенды · 2 из&nbsp;8</div>
+    <div class="solo-name">Пеле — футболка «Сантос» с автографом</div>
+    <div class="solo-text">Футболка «Сантоса» с автографом. Эдсон Арантис ду Насименту, известный миру как Пеле, — единственный трёхкратный чемпион мира. Он пришёл в «Сантос» пятнадцатилетним и взял с клубом два Кубка Либертадорес и два Межконтинентальных кубка.</div>
+    <div class="solo-price">500 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s05">
+  <div class="solo-ph"><img src="img_museum2/clean_47cb362841.jpg" alt="Альфредо Ди Стефано — фотография «Реал Мадрид» с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Легенды · 3 из&nbsp;8</div>
+    <div class="solo-name">Альфредо Ди Стефано — фотография «Реал Мадрид» с автографом</div>
+    <div class="solo-text">Фотография с автографом. Альфредо Ди Стефано — центральная фигура «Реал Мадрида», выигравшего пять первых розыгрышей Кубка европейских чемпионов подряд, с 1956 по 1960 год. Он забивал в каждом из этих пяти финалов.</div>
+    <div class="solo-price">500 000&nbsp;₽</div>
+    <div class="solo-cert">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s06">
+  <div class="solo-ph"><img src="img_museum2/clean_ab324d08e3.jpg" alt="Мишель Платини — футболка сборной Франции №10 с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Легенды · 4 из&nbsp;8</div>
+    <div class="solo-name">Мишель Платини — футболка сборной Франции №10 с автографом</div>
+    <div class="solo-text">Футболка сборной Франции с автографом. Мишель Платини — обладатель трёх «Золотых мячей» подряд, в 1983, 1984 и 1985 годах. В 1984 году он привёл Францию к первому титулу чемпиона Европы, забив на турнире девять мячей.</div>
+    <div class="solo-price">470 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s07">
+  <div class="solo-ph"><img src="img_museum2/e1dd454f81.jpg" alt="Пеле и Гордон Бэнкс — фотография «величайшего сейва» с двумя автографами"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Легенды · 5 из&nbsp;8</div>
+    <div class="solo-name">Пеле и Гордон Бэнкс — фотография «величайшего сейва» с двумя автографами</div>
+    <div class="solo-text">Фотография с двумя автографами. 7 июня 1970 года в Гвадалахаре Пеле пробил головой в дальний угол, а Гордон Бэнкс в броске выбил мяч из-под перекладины — эпизод вошёл в историю как «величайший сейв всех времён».</div>
+    <div class="solo-price">450 000&nbsp;₽</div>
+    <div class="solo-cert">JSA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s08">
+  <div class="solo-ph"><img src="img_museum2/clean_f3ae11fdfe.jpg" alt="Кафу — 3D-реплика Кубка Лиги чемпионов 2007 с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Легенды · 6 из&nbsp;8</div>
+    <div class="solo-name">Кафу — объёмная реплика Кубка Лиги чемпионов 2007 с автографом</div>
+    <div class="solo-text">Объёмная лицензированная реплика Кубка европейских чемпионов с автографом. Кафу выиграл этот трофей с «Миланом» в 2007 году, а со сборной Бразилии стал единственным футболистом, сыгравшим в трёх финалах чемпионата мира подряд.</div>
+    <div class="solo-price">400 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s09">
+  <div class="wrap" style="padding:28px 72px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 class="serif" style="font-weight:500;font-size:28px;color:var(--ink)">Легенды</h2>
+    <span class="kick" style="letter-spacing:.2em">7–8 из&nbsp;8</span>
+  </div>
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_museum2/clean_a3db28a1dc.jpg" alt="Андреа Пирло — 3D-реплика Кубка Лиги чемпионов 2007 на подставке с автографом"></div>
+        <div class="dc-name">Андреа Пирло — объёмная реплика Кубка Лиги чемпионов 2007 на подставке с автографом</div>
+        <div class="dc-text">Объёмная лицензированная реплика Кубка европейских чемпионов на подставке с автографом. Андреа Пирло выигрывал этот турнир с «Миланом» дважды, в 2003 и 2007 годах, а в 2006-м стал чемпионом мира со сборной Италии.</div>
+        <div class="dc-price">400 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_museum2/e19f81d305.jpg" alt="Пеле — фотография сборной Бразилии 16×20 с автографом"></div>
+        <div class="dc-name">Пеле — фотография сборной Бразилии с автографом</div>
+        <div class="dc-text">Фотография 41×51 см с автографом. Пеле — единственный трёхкратный чемпион мира, победитель турниров 1958, 1962 и 1970 годов, автор более тысячи голов за карьеру. Жёлтая футболка сборной Бразилии стала символом игры благодаря ему.</div>
+        <div class="dc-price">300 000&nbsp;₽</div>
+        <div class="dc-cert">JSA</div>
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s10" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_museum2/hero/keepers.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 46%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.93) 0%,rgba(11,11,12,.74) 34%,rgba(11,11,12,.2) 68%,rgba(11,11,12,.05) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 60px;align-items:flex-start;text-align:left">
+      <div class="kick d" style="letter-spacing:.34em;margin-bottom:24px">Раздел&nbsp;второй · 10 предметов</div>
+      <h2 class="div-huge" style="font-size:74px">Вратари</h2>
+      <div class="div-rule" style="margin:32px 0"></div>
+      <p class="div-sub" style="max-width:44ch">Дзофф, Кан, Касильяс, Шмейхель, Нойер, Дида, Леманн: футболки, перчатки, мяч, фотографии и карточка.</p>
+    </div>
+    <span style="position:absolute;right:16px;bottom:12px;font:400 8.5px/1.3 'Inter';letter-spacing:.08em;color:rgba(245,241,232,.55)">Фото: Ron Kroon · Anefo · Wikimedia Commons · CC0</span>
+  </div>
+</section>
+<section class="slide white solo" id="s11">
+  <div class="solo-ph"><img src="img_museum2/b09aee8062.jpg" alt="Дино Дзофф — ретро-футболка «Ювентуса» с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Вратари · 1 из&nbsp;10</div>
     <div class="solo-name">Дино Дзофф — ретро-футболка «Ювентуса» с автографом</div>
     <div class="solo-text">Ретро-футболка «Ювентуса» с автографом. Дино Дзофф провёл в туринском клубе больше десяти сезонов и шесть раз становился чемпионом Италии. В 1982 году он выиграл чемпионат мира капитаном сборной Италии в сорок лет.</div>
     <div class="solo-price">330 000&nbsp;₽</div>
     
   </div>
 </section>
-<section class="slide white quad" id="s14">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">Вратари</h2>
-    <span class="kick" style="letter-spacing:.2em">2–5 из&nbsp;10</span>
+<section class="slide white solo" id="s12">
+  <div class="solo-ph"><img src="img_museum2/clean_546412b47a.jpg" alt="Дино Дзофф — коллекционная карточка с автографом (сборная Италии)"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Вратари · 2 из&nbsp;10</div>
+    <div class="solo-name">Дино Дзофф — коллекционная карточка с автографом</div>
+    <div class="solo-text">Коллекционная карточка серии Topps UEFA Champions Collection с автографом. Дино Дзофф выиграл чемпионат мира 1982 года капитаном сборной Италии в сорок лет и остаётся самым возрастным чемпионом мира. Карточка в капсуле, оценка PSA — 10.</div>
+    <div class="solo-price">300 000&nbsp;₽</div>
+    <div class="solo-cert">PSA/DNA</div>
   </div>
-  <div class="quad-in">
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_546412b47a.jpg" alt="Дино Дзофф — коллекционная карточка с автографом (сборная Италии)"></div>
-        <div>
-          <div class="qc-name">Дино Дзофф — коллекционная карточка с автографом</div>
-          <div class="qc-text">Коллекционная карточка серии Topps UEFA Champions Collection с автографом. Дино Дзофф выиграл чемпионат мира 1982 года капитаном сборной Италии в сорок лет и остаётся самым возрастным чемпионом мира. Карточка в капсуле, оценка PSA — 10.</div>
-          <div class="qc-price">300 000&nbsp;₽</div>
-          <div class="qc-cert">PSA/DNA</div>
-        </div>
+</section>
+<section class="slide white solo" id="s13">
+  <div class="solo-ph"><img src="img_museum2/df359ed42e.jpg" alt="Мануэль Нойер — мяч «Баварии» с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Вратари · 3 из&nbsp;10</div>
+    <div class="solo-name">Мануэль Нойер — мяч «Баварии» с автографом</div>
+    <div class="solo-text">Мяч «Баварии» с автографом. Мануэль Нойер — чемпион мира 2014 года и обладатель «Золотой перчатки» того турнира; его манера играть далеко за пределами штрафной породила термин «вратарь-либеро». С «Баварией» он выиграл Лигу чемпионов в 2013 и 2020 годах.</div>
+    <div class="solo-price">300 000&nbsp;₽</div>
+    <div class="solo-cert">JSA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s14">
+  <div class="solo-ph"><img src="img_museum2/clean_ebdaadd5b0.jpg" alt="Икер Касильяс — футболка «Реала Мадрид» с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Вратари · 4 из&nbsp;10</div>
+    <div class="solo-name">Икер Касильяс — футболка «Реал Мадрид» с автографом</div>
+    <div class="solo-text">Футболка «Реал Мадрида» с автографом. Икер Касильяс провёл в клубе больше двадцати лет, был его капитаном и трижды побеждал в Лиге чемпионов. Со сборной Испании он выиграл чемпионат мира 2010 года и два чемпионата Европы.</div>
+    <div class="solo-price">250 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s15">
+  <div class="solo-ph"><img src="img_museum2/clean_0d1a11f145.jpg" alt="Икер Касильяс — футболка сборной Испании с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Вратари · 5 из&nbsp;10</div>
+    <div class="solo-name">Икер Касильяс — футболка сборной Испании с автографом</div>
+    <div class="solo-text">Футболка сборной Испании с автографом. Икер Касильяс — капитан команды, выигравшей чемпионат мира 2010 года и чемпионаты Европы 2008 и 2012 годов. Этот отрезок остаётся самым успешным периодом в истории испанского футбола.</div>
+    <div class="solo-price">250 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s16">
+  <div class="solo-ph"><img src="img_museum2/clean_4ab2502b8e.jpg" alt="Оливер Кан — вратарская футболка сборной Германии с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Вратари · 6 из&nbsp;10</div>
+    <div class="solo-name">Оливер Кан — вратарская футболка сборной Германии с автографом</div>
+    <div class="solo-text">Вратарская футболка сборной Германии с автографом. Оливер Кан — единственный голкипер, признанный лучшим игроком чемпионата мира: на турнире 2002 года он довёл сборную до финала. С «Баварией» он восемь раз выигрывал чемпионат страны.</div>
+    <div class="solo-price">250 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s17">
+  <div class="wrap" style="padding:28px 72px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 class="serif" style="font-weight:500;font-size:28px;color:var(--ink)">Вратари</h2>
+    <span class="kick" style="letter-spacing:.2em">7–8 из&nbsp;10</span>
+  </div>
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_museum2/clean_b7fce8c93b.jpg" alt="Петер Шмейхель — фотография «Манчестер Юнайтед» 16×20 с автографом"></div>
+        <div class="dc-name">Петер Шмейхель — фотография «Манчестер Юнайтед» с автографом</div>
+        <div class="dc-text">Фотография 41×51 см с автографом. Петер Шмейхель был вратарём и капитаном «Манчестер Юнайтед» в сезоне 1998/99, когда клуб первым в английском футболе взял требл. Со сборной Дании он стал чемпионом Европы 1992 года.</div>
+        <div class="dc-price">240 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
       </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/df359ed42e.jpg" alt="Мануэль Нойер — мяч «Баварии» с автографом"></div>
-        <div>
-          <div class="qc-name">Мануэль Нойер — мяч «Баварии» с автографом</div>
-          <div class="qc-text">Мяч «Баварии» с автографом. Мануэль Нойер — чемпион мира 2014 года и обладатель «Золотой перчатки» того турнира; его манера играть далеко за пределами штрафной породила термин «вратарь-либеро». С «Баварией» он выиграл Лигу чемпионов в 2013 и 2020 годах.</div>
-          <div class="qc-price">300 000&nbsp;₽</div>
-          <div class="qc-cert">JSA</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_ebdaadd5b0.jpg" alt="Икер Касильяс — футболка «Реала Мадрид» с автографом"></div>
-        <div>
-          <div class="qc-name">Икер Касильяс — футболка «Реал Мадрид» с автографом</div>
-          <div class="qc-text">Футболка «Реал Мадрида» с автографом. Икер Касильяс провёл в клубе больше двадцати лет, был его капитаном и трижды побеждал в Лиге чемпионов. Со сборной Испании он выиграл чемпионат мира 2010 года и два чемпионата Европы.</div>
-          <div class="qc-price">250 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_0d1a11f145.jpg" alt="Икер Касильяс — футболка сборной Испании с автографом"></div>
-        <div>
-          <div class="qc-name">Икер Касильяс — футболка сборной Испании с автографом</div>
-          <div class="qc-text">Футболка сборной Испании с автографом. Икер Касильяс — капитан команды, выигравшей чемпионат мира 2010 года и чемпионаты Европы 2008 и 2012 годов. Этот отрезок остаётся самым успешным периодом в истории испанского футбола.</div>
-          <div class="qc-price">250 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_museum2/clean_bf2ccf640e.jpg" alt="Оливер Кан — вратарская перчатка Adidas с автографом"></div>
+        <div class="dc-name">Оливер Кан — вратарская перчатка Adidas с автографом</div>
+        <div class="dc-text">Вратарская перчатка Adidas с автографом. Оливер Кан, прозванный «Титаном», — единственный вратарь, признанный лучшим игроком чемпионата мира, в 2002 году. Перчатка — единственный элемент экипировки, которым голкипер играет руками.</div>
+        <div class="dc-price">180 000&nbsp;₽</div>
+        
       </div>
   </div>
 </section>
-<section class="slide white quad" id="s15">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">Вратари</h2>
-    <span class="kick" style="letter-spacing:.2em">6–9 из&nbsp;10</span>
+<section class="slide white duo2" id="s18">
+  <div class="wrap" style="padding:28px 72px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 class="serif" style="font-weight:500;font-size:28px;color:var(--ink)">Вратари</h2>
+    <span class="kick" style="letter-spacing:.2em">9–10 из&nbsp;10</span>
   </div>
-  <div class="quad-in">
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_4ab2502b8e.jpg" alt="Оливер Кан — вратарская футболка сборной Германии с автографом"></div>
-        <div>
-          <div class="qc-name">Оливер Кан — вратарская футболка сборной Германии с автографом</div>
-          <div class="qc-text">Вратарская футболка сборной Германии с автографом. Оливер Кан — единственный голкипер, признанный лучшим игроком чемпионата мира: на турнире 2002 года он довёл сборную до финала. С «Баварией» он восемь раз выигрывал чемпионат страны.</div>
-          <div class="qc-price">250 000&nbsp;₽</div>
-          
-        </div>
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_museum2/clean_7143ca9eec.jpg" alt="Дида — вратарская перчатка Nike с автографом"></div>
+        <div class="dc-name">Дида — вратарская перчатка Nike с автографом</div>
+        <div class="dc-text">Вратарская перчатка Nike с автографом. Дида — бразильский вратарь «Милана», дважды побеждавший с клубом в Лиге чемпионов, в 2003 и 2007 годах, и чемпион мира 2002 года в составе сборной Бразилии.</div>
+        <div class="dc-price">180 000&nbsp;₽</div>
+        
       </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_b7fce8c93b.jpg" alt="Петер Шмейхель — фотография «Манчестер Юнайтед» 16×20 с автографом"></div>
-        <div>
-          <div class="qc-name">Петер Шмейхель — фотография «Манчестер Юнайтед» с автографом</div>
-          <div class="qc-text">Фотография 41×51 см с автографом. Петер Шмейхель был вратарём и капитаном «Манчестер Юнайтед» в сезоне 1998/99, когда клуб первым в английском футболе взял требл. Со сборной Дании он стал чемпионом Европы 1992 года.</div>
-          <div class="qc-price">240 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_bf2ccf640e.jpg" alt="Оливер Кан — вратарская перчатка Adidas с автографом"></div>
-        <div>
-          <div class="qc-name">Оливер Кан — вратарская перчатка Adidas с автографом</div>
-          <div class="qc-text">Вратарская перчатка Adidas с автографом. Оливер Кан, прозванный «Титаном», — единственный вратарь, признанный лучшим игроком чемпионата мира, в 2002 году. Перчатка — единственный элемент экипировки, которым голкипер играет руками.</div>
-          <div class="qc-price">180 000&nbsp;₽</div>
-          
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_7143ca9eec.jpg" alt="Дида — вратарская перчатка Nike с автографом"></div>
-        <div>
-          <div class="qc-name">Дида — вратарская перчатка Nike с автографом</div>
-          <div class="qc-text">Вратарская перчатка Nike с автографом. Дида — бразильский вратарь «Милана», дважды побеждавший с клубом в Лиге чемпионов, в 2003 и 2007 годах, и чемпион мира 2002 года в составе сборной Бразилии.</div>
-          <div class="qc-price">180 000&nbsp;₽</div>
-          
-        </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_museum2/b76b927fba.jpg" alt="Йенс Леманн — вратарская перчатка Adidas с автографом"></div>
+        <div class="dc-name">Йенс Леманн — вратарская перчатка Adidas с автографом</div>
+        <div class="dc-text">Вратарская перчатка Adidas с автографом. Йенс Леманн в сезоне 2003/04 прошёл с «Арсеналом» весь чемпионат Англии без единого поражения — тот состав вошёл в историю под именем «Непобедимые». Со сборной Германии он играл в финале чемпионата Европы 2008 года.</div>
+        <div class="dc-price">160 000&nbsp;₽</div>
+        
       </div>
   </div>
 </section>
-<section class="slide white quad" id="s16">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">Вратари</h2>
-    <span class="kick" style="letter-spacing:.2em">10–10 из&nbsp;10</span>
-  </div>
-  <div class="quad-in">
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/b76b927fba.jpg" alt="Йенс Леманн — вратарская перчатка Adidas с автографом"></div>
-        <div>
-          <div class="qc-name">Йенс Леманн — вратарская перчатка Adidas с автографом</div>
-          <div class="qc-text">Вратарская перчатка Adidas с автографом. Йенс Леманн в сезоне 2003/04 прошёл с «Арсеналом» весь чемпионат Англии без единого поражения — тот состав вошёл в историю под именем «Непобедимые». Со сборной Германии он играл в финале чемпионата Европы 2008 года.</div>
-          <div class="qc-price">160 000&nbsp;₽</div>
-          
-        </div>
-      </div>
-  </div>
-</section>
-<section class="slide dark" id="s17" style="place-content:center;justify-items:center;text-align:center">
+<section class="slide dark" id="s19" style="place-content:center;justify-items:center;text-align:center">
   <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
-    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Раздел&nbsp;четвёртый · 7 предметов</div>
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Раздел&nbsp;третий · 7 предметов</div>
     <h2 class="div-huge" style="font-size:74px">Защитники</h2>
     <div class="div-rule" style="margin:34px 0"></div>
-    <p class="div-sub" style="text-align:center">Каннаваро, Мальдини, Кафу, Терри, Роберто Карлос — линия обороны, собранная из капитанов и чемпионов мира.</p>
+    <p class="div-sub" style="text-align:center">Каннаваро, Мальдини, Кафу — линия обороны, собранная из капитанов и чемпионов мира.</p>
   </div>
 </section>
-<section class="slide white solo" id="s18">
+<section class="slide white solo" id="s20">
   <div class="solo-ph"><img src="img_museum2/clean_453b87f0bc.jpg" alt="Фабио Каннаваро — футболка сборной Италии образца ЧМ-2006 с автографом"></div>
   <div class="solo-side">
-    <div class="kick" style="margin-bottom:16px">Защитники</div>
+    <div class="kick" style="margin-bottom:16px">Защитники · 1 из&nbsp;7</div>
     <div class="solo-name">Фабио Каннаваро — футболка сборной Италии образца ЧМ-2006 с автографом</div>
     <div class="solo-text">Домашняя футболка сборной Италии образца турнира 2006 года с автографом. Фабио Каннаваро поднял Кубок мира капитаном команды-победителя и в том же году получил «Золотой мяч» — единственный защитник, удостоенный награды за сорок лет.</div>
     <div class="solo-price">250 000&nbsp;₽</div>
     <div class="solo-cert">Beckett</div>
   </div>
 </section>
-<section class="slide white quad" id="s19">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">Защитники</h2>
-    <span class="kick" style="letter-spacing:.2em">2–5 из&nbsp;7</span>
-  </div>
-  <div class="quad-in">
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_bf086cd624.jpg" alt="Фабио Каннаваро — футболка «Реал Мадрида» с автографом"></div>
-        <div>
-          <div class="qc-name">Фабио Каннаваро — футболка «Реал Мадрид» с автографом</div>
-          <div class="qc-text">Футболка «Реал Мадрида» с автографом. Фабио Каннаваро — обладатель «Золотого мяча» 2006 года и капитан сборной Италии, выигравшей в том же году чемпионат мира. Сразу после турнира он перешёл в мадридский клуб и провёл там три сезона.</div>
-          <div class="qc-price">250 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/274ee51056.jpg" alt="Фабио Каннаваро — домашняя футболка сборной Италии №5 с автографом"></div>
-        <div>
-          <div class="qc-name">Фабио Каннаваро — домашняя футболка сборной Италии №5 с автографом</div>
-          <div class="qc-text">Домашняя футболка сборной Италии с пятым номером — тем самым, под которым Фабио Каннаваро выходил на поле. В 2006 году он привёл команду к победе на чемпионате мира в Германии и получил «Золотой мяч».</div>
-          <div class="qc-price">250 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_adf54cb98d.jpg" alt="Кафу — мяч сборной Бразилии с автографом"></div>
-        <div>
-          <div class="qc-name">Кафу — мяч сборной Бразилии с автографом</div>
-          <div class="qc-text">Мяч сборной Бразилии с автографом. Маркос Эванжелиста ди Морайс, Кафу, — единственный футболист, вышедший на поле в трёх финалах чемпионата мира подряд: 1994, 1998 и 2002 годов. За сборную он провёл 142 матча.</div>
-          <div class="qc-price">250 000&nbsp;₽</div>
-          <div class="qc-cert">JSA</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/ed6ca8b301.jpg" alt="Кафу — футболка «Милан» сезона 2006/07 с автографом"></div>
-        <div>
-          <div class="qc-name">Кафу — футболка «Милан» сезона 2006/07 с автографом</div>
-          <div class="qc-text">Выездная футболка «Милана» сезона 2006/07 с автографом. Именно этот розыгрыш Лиги чемпионов клуб завершил победой над «Ливерпулем» в финале в Афинах — реванш за поражение в Стамбуле двумя годами ранее. Кафу провёл в «Милане» пять сезонов.</div>
-          <div class="qc-price">250 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-  </div>
-</section>
-<section class="slide white quad" id="s20">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">Защитники</h2>
-    <span class="kick" style="letter-spacing:.2em">6–7 из&nbsp;7</span>
-  </div>
-  <div class="quad-in">
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/8a89baa7f3.jpg" alt="Паоло Мальдини — футболка сборной Италии с автографом"></div>
-        <div>
-          <div class="qc-name">Паоло Мальдини — футболка сборной Италии с автографом</div>
-          <div class="qc-text">Футболка сборной Италии с автографом. Паоло Мальдини провёл за национальную команду 126 матчей и дважды играл в финалах крупнейших турниров — чемпионата мира 1994 года и чемпионата Европы 2000 года.</div>
-          <div class="qc-price">240 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/9ddb847c71.jpg" alt="Паоло Мальдини — гостевая футболка «Милана» №3 с автографом"></div>
-        <div>
-          <div class="qc-name">Паоло Мальдини — гостевая футболка «Милана» №3 с автографом</div>
-          <div class="qc-text">Гостевая футболка «Милана» с третьим номером — тем самым, под которым Паоло Мальдини играл всю карьеру. Он провёл в клубе 25 сезонов подряд, сыграл больше 900 матчей и пять раз побеждал в главном европейском турнире.</div>
-          <div class="qc-price">240 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-  </div>
-</section>
-<section class="slide dark" id="s21" style="place-content:center;justify-items:center;text-align:center">
-  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
-    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Раздел&nbsp;пятый · 9 предметов</div>
-    <h2 class="div-huge" style="font-size:74px">Полузащитники</h2>
-    <div class="div-rule" style="margin:34px 0"></div>
-    <p class="div-sub" style="text-align:center">Недвед, Фигу, Пирло, Иньеста, Лэмпард, Скоулз, Зеедорф, Баллак, Гиггз — одиннадцать футболок центра поля.</p>
+<section class="slide white solo" id="s21">
+  <div class="solo-ph"><img src="img_museum2/clean_bf086cd624.jpg" alt="Фабио Каннаваро — футболка «Реал Мадрида» с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Защитники · 2 из&nbsp;7</div>
+    <div class="solo-name">Фабио Каннаваро — футболка «Реал Мадрид» с автографом</div>
+    <div class="solo-text">Футболка «Реал Мадрида» с автографом. Фабио Каннаваро — обладатель «Золотого мяча» 2006 года и капитан сборной Италии, выигравшей в том же году чемпионат мира. Сразу после турнира он перешёл в мадридский клуб и провёл там три сезона.</div>
+    <div class="solo-price">250 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
   </div>
 </section>
 <section class="slide white solo" id="s22">
+  <div class="solo-ph"><img src="img_museum2/274ee51056.jpg" alt="Фабио Каннаваро — домашняя футболка сборной Италии №5 с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Защитники · 3 из&nbsp;7</div>
+    <div class="solo-name">Фабио Каннаваро — домашняя футболка сборной Италии №5 с автографом</div>
+    <div class="solo-text">Домашняя футболка сборной Италии с пятым номером — тем самым, под которым Фабио Каннаваро выходил на поле. В 2006 году он привёл команду к победе на чемпионате мира в Германии и получил «Золотой мяч».</div>
+    <div class="solo-price">250 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s23">
+  <div class="solo-ph"><img src="img_museum2/clean_adf54cb98d.jpg" alt="Кафу — мяч сборной Бразилии с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Защитники · 4 из&nbsp;7</div>
+    <div class="solo-name">Кафу — мяч сборной Бразилии с автографом</div>
+    <div class="solo-text">Мяч сборной Бразилии с автографом. Маркос Эванжелиста ди Морайс, Кафу, — единственный футболист, вышедший на поле в трёх финалах чемпионата мира подряд: 1994, 1998 и 2002 годов. За сборную он провёл 142 матча.</div>
+    <div class="solo-price">250 000&nbsp;₽</div>
+    <div class="solo-cert">JSA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s24">
+  <div class="solo-ph"><img src="img_museum2/ed6ca8b301.jpg" alt="Кафу — футболка «Милан» сезона 2006/07 с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Защитники · 5 из&nbsp;7</div>
+    <div class="solo-name">Кафу — футболка «Милан» сезона 2006/07 с автографом</div>
+    <div class="solo-text">Выездная футболка «Милана» сезона 2006/07 с автографом. Именно этот розыгрыш Лиги чемпионов клуб завершил победой над «Ливерпулем» в финале в Афинах — реванш за поражение в Стамбуле двумя годами ранее. Кафу провёл в «Милане» пять сезонов.</div>
+    <div class="solo-price">250 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white duo2" id="s25">
+  <div class="wrap" style="padding:28px 72px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 class="serif" style="font-weight:500;font-size:28px;color:var(--ink)">Защитники</h2>
+    <span class="kick" style="letter-spacing:.2em">6–7 из&nbsp;7</span>
+  </div>
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_museum2/8a89baa7f3.jpg" alt="Паоло Мальдини — футболка сборной Италии с автографом"></div>
+        <div class="dc-name">Паоло Мальдини — футболка сборной Италии с автографом</div>
+        <div class="dc-text">Футболка сборной Италии с автографом. Паоло Мальдини провёл за национальную команду 126 матчей и дважды играл в финалах крупнейших турниров — чемпионата мира 1994 года и чемпионата Европы 2000 года.</div>
+        <div class="dc-price">240 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_museum2/9ddb847c71.jpg" alt="Паоло Мальдини — гостевая футболка «Милана» №3 с автографом"></div>
+        <div class="dc-name">Паоло Мальдини — гостевая футболка «Милана» №3 с автографом</div>
+        <div class="dc-text">Гостевая футболка «Милана» с третьим номером — тем самым, под которым Паоло Мальдини играл всю карьеру. Он провёл в клубе 25 сезонов подряд, сыграл больше 900 матчей и пять раз побеждал в главном европейском турнире.</div>
+        <div class="dc-price">240 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s26" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_museum2/hero/mids.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 34%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.93) 0%,rgba(11,11,12,.74) 34%,rgba(11,11,12,.2) 68%,rgba(11,11,12,.05) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 60px;align-items:flex-start;text-align:left">
+      <div class="kick d" style="letter-spacing:.34em;margin-bottom:24px">Раздел&nbsp;четвёртый · 9 предметов</div>
+      <h2 class="div-huge" style="font-size:74px">Полузащитники</h2>
+      <div class="div-rule" style="margin:32px 0"></div>
+      <p class="div-sub" style="max-width:44ch">Недвед, Фигу, Пирло, Иньеста, Лэмпард, Скоулз, Зеедорф, Баллак — девять футболок центра поля.</p>
+    </div>
+    <span style="position:absolute;right:16px;bottom:12px;font:400 8.5px/1.3 'Inter';letter-spacing:.08em;color:rgba(245,241,232,.55)">Фото: Tam Tam · Wikimedia Commons · CC BY-SA 2.0</span>
+  </div>
+</section>
+<section class="slide white solo" id="s27">
   <div class="solo-ph"><img src="img_museum2/14f730167d.jpg" alt="Павел Недвед — футболка «Ювентус» с автографом, № 11"></div>
   <div class="solo-side">
-    <div class="kick" style="margin-bottom:16px">Полузащитники</div>
+    <div class="kick" style="margin-bottom:16px">Полузащитники · 1 из&nbsp;9</div>
     <div class="solo-name">Павел Недвед — футболка «Ювентус» с автографом, № 11</div>
     <div class="solo-text">Футболка «Ювентуса» с одиннадцатым номером и автографом. Павел Недвед — обладатель «Золотого мяча» 2003 года, получивший от журналистов прозвище «Чешская пушка» за мощь удара и работу на всём поле.</div>
     <div class="solo-price">250 000&nbsp;₽</div>
     <div class="solo-cert">Beckett</div>
   </div>
 </section>
-<section class="slide white quad" id="s23">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">Полузащитники</h2>
-    <span class="kick" style="letter-spacing:.2em">2–5 из&nbsp;9</span>
+<section class="slide white solo" id="s28">
+  <div class="solo-ph"><img src="img_museum2/d059b313f8.jpg" alt="Луиш Фигу — футболка сборной Португалии с автографом (2004)"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Полузащитники · 2 из&nbsp;9</div>
+    <div class="solo-name">Луиш Фигу — футболка сборной Португалии с автографом (2004)</div>
+    <div class="solo-text">Футболка сборной Португалии образца 2004 года с автографом. Луиш Фигу — обладатель «Золотого мяча» 2000 года. На домашнем чемпионате Европы 2004 года команда во главе с ним дошла до финала и уступила Греции.</div>
+    <div class="solo-price">250 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
   </div>
-  <div class="quad-in">
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/d059b313f8.jpg" alt="Луиш Фигу — футболка сборной Португалии с автографом (2004)"></div>
-        <div>
-          <div class="qc-name">Луиш Фигу — футболка сборной Португалии с автографом (2004)</div>
-          <div class="qc-text">Футболка сборной Португалии образца 2004 года с автографом. Луиш Фигу — обладатель «Золотого мяча» 2000 года. На домашнем чемпионате Европы 2004 года команда во главе с ним дошла до финала и уступила Греции.</div>
-          <div class="qc-price">250 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
+</section>
+<section class="slide white solo" id="s29">
+  <div class="solo-ph"><img src="img_museum2/0e301f114f.jpg" alt="Андреа Пирло — футболка сборной Италии с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Полузащитники · 3 из&nbsp;9</div>
+    <div class="solo-name">Андреа Пирло — футболка сборной Италии с автографом</div>
+    <div class="solo-text">Футболка сборной Италии с автографом. Андреа Пирло — чемпион мира 2006 года и двукратный победитель Лиги чемпионов с «Миланом». Его манера вести игру из глубины поля переопределила роль опорного полузащитника в европейском футболе.</div>
+    <div class="solo-price">250 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s30">
+  <div class="solo-ph"><img src="img_museum2/6ef1e5f3eb.jpg" alt="Андрес Иньеста — футболка «Барселона» с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Полузащитники · 4 из&nbsp;9</div>
+    <div class="solo-name">Андрес Иньеста — футболка «Барселона» с автографом</div>
+    <div class="solo-text">Футболка «Барселоны» с автографом. Андрес Иньеста — воспитанник «Ла Масии» и один из символов золотой эпохи клуба и сборной Испании. Его гол в финале чемпионата мира 2010 года принёс Испании первый титул чемпиона мира.</div>
+    <div class="solo-price">240 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s31">
+  <div class="solo-ph"><img src="img_museum2/1c377a5dad.jpg" alt="Фрэнк Лэмпард — футболка «Челси» с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Полузащитники · 5 из&nbsp;9</div>
+    <div class="solo-name">Фрэнк Лэмпард — футболка «Челси» с автографом</div>
+    <div class="solo-text">Футболка «Челси» производства Umbro с автографом. Фрэнк Лэмпард — лучший бомбардир в истории клуба, забивший за него 211 мячей, и победитель Лиги чемпионов 2012 года в его составе.</div>
+    <div class="solo-price">240 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s32">
+  <div class="solo-ph"><img src="img_museum2/b11aae3e8d.jpg" alt="Пол Скоулз — футболка «Манчестер Юнайтед» с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Полузащитники · 6 из&nbsp;9</div>
+    <div class="solo-name">Пол Скоулз — футболка «Манчестер Юнайтед» с автографом</div>
+    <div class="solo-text">Футболка «Манчестер Юнайтед» производства Nike с автографом. Пол Скоулз провёл в клубе всю профессиональную карьеру, выиграл одиннадцать чемпионатов Англии и две Лиги чемпионов, в 1999 и 2008 годах.</div>
+    <div class="solo-price">240 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s33">
+  <div class="solo-ph"><img src="img_museum2/91a0c42ac7.jpg" alt="Кларенс Зеедорф — футболка «Милан» с автографом (2003)"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Полузащитники · 7 из&nbsp;9</div>
+    <div class="solo-name">Кларенс Зеедорф — футболка «Милан» с автографом (2003)</div>
+    <div class="solo-text">Футболка «Милана» производства Adidas образца 2003 года с автографом. Кларенс Зеедорф — единственный футболист, выигравший Лигу чемпионов с тремя разными клубами: «Аяксом», «Реалом» и «Миланом». В 2003 году он взял трофей с «Миланом».</div>
+    <div class="solo-price">240 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white duo2" id="s34">
+  <div class="wrap" style="padding:28px 72px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 class="serif" style="font-weight:500;font-size:28px;color:var(--ink)">Полузащитники</h2>
+    <span class="kick" style="letter-spacing:.2em">8–9 из&nbsp;9</span>
+  </div>
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_museum2/ad677cdb58.jpg" alt="Михаэль Баллак — футболка «Бавария» с автографом (2003/04)"></div>
+        <div class="dc-name">Михаэль Баллак — футболка «Бавария» с автографом (2003/04)</div>
+        <div class="dc-text">Футболка «Баварии» сезона 2003/04 с автографом. Михаэль Баллак — капитан сборной Германии, дошедшей до финала чемпионата мира 2002 года. В мюнхенском клубе он трижды становился чемпионом Германии.</div>
+        <div class="dc-price">240 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
       </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/0e301f114f.jpg" alt="Андреа Пирло — футболка сборной Италии с автографом"></div>
-        <div>
-          <div class="qc-name">Андреа Пирло — футболка сборной Италии с автографом</div>
-          <div class="qc-text">Футболка сборной Италии с автографом. Андреа Пирло — чемпион мира 2006 года и двукратный победитель Лиги чемпионов с «Миланом». Его манера вести игру из глубины поля переопределила роль опорного полузащитника в европейском футболе.</div>
-          <div class="qc-price">250 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/6ef1e5f3eb.jpg" alt="Андрес Иньеста — футболка «Барселона» с автографом"></div>
-        <div>
-          <div class="qc-name">Андрес Иньеста — футболка «Барселона» с автографом</div>
-          <div class="qc-text">Футболка «Барселоны» с автографом. Андрес Иньеста — воспитанник «Ла Масии» и один из символов золотой эпохи клуба и сборной Испании. Его гол в финале чемпионата мира 2010 года принёс Испании первый титул чемпиона мира.</div>
-          <div class="qc-price">240 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/1c377a5dad.jpg" alt="Фрэнк Лэмпард — футболка «Челси» с автографом"></div>
-        <div>
-          <div class="qc-name">Фрэнк Лэмпард — футболка «Челси» с автографом</div>
-          <div class="qc-text">Футболка «Челси» производства Umbro с автографом. Фрэнк Лэмпард — лучший бомбардир в истории клуба, забивший за него 211 мячей, и победитель Лиги чемпионов 2012 года в его составе.</div>
-          <div class="qc-price">240 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_museum2/41f16bea39.jpg" alt="Михаэль Баллак — футболка сборной Германии с автографом, № 13"></div>
+        <div class="dc-name">Михаэль Баллак — футболка сборной Германии с автографом, № 13</div>
+        <div class="dc-text">Футболка сборной Германии с тринадцатым номером и автографом. Михаэль Баллак был капитаном команды на нескольких крупных турнирах: он вывел сборную в финал чемпионата мира 2002 года и в финал чемпионата Европы 2008 года.</div>
+        <div class="dc-price">240 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
       </div>
   </div>
 </section>
-<section class="slide white quad" id="s24">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">Полузащитники</h2>
-    <span class="kick" style="letter-spacing:.2em">6–9 из&nbsp;9</span>
-  </div>
-  <div class="quad-in">
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/b11aae3e8d.jpg" alt="Пол Скоулз — футболка «Манчестер Юнайтед» с автографом"></div>
-        <div>
-          <div class="qc-name">Пол Скоулз — футболка «Манчестер Юнайтед» с автографом</div>
-          <div class="qc-text">Футболка «Манчестер Юнайтед» производства Nike с автографом. Пол Скоулз провёл в клубе всю профессиональную карьеру, выиграл одиннадцать чемпионатов Англии и две Лиги чемпионов, в 1999 и 2008 годах.</div>
-          <div class="qc-price">240 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/91a0c42ac7.jpg" alt="Кларенс Зеедорф — футболка «Милан» с автографом (2003)"></div>
-        <div>
-          <div class="qc-name">Кларенс Зеедорф — футболка «Милан» с автографом (2003)</div>
-          <div class="qc-text">Футболка «Милана» производства Adidas образца 2003 года с автографом. Кларенс Зеедорф — единственный футболист, выигравший Лигу чемпионов с тремя разными клубами: «Аяксом», «Реалом» и «Миланом». В 2003 году он взял трофей с «Миланом».</div>
-          <div class="qc-price">240 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/ad677cdb58.jpg" alt="Михаэль Баллак — футболка «Бавария» с автографом (2003/04)"></div>
-        <div>
-          <div class="qc-name">Михаэль Баллак — футболка «Бавария» с автографом (2003/04)</div>
-          <div class="qc-text">Футболка «Баварии» сезона 2003/04 с автографом. Михаэль Баллак — капитан сборной Германии, дошедшей до финала чемпионата мира 2002 года. В мюнхенском клубе он трижды становился чемпионом Германии.</div>
-          <div class="qc-price">240 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/41f16bea39.jpg" alt="Михаэль Баллак — футболка сборной Германии с автографом, № 13"></div>
-        <div>
-          <div class="qc-name">Михаэль Баллак — футболка сборной Германии с автографом, № 13</div>
-          <div class="qc-text">Футболка сборной Германии с тринадцатым номером и автографом. Михаэль Баллак был капитаном команды на нескольких крупных турнирах: он вывел сборную в финал чемпионата мира 2002 года и в финал чемпионата Европы 2008 года.</div>
-          <div class="qc-price">240 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
+<section class="slide dark" id="s35" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_museum2/hero/forwards.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 34%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.93) 0%,rgba(11,11,12,.74) 34%,rgba(11,11,12,.2) 68%,rgba(11,11,12,.05) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 60px;align-items:flex-start;text-align:left">
+      <div class="kick d" style="letter-spacing:.34em;margin-bottom:24px">Раздел&nbsp;пятый · 8 предметов</div>
+      <h2 class="div-huge" style="font-size:74px">Нападающие</h2>
+      <div class="div-rule" style="margin:32px 0"></div>
+      <p class="div-sub" style="max-width:44ch">Баджо, Ширер, Кантона, Руни, Салах, Сака, ван Перси — форварды четырёх десятилетий европейского футбола.</p>
+    </div>
+    <span style="position:absolute;right:16px;bottom:12px;font:400 8.5px/1.3 'Inter';letter-spacing:.08em;color:rgba(245,241,232,.55)">Фото: Kevin Walsh · Wikimedia Commons · CC BY 2.0</span>
   </div>
 </section>
-<section class="slide dark" id="s25" style="place-content:center;justify-items:center;text-align:center">
-  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
-    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Раздел&nbsp;шестой · 8 предметов</div>
-    <h2 class="div-huge" style="font-size:74px">Нападающие</h2>
-    <div class="div-rule" style="margin:34px 0"></div>
-    <p class="div-sub" style="text-align:center">Ширер, Кантона, Баджо, Руни, Салах, Сака, ван Перси, Ривалдо — форварды четырёх десятилетий европейского футбола.</p>
-  </div>
-</section>
-<section class="slide white solo" id="s26">
+<section class="slide white solo" id="s36">
   <div class="solo-ph"><img src="img_museum2/62658b7c16.jpg" alt="Роберто Баджо — футболка сборной Италии с автографом"></div>
   <div class="solo-side">
-    <div class="kick" style="margin-bottom:16px">Нападающие</div>
+    <div class="kick" style="margin-bottom:16px">Нападающие · 1 из&nbsp;8</div>
     <div class="solo-name">Роберто Баджо — футболка сборной Италии с автографом</div>
     <div class="solo-text">Футболка сборной Италии образца 1990 года с пятнадцатым номером и автографом. Роберто Баджо — обладатель «Золотого мяча» 1993 года, вошедший в историю под прозвищем «божественный хвостик» и забивший за сборную 27 мячей.</div>
     <div class="solo-price">440 000&nbsp;₽</div>
     
   </div>
 </section>
-<section class="slide white quad" id="s27">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">Нападающие</h2>
-    <span class="kick" style="letter-spacing:.2em">2–5 из&nbsp;8</span>
+<section class="slide white solo" id="s37">
+  <div class="solo-ph"><img src="img_museum2/e2463adba4.jpg" alt="Алан Ширер — футболка «Ньюкасл Юнайтед» с автографом (1999/2000)"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Нападающие · 2 из&nbsp;8</div>
+    <div class="solo-name">Алан Ширер — футболка «Ньюкасл Юнайтед» с автографом (1999/2000)</div>
+    <div class="solo-text">Футболка «Ньюкасл Юнайтед» сезона 1999/2000 с автографом. Алан Ширер — рекордсмен английской Премьер-лиги по числу голов: 260 мячей. В «Ньюкасле», клубе своего родного города, он играл десять сезонов и был капитаном команды.</div>
+    <div class="solo-price">300 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
   </div>
-  <div class="quad-in">
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/e2463adba4.jpg" alt="Алан Ширер — футболка «Ньюкасл Юнайтед» с автографом (1999/2000)"></div>
-        <div>
-          <div class="qc-name">Алан Ширер — футболка «Ньюкасл Юнайтед» с автографом (1999/2000)</div>
-          <div class="qc-text">Футболка «Ньюкасл Юнайтед» сезона 1999/2000 с автографом. Алан Ширер — рекордсмен английской Премьер-лиги по числу голов: 260 мячей. В «Ньюкасле», клубе своего родного города, он играл десять сезонов и был капитаном команды.</div>
-          <div class="qc-price">300 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
+</section>
+<section class="slide white solo" id="s38">
+  <div class="solo-ph"><img src="img_museum2/707d243dae.jpg" alt="Мохамед Салах — футболка «Ливерпуль» с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Нападающие · 3 из&nbsp;8</div>
+    <div class="solo-name">Мохамед Салах — футболка «Ливерпуль» с автографом</div>
+    <div class="solo-text">Футболка «Ливерпуля» с автографом. Мохамед Салах — рекордсмен Премьер-лиги по числу голов среди африканских футболистов, победитель Лиги чемпионов 2019 года и чемпион Англии в составе клуба. Его автографы с независимой экспертизой встречаются редко.</div>
+    <div class="solo-price">300 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s39">
+  <div class="solo-ph"><img src="img_museum2/clean_39fec020ea.jpg" alt="Эрик Кантона — гостевая футболка «Манчестер Юнайтед» с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Нападающие · 4 из&nbsp;8</div>
+    <div class="solo-name">Эрик Кантона — гостевая футболка «Манчестер Юнайтед» с автографом</div>
+    <div class="solo-text">Гостевая футболка «Манчестер Юнайтед» 1993–1995 годов с автографом. Эрик Кантона — французский форвард, ставший символом возрождения клуба в начале 1990-х и получивший от болельщиков титул короля Олд Траффорда.</div>
+    <div class="solo-price">260 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s40">
+  <div class="solo-ph"><img src="img_museum2/bd6140d8c6.jpg" alt="Уэйн Руни — домашняя футболка «Манчестер Юнайтед» с автографом (2008)"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Нападающие · 5 из&nbsp;8</div>
+    <div class="solo-name">Уэйн Руни — домашняя футболка «Манчестер Юнайтед» с автографом (2008)</div>
+    <div class="solo-text">Домашняя футболка «Манчестер Юнайтед» 2008 года с автографом. Уэйн Руни — лучший бомбардир в истории клуба, забивший за него 253 мяча. В том сезоне команда Алекса Фергюсона выиграла Лигу чемпионов и чемпионат Англии.</div>
+    <div class="solo-price">250 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s41">
+  <div class="solo-ph"><img src="img_museum2/clean_3858d05ef4.jpg" alt="Уэйн Руни — футболка «Манчестер Юнайтед» с автографом (чёрная версия)"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Нападающие · 6 из&nbsp;8</div>
+    <div class="solo-name">Уэйн Руни — футболка «Манчестер Юнайтед» с автографом (чёрная версия)</div>
+    <div class="solo-text">Футболка «Манчестер Юнайтед» в альтернативной чёрной расцветке с автографом. Уэйн Руни провёл в клубе тринадцать сезонов, выиграл пять чемпионатов Англии и Лигу чемпионов 2008 года.</div>
+    <div class="solo-price">250 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white duo2" id="s42">
+  <div class="wrap" style="padding:28px 72px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 class="serif" style="font-weight:500;font-size:28px;color:var(--ink)">Нападающие</h2>
+    <span class="kick" style="letter-spacing:.2em">7–8 из&nbsp;8</span>
+  </div>
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_museum2/clean_4bb705340a.jpg" alt="Букайо Сака — домашняя футболка «Арсенал» с автографом, № 7"></div>
+        <div class="dc-name">Букайо Сака — домашняя футболка «Арсенал» с автографом, № 7</div>
+        <div class="dc-text">Домашняя футболка «Арсенала» с седьмым номером и автографом. Букайо Сака — воспитанник академии клуба, ставший одним из его ключевых игроков и футболистом сборной Англии, с которой дошёл до финалов чемпионатов Европы 2020 и 2024 годов.</div>
+        <div class="dc-price">250 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
       </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/707d243dae.jpg" alt="Мохамед Салах — футболка «Ливерпуль» с автографом"></div>
-        <div>
-          <div class="qc-name">Мохамед Салах — футболка «Ливерпуль» с автографом</div>
-          <div class="qc-text">Футболка «Ливерпуля» с автографом. Мохамед Салах — рекордсмен Премьер-лиги по числу голов среди африканских футболистов, победитель Лиги чемпионов 2019 года и чемпион Англии в составе клуба. Его автографы с независимой экспертизой встречаются редко.</div>
-          <div class="qc-price">300 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_39fec020ea.jpg" alt="Эрик Кантона — гостевая футболка «Манчестер Юнайтед» с автографом"></div>
-        <div>
-          <div class="qc-name">Эрик Кантона — гостевая футболка «Манчестер Юнайтед» с автографом</div>
-          <div class="qc-text">Гостевая футболка «Манчестер Юнайтед» 1993–1995 годов с автографом. Эрик Кантона — французский форвард, ставший символом возрождения клуба в начале 1990-х и получивший от болельщиков титул короля Олд Траффорда.</div>
-          <div class="qc-price">260 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/bd6140d8c6.jpg" alt="Уэйн Руни — домашняя футболка «Манчестер Юнайтед» с автографом (2008)"></div>
-        <div>
-          <div class="qc-name">Уэйн Руни — домашняя футболка «Манчестер Юнайтед» с автографом (2008)</div>
-          <div class="qc-text">Домашняя футболка «Манчестер Юнайтед» 2008 года с автографом. Уэйн Руни — лучший бомбардир в истории клуба, забивший за него 253 мяча. В том сезоне команда Алекса Фергюсона выиграла Лигу чемпионов и чемпионат Англии.</div>
-          <div class="qc-price">250 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_museum2/clean_dea9a9055f.jpg" alt="Робин ван Перси — футболка сборной Нидерландов с автографом"></div>
+        <div class="dc-name">Робин ван Перси — футболка сборной Нидерландов с автографом</div>
+        <div class="dc-text">Футболка сборной Нидерландов с автографом. Робин ван Перси — многолетний капитан национальной команды, забивший за неё 50 мячей. С «Манчестер Юнайтед» он выиграл чемпионат Англии 2013 года, став лучшим бомбардиром того сезона.</div>
+        <div class="dc-price">240 000&nbsp;₽</div>
+        
       </div>
   </div>
 </section>
-<section class="slide white quad" id="s28">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">Нападающие</h2>
-    <span class="kick" style="letter-spacing:.2em">6–8 из&nbsp;8</span>
-  </div>
-  <div class="quad-in">
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_3858d05ef4.jpg" alt="Уэйн Руни — футболка «Манчестер Юнайтед» с автографом (чёрная версия)"></div>
-        <div>
-          <div class="qc-name">Уэйн Руни — футболка «Манчестер Юнайтед» с автографом (чёрная версия)</div>
-          <div class="qc-text">Футболка «Манчестер Юнайтед» в альтернативной чёрной расцветке с автографом. Уэйн Руни провёл в клубе тринадцать сезонов, выиграл пять чемпионатов Англии и Лигу чемпионов 2008 года.</div>
-          <div class="qc-price">250 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_4bb705340a.jpg" alt="Букайо Сака — домашняя футболка «Арсенал» с автографом, № 7"></div>
-        <div>
-          <div class="qc-name">Букайо Сака — домашняя футболка «Арсенал» с автографом, № 7</div>
-          <div class="qc-text">Домашняя футболка «Арсенала» с седьмым номером и автографом. Букайо Сака — воспитанник академии клуба, ставший одним из его ключевых игроков и футболистом сборной Англии, с которой дошёл до финалов чемпионатов Европы 2020 и 2024 годов.</div>
-          <div class="qc-price">250 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_dea9a9055f.jpg" alt="Робин ван Перси — футболка сборной Нидерландов с автографом"></div>
-        <div>
-          <div class="qc-name">Робин ван Перси — футболка сборной Нидерландов с автографом</div>
-          <div class="qc-text">Футболка сборной Нидерландов с автографом. Робин ван Перси — многолетний капитан национальной команды, забивший за неё 50 мячей. С «Манчестер Юнайтед» он выиграл чемпионат Англии 2013 года, став лучшим бомбардиром того сезона.</div>
-          <div class="qc-price">240 000&nbsp;₽</div>
-          
-        </div>
-      </div>
-  </div>
-</section>
-<section class="slide dark" id="s29" style="place-content:center;justify-items:center;text-align:center">
+<section class="slide dark" id="s43" style="place-content:center;justify-items:center;text-align:center">
   <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
-    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Раздел&nbsp;седьмой · 3 предметов</div>
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Раздел&nbsp;шестой · 3 предметов</div>
     <h2 class="div-huge" style="font-size:74px">Бутсы</h2>
     <div class="div-rule" style="margin:34px 0"></div>
     <p class="div-sub" style="text-align:center">Игровая обувь Пеле, Роналдо, Роналдиньо и Эрлинга Холанда — формат, который в обороте встречается реже футболок.</p>
   </div>
 </section>
-<section class="slide white solo" id="s30">
+<section class="slide white solo" id="s44">
   <div class="solo-ph"><img src="img_museum2/clean_31780ef01c.jpg" alt="Роналдо (R9) и Роналдиньо (R10) — бутса с двойным автографом"></div>
   <div class="solo-side">
-    <div class="kick" style="margin-bottom:16px">Бутсы</div>
+    <div class="kick" style="margin-bottom:16px">Бутсы · 1 из&nbsp;3</div>
     <div class="solo-name">Роналдо (R9) и Роналдиньо (R10) — бутса с двумя автографами</div>
     <div class="solo-text">Бутса с двумя автографами. Роналдо Насариу и Роналдиньо — форварды сборной Бразилии, каждый из которых признавался лучшим футболистом мира. Вместе они выиграли чемпионат мира 2002 года, где Роналдо забил восемь голов.</div>
     <div class="solo-price">500 000&nbsp;₽</div>
     <div class="solo-cert">Beckett</div>
   </div>
 </section>
-<section class="slide white quad" id="s31">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">Бутсы</h2>
-    <span class="kick" style="letter-spacing:.2em">2–3 из&nbsp;3</span>
-  </div>
-  <div class="quad-in">
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/clean_872c4c0e7f.jpg" alt="Пеле — бутса с автографом"></div>
-        <div>
-          <div class="qc-name">Пеле — бутса с автографом</div>
-          <div class="qc-text">Бутса Puma с автографом. Пеле — единственный трёхкратный чемпион мира, победитель турниров 1958, 1962 и 1970 годов. Первый титул он выиграл в семнадцать лет, забив в финале со сборной Швеции два мяча.</div>
-          <div class="qc-price">500 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/805c6898b8.jpg" alt="Эрлинг Холанд — бутса с автографом (Fanatics BAS)"></div>
-        <div>
-          <div class="qc-name">Эрлинг Холанд — бутса с автографом</div>
-          <div class="qc-text">Бутса Nike Mercurial с автографом. Эрлинг Холанд — нападающий «Манчестер Сити», в первом же сезоне в Англии забивший 36 мячей в чемпионате и установивший рекорд результативности Премьер-лиги.</div>
-          <div class="qc-price">360 000&nbsp;₽</div>
-          
-        </div>
-      </div>
+<section class="slide white solo" id="s45">
+  <div class="solo-ph"><img src="img_museum2/clean_872c4c0e7f.jpg" alt="Пеле — бутса с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Бутсы · 2 из&nbsp;3</div>
+    <div class="solo-name">Пеле — бутса с автографом</div>
+    <div class="solo-text">Бутса Puma с автографом. Пеле — единственный трёхкратный чемпион мира, победитель турниров 1958, 1962 и 1970 годов. Первый титул он выиграл в семнадцать лет, забив в финале со сборной Швеции два мяча.</div>
+    <div class="solo-price">500 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
   </div>
 </section>
-<section class="slide dark" id="s32" style="place-content:center;justify-items:center;text-align:center">
-  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
-    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Раздел&nbsp;восьмой · 6 предметов</div>
-    <h2 class="div-huge" style="font-size:74px">Мячи</h2>
-    <div class="div-rule" style="margin:34px 0"></div>
-    <p class="div-sub" style="text-align:center">Шесть мячей: тройная подпись Пеле, Месси и Роналду, бразильские чемпионы 1994 и 2002 годов, Вальдеррама и Бензема.</p>
+<section class="slide white solo" id="s46">
+  <div class="solo-ph"><img src="img_museum2/805c6898b8.jpg" alt="Эрлинг Холанд — бутса с автографом (Fanatics BAS)"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Бутсы · 3 из&nbsp;3</div>
+    <div class="solo-name">Эрлинг Холанд — бутса с автографом</div>
+    <div class="solo-text">Бутса Nike Mercurial с автографом. Эрлинг Холанд — нападающий «Манчестер Сити», в первом же сезоне в Англии забивший 36 мячей в чемпионате и установивший рекорд результативности Премьер-лиги.</div>
+    <div class="solo-price">360 000&nbsp;₽</div>
+    
   </div>
 </section>
-<section class="slide white solo" id="s33">
+<section class="slide dark" id="s47" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_museum2/hero/balls.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%">
+    <div style="position:absolute;inset:0;background:linear-gradient(270deg,rgba(11,11,12,.93) 0%,rgba(11,11,12,.74) 34%,rgba(11,11,12,.2) 68%,rgba(11,11,12,.05) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 60px;align-items:flex-end;text-align:right">
+      <div class="kick d" style="letter-spacing:.34em;margin-bottom:24px">Раздел&nbsp;седьмой · 6 предметов</div>
+      <h2 class="div-huge" style="font-size:74px">Мячи</h2>
+      <div class="div-rule" style="margin:32px 0"></div>
+      <p class="div-sub" style="max-width:44ch">Шесть мячей: тройная подпись Пеле, Месси и Роналду, бразильские чемпионы 1994 и 2002 годов, Вальдеррама, Ривалдо и Бензема.</p>
+    </div>
+    <span style="position:absolute;right:16px;bottom:12px;font:400 8.5px/1.3 'Inter';letter-spacing:.08em;color:rgba(245,241,232,.55)">Фото: Peter Glaser · Wikimedia Commons · CC0</span>
+  </div>
+</section>
+<section class="slide white solo" id="s48">
   <div class="solo-ph"><img src="img_museum2/de6555881f.jpg" alt="Пеле, Месси, Роналду — мяч с тройным автографом"></div>
   <div class="solo-side">
-    <div class="kick" style="margin-bottom:16px">Мячи</div>
+    <div class="kick" style="margin-bottom:16px">Мячи · 1 из&nbsp;6</div>
     <div class="solo-name">Пеле, Лионель Месси, Криштиану Роналду — мяч с тремя автографами</div>
     <div class="solo-text">Мяч с тремя автографами. Пеле — трёхкратный чемпион мира, Лионель Месси — восьмикратный обладатель «Золотого мяча» и чемпион мира 2022 года, Криштиану Роналду — пятикратный обладатель «Золотого мяча». Три подписи объединяют разные эпохи игры.</div>
     <div class="solo-price">4 500 000&nbsp;₽</div>
     <div class="solo-cert">Beckett</div>
   </div>
 </section>
-<section class="slide white quad" id="s34">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">Мячи</h2>
-    <span class="kick" style="letter-spacing:.2em">2–5 из&nbsp;6</span>
+<section class="slide white solo" id="s49">
+  <div class="solo-ph"><img src="img_museum2/e652d3006b.jpg" alt="Роналдиньо и Роналдо Насариу — мини-мяч с двойным автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Мячи · 2 из&nbsp;6</div>
+    <div class="solo-name">Роналдиньо и Роналдо Насариу — мини-мяч с двумя автографами</div>
+    <div class="solo-text">Мини-мяч с двумя автографами. Роналдиньо и Роналдо Насариу — обладатели «Золотого мяча» и чемпионы мира со сборной Бразилии. Роналдо получал награду в 1997 и 2002 годах, Роналдиньо — в 2005-м.</div>
+    <div class="solo-price">500 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
   </div>
-  <div class="quad-in">
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/e652d3006b.jpg" alt="Роналдиньо и Роналдо Насариу — мини-мяч с двойным автографом"></div>
-        <div>
-          <div class="qc-name">Роналдиньо и Роналдо Насариу — мини-мяч с двумя автографами</div>
-          <div class="qc-text">Мини-мяч с двумя автографами. Роналдиньо и Роналдо Насариу — обладатели «Золотого мяча» и чемпионы мира со сборной Бразилии. Роналдо получал награду в 1997 и 2002 годах, Роналдиньо — в 2005-м.</div>
-          <div class="qc-price">500 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
+</section>
+<section class="slide white solo" id="s50">
+  <div class="solo-ph"><img src="img_museum2/30ad616a8b.jpg" alt="Карлос Вальдеррама — мяч с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Мячи · 3 из&nbsp;6</div>
+    <div class="solo-name">Карлос Вальдеррама — мяч с автографом</div>
+    <div class="solo-text">Мяч с автографом. Карлос Вальдеррама — многолетний капитан сборной Колумбии и участник трёх чемпионатов мира: 1990, 1994 и 1998 годов. Плеймейкер, узнаваемый по пышной причёске, он провёл за сборную 111 матчей.</div>
+    <div class="solo-price">250 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s51">
+  <div class="solo-ph"><img src="img_museum2/8e71cfec7e.jpg" alt="Ривалдо — мяч с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Мячи · 4 из&nbsp;6</div>
+    <div class="solo-name">Ривалдо — мяч с автографом</div>
+    <div class="solo-text">Мяч с символикой «Барселоны» и сборной Бразилии и с автографом. Ривалдо Витор Боржес Феррейра — обладатель «Золотого мяча» 1999 года и чемпион мира 2002 года, выступавший за «Барселону» и «Милан».</div>
+    <div class="solo-price">240 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white duo2" id="s52">
+  <div class="wrap" style="padding:28px 72px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 class="serif" style="font-weight:500;font-size:28px;color:var(--ink)">Мячи</h2>
+    <span class="kick" style="letter-spacing:.2em">5–6 из&nbsp;6</span>
+  </div>
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_museum2/748f3b54a0.jpg" alt="Карим Бензема — мяч с автографом"></div>
+        <div class="dc-name">Карим Бензема — мяч с автографом</div>
+        <div class="dc-text">Мяч с символикой «Реал Мадрида» и автографом. Карим Бензема — обладатель «Золотого мяча» 2022 года и пятикратный победитель Лиги чемпионов с мадридским клубом, второй бомбардир в его истории.</div>
+        <div class="dc-price">240 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
       </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/30ad616a8b.jpg" alt="Карлос Вальдеррама — мяч с автографом"></div>
-        <div>
-          <div class="qc-name">Карлос Вальдеррама — мяч с автографом</div>
-          <div class="qc-text">Мяч с автографом. Карлос Вальдеррама — многолетний капитан сборной Колумбии и участник трёх чемпионатов мира: 1990, 1994 и 1998 годов. Плеймейкер, узнаваемый по пышной причёске, он провёл за сборную 111 матчей.</div>
-          <div class="qc-price">250 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/8e71cfec7e.jpg" alt="Ривалдо — мяч с автографом"></div>
-        <div>
-          <div class="qc-name">Ривалдо — мяч с автографом</div>
-          <div class="qc-text">Мяч с символикой «Барселоны» и сборной Бразилии и с автографом. Ривалдо Витор Боржес Феррейра — обладатель «Золотого мяча» 1999 года и чемпион мира 2002 года, выступавший за «Барселону» и «Милан».</div>
-          <div class="qc-price">240 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/748f3b54a0.jpg" alt="Карим Бензема — мяч с автографом"></div>
-        <div>
-          <div class="qc-name">Карим Бензема — мяч с автографом</div>
-          <div class="qc-text">Мяч с символикой «Реал Мадрида» и автографом. Карим Бензема — обладатель «Золотого мяча» 2022 года и пятикратный победитель Лиги чемпионов с мадридским клубом, второй бомбардир в его истории.</div>
-          <div class="qc-price">240 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_museum2/08ac9a051b.jpg" alt="Бебето — мяч с автографом"></div>
+        <div class="dc-name">Бебето — мяч с автографом</div>
+        <div class="dc-text">Мяч с автографом. Бебето — нападающий сборной Бразилии, чемпион мира 1994 года, составивший с Ромарио атакующий тандем того турнира. Свой гол в матче с Нидерландами он отметил жестом «колыбель», посвящённым родившемуся сыну.</div>
+        <div class="dc-price">180 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
       </div>
   </div>
 </section>
-<section class="slide white quad" id="s35">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">Мячи</h2>
-    <span class="kick" style="letter-spacing:.2em">6–6 из&nbsp;6</span>
-  </div>
-  <div class="quad-in">
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/08ac9a051b.jpg" alt="Бебето — мяч с автографом"></div>
-        <div>
-          <div class="qc-name">Бебето — мяч с автографом</div>
-          <div class="qc-text">Мяч с автографом. Бебето — нападающий сборной Бразилии, чемпион мира 1994 года, составивший с Ромарио атакующий тандем того турнира. Свой гол в матче с Нидерландами он отметил жестом «колыбель», посвящённым родившемуся сыну.</div>
-          <div class="qc-price">180 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
+<section class="slide dark" id="s53" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_museum2/hero/young.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 34%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.93) 0%,rgba(11,11,12,.74) 34%,rgba(11,11,12,.2) 68%,rgba(11,11,12,.05) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 60px;align-items:flex-start;text-align:left">
+      <div class="kick d" style="letter-spacing:.34em;margin-bottom:24px">Раздел&nbsp;восьмой · 4 предметов</div>
+      <h2 class="div-huge" style="font-size:74px">Новое поколение</h2>
+      <div class="div-rule" style="margin:32px 0"></div>
+      <p class="div-sub" style="max-width:44ch">Ямаль, Педри, Гави и Беллингем — четыре имени, на которых строится следующий цикл европейского футбола.</p>
+    </div>
+    <span style="position:absolute;right:16px;bottom:12px;font:400 8.5px/1.3 'Inter';letter-spacing:.08em;color:rgba(245,241,232,.55)">Фото: Bryan Berlin · Wikimedia Commons · CC BY-SA 4.0</span>
   </div>
 </section>
-<section class="slide dark" id="s36" style="place-content:center;justify-items:center;text-align:center">
-  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
-    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Раздел&nbsp;девятый · 4 предметов</div>
-    <h2 class="div-huge" style="font-size:74px">Новое поколение</h2>
-    <div class="div-rule" style="margin:34px 0"></div>
-    <p class="div-sub" style="text-align:center">Ямаль, Педри, Гави и Беллингем — четыре имени, на которых строится следующий цикл европейского футбола.</p>
-  </div>
-</section>
-<section class="slide white solo" id="s37">
+<section class="slide white solo" id="s54">
   <div class="solo-ph"><img src="img_museum2/894b337872.jpg" alt="Ламин Ямаль — фотография в форме сборной Испании с автографом"></div>
   <div class="solo-side">
-    <div class="kick" style="margin-bottom:16px">Новое поколение</div>
+    <div class="kick" style="margin-bottom:16px">Новое поколение · 1 из&nbsp;4</div>
     <div class="solo-name">Ламин Ямаль — фотография в форме сборной Испании с автографом</div>
     <div class="solo-text">Фотография 20×25 см с автографом. Ламин Ямаль в семнадцать лет стал чемпионом Европы 2024 года, самым молодым игроком и самым молодым автором гола в истории турнира. Воспитанник «Ла Масии», он играет под десятым номером «Барселоны».</div>
     <div class="solo-price">220 000&nbsp;₽</div>
     <div class="solo-cert">Beckett</div>
   </div>
 </section>
-<section class="slide white quad" id="s38">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">Новое поколение</h2>
-    <span class="kick" style="letter-spacing:.2em">2–4 из&nbsp;4</span>
-  </div>
-  <div class="quad-in">
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/06f70aa020.jpg" alt="Педри — мяч Adidas чемпионата мира 2026 года с автографом (сборная Испании)"></div>
-        <div>
-          <div class="qc-name">Педри — мяч Adidas чемпионата мира 2026 года с автографом</div>
-          <div class="qc-text">Мяч Adidas чемпионата мира 2026 года с автографом. Педри — полузащитник «Барселоны» и сборной Испании, чемпион Европы 2024 года, лучший молодой игрок чемпионата Европы 2020 года и обладатель Golden Boy 2021 года.</div>
-          <div class="qc-price">210 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/5fdc7598b2.jpg" alt="Гави — мяч Adidas сборной Испании с автографом"></div>
-        <div>
-          <div class="qc-name">Гави — мяч Adidas сборной Испании с автографом</div>
-          <div class="qc-text">Мяч Adidas в оформлении сборной Испании с автографом. Гави — воспитанник «Ла Масии», обладатель Golden Boy 2022 года и победитель Лиги наций 2023 года. Он остаётся самым молодым автором гола в истории испанской сборной.</div>
-          <div class="qc-price">190 000&nbsp;₽</div>
-          <div class="qc-cert">Beckett</div>
-        </div>
-      </div>
-      <div class="qc">
-        <div class="qc-ph"><img src="img_museum2/99a72cb8a5.jpg" alt="Джуд Беллингем — фотография с автографом"></div>
-        <div>
-          <div class="qc-name">Джуд Беллингем — фотография с автографом</div>
-          <div class="qc-text">Фотография 20×25 см с автографом. Джуд Беллингем — полузащитник «Реал Мадрида» и сборной Англии, обладатель Golden Boy 2023 года. В первом же сезоне в Мадриде он выиграл чемпионат Испании и Лигу чемпионов 2024 года.</div>
-          <div class="qc-price">170 000&nbsp;₽</div>
-          <div class="qc-cert">PSA/DNA</div>
-        </div>
-      </div>
+<section class="slide white solo" id="s55">
+  <div class="solo-ph"><img src="img_museum2/06f70aa020.jpg" alt="Педри — мяч Adidas чемпионата мира 2026 года с автографом (сборная Испании)"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Новое поколение · 2 из&nbsp;4</div>
+    <div class="solo-name">Педри — мяч Adidas чемпионата мира 2026 года с автографом</div>
+    <div class="solo-text">Мяч Adidas чемпионата мира 2026 года с автографом. Педри — полузащитник «Барселоны» и сборной Испании, чемпион Европы 2024 года, лучший молодой игрок чемпионата Европы 2020 года и обладатель Golden Boy 2021 года.</div>
+    <div class="solo-price">210 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
   </div>
 </section>
-<section class="slide dark" id="s39" style="grid-template-rows:auto 1fr">
+<section class="slide white solo" id="s56">
+  <div class="solo-ph"><img src="img_museum2/5fdc7598b2.jpg" alt="Гави — мяч Adidas сборной Испании с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Новое поколение · 3 из&nbsp;4</div>
+    <div class="solo-name">Гави — мяч Adidas сборной Испании с автографом</div>
+    <div class="solo-text">Мяч Adidas в оформлении сборной Испании с автографом. Гави — воспитанник «Ла Масии», обладатель Golden Boy 2022 года и победитель Лиги наций 2023 года. Он остаётся самым молодым автором гола в истории испанской сборной.</div>
+    <div class="solo-price">190 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s57">
+  <div class="solo-ph"><img src="img_museum2/99a72cb8a5.jpg" alt="Джуд Беллингем — фотография с автографом"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Новое поколение · 4 из&nbsp;4</div>
+    <div class="solo-name">Джуд Беллингем — фотография с автографом</div>
+    <div class="solo-text">Фотография 20×25 см с автографом. Джуд Беллингем — полузащитник «Реал Мадрида» и сборной Англии, обладатель Golden Boy 2023 года. В первом же сезоне в Мадриде он выиграл чемпионат Испании и Лигу чемпионов 2024 года.</div>
+    <div class="solo-price">170 000&nbsp;₽</div>
+    <div class="solo-cert">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide dark" id="s58" style="grid-template-rows:auto 1fr">
   <div class="wrap" style="padding:40px 66px 0">
     <div class="kick d" style="margin-bottom:12px">Подборка целиком</div>
-    <h2 class="serif" style="font-weight:300;font-size:44px;line-height:1;color:var(--ivory)">63 предметов</h2>
+    <h2 class="serif" style="font-weight:300;font-size:44px;line-height:1;color:var(--ivory)">55 предметов</h2>
   </div>
-  <div class="wrap" style="padding:18px 66px 30px"><div class="lad"><div class="lad-row"><div class="lad-nm">Пеле, Лионель Месси, Криштиану Роналду — мяч с тремя автографами</div><div class="lad-pr">4 500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">«Барселона» 2009 — командный мяч с автографами, включая Лионеля Месси</div><div class="lad-pr">2 400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Лионель Месси — мяч чемпионата мира 2022 года с автографом</div><div class="lad-pr">950 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Лионель Месси — полноразмерная реплика Кубка мира с автографом</div><div class="lad-pr">750 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Лев Яшин — подписной лист с автографом</div><div class="lad-pr">700 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Лионель Месси — гостевая футболка «Барселоны» 2008–2010 с автографом</div><div class="lad-pr">650 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Лионель Месси — домашняя футболка сборной Аргентины №10 с автографом</div><div class="lad-pr">650 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Лионель Месси — футбольный мяч с автографом</div><div class="lad-pr">600 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Лионель Месси — бутса сборной Аргентины с автографом</div><div class="lad-pr">600 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Лионель Месси — бутса Adidas «Барселоны» (левая) с автографом</div><div class="lad-pr">600 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Пеле — футболка «Сантос» с автографом</div><div class="lad-pr">500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Альфредо Ди Стефано — фотография «Реал Мадрид» с автографом</div><div class="lad-pr">500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Роналдо (R9) и Роналдиньо (R10) — бутса с двумя автографами</div><div class="lad-pr">500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Пеле — бутса с автографом</div><div class="lad-pr">500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Роналдиньо и Роналдо Насариу — мини-мяч с двумя автографами</div><div class="lad-pr">500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Мишель Платини — футболка сборной Франции №10 с автографом</div><div class="lad-pr">470 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Пеле и Гордон Бэнкс — фотография «величайшего сейва» с двумя автографами</div><div class="lad-pr">450 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Роберто Баджо — футболка сборной Италии с автографом</div><div class="lad-pr">440 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Кафу — объёмная реплика Кубка Лиги чемпионов 2007 с автографом</div><div class="lad-pr">400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Андреа Пирло — объёмная реплика Кубка Лиги чемпионов 2007 на подставке с автографом</div><div class="lad-pr">400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Эрлинг Холанд — бутса с автографом</div><div class="lad-pr">360 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Дино Дзофф — ретро-футболка «Ювентуса» с автографом</div><div class="lad-pr">330 000&nbsp;₽</div></div></div></div>
+  <div class="wrap" style="padding:18px 66px 30px"><div class="lad"><div class="lad-row"><div class="lad-nm">Пеле, Лионель Месси, Криштиану Роналду — мяч с тремя автографами</div><div class="lad-pr">4 500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Лев Яшин — подписной лист с автографом</div><div class="lad-pr">700 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Пеле — футболка «Сантос» с автографом</div><div class="lad-pr">500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Альфредо Ди Стефано — фотография «Реал Мадрид» с автографом</div><div class="lad-pr">500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Роналдо (R9) и Роналдиньо (R10) — бутса с двумя автографами</div><div class="lad-pr">500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Пеле — бутса с автографом</div><div class="lad-pr">500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Роналдиньо и Роналдо Насариу — мини-мяч с двумя автографами</div><div class="lad-pr">500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Мишель Платини — футболка сборной Франции №10 с автографом</div><div class="lad-pr">470 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Пеле и Гордон Бэнкс — фотография «величайшего сейва» с двумя автографами</div><div class="lad-pr">450 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Роберто Баджо — футболка сборной Италии с автографом</div><div class="lad-pr">440 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Кафу — объёмная реплика Кубка Лиги чемпионов 2007 с автографом</div><div class="lad-pr">400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Андреа Пирло — объёмная реплика Кубка Лиги чемпионов 2007 на подставке с автографом</div><div class="lad-pr">400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Эрлинг Холанд — бутса с автографом</div><div class="lad-pr">360 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Дино Дзофф — ретро-футболка «Ювентуса» с автографом</div><div class="lad-pr">330 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Пеле — фотография сборной Бразилии с автографом</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Дино Дзофф — коллекционная карточка с автографом</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Мануэль Нойер — мяч «Баварии» с автографом</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Алан Ширер — футболка «Ньюкасл Юнайтед» с автографом (1999/2000)</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Мохамед Салах — футболка «Ливерпуль» с автографом</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Эрик Кантона — гостевая футболка «Манчестер Юнайтед» с автографом</div><div class="lad-pr">260 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Икер Касильяс — футболка «Реал Мадрид» с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Икер Касильяс — футболка сборной Испании с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div></div></div>
 </section>
-<section class="slide dark" id="s40" style="grid-template-rows:auto 1fr">
+<section class="slide dark" id="s59" style="grid-template-rows:auto 1fr">
   <div class="wrap" style="padding:40px 66px 0">
     <div class="kick d" style="margin-bottom:12px">Подборка целиком</div>
     <h2 class="serif" style="font-weight:300;font-size:44px;line-height:1;color:var(--ivory)">Продолжение</h2>
   </div>
-  <div class="wrap" style="padding:18px 66px 30px"><div class="lad"><div class="lad-row"><div class="lad-nm">Пеле — фотография сборной Бразилии с автографом</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Дино Дзофф — коллекционная карточка с автографом</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Мануэль Нойер — мяч «Баварии» с автографом</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Алан Ширер — футболка «Ньюкасл Юнайтед» с автографом (1999/2000)</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Мохамед Салах — футболка «Ливерпуль» с автографом</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Эрик Кантона — гостевая футболка «Манчестер Юнайтед» с автографом</div><div class="lad-pr">260 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Икер Касильяс — футболка «Реал Мадрид» с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Икер Касильяс — футболка сборной Испании с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Оливер Кан — вратарская футболка сборной Германии с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Фабио Каннаваро — футболка сборной Италии образца ЧМ-2006 с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Фабио Каннаваро — футболка «Реал Мадрид» с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Фабио Каннаваро — домашняя футболка сборной Италии №5 с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Кафу — мяч сборной Бразилии с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Кафу — футболка «Милан» сезона 2006/07 с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Павел Недвед — футболка «Ювентус» с автографом, № 11</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Луиш Фигу — футболка сборной Португалии с автографом (2004)</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Андреа Пирло — футболка сборной Италии с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Уэйн Руни — домашняя футболка «Манчестер Юнайтед» с автографом (2008)</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Уэйн Руни — футболка «Манчестер Юнайтед» с автографом (чёрная версия)</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Букайо Сака — домашняя футболка «Арсенал» с автографом, № 7</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Карлос Вальдеррама — мяч с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Петер Шмейхель — фотография «Манчестер Юнайтед» с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div></div></div>
+  <div class="wrap" style="padding:18px 66px 30px"><div class="lad"><div class="lad-row"><div class="lad-nm">Оливер Кан — вратарская футболка сборной Германии с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Фабио Каннаваро — футболка сборной Италии образца ЧМ-2006 с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Фабио Каннаваро — футболка «Реал Мадрид» с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Фабио Каннаваро — домашняя футболка сборной Италии №5 с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Кафу — мяч сборной Бразилии с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Кафу — футболка «Милан» сезона 2006/07 с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Павел Недвед — футболка «Ювентус» с автографом, № 11</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Луиш Фигу — футболка сборной Португалии с автографом (2004)</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Андреа Пирло — футболка сборной Италии с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Уэйн Руни — домашняя футболка «Манчестер Юнайтед» с автографом (2008)</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Уэйн Руни — футболка «Манчестер Юнайтед» с автографом (чёрная версия)</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Букайо Сака — домашняя футболка «Арсенал» с автографом, № 7</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Карлос Вальдеррама — мяч с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Петер Шмейхель — фотография «Манчестер Юнайтед» с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Паоло Мальдини — футболка сборной Италии с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Паоло Мальдини — гостевая футболка «Милана» №3 с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Андрес Иньеста — футболка «Барселона» с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Фрэнк Лэмпард — футболка «Челси» с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Пол Скоулз — футболка «Манчестер Юнайтед» с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Кларенс Зеедорф — футболка «Милан» с автографом (2003)</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Михаэль Баллак — футболка «Бавария» с автографом (2003/04)</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Михаэль Баллак — футболка сборной Германии с автографом, № 13</div><div class="lad-pr">240 000&nbsp;₽</div></div></div></div>
 </section>
-<section class="slide dark" id="s41" style="grid-template-rows:auto 1fr">
+<section class="slide dark" id="s60" style="grid-template-rows:auto 1fr">
   <div class="wrap" style="padding:40px 66px 0">
     <div class="kick d" style="margin-bottom:12px">Подборка целиком</div>
     <h2 class="serif" style="font-weight:300;font-size:44px;line-height:1;color:var(--ivory)">Продолжение</h2>
   </div>
-  <div class="wrap" style="padding:18px 66px 30px"><div class="lad"><div class="lad-row"><div class="lad-nm">Паоло Мальдини — футболка сборной Италии с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Паоло Мальдини — гостевая футболка «Милана» №3 с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Андрес Иньеста — футболка «Барселона» с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Фрэнк Лэмпард — футболка «Челси» с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Пол Скоулз — футболка «Манчестер Юнайтед» с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Кларенс Зеедорф — футболка «Милан» с автографом (2003)</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Михаэль Баллак — футболка «Бавария» с автографом (2003/04)</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Михаэль Баллак — футболка сборной Германии с автографом, № 13</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Робин ван Перси — футболка сборной Нидерландов с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ривалдо — мяч с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Карим Бензема — мяч с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ламин Ямаль — фотография в форме сборной Испании с автографом</div><div class="lad-pr">220 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Педри — мяч Adidas чемпионата мира 2026 года с автографом</div><div class="lad-pr">210 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Гави — мяч Adidas сборной Испании с автографом</div><div class="lad-pr">190 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Оливер Кан — вратарская перчатка Adidas с автографом</div><div class="lad-pr">180 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Дида — вратарская перчатка Nike с автографом</div><div class="lad-pr">180 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Бебето — мяч с автографом</div><div class="lad-pr">180 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Джуд Беллингем — фотография с автографом</div><div class="lad-pr">170 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Йенс Леманн — вратарская перчатка Adidas с автографом</div><div class="lad-pr">160 000&nbsp;₽</div></div></div></div>
+  <div class="wrap" style="padding:18px 66px 30px"><div class="lad"><div class="lad-row"><div class="lad-nm">Робин ван Перси — футболка сборной Нидерландов с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ривалдо — мяч с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Карим Бензема — мяч с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ламин Ямаль — фотография в форме сборной Испании с автографом</div><div class="lad-pr">220 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Педри — мяч Adidas чемпионата мира 2026 года с автографом</div><div class="lad-pr">210 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Гави — мяч Adidas сборной Испании с автографом</div><div class="lad-pr">190 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Оливер Кан — вратарская перчатка Adidas с автографом</div><div class="lad-pr">180 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Дида — вратарская перчатка Nike с автографом</div><div class="lad-pr">180 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Бебето — мяч с автографом</div><div class="lad-pr">180 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Джуд Беллингем — фотография с автографом</div><div class="lad-pr">170 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Йенс Леманн — вратарская перчатка Adidas с автографом</div><div class="lad-pr">160 000&nbsp;₽</div></div></div></div>
 </section>
-<section class="slide dark" id="s42" style="grid-template-rows:1fr auto">
+<section class="slide dark" id="s61" style="grid-template-rows:1fr auto">
   <div class="wrap" style="padding:76px 72px 0;display:flex;flex-direction:column;justify-content:center">
     <img src="img/stargift_logo.png" alt="Stargift" style="height:146px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97;align-self:flex-start">
-    <h2 class="serif" style="font-weight:300;font-size:46px;line-height:1.14;color:var(--ivory);margin-top:38px;max-width:32ch">От Яшина и Пеле до Ламина Ямаля: 68 предметов, шесть десятилетий игры и девять разделов одной экспозиции.</h2>
+    <h2 class="serif" style="font-weight:300;font-size:46px;line-height:1.14;color:var(--ivory);margin-top:38px;max-width:32ch">От Яшина и Пеле до Ламина Ямаля: 55 предметов, шесть десятилетий игры и восемь разделов одной экспозиции.</h2>
   </div>
   <div class="wrap" style="padding:26px 72px 40px;border-top:1px solid rgba(169,133,69,.3)">
     <span class="kick" style="letter-spacing:.24em;color:var(--gold2)">stargift.ru</span>
@@ -948,7 +790,7 @@ img{display:block}
 <script>
 function show(){const raw=location.hash.slice(1);const n=raw.replace(/^s/,'');const id=n?('s'+n.padStart(2,'0')):'s01';
 document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
-function go(d){const cur=+((location.hash.slice(1).replace(/^s/,''))||1);let x=cur+d;if(x<1)x=1;if(x>42)x=42;location.hash='s'+x;}
+function go(d){const cur=+((location.hash.slice(1).replace(/^s/,''))||1);let x=cur+d;if(x<1)x=1;if(x>61)x=61;location.hash='s'+x;}
 show();addEventListener('hashchange',show);
 addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')go(1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(-1);});
 addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX<innerWidth*0.32?-1:1);});

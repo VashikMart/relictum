@@ -65,8 +65,26 @@ JS_COLLECT = r"""
         }
       };
       rec(el, cs);
+      // однострочные подписи меряем по самой строке: у блока-обёртки в rect
+      // попадают padding и вся ширина слайда, и в PPTX текст уезжает к краю.
+      let box = el.getBoundingClientRect();
+      try {
+        const rg = document.createRange();
+        rg.selectNodeContents(el);
+        const rr = rg.getBoundingClientRect();
+        const lh = parseFloat(cs.lineHeight) || parseFloat(cs.fontSize) * 1.2;
+        if (rr.width > 0 && rr.height > 0 && rr.height <= lh * 1.6) {
+          // запас по ширине, иначе PowerPoint со своими метриками перенесёт строку
+          const ta = cs.textAlign;
+          const cen = ta === 'center', rgh = ta === 'right' || ta === 'end';
+          const l = rr.left - (cen ? 9 : rgh ? 16 : 2);
+          const rgt = rr.right + (cen ? 9 : rgh ? 2 : 16);
+          box = {left: l, top: rr.top, right: rgt, bottom: rr.bottom,
+                 x: l, y: rr.top, width: rgt - l, height: rr.height};
+        }
+      } catch (e) {}
       if (runs.length) out.texts.push({
-        rect: rel(el.getBoundingClientRect()),
+        rect: rel(box),
         align: cs.textAlign, lh: parseFloat(cs.lineHeight)||parseFloat(cs.fontSize)*1.2,
         base: parseFloat(cs.fontSize), runs, id: el.className||el.tagName
       });

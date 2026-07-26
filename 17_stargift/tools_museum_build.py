@@ -13,9 +13,21 @@ import html, json, os, re
 R = os.path.dirname(os.path.abspath(__file__))
 
 # порядок глав в каталоге
-ORDER = ["ЛИОНЕЛЬ МЕССИ", "ЛЕГЕНДЫ МИРОВОГО ФУТБОЛА", "ВРАТАРИ", "ЗАЩИТНИКИ",
+# Месси в дек не входит — по нему отдельная презентация
+ORDER = ["ЛЕГЕНДЫ МИРОВОГО ФУТБОЛА", "ВРАТАРИ", "ЗАЩИТНИКИ",
          "ПОЛУЗАЩИТНИКИ", "НАПАДАЮЩИЕ", "БУТСЫ С АВТОГРАФАМИ", "МЯЧИ С АВТОГРАФАМИ",
          "НОВОЕ ПОКОЛЕНИЕ"]
+
+# кадр на разделитель главы: файл, подпись источника, точка кадрирования, сторона текста.
+# Где сильного кадра нет — типографика. Обложку держит отдельный кадр (Пеле, 1970).
+COVER = ("img_museum2/hero/legends.jpg", "Фото: Wikimedia Commons · public domain")
+HERO = {
+ "ВРАТАРИ":       ("img_museum2/hero/keepers.jpg", "Фото: Ron Kroon · Anefo · Wikimedia Commons · CC0", "50% 46%", "left"),
+ "ПОЛУЗАЩИТНИКИ": ("img_museum2/hero/mids.jpg",    "Фото: Tam Tam · Wikimedia Commons · CC BY-SA 2.0", "50% 34%", "left"),
+ "НАПАДАЮЩИЕ":    ("img_museum2/hero/forwards.jpg","Фото: Kevin Walsh · Wikimedia Commons · CC BY 2.0", "50% 34%", "left"),
+ "МЯЧИ С АВТОГРАФАМИ": ("img_museum2/hero/balls.jpg", "Фото: Peter Glaser · Wikimedia Commons · CC0", "50% 50%", "right"),
+ "НОВОЕ ПОКОЛЕНИЕ": ("img_museum2/hero/young.jpg",  "Фото: Bryan Berlin · Wikimedia Commons · CC BY-SA 4.0", "50% 34%", "left"),
+}
 TITLE = {"ЛИОНЕЛЬ МЕССИ": "Лионель Месси", "ЛЕГЕНДЫ МИРОВОГО ФУТБОЛА": "Легенды",
          "ВРАТАРИ": "Вратари", "ЗАЩИТНИКИ": "Защитники", "ПОЛУЗАЩИТНИКИ": "Полузащитники",
          "НАПАДАЮЩИЕ": "Нападающие", "БУТСЫ С АВТОГРАФАМИ": "Бутсы",
@@ -79,6 +91,17 @@ img{display:block}
 .qc-price{font-family:'Cormorant Garamond';font-weight:500;font-size:20px;color:var(--gold);margin-top:8px}
 .qc-cert{font:400 9px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:6px}
 
+/* дуэт — два экспоната, фото сверху целиком */
+.duo2{grid-template-rows:auto 1fr}
+.duo2-in{display:grid;grid-template-columns:1fr 1fr;gap:46px;padding:16px 72px 30px;align-items:start}
+.dc{display:flex;flex-direction:column;align-items:center;text-align:center}
+.dc-ph{width:100%;height:326px;display:flex;align-items:center;justify-content:center;background:#fff}
+.dc-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.dc-name{font-family:'Cormorant Garamond';font-weight:500;font-size:24px;line-height:1.14;color:var(--ink);margin-top:18px;max-width:28ch}
+.dc-text{font:300 14.5px/1.55 'Inter';color:#4a4a4a;margin-top:9px;max-width:48ch}
+.dc-price{font-family:'Cormorant Garamond';font-weight:500;font-size:24px;color:var(--gold);margin-top:11px}
+.dc-cert{font:400 9.5px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:8px}
+
 /* поле — символическая сборная */
 .pitch{position:relative;width:100%;height:100%;background:linear-gradient(180deg,#101110 0%,#0b0b0c 100%)}
 .pitch .ln{position:absolute;border:1px solid rgba(169,133,69,.20)}
@@ -124,6 +147,7 @@ def photo(it):
 
 def main():
     lots = json.load(open(f"{R}/museum_lots.json", encoding="utf-8"))
+    lots = [x for x in lots if x["group"] in ORDER]   # Месси — отдельный дек
     txt = json.load(open(f"{R}/texts_museum.json", encoding="utf-8"))
     T = txt["lots"]
 
@@ -141,9 +165,8 @@ def main():
         n += 1
         S.append(s.replace("__ID__", f"s{n:02d}"))
 
-    hero = by["ЛИОНЕЛЬ МЕССИ"][0]
-
-    # ---- обложка
+    # ---- обложка: на промо-кадре кроп допустим, это не фотография лота
+    hphoto, hcred = COVER
     add(f"""<section class="slide dark on" id="__ID__" style="grid-template-columns:1.02fr 1fr">
   <div class="wrap" style="display:flex;flex-direction:column;justify-content:space-between;padding:62px 58px">
     <img src="img/stargift_logo.png" alt="Stargift" style="height:170px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97">
@@ -152,56 +175,13 @@ def main():
       <h1 class="serif" style="font-weight:300;font-size:82px;line-height:1;color:var(--ivory)">Музей<br>футбола</h1>
       <p style="font:300 17px/1.65 'Inter';color:#b8b2a6;margin-top:28px;max-width:44ch">{esc(txt['intro'])}</p>
     </div>
-    <div class="kick" style="letter-spacing:.24em">{len(lots)} предметов · июль 2026</div>
+    <div class="kick" style="letter-spacing:.24em">{sum(len(by[g]) for g in ORDER)} предметов · июль 2026</div>
   </div>
-  <div style="height:720px;overflow:hidden;background:#0e0f0e;display:flex;align-items:center;justify-content:center;padding:56px">
-    <img src="{photo(hero)}" alt="{esc(hero['title'])}" style="max-width:100%;max-height:100%;object-fit:contain;box-shadow:0 40px 90px rgba(0,0,0,.6)">
-  </div>
-</section>""")
-
-    # ---- оглавление
-    cells = "".join(f"""<div class="toc-i"><div class="toc-n">{esc(TITLE[g])}</div>
-      <div class="toc-c">{len(by[g])} предметов</div></div>""" for g in ORDER)
-    add(f"""<section class="slide dark" id="__ID__" style="grid-template-rows:auto 1fr">
-  <div class="wrap" style="padding:44px 60px 0">
-    <div class="kick d" style="margin-bottom:13px">Собрание по амплуа</div>
-    <h2 class="serif" style="font-weight:300;font-size:48px;line-height:1;color:var(--ivory)">Девять разделов</h2>
-  </div>
-  <div style="display:flex;align-items:center"><div class="toc">{cells}</div></div>
-</section>""")
-
-    # ---- символическая сборная
-    have = sum(1 for *_, w in XI if w)
-    marks = ""
-    for name, x, y, what in XI:
-        cls = "have" if what else "miss"
-        tail = (f'<div class="pwhat">{esc(what)}</div>' if what
-                else '<div class="pmiss">открыта</div>')
-        marks += (f'<div class="pos {cls}" style="left:{x}%;top:{y}%">'
-                  f'<div class="dot">{name[0]}</div><div class="pname">{esc(name)}</div>{tail}</div>')
-    add(f"""<section class="slide dark" id="__ID__" style="grid-template-rows:auto 1fr auto">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:flex-end">
-    <div>
-      <div class="kick d" style="margin-bottom:13px">Символическая сборная всех времён · France&nbsp;Football</div>
-      <h2 class="serif" style="font-weight:300;font-size:44px;line-height:1;color:var(--ivory)">Подборка закрывает {have} позиций из&nbsp;одиннадцати</h2>
-    </div>
-    <div style="display:flex;gap:24px;align-items:center;padding-bottom:5px">
-      <span style="display:flex;align-items:center;gap:8px;font:400 10px/1 'Inter';letter-spacing:.18em;text-transform:uppercase;color:var(--gold2)">
-        <i style="width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 38% 32%,#E4C88A,#A98545 70%);display:block"></i> есть в подборке</span>
-      <span style="display:flex;align-items:center;gap:8px;font:400 10px/1 'Inter';letter-spacing:.18em;text-transform:uppercase;color:rgba(245,241,232,.4)">
-        <i style="width:12px;height:12px;border-radius:50%;border:1px dashed rgba(245,241,232,.42);display:block"></i> открытая позиция</span>
-    </div>
-  </div>
-  <div style="position:relative;padding:4px 60px 0"><div class="pitch">
-      <div class="ln" style="left:8%;right:8%;top:4%;bottom:4%"></div>
-      <div class="ln" style="left:8%;right:8%;top:50%;height:0"></div>
-      <div class="ln" style="left:calc(50% - 60px);top:calc(50% - 60px);width:120px;height:120px;border-radius:50%"></div>
-      <div class="ln" style="left:28%;right:28%;bottom:4%;height:15%"></div>
-      <div class="ln" style="left:39%;right:39%;bottom:4%;height:5.5%"></div>
-      {marks}
-  </div></div>
-  <div class="wrap" style="padding:8px 60px 22px">
-    <p style="font:300 14.5px/1.6 'Inter';color:#9d978b;max-width:106ch">{esc(txt.get('xi',''))}</p>
+  <div style="position:relative;height:720px;overflow:hidden">
+    <img src="{hphoto}" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,var(--noir) 0%,rgba(11,11,12,.34) 20%,rgba(11,11,12,0) 52%)"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,11,12,.5) 0%,rgba(11,11,12,0) 26%)"></div>
+    <span style="position:absolute;right:16px;bottom:12px;font:400 8.5px/1.3 'Inter';letter-spacing:.08em;color:rgba(245,241,232,.55)">{esc(hcred)}</span>
   </div>
 </section>""")
 
@@ -213,45 +193,74 @@ def main():
         sub = txt["chapters"].get(g, {}).get("sub", "")
         num = ["первый", "второй", "третий", "четвёртый", "пятый",
                "шестой", "седьмой", "восьмой", "девятый"][gi - 1]
-        add(f"""<section class="slide dark" id="__ID__" style="place-content:center;justify-items:center;text-align:center">
+        kick = f"Раздел&nbsp;{num} · {len(items)} предметов"
+
+        if g in HERO:            # разделитель с настоящим кадром
+            ph, cred, opos, side = HERO[g]
+            grad = ("linear-gradient(90deg,rgba(11,11,12,.93) 0%,rgba(11,11,12,.74) 34%,"
+                    "rgba(11,11,12,.2) 68%,rgba(11,11,12,.05) 100%)" if side == "left" else
+                    "linear-gradient(270deg,rgba(11,11,12,.93) 0%,rgba(11,11,12,.74) 34%,"
+                    "rgba(11,11,12,.2) 68%,rgba(11,11,12,.05) 100%)")
+            box = ("align-items:flex-start;text-align:left" if side == "left"
+                   else "align-items:flex-end;text-align:right")
+            add(f"""<section class="slide dark" id="__ID__" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="{ph}" alt="" style="width:100%;height:100%;object-fit:cover;object-position:{opos}">
+    <div style="position:absolute;inset:0;background:{grad}"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 60px;{box}">
+      <div class="kick d" style="letter-spacing:.34em;margin-bottom:24px">{kick}</div>
+      <h2 class="div-huge" style="font-size:74px">{esc(TITLE[g])}</h2>
+      <div class="div-rule" style="margin:32px 0"></div>
+      <p class="div-sub" style="max-width:44ch">{esc(sub)}</p>
+    </div>
+    <span style="position:absolute;right:16px;bottom:12px;font:400 8.5px/1.3 'Inter';letter-spacing:.08em;color:rgba(245,241,232,.55)">{esc(cred)}</span>
+  </div>
+</section>""")
+        else:                    # чистая типографика
+            add(f"""<section class="slide dark" id="__ID__" style="place-content:center;justify-items:center;text-align:center">
   <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
-    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Раздел&nbsp;{num} · {len(items)} предметов</div>
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">{kick}</div>
     <h2 class="div-huge" style="font-size:74px">{esc(TITLE[g])}</h2>
     <div class="div-rule" style="margin:34px 0"></div>
     <p class="div-sub" style="text-align:center">{esc(sub)}</p>
   </div>
 </section>""")
 
-        top, rest = items[0], items[1:]
-        add(f"""<section class="slide white solo" id="__ID__">
-  <div class="solo-ph"><img src="{photo(top)}" alt="{esc(top['title'])}"></div>
+        # по одному экспонату на слайд — основной формат; хвост главы парами
+        # хвост главы уходит парами — одиночная карточка в парной вёрстке смотрится ошибкой
+        nsolo = max(1, round(len(items) * 0.65))
+        if (len(items) - nsolo) % 2:
+            nsolo += 1
+        solo, pairs = items[:nsolo], items[nsolo:]
+
+        for j, it in enumerate(solo, 1):
+            add(f"""<section class="slide white solo" id="__ID__">
+  <div class="solo-ph"><img src="{photo(it)}" alt="{esc(it['title'])}"></div>
   <div class="solo-side">
-    <div class="kick" style="margin-bottom:16px">{esc(TITLE[g])}</div>
-    <div class="solo-name">{esc(L(top,'name',top['title']))}</div>
-    <div class="solo-text">{esc(L(top,'text'))}</div>
-    <div class="solo-price">{rub(top['price'])}</div>
-    {f'<div class="solo-cert">{esc(L(top,"cert"))}</div>' if L(top,'cert') else ''}
+    <div class="kick" style="margin-bottom:16px">{esc(TITLE[g])} · {j} из&nbsp;{len(items)}</div>
+    <div class="solo-name">{esc(L(it,'name',it['title']))}</div>
+    <div class="solo-text">{esc(L(it,'text'))}</div>
+    <div class="solo-price">{rub(it['price'])}</div>
+    {f'<div class="solo-cert">{esc(L(it,"cert"))}</div>' if L(it,'cert') else ''}
   </div>
 </section>""")
 
-        for i in range(0, len(rest), 4):
-            four = rest[i:i + 4]
+        for i in range(0, len(pairs), 2):
+            two = pairs[i:i + 2]
             cards = "".join(f"""
-      <div class="qc">
-        <div class="qc-ph"><img src="{photo(p)}" alt="{esc(p['title'])}"></div>
-        <div>
-          <div class="qc-name">{esc(L(p,'name',p['title']))}</div>
-          <div class="qc-text">{esc(L(p,'text'))}</div>
-          <div class="qc-price">{rub(p['price'])}</div>
-          {f'<div class="qc-cert">{esc(L(p,"cert"))}</div>' if L(p,'cert') else ''}
-        </div>
-      </div>""" for p in four)
-            add(f"""<section class="slide white quad" id="__ID__">
-  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
-    <h2 class="serif" style="font-weight:500;font-size:30px;color:var(--ink)">{esc(TITLE[g])}</h2>
-    <span class="kick" style="letter-spacing:.2em">{i + 2}–{i + 1 + len(four)} из&nbsp;{len(items)}</span>
+      <div class="dc">
+        <div class="dc-ph"><img src="{photo(p2)}" alt="{esc(p2['title'])}"></div>
+        <div class="dc-name">{esc(L(p2,'name',p2['title']))}</div>
+        <div class="dc-text">{esc(L(p2,'text'))}</div>
+        <div class="dc-price">{rub(p2['price'])}</div>
+        {f'<div class="dc-cert">{esc(L(p2,"cert"))}</div>' if L(p2,'cert') else ''}
+      </div>""" for p2 in two)
+            add(f"""<section class="slide white duo2" id="__ID__">
+  <div class="wrap" style="padding:28px 72px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 class="serif" style="font-weight:500;font-size:28px;color:var(--ink)">{esc(TITLE[g])}</h2>
+    <span class="kick" style="letter-spacing:.2em">{nsolo + i + 1}–{nsolo + i + len(two)} из&nbsp;{len(items)}</span>
   </div>
-  <div class="quad-in">{cards}
+  <div class="duo2-in">{cards}
   </div>
 </section>""")
 
@@ -303,8 +312,7 @@ addEventListener('click',e=>{{if(e.target.closest('a'))return;go(e.clientX<inner
 .slide{{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}}}</style>
 """
     open(f"{R}/deck_museum.html", "w", encoding="utf-8").write(doc)
-    print(f"deck_museum.html: {n} слайдов, {len(lots)} лотов, "
-          f"сборная закрыта на {have} из 11")
+    print(f"deck_museum.html: {n} слайдов, {len(lots)} лотов")
 
 
 if __name__ == "__main__":

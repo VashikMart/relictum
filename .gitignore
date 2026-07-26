@@ -4,3 +4,5 @@
 .ebay.env
 secret/
 *.token
+__pycache__/
+*.pyc
