@@ -1,8 +1,17 @@
-import json, os, asyncio
+"""Снимает с дека геометрию для сборки PPTX.
+
+    python3 tools_deck_extract.py deck_museum.html --out build/museum
+"""
+import argparse, json, os, asyncio
 from playwright.async_api import async_playwright
 
-DECK='/home/user/relictum/17_stargift/deck_messi.html'
-OUT='/tmp/claude-0/-home-user-relictum/76f6e904-ad3d-5c42-861f-a53c8ea39044/scratchpad'
+_ap = argparse.ArgumentParser()
+_ap.add_argument('deck')
+_ap.add_argument('--out', default=None)
+_A = _ap.parse_args()
+DECK = os.path.abspath(_A.deck)
+OUT = os.path.abspath(_A.out or ('build/' + os.path.basename(DECK).replace('.html','')))
+os.makedirs(OUT, exist_ok=True)
 PLATE=os.path.join(OUT,'plates'); os.makedirs(PLATE,exist_ok=True)
 
 JS_COLLECT = r"""

@@ -6,8 +6,14 @@ from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR, MSO_AUTO_SIZE
 from pptx.enum.shapes import MSO_SHAPE
 
-SP='/tmp/claude-0/-home-user-relictum/76f6e904-ad3d-5c42-861f-a53c8ea39044/scratchpad'
-ROOT='/home/user/relictum/17_stargift'
+import argparse
+_ap=argparse.ArgumentParser(description='Собирает редактируемый PPTX по геометрии из tools_deck_extract.py')
+_ap.add_argument('build_dir', help='папка, куда писал tools_deck_extract.py')
+_ap.add_argument('--out', required=True, help='путь к .pptx')
+_ap.add_argument('--root', default=os.path.dirname(os.path.abspath(__file__)), help='корень с картинками дека')
+_A=_ap.parse_args()
+SP=os.path.abspath(_A.build_dir)
+ROOT=os.path.abspath(_A.root)
 GEOM=json.load(open(os.path.join(SP,'geom.json'),encoding='utf-8'))
 MEDIA=os.path.join(SP,'media'); shutil.rmtree(MEDIA,ignore_errors=True); os.makedirs(MEDIA)
 
@@ -170,6 +176,6 @@ for sid in sorted(GEOM.keys()):
             continue
         add_text(sl,t)
 
-out=os.path.join(ROOT,'STARGIFT_Messi.pptx')
+out=os.path.abspath(_A.out)
 prs.save(out)
 print('saved',out, os.path.getsize(out)//1024,'KB','slides',len(prs.slides.__iter__.__self__._sldIdLst))
