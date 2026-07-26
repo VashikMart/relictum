@@ -1,0 +1,332 @@
+<meta charset="utf-8">
+<title>Stargift · Лионель Месси</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noir:#0B0B0C; --noir2:#141414;
+  --gold:#A98545; --gold2:#C9A96A;
+  --ivory:#F5F1E8; --paper:#F7F5F1;
+  --ink:#1A1A1A; --mute:#6b6b6b; --cert:#9a958c;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-serif}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:grid}
+img{display:block}
+
+.serif{font-family:'Cormorant Garamond',serif}
+.kick{font:500 11px/1 'Inter';letter-spacing:.36em;text-transform:uppercase;color:var(--gold)}
+.kick.d{color:var(--gold2)}
+.white{background:#FFFFFF;color:var(--ink)}
+.dark{background:var(--noir);color:var(--ivory)}
+.wrap{padding:40px 60px}
+.credit{position:absolute;right:16px;bottom:12px;font:400 8.5px/1.3 'Inter';letter-spacing:.08em;color:rgba(245,241,232,.55)}
+
+/* ===== dividers ===== */
+.div-huge{font-family:'Cormorant Garamond';font-weight:300;line-height:1;color:var(--ivory)}
+.div-rule{height:1px;width:70px;background:rgba(169,133,69,.55)}
+.div-sub{font:300 19px/1.65 'Inter';color:#c9c3b7;max-width:50ch}
+
+/* ===== single white lot ===== */
+.lot{grid-template-rows:1fr auto}
+.lot-ph{display:flex;align-items:center;justify-content:center;background:#FFFFFF;padding:30px 60px 4px;min-height:0}
+.lot-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.lot-cap{padding:12px 60px 40px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.lot-name{font-family:'Cormorant Garamond';font-weight:500;font-size:32px;line-height:1.1;color:var(--ink);max-width:44ch}
+.lot-text{font:300 17px/1.6 'Inter';color:#4a4a4a;margin-top:12px;max-width:84ch}
+.lot-price{font-family:'Cormorant Garamond';font-weight:500;font-size:30px;color:var(--gold);margin-top:16px}
+.lot-cert{font:400 10px/1 'Inter';letter-spacing:.22em;text-transform:uppercase;color:var(--cert);margin-top:10px}
+
+/* ===== two white cards (diptych) ===== */
+.pair{grid-template-rows:1fr;align-items:stretch}
+.pair-in{display:grid;grid-template-columns:1fr 1fr;gap:44px;padding:38px 80px 34px;align-items:start}
+.pcard{display:flex;flex-direction:column;align-items:center;text-align:center}
+.pcard-ph{width:100%;height:404px;display:flex;align-items:center;justify-content:center;background:#FFFFFF}
+.pcard-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.pcard-name{font-family:'Cormorant Garamond';font-weight:500;font-size:25px;line-height:1.14;color:var(--ink);margin-top:16px;max-width:26ch}
+.pcard-text{font:300 15.5px/1.55 'Inter';color:#4a4a4a;margin-top:10px;max-width:46ch}
+.pcard-price{font-family:'Cormorant Garamond';font-weight:500;font-size:25px;color:var(--gold);margin-top:12px}
+.pcard-cert{font:400 9.5px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:8px}
+
+/* ===== white lot with macro inset (мозаика 1+1) ===== */
+.duo{grid-template-columns:1.24fr 1fr}
+.duo-ph{display:flex;align-items:center;justify-content:center;background:#FFFFFF;padding:36px 24px 36px 60px}
+.duo-ph img{max-width:100%;max-height:600px;object-fit:contain}
+.duo-side{display:flex;flex-direction:column;justify-content:center;padding:40px 60px 40px 24px}
+.duo-macro{width:100%;height:236px;object-fit:cover;object-position:50% 46%;border:1px solid #e6e2da}
+.duo-name{font-family:'Cormorant Garamond';font-weight:500;font-size:31px;line-height:1.1;color:var(--ink);margin-top:24px}
+.duo-text{font:300 16.5px/1.6 'Inter';color:#4a4a4a;margin-top:12px}
+.duo-price{font-family:'Cormorant Garamond';font-weight:500;font-size:30px;color:var(--gold);margin-top:16px}
+.duo-cert{font:400 10px/1 'Inter';letter-spacing:.22em;text-transform:uppercase;color:var(--cert);margin-top:9px}
+.duo-note{font:400 10px/1.4 'Inter';letter-spacing:.16em;text-transform:uppercase;color:#a09a90;margin-top:9px}
+
+/* ===== dark premium solo (photo + text) ===== */
+.pp-name{font-family:'Cormorant Garamond';font-weight:400;font-size:40px;line-height:1.06;color:var(--ivory)}
+.pp-text{font:300 17px/1.7 'Inter';color:#c3bdb1;margin-top:22px;max-width:42ch}
+.pp-rule{height:1px;background:rgba(169,133,69,.35);margin:26px 0}
+.pp-price{font-family:'Cormorant Garamond';font-weight:500;font-size:40px;color:var(--gold2)}
+.pp-cert{font:400 10px/1 'Inter';letter-spacing:.22em;text-transform:uppercase;color:var(--cert);margin-top:14px}
+
+/* ===== mosaic 1+2 white ===== */
+.mos{grid-template-columns:1.32fr 1fr;grid-template-rows:1fr}
+.mos-main{display:flex;align-items:center;justify-content:center;background:#FFFFFF;padding:34px 20px 34px 56px}
+.mos-main img{max-width:100%;max-height:640px;object-fit:contain}
+.mos-right{display:grid;grid-template-rows:auto auto 1fr;gap:13px;padding:34px 56px 34px 20px;align-content:center}
+.mos-sm{width:100%;height:172px;object-fit:cover;object-position:50% 42%;border:1px solid #e6e2da}
+
+/* ===== framing pair (white) ===== */
+.fpair{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.fpair .fr{display:flex;align-items:center;justify-content:center;background:#FFFFFF}
+.fpair .fr img{max-width:100%;max-height:430px;object-fit:contain}
+
+/* ===== price ladder ===== */
+.lad{display:flex;flex-direction:column;gap:0}
+.lad-row{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:baseline;padding:13px 0;border-bottom:1px solid rgba(169,133,69,.2)}
+.lad-nm{font:300 16px/1.35 'Inter';color:#d5cfc3}
+.lad-pr{font-family:'Cormorant Garamond';font-weight:500;font-size:25px;color:var(--gold2);white-space:nowrap}
+</style>
+
+<div class="deck">
+
+<!-- ============ s01 COVER ============ -->
+<section class="slide dark on" id="s01" style="grid-template-columns:1.04fr 1fr">
+  <div class="wrap" style="display:flex;flex-direction:column;justify-content:space-between;padding:60px 56px">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:172px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97">
+    <div>
+      <div class="kick d" style="margin-bottom:22px">Stargift · коллекция автографов</div>
+      <h1 class="serif" style="font-weight:300;font-size:88px;line-height:.98;color:var(--ivory)">Лионель<br>Месси</h1>
+      <p style="font:300 17px/1.65 'Inter';color:#b8b2a6;margin-top:28px;max-width:42ch">
+        Восемь «Золотых мячей», чемпион мира 2022&nbsp;года, лучший бомбардир в&nbsp;истории
+        «Барселоны» и&nbsp;сборной Аргентины.</p>
+    </div>
+    <div class="kick" style="letter-spacing:.24em">Восемь предметов · июль 2026</div>
+  </div>
+  <div style="position:relative">
+    <img src="img_messi/wiki_messi_arg2022.jpg" alt="Лионель Месси в форме сборной Аргентины" style="width:100%;height:100%;object-fit:cover;object-position:50% 18%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,var(--noir) 0%,rgba(11,11,12,.34) 20%,rgba(11,11,12,0) 50%)"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,11,12,.55) 0%,rgba(11,11,12,0) 24%)"></div>
+    <span class="credit">Фото: Wikimedia Commons · CC&nbsp;BY&nbsp;4.0</span>
+  </div>
+</section>
+
+<!-- ============ s02 DIVIDER · Аргентина ============ -->
+<section class="slide dark" id="s02" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:64ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;первая</div>
+    <h2 class="div-huge" style="font-size:78px">Аргентина</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">Сборная, с&nbsp;которой Месси прошёл путь от&nbsp;первого вызова до&nbsp;золота
+      чемпионата мира: футболка, мяч, бутса и&nbsp;кубок.</p>
+  </div>
+</section>
+
+<!-- ============ s03 PAIR · футболка Аргентины + мяч ЧМ-2022 ============ -->
+<section class="slide white pair" id="s03">
+  <div class="pair-in">
+    <div class="pcard">
+      <div class="pcard-ph"><img src="img_messi/m_shirt_arg.jpg" alt="Именная футболка сборной Аргентины с автографом Лионеля Месси"></div>
+      <div class="pcard-name">Лионель Месси&nbsp;— именная футболка сборной Аргентины с&nbsp;автографом</div>
+      <div class="pcard-text">За&nbsp;сборную Аргентины Месси провёл больше матчей и&nbsp;забил больше голов, чем любой другой игрок в&nbsp;её истории. Именная домашняя футболка с&nbsp;номером&nbsp;10 и&nbsp;фамилией MESSI, автограф на&nbsp;груди.</div>
+      <div class="pcard-price">650&#8239;000&nbsp;₽</div>
+      <div class="pcard-cert">Beckett</div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-ph"><img src="img_messi/m_ball_wc2022.jpg" alt="Мяч чемпионата мира 2022 с автографом Лионеля Месси"></div>
+      <div class="pcard-name">Лионель Месси&nbsp;— мяч чемпионата мира 2022 с&nbsp;автографом</div>
+      <div class="pcard-text">Катар&#8209;2022&nbsp;— турнир, на&nbsp;котором Аргентина взяла золото, а&nbsp;Месси был признан лучшим игроком. Официальный мяч того чемпионата мира с&nbsp;его автографом.</div>
+      <div class="pcard-price">950&#8239;000&nbsp;₽</div>
+      <div class="pcard-cert">Beckett</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ s04 DUO · бутса Аргентина + макро подписи ============ -->
+<section class="slide white duo" id="s04">
+  <div class="duo-ph"><img src="img_messi/m_boot_arg.jpg" alt="Бутса в цветах сборной Аргентины с автографом Лионеля Месси"></div>
+  <div class="duo-side">
+    <img class="duo-macro" src="img_messi/m_boot_arg_sig.jpg" alt="Автограф Лионеля Месси на борту бутсы, крупно">
+    <div class="duo-note">Автограф крупно</div>
+    <div class="duo-name">Лионель Месси&nbsp;— бутса с&nbsp;автографом (Аргентина)</div>
+    <div class="duo-text">Бутса&nbsp;— вещь личного обихода игрока, она ближе к&nbsp;нему, чем любая футболка. Оранжевая adidas в&nbsp;цветах эпохи сборной Аргентины, автограф нанесён на&nbsp;борт.</div>
+    <div class="duo-price">600&#8239;000&nbsp;₽</div>
+    <div class="duo-cert">Beckett</div>
+  </div>
+</section>
+
+<!-- ============ s05 PREMIUM · реплика кубка мира ============ -->
+<section class="slide dark" id="s05" style="grid-template-columns:1fr 1.06fr">
+  <div style="position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden">
+    <img src="img_messi/m_trophy_dark.jpg" alt="Реплика кубка чемпионата мира с автографом Лионеля Месси" style="width:100%;height:100%;object-fit:cover;object-position:50% 42%">
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:0 62px 0 52px">
+    <div class="kick d" style="margin-bottom:18px">Аргентина · центральный экспонат</div>
+    <div class="pp-name">Лионель Месси&nbsp;— реплика кубка чемпионата мира с&nbsp;автографом</div>
+    <div class="pp-text">В&nbsp;декабре 2022&nbsp;года Месси поднял над головой кубок мира&nbsp;— единственный трофей, которого не&nbsp;хватало в&nbsp;его карьере. Полноразмерная реплика кубка&nbsp;FIFA, автограф на&nbsp;золотом глобусе.</div>
+    <div class="pp-rule"></div>
+    <div class="pp-price">750&#8239;000&nbsp;₽</div>
+    <div class="pp-cert">Beckett</div>
+  </div>
+</section>
+
+<!-- ============ s06 DIVIDER · Барселона ============ -->
+<section class="slide dark" id="s06" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_messi/wiki_messi_barca2009.jpg" alt="Лионель Месси на Камп Ноу в форме «Барселоны»" style="width:100%;height:100%;object-fit:cover;object-position:50% 42%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.92) 0%,rgba(11,11,12,.72) 34%,rgba(11,11,12,.18) 66%,rgba(11,11,12,.05) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 60px">
+      <div class="kick d" style="letter-spacing:.34em;margin-bottom:24px">Глава&nbsp;вторая</div>
+      <h2 class="div-huge" style="font-size:78px">Барселона</h2>
+      <div class="div-rule" style="margin:32px 0"></div>
+      <p class="div-sub" style="max-width:44ch">Клуб, в&nbsp;котором он вырос и&nbsp;стал лучшим бомбардиром в&nbsp;его истории:
+        гостевая футболка эпохи Гвардиолы, бутса adidas и&nbsp;мяч.</p>
+    </div>
+    <span class="credit">Фото: Wikimedia Commons · CC&nbsp;BY&#8209;SA&nbsp;4.0</span>
+  </div>
+</section>
+
+<!-- ============ s07 PAIR · футболка Барселоны + бутса adidas ============ -->
+<section class="slide white pair" id="s07">
+  <div class="pair-in">
+    <div class="pcard">
+      <div class="pcard-ph"><img src="img_messi/m_shirt_barca.jpg" alt="Гостевая футболка «Барселоны» 2008–2010 с автографом Лионеля Месси"></div>
+      <div class="pcard-name">Лионель Месси&nbsp;— футболка «Барселоны» 2008&#8209;10 с&nbsp;автографом</div>
+      <div class="pcard-text">Сезоны 2008–2010&nbsp;— команда Гвардиолы и&nbsp;первые «Золотые мячи» Месси. Гостевая жёлтая футболка той эпохи, автограф серебряным маркером рядом с&nbsp;номером&nbsp;10.</div>
+      <div class="pcard-price">650&#8239;000&nbsp;₽</div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-ph"><img src="img_messi/m_boot_adidas.jpg" alt="Бутса Adidas с автографом Лионеля Месси"></div>
+      <div class="pcard-name">Лионель Месси&nbsp;— бутса Adidas с&nbsp;автографом («Барселона»)</div>
+      <div class="pcard-text">В&nbsp;бутсах adidas F&#8209;серии Месси играл в&nbsp;годы, когда «Барселона» собирала все возможные трофеи. Левая бутса, чёрная с&nbsp;синими полосами, автограф золотым маркером по&nbsp;борту.</div>
+      <div class="pcard-price">600&#8239;000&nbsp;₽</div>
+      <div class="pcard-cert">Beckett</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ s08 DUO · мяч с автографом + макро ============ -->
+<section class="slide white duo" id="s08">
+  <div class="duo-ph"><img src="img_messi/m_ball_signed.jpg" alt="Футбольный мяч с автографом Лионеля Месси"></div>
+  <div class="duo-side">
+    <img class="duo-macro" src="img_messi/m_ball_signed_sig.jpg" alt="Автограф Лионеля Месси на мяче, крупно">
+    <div class="duo-note">Автограф крупно</div>
+    <div class="duo-name">Лионель Месси&nbsp;— мяч с&nbsp;автографом</div>
+    <div class="duo-text">Мяч&nbsp;— самый узнаваемый носитель футбольного автографа: подпись читается с&nbsp;любой точки комнаты. Классический музейный формат, автограф Месси на&nbsp;светлом сегменте.</div>
+    <div class="duo-price">600&#8239;000&nbsp;₽</div>
+  </div>
+</section>
+
+<!-- ============ s09 DIVIDER · Барселона 2009 ============ -->
+<section class="slide dark" id="s09" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_messi/wiki_barca2009_rua.jpg" alt="Чемпионский проезд «Барселоны» по городу, 2009 год" style="width:100%;height:100%;object-fit:cover;object-position:50% 46%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.93) 0%,rgba(11,11,12,.74) 36%,rgba(11,11,12,.2) 70%,rgba(11,11,12,.05) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 60px">
+      <div class="kick d" style="letter-spacing:.34em;margin-bottom:24px">Глава&nbsp;третья · топ&#8209;лот</div>
+      <h2 class="div-huge" style="font-size:70px">«Барселона»&nbsp;2009</h2>
+      <div class="div-rule" style="margin:32px 0"></div>
+      <p class="div-sub" style="max-width:44ch">Один предмет, на&nbsp;котором собраны автографы состава, взявшего
+        Суперкубок УЕФА и&nbsp;клубный чемпионат мира.</p>
+    </div>
+    <span class="credit">Фото: Eva Perales · Wikimedia Commons · CC&nbsp;BY&#8209;SA&nbsp;2.0</span>
+  </div>
+</section>
+
+<!-- ============ s10 TOP LOT · командный мяч ============ -->
+<section class="slide white mos" id="s10">
+  <div class="mos-main"><img src="img_messi/m_ball_team.jpg" alt="Командный мяч «Барселоны» 2009 с автографами состава"></div>
+  <div class="mos-right">
+    <img class="mos-sm" src="img_messi/m_team_sig_a.jpg" alt="Автографы на мяче, крупно">
+    <img class="mos-sm" src="img_messi/m_team_sig_b.jpg" alt="Автографы на мяче, крупно">
+    <div>
+      <div style="font-family:'Cormorant Garamond';font-weight:500;font-size:28px;line-height:1.1;color:var(--ink);margin-top:6px">«Барселона» 2009&nbsp;— командный мяч с&nbsp;15+ автографами (Месси, Хави, Иньеста)</div>
+      <div style="font:300 15.5px/1.55 'Inter';color:#4a4a4a;margin-top:11px">Мяч adidas UEFA&nbsp;Super&nbsp;Cup, матч в&nbsp;Монако. Топ&#8209;лот подборки&nbsp;— командная реликвия того сезона.</div>
+      <div style="font-family:'Cormorant Garamond';font-weight:500;font-size:30px;color:var(--gold);margin-top:14px">2&#8239;400&#8239;000&nbsp;₽</div>
+      <div class="lot-cert" style="margin-top:8px">JSA</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ s11 TOP LOT · состав ============ -->
+<section class="slide white" id="s11" style="grid-template-columns:1fr 1.02fr">
+  <div style="display:flex;align-items:stretch;justify-content:center">
+    <img src="img_messi/m_team_sig_c.jpg" alt="Автографы состава «Барселоны» на мяче, крупно" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%">
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:44px 56px 44px 24px">
+    <div class="kick" style="margin-bottom:18px">Кто подписал мяч</div>
+    <h2 class="serif" style="font-weight:500;font-size:38px;line-height:1.06;color:var(--ink)">Состав, взявший Суперкубок УЕФА и&nbsp;клубный чемпионат мира</h2>
+    <div style="font:300 16.5px/1.9 'Inter';color:#4a4a4a;margin-top:22px;columns:2;column-gap:34px">
+      Лионель Месси<br>Андрес Иньеста<br>Хави<br>Жерар Пике<br>Серхио Бускетс<br>Самюэль Это’О<br>Дани Алвес<br>Рафаэль Маркес<br>Педро<br>Сейду Кейта<br>Максвелл<br>Хосе Мануэль Пинто<br>Абраам Гонсалес<br>Эйдур Гудьонсен
+    </div>
+    <div style="font:300 15px/1.6 'Inter';color:#6b6b6b;margin-top:20px">Более пятнадцати автографов на&nbsp;одном мяче. Пара к&nbsp;мячу финала Лиги чемпионов 2006&nbsp;года: две великие эпохи «Барселоны» в&nbsp;одной коллекции.</div>
+  </div>
+</section>
+
+<!-- ============ s12 FRAMING ============ -->
+<section class="slide white" id="s12" style="grid-template-rows:auto 1fr auto">
+  <div class="wrap" style="padding:40px 60px 0">
+    <div class="kick" style="margin-bottom:14px">Как мы оформляем</div>
+    <h2 class="serif" style="font-weight:500;font-size:48px;line-height:1;color:var(--ink)">Каждый экспонат готов к&nbsp;показу</h2>
+  </div>
+  <div class="wrap" style="padding:18px 60px 0">
+    <div class="fpair">
+      <div class="fr"><img src="img_messi/m_frame_shirt.jpg" alt="Пример оформления футболки в раму с латунной табличкой"></div>
+      <div class="fr"><img src="img_messi/m_stand_ball.jpg" alt="Пример оформления мяча на деревянной подставке с латунной табличкой"></div>
+    </div>
+  </div>
+  <div class="wrap" style="padding:12px 60px 36px;display:flex;justify-content:space-between;align-items:flex-end;gap:40px">
+    <p style="font:300 16px/1.7 'Inter';color:#4a4a4a;max-width:86ch">
+      Футболки оформляем в&nbsp;деревянную раму с&nbsp;паспарту и&nbsp;латунной табличкой
+      «PERSONALLY&nbsp;SIGNED&nbsp;BY LIONEL&nbsp;MESSI». Мячи и&nbsp;бутсы&nbsp;— на&nbsp;деревянной подставке,
+      кубок&nbsp;— на&nbsp;подиуме.
+      <span style="color:var(--gold)">Необходимое оформление входит в&nbsp;стоимость лота.</span>
+      На&nbsp;фото&nbsp;— примеры.</p>
+    <span class="kick" style="letter-spacing:.2em;white-space:nowrap">Примеры оформления</span>
+  </div>
+</section>
+
+<!-- ============ s13 PRICE LADDER ============ -->
+<section class="slide dark" id="s13" style="grid-template-rows:auto 1fr">
+  <div class="wrap" style="padding:44px 66px 0">
+    <div class="kick d" style="margin-bottom:14px">Подборка целиком</div>
+    <h2 class="serif" style="font-weight:300;font-size:50px;line-height:1;color:var(--ivory)">Восемь предметов</h2>
+  </div>
+  <div class="wrap" style="padding:26px 66px 40px">
+    <div class="lad">
+      <div class="lad-row"><div class="lad-nm">«Барселона» 2009&nbsp;— командный мяч с&nbsp;15+ автографами (Месси, Хави, Иньеста)</div><div class="lad-pr">2&#8239;400&#8239;000&nbsp;₽</div></div>
+      <div class="lad-row"><div class="lad-nm">Лионель Месси&nbsp;— мяч чемпионата мира 2022 с&nbsp;автографом</div><div class="lad-pr">950&#8239;000&nbsp;₽</div></div>
+      <div class="lad-row"><div class="lad-nm">Лионель Месси&nbsp;— реплика кубка чемпионата мира с&nbsp;автографом</div><div class="lad-pr">750&#8239;000&nbsp;₽</div></div>
+      <div class="lad-row"><div class="lad-nm">Лионель Месси&nbsp;— именная футболка сборной Аргентины с&nbsp;автографом</div><div class="lad-pr">650&#8239;000&nbsp;₽</div></div>
+      <div class="lad-row"><div class="lad-nm">Лионель Месси&nbsp;— футболка «Барселоны» 2008&#8209;10 с&nbsp;автографом</div><div class="lad-pr">650&#8239;000&nbsp;₽</div></div>
+      <div class="lad-row"><div class="lad-nm">Лионель Месси&nbsp;— бутса с&nbsp;автографом (Аргентина)</div><div class="lad-pr">600&#8239;000&nbsp;₽</div></div>
+      <div class="lad-row"><div class="lad-nm">Лионель Месси&nbsp;— бутса Adidas с&nbsp;автографом («Барселона»)</div><div class="lad-pr">600&#8239;000&nbsp;₽</div></div>
+      <div class="lad-row" style="border-bottom:none"><div class="lad-nm">Лионель Месси&nbsp;— мяч с&nbsp;автографом</div><div class="lad-pr">600&#8239;000&nbsp;₽</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ s14 FINAL ============ -->
+<section class="slide dark" id="s14" style="grid-template-rows:1fr auto">
+  <div class="wrap" style="padding:74px 72px 0;display:flex;flex-direction:column;justify-content:center">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:146px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97;align-self:flex-start">
+    <h2 class="serif" style="font-weight:300;font-size:48px;line-height:1.14;color:var(--ivory);margin-top:38px;max-width:30ch">
+      Готовы показать любой предмет подборки вблизи.</h2>
+    <p style="font:300 17px/1.7 'Inter';color:#b0aa9e;margin-top:24px;max-width:52ch">
+      Обсудим оформление и&nbsp;подготовим лот к&nbsp;передаче в&nbsp;удобный вам срок.</p>
+  </div>
+  <div class="wrap" style="padding:26px 72px 40px;border-top:1px solid rgba(169,133,69,.3)">
+    <span class="kick" style="letter-spacing:.24em;color:var(--gold2)">stargift.ru</span>
+  </div>
+</section>
+
+</div>
+
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^s/,'');const id=n?('s'+n.padStart(2,'0')):'s01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+function go(d){const cur=+((location.hash.slice(1).replace(/^s/,''))||1);let x=cur+d;if(x<1)x=1;if(x>14)x=14;location.hash='s'+x;}
+show();addEventListener('hashchange',show);
+addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')go(1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(-1);});
+addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX<innerWidth*0.32?-1:1);});
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.slide{animation:none}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
