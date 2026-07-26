@@ -1,0 +1,264 @@
+<meta charset="utf-8">
+<title>Stargift · Музей футбола — примеры слайдов</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noir:#0B0B0C; --noir2:#141414;
+  --gold:#A98545; --gold2:#C9A96A;
+  --ivory:#F5F1E8; --paper:#F7F5F1;
+  --ink:#1A1A1A; --mute:#6b6b6b; --cert:#9a958c;
+  --off:#4a4a4a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-serif}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:grid}
+.slide>*{min-height:0;min-width:0}
+img{display:block}
+.serif{font-family:'Cormorant Garamond',serif}
+.kick{font:500 11px/1 'Inter';letter-spacing:.36em;text-transform:uppercase;color:var(--gold)}
+.kick.d{color:var(--gold2)}
+.white{background:#FFFFFF;color:var(--ink)}
+.dark{background:var(--noir);color:var(--ivory)}
+.wrap{padding:40px 60px}
+.demo{position:absolute;left:0;top:0;background:var(--gold);color:#0B0B0C;
+  font:500 9.5px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;padding:7px 14px;z-index:9}
+
+/* ===== ПОЛЕ · символическая сборная ===== */
+.pitch{position:relative;width:100%;height:100%;
+  background:linear-gradient(180deg,#101110 0%,#0b0b0c 100%)}
+.pitch .ln{position:absolute;border:1px solid rgba(169,133,69,.20)}
+.pos{position:absolute;transform:translate(-50%,-50%);text-align:center;width:132px}
+.dot{width:38px;height:38px;border-radius:50%;margin:0 auto 7px;display:flex;
+  align-items:center;justify-content:center;font-family:'Cormorant Garamond';font-size:16px}
+.have .dot{background:radial-gradient(circle at 38% 32%,#E4C88A,#A98545 70%);
+  color:#0B0B0C;box-shadow:0 0 0 1px rgba(201,169,106,.55),0 10px 26px rgba(169,133,69,.28)}
+.miss .dot{background:transparent;border:1px dashed rgba(245,241,232,.28);color:rgba(245,241,232,.4)}
+.pname{font:500 12.5px/1.15 'Inter';letter-spacing:.02em;white-space:nowrap}
+.have .pname{color:var(--ivory)}
+.miss .pname{color:rgba(245,241,232,.46)}
+.pnote{font:400 9px/1.3 'Inter';letter-spacing:.16em;text-transform:uppercase;margin-top:5px}
+.have .pnote{color:var(--gold2)}
+.miss .pnote{color:rgba(245,241,232,.34)}
+.pprice{font-family:'Cormorant Garamond';font-weight:500;font-size:14px;color:var(--gold);margin-top:4px}
+
+/* ===== карточки недостающих ===== */
+.grid6{display:grid;grid-template-columns:repeat(3,1fr);gap:20px 30px;padding:10px 60px 0;width:100%}
+.mc{display:flex;flex-direction:column;align-items:center;text-align:center}
+.mc-ph{width:100%;height:152px;display:flex;align-items:center;justify-content:center;background:#fff}
+.mc-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.mc-name{font-family:'Cormorant Garamond';font-weight:500;font-size:22px;color:var(--ink);margin-top:10px}
+.mc-what{font:300 13px/1.4 'Inter';color:#4a4a4a;margin-top:5px;max-width:30ch}
+.mc-price{font-family:'Cormorant Garamond';font-weight:500;font-size:22px;color:var(--gold);margin-top:8px}
+.mc-cert{font:400 9px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:7px}
+
+/* ===== рабочая страница амплуа ===== */
+.quad{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;
+  gap:26px 40px;padding:34px 64px 30px}
+.qc{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center}
+.qc img{width:196px;height:196px;object-fit:contain;background:#fff}
+.qc-name{font-family:'Cormorant Garamond';font-weight:500;font-size:23px;line-height:1.1;color:var(--ink)}
+.qc-txt{font:300 13.5px/1.5 'Inter';color:#4a4a4a;margin-top:7px}
+.qc-price{font-family:'Cormorant Garamond';font-weight:500;font-size:21px;color:var(--gold);margin-top:8px}
+
+/* ===== собрание сегодня ===== */
+.have-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:0 34px;padding:0 60px}
+.hc h4{font:500 10px/1 'Inter';letter-spacing:.24em;text-transform:uppercase;color:var(--gold2);
+  padding-bottom:11px;border-bottom:1px solid rgba(169,133,69,.28);margin-bottom:13px}
+.hc li{list-style:none;font:300 13.5px/1.62 'Inter';color:#cfc9bd}
+.hc li span{color:rgba(245,241,232,.42)}
+</style>
+
+<div class="deck">
+
+<!-- ============ s01 ОБЛОЖКА ============ -->
+<section class="slide dark on" id="s01" style="grid-template-columns:1.05fr .95fr">
+  <span class="demo">Пример слайда · обложка</span>
+  <div class="wrap" style="display:flex;flex-direction:column;justify-content:space-between;padding:62px 58px">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:168px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97">
+    <div>
+      <div class="kick d" style="margin-bottom:22px">Частное собрание · футбол</div>
+      <h1 class="serif" style="font-weight:300;font-size:82px;line-height:.99;color:var(--ivory)">Музей<br>футбола</h1>
+      <p style="font:300 17px/1.65 'Inter';color:#b8b2a6;margin-top:28px;max-width:44ch">
+        Двадцать три предмета в&nbsp;собрании. Предложение к&nbsp;расширению: имена,
+        без которых собрание не&nbsp;закрывается.</p>
+    </div>
+    <div class="kick" style="letter-spacing:.24em">Июль 2026</div>
+  </div>
+  <div style="position:relative;height:720px;overflow:hidden;background:#0e0f0e;
+       display:flex;align-items:center;justify-content:center;padding:54px">
+    <img src="img_sport/035d5e385d_0.jpg" alt="Лот собрания" style="max-width:100%;max-height:100%;object-fit:contain;box-shadow:0 40px 90px rgba(0,0,0,.6)">
+  </div>
+</section>
+
+<!-- ============ s02 СИМВОЛИЧЕСКАЯ СБОРНАЯ ============ -->
+<section class="slide dark" id="s02" style="grid-template-rows:auto 1fr auto">
+  <span class="demo">Пример слайда · ключевой</span>
+  <div class="wrap" style="padding:30px 60px 0;display:flex;justify-content:space-between;align-items:flex-end">
+    <div>
+      <div class="kick d" style="margin-bottom:13px">Символическая сборная всех времён · France&nbsp;Football</div>
+      <h2 class="serif" style="font-weight:300;font-size:46px;line-height:1;color:var(--ivory)">Пять из&nbsp;одиннадцати уже&nbsp;в&nbsp;собрании</h2>
+    </div>
+    <div style="display:flex;gap:26px;align-items:center;padding-bottom:5px">
+      <span style="display:flex;align-items:center;gap:9px;font:400 10px/1 'Inter';letter-spacing:.18em;text-transform:uppercase;color:var(--gold2)">
+        <i style="width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 38% 32%,#E4C88A,#A98545 70%);display:block"></i> в собрании</span>
+      <span style="display:flex;align-items:center;gap:9px;font:400 10px/1 'Inter';letter-spacing:.18em;text-transform:uppercase;color:rgba(245,241,232,.4)">
+        <i style="width:12px;height:12px;border-radius:50%;border:1px dashed rgba(245,241,232,.42);display:block"></i> открытая позиция</span>
+    </div>
+  </div>
+
+  <div style="position:relative;padding:4px 60px 0">
+    <div class="pitch">
+      <div class="ln" style="left:8%;right:8%;top:4%;bottom:4%"></div>
+      <div class="ln" style="left:8%;right:8%;top:50%;height:0"></div>
+      <div class="ln" style="left:calc(50% - 62px);top:calc(50% - 62px);width:124px;height:124px;border-radius:50%"></div>
+      <div class="ln" style="left:28%;right:28%;bottom:4%;height:15%"></div>
+      <div class="ln" style="left:39%;right:39%;bottom:4%;height:5.5%"></div>
+
+      <div class="pos have" style="left:50%;top:89%"><div class="dot">Я</div><div class="pname">Яшин</div></div>
+
+      <div class="pos miss" style="left:16%;top:73%"><div class="dot">К</div><div class="pname">Кафу</div><div class="pprice">под заказ</div></div>
+      <div class="pos have" style="left:50%;top:76%"><div class="dot">Б</div><div class="pname">Беккенбауэр</div></div>
+      <div class="pos miss" style="left:84%;top:73%"><div class="dot">М</div><div class="pname">Мальдини</div><div class="pprice">240&#8239;000&nbsp;₽</div></div>
+
+      <div class="pos miss" style="left:50%;top:58%"><div class="dot">М</div><div class="pname">Маттеус</div><div class="pprice">450&#8239;000&nbsp;₽</div></div>
+
+      <div class="pos miss" style="left:17%;top:40%"><div class="dot">П</div><div class="pname">Пеле</div><div class="pprice">450&#8239;000&nbsp;₽</div></div>
+      <div class="pos miss" style="left:50%;top:34%"><div class="dot">Х</div><div class="pname">Хави</div><div class="pprice">190&#8239;000&nbsp;₽</div></div>
+      <div class="pos have" style="left:83%;top:40%"><div class="dot">М</div><div class="pname">Марадона</div></div>
+
+      <div class="pos miss" style="left:18%;top:16%"><div class="dot">М</div><div class="pname">Месси</div><div class="pprice">650&#8239;000&nbsp;₽</div></div>
+      <div class="pos have" style="left:50%;top:12%"><div class="dot">Р</div><div class="pname">Роналдо</div></div>
+      <div class="pos have" style="left:82%;top:16%"><div class="dot">Р</div><div class="pname">Криштиану</div></div>
+    </div>
+  </div>
+
+  <div class="wrap" style="padding:8px 60px 22px">
+    <p style="font:300 14.5px/1.6 'Inter';color:#9d978b;max-width:104ch">
+      Состав по&nbsp;версии France&nbsp;Football. Золотом отмечены имена, которые уже&nbsp;есть в&nbsp;собрании;
+      пунктиром&nbsp;— позиции, которые пока открыты.</p>
+  </div>
+</section>
+
+<!-- ============ s03 ЧЕГО НЕ ХВАТАЕТ ============ -->
+<section class="slide white" id="s03" style="grid-template-rows:auto 1fr">
+  <span class="demo">Пример слайда · допродажа</span>
+  <div class="wrap" style="padding:40px 60px 0">
+    <div class="kick" style="margin-bottom:13px">Шесть открытых позиций</div>
+    <h2 class="serif" style="font-weight:500;font-size:44px;line-height:1;color:var(--ink)">Чем закрывается сборная</h2>
+  </div>
+  <div style="display:flex;align-items:center">
+    <div class="grid6">
+      <div class="mc"><div class="mc-ph"><img src="img_museum/cafu.jpg" alt="Кафу"></div>
+        <div class="mc-name">Кафу</div><div class="mc-what">Футболка сборной Бразилии</div>
+        <div class="mc-price">под заказ</div><div class="mc-cert">JSA</div></div>
+      <div class="mc"><div class="mc-ph"><img src="img_museum/maldini.jpg" alt="Паоло Мальдини"></div>
+        <div class="mc-name">Паоло Мальдини</div><div class="mc-what">Футболка сборной Италии</div>
+        <div class="mc-price">240&#8239;000&nbsp;₽</div><div class="mc-cert">Beckett</div></div>
+      <div class="mc"><div class="mc-ph"><img src="img_museum/matthaus.jpg" alt="Лотар Маттеус"></div>
+        <div class="mc-name">Лотар Маттеус</div><div class="mc-what">Футболка «Баварии» 1999&#8209;2000</div>
+        <div class="mc-price">450&#8239;000&nbsp;₽</div></div>
+      <div class="mc"><div class="mc-ph"><img src="img_museum/pele.jpg" alt="Пеле"></div>
+        <div class="mc-name">Пеле</div><div class="mc-what">Футболка сборной Бразилии</div>
+        <div class="mc-price">450&#8239;000&nbsp;₽</div><div class="mc-cert">Beckett</div></div>
+      <div class="mc"><div class="mc-ph"><img src="img_museum/xavi.jpg" alt="Хави"></div>
+        <div class="mc-name">Хави</div><div class="mc-what">Футболка «Барселоны»</div>
+        <div class="mc-price">190&#8239;000&nbsp;₽</div><div class="mc-cert">Beckett</div></div>
+      <div class="mc"><div class="mc-ph"><img src="img_museum/messi.jpg" alt="Лионель Месси"></div>
+        <div class="mc-name">Лионель Месси</div><div class="mc-what">Футболка сборной Аргентины, ЧМ&#8209;2010</div>
+        <div class="mc-price">650&#8239;000&nbsp;₽</div><div class="mc-cert">Beckett</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ s04 РАЗДЕЛИТЕЛЬ ПО АМПЛУА ============ -->
+<section class="slide dark" id="s04" style="place-content:center;justify-items:center;text-align:center">
+  <span class="demo">Пример слайда · разделитель раздела</span>
+  <div style="max-width:64ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:24px">Раздел&nbsp;четвёртый · линия атаки</div>
+    <h2 class="serif" style="font-weight:300;font-size:76px;line-height:1;color:var(--ivory)">Нападающие</h2>
+    <div style="height:1px;width:70px;background:rgba(169,133,69,.55);margin:32px 0"></div>
+    <p style="font:300 19px/1.65 'Inter';color:#c9c3b7;max-width:50ch">
+      Бомбардиры, вокруг которых собирается любое футбольное собрание.</p>
+  </div>
+</section>
+
+<!-- ============ s05 РАБОЧАЯ СТРАНИЦА АМПЛУА ============ -->
+<section class="slide white" id="s05" style="grid-template-rows:auto 1fr">
+  <span class="demo">Пример слайда · рабочая страница раздела</span>
+  <div class="wrap" style="padding:34px 64px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 class="serif" style="font-weight:500;font-size:34px;color:var(--ink)">Нападающие</h2>
+    <span class="kick" style="letter-spacing:.2em">Четыре из&nbsp;девяти</span>
+  </div>
+  <div class="quad">
+    <div class="qc"><img src="img_sport/78727997e2_0.jpg" alt="Диего Марадона">
+      <div><div class="qc-name">Диего Марадона</div>
+        <div class="qc-txt">Аргентинский футболист, чемпион мира 1986&nbsp;года. Фотография с&nbsp;автографом.</div>
+        <div class="qc-price">1&#8239;850&#8239;000&nbsp;₽</div></div></div>
+    <div class="qc"><img src="img_sport/cc2e01a9f8_0.jpg" alt="Лионель Месси">
+      <div><div class="qc-name">Лионель Месси</div>
+        <div class="qc-txt">Именное подписание: обращение к&nbsp;владельцу собрания рукой футболиста.</div>
+        <div class="qc-price">1&#8239;500&#8239;000&nbsp;₽</div></div></div>
+    <div class="qc"><img src="img_sport/55bba414d4_0.jpg" alt="Месси и Роналду">
+      <div><div class="qc-name">Лионель Месси и&nbsp;Криштиану Роналду</div>
+        <div class="qc-txt">Два автографа на&nbsp;одном предмете. Игроки, поделившие два десятилетия.</div>
+        <div class="qc-price">1&#8239;300&#8239;000&nbsp;₽</div></div></div>
+    <div class="qc"><img src="img_sport/8bf1d7d4d4_0.jpg" alt="Марадона, Бэнкс, Кафу">
+      <div><div class="qc-name">Диего Марадона, Гордон Бэнкс, Кафу и&nbsp;другие</div>
+        <div class="qc-txt">Коллективный предмет: чемпионы мира разных десятилетий.</div>
+        <div class="qc-price">1&#8239;100&#8239;000&nbsp;₽</div></div></div>
+  </div>
+</section>
+
+<!-- ============ s06 СОБРАНИЕ СЕГОДНЯ ============ -->
+<section class="slide dark" id="s06" style="grid-template-rows:auto 1fr auto">
+  <span class="demo">Пример слайда · карта собрания</span>
+  <div class="wrap" style="padding:40px 60px 0">
+    <div class="kick d" style="margin-bottom:13px">Собрание сегодня · 23 предмета</div>
+    <h2 class="serif" style="font-weight:300;font-size:44px;line-height:1;color:var(--ivory)">Что уже стоит на&nbsp;полке</h2>
+  </div>
+  <div style="display:flex;align-items:center">
+    <div class="have-cols">
+      <div class="hc"><h4>Вратари</h4><ul>
+        <li>Лев Яшин <span>· фотография</span></li>
+        <li>Джанлуиджи Буффон <span>· Италия</span></li>
+        <li>Джанлуиджи Буффон <span>· Juventus</span></li></ul></div>
+      <div class="hc"><h4>Защитники</h4><ul>
+        <li>Франц Беккенбауэр <span>· Германия</span></li>
+        <li>Дэвид Бекхэм <span>· Man&nbsp;Utd</span></li>
+        <li>Дэвид Бекхэм <span>· Англия</span></li></ul></div>
+      <div class="hc"><h4>Полузащитники</h4><ul>
+        <li>Зинедин Зидан <span>· Real&nbsp;Madrid</span></li>
+        <li>Диего Марадона <span>· Аргентина</span></li>
+        <li>Роналдиньо <span>· Бразилия</span></li>
+        <li>Деннис Бергкамп <span>· Arsenal</span></li>
+        <li>Джуд Беллингем <span>· Real&nbsp;Madrid</span></li>
+        <li>Ламин Ямаль <span>· мяч Barcelona</span></li></ul></div>
+      <div class="hc"><h4>Нападающие</h4><ul>
+        <li>Криштиану Роналду <span>· 4 предмета</span></li>
+        <li>Роналдо Назарио <span>· Бразилия</span></li>
+        <li>Тьерри Анри <span>· Arsenal</span></li>
+        <li>Неймар <span>· PSG</span></li>
+        <li>Килиан Мбаппе <span>· PSG</span></li>
+        <li>Марко ван Бастен <span>· бутса</span></li>
+        <li>Эрлинг Холанд <span>· Норвегия</span></li></ul></div>
+    </div>
+  </div>
+  <div class="wrap" style="padding:14px 60px 34px">
+    <p style="font:300 14.5px/1.6 'Inter';color:#9d978b;max-width:100ch">
+      Отдельно: официальный мяч финала Лиги чемпионов&nbsp;2006 в&nbsp;Париже с&nbsp;автографами игроков «Барселоны».</p>
+  </div>
+</section>
+
+</div>
+
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^s/,'');const id=n?('s'+n.padStart(2,'0')):'s01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+function go(d){const cur=+((location.hash.slice(1).replace(/^s/,''))||1);let x=cur+d;if(x<1)x=1;if(x>6)x=6;location.hash='s'+x;}
+show();addEventListener('hashchange',show);
+addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')go(1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(-1);});
+addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX<innerWidth*0.32?-1:1);});
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.slide{animation:none}.deck{height:auto}.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
