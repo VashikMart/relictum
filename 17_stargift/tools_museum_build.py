@@ -24,10 +24,25 @@ COVER = ("img_museum2/hero/legends.jpg", "Фото: Wikimedia Commons · public 
 HERO = {
  "ВРАТАРИ":       ("img_museum2/hero/keepers.jpg", "Фото: Ron Kroon · Anefo · Wikimedia Commons · CC0", "50% 46%", "left"),
  "ПОЛУЗАЩИТНИКИ": ("img_museum2/hero/mids.jpg",    "Фото: Tam Tam · Wikimedia Commons · CC BY-SA 2.0", "50% 34%", "left"),
- "НАПАДАЮЩИЕ":    ("img_museum2/hero/forwards.jpg","Фото: Kevin Walsh · Wikimedia Commons · CC BY 2.0", "50% 34%", "left"),
+ "НАПАДАЮЩИЕ":    ("img_museum2/hero/forwards.jpg","Фото: Berlination · Wikimedia Commons · CC BY-SA 4.0", "50% 42%", "left",
+   "linear-gradient(__DEG__deg,rgba(11,11,12,.96) 0%,rgba(11,11,12,.92) 20%,"
+   "rgba(11,11,12,.55) 33%,rgba(11,11,12,.1) 45%,rgba(11,11,12,0) 60%)", 32),
  "МЯЧИ С АВТОГРАФАМИ": ("img_museum2/hero/balls.jpg", "Фото: Peter Glaser · Wikimedia Commons · CC0", "50% 50%", "right"),
  "НОВОЕ ПОКОЛЕНИЕ": ("img_museum2/hero/young.jpg",  "Фото: Bryan Berlin · Wikimedia Commons · CC BY-SA 4.0", "50% 34%", "left"),
 }
+# лоты, снятые Вашиком с подборки: реплики трофеев, дубли Каннаваро,
+# два мяча и бутса Холанда
+DROP = {
+    "f3ae11fdfe",   # Кафу — 3D-реплика Кубка Лиги чемпионов
+    "a3db28a1dc",   # Пирло — 3D-реплика Кубка Лиги чемпионов
+    "bf086cd624",   # Каннаваро — футболка «Реал Мадрида»
+    "274ee51056",   # Каннаваро — домашняя футболка сборной Италии №5
+    "748f3b54a0",   # Бензема — мяч
+    "30ad616a8b",   # Вальдеррама — мяч
+    "805c6898b8",   # Холанд — бутса
+}
+# лоты, которым нужен отдельный слайд из-за сюжетного текста
+PIN_SOLO = {"e19f81d305"}   # Пеле — фотография удара через себя
 TITLE = {"ЛИОНЕЛЬ МЕССИ": "Лионель Месси", "ЛЕГЕНДЫ МИРОВОГО ФУТБОЛА": "Легенды",
          "ВРАТАРИ": "Вратари", "ЗАЩИТНИКИ": "Защитники", "ПОЛУЗАЩИТНИКИ": "Полузащитники",
          "НАПАДАЮЩИЕ": "Нападающие", "БУТСЫ С АВТОГРАФАМИ": "Бутсы",
@@ -147,7 +162,8 @@ def photo(it):
 
 def main():
     lots = json.load(open(f"{R}/museum_lots.json", encoding="utf-8"))
-    lots = [x for x in lots if x["group"] in ORDER]   # Месси — отдельный дек
+    lots = [x for x in lots                          # Месси — отдельный дек
+            if x["group"] in ORDER and x["key"] not in DROP]
     txt = json.load(open(f"{R}/texts_museum.json", encoding="utf-8"))
     T = txt["lots"]
 
@@ -196,11 +212,18 @@ def main():
         kick = f"Раздел&nbsp;{num} · {len(items)} предметов"
 
         if g in HERO:            # разделитель с настоящим кадром
-            ph, cred, opos, side = HERO[g]
-            grad = ("linear-gradient(90deg,rgba(11,11,12,.93) 0%,rgba(11,11,12,.74) 34%,"
-                    "rgba(11,11,12,.2) 68%,rgba(11,11,12,.05) 100%)" if side == "left" else
-                    "linear-gradient(270deg,rgba(11,11,12,.93) 0%,rgba(11,11,12,.74) 34%,"
-                    "rgba(11,11,12,.2) 68%,rgba(11,11,12,.05) 100%)")
+            ph, cred, opos, side = HERO[g][:4]
+            # где в кадре стоит герой, там затемнение держим плотным под текстом
+            # и обрываем раньше, чтобы фигура не уходила в темноту
+            extra = HERO[g][4] if len(HERO[g]) > 4 else 68
+            subw = HERO[g][5] if len(HERO[g]) > 5 else 44
+            deg = 90 if side == "left" else 270
+            if isinstance(extra, str):
+                grad = extra.replace("__DEG__", str(deg))
+            else:
+                grad = (f"linear-gradient({deg}deg,rgba(11,11,12,.93) 0%,"
+                        f"rgba(11,11,12,.74) {round(extra * 0.5)}%,"
+                        f"rgba(11,11,12,.2) {extra}%,rgba(11,11,12,.05) 100%)")
             box = ("align-items:flex-start;text-align:left" if side == "left"
                    else "align-items:flex-end;text-align:right")
             add(f"""<section class="slide dark" id="__ID__" style="grid-template-columns:1fr">
@@ -211,7 +234,7 @@ def main():
       <div class="kick d" style="letter-spacing:.34em;margin-bottom:24px">{kick}</div>
       <h2 class="div-huge" style="font-size:74px">{esc(TITLE[g])}</h2>
       <div class="div-rule" style="margin:32px 0"></div>
-      <p class="div-sub" style="max-width:44ch">{esc(sub)}</p>
+      <p class="div-sub" style="max-width:{subw}ch">{esc(sub)}</p>
     </div>
     <span style="position:absolute;right:16px;bottom:12px;font:400 8.5px/1.3 'Inter';letter-spacing:.08em;color:rgba(245,241,232,.55)">{esc(cred)}</span>
   </div>
@@ -232,6 +255,14 @@ def main():
         if (len(items) - nsolo) % 2:
             nsolo += 1
         solo, pairs = items[:nsolo], items[nsolo:]
+        # лоты с длинным сюжетным текстом держим отдельным слайдом
+        moved = [x for x in pairs if x["key"] in PIN_SOLO]
+        if moved:
+            pairs = [x for x in pairs if x["key"] not in PIN_SOLO]
+            while len(pairs) % 2:                    # пару разбивать нельзя
+                pairs.append(solo.pop())
+            solo = solo + moved
+            nsolo = len(solo)
 
         for j, it in enumerate(solo, 1):
             add(f"""<section class="slide white solo" id="__ID__">
@@ -266,7 +297,8 @@ def main():
 
     # ---- лестница цен
     allx = sorted(lots, key=lambda x: -x["price"])
-    per = 22
+    pages = max(1, -(-len(allx) // 24))          # чтобы последняя страница не была огрызком
+    per = -(-len(allx) // pages)
     for pi in range(0, len(allx), per):
         part = allx[pi:pi + per]
         rows = "".join(f"""<div class="lad-row"><div class="lad-nm">{esc(T.get(x['key'],{}).get('name',x['title']))}</div>"""
