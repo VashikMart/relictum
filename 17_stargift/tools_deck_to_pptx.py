@@ -139,7 +139,8 @@ for sid in sorted(GEOM.keys()):
     for d in g.get('decor',[]):
         r=d['rect']
         if r['w']>=1276 and r['h']>=716: continue          # the slide's own ground
-        sh=sl.shapes.add_shape(MSO_SHAPE.RECTANGLE, PX(r['x']),PX(r['y']),
+        shape = MSO_SHAPE.OVAL if d.get('oval') else MSO_SHAPE.RECTANGLE
+        sh=sl.shapes.add_shape(shape, PX(r['x']),PX(r['y']),
                                PX(max(r['w'],0.75)),PX(max(r['h'],0.75)))
         sh.fill.solid(); sh.fill.fore_color.rgb=blend(d['color'], g['bg'])
         sh.line.fill.background(); sh.shadow.inherit=False

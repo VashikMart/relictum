@@ -83,8 +83,17 @@ JS_COLLECT = r"""
     const r  = rel(el.getBoundingClientRect());
     if (r.w<=0 || r.h<=0) continue;
     const empty = el.tagName!=='IMG' && !el.textContent.trim() && !el.querySelector('img');
-    if (empty && cs.backgroundImage==='none' && vis(cs.backgroundColor))
-      out.decor.push({kind:'rect', rect:r, color:cs.backgroundColor});
+    const rad = parseFloat(cs.borderTopLeftRadius) || 0;
+    const round = cs.borderTopLeftRadius.includes('%') ? parseFloat(cs.borderTopLeftRadius) >= 45
+                                                       : rad >= Math.min(r.w, r.h) * 0.45;
+    // фон берём и у элементов с текстом, если это небольшая плашка/кружок (бейдж, точка)
+    const small = r.w < 320 && r.h < 320;
+    if ((empty || small) && cs.backgroundImage==='none' && vis(cs.backgroundColor))
+      out.decor.push({kind:'rect', rect:r, color:cs.backgroundColor, oval:round});
+    if ((empty || small) && cs.backgroundImage.includes('gradient') && small) {
+      const m = cs.backgroundImage.match(/rgba?\([^)]+\)/g);
+      out.decor.push({kind:'rect', rect:r, color:(m && m[m.length-1]) || 'rgb(169,133,69)', oval:round});
+    }
     for (const side of ['Top','Bottom','Left','Right']) {
       const w = parseFloat(cs['border'+side+'Width'])||0;
       const c = cs['border'+side+'Color'];
@@ -101,8 +110,16 @@ JS_COLLECT = r"""
 }
 """
 
-# slides where the photo layer + gradient overlay must be flattened into one plate
-FLATTEN = {'s01':'photo', 's06':'photo', 's09':'photo'}
+# слайды, где фото лежит под градиентной заливкой — их снимаем одним «плейтом»
+# (определяем автоматически: прямой ребёнок слайда содержит img И абсолютный градиент)
+JS_FLATTEN = """
+() => [...document.querySelectorAll('.slide')].filter(s =>
+  [...s.children].some(c =>
+    c.querySelector(':scope > img') &&
+    [...c.children].some(g => getComputedStyle(g).backgroundImage.includes('gradient'))
+  )
+).map(s => s.id)
+"""
 
 async def main():
     data={}
@@ -119,7 +136,9 @@ async def main():
             await pg.wait_for_timeout(220)
             data[sid] = await pg.evaluate(JS_COLLECT, sid)
         # flattened plates: hide all text, screenshot the photo container
-        for sid in FLATTEN:
+        flatten = await pg.evaluate(JS_FLATTEN)
+        print('плейтов:', flatten or '—')
+        for sid in flatten:
             await pg.evaluate("(sid)=>{document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===sid))}", sid)
             await pg.wait_for_timeout(220)
             sel = f'#{sid} > div:has(> img)'
@@ -131,6 +150,9 @@ async def main():
             }""", sid)
             await pg.wait_for_timeout(300)
             el = await pg.query_selector(sel)
+            if el is None:
+                await pg.evaluate("""(sid)=>{document.getElementById(sid).querySelectorAll('*').forEach(e=>e.style.visibility='')}""", sid)
+                continue
             await el.screenshot(path=os.path.join(PLATE, sid+'_plate.png'))
             data[sid]['plate'] = {'file': sid+'_plate.png',
                                  'rect': await pg.evaluate("""(sid)=>{
