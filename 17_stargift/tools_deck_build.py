@@ -165,15 +165,17 @@ def build(deck):
 
     # ---------- лестница цен ----------
     allx = sorted((i for c in man["chapters"] for i in c["items"]), key=lambda x: -x["price"])
-    for part in (allx[:18], allx[18:]):
+    for pi, part in enumerate((allx[:18], allx[18:])):
         if not part:
             continue
+        head = f"{len(allx)} предметов" if pi == 0 else "Продолжение"
+        kick = "Подборка целиком" if pi == 0 else f"Подборка целиком · {len(allx[:18])+1}–{len(allx)}"
         rowsh = "".join(f"""<div class="lad-row"><div class="lad-nm">{esc(lots_t.get(x['key'],{}).get('name',x['title']))}</div>"""
                         f"""<div class="lad-pr">{rub(x['price'])}</div></div>""" for x in part)
         add(f"""<section class="slide dark" id="__ID__" style="grid-template-rows:auto 1fr">
   <div class="wrap" style="padding:42px 66px 0">
-    <div class="kick d" style="margin-bottom:13px">Подборка целиком</div>
-    <h2 class="serif" style="font-weight:300;font-size:46px;line-height:1;color:var(--ivory)">{len(allx)} предметов</h2>
+    <div class="kick d" style="margin-bottom:13px">{kick}</div>
+    <h2 class="serif" style="font-weight:300;font-size:46px;line-height:1;color:var(--ivory)">{head}</h2>
   </div>
   <div class="wrap" style="padding:22px 66px 34px"><div class="lad">{rowsh}</div></div>
 </section>""")

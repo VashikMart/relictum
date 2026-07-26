@@ -1,0 +1,502 @@
+<meta charset="utf-8">
+<title>Stargift · Легенды экрана</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--noir:#0B0B0C;--gold:#A98545;--gold2:#C9A96A;--ivory:#F5F1E8;
+      --ink:#1A1A1A;--mute:#6b6b6b;--cert:#9a958c}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-serif}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:grid}
+.slide>*{min-height:0;min-width:0}
+img{display:block}
+.serif{font-family:'Cormorant Garamond',serif}
+.kick{font:500 11px/1 'Inter';letter-spacing:.36em;text-transform:uppercase;color:var(--gold)}
+.kick.d{color:var(--gold2)}
+.white{background:#FFFFFF;color:var(--ink)}
+.dark{background:var(--noir);color:var(--ivory)}
+.wrap{padding:40px 60px}
+
+/* разделитель главы */
+.div-huge{font-family:'Cormorant Garamond';font-weight:300;line-height:1;color:var(--ivory)}
+.div-rule{height:1px;width:70px;background:rgba(169,133,69,.55)}
+.div-sub{font:300 19px/1.65 'Inter';color:#c9c3b7;max-width:52ch}
+
+/* СОЛО: фото целиком слева, текст справа */
+.solo{grid-template-columns:1.18fr 1fr}
+.solo-ph{display:flex;align-items:center;justify-content:center;padding:52px 26px 52px 60px;background:#fff}
+.solo-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.solo-side{display:flex;flex-direction:column;justify-content:center;padding:56px 60px 56px 26px}
+.solo-name{font-family:'Cormorant Garamond';font-weight:500;font-size:36px;line-height:1.08;color:var(--ink)}
+.solo-text{font:300 17px/1.65 'Inter';color:#4a4a4a;margin-top:16px}
+.solo-price{font-family:'Cormorant Garamond';font-weight:500;font-size:32px;color:var(--gold);margin-top:22px}
+.solo-cert{font:400 10px/1 'Inter';letter-spacing:.22em;text-transform:uppercase;color:var(--cert);margin-top:11px}
+
+/* ДУЭТ: два лота, фото сверху целиком, подпись под фото */
+.duo2{grid-template-rows:1fr}
+.duo2-in{display:grid;grid-template-columns:1fr 1fr;gap:46px;padding:40px 72px 34px;align-items:start}
+.dc{display:flex;flex-direction:column;align-items:center;text-align:center}
+.dc-ph{width:100%;height:352px;display:flex;align-items:center;justify-content:center;background:#fff}
+.dc-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.dc-name{font-family:'Cormorant Garamond';font-weight:500;font-size:25px;line-height:1.14;color:var(--ink);margin-top:20px;max-width:28ch}
+.dc-text{font:300 15px/1.55 'Inter';color:#4a4a4a;margin-top:10px;max-width:48ch}
+.dc-price{font-family:'Cormorant Garamond';font-weight:500;font-size:25px;color:var(--gold);margin-top:12px}
+.dc-cert{font:400 9.5px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:8px}
+
+/* КВАРТЕТ: четыре лота, фото целиком слева, подпись справа */
+.quad{grid-template-rows:auto 1fr}
+.quad-in{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;
+  gap:24px 44px;padding:22px 64px 30px}
+.qc{display:grid;grid-template-columns:238px 1fr;gap:20px;align-items:center}
+.qc-ph{width:238px;height:190px;display:flex;align-items:center;justify-content:center;background:#fff}
+.qc-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.qc-name{font-family:'Cormorant Garamond';font-weight:500;font-size:21px;line-height:1.12;color:var(--ink)}
+.qc-text{font:300 13px/1.5 'Inter';color:#4a4a4a;margin-top:7px}
+.qc-price{font-family:'Cormorant Garamond';font-weight:500;font-size:20px;color:var(--gold);margin-top:8px}
+.qc-cert{font:400 9px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:6px}
+
+/* лестница цен */
+.lad{display:flex;flex-direction:column}
+.lad-row{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:baseline;
+  padding:9px 0;border-bottom:1px solid rgba(169,133,69,.2)}
+.lad-nm{font:300 14px/1.35 'Inter';color:#d5cfc3}
+.lad-pr{font-family:'Cormorant Garamond';font-weight:500;font-size:21px;color:var(--gold2);white-space:nowrap}
+</style>
+
+<div class="deck">
+<section class="slide dark on" id="s01" style="grid-template-columns:1.02fr 1fr">
+  <div class="wrap" style="display:flex;flex-direction:column;justify-content:space-between;padding:62px 58px">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:170px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97">
+    <div>
+      <div class="kick d" style="margin-bottom:22px">Stargift · Кино</div>
+      <h1 class="serif" style="font-weight:300;font-size:80px;line-height:1;color:var(--ivory)">Легенды экрана</h1>
+      <p style="font:300 17px/1.65 'Inter';color:#b8b2a6;margin-top:28px;max-width:44ch">Кино собирают так же, как живопись: по именам и по конкретным вещам. В каталоге — тридцать семь предметов из коллекции Stargift: сценарии, фотографии, рисунки, личные вещи.</p>
+    </div>
+    <div class="kick" style="letter-spacing:.24em">Июль 2026</div>
+  </div>
+  <div style="height:720px;overflow:hidden;background:#0e0f0e;display:flex;align-items:center;justify-content:center;padding:56px">
+    <img src="img_kino/7cd11c5ffc_0.jpg" alt="Брюс Ли" style="max-width:100%;max-height:100%;object-fit:contain;box-shadow:0 40px 90px rgba(0,0,0,.6)">
+  </div>
+</section>
+<section class="slide dark" id="s02" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;первая</div>
+    <h2 class="div-huge" style="font-size:74px">Голливудские легенды</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">Брюс Ли, Мэрилин Монро, Одри Хепбёрн, Грейс Келли, Аль Пачино — имена, которые узнают вне зависимости от возраста.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s03">
+  <div class="solo-ph"><img src="img_kino/7cd11c5ffc_0.jpg" alt="Брюс Ли"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Голливудские легенды</div>
+    <div class="solo-name">Брюс Ли — личная скакалка</div>
+    <div class="solo-text">Брюс Ли — мастер восточных единоборств, гонконгский и американский актёр, режиссёр и сценарист. Скакалку изготовил Джордж Ли, делавший почти весь спортивный инвентарь для мастера. В 1969 году она перешла к Таки Кимуре — первому старшему ученику Ли и шаферу на его свадьбе.</div>
+    <div class="solo-price">10 000 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s04">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/8b0050604f_0.jpg" alt="Мэрилин Монро"></div>
+        <div class="dc-name">Мэрилин Монро — сумка из личного гардероба</div>
+        <div class="dc-text">Мэрилин Монро — американская киноактриса, певица и модель, секс-символ 1950-х годов. Чёрная виниловая сумка с рисунком аллигатора бренда Viki of New York происходит из её личного гардероба. Платье, в котором Монро спела Happy Birthday Джону Кеннеди, ушло с аукциона 1999 года за 1,26 миллиона долларов.</div>
+        <div class="dc-price">3 900 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/f95ece0f65_0.jpg" alt="Одри Хепбёрн"></div>
+        <div class="dc-name">Одри Хепбёрн — фото с рукописным пожеланием и автографом</div>
+        <div class="dc-text">Одри Хепбёрн — британская актриса, фотомодель, танцовщица и гуманитарный деятель, икона Золотого века Голливуда. Американский институт киноискусства поставил её на третье место в списке величайших актрис американского кино. Текст обращения: «To Rick Hello from Switzerland Audrey Hepburn 1991».</div>
+        <div class="dc-price">1 250 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s05">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/1c9c81921a_0.jpg" alt="Одри Хепбёрн"></div>
+        <div class="dc-name">Одри Хепбёрн — фото с автографом</div>
+        <div class="dc-text">Одри Хепбёрн — британская актриса, фотомодель и танцовщица, признанная икона киноиндустрии и стиля. Кадр сделан на съёмках фильма «Как украсть миллион» в 1966 году. Короткую стрижку Coupe Infante'66 придумал Александр де Пари, а обновить имидж актрисе посоветовал фотограф Ричард Аведон.</div>
+        <div class="dc-price">1 250 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/eec18f25ba_0.jpg" alt="Аль Пачино"></div>
+        <div class="dc-name">Аль Пачино — кубок из фильма «Лицо со шрамом» с автографом</div>
+        <div class="dc-text">Аль Пачино — американский актёр, режиссёр и сценарист, знаменитый ролями Майкла Корлеоне и Тони Монтана. Кубок — уменьшенная реплика статуи из фильма «Лицо со шрамом». Мечта об актёрстве пришла к Пачино в кинотеатре, где билетёршей работала его мать: «Не будь Чехова — не было бы и меня».</div>
+        <div class="dc-price">1 050 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s06">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/c9c27ae8ed_0.jpg" alt="Хит Леджер"></div>
+        <div class="dc-name">Хит Леджер — фото с автографом</div>
+        <div class="dc-text">Хит Леджер — голливудский актёр австралийского происхождения, самой известной ролью которого стал Джокер. Готовясь к «Тёмному рыцарю», Леджер месяц прожил один в отеле, разрабатывая психологию, жестикуляцию и голос героя. На вопрос, почему Джокером будет Леджер, Кристофер Нолан ответил: «Потому что он бесстрашен».</div>
+        <div class="dc-price">680 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/6e7f1950c5_0.jpg" alt="Аль Пачино"></div>
+        <div class="dc-name">Аль Пачино — сценарий фильма «Крёстный отец» с автографом</div>
+        <div class="dc-text">Аль Пачино — американский актёр, режиссёр и сценарист. Фильм Фрэнсиса Форда Копполы вышел в 1972 году и получил три «Оскара», в том числе за лучший фильм года и лучший адаптированный сценарий. Пачино всю жизнь играл в театре: «На сцене канат натянут высоко-высоко. Брякнешься, так брякнешься по-настоящему».</div>
+        <div class="dc-price">650 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett — BJ009797</div>
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s07">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/3dcd26c85e_0.jpg" alt="Грейс Келли"></div>
+        <div class="dc-name">Грейс Келли — фото с автографом</div>
+        <div class="dc-text">Грейс Келли — американская актриса, с 1956 года супруга князя Ренье III и 10-я княгиня Монако. Немногим более десяти фильмов, один «Оскар» и слава самой кассовой актрисы своего времени; Альфред Хичкок называл её своей музой. На фото Келли снята с супругом, сыном Альбером и дочерьми Каролиной и Стефанией.</div>
+        <div class="dc-price">450 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/24e7706c58_0.jpg" alt="Марго Робби"></div>
+        <div class="dc-name">Марго Робби — фигурка из фильма «Отряд самоубийц» с автографом</div>
+        <div class="dc-text">Марго Робби — австралийская актриса и продюсер, известная по фильмам «Волк с Уолл-стрит», «Однажды в Голливуде» и образу Харли Квинн. Комиксы о Харли Квинн ей часто дарили на Рождество ещё в детстве, и все накопленные знания о персонаже она использовала в «Отряде самоубийц» 2016 года.</div>
+        <div class="dc-price">400 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s08" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;вторая</div>
+    <h2 class="div-huge" style="font-size:74px">Дуэты, которые помнят все</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">Два и больше автографов на одном предмете: партнёры по кадру, режиссёр и его актёр, экранная пара.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s09">
+  <div class="solo-ph"><img src="img_kino/e36f9c4721_0.jpg" alt="Кристофер Ллойд и Майкл Джей Фокс"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Дуэты, которые помнят все</div>
+    <div class="solo-name">Кристофер Ллойд и Майкл Джей Фокс — реплика ховерборда из к/ф «Назад в будущее» с 2-мя автографами</div>
+    <div class="solo-text">Кристофер Ллойд — обладатель трёх премий «Эмми», доктор Эмметт Браун из «Назад в будущее». Майкл Джей Фокс — канадо-американский актёр, сыгравший Марти Макфлая. Ховерборд парит на высоте около семи сантиметров: «Он работает как скейтборд, только без колёс», — описывал устройство Роберт Земекис.</div>
+    <div class="solo-price">6 500 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s10">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/747b097cc9_0.jpg" alt="Кристиан Бэйл и Хит Леджер"></div>
+        <div class="dc-name">Кристиан Бэйл и Хит Леджер — сценарий фильма «Тёмный рыцарь» и фото с автографами</div>
+        <div class="dc-text">Кристиан Бэйл — британо-американский актёр, лауреат «Оскара» и «Золотого глобуса». Роль Бэтмена в трилогии Кристофера Нолана принесла ему 9 миллионов долларов и пропуск в крупнобюджетное кино. Хит Леджер — австралийский актёр, чьей самой известной работой стал Джокер.</div>
+        <div class="dc-price">830 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/6d84e7dedb_0.jpg" alt="Кристофер Ллойд и Майкл Джей Фокс"></div>
+        <div class="dc-name">Кристофер Ллойд и Майкл Джей Фокс — реплика настольной лампы из к/ф «Назад в будущее» с 2-мя автографами</div>
+        <div class="dc-text">Кристофер Ллойд и Майкл Джей Фокс — Док Браун и Марти Макфлай, дуэт, на котором держится «Назад в будущее». На момент съёмок первой части Фоксу было 24 года, и он уже был звездой сериала «Семейные узы». Реплика повторяет лампу из сцены, где дисплей DeLorean фиксирует 01:22 26 октября 1985 года.</div>
+        <div class="dc-price">700 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s11">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/7f1d6aaf10_0.jpg" alt="Гай Ричи и Джейсон Стейтем"></div>
+        <div class="dc-name">Гай Ричи и Джейсон Стейтем — постер фильма «Большой куш» с 2-мя автографами</div>
+        <div class="dc-text">Гай Ричи — британский режиссёр и сценарист, автор «Карт, денег, двух стволов» и «Большого куша». Джейсон Стейтем — британский актёр, бывший член сборной Великобритании по прыжкам в воду. В боевых сценах фильма соперник Брэда Питта — профессиональный боксёр Скотт Уэлш с рекордом 22-4.</div>
+        <div class="dc-price">650 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/4123e79edc_0.jpg" alt="Квентин Тарантино и Ума Турман"></div>
+        <div class="dc-name">Квентин Тарантино и Ума Турман — фото с 2-мя автографами</div>
+        <div class="dc-text">Квентин Тарантино — американский режиссёр и сценарист, один из ярких представителей постмодернизма в кинематографе; на вопрос, в какой киношколе он учился, отвечал: «В кино». Ума Турман сыграла Мию Уоллес в «Криминальном чтиве» и сама подтолкнула режиссёра к замыслу «Убить Билла».</div>
+        <div class="dc-price">550 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s12">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/6a91524869_0.jpg" alt="Леонардо ДиКаприо и Кейт Уинслет"></div>
+        <div class="dc-name">Леонардо ДиКаприо и Кейт Уинслет — фото с 2-мя автографами</div>
+        <div class="dc-text">Леонардо ДиКаприо — американский актёр и продюсер, лауреат «Оскара», получивший мировую известность после «Титаника». Кейт Уинслет — британская актриса, в двадцать лет уже номинированная на «Оскар» за «Разум и чувства». Фильм Джеймса Кэмерона 1997 года собрал 11 премий «Оскар».</div>
+        <div class="dc-price">400 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/f34bb3b2b0_0.jpg" alt="Джулия Робертс и Ричард Гир"></div>
+        <div class="dc-name">Джулия Робертс и Ричард Гир — сценарий фильма «Красотка» с автографами</div>
+        <div class="dc-text">Джулия Робертс — американская актриса, ставшая суперзвездой в 1990-х благодаря роли Вивьен в «Красотке», за которую получила «Золотой глобус»; «Оскар» ей принесла «Эрин Брокович». Ричард Гир — американский актёр и продюсер, более сорока лет поддерживающий беженцев по всему миру.</div>
+        <div class="dc-price">400 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s13" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;третья</div>
+    <h2 class="div-huge" style="font-size:74px">Русский экран</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">Высоцкий, Бодров, Тарковский, Эйзенштейн, Цой — рукописи, письма и личные вещи отечественного кино.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s14">
+  <div class="solo-ph"><img src="img_kino/8bbcb67c5d_0.jpg" alt="Сергей Эйзенштейн и Николай Черкасов"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Русский экран</div>
+    <div class="solo-name">Сергей Эйзенштейн и Николай Черкасов — стенограмма беседы с рукописными правками и 2-мя автографами</div>
+    <div class="solo-text">Сергей Эйзенштейн — советский режиссёр театра и кино, теоретик искусства, профессор ВГИКа, лауреат двух Сталинских премий I степени. Николай Черкасов — народный артист СССР, сыгравший главные роли в «Александре Невском» и «Иване Грозном». Стенограмма беседы с Иосифом Сталиным вошла в документальный фильм телеканала «Культура».</div>
+    <div class="solo-price">10 000 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s15">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/ba2a3899b5_0.jpg" alt="Виктор Цой (Кино)"></div>
+        <div class="dc-name">Виктор Цой (Кино) — кеды с собственноручной росписью и автографом</div>
+        <div class="dc-text">Виктор Цой — лидер рок-группы «Кино», музыкант и киноактёр, кумир поколения перестройки. Проблемы, которые он поднимал в песнях, продолжают волновать и следующие поколения. Экспонат сопровождается экспертизой Государственного исторического музея.</div>
+        <div class="dc-price">5 000 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/c001587056_0.jpg" alt="Владимир Высоцкий"></div>
+        <div class="dc-name">Владимир Высоцкий — собственноручное письмо</div>
+        <div class="dc-text">Владимир Высоцкий — поэт и артист, феноменальное явление отечественной культуры. Письмо кинорежиссёру Геннадию Полоке, Москва, 9 июля 1974 года, посвящено работе над фильмом «Одиножды один». Текст письма: «Я огорчен только тем, что снова мы не работаем вместе... Комитет сильнее нас».</div>
+        <div class="dc-price">4 000 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s16">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/cf875303fc_0.jpg" alt="Владимир Высоцкий"></div>
+        <div class="dc-name">Владимир Высоцкий — брошюра «Игры ХХII Олимпиады. Москва 1980» с рукописным обращением и автографом</div>
+        <div class="dc-text">Владимир Высоцкий — советский поэт, певец, автор-исполнитель, актёр театра и кино. Текст обращения: «Марине с любовью Высоцкий». Игры XXII Олимпиады прошли в Москве в 1980 году и, несмотря на бойкот со стороны части государств, собрали спортсменов из 80 стран.</div>
+        <div class="dc-price">1 800 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/4b10528435_0.jpg" alt="Андрей Тарковский и братья Стругацкие"></div>
+        <div class="dc-name">Андрей Тарковский и братья Стругацкие — рукописные заметки к фильму «Сталкер» и книга «Посещение» с автографами</div>
+        <div class="dc-text">Андрей Тарковский — советский режиссёр театра и кино, сценарист, народный артист РСФСР. Аркадий и Борис Стругацкие — писатели-фантасты, чьи книги остались востребованными и после распада СССР. «Сталкер» снят на «Мосфильме» в 1979 году по сценарию Стругацких, написанному по мотивам «Пикника на обочине».</div>
+        <div class="dc-price">1 600 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s17">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/829f55fa7e_0.jpg" alt="Сергей Бодров"></div>
+        <div class="dc-name">Сергей Бодров — письмо с автографом</div>
+        <div class="dc-text">Сергей Бодров — киноактёр и кинорежиссёр, кандидат искусствоведения, исполнитель главных ролей в фильмах «Брат», «Брат 2» и «Кавказский пленник». Машинопись 1990–1991 годов: студенты МГУ отказываются сдавать политэкономию, считая преподавание марксистских дисциплин незаконным после отмены 6-й статьи Конституции.</div>
+        <div class="dc-price">1 000 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s18" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;четвёртая</div>
+    <h2 class="div-huge" style="font-size:74px">Режиссёры</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">Феллини, Лукас, Коппола, Люмьер — авторские рисунки, сценарии и документы тех, кто придумал, как это снять.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s19">
+  <div class="solo-ph"><img src="img_kino/daaeaa3a0c_0.jpg" alt="Федерико Феллини"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Режиссёры</div>
+    <div class="solo-name">Федерико Феллини — собственноручный рисунок</div>
+    <div class="solo-text">Федерико Феллини — итальянский режиссёр, обладатель «Оскара», «Золотого глобуса», «Золотой пальмовой ветви» и «Золотого льва». Начинал он карикатуристом: по приезде в Рим открыл студию и делал шаржи по заказу американских солдат. «Я всегда, сколько себя помню, что-нибудь малевал на любом подвернувшемся листке бумаги».</div>
+    <div class="solo-price">1 150 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s20">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/87993afc13_0.jpg" alt="Джордж Лукас"></div>
+        <div class="dc-name">Джордж Лукас — сценарий фильма «Звёздные войны» с автографом</div>
+        <div class="dc-text">Джордж Уолтон Лукас-младший — американский кинопродюсер, сценарист, режиссёр, монтажёр и оператор. Наиболее известен как создатель фантастической саги «Звёздные войны» и серии приключенческих фильмов об Индиане Джонсе.</div>
+        <div class="dc-price">650 000&nbsp;₽</div>
+        <div class="dc-cert">PSA/DNA</div>
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/fb22475544_0.jpg" alt="Мэтт Гроунинг"></div>
+        <div class="dc-name">Мэтт Гроунинг — собственноручный рисунок на холсте с автографом</div>
+        <div class="dc-text">Мэтт Гроунинг — американский мультипликатор, создатель мультсериалов «Симпсоны» и «Футурама». В 1986 году продюсер Джеймс Л. Брукс предложил ему оживить кроликов из комикса «Жизнь в Аду», но Гроунинг прямо в кабинете набросал новых героев, дав им имена своих родителей и сестёр: Гомер, Мардж, Лиза и Мэгги.</div>
+        <div class="dc-price">650 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s21">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/d9e0977374_0.jpg" alt="Луи де Фюнес"></div>
+        <div class="dc-name">Луи де Фюнес — карикатура с рукописным обращением и автографом</div>
+        <div class="dc-text">Луи де Фюнес — французский киноактёр, кинорежиссёр и сценарист, один из величайших комиков мирового кино. В кинематограф он пришёл в тридцать лет, успев поработать скорняком, чертёжником, посыльным, бухгалтером и пианистом в ресторане «Пигаль». Славу принесли «Жандарм из Сен-Тропе» 1964 года и трилогия о Фантомасе.</div>
+        <div class="dc-price">520 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/0652b0ad50_0.jpg" alt="Фрэнсис Форд Коппола"></div>
+        <div class="dc-name">Фрэнсис Форд Коппола — пластинка с автографом</div>
+        <div class="dc-text">Фрэнсис Форд Коппола — американский кинорежиссёр, сценарист и продюсер, известный прежде всего кинотрилогией «Крёстный отец». К музыке фильма Коппола и автор романа Марио Пьюзо отнеслись как к эмоциональному рассказчику: мандолина, гитара и аккордеон дали картине итальянский колорит.</div>
+        <div class="dc-price">400 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett — BL93390</div>
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s22">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/5e5e49da86_0.jpg" alt="Луи Люмьер"></div>
+        <div class="dc-name">Луи Люмьер — документ с автографом</div>
+        <div class="dc-text">Луи Люмьер — французский изобретатель и кинематографист, вместе с братом Огюстом основавший кино. Их первый публичный показ 28 декабря 1895 года в Париже считается рождением кинематографа. Печатное письмо адресовано изобретателю Раймону Ланглуа: Люмьер прикладывает письмо Национального Совета Изобретателей.</div>
+        <div class="dc-price">400 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s23" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;пятая</div>
+    <h2 class="div-huge" style="font-size:74px">Сериалы</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">«Друзья» и «Сопрано» — сериалы, изменившие представление о том, что можно показывать на телевидении.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s24">
+  <div class="solo-ph"><img src="img_kino/0f08896ef2_0.jpg" alt="Дженнифер Энистон, Кортни Кокс, Лиза Кудроу, Мэтт Леблан, Мэттью Перри и Дэвид Швиммер"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Сериалы</div>
+    <div class="solo-name">Дженнифер Энистон, Кортни Кокс, Лиза Кудроу, Мэтт Леблан, Мэттью Перри и Дэвид Швиммер — 6 фото с автографами</div>
+    <div class="solo-text">Шесть актёров сериала «Друзья», выходившего с 1994 по 2004 год: Рэйчел Грин, Моника Геллер, Фиби Буффе, Джоуи Триббиани, Чендлер Бинг и Росс Геллер. Энистон получила за роль «Эмми» и «Золотой глобус», Кудроу — «Эмми» в 1998 году, а Джоуи Триббиани достался отдельный спин-офф.</div>
+    <div class="solo-price">1 000 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s25">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/41f6d381fc_0.jpg" alt="Джеймс Гандольфини и Доминик Кьянезе"></div>
+        <div class="dc-name">Джеймс Гандольфини и Доминик Кьянезе — фото с автографами</div>
+        <div class="dc-text">Джеймс Гандольфини — американский актёр, сыгравший Тони Сопрано и получивший за эту роль три премии «Эмми», пять премий Гильдии киноактёров и «Золотой глобус». Доминик Кьянезе известен ролью дяди Джуна, а в 1974 году снялся у Копполы в роли Джонни Олы во второй части «Крёстного отца».</div>
+        <div class="dc-price">840 000&nbsp;₽</div>
+        <div class="dc-cert">JSA</div>
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/66099741a0_0.jpg" alt="Мэттью Перри, Кортни Кокс, Дэвид Швиммер"></div>
+        <div class="dc-name">Мэттью Перри, Кортни Кокс, Дэвид Швиммер — фото с 3-мя автографами</div>
+        <div class="dc-text">«Друзья» — американский ситком о жизни шестерых друзей, один из самых знаменитых проектов 1990-х годов. Роль Росса Геллера писалась под Дэвида Швиммера, и он получил её без отбора. На каждую из пяти оставшихся ролей комиссия разобрала свыше тысячи резюме и пригласила на прочтение около 75 кандидатов.</div>
+        <div class="dc-price">800 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s26">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/792d9a3d87_0.jpg" alt="Джеймс Гандольфини"></div>
+        <div class="dc-name">Джеймс Гандольфини — фото с автографом</div>
+        <div class="dc-text">Джеймс Гандольфини — американский актёр, чьё исполнение роли Тони Сопрано называют одной из самых влиятельных работ в истории телевидения. Однажды актёру позвонил человек из реальной мафии — похвалить игру. Создатель сериала Дэвид Чейз вспоминал: «Оказалось, что настоящий дон не носит шорт».</div>
+        <div class="dc-price">690 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s27" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;шестая</div>
+    <h2 class="div-huge" style="font-size:74px">Сценарии</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">Рабочие экземпляры «Звёздных войн», «Криминального чтива», «Начала» и «Офиса» с автографами.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s28">
+  <div class="solo-ph"><img src="img_kino/d391e3bcf0_0.jpg" alt="Харрисон Форд"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Сценарии</div>
+    <div class="solo-name">Харрисон Форд — сценарий фильма «Звёздные войны» с автографом</div>
+    <div class="solo-text">Харрисон Форд — американский актёр кино и телевидения, продюсер. Наиболее известен по роли Хана Соло в «Звёздных войнах», серии фильмов об Индиане Джонсе и дилогии «Бегущий по лезвию». До первых больших ролей Форд несколько лет зарабатывал плотницким ремеслом, обустраивая дома голливудских продюсеров.</div>
+    <div class="solo-price">630 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white duo2" id="s29">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/01014f7b13_0.jpg" alt="Квентин Тарантино и Гай Ричи"></div>
+        <div class="dc-name">Квентин Тарантино и Гай Ричи — сценарии фильмов «Криминальное чтиво» и «Большой куш» с автографами</div>
+        <div class="dc-text">Квентин Тарантино — американский кинорежиссёр, сценарист и продюсер, один из наиболее ярких представителей постмодернизма в кинематографе. Гай Ричи снял не так много картин, но многие из них стали культовыми: «Карты, деньги, два ствола», «Большой куш», «Револьвер», «Рок-н-рольщик».</div>
+        <div class="dc-price">600 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/046ce3c476_0.jpg" alt="Ханс Циммер и Леонардо ДиКаприо"></div>
+        <div class="dc-name">Ханс Циммер и Леонардо ДиКаприо — сценарий фильма «Начало» и фото с автографами</div>
+        <div class="dc-text">Ханс Циммер — немецкий кинокомпозитор, чья фамилия в титрах служит знаком качества. Леонардо ДиКаприо сыграл главную роль в «Начале» Кристофера Нолана; перед съёмками режиссёр встречался с актёром на протяжении нескольких месяцев. Саундтрек Циммера номинировали на «Оскар», «Золотой глобус» и «Грэмми».</div>
+        <div class="dc-price">460 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s30">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_kino/22d8d031f0_0.jpg" alt="Джон Красински и Эмили Блант"></div>
+        <div class="dc-name">Джон Красински и Эмили Блант — сценарий сериала «Офис» и фото с автографами</div>
+        <div class="dc-text">Джон Красински — американский актёр и кинорежиссёр, Джим Халперт в ситкоме «Офис»; он же был продюсером и эпизодическим режиссёром сериала все девять сезонов. Эмили Блант получила известность после «Дьявол носит Prada» — фильма, который Красински, по его собственным словам, посмотрел около 75 раз.</div>
+        <div class="dc-price">380 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s31" style="grid-template-rows:auto 1fr">
+  <div class="wrap" style="padding:42px 66px 0">
+    <div class="kick d" style="margin-bottom:13px">Подборка целиком</div>
+    <h2 class="serif" style="font-weight:300;font-size:46px;line-height:1;color:var(--ivory)">36 предметов</h2>
+  </div>
+  <div class="wrap" style="padding:22px 66px 34px"><div class="lad"><div class="lad-row"><div class="lad-nm">Брюс Ли — личная скакалка</div><div class="lad-pr">10 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Сергей Эйзенштейн и Николай Черкасов — стенограмма беседы с рукописными правками и 2-мя автографами</div><div class="lad-pr">10 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Кристофер Ллойд и Майкл Джей Фокс — реплика ховерборда из к/ф «Назад в будущее» с 2-мя автографами</div><div class="lad-pr">6 500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Виктор Цой (Кино) — кеды с собственноручной росписью и автографом</div><div class="lad-pr">5 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Владимир Высоцкий — собственноручное письмо</div><div class="lad-pr">4 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Мэрилин Монро — сумка из личного гардероба</div><div class="lad-pr">3 900 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Владимир Высоцкий — брошюра «Игры ХХII Олимпиады. Москва 1980» с рукописным обращением и автографом</div><div class="lad-pr">1 800 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Андрей Тарковский и братья Стругацкие — рукописные заметки к фильму «Сталкер» и книга «Посещение» с автографами</div><div class="lad-pr">1 600 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Одри Хепбёрн — фото с рукописным пожеланием и автографом</div><div class="lad-pr">1 250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Одри Хепбёрн — фото с автографом</div><div class="lad-pr">1 250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Федерико Феллини — собственноручный рисунок</div><div class="lad-pr">1 150 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Аль Пачино — кубок из фильма «Лицо со шрамом» с автографом</div><div class="lad-pr">1 050 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Сергей Бодров — письмо с автографом</div><div class="lad-pr">1 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Дженнифер Энистон, Кортни Кокс, Лиза Кудроу, Мэтт Леблан, Мэттью Перри и Дэвид Швиммер — 6 фото с автографами</div><div class="lad-pr">1 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Джеймс Гандольфини и Доминик Кьянезе — фото с автографами</div><div class="lad-pr">840 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Кристиан Бэйл и Хит Леджер — сценарий фильма «Тёмный рыцарь» и фото с автографами</div><div class="lad-pr">830 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Мэттью Перри, Кортни Кокс, Дэвид Швиммер — фото с 3-мя автографами</div><div class="lad-pr">800 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Кристофер Ллойд и Майкл Джей Фокс — реплика настольной лампы из к/ф «Назад в будущее» с 2-мя автографами</div><div class="lad-pr">700 000&nbsp;₽</div></div></div></div>
+</section>
+<section class="slide dark" id="s32" style="grid-template-rows:auto 1fr">
+  <div class="wrap" style="padding:42px 66px 0">
+    <div class="kick d" style="margin-bottom:13px">Подборка целиком · 19–36</div>
+    <h2 class="serif" style="font-weight:300;font-size:46px;line-height:1;color:var(--ivory)">Продолжение</h2>
+  </div>
+  <div class="wrap" style="padding:22px 66px 34px"><div class="lad"><div class="lad-row"><div class="lad-nm">Джеймс Гандольфини — фото с автографом</div><div class="lad-pr">690 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Хит Леджер — фото с автографом</div><div class="lad-pr">680 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Аль Пачино — сценарий фильма «Крёстный отец» с автографом</div><div class="lad-pr">650 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Гай Ричи и Джейсон Стейтем — постер фильма «Большой куш» с 2-мя автографами</div><div class="lad-pr">650 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Джордж Лукас — сценарий фильма «Звёздные войны» с автографом</div><div class="lad-pr">650 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Мэтт Гроунинг — собственноручный рисунок на холсте с автографом</div><div class="lad-pr">650 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Харрисон Форд — сценарий фильма «Звёздные войны» с автографом</div><div class="lad-pr">630 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Квентин Тарантино и Гай Ричи — сценарии фильмов «Криминальное чтиво» и «Большой куш» с автографами</div><div class="lad-pr">600 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Квентин Тарантино и Ума Турман — фото с 2-мя автографами</div><div class="lad-pr">550 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Луи де Фюнес — карикатура с рукописным обращением и автографом</div><div class="lad-pr">520 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ханс Циммер и Леонардо ДиКаприо — сценарий фильма «Начало» и фото с автографами</div><div class="lad-pr">460 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Грейс Келли — фото с автографом</div><div class="lad-pr">450 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Марго Робби — фигурка из фильма «Отряд самоубийц» с автографом</div><div class="lad-pr">400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Леонардо ДиКаприо и Кейт Уинслет — фото с 2-мя автографами</div><div class="lad-pr">400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Джулия Робертс и Ричард Гир — сценарий фильма «Красотка» с автографами</div><div class="lad-pr">400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Фрэнсис Форд Коппола — пластинка с автографом</div><div class="lad-pr">400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Луи Люмьер — документ с автографом</div><div class="lad-pr">400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Джон Красински и Эмили Блант — сценарий сериала «Офис» и фото с автографами</div><div class="lad-pr">380 000&nbsp;₽</div></div></div></div>
+</section>
+<section class="slide dark" id="s33" style="grid-template-rows:1fr auto">
+  <div class="wrap" style="padding:76px 72px 0;display:flex;flex-direction:column;justify-content:center">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:146px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97;align-self:flex-start">
+    <h2 class="serif" style="font-weight:300;font-size:46px;line-height:1.14;color:var(--ivory);margin-top:38px;max-width:32ch">Все предметы — из коллекции Stargift, каждый в одном экземпляре. Описание и текущий статус каждого лота — на stargift.ru.</h2>
+  </div>
+  <div class="wrap" style="padding:26px 72px 40px;border-top:1px solid rgba(169,133,69,.3)">
+    <span class="kick" style="letter-spacing:.24em;color:var(--gold2)">stargift.ru</span>
+  </div>
+</section>
+</div>
+
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^s/,'');const id=n?('s'+n.padStart(2,'0')):'s01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+function go(d){const cur=+((location.hash.slice(1).replace(/^s/,''))||1);let x=cur+d;if(x<1)x=1;if(x>33)x=33;location.hash='s'+x;}
+show();addEventListener('hashchange',show);
+addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')go(1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(-1);});
+addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX<innerWidth*0.32?-1:1);});
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.slide{animation:none}.deck{height:auto}
+.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>

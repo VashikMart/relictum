@@ -1,0 +1,520 @@
+<meta charset="utf-8">
+<title>Stargift · Большой спорт</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--noir:#0B0B0C;--gold:#A98545;--gold2:#C9A96A;--ivory:#F5F1E8;
+      --ink:#1A1A1A;--mute:#6b6b6b;--cert:#9a958c}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-serif}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:grid}
+.slide>*{min-height:0;min-width:0}
+img{display:block}
+.serif{font-family:'Cormorant Garamond',serif}
+.kick{font:500 11px/1 'Inter';letter-spacing:.36em;text-transform:uppercase;color:var(--gold)}
+.kick.d{color:var(--gold2)}
+.white{background:#FFFFFF;color:var(--ink)}
+.dark{background:var(--noir);color:var(--ivory)}
+.wrap{padding:40px 60px}
+
+/* разделитель главы */
+.div-huge{font-family:'Cormorant Garamond';font-weight:300;line-height:1;color:var(--ivory)}
+.div-rule{height:1px;width:70px;background:rgba(169,133,69,.55)}
+.div-sub{font:300 19px/1.65 'Inter';color:#c9c3b7;max-width:52ch}
+
+/* СОЛО: фото целиком слева, текст справа */
+.solo{grid-template-columns:1.18fr 1fr}
+.solo-ph{display:flex;align-items:center;justify-content:center;padding:52px 26px 52px 60px;background:#fff}
+.solo-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.solo-side{display:flex;flex-direction:column;justify-content:center;padding:56px 60px 56px 26px}
+.solo-name{font-family:'Cormorant Garamond';font-weight:500;font-size:36px;line-height:1.08;color:var(--ink)}
+.solo-text{font:300 17px/1.65 'Inter';color:#4a4a4a;margin-top:16px}
+.solo-price{font-family:'Cormorant Garamond';font-weight:500;font-size:32px;color:var(--gold);margin-top:22px}
+.solo-cert{font:400 10px/1 'Inter';letter-spacing:.22em;text-transform:uppercase;color:var(--cert);margin-top:11px}
+
+/* ДУЭТ: два лота, фото сверху целиком, подпись под фото */
+.duo2{grid-template-rows:1fr}
+.duo2-in{display:grid;grid-template-columns:1fr 1fr;gap:46px;padding:40px 72px 34px;align-items:start}
+.dc{display:flex;flex-direction:column;align-items:center;text-align:center}
+.dc-ph{width:100%;height:352px;display:flex;align-items:center;justify-content:center;background:#fff}
+.dc-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.dc-name{font-family:'Cormorant Garamond';font-weight:500;font-size:25px;line-height:1.14;color:var(--ink);margin-top:20px;max-width:28ch}
+.dc-text{font:300 15px/1.55 'Inter';color:#4a4a4a;margin-top:10px;max-width:48ch}
+.dc-price{font-family:'Cormorant Garamond';font-weight:500;font-size:25px;color:var(--gold);margin-top:12px}
+.dc-cert{font:400 9.5px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:8px}
+
+/* КВАРТЕТ: четыре лота, фото целиком слева, подпись справа */
+.quad{grid-template-rows:auto 1fr}
+.quad-in{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;
+  gap:24px 44px;padding:22px 64px 30px}
+.qc{display:grid;grid-template-columns:238px 1fr;gap:20px;align-items:center}
+.qc-ph{width:238px;height:190px;display:flex;align-items:center;justify-content:center;background:#fff}
+.qc-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.qc-name{font-family:'Cormorant Garamond';font-weight:500;font-size:21px;line-height:1.12;color:var(--ink)}
+.qc-text{font:300 13px/1.5 'Inter';color:#4a4a4a;margin-top:7px}
+.qc-price{font-family:'Cormorant Garamond';font-weight:500;font-size:20px;color:var(--gold);margin-top:8px}
+.qc-cert{font:400 9px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:6px}
+
+/* лестница цен */
+.lad{display:flex;flex-direction:column}
+.lad-row{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:baseline;
+  padding:9px 0;border-bottom:1px solid rgba(169,133,69,.2)}
+.lad-nm{font:300 14px/1.35 'Inter';color:#d5cfc3}
+.lad-pr{font-family:'Cormorant Garamond';font-weight:500;font-size:21px;color:var(--gold2);white-space:nowrap}
+</style>
+
+<div class="deck">
+<section class="slide dark on" id="s01" style="grid-template-columns:1.02fr 1fr">
+  <div class="wrap" style="display:flex;flex-direction:column;justify-content:space-between;padding:62px 58px">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:170px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97">
+    <div>
+      <div class="kick d" style="margin-bottom:22px">Stargift · Спорт</div>
+      <h1 class="serif" style="font-weight:300;font-size:80px;line-height:1;color:var(--ivory)">Большой спорт</h1>
+      <p style="font:300 17px/1.65 'Inter';color:#b8b2a6;margin-top:28px;max-width:44ch">Тридцать семь предметов из коллекции Stargift: футбол, хоккей, бокс, теннис, «Формула-1», баскетбол и шахматы. За каждым — конкретный матч, гонка или партия.</p>
+    </div>
+    <div class="kick" style="letter-spacing:.24em">Июль 2026</div>
+  </div>
+  <div style="height:720px;overflow:hidden;background:#0e0f0e;display:flex;align-items:center;justify-content:center;padding:56px">
+    <img src="img_sport/513118b44f_0.jpg" alt="Михаэль Шумахер" style="max-width:100%;max-height:100%;object-fit:contain;box-shadow:0 40px 90px rgba(0,0,0,.6)">
+  </div>
+</section>
+<section class="slide dark" id="s02" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;первая</div>
+    <h2 class="div-huge" style="font-size:74px">Футбол</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">От программы чемпионата мира 1966 года до именной майки Месси: игроки, с которых начинается любая коллекция.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s03">
+  <div class="solo-ph"><img src="img_sport/035d5e385d_0.jpg" alt="Лев Яшин, Альберт Шестернёв, Валерий Воронин, Игорь Численко, Галимзян Хусаинов и другие"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Футбол</div>
+    <div class="solo-name">Лев Яшин и сборная СССР — программа чемпионата мира 1966 года</div>
+    <div class="solo-text">Программа чемпионата мира по футболу с автографами сборной СССР и билет на первый матч турнира Англия — Уругвай. Англия, 1966 год. Лев Яшин — лучший вратарь XX века по версиям авторитетных спортивных изданий; Валерия Воронина королева Елизавета II назвала «самым элегантным футболистом на поле».</div>
+    <div class="solo-price">2 000 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s04">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/78727997e2_0.jpg" alt="Диего Марадона"></div>
+        <div class="dc-name">Диего Марадона — футболка сборной Аргентины</div>
+        <div class="dc-text">Футболка сборной Аргентины с рукописным пожеланием и автографом. Диего Марадона выступал за «Архентинос Хуниорс», «Бока Хуниорс», «Барселону», «Наполи» и сборную Аргентины. В 1997 году психолог Густаво Бернстайн писал о нём: «Аргентина — это Марадона, Марадона — это Аргентина».</div>
+        <div class="dc-price">1 850 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/cc2e01a9f8_0.jpg" alt="Лионель Месси. Именное подписание."></div>
+        <div class="dc-name">Лионель Месси — именное подписание майки</div>
+        <div class="dc-text">Игровая майка ФК «ПСЖ» или сборной Аргентины с именным обращением, пожеланием и автографом; процесс подписания фиксируется на фото. Месси официально подписывает 20–30 именных маек в год. Чемпион мира, лучший бомбардир в истории «Барселоны» и сборной Аргентины.</div>
+        <div class="dc-price">1 500 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s05">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/270e48198b_0.jpg" alt="Николай, Андрей, Петр, Александр Старостины"></div>
+        <div class="dc-name">Николай, Андрей, Пётр и Александр Старостины — фото</div>
+        <div class="dc-text">Фото с четырьмя автографами. Братья Старостины — основатели «Спартака»: в 1935 году название обществу предложил Николай Старостин в честь книги Рафаэлло Джованьоли о предводителе восставших римских рабов. Автографы всех четырёх братьев на одной фотографии — крайняя редкость.</div>
+        <div class="dc-price">1 500 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/55bba414d4_0.jpg" alt="Лионель Месси и Криштиану Роналду"></div>
+        <div class="dc-name">Лионель Месси и Криштиану Роналду — футболки сборных</div>
+        <div class="dc-text">Футболки сборной Аргентины и сборной Португалии с двумя автографами. Лионель Месси — чемпион мира, лучший бомбардир в истории «Барселоны» и сборной Аргентины. Криштиану Роналду — чемпион Европы, рекордсмен по количеству матчей в еврокубках, капитан сборной Португалии.</div>
+        <div class="dc-price">1 300 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s06">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/8bf1d7d4d4_0.jpg" alt="Диего Марадона, Гордон Бэнкс, Кафу, Лоран Блан, Диего Форлан, Карлес Пуйоль"></div>
+        <div class="dc-name">Диего Марадона, Гордон Бэнкс, Кафу, Лоран Блан, Диего Форлан, Карлес Пуйоль — мяч</div>
+        <div class="dc-text">Мяч с автографами. Подписан в рамках финальной жеребьёвки чемпионата мира 2018 года, которая состоялась в Кремле в 2017 году. Среди подписантов — Диего Марадона, двукратный чемпион мира Кафу, чемпион Европы и мира Карлес Пуйоль и чемпион мира 1966 года Гордон Бэнкс.</div>
+        <div class="dc-price">1 100 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s07" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;вторая</div>
+    <h2 class="div-huge" style="font-size:74px">Хоккей</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">Клюшки и свитера сборной СССР и её наследников: Харламов, Третьяк, Мальцев, Якушев, Буре, Овечкин.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s08">
+  <div class="solo-ph"><img src="img_sport/f91a224c88_0.jpg" alt="Валерий Харламов, Владислав Третьяк, Анатолий Фирсов, Игорь Ромишевский, Александр Рагулин, Владимир Лутченко и другие"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Хоккей</div>
+    <div class="solo-name">Валерий Харламов, Владислав Третьяк, Анатолий Фирсов и сборная СССР — клюшка</div>
+    <div class="solo-text">Клюшка с девятнадцатью автографами. Подписи оставили игроки сборной СССР образца 1970 года — Харламов, Третьяк, Фирсов, Рагулин, Мальцев, Якушев и другие, а также тренеры Аркадий Чернышёв и Анатолий Тарасов. В том году команда выиграла чемпионат мира в Стокгольме.</div>
+    <div class="solo-price">2 000 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s09">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/c38d328b67_0.jpg" alt="Валерий Харламов, Владимир Лутченко, Владимир Петров, Владислав Третьяк, Александр Мальцев, Александр Якушев и другие"></div>
+        <div class="dc-name">Валерий Харламов, Владимир Петров, Владислав Третьяк и сборная СССР — клюшка</div>
+        <div class="dc-text">Сувенирная клюшка, дерево, 150 см, начало 1970-х годов. Подписи с номерами в сборной оставили Валерий Харламов — лучший хоккеист СССР 1972 и 1973 годов, Владимир Петров — двукратный олимпийский чемпион и девятикратный чемпион мира, Владислав Третьяк, Александр Мальцев, Борис Михайлов.</div>
+        <div class="dc-price">1 200 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/cc93a342bb_0.jpg" alt="Владислав Третьяк, Павел Буре, Борис Михайлов, Владимир Мышкин, Валерий Каменский и другие"></div>
+        <div class="dc-name">Владислав Третьяк, Павел Буре, Борис Михайлов и звёзды «Russia» — свитер</div>
+        <div class="dc-text">Свитер «RUSSIA» с автографами участников матча звёзд «Russia» — «World Stars», состоявшегося на арене «Мегаспорт» 25 февраля 2012 года в Москве. Матч был посвящён 40-летней годовщине суперсерии 1972 года. Среди подписантов — Третьяк, Буре, Михайлов, Якушев, Каменский, Жамнов.</div>
+        <div class="dc-price">1 000 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s10">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/3786e8c4e4_0.jpg" alt="Александр Овечкин. Именное обращение. Благотворительный лот."></div>
+        <div class="dc-name">Александр Овечкин — шайба, свитер или клюшка с именным обращением</div>
+        <div class="dc-text">Шайба, свитер или клюшка с автографом, именным обращением и пожеланием. Александр Овечкин — капитан «Вашингтон Кэпиталз», обладатель Кубка Стэнли 2018 года, трёхкратный чемпион мира, включён в список 100 величайших хоккеистов в истории НХЛ. Лот представлен в рамках благотворительной акции с фондом «Герои».</div>
+        <div class="dc-price">1 000 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s11" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;третья</div>
+    <h2 class="div-huge" style="font-size:74px">Бокс</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">Мухаммед Али в четырёх предметах — от статуэтки до брошюры — и перчатка Роя Джонса с именным обращением.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s12">
+  <div class="solo-ph"><img src="img_sport/7df4f97cbe_0.jpg" alt="Мухаммед Али, Дон Кинг и Джо Фрейзер"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Бокс</div>
+    <div class="solo-name">Мухаммед Али, Дон Кинг и Джо Фрейзер — фото</div>
+    <div class="solo-text">Фото с тремя автографами. Мухаммед Али — абсолютный чемпион мира в тяжёлом весе, олимпийский чемпион 1960 года, признан «Спортсменом века». Джо Фрейзер победил его в «Битве столетия» 1971 года, а промоутер Дон Кинг свёл их вновь в «Триллере в Маниле» 1975 года.</div>
+    <div class="solo-price">1 000 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s13">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/5d3ffa5215_0.jpg" alt="Мухаммед Али и Пеле"></div>
+        <div class="dc-name">Мухаммед Али и Пеле — фото</div>
+        <div class="dc-text">Фото с двумя автографами, снятое 1 октября 1977 года на прощальном матче Пеле за «Нью-Йорк Космос». На окончание его карьеры пришли посмотреть 77 тысяч зрителей, среди них президент США Джимми Картер, Мик Джаггер и Элтон Джон. Али подтвердил звание чемпиона мира по боксу за два дня до этого.</div>
+        <div class="dc-price">950 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/92e2798ab5_0.jpg" alt="Мухаммед Али"></div>
+        <div class="dc-name">Мухаммед Али — статуэтка</div>
+        <div class="dc-text">Лимитированная статуэтка с автографом, 365/3500. Мухаммед Али — единственный боксёр, пять раз признанный боксёром года: в 1963, 1972, 1974, 1975 и 1978 годах. За карьеру трижды побывал в нокдауне и ни разу не был нокаутирован.</div>
+        <div class="dc-price">900 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s14">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/b8908b9652_0.jpg" alt="Мухаммед Али"></div>
+        <div class="dc-name">Мухаммед Али — брошюра</div>
+        <div class="dc-text">Брошюра с автографом. Кассиус Клей принял ислам в 1964 году и сменил имя на Мухаммед Али. Трёхкратный чемпион мира в тяжёлом весе использовал такие издания в просветительской работе, объясняя основы веры и разрушая стереотипы о ней.</div>
+        <div class="dc-price">660 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/3319255d89_0.jpg" alt="Рой Джонс. Именное обращение."></div>
+        <div class="dc-name">Рой Джонс — перчатка с именным обращением</div>
+        <div class="dc-text">Боксёрская перчатка с автографом, именным обращением и пожеланием. Рой Джонс — олимпийский призёр, чемпион мира в четырёх весовых категориях, обладатель пояса абсолютного чемпиона. Скорость и зрелищная техника сделали его одним из самых узнаваемых боксёров своего поколения.</div>
+        <div class="dc-price">600 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s15" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;четвёртая</div>
+    <h2 class="div-huge" style="font-size:74px">Теннис</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">Большой шлем и Уимблдон: Федерер, Джокович, Надаль, Борг и Макинрой, а рядом — русская школа, Рублёв и Медведев.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s16">
+  <div class="solo-ph"><img src="img_sport/3f1336fa4c_0.jpg" alt="Даниил Медведев. Персональная тренировка."></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Теннис</div>
+    <div class="solo-name">Даниил Медведев — персональная тренировка</div>
+    <div class="solo-text">Персональная тренировка с теннисистом. Даниил Медведев — победитель Открытого чемпионата США 2021 года, где в финале обыграл Новака Джоковича, победитель Итогового турнира ATP 2020 года, первая ракетка мира в 2022 году.</div>
+    <div class="solo-price">5 200 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s17">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/4932c25796_0.jpg" alt="Андрей Рублёв"></div>
+        <div class="dc-name">Андрей Рублёв — личная ракетка с Олимпийских игр</div>
+        <div class="dc-text">Личная ракетка с Олимпийских игр с автографом. Андрей Рублёв — олимпийский чемпион 2020 года в миксте, обладатель Кубка Дэвиса и Кубка ATP 2021 года в составе сборной России. Своим первым кумиром называет Марата Сафина: «Я тогда подумал: вот бы и мне так научиться».</div>
+        <div class="dc-price">1 100 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/d75db2ac64_0.jpg" alt="Новак Джокович, Штеффи Граф и Джон Макинрой"></div>
+        <div class="dc-name">Новак Джокович, Штеффи Граф и Джон Макинрой — фото</div>
+        <div class="dc-text">Фотография Всеанглийского клуба лаун-тенниса и крокета с тремя автографами. Джокович — единственный игрок Открытой эры, выигравший и все четыре турнира Большого шлема, и все девять «Мастерсов». Штеффи Граф восемь сезонов завершала первой ракеткой мира, Джон Макинрой — пятикратный обладатель Кубка Дэвиса.</div>
+        <div class="dc-price">710 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s18">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/5240bd2d9b_0.jpg" alt="Роджер Федерер, Новак Джокович и Рафаэль Надаль"></div>
+        <div class="dc-name">Роджер Федерер, Новак Джокович и Рафаэль Надаль — фото</div>
+        <div class="dc-text">Фото с автографами. Роджер Федерер — 20-кратный победитель турниров Большого шлема и шестикратный победитель Итогового турнира ATP. Новак Джокович — рекордсмен по числу недель на первой строчке рейтинга ATP и первый в истории тенниса по сумме призовых, более 159 млн долларов.</div>
+        <div class="dc-price">700 000&nbsp;₽</div>
+        <div class="dc-cert">JSA — NN71101 · Beckett — BF88766</div>
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/b39293d0bc_0.jpg" alt="Джон Макинрой и Бьорн Борг"></div>
+        <div class="dc-name">Джон Макинрой и Бьорн Борг — журнал</div>
+        <div class="dc-text">Журнал с двумя автографами. Бьорн Борг с 1974 по 1981 год выиграл 11 турниров Большого шлема, включая пять Уимблдонов подряд, и завершил карьеру в 26 лет. У Джона Макинроя 7 титулов Большого шлема в одиночном разряде и 9 в парном; их соперничество стало главным сюжетом тенниса тех лет.</div>
+        <div class="dc-price">390 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s19">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/6bb256a684_0.jpg" alt="Рафаэль Надаль"></div>
+        <div class="dc-name">Рафаэль Надаль — теннисный мяч</div>
+        <div class="dc-text">Теннисный мяч с автографом. Рафаэль Надаль провёл 209 недель первой ракеткой мира. На грунтовых кортах выиграл рекордные 63 турнира, из них 14 раз — «Ролан Гаррос», за что получил прозвище «Король грунта».</div>
+        <div class="dc-price">350 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s20" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;пятая</div>
+    <h2 class="div-huge" style="font-size:74px">Скорость</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">Шлем Шумахера, бутылка Сенны с награждения в Монако и подписи тех, кто строил машины: Феррари, Форд, Шелби.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s21">
+  <div class="solo-ph"><img src="img_sport/513118b44f_0.jpg" alt="Михаэль Шумахер"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Скорость</div>
+    <div class="solo-name">Михаэль Шумахер — шлем с Гран-при Малайзии 1999 года</div>
+    <div class="solo-text">Шлем, использованный в гонке Гран-при Малайзии 1999 года. Михаэль Шумахер — семикратный чемпион мира «Формулы-1». Малайзия стала его первой гонкой после травмы, полученной в Великобритании: после трёх месяцев без гонок он с первой квалификационной попытки занял первую строчку.</div>
+    <div class="solo-price">17 500 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s22">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/aa9b6b2f4b_0.jpg" alt="Айртон Сенна"></div>
+        <div class="dc-name">Айртон Сенна — бутылка Moët с награждения Гран-при Монако 1993 года</div>
+        <div class="dc-text">Бутылка Moët с награждения Гран-при Монако 1993 года с автографом. В той гонке Сенна победил в Монте-Карло в шестой раз и побил державшийся 24 года рекорд Грэма Хилла, «Короля Монако». С трассы в Монако началась и его карьера: первый подиум в 1984 году за рулём «Toleman-Hart».</div>
+        <div class="dc-price">4 500 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/fb2aa6f015_0.jpg" alt="Айртон Сенна, Ален Прост, Джонатан Палмер, Найджел Мэнселл, Риккардо Патрезе и другие"></div>
+        <div class="dc-name">Айртон Сенна, Ален Прост, Найджел Мэнселл и другие — журнал</div>
+        <div class="dc-text">Журнал с четырнадцатью автографами гонщиков «Формулы-1». Среди подписантов — трёхкратный чемпион мира Айртон Сенна, четырёхкратный чемпион Ален Прост, Найджел Мэнселл, Риккардо Патрезе, Герхард Бергер. Соперничество Сенны и Проста стало одной из самых ожесточённых дуэлей в истории спорта.</div>
+        <div class="dc-price">2 500 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s23">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/c194982dbf_0.jpg" alt="Михаэль Шумахер"></div>
+        <div class="dc-name">Михаэль Шумахер — реплика руля Ferrari F399</div>
+        <div class="dc-text">Реплика руля гоночного автомобиля Ferrari F399 сезона 1999 года с автографом. В том сезоне Шумахер сломал ногу на старте Гран-при Великобритании, первым номером команды стал Эдди Ирвайн. Вернувшись к концу сезона, Шумахер помог Ferrari взять первый Кубок конструкторов с 1983 года.</div>
+        <div class="dc-price">1 450 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/1e6a55f6d5_0.jpg" alt="Генри Форд"></div>
+        <div class="dc-name">Генри Форд — фото</div>
+        <div class="dc-text">Фото с автографом. Генри Форд выпустил первую массовую модель Ford Model T в 1908 году и внедрил конвейер, сократив сборку с 12 часов до полутора. К 1929 году его предприятия работали на всех континентах кроме Антарктиды, а в начале 1930-х на заводах Ford выпускался каждый третий автомобиль в мире.</div>
+        <div class="dc-price">1 300 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s24">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/8131fb2da8_0.jpg" alt="Энцо Феррари"></div>
+        <div class="dc-name">Энцо Феррари — брошюра</div>
+        <div class="dc-text">Брошюра с автографом. Энцо Феррари — конструктор, основатель автомобильной компании и гоночной команды «Феррари». Его команда впервые вышла на старт «Формулы-1» в 1950 году, а уже в следующем сезоне одержала первую победу — её принёс Хосе Фройлан Гонсалес.</div>
+        <div class="dc-price">1 150 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/1caf45beb5_0.jpg" alt="Кэрролл Шелби"></div>
+        <div class="dc-name">Кэрролл Шелби — мини-модель Ford Shelby Mustang</div>
+        <div class="dc-text">Мини-модель автомобиля Ford Shelby Mustang с автографом. Кэрролл Шелби — гонщик и конструктор, создатель Shelby Cobra и участник проекта Ford GT40, который в 1966 году принёс Ford первую победу в гонке «24 часа Ле-Мана».</div>
+        <div class="dc-price">630 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s25" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;шестая</div>
+    <h2 class="div-huge" style="font-size:74px">Баскетбол</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">Матч всех звёзд 2000 года, кроссовки с двадцатью четырьмя подписями и дуэль Бёрда с Мэджиком.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s26">
+  <div class="solo-ph"><img src="img_sport/a0aef8ee5d_0.jpg" alt="Коби Брайант, Леброн Джеймс, Тим Данкан, Дирк Новицки, Аллен Айверсон и другие"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Баскетбол</div>
+    <div class="solo-name">Коби Брайант, Леброн Джеймс, Тим Данкан и другие — кроссовки</div>
+    <div class="solo-text">Кроссовки Nike Zoom Huarache 2K4 с двадцатью четырьмя автографами игроков НБА. Модель была культовой в середине 2000-х и прочно связана с Коби Брайантом, который выступал в ней до перехода на собственную линию. Среди подписантов — Леброн Джеймс, Тим Данкан, Дирк Новицки, Аллен Айверсон.</div>
+    <div class="solo-price">3 000 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s27">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/eb20174ffc_0.jpg" alt="Шакил О’Нил, Коби Брайант, Винс Картер, Алонзо Морнинг, Гэри Пэйтон, Дэвид Робинсон, Тим Данкан и другие"></div>
+        <div class="dc-name">Шакил О’Нил, Коби Брайант, Винс Картер и другие — мяч Матча всех звёзд НБА 2000 года</div>
+        <div class="dc-text">Мяч Матча всех звёзд НБА 2000 года с тридцатью одним автографом. Подписи оставили участники того матча: Шакил О’Нил, Коби Брайант, Винс Картер, Гэри Пэйтон, Дэвид Робинсон, Тим Данкан, Алонзо Морнинг. В тот уикенд Картер выиграл конкурс данков, который до сих пор считают лучшим в истории лиги.</div>
+        <div class="dc-price">1 800 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/ef4bc03097_0.jpg" alt="Деннис Родман"></div>
+        <div class="dc-name">Деннис Родман — реплика кубка</div>
+        <div class="dc-text">Реплика кубка с автографом. Деннис Родман — пятикратный чемпион НБА, дважды признан лучшим оборонительным игроком лиги, семь раз входил в сборную всех звёзд защиты. Семь сезонов подряд становился лучшим в лиге по подборам — это абсолютный рекорд НБА.</div>
+        <div class="dc-price">410 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s28">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/a64f82e146_0.jpg" alt="Шакил О’Нил и Мэджик Джонсон - Белый мрамор"></div>
+        <div class="dc-name">Шакил О’Нил и Мэджик Джонсон — мяч</div>
+        <div class="dc-text">Мяч Spalding с двумя автографами в акриловом боксе на основании из белого мрамора. Шакил О’Нил — четырёхкратный чемпион НБА, один из самых мощных центровых в истории лиги. Мэджик Джонсон — пятикратный чемпион НБА и трёхкратный MVP, всю карьеру провёл в «Лос-Анджелес Лейкерс».</div>
+        <div class="dc-price">375 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/fe104d7ee2_0.jpg" alt="Ларри Бёрд и Мэджик Джонсон"></div>
+        <div class="dc-name">Ларри Бёрд и Мэджик Джонсон — майка</div>
+        <div class="dc-text">Майка с двумя автографами. Ларри Бёрд провёл всю карьеру в «Бостон Селтикс»: трёхкратный чемпион НБА, трижды признан MVP сезона. Мэджик Джонсон всю карьеру играл за «Лос-Анджелес Лейкерс»: пятикратный чемпион НБА, трёхкратный MVP, 12-кратный участник Матча всех звёзд.</div>
+        <div class="dc-price">350 000&nbsp;₽</div>
+        <div class="dc-cert">JSA — WP305413</div>
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s29" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;седьмая</div>
+    <h2 class="div-huge" style="font-size:74px">Шахматы</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">Чемпионы мира на одном листе: книги и доски с автографами Ботвинника, Таля, Карпова, Спасского, Ананда и Крамника.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s30">
+  <div class="solo-ph"><img src="img_sport/269abf14ac_0.jpg" alt="Михаил Ботвинник"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Шахматы</div>
+    <div class="solo-name">Михаил Ботвинник — личный компьютер</div>
+    <div class="solo-text">Личный компьютер. Михаил Ботвинник — шахматист, учёный, доктор технических наук. С 1960-х и до конца жизни он разрабатывал программу, которая выбирала бы ходы подобно человеку; на это его вдохновила встреча с Клодом Шенноном весной 1965 года. Экспонат сопровождается письмом дочери шахматиста.</div>
+    <div class="solo-price">5 000 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s31">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/f5717c155e_0.jpg" alt="Анатолий Карпов, Михаил Ботвинник, Тигран Петросян, Василий Смыслов, Исаак Линдер и другие"></div>
+        <div class="dc-name">Анатолий Карпов, Михаил Ботвинник, Тигран Петросян и другие — книги, журнал, пригласительный билет и фото</div>
+        <div class="dc-text">Книги, журнал, пригласительный билет и фото с дарственными надписями и автографами более 60 шахматистов: чемпионов мира, гроссмейстеров и историков игры. Среди подписантов — Ботвинник, Карпов, Петросян, Смыслов, Таль, Спасский, Корчной, Керес, Эйве и Бент Ларсен.</div>
+        <div class="dc-price">2 700 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/dd30b6ef2a_0.jpg" alt="Михаил Ботвинник, Анатолий Карпов, Тигран Петросян, Макс Эйве, Марк Тайманов и другие"></div>
+        <div class="dc-name">Михаил Ботвинник, Анатолий Карпов, Тигран Петросян, Макс Эйве и другие — книга</div>
+        <div class="dc-text">Книга с автографами более 50 шахматистов. Дарственная надпись датирована 4 декабря 1965 года и начинается словами: «Шахматистов тебе дарим — От Алёхина до Таля». Среди подписантов — Ботвинник, Таль, Карпов, Петросян, Спасский и Макс Эйве.</div>
+        <div class="dc-price">2 000 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s32">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_sport/aaa31a7c14_0.jpg" alt="Вишванатан Ананд и Владимир Крамник"></div>
+        <div class="dc-name">Вишванатан Ананд и Владимир Крамник — шахматная доска</div>
+        <div class="dc-text">Шахматная доска с двумя автографами. Матч на первенство мира между Анандом и Крамником прошёл в Бонне с 14 по 29 октября 2008 года, призовой фонд составил 1,5 миллиона евро. Доски подписали в рамках матча и преподнесли федерациям: всего 50 штук, из них 5 оказались в России.</div>
+        <div class="dc-price">790 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s33" style="grid-template-rows:auto 1fr">
+  <div class="wrap" style="padding:42px 66px 0">
+    <div class="kick d" style="margin-bottom:13px">Подборка целиком</div>
+    <h2 class="serif" style="font-weight:300;font-size:46px;line-height:1;color:var(--ivory)">37 предметов</h2>
+  </div>
+  <div class="wrap" style="padding:22px 66px 34px"><div class="lad"><div class="lad-row"><div class="lad-nm">Михаэль Шумахер — шлем с Гран-при Малайзии 1999 года</div><div class="lad-pr">17 500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Даниил Медведев — персональная тренировка</div><div class="lad-pr">5 200 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Михаил Ботвинник — личный компьютер</div><div class="lad-pr">5 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Айртон Сенна — бутылка Moët с награждения Гран-при Монако 1993 года</div><div class="lad-pr">4 500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Коби Брайант, Леброн Джеймс, Тим Данкан и другие — кроссовки</div><div class="lad-pr">3 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Анатолий Карпов, Михаил Ботвинник, Тигран Петросян и другие — книги, журнал, пригласительный билет и фото</div><div class="lad-pr">2 700 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Айртон Сенна, Ален Прост, Найджел Мэнселл и другие — журнал</div><div class="lad-pr">2 500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Лев Яшин и сборная СССР — программа чемпионата мира 1966 года</div><div class="lad-pr">2 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Валерий Харламов, Владислав Третьяк, Анатолий Фирсов и сборная СССР — клюшка</div><div class="lad-pr">2 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Михаил Ботвинник, Анатолий Карпов, Тигран Петросян, Макс Эйве и другие — книга</div><div class="lad-pr">2 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Диего Марадона — футболка сборной Аргентины</div><div class="lad-pr">1 850 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Шакил О’Нил, Коби Брайант, Винс Картер и другие — мяч Матча всех звёзд НБА 2000 года</div><div class="lad-pr">1 800 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Лионель Месси — именное подписание майки</div><div class="lad-pr">1 500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Николай, Андрей, Пётр и Александр Старостины — фото</div><div class="lad-pr">1 500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Михаэль Шумахер — реплика руля Ferrari F399</div><div class="lad-pr">1 450 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Лионель Месси и Криштиану Роналду — футболки сборных</div><div class="lad-pr">1 300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Генри Форд — фото</div><div class="lad-pr">1 300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Валерий Харламов, Владимир Петров, Владислав Третьяк и сборная СССР — клюшка</div><div class="lad-pr">1 200 000&nbsp;₽</div></div></div></div>
+</section>
+<section class="slide dark" id="s34" style="grid-template-rows:auto 1fr">
+  <div class="wrap" style="padding:42px 66px 0">
+    <div class="kick d" style="margin-bottom:13px">Подборка целиком · 19–37</div>
+    <h2 class="serif" style="font-weight:300;font-size:46px;line-height:1;color:var(--ivory)">Продолжение</h2>
+  </div>
+  <div class="wrap" style="padding:22px 66px 34px"><div class="lad"><div class="lad-row"><div class="lad-nm">Энцо Феррари — брошюра</div><div class="lad-pr">1 150 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Диего Марадона, Гордон Бэнкс, Кафу, Лоран Блан, Диего Форлан, Карлес Пуйоль — мяч</div><div class="lad-pr">1 100 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Андрей Рублёв — личная ракетка с Олимпийских игр</div><div class="lad-pr">1 100 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Владислав Третьяк, Павел Буре, Борис Михайлов и звёзды «Russia» — свитер</div><div class="lad-pr">1 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Александр Овечкин — шайба, свитер или клюшка с именным обращением</div><div class="lad-pr">1 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Мухаммед Али, Дон Кинг и Джо Фрейзер — фото</div><div class="lad-pr">1 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Мухаммед Али и Пеле — фото</div><div class="lad-pr">950 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Мухаммед Али — статуэтка</div><div class="lad-pr">900 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Вишванатан Ананд и Владимир Крамник — шахматная доска</div><div class="lad-pr">790 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Новак Джокович, Штеффи Граф и Джон Макинрой — фото</div><div class="lad-pr">710 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Роджер Федерер, Новак Джокович и Рафаэль Надаль — фото</div><div class="lad-pr">700 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Мухаммед Али — брошюра</div><div class="lad-pr">660 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Кэрролл Шелби — мини-модель Ford Shelby Mustang</div><div class="lad-pr">630 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Рой Джонс — перчатка с именным обращением</div><div class="lad-pr">600 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Деннис Родман — реплика кубка</div><div class="lad-pr">410 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Джон Макинрой и Бьорн Борг — журнал</div><div class="lad-pr">390 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Шакил О’Нил и Мэджик Джонсон — мяч</div><div class="lad-pr">375 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Рафаэль Надаль — теннисный мяч</div><div class="lad-pr">350 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ларри Бёрд и Мэджик Джонсон — майка</div><div class="lad-pr">350 000&nbsp;₽</div></div></div></div>
+</section>
+<section class="slide dark" id="s35" style="grid-template-rows:1fr auto">
+  <div class="wrap" style="padding:76px 72px 0;display:flex;flex-direction:column;justify-content:center">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:146px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97;align-self:flex-start">
+    <h2 class="serif" style="font-weight:300;font-size:46px;line-height:1.14;color:var(--ivory);margin-top:38px;max-width:32ch">Все предметы каталога — из собрания Stargift. По любому лоту доступны дополнительные фотографии и история его появления в коллекции.</h2>
+  </div>
+  <div class="wrap" style="padding:26px 72px 40px;border-top:1px solid rgba(169,133,69,.3)">
+    <span class="kick" style="letter-spacing:.24em;color:var(--gold2)">stargift.ru</span>
+  </div>
+</section>
+</div>
+
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^s/,'');const id=n?('s'+n.padStart(2,'0')):'s01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+function go(d){const cur=+((location.hash.slice(1).replace(/^s/,''))||1);let x=cur+d;if(x<1)x=1;if(x>35)x=35;location.hash='s'+x;}
+show();addEventListener('hashchange',show);
+addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')go(1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(-1);});
+addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX<innerWidth*0.32?-1:1);});
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.slide{animation:none}.deck{height:auto}
+.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>

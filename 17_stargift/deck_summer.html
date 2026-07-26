@@ -1,0 +1,405 @@
+<meta charset="utf-8">
+<title>Stargift · Лето. Сезон</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--noir:#0B0B0C;--gold:#A98545;--gold2:#C9A96A;--ivory:#F5F1E8;
+      --ink:#1A1A1A;--mute:#6b6b6b;--cert:#9a958c}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-serif}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:grid}
+.slide>*{min-height:0;min-width:0}
+img{display:block}
+.serif{font-family:'Cormorant Garamond',serif}
+.kick{font:500 11px/1 'Inter';letter-spacing:.36em;text-transform:uppercase;color:var(--gold)}
+.kick.d{color:var(--gold2)}
+.white{background:#FFFFFF;color:var(--ink)}
+.dark{background:var(--noir);color:var(--ivory)}
+.wrap{padding:40px 60px}
+
+/* разделитель главы */
+.div-huge{font-family:'Cormorant Garamond';font-weight:300;line-height:1;color:var(--ivory)}
+.div-rule{height:1px;width:70px;background:rgba(169,133,69,.55)}
+.div-sub{font:300 19px/1.65 'Inter';color:#c9c3b7;max-width:52ch}
+
+/* СОЛО: фото целиком слева, текст справа */
+.solo{grid-template-columns:1.18fr 1fr}
+.solo-ph{display:flex;align-items:center;justify-content:center;padding:52px 26px 52px 60px;background:#fff}
+.solo-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.solo-side{display:flex;flex-direction:column;justify-content:center;padding:56px 60px 56px 26px}
+.solo-name{font-family:'Cormorant Garamond';font-weight:500;font-size:36px;line-height:1.08;color:var(--ink)}
+.solo-text{font:300 17px/1.65 'Inter';color:#4a4a4a;margin-top:16px}
+.solo-price{font-family:'Cormorant Garamond';font-weight:500;font-size:32px;color:var(--gold);margin-top:22px}
+.solo-cert{font:400 10px/1 'Inter';letter-spacing:.22em;text-transform:uppercase;color:var(--cert);margin-top:11px}
+
+/* ДУЭТ: два лота, фото сверху целиком, подпись под фото */
+.duo2{grid-template-rows:1fr}
+.duo2-in{display:grid;grid-template-columns:1fr 1fr;gap:46px;padding:40px 72px 34px;align-items:start}
+.dc{display:flex;flex-direction:column;align-items:center;text-align:center}
+.dc-ph{width:100%;height:352px;display:flex;align-items:center;justify-content:center;background:#fff}
+.dc-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.dc-name{font-family:'Cormorant Garamond';font-weight:500;font-size:25px;line-height:1.14;color:var(--ink);margin-top:20px;max-width:28ch}
+.dc-text{font:300 15px/1.55 'Inter';color:#4a4a4a;margin-top:10px;max-width:48ch}
+.dc-price{font-family:'Cormorant Garamond';font-weight:500;font-size:25px;color:var(--gold);margin-top:12px}
+.dc-cert{font:400 9.5px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:8px}
+
+/* КВАРТЕТ: четыре лота, фото целиком слева, подпись справа */
+.quad{grid-template-rows:auto 1fr}
+.quad-in{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;
+  gap:24px 44px;padding:22px 64px 30px}
+.qc{display:grid;grid-template-columns:238px 1fr;gap:20px;align-items:center}
+.qc-ph{width:238px;height:190px;display:flex;align-items:center;justify-content:center;background:#fff}
+.qc-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.qc-name{font-family:'Cormorant Garamond';font-weight:500;font-size:21px;line-height:1.12;color:var(--ink)}
+.qc-text{font:300 13px/1.5 'Inter';color:#4a4a4a;margin-top:7px}
+.qc-price{font-family:'Cormorant Garamond';font-weight:500;font-size:20px;color:var(--gold);margin-top:8px}
+.qc-cert{font:400 9px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:6px}
+
+/* лестница цен */
+.lad{display:flex;flex-direction:column}
+.lad-row{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:baseline;
+  padding:9px 0;border-bottom:1px solid rgba(169,133,69,.2)}
+.lad-nm{font:300 14px/1.35 'Inter';color:#d5cfc3}
+.lad-pr{font-family:'Cormorant Garamond';font-weight:500;font-size:21px;color:var(--gold2);white-space:nowrap}
+</style>
+
+<div class="deck">
+<section class="slide dark on" id="s01" style="grid-template-columns:1.02fr 1fr">
+  <div class="wrap" style="display:flex;flex-direction:column;justify-content:space-between;padding:62px 58px">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:170px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97">
+    <div>
+      <div class="kick d" style="margin-bottom:22px">Stargift · Витрина сезона</div>
+      <h1 class="serif" style="font-weight:300;font-size:80px;line-height:1;color:var(--ivory)">Лето. Сезон</h1>
+      <p style="font:300 17px/1.65 'Inter';color:#b8b2a6;margin-top:28px;max-width:44ch">Лето — короткий сезон, в который умещается Уимблдон, Монте-Карло, Ривьера, фестивальные сцены и первый шаг по Луне. Здесь собраны предметы, за которыми стоят эти сюжеты.</p>
+    </div>
+    <div class="kick" style="letter-spacing:.24em">Июль 2026</div>
+  </div>
+  <div style="height:720px;overflow:hidden;background:#0e0f0e;display:flex;align-items:center;justify-content:center;padding:56px">
+    <img src="img_summer/513118b44f_0.jpg" alt="Михаэль Шумахер" style="max-width:100%;max-height:100%;object-fit:contain;box-shadow:0 40px 90px rgba(0,0,0,.6)">
+  </div>
+</section>
+<section class="slide dark" id="s02" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;первая</div>
+    <h2 class="div-huge" style="font-size:74px">Корт</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">Уимблдон играют в конце июня и в июле — единственный турнир Большого шлема, который до сих пор идёт на траве.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s03">
+  <div class="solo-ph"><img src="img_summer/88f4f63ae0_0.jpg" alt="Крис Эверт"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Корт</div>
+    <div class="solo-name">Крис Эверт — личная ракетка</div>
+    <div class="solo-text">Крис Эверт — американская теннисистка, 18-кратная победительница турниров Большого шлема и первая ракетка мира. Ракетку сопровождает письмо майора А. Э. Андерсона, служившего в Королевской ложе Уимблдона с 1976 по 1983 год, с обстоятельствами её получения.</div>
+    <div class="solo-price">1 200 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s04">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/d75db2ac64_0.jpg" alt="Новак Джокович, Штеффи Граф и Джон Макинрой"></div>
+        <div class="dc-name">Новак Джокович, Штеффи Граф и Джон Макинрой — фото с тремя автографами</div>
+        <div class="dc-text">Фотография Всеанглийского клуба лаун-тенниса и крокета. Джокович — единственный игрок Открытой эры, выигравший все четыре турнира Большого шлема, все девять «Мастерсов» и Финал Мирового тура. Штеффи Граф восемь сезонов заканчивала первой ракеткой мира, Джон Макинрой — пятикратный обладатель Кубка Дэвиса.</div>
+        <div class="dc-price">710 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/5240bd2d9b_0.jpg" alt="Роджер Федерер, Новак Джокович и Рафаэль Надаль"></div>
+        <div class="dc-name">Роджер Федерер, Новак Джокович и Рафаэль Надаль — фото с автографами</div>
+        <div class="dc-text">Федерер, Джокович и Надаль — три теннисиста, поделившие между собой эпоху. У Федерера 20 турниров Большого шлема и 6 Итоговых турниров ATP, у Надаля — 20 титулов Большого шлема. Джокович держит рекорд по числу недель на первой строчке рейтинга ATP и по сумме призовых — более 159 млн долларов.</div>
+        <div class="dc-price">700 000&nbsp;₽</div>
+        <div class="dc-cert">JSA — NN71101 · Beckett — BF88766</div>
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s05">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/553658b8fa_0.jpg" alt="Винус Уильямс"></div>
+        <div class="dc-name">Винус Уильямс — майка с автографом</div>
+        <div class="dc-text">Винус Уильямс — американская теннисистка, бывшая первая ракетка мира, серебряный призёр Олимпийских игр 2016 года. За карьеру завоевала 44 титула Женской теннисной ассоциации в одиночном разряде и 21 в паре. Самой сложной соперницей называет родную сестру Серену.</div>
+        <div class="dc-price">330 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s06" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;вторая</div>
+    <h2 class="div-huge" style="font-size:74px">Трасса</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">Монако в конце мая, Ле-Ман в июне, Сильверстоун и Хоккенхайм в июле — гонки, расписанные по летнему календарю.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s07">
+  <div class="solo-ph"><img src="img_summer/513118b44f_0.jpg" alt="Михаэль Шумахер"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Трасса</div>
+    <div class="solo-name">Михаэль Шумахер — шлем, использованный в Гран-при Малайзии 1999 года</div>
+    <div class="solo-text">Михаэль Шумахер — немецкий автогонщик-рекордсмен «Формулы-1», семикратный чемпион мира. Гран-при Малайзии стал первой гонкой после травмы, полученной в Великобритании в 1999 году: после трёх месяцев отсутствия он с первой квалификационной попытки занял первую строчку.</div>
+    <div class="solo-price">17 500 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s08">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/aa9b6b2f4b_0.jpg" alt="Айртон Сенна"></div>
+        <div class="dc-name">Айртон Сенна — бутылка Moët с награждения Гран-при Монако 1993 года</div>
+        <div class="dc-text">Гран-при Монако 1993 года Сенна выиграл в шестой раз и побил рекорд Грэма Хилла, «короля Монако», державшийся 24 года. С этой же трассы началась его карьера: в 1984 году за рулём скромного «Toleman-Hart» бразилец впервые поднялся на пьедестал Гран-при.</div>
+        <div class="dc-price">4 500 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/8131fb2da8_0.jpg" alt="Энцо Феррари"></div>
+        <div class="dc-name">Энцо Феррари — брошюра с автографом</div>
+        <div class="dc-text">Энцо Феррари — конструктор, основатель автомобильной компании и гоночной команды «Феррари». Его команда впервые вышла на старт «Формулы-1» в 1950 году, а уже в следующем сезоне выиграла первенство — победу принёс Хосе Фройлан Гонсалес.</div>
+        <div class="dc-price">1 150 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s09">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/1caf45beb5_0.jpg" alt="Кэрролл Шелби"></div>
+        <div class="dc-name">Кэрролл Шелби — мини-модель Ford Shelby Mustang с автографом</div>
+        <div class="dc-text">Кэрролл Шелби — американский автогонщик, дизайнер и предприниматель, основатель Shelby American. Он создал Shelby Cobra и работал над проектом Ford GT40, который в 1966 году впервые принёс Форду победу в гонке «24 часа Ле-Мана», а затем — над линейкой Ford Shelby Mustang.</div>
+        <div class="dc-price">630 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s10" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;третья</div>
+    <h2 class="div-huge" style="font-size:74px">Ривьера</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">Юг Франции между Каннами и Монако: летние месяцы, которые сначала стали привычкой, а затем — модой XX века.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s11">
+  <div class="solo-ph"><img src="img_summer/d23b041d8b_0.jpg" alt="Коко Шанель"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Ривьера</div>
+    <div class="solo-name">Коко Шанель — платье с автографом</div>
+    <div class="solo-text">Коко Шанель — французский модельер, основательница модного дома Chanel. Платье изготовлено в 1921 году по индивидуальному заказу: облегающий силуэт без рукавов, заниженная линия талии, характерная вышивка. Такой силуэт — примета ар-деко, стиля Европы 1920-х, воспетого Фицджеральдом в «Великом Гэтсби».</div>
+    <div class="solo-price">7 000 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s12">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/fdfd3ffa1b_0.jpg" alt="Кристиан Диор"></div>
+        <div class="dc-name">Кристиан Диор — собственноручный двухсторонний эскиз</div>
+        <div class="dc-text">Кристиан Диор — создатель стиля New Look, определившего женскую моду послевоенной эпохи; его дом, основанный в 1946 году, произвёл фурор первой же коллекцией. На двухстороннем листе 1943–1955 годов — две женские фигуры в платьях и рукописные пометки кутюрье.</div>
+        <div class="dc-price">5 250 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/54a0d7d138_0.jpg" alt="Ив Сен-Лоран"></div>
+        <div class="dc-name">Ив Сен-Лоран — собственноручный эскиз с автографом</div>
+        <div class="dc-text">Ив Сен-Лоран — французский модельер, работавший в высокой моде с конца 1950-х до конца 1980-х, создатель модного дома своего имени. Эскиз дополнен характерным чёрным бантом. Пьер Берже вспоминал: «Сен-Лоран делает рисунки за две секунды. У него всё начинается с шеи и плеч».</div>
+        <div class="dc-price">4 000 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s13">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/c7b103900b_0.jpg" alt="Louis Vuitton"></div>
+        <div class="dc-name">Louis Vuitton — дорожный сундук конца XIX века</div>
+        <div class="dc-text">Первым влиятельным поклонником чемоданов Луи Вюиттона стала императрица Евгения, жена Наполеона III. В 1896 году его сын Жорж ввёл против подделок логотип со скрещенными инициалами LV и тремя цветочными мотивами. Сундук более ста лет хранился в петербургской семье и передавался через три поколения.</div>
+        <div class="dc-price">2 650 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/3dcd26c85e_0.jpg" alt="Грейс Келли"></div>
+        <div class="dc-name">Грейс Келли — фото с автографом</div>
+        <div class="dc-text">Грейс Келли — американская актриса, с 1956 года супруга князя Ренье III, 10-я княгиня Монако. Немногим более десяти фильмов, один «Оскар» и слава самой кассовой актрисы своего времени; Альфред Хичкок называл её своей музой. На фото она снята с мужем, сыном Альбером и дочерьми Каролиной и Стефанией.</div>
+        <div class="dc-price">450 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s14" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;четвёртая</div>
+    <h2 class="div-huge" style="font-size:74px">Экран</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">Летний прокат ведёт отсчёт с июня 1975 года, когда вышли «Челюсти». С тех пор июль и август отданы большому кино.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s15">
+  <div class="solo-ph"><img src="img_summer/f95ece0f65_0.jpg" alt="Одри Хепбёрн"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Экран</div>
+    <div class="solo-name">Одри Хепбёрн — фото с рукописным пожеланием и автографом</div>
+    <div class="solo-text">Одри Хепбёрн — британская актриса, третья в списке величайших актрис американского кино по версии Американского института киноискусства. Звездой её сделали «Римские каникулы», иконой — «Завтрак у Тиффани». Текст обращения: «To Rick Hello from Switzerland Audrey Hepburn 1991».</div>
+    <div class="solo-price">1 250 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s16">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/87993afc13_0.jpg" alt="Джордж Лукас"></div>
+        <div class="dc-name">Джордж Лукас — сценарий фильма «Звёздные войны» с автографом</div>
+        <div class="dc-text">Джордж Уолтон Лукас-младший — американский кинопродюсер, сценарист, режиссёр, монтажёр, оператор и предприниматель. Наиболее известен как создатель фантастической саги «Звёздные войны» и серии приключенческих фильмов об Индиане Джонсе.</div>
+        <div class="dc-price">650 000&nbsp;₽</div>
+        <div class="dc-cert">PSA/DNA</div>
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/24e7706c58_0.jpg" alt="Марго Робби"></div>
+        <div class="dc-name">Марго Робби — фигурка из фильма «Отряд самоубийц» с автографом</div>
+        <div class="dc-text">Марго Робби — австралийская актриса и продюсер, известная по «Волку с Уолл-стрит», «Однажды в Голливуде» и образу Харли Квинн. Комиксы о Харли Квинн ей часто дарили на Рождество в детстве, и накопленные знания о персонаже она использовала при подготовке к роли в фильме 2016 года.</div>
+        <div class="dc-price">400 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s17">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/6a91524869_0.jpg" alt="Леонардо ДиКаприо и Кейт Уинслет"></div>
+        <div class="dc-name">Леонардо ДиКаприо и Кейт Уинслет — фото с двумя автографами</div>
+        <div class="dc-text">«Титаник» Джеймса Кэмерона вышел в 1997 году и получил 11 премий «Оскар», включая награды за лучший фильм и лучшую режиссуру. Для ДиКаприо картина стала началом мировой известности; Уинслет к тому времени в двадцать лет уже получила первую номинацию на «Оскар» за «Разум и чувства».</div>
+        <div class="dc-price">400 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s18" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;пятая</div>
+    <h2 class="div-huge" style="font-size:74px">Сцена</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">Открытые площадки, июльские фестивали и стадионы — сезон, в который группы играют на публику под открытым небом.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s19">
+  <div class="solo-ph"><img src="img_summer/ba2a3899b5_0.jpg" alt="Виктор Цой (Кино)"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Сцена</div>
+    <div class="solo-name">Виктор Цой — кеды с собственноручной росписью и автографом</div>
+    <div class="solo-text">Виктор Цой — лидер рок-группы «Кино», музыкант и киноактёр, кумир поколения перестройки. Проблемы, которые он поднимал в песнях, до сих пор продолжают волновать юные умы. Экспонат сопровождается экспертизой Государственного исторического музея.</div>
+    <div class="solo-price">5 000 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s20">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/1bc5906853_0.jpg" alt="Джон Леннон, Пол Маккартни, Джордж Харрисон и Ринго Старр (The Beatles)"></div>
+        <div class="dc-name">The Beatles — автографы четырёх участников группы</div>
+        <div class="dc-text">The Beatles — британская рок-группа из Ливерпуля, основанная в 1960 году. Прежде чем остановиться на этом названии, коллектив успел побывать The Black Jacks, The Quarrymen, Rainbows, Beatals, Silver Beats и Silver Beatles. Кто именно придумал слово Beatles, однозначного ответа нет до сих пор.</div>
+        <div class="dc-price">4 600 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/c001587056_0.jpg" alt="Владимир Высоцкий"></div>
+        <div class="dc-name">Владимир Высоцкий — собственноручное письмо</div>
+        <div class="dc-text">Письмо адресовано кинорежиссёру Геннадию Полоке, Москва, 9 июля 1974 года, и посвящено работе над фильмом «Одиножды один». Текст письма: «Дорогой Гена! Я огорчен только тем, что снова мы не работаем вместе. Я все подстроил под это, но... се ля ви. Комитет сильнее нас».</div>
+        <div class="dc-price">4 000 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s21">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/93fe6a3f1c_0.jpg" alt="Фредди Меркьюри, Брайан Мэй, Роджер Тейлор и Джон Дикон (Queen)"></div>
+        <div class="dc-name">Queen — пластинка с четырьмя автографами</div>
+        <div class="dc-text">Queen — британская рок-группа, добившаяся широчайшей известности в середине 1970-х годов и ставшая одной из самых успешных в истории рок-музыки. Пластинку подписал весь состав: Фредди Меркьюри, Брайан Мэй, Роджер Тейлор и Джон Дикон.</div>
+        <div class="dc-price">3 000 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s22" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Глава&nbsp;шестая</div>
+    <h2 class="div-huge" style="font-size:74px">Небо</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center">20 июля 1969 года «Аполлон-11» прилунился в Море Спокойствия. Космос остаётся летним сюжетом с того самого дня.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s23">
+  <div class="solo-ph"><img src="img_summer/8dbe55dcb6_0.jpg" alt="Сергей Королёв"></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Небо</div>
+    <div class="solo-name">Сергей Королёв — книга с двумя автографами</div>
+    <div class="solo-text">Сергей Королёв — советский учёный и академик, отец практической космонавтики. Книга В. Шюле «Техническая термодинамика» (Петербург — Киев, 1911) подписана им в 1940-е годы, в период заключения: арестован 27 июня 1938 года, в 1940-м особое совещание приговорило его к восьми годам.</div>
+    <div class="solo-price">2 500 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s24">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/2d33451a25_0.jpg" alt="NASA"></div>
+        <div class="dc-name">NASA — фрагмент инструментальной панели центра управления миссии «Apollo»</div>
+        <div class="dc-text">Приборная панель NASA от консоли BC6 в огневой рубке центра управления полётами. Она состоит из переключателей дистанционного управления для приёмника командного модуля Apollo и входила в группу компьютеров, отвечавших за угловую и азимутальную стабилизацию корабля.</div>
+        <div class="dc-price">1 650 000&nbsp;₽</div>
+        
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/7df316a3ab_0.jpg" alt="Юрий Гагарин"></div>
+        <div class="dc-name">Юрий Гагарин — фото с рукописным пожеланием и автографом</div>
+        <div class="dc-text">Фото подписано 14 апреля 1961 года, через два дня после полёта: «Дорогому Андрею Герасимовичу с уважением Гагарин 14.04.61 г.». Адресат — генерал-полковник авиации Андрей Рытов, начальник политуправления ВВС. В тот же день Ил-18 с Гагариным встретил эскорт истребителей над Москвой.</div>
+        <div class="dc-price">1 600 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s25">
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_summer/6e08e41727_0.jpg" alt="Skylab 1"></div>
+        <div class="dc-name">Skylab 1 — фрагмент космической станции</div>
+        <div class="dc-text">Skylab 1 — первая и единственная национальная орбитальная станция США: запущена 14 мая 1973 года, оставлена 8 февраля 1974-го, рухнула на Землю 11 июля 1979 года в Западной Австралии. За шесть лет на орбите она прошла 1 500 000 000 км и облетела Землю 34 981 раз. Проект обошёлся создателям в 2,6 миллиарда долларов.</div>
+        <div class="dc-price">1 400 000&nbsp;₽</div>
+        
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s26" style="grid-template-rows:auto 1fr">
+  <div class="wrap" style="padding:42px 66px 0">
+    <div class="kick d" style="margin-bottom:13px">Подборка целиком</div>
+    <h2 class="serif" style="font-weight:300;font-size:46px;line-height:1;color:var(--ivory)">25 предметов</h2>
+  </div>
+  <div class="wrap" style="padding:22px 66px 34px"><div class="lad"><div class="lad-row"><div class="lad-nm">Михаэль Шумахер — шлем, использованный в Гран-при Малайзии 1999 года</div><div class="lad-pr">17 500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Коко Шанель — платье с автографом</div><div class="lad-pr">7 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Кристиан Диор — собственноручный двухсторонний эскиз</div><div class="lad-pr">5 250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Виктор Цой — кеды с собственноручной росписью и автографом</div><div class="lad-pr">5 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">The Beatles — автографы четырёх участников группы</div><div class="lad-pr">4 600 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Айртон Сенна — бутылка Moët с награждения Гран-при Монако 1993 года</div><div class="lad-pr">4 500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ив Сен-Лоран — собственноручный эскиз с автографом</div><div class="lad-pr">4 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Владимир Высоцкий — собственноручное письмо</div><div class="lad-pr">4 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Queen — пластинка с четырьмя автографами</div><div class="lad-pr">3 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Louis Vuitton — дорожный сундук конца XIX века</div><div class="lad-pr">2 650 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Сергей Королёв — книга с двумя автографами</div><div class="lad-pr">2 500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">NASA — фрагмент инструментальной панели центра управления миссии «Apollo»</div><div class="lad-pr">1 650 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Юрий Гагарин — фото с рукописным пожеланием и автографом</div><div class="lad-pr">1 600 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Skylab 1 — фрагмент космической станции</div><div class="lad-pr">1 400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Одри Хепбёрн — фото с рукописным пожеланием и автографом</div><div class="lad-pr">1 250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Крис Эверт — личная ракетка</div><div class="lad-pr">1 200 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Энцо Феррари — брошюра с автографом</div><div class="lad-pr">1 150 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Новак Джокович, Штеффи Граф и Джон Макинрой — фото с тремя автографами</div><div class="lad-pr">710 000&nbsp;₽</div></div></div></div>
+</section>
+<section class="slide dark" id="s27" style="grid-template-rows:auto 1fr">
+  <div class="wrap" style="padding:42px 66px 0">
+    <div class="kick d" style="margin-bottom:13px">Подборка целиком · 19–25</div>
+    <h2 class="serif" style="font-weight:300;font-size:46px;line-height:1;color:var(--ivory)">Продолжение</h2>
+  </div>
+  <div class="wrap" style="padding:22px 66px 34px"><div class="lad"><div class="lad-row"><div class="lad-nm">Роджер Федерер, Новак Джокович и Рафаэль Надаль — фото с автографами</div><div class="lad-pr">700 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Джордж Лукас — сценарий фильма «Звёздные войны» с автографом</div><div class="lad-pr">650 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Кэрролл Шелби — мини-модель Ford Shelby Mustang с автографом</div><div class="lad-pr">630 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Грейс Келли — фото с автографом</div><div class="lad-pr">450 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Марго Робби — фигурка из фильма «Отряд самоубийц» с автографом</div><div class="lad-pr">400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Леонардо ДиКаприо и Кейт Уинслет — фото с двумя автографами</div><div class="lad-pr">400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Винус Уильямс — майка с автографом</div><div class="lad-pr">330 000&nbsp;₽</div></div></div></div>
+</section>
+<section class="slide dark" id="s28" style="grid-template-rows:1fr auto">
+  <div class="wrap" style="padding:76px 72px 0;display:flex;flex-direction:column;justify-content:center">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:146px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97;align-self:flex-start">
+    <h2 class="serif" style="font-weight:300;font-size:46px;line-height:1.14;color:var(--ivory);margin-top:38px;max-width:32ch">Двадцать пять предметов из разных разделов собрания, сведённые вместе по одному признаку — по сезону, которому они принадлежат.</h2>
+  </div>
+  <div class="wrap" style="padding:26px 72px 40px;border-top:1px solid rgba(169,133,69,.3)">
+    <span class="kick" style="letter-spacing:.24em;color:var(--gold2)">stargift.ru</span>
+  </div>
+</section>
+</div>
+
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^s/,'');const id=n?('s'+n.padStart(2,'0')):'s01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+function go(d){const cur=+((location.hash.slice(1).replace(/^s/,''))||1);let x=cur+d;if(x<1)x=1;if(x>28)x=28;location.hash='s'+x;}
+show();addEventListener('hashchange',show);
+addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')go(1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(-1);});
+addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX<innerWidth*0.32?-1:1);});
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.slide{animation:none}.deck{height:auto}
+.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
