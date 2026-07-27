@@ -8,7 +8,10 @@
 соло q07 (музейный белый), крест 2×2 q01 в белой версии, лестница цен vl07, финал t20.
 Фото лотов НИКОГДА не кропаются — везде object-fit:contain.
 """
-import html, json, os, re
+import html, json, os, re, sys
+
+# --solo: каждый экспонат на отдельном слайде, парных раскладок нет
+SOLO_ALL = '--solo' in sys.argv
 
 R = os.path.dirname(os.path.abspath(__file__))
 
@@ -255,7 +258,7 @@ def main():
 
         # по одному экспонату на слайд — основной формат; хвост главы парами
         # хвост главы уходит парами — одиночная карточка в парной вёрстке смотрится ошибкой
-        nsolo = max(1, round(len(items) * 0.65))
+        nsolo = len(items) if SOLO_ALL else max(1, round(len(items) * 0.65))
         if (len(items) - nsolo) % 2:
             nsolo += 1
         solo, pairs = items[:nsolo], items[nsolo:]
@@ -347,8 +350,9 @@ addEventListener('click',e=>{{if(e.target.closest('a'))return;go(e.clientX<inner
 <style>@page{{size:1280px 720px;margin:0}}@media print{{html,body{{overflow:visible;height:auto}}*{{box-shadow:none !important}}.slide{{animation:none}}.deck{{height:auto}}
 .slide{{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}}}</style>
 """
-    open(f"{R}/deck_museum.html", "w", encoding="utf-8").write(doc)
-    print(f"deck_museum.html: {n} слайдов, {len(lots)} лотов")
+    name = "deck_museum_solo.html" if SOLO_ALL else "deck_museum.html"
+    open(f"{R}/{name}", "w", encoding="utf-8").write(doc)
+    print(f"{name}: {n} слайдов, {len(lots)} лотов")
 
 
 if __name__ == "__main__":
