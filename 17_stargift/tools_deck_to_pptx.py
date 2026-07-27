@@ -1,5 +1,5 @@
 import json, os, re, shutil
-from PIL import Image
+from PIL import Image, PngImagePlugin
 from pptx import Presentation
 from pptx.util import Inches, Pt, Emu
 from pptx.dml.color import RGBColor
@@ -46,15 +46,22 @@ lg.save(LOGO_W)
 
 seq=[0]
 def uniq(src, box_px=None):
-    """copy each placement to its own media file so no viewer can dedupe/reorder"""
+    """copy each placement to its own media file so no viewer can dedupe/reorder.
+
+    Одного разного имени файла мало: python-pptx склеивает части по sha1
+    содержимого, и две одинаковые картинки становятся одной media на весь дек —
+    Keynote потом волен показать её не там, где надо. Поэтому в каждый файл
+    кладём уникальную текстовую метку: байты разные, картинка та же."""
     seq[0]+=1
+    tag='stargift-%03d'%seq[0]
     ext=os.path.splitext(src)[1].lower()
     dst=os.path.join(MEDIA,'m%03d%s'%(seq[0],ext if ext in ('.png','.jpg') else '.png'))
     im=Image.open(src)
     if im.mode in ('RGBA','LA','P') and ext=='.png':
-        im.convert('RGBA').save(dst)
+        meta=PngImagePlugin.PngInfo(); meta.add_text('Placement', tag)
+        im.convert('RGBA').save(dst, pnginfo=meta)
     else:
-        im.convert('RGB').save(dst,quality=92)
+        im.convert('RGB').save(dst, quality=92, comment=tag.encode())
     return dst
 
 def add_pic(slide, src, x,y,w,h, crop=None):

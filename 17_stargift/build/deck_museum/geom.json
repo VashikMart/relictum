@@ -2365,16 +2365,16 @@
     "filter": "none"
    },
    {
-    "src": "img_museum2/b76b927fba.jpg",
+    "src": "img_museum2/clean_b76b927fba.png",
     "rect": {
-     "x": 772.5,
+     "x": 717.796875,
      "y": 78,
-     "w": 326,
-     "h": 326
+     "w": 435.40625,
+     "h": 325.984375
     },
     "nat": [
-     1200,
-     1200
+     971,
+     727
     ],
     "fit": "contain",
     "pos": "50% 50%",

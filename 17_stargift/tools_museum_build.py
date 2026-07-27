@@ -156,8 +156,12 @@ def esc(s):
 
 
 def photo(it):
-    c = f"img_museum2/clean_{it['key']}.jpg"
-    return c if os.path.exists(os.path.join(R, c)) else it["photo"]
+    # png — вырезанный предмет на прозрачном фоне, jpg — обработанный кадр
+    for ext in ("png", "jpg"):
+        c = f"img_museum2/clean_{it['key']}.{ext}"
+        if os.path.exists(os.path.join(R, c)):
+            return c
+    return it["photo"]
 
 
 def main():
