@@ -1,0 +1,302 @@
+<meta charset="utf-8">
+<title>Stargift · Тайгер Вудс</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--noir:#0B0B0C;--gold:#A98545;--gold2:#C9A96A;--ivory:#F5F1E8;
+      --ink:#1A1A1A;--mute:#6b6b6b}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-serif}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:grid}
+.slide>*{min-height:0;min-width:0}
+img{display:block}
+.serif{font-family:'Cormorant Garamond',serif}
+.kick{font:500 11px/1 'Inter';letter-spacing:.36em;text-transform:uppercase;color:var(--gold)}
+.kick.d{color:var(--gold2)}
+.white{background:#FFFFFF;color:var(--ink)}
+.dark{background:var(--noir);color:var(--ivory)}
+.credit{position:absolute;right:16px;bottom:12px;font:400 8.5px/1.3 'Inter';
+  letter-spacing:.08em;color:rgba(245,241,232,.55)}
+
+.div-huge{font-family:'Cormorant Garamond';font-weight:300;line-height:1;color:var(--ivory)}
+.div-rule{height:1px;width:70px;background:rgba(169,133,69,.55)}
+.div-sub{font:300 19px/1.65 'Inter';color:#c9c3b7}
+
+/* соло: фото слева, текст справа */
+.solo{grid-template-columns:1.16fr 1fr}
+.solo-ph{display:flex;align-items:center;justify-content:center;padding:50px 24px 50px 58px;background:#fff}
+.solo-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.solo-side{display:flex;flex-direction:column;justify-content:center;padding:54px 58px 54px 24px}
+.solo-name{font-family:'Cormorant Garamond';font-weight:500;font-size:33px;line-height:1.12;color:var(--ink)}
+.solo-text{font:300 16px/1.66 'Inter';color:#4a4a4a;margin-top:16px}
+.solo-price{font-family:'Cormorant Garamond';font-weight:500;font-size:31px;color:var(--gold);margin-top:20px}
+
+/* детали: два-три кадра в ряд, подпись снизу */
+.det{grid-template-rows:auto 1fr auto}
+.det-head{display:flex;justify-content:space-between;align-items:baseline;padding:30px 72px 0}
+.det-in{display:grid;gap:34px;padding:20px 72px 8px;align-items:center}
+.det-ph{height:100%;display:flex;align-items:center;justify-content:center;background:#fff;overflow:hidden}
+.det-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.det-note{font:300 15px/1.6 'Inter';color:#4a4a4a;max-width:88ch;padding:6px 72px 34px}
+
+/* тёмный сюжетный слайд */
+.story{grid-template-columns:1.05fr .95fr}
+.story-side{display:flex;flex-direction:column;justify-content:center;padding:0 58px}
+.story-ph{display:flex;align-items:center;justify-content:center;padding:56px;background:#0f0f11}
+.story-ph img{max-width:100%;max-height:100%;object-fit:contain}
+
+.lad{display:flex;flex-direction:column;height:100%;justify-content:space-between}
+.lad-row{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:baseline;
+  padding:9px 0;border-bottom:1px solid rgba(169,133,69,.2)}
+.lad-nm{font:300 15px/1.35 'Inter';color:#d5cfc3}
+.lad-pr{font-family:'Cormorant Garamond';font-weight:500;font-size:21px;color:var(--gold2);white-space:nowrap}
+</style>
+
+<div class="deck">
+<section class="slide dark on" id="s01" style="grid-template-columns:1fr 1.06fr">
+  <div style="display:flex;flex-direction:column;justify-content:space-between;padding:62px 54px">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:160px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97">
+    <div>
+      <div class="kick d" style="margin-bottom:22px">Частное собрание · Гольф</div>
+      <h1 class="serif" style="font-weight:300;font-size:84px;line-height:1;color:var(--ivory)">Тайгер<br>Вудс</h1>
+      <p style="font:300 16.5px/1.65 'Inter';color:#b8b2a6;margin-top:26px;max-width:42ch">Восемь предметов личного происхождения: игровые вещи,
+      драйвер с персональной гравировкой, турнирные сумки и флаг «Мастерс».
+      Вещи Вудса почти не выходят на рынок — перед вами исключения.</p>
+    </div>
+    <div class="kick" style="letter-spacing:.24em">8 предметов · июль 2026</div>
+  </div>
+  <div style="position:relative;height:720px;overflow:hidden">
+    <img src="img_woods/hero/cover.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:38% 20%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,var(--noir) 0%,rgba(11,11,12,.3) 22%,rgba(11,11,12,0) 55%)"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,11,12,.45) 0%,rgba(11,11,12,0) 24%)"></div>
+    <span class="credit">Фото: Keith Allison · Wikimedia Commons · CC BY-SA 2.0</span>
+  </div>
+</section>
+<section class="slide dark" id="s02" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_woods/hero/div1.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.94) 0%,rgba(11,11,12,.78) 32%,rgba(11,11,12,.22) 62%,rgba(11,11,12,.05) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 60px">
+      <div class="kick d" style="letter-spacing:.34em;margin-bottom:24px">Раздел первый · 4 предмета</div>
+      <h2 class="div-huge" style="font-size:70px">Личные игровые вещи</h2>
+      <div class="div-rule" style="margin:32px 0"></div>
+      <p class="div-sub" style="max-width:40ch">Перчатка, два турнирных поло и кепка — то, в чём Вудс
+      выходил на поле. Игровые вещи он отдаёт реже всего.</p>
+    </div>
+    <span class="credit">Фото: Flash and Mel · US Open 2008 · Wikimedia Commons · CC BY-SA 2.0</span>
+  </div>
+</section>
+<section class="slide white solo" id="s03">
+  <div class="solo-ph"><img src="img_woods/src/glove_00.jpg" alt=""></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Личные игровые вещи · 1 из 4</div>
+    <div class="solo-name">Тайгер Вудс — игровая перчатка Nike с автографом</div>
+    <div class="solo-text">Игровая перчатка Nike с автографом. Тайгер Вудс — пятнадцатикратный победитель мейджоров, вернувший гольфу статус большого зрелища. Перчатка прошла с ним игровые раунды: кожа хранит складки его хвата. Вещи из личного обихода Вудса выходят на рынок единицами — он почти никогда с ними не расстаётся.</div>
+    <div class="solo-price">11 100 000&nbsp;₽</div>
+  </div>
+</section>
+<section class="slide white det" id="s04">
+  <div class="det-head">
+    <h2 class="serif" style="font-weight:500;font-size:27px;color:var(--ink)">Перчатка изнутри</h2>
+    <span class="kick" style="letter-spacing:.2em">Личные игровые вещи · 1 из 4</span>
+  </div>
+  <div class="det-in" style="grid-template-columns:1fr 1fr"><div class="det-ph"><img src="img_woods/src/glove_02.jpg" alt=""></div><div class="det-ph"><img src="img_woods/src/glove_01.jpg" alt=""></div></div>
+  <div class="det-note">Ладонная сторона и автограф. Складки на коже — след настоящих раундов: перчатка снималась и надевалась между ударами, как это делает Вудс на каждом круге.</div>
+</section>
+<section class="slide white solo" id="s05">
+  <div class="solo-ph"><img src="img_woods/src/polo07_00.jpg" alt=""></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Личные игровые вещи · 2 из 4</div>
+    <div class="solo-name">Тайгер Вудс — поло Nike третьего раунда US Open 2007 с автографом</div>
+    <div class="solo-text">Поло Nike, в котором Вудс играл третий раунд US Open 2007 в Окмонте, — с автографом. Субботний раунд вывел его в финальную пару воскресенья, а завершил он тот розыгрыш в одном ударе от титула. Экземпляр сопоставлен с телетрансляцией раунда покадрово. Единственный — 1 из 1.</div>
+    <div class="solo-price">9 900 000&nbsp;₽</div>
+  </div>
+</section>
+<section class="slide dark" id="s06" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:62ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.3em;margin-bottom:26px">Окмонт · 16 июня 2007 года</div>
+    <h2 class="serif" style="font-weight:300;font-size:52px;line-height:1.14;color:var(--ivory);max-width:22ch">Суббота, которая вывела его в финальную пару</h2>
+    <div class="div-rule" style="margin:30px 0"></div>
+    <p class="div-sub" style="text-align:center;max-width:52ch">US Open любит тишину и наказывает всё остальное.
+    В ту субботу Вудс прошёл самое жёсткое поле сезона и вышел на воскресенье в последней группе,
+    а розыгрыш завершил в одном ударе от титула. Поло конкретного раунда конкретного мейджора —
+    формат, который в вещах Вудса почти не встречается.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s07">
+  <div class="solo-ph"><img src="img_woods/src/polo1of1_00.jpg" alt=""></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Личные игровые вещи · 3 из 4</div>
+    <div class="solo-name">Тайгер Вудс — турнирное поло Nike с автографом, 1 из 1</div>
+    <div class="solo-text">Турнирное поло Nike с автографом, нумерация 1 из 1. Тёмная полоска конца 2000-х — эпохи, когда Вудс собирал титулы PGA Tour сериями. Автограф выполнен золотым маркером — в вещах Вудса этот вариант встречается заметно реже чёрного.</div>
+    <div class="solo-price">6 300 000&nbsp;₽</div>
+  </div>
+</section>
+<section class="slide white det" id="s08">
+  <div class="det-head">
+    <h2 class="serif" style="font-weight:500;font-size:27px;color:var(--ink)">Автограф золотым маркером</h2>
+    <span class="kick" style="letter-spacing:.2em">Личные игровые вещи · 3 из 4</span>
+  </div>
+  <div class="det-in" style="grid-template-columns:1fr"><div class="det-ph"><img src="img_woods/src/polo1of1_01.jpg" alt=""></div></div>
+  <div class="det-note">Крупный спокойный росчерк золотом. Большинство автографов Вудса на рынке сделаны чёрным — золотой маркер встречается заметно реже.</div>
+</section>
+<section class="slide white solo" id="s09">
+  <div class="solo-ph"><img src="img_woods/src/hat_00.jpg" alt=""></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Личные игровые вещи · 4 из 4</div>
+    <div class="solo-name">Тайгер Вудс — турнирная кепка Nike с автографом, 1 из 1</div>
+    <div class="solo-text">Турнирная кепка Nike с автографом и ручной нумерацией 1 из 1. Сзади — монограмма TW, личный знак Вудса. Самый узнаваемый силуэт гольфа нулевых: эта кепка была на нём в каждое чемпионское воскресенье. В комплекте оригинальная коробка и чехол.</div>
+    <div class="solo-price">2 500 000&nbsp;₽</div>
+  </div>
+</section>
+<section class="slide white det" id="s10">
+  <div class="det-head">
+    <h2 class="serif" style="font-weight:500;font-size:27px;color:var(--ink)">Кепка с трёх сторон</h2>
+    <span class="kick" style="letter-spacing:.2em">Личные игровые вещи · 4 из 4</span>
+  </div>
+  <div class="det-in" style="grid-template-columns:1fr 1fr 1fr"><div class="det-ph"><img src="img_woods/src/hat_01.jpg" alt=""></div><div class="det-ph"><img src="img_woods/src/hat_03.jpg" alt=""></div><div class="det-ph"><img src="img_woods/src/hat_02.jpg" alt=""></div></div>
+  <div class="det-note">Профиль, монограмма TW на затылке и правая сторона. Ручная нумерация 1 из 1, в комплекте оригинальная коробка и чехол.</div>
+</section>
+<section class="slide dark" id="s11" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_woods/hero/div2.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 24%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.94) 0%,rgba(11,11,12,.78) 32%,rgba(11,11,12,.22) 62%,rgba(11,11,12,.05) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 60px">
+      <div class="kick d" style="letter-spacing:.34em;margin-bottom:24px">Раздел второй · 3 предмета</div>
+      <h2 class="div-huge" style="font-size:70px">Клюшки и сумки</h2>
+      <div class="div-rule" style="margin:32px 0"></div>
+      <p class="div-sub" style="max-width:40ch">Личный драйвер с гравировкой TW-1
+      и две турнирные сумки — инструменты профессии.</p>
+    </div>
+    <span class="credit">Фото: Flash and Mel · US Open 2008 · Wikimedia Commons · CC BY-SA 2.0</span>
+  </div>
+</section>
+<section class="slide white solo" id="s12">
+  <div class="solo-ph"><img src="img_woods/src/driver_00.jpg" alt=""></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Клюшки и сумки · 1 из 3</div>
+    <div class="solo-name">Тайгер Вудс — личный драйвер Nike SasQuatch Tour с гравировкой TW-1</div>
+    <div class="solo-text">Личный драйвер Вудса 2006–2008 годов: Nike SasQuatch Tour 460cc с лофтом 7,5° на турнирном шафте Mitsubishi Diamana Blue 83 — сборка по его персональной спецификации, которой не существовало в рознице. Гравировка TW-1 — так Nike метила клюшки, изготовленные лично для него. Драйвер получен от игрока PGA Tour, которому его передал сам Вудс. На эти годы приходятся четыре его победы в мейджорах.</div>
+    <div class="solo-price">10 000 000&nbsp;₽</div>
+  </div>
+</section>
+<section class="slide white det" id="s13">
+  <div class="det-head">
+    <h2 class="serif" style="font-weight:500;font-size:27px;color:var(--ink)">Спецификация, которой не было в рознице</h2>
+    <span class="kick" style="letter-spacing:.2em">Клюшки и сумки · 1 из 3</span>
+  </div>
+  <div class="det-in" style="grid-template-columns:1fr 1fr 1fr"><div class="det-ph"><img src="img_woods/src/driver_06.jpg" alt=""></div><div class="det-ph"><img src="img_woods/src/driver_04.jpg" alt=""></div><div class="det-ph"><img src="img_woods/src/driver_07.jpg" alt=""></div></div>
+  <div class="det-note">Гравировка TW-1, головка Tour-спецификации 7,5° и шафт Mitsubishi Diamana Blue 83 — персональная сборка Nike для первого игрока своего стаффа.</div>
+</section>
+<section class="slide white solo" id="s14">
+  <div class="solo-ph"><img src="img_woods/src/bag_buick_00.jpg" alt=""></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Клюшки и сумки · 2 из 3</div>
+    <div class="solo-name">Тайгер Вудс — личная турнирная сумка Buick с автографом</div>
+    <div class="solo-text">Личная сумка Вудса эпохи Buick — с автографом. Серебристо-синий стафф-бэг с именной панелью TIGER WOODS происходит из благотворительного аукциона его фонда. Потёртости легли там, где сумка год за годом ложилась на плечо кедди, — честный турнирный износ, который невозможно имитировать.</div>
+    <div class="solo-price">7 800 000&nbsp;₽</div>
+  </div>
+</section>
+<section class="slide white det" id="s15">
+  <div class="det-head">
+    <h2 class="serif" style="font-weight:500;font-size:27px;color:var(--ink)">Именная панель и следы работы</h2>
+    <span class="kick" style="letter-spacing:.2em">Клюшки и сумки · 2 из 3</span>
+  </div>
+  <div class="det-in" style="grid-template-columns:1fr 1fr"><div class="det-ph"><img src="img_woods/src/bag_buick_07.jpg" alt=""></div><div class="det-ph"><img src="img_woods/src/bag_buick_13.jpg" alt=""></div></div>
+  <div class="det-note">Панель TIGER WOODS и честный турнирный износ. Сумка датируется примерно 2006–2007 годами — пиком контракта Вудса с Buick.</div>
+</section>
+<section class="slide white solo" id="s16">
+  <div class="solo-ph"><img src="img_woods/src/bags_mj_00.jpg" alt=""></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Клюшки и сумки · 3 из 3</div>
+    <div class="solo-name">Майкл Джордан и Тайгер Вудс — пара сумок для гольфа с автографами</div>
+    <div class="solo-text">Пара сумок с автографами двух главных спортсменов своего поколения. Красно-белый Wilson подписан Джорданом и пронумерован 18 из 23 — в честь двух его игровых номеров; серый бэг эпохи Buick подписан Вудсом. Два имени, определившие спорт девяностых и нулевых, — в одном лоте.</div>
+    <div class="solo-price">7 100 000&nbsp;₽</div>
+  </div>
+</section>
+<section class="slide dark" id="s17" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_woods/hero/jordan.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:60% 40%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.92) 0%,rgba(11,11,12,.72) 34%,rgba(11,11,12,.16) 64%,rgba(11,11,12,.04) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 60px">
+      <div class="kick d" style="letter-spacing:.3em;margin-bottom:24px">Клюшки и сумки · 3 из 3</div>
+      <h2 class="div-huge" style="font-size:56px;max-width:16ch">Вторая игра Джордана</h2>
+      <div class="div-rule" style="margin:28px 0"></div>
+      <p class="div-sub" style="max-width:38ch">Гольф — многолетняя страсть Джордана: он выходит на поле
+      почти ежедневно и десятилетиями играет с Вудсом дружеские раунды. Пара подписанных сумок —
+      предмет, в котором эти двое сходятся буквально.</p>
+    </div>
+    <span class="credit">Фото: shgmom56 · Wikimedia Commons · CC BY-SA 2.0</span>
+  </div>
+</section>
+<section class="slide white det" id="s18">
+  <div class="det-head">
+    <h2 class="serif" style="font-weight:500;font-size:27px;color:var(--ink)">Два автографа</h2>
+    <span class="kick" style="letter-spacing:.2em">Клюшки и сумки · 3 из 3</span>
+  </div>
+  <div class="det-in" style="grid-template-columns:1fr 1fr"><div class="det-ph"><img src="img_woods/src/bags_mj_04.jpg" alt=""></div><div class="det-ph"><img src="img_woods/src/bags_mj_03.jpg" alt=""></div></div>
+  <div class="det-note">Подпись Джордана с нумерацией 18 из 23 — в честь двух его игровых номеров — и подпись Вудса на сумке эпохи Buick.</div>
+</section>
+<section class="slide dark" id="s19" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:66ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.34em;margin-bottom:26px">Раздел третий · 1 предмет</div>
+    <h2 class="div-huge" style="font-size:70px">Легенды вместе</h2>
+    <div class="div-rule" style="margin:34px 0"></div>
+    <p class="div-sub" style="text-align:center;max-width:44ch">Один флаг, двадцать четыре чемпиона «Мастерс»
+    и почти четыре десятка зелёных пиджаков.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s20">
+  <div class="solo-ph"><img src="img_woods/src/flag02_01.jpg" alt=""></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:16px">Легенды вместе · 1 из 1</div>
+    <div class="solo-name">Флаг Masters 2002 — автографы Тайгера Вудса и 23 чемпионов турнира</div>
+    <div class="solo-text">Флаг «Мастерс» 2002 года с автографами Тайгера Вудса и ещё двадцати трёх чемпионов Огасты. В 2002-м Вудс выиграл турнир второй год подряд — третий зелёный пиджак в карьере. На одном полотне — Джек Никлаус, Гэри Плеер, Ник Фалдо, Фил Микельсон, Бен Креншоу и другие обладатели пиджаков за полвека истории турнира.</div>
+    <div class="solo-price">3 600 000&nbsp;₽</div>
+  </div>
+</section>
+<section class="slide dark" id="s21" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_woods/hero/augusta.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 62%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.93) 0%,rgba(11,11,12,.78) 36%,rgba(11,11,12,.24) 66%,rgba(11,11,12,.06) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 60px">
+      <div class="kick d" style="letter-spacing:.3em;margin-bottom:22px">Огаста · Национальный гольф-клуб</div>
+      <h2 class="div-huge" style="font-size:52px;max-width:18ch">Двадцать четыре чемпиона на одном полотне</h2>
+      <div class="div-rule" style="margin:26px 0"></div>
+      <p class="div-sub" style="max-width:44ch;font-size:16px">Джек Никлаус — шесть побед, Гэри Плеер и Ник Фалдо — по три,
+      Фил Микельсон — три, Бен Креншоу, Бабба Уотсон и Бернхард Лангер — по две.
+      Рядом — Спит, Скотт, Гарсия, Капплс, Сингх и другие обладатели зелёных пиджаков
+      пяти десятилетий.</p>
+    </div>
+    <span class="credit">Фото: Wikimedia Commons · public domain</span>
+  </div>
+</section>
+<section class="slide dark" id="s22" style="grid-template-rows:auto 1fr">
+  <div style="padding:44px 66px 0">
+    <div class="kick d" style="margin-bottom:12px">Подборка целиком</div>
+    <h2 class="serif" style="font-weight:300;font-size:44px;line-height:1;color:var(--ivory)">8 предметов</h2>
+  </div>
+  <div style="padding:22px 66px 36px"><div class="lad"><div class="lad-row"><div class="lad-nm">Тайгер Вудс — игровая перчатка Nike с автографом</div><div class="lad-pr">11 100 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Тайгер Вудс — личный драйвер Nike SasQuatch Tour с гравировкой TW-1</div><div class="lad-pr">10 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Тайгер Вудс — поло Nike третьего раунда US Open 2007 с автографом</div><div class="lad-pr">9 900 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Тайгер Вудс — личная турнирная сумка Buick с автографом</div><div class="lad-pr">7 800 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Майкл Джордан и Тайгер Вудс — пара сумок для гольфа с автографами</div><div class="lad-pr">7 100 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Тайгер Вудс — турнирное поло Nike с автографом, 1 из 1</div><div class="lad-pr">6 300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Флаг Masters 2002 — автографы Тайгера Вудса и 23 чемпионов турнира</div><div class="lad-pr">3 600 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Тайгер Вудс — турнирная кепка Nike с автографом, 1 из 1</div><div class="lad-pr">2 500 000&nbsp;₽</div></div></div></div>
+</section>
+<section class="slide dark" id="s23" style="grid-template-rows:1fr auto">
+  <div style="padding:76px 72px 0;display:flex;flex-direction:column;justify-content:center">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:146px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97;align-self:flex-start">
+    <h2 class="serif" style="font-weight:300;font-size:46px;line-height:1.14;color:var(--ivory);margin-top:38px;max-width:30ch">Тайгер Вудс. Восемь предметов, каждый — личного происхождения.</h2>
+  </div>
+  <div style="padding:26px 72px 40px;border-top:1px solid rgba(169,133,69,.3)">
+    <span class="kick" style="letter-spacing:.24em;color:var(--gold2)">stargift.ru</span>
+  </div>
+</section>
+</div>
+
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^s/,'');const id=n?('s'+n.padStart(2,'0')):'s01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+function go(d){const cur=+((location.hash.slice(1).replace(/^s/,''))||1);let x=cur+d;if(x<1)x=1;if(x>23)x=23;location.hash='s'+x;}
+show();addEventListener('hashchange',show);
+addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')go(1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(-1);});
+addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX<innerWidth*0.32?-1:1);});
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.slide{animation:none}.deck{height:auto}
+.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
