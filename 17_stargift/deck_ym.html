@@ -1,0 +1,445 @@
+<meta charset="utf-8">
+<title>Stargift · Мбаппе и Ямаль</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--noir:#0B0B0C;--gold:#A98545;--gold2:#C9A96A;--ivory:#F5F1E8;
+      --ink:#1A1A1A;--mute:#6b6b6b;--cert:#9a958c}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-serif}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:grid}
+.slide>*{min-height:0;min-width:0}
+img{display:block}
+.serif{font-family:'Cormorant Garamond',serif}
+.kick{font:500 11px/1 'Inter';letter-spacing:.36em;text-transform:uppercase;color:var(--gold)}
+.kick.d{color:var(--gold2)}
+.white{background:#FFFFFF;color:var(--ink)}
+.dark{background:var(--noir);color:var(--ivory)}
+.credit{position:absolute;right:16px;bottom:12px;font:400 8.5px/1.3 'Inter';
+  letter-spacing:.08em;color:rgba(245,241,232,.55)}
+.div-huge{font-family:'Cormorant Garamond';font-weight:300;line-height:1;color:var(--ivory)}
+.div-rule{height:1px;width:70px;background:rgba(169,133,69,.55)}
+.div-sub{font:300 19px/1.65 'Inter';color:#c9c3b7}
+
+/* соло с одним или двумя фото слева */
+.solo{grid-template-columns:1.28fr 1fr}
+.ph2{display:grid;gap:18px;padding:44px 22px 44px 52px;background:#fff;align-items:center}
+.ph2 .cell{height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.ph2 img{max-width:100%;max-height:100%;object-fit:contain}
+.solo-side{display:flex;flex-direction:column;justify-content:center;padding:50px 56px 50px 22px}
+.solo-name{font-family:'Cormorant Garamond';font-weight:500;font-size:29px;line-height:1.14;color:var(--ink)}
+.solo-text{font:300 15px/1.62 'Inter';color:#4a4a4a;margin-top:14px}
+.solo-price{font-family:'Cormorant Garamond';font-weight:500;font-size:29px;color:var(--gold);margin-top:18px}
+.solo-cert{font:400 10px/1 'Inter';letter-spacing:.22em;text-transform:uppercase;color:var(--cert);margin-top:10px}
+
+/* дуэт: два лота на слайде */
+.duo2{grid-template-rows:auto 1fr}
+.duo2-in{display:grid;grid-template-columns:1fr 1fr;gap:46px;padding:14px 72px 28px;align-items:start}
+.dc{display:flex;flex-direction:column;align-items:center;text-align:center}
+.dc-ph{width:100%;height:330px;display:flex;align-items:center;justify-content:center;background:#fff}
+.dc-ph img{max-width:100%;max-height:100%;object-fit:contain}
+.dc-name{font-family:'Cormorant Garamond';font-weight:500;font-size:21px;line-height:1.16;color:var(--ink);margin-top:16px;max-width:34ch}
+.dc-text{font:300 13.5px/1.5 'Inter';color:#4a4a4a;margin-top:8px;max-width:52ch}
+.dc-price{font-family:'Cormorant Garamond';font-weight:500;font-size:22px;color:var(--gold);margin-top:10px}
+.dc-cert{font:400 9.5px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--cert);margin-top:7px}
+
+.lad{display:flex;flex-direction:column;height:100%;justify-content:space-between}
+.lad-row{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:baseline;
+  padding:6px 0;border-bottom:1px solid rgba(169,133,69,.2)}
+.lad-nm{font:300 13.5px/1.3 'Inter';color:#d5cfc3}
+.lad-pr{font-family:'Cormorant Garamond';font-weight:500;font-size:18px;color:var(--gold2);white-space:nowrap}
+</style>
+
+<div class="deck">
+<section class="slide dark on" id="s01" style="grid-template-columns:1fr .62fr .62fr">
+  <div style="display:flex;flex-direction:column;justify-content:space-between;padding:58px 20px 58px 54px">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:150px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97;align-self:flex-start">
+    <div>
+      <div class="kick d" style="margin-bottom:20px">Частное собрание · Футбол</div>
+      <h1 class="serif" style="font-weight:300;font-size:66px;line-height:1.04;color:var(--ivory)">Мбаппе<br>и Ямаль</h1>
+      <p style="font:300 15.5px/1.62 'Inter';color:#b8b2a6;margin-top:22px;max-width:36ch">Двадцать шесть предметов двух главных имён современного футбола:
+      майки, мячи, бутса и фотографии — каждая вещь с автографом.</p>
+    </div>
+    <div class="kick" style="letter-spacing:.24em">26 предметов · июль 2026</div>
+  </div>
+  <div style="position:relative;height:720px;overflow:hidden">
+    <img src="img_ym/hero/mbappe.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:62% 20%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.65) 0%,rgba(11,11,12,0) 40%)"></div>
+    <span class="credit">Фото: Balkan Photos · Wikimedia Commons · CC BY 2.0</span>
+  </div>
+  <div style="position:relative;height:720px;overflow:hidden">
+    <img src="img_ym/hero/yamal.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:44% 20%">
+    <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,11,12,.4) 0%,rgba(11,11,12,0) 22%)"></div>
+    <span class="credit">Фото: Berlination · Wikimedia Commons · CC BY-SA 4.0</span>
+  </div>
+</section>
+<section class="slide dark" id="s02" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_ym/hero/barca_campeones.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 42%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.94) 0%,rgba(11,11,12,.78) 32%,rgba(11,11,12,.22) 62%,rgba(11,11,12,.05) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 60px">
+      <div class="kick d" style="letter-spacing:.34em;margin-bottom:24px">Раздел первый · 13 предметов</div>
+      <h2 class="div-huge" style="font-size:70px">Ламин Ямаль</h2>
+      <div class="div-rule" style="margin:32px 0"></div>
+      <p class="div-sub" style="max-width:40ch">Чемпион Европы в семнадцать, десятый номер «Барселоны», лучший молодой футболист мира. Рынок его вещей рождается прямо сейчас.</p>
+    </div>
+    <span class="credit">Фото: Junta de Andalucía · Wikimedia Commons · CC BY-SA 2.0</span>
+  </div>
+</section>
+<section class="slide white solo" id="s03">
+  <div class="ph2" style="grid-template-columns:1fr;height:720px"><div class="cell"><img src="img_ym/clean_yj_spain_00.jpg" alt=""></div></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:14px">Ламин Ямаль · 1 из 13</div>
+    <div class="solo-name">Ламин Ямаль — гостевая футболка сборной Испании Евро-2024 с автографом</div>
+    <div class="solo-text">Гостевая футболка сборной Испании турнира Евро-2024 — с автографом. Тот чемпионат Ямаль закончил чемпионом Европы в семнадцать лет: самый молодой игрок и самый молодой автор гола в истории турнира, лучший молодой игрок Евро. Золотистая выездная форма с патчами турнира — форма чемпионского лета Испании.</div>
+    <div class="solo-price">380 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white duo2" id="s04">
+  <div style="padding:26px 72px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 class="serif" style="font-weight:500;font-size:27px;color:var(--ink)">Золото Евро-2024 · форма целиком</h2>
+    <span class="kick" style="letter-spacing:.2em">Ламин Ямаль · 1 из 13</span>
+  </div>
+  <div class="duo2-in" style="grid-template-columns:1fr 1fr">
+    <div class="dc"><div class="dc-ph" style="height:470px"><img src="img_ym/clean_yj_spain_01.jpg" alt=""></div>
+      <div class="dc-text" style="margin-top:12px">Лицевая сторона: эмблема федерации и патч чемпионата Европы 2024 года.</div></div>
+    <div class="dc"><div class="dc-ph" style="height:470px"><img src="img_ym/clean_yj_spain_03.jpg" alt=""></div>
+      <div class="dc-text" style="margin-top:12px">Спина: LAMINE YAMAL, № 19 — номер, под которым он стал чемпионом Европы.</div></div>
+  </div>
+</section>
+<section class="slide white solo" id="s05">
+  <div class="ph2" style="grid-template-columns:1fr 1fr;height:720px"><div class="cell"><img src="img_ym/clean_yj_wc26a_01.jpg" alt=""></div><div class="cell"><img src="img_ym/clean_yj_wc26a_00.jpg" alt=""></div></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:14px">Ламин Ямаль · 2 из 13</div>
+    <div class="solo-name">Ламин Ямаль — домашняя футболка сборной Испании ЧМ-2026 с автографом</div>
+    <div class="solo-text">Домашняя футболка сборной Испании образца чемпионата мира 2026 года — с автографом. Красная с золотыми полосами и патчами турнира. Испания едет на чемпионат мира действующим чемпионом Европы, и Ямаль — первое имя этой команды.</div>
+    <div class="solo-price">380 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s06">
+  <div class="ph2" style="grid-template-columns:1fr 1fr;height:720px"><div class="cell"><img src="img_ym/clean_yj_wc26b_00.jpg" alt=""></div><div class="cell"><img src="img_ym/clean_yj_wc26b_01.jpg" alt=""></div></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:14px">Ламин Ямаль · 3 из 13</div>
+    <div class="solo-name">Ламин Ямаль — футболка сборной Испании ЧМ-2026 с автографом</div>
+    <div class="solo-text">Футболка сборной Испании образца чемпионата мира 2026 года — с автографом. Второй экземпляр домашней формы турнира: красная с тёмно-синими рукавами, номер 19 на спине.</div>
+    <div class="solo-price">380 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s07">
+  <div class="ph2" style="grid-template-columns:1fr 1fr;height:720px"><div class="cell"><img src="img_ym/clean_yj_barca26_00.jpg" alt=""></div><div class="cell"><img src="img_ym/clean_yj_barca26_01.jpg" alt=""></div></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:14px">Ламин Ямаль · 4 из 13</div>
+    <div class="solo-name">Ламин Ямаль — домашняя футболка «Барселоны» 2025/26 с автографом, № 10</div>
+    <div class="solo-text">Домашняя футболка «Барселоны» сезона 2025/26 — с автографом. Летом 2025 года Ямаль получил десятый номер клуба — номер Месси, Роналдиньо и Марадоны. Первая майка «Барсы» с надписью LAMINE YAMAL и десяткой на спине — вещь, фиксирующая смену эпох в клубе.</div>
+    <div class="solo-price">360 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s08">
+  <div class="ph2" style="grid-template-columns:1fr 1fr;height:720px"><div class="cell"><img src="img_ym/clean_yj_away25_00.jpg" alt=""></div><div class="cell"><img src="img_ym/clean_yj_away25_01.jpg" alt=""></div></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:14px">Ламин Ямаль · 5 из 13</div>
+    <div class="solo-name">Ламин Ямаль — гостевая футболка «Барселоны» 2024/25 с автографом</div>
+    <div class="solo-text">Гостевая футболка «Барселоны» сезона 2024/25 — с автографом. Чёрная выездная форма сезона, в котором «Барса» взяла чемпионат, Кубок и Суперкубок Испании, а Ямаль стал обладателем Trophée Kopa — приза лучшему молодому футболисту мира.</div>
+    <div class="solo-price">360 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s09">
+  <div class="ph2" style="grid-template-columns:1fr 1fr;height:720px"><div class="cell"><img src="img_ym/clean_yj_barca_01.jpg" alt=""></div><div class="cell"><img src="img_ym/clean_yj_barca_00.jpg" alt=""></div></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:14px">Ламин Ямаль · 6 из 13</div>
+    <div class="solo-name">Ламин Ямаль — футболка «Барселоны» с автографом</div>
+    <div class="solo-text">Футболка «Барселоны» — с автографом Ламина Ямаля. Тёмная форма клуба, в котором он прошёл путь от дебюта в пятнадцать лет до статуса первой звезды: воспитанник «Ла Масии», самый молодой автор гола в истории Ла Лиги на момент дебюта.</div>
+    <div class="solo-price">380 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s10">
+  <div class="ph2" style="grid-template-columns:1fr 1fr;height:720px"><div class="cell"><img src="img_ym/clean_yboot_00.jpg" alt=""></div><div class="cell"><img src="img_ym/src/yboot_01.jpg" alt=""></div></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:14px">Ламин Ямаль · 7 из 13</div>
+    <div class="solo-name">Ламин Ямаль — бутса adidas F50 с автографом</div>
+    <div class="solo-text">Бутса adidas F50 League Laceless — с автографом. Модель линейки, в которой Ямаль играет за клуб и сборную. Подпись поставлена на закрытой сессии — рядом кадр самого подписания: маркер в руке, бутса на колене.</div>
+    <div class="solo-price">360 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white duo2" id="s11">
+  <div style="padding:26px 72px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 class="serif" style="font-weight:500;font-size:27px;color:var(--ink)">Фотографии с автографом</h2>
+    <span class="kick" style="letter-spacing:.2em">Ламин Ямаль · 8–9 из 13</span>
+  </div>
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_ym/clean_yph_close_00.jpg" alt=""></div>
+        <div class="dc-name">Ламин Ямаль — фотография «Барселона» крупным планом с автографом</div>
+        <div class="dc-text">Фотография 28×36 см с автографом: Ямаль в клубной форме ведёт мяч. Крупный план эпохи, когда весь футбол начал следить за семнадцатилетним.</div>
+        <div class="dc-price">250 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_ym/clean_yph_barca_00.jpg" alt=""></div>
+        <div class="dc-name">Ламин Ямаль — фотография «Барселона» с автографом</div>
+        <div class="dc-text">Фотография 28×36 см с автографом: Ямаль празднует гол за «Барселону» у ворот соперника, руки раскинуты — фирменный жест.</div>
+        <div class="dc-price">240 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s12">
+  <div style="padding:26px 72px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 class="serif" style="font-weight:500;font-size:27px;color:var(--ink)">Фотографии с автографом · Евро-2024</h2>
+    <span class="kick" style="letter-spacing:.2em">Ламин Ямаль · 10–11 из 13</span>
+  </div>
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_ym/clean_yph_sp6_00.jpg" alt=""></div>
+        <div class="dc-name">Ламин Ямаль — фотография сборной Испании с автографом (Евро-2024)</div>
+        <div class="dc-text">Фотография 28×36 см с автографом: празднование на Евро-2024. Тем летом Ямаль сделал четыре результативные передачи — рекорд турнира для игрока до двадцати лет.</div>
+        <div class="dc-price">240 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_ym/clean_yph_sp2_00.jpg" alt=""></div>
+        <div class="dc-name">Ламин Ямаль — фотография сборной Испании с автографом (дождь)</div>
+        <div class="dc-text">Фотография 28×36 см с автографом: Ямаль указывает на партнёра после гола под дождём. Живой кадр — брызги, улыбка, красная форма Испании.</div>
+        <div class="dc-price">240 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s13">
+  <div style="padding:26px 72px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 class="serif" style="font-weight:500;font-size:27px;color:var(--ink)">Фотографии с автографом · Евро-2024</h2>
+    <span class="kick" style="letter-spacing:.2em">Ламин Ямаль · 12–13 из 13</span>
+  </div>
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_ym/clean_yph_sp5_00.jpg" alt=""></div>
+        <div class="dc-name">Ламин Ямаль — фотография гола сборной Испании с автографом</div>
+        <div class="dc-text">Фотография 28×36 см с автографом: мяч влетает в сетку. Кадр момента, ради которого стадионы встают.</div>
+        <div class="dc-price">240 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_ym/clean_yph_sp3_00.jpg" alt=""></div>
+        <div class="dc-name">Ламин Ямаль — фотография матча Испания — Англия с автографом</div>
+        <div class="dc-text">Фотография 28×36 см с автографом: эпизод финала Евро-2024 против Англии — матча, который сделал Испанию четырёхкратным чемпионом Европы.</div>
+        <div class="dc-price">240 000&nbsp;₽</div>
+        <div class="dc-cert">Beckett</div>
+      </div>
+  </div>
+</section>
+<section class="slide dark" id="s14" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_ym/hero/wc18.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 26%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.94) 0%,rgba(11,11,12,.78) 32%,rgba(11,11,12,.22) 62%,rgba(11,11,12,.05) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 60px">
+      <div class="kick d" style="letter-spacing:.34em;margin-bottom:24px">Раздел второй · 13 предметов</div>
+      <h2 class="div-huge" style="font-size:70px">Килиан Мбаппе</h2>
+      <div class="div-rule" style="margin:32px 0"></div>
+      <p class="div-sub" style="max-width:40ch">Чемпион мира в девятнадцать, капитан Франции, первая девятка «Реал Мадрида». Кубок мира он поднял в Москве.</p>
+    </div>
+    <span class="credit">Фото: Пресс-служба Президента России · Wikimedia Commons · CC BY 4.0</span>
+  </div>
+</section>
+<section class="slide white solo" id="s15">
+  <div class="ph2" style="grid-template-columns:1fr;height:720px"><div class="cell"><img src="img_ym/clean_mph_j1_00.jpg" alt=""></div></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:14px">Килиан Мбаппе · 1 из 13</div>
+    <div class="solo-name">Килиан Мбаппе — фотография с Кубком мира с автографом (Москва, 2018)</div>
+    <div class="solo-text">Фотография 20×25 см с автографом: Мбаппе целует Кубок мира в Лужниках. 15 июля 2018 года, Москва: гол в финале в девятнадцать лет — второй тинейджер в истории после Пеле, забивавший в финале чемпионата мира, и лучший молодой игрок того турнира.</div>
+    <div class="solo-price">300 000&nbsp;₽</div>
+    <div class="solo-cert">JSA</div>
+  </div>
+</section>
+<section class="slide dark" id="s16" style="place-content:center;justify-items:center;text-align:center">
+  <div style="max-width:64ch;padding:0 60px;display:flex;flex-direction:column;align-items:center">
+    <div class="kick d" style="letter-spacing:.3em;margin-bottom:26px">Москва · Лужники · 15 июля 2018 года</div>
+    <h2 class="serif" style="font-weight:300;font-size:50px;line-height:1.14;color:var(--ivory);max-width:24ch">Кубок мира, поднятый в Москве</h2>
+    <div class="div-rule" style="margin:30px 0"></div>
+    <p class="div-sub" style="text-align:center;max-width:52ch">Гол в финале в девятнадцать лет — до Мбаппе такое удавалось
+    только Пеле. Тот чемпионат мира прошёл в России, и кадры с золотым кубком в Лужниках
+    сделали его мировой звездой за один вечер. Три фотографии этой серии — память
+    о турнире, который случился дома.</p>
+  </div>
+</section>
+<section class="slide white duo2" id="s17">
+  <div style="padding:26px 72px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 class="serif" style="font-weight:500;font-size:27px;color:var(--ink)">Фотографии с Кубком мира · Москва-2018</h2>
+    <span class="kick" style="letter-spacing:.2em">Килиан Мбаппе · 2–3 из 13</span>
+  </div>
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_ym/clean_mph_j4_00.jpg" alt=""></div>
+        <div class="dc-name">Килиан Мбаппе — фотография с Кубком мира с автографом (крупный план)</div>
+        <div class="dc-text">Фотография 20×25 см с автографом: крупный план с золотым кубком. Трофей, поднятый в Москве, — главный кадр карьеры Мбаппе.</div>
+        <div class="dc-price">300 000&nbsp;₽</div>
+        <div class="dc-cert">JSA</div>
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_ym/clean_mph_j5_00.jpg" alt=""></div>
+        <div class="dc-name">Килиан Мбаппе — фотография с Кубком мира с автографом (конфетти)</div>
+        <div class="dc-text">Фотография 20×25 см с автографом: Мбаппе с кубком на газоне Лужников под золотым конфетти. Финальная точка чемпионата мира в России.</div>
+        <div class="dc-price">300 000&nbsp;₽</div>
+        <div class="dc-cert">JSA</div>
+      </div>
+  </div>
+</section>
+<section class="slide white duo2" id="s18">
+  <div style="padding:26px 72px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 class="serif" style="font-weight:500;font-size:27px;color:var(--ink)">Фотографии «Реал Мадрид»</h2>
+    <span class="kick" style="letter-spacing:.2em">Килиан Мбаппе · 4–5 из 13</span>
+  </div>
+  <div class="duo2-in">
+      <div class="dc">
+        <div class="dc-ph"><img src="img_ym/clean_mph_j2_00.jpg" alt=""></div>
+        <div class="dc-name">Килиан Мбаппе — фотография «Реал Мадрид» с автографом</div>
+        <div class="dc-text">Фотография 20×25 см с автографом: празднование гола на «Сантьяго Бернабеу». В дебютном сезоне за «Реал» Мбаппе забил 44 гола и получил «Золотую бутсу» лучшего бомбардира Европы.</div>
+        <div class="dc-price">300 000&nbsp;₽</div>
+        <div class="dc-cert">JSA</div>
+      </div>
+      <div class="dc">
+        <div class="dc-ph"><img src="img_ym/clean_mph_j3_00.jpg" alt=""></div>
+        <div class="dc-name">Килиан Мбаппе — фотография «Реал Мадрид» № 9 с автографом</div>
+        <div class="dc-text">Фотография 20×25 см с автографом: Мбаппе в белой форме «Реала» с девятым номером — номером первого мадридского сезона.</div>
+        <div class="dc-price">300 000&nbsp;₽</div>
+        <div class="dc-cert">JSA</div>
+      </div>
+  </div>
+</section>
+<section class="slide white solo" id="s19">
+  <div class="ph2" style="grid-template-columns:1fr;height:720px"><div class="cell"><img src="img_ym/clean_mph_monaco_01.jpg" alt=""></div></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:14px">Килиан Мбаппе · 6 из 13</div>
+    <div class="solo-name">Килиан Мбаппе — арт-принт «Монако» с автографом</div>
+    <div class="solo-text">Арт-принт в цветах «Монако» — с автографом красным маркером. Оммаж клубу, где всё началось: в семнадцать Мбаппе ворвался в основу, а в 2017-м взял с «Монако» чемпионство Лиги 1, обыграв ПСЖ ещё до перехода туда.</div>
+    <div class="solo-price">300 000&nbsp;₽</div>
+    <div class="solo-cert">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s20">
+  <div class="ph2" style="grid-template-columns:1fr 1fr;height:720px"><div class="cell"><img src="img_ym/clean_mj_fr22_00.jpg" alt=""></div><div class="cell"><img src="img_ym/clean_mj_fr22_01.jpg" alt=""></div></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:14px">Килиан Мбаппе · 7 из 13</div>
+    <div class="solo-name">Килиан Мбаппе — гостевая футболка сборной Франции ЧМ-2022 с автографом</div>
+    <div class="solo-text">Гостевая футболка сборной Франции чемпионата мира 2022 года — с автографом. Белая форма с рисунком туаль-де-жуи, в которой Франция дошла до финала Катара. Тот турнир Мбаппе закончил лучшим бомбардиром — восемь голов, включая хет-трик в финале: первый хет-трик в финале чемпионата мира с 1966 года.</div>
+    <div class="solo-price">500 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white solo" id="s21">
+  <div class="ph2" style="grid-template-columns:1fr 1fr;height:720px"><div class="cell"><img src="img_ym/clean_mj_fr26_03.jpg" alt=""></div><div class="cell"><img src="img_ym/clean_mj_fr26_00.jpg" alt=""></div></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:14px">Килиан Мбаппе · 8 из 13</div>
+    <div class="solo-name">Килиан Мбаппе — футболка сборной Франции 2026 с автографом</div>
+    <div class="solo-text">Футболка сборной Франции образца 2026 года — с автографом. Синяя форма с десятым номером, в которой капитан сборной поведёт Францию на чемпионат мира 2026 года за третьей звездой.</div>
+    <div class="solo-price">500 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s22">
+  <div class="ph2" style="grid-template-columns:1fr 1fr;height:720px"><div class="cell"><img src="img_ym/clean_mj_rm1_05.jpg" alt=""></div><div class="cell"><img src="img_ym/clean_mj_rm1_00.jpg" alt=""></div></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:14px">Килиан Мбаппе · 9 из 13</div>
+    <div class="solo-name">Килиан Мбаппе — футболка «Реал Мадрид» с автографом, № 9</div>
+    <div class="solo-text">Домашняя футболка «Реал Мадрида» с девятым номером — с автографом. Белая форма первого мадридского сезона: 44 гола, «Золотая бутса» и статус наследника великой девятки Роналдо.</div>
+    <div class="solo-price">480 000&nbsp;₽</div>
+    <div class="solo-cert">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s23">
+  <div class="ph2" style="grid-template-columns:1fr;height:720px"><div class="cell"><img src="img_ym/clean_mj_rm2_00.jpg" alt=""></div></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:14px">Килиан Мбаппе · 10 из 13</div>
+    <div class="solo-name">Килиан Мбаппе — футболка «Реал Мадрид» с автографом</div>
+    <div class="solo-text">Футболка «Реал Мадрида» — с автографом Мбаппе. Второй экземпляр белой домашней формы, подпись чёрным маркером поверх номера.</div>
+    <div class="solo-price">480 000&nbsp;₽</div>
+    <div class="solo-cert">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s24">
+  <div class="ph2" style="grid-template-columns:1fr 1fr;height:720px"><div class="cell"><img src="img_ym/clean_mball_00.jpg" alt=""></div><div class="cell"><img src="img_ym/clean_mball_05.jpg" alt=""></div></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:14px">Килиан Мбаппе · 11 из 13</div>
+    <div class="solo-name">Килиан Мбаппе — мяч Nike сборной Франции с автографом</div>
+    <div class="solo-text">Мяч Nike в тёмно-синем оформлении сборной Франции — с автографом серебряным маркером. Петух федерации, надпись FRANCE и размашистая подпись капитана сборной на одной панели предмета.</div>
+    <div class="solo-price">500 000&nbsp;₽</div>
+    <div class="solo-cert">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s25">
+  <div class="ph2" style="grid-template-columns:1fr;height:720px"><div class="cell"><img src="img_ym/clean_mcard_00.jpg" alt=""></div></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:14px">Килиан Мбаппе · 12 из 13</div>
+    <div class="solo-name">Килиан Мбаппе — карточка ПСЖ 2019/20 с автографом, капсула PSA</div>
+    <div class="solo-text">Коллекционная карточка ПСЖ сезона 2019/20 с автографом на карточке — в защитной капсуле PSA. Подписанные карточки Мбаппе той эпохи — растущий сегмент рынка: тираж мал, спрос мировой.</div>
+    <div class="solo-price">350 000&nbsp;₽</div>
+    <div class="solo-cert">PSA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s26">
+  <div class="ph2" style="grid-template-columns:1fr;height:720px"><div class="cell"><img src="img_ym/clean_mmessi_00.jpg" alt=""></div></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:14px">Килиан Мбаппе · 13 из 13</div>
+    <div class="solo-name">Лионель Месси и Килиан Мбаппе — футболка ПСЖ с двумя автографами</div>
+    <div class="solo-text">Выездная футболка ПСЖ сезона 2022/23 — с автографами Месси и Мбаппе. Два года они выходили на поле вместе, а в финале ЧМ-2022 оказались по разные стороны величайшего финала в истории: 3:3, хет-трик Мбаппе против двух голов Месси. Одна майка с двумя этими подписями — предмет, в котором сходится целая эпоха.</div>
+    <div class="solo-price">900 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide dark" id="s27" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_ym/hero/psg_trio.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.92) 0%,rgba(11,11,12,.72) 34%,rgba(11,11,12,.16) 64%,rgba(11,11,12,.04) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 60px">
+      <div class="kick d" style="letter-spacing:.3em;margin-bottom:24px">Париж · 2021–2023</div>
+      <h2 class="div-huge" style="font-size:54px;max-width:16ch">Два имени на одной майке</h2>
+      <div class="div-rule" style="margin:28px 0"></div>
+      <p class="div-sub" style="max-width:38ch">Величайший игрок прошлой эпохи и первый игрок нынешней
+      два сезона выходили на поле вместе. Майка ПСЖ с подписями обоих — редкий предмет,
+      где эти карьеры пересекаются буквально.</p>
+    </div>
+    <span class="credit">Фото: Liondartois · Wikimedia Commons · CC BY-SA 4.0</span>
+  </div>
+</section>
+<section class="slide dark" id="s28" style="grid-template-rows:auto 1fr">
+  <div style="padding:40px 66px 0">
+    <div class="kick d" style="margin-bottom:12px">Подборка целиком</div>
+    <h2 class="serif" style="font-weight:300;font-size:42px;line-height:1;color:var(--ivory)">26 предметов</h2>
+  </div>
+  <div style="padding:18px 66px 32px"><div class="lad"><div class="lad-row"><div class="lad-nm">Лионель Месси и Килиан Мбаппе — футболка ПСЖ с двумя автографами</div><div class="lad-pr">900 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Килиан Мбаппе — гостевая футболка сборной Франции ЧМ-2022 с автографом</div><div class="lad-pr">500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Килиан Мбаппе — футболка сборной Франции 2026 с автографом</div><div class="lad-pr">500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Килиан Мбаппе — мяч Nike сборной Франции с автографом</div><div class="lad-pr">500 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Килиан Мбаппе — футболка «Реал Мадрид» с автографом, № 9</div><div class="lad-pr">480 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Килиан Мбаппе — футболка «Реал Мадрид» с автографом</div><div class="lad-pr">480 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ламин Ямаль — гостевая футболка сборной Испании Евро-2024 с автографом</div><div class="lad-pr">380 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ламин Ямаль — домашняя футболка сборной Испании ЧМ-2026 с автографом</div><div class="lad-pr">380 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ламин Ямаль — футболка сборной Испании ЧМ-2026 с автографом</div><div class="lad-pr">380 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ламин Ямаль — футболка «Барселоны» с автографом</div><div class="lad-pr">380 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ламин Ямаль — домашняя футболка «Барселоны» 2025/26 с автографом, № 10</div><div class="lad-pr">360 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ламин Ямаль — гостевая футболка «Барселоны» 2024/25 с автографом</div><div class="lad-pr">360 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ламин Ямаль — бутса adidas F50 с автографом</div><div class="lad-pr">360 000&nbsp;₽</div></div></div></div>
+</section>
+<section class="slide dark" id="s29" style="grid-template-rows:auto 1fr">
+  <div style="padding:40px 66px 0">
+    <div class="kick d" style="margin-bottom:12px">Подборка целиком</div>
+    <h2 class="serif" style="font-weight:300;font-size:42px;line-height:1;color:var(--ivory)">Продолжение</h2>
+  </div>
+  <div style="padding:18px 66px 32px"><div class="lad"><div class="lad-row"><div class="lad-nm">Килиан Мбаппе — карточка ПСЖ 2019/20 с автографом, капсула PSA</div><div class="lad-pr">350 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Килиан Мбаппе — фотография с Кубком мира с автографом (Москва, 2018)</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Килиан Мбаппе — фотография с Кубком мира с автографом (крупный план)</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Килиан Мбаппе — фотография с Кубком мира с автографом (конфетти)</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Килиан Мбаппе — фотография «Реал Мадрид» с автографом</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Килиан Мбаппе — фотография «Реал Мадрид» № 9 с автографом</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Килиан Мбаппе — арт-принт «Монако» с автографом</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ламин Ямаль — фотография «Барселона» крупным планом с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ламин Ямаль — фотография «Барселона» с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ламин Ямаль — фотография сборной Испании с автографом (Евро-2024)</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ламин Ямаль — фотография гола сборной Испании с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ламин Ямаль — фотография матча Испания — Англия с автографом</div><div class="lad-pr">240 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ламин Ямаль — фотография сборной Испании с автографом (дождь)</div><div class="lad-pr">240 000&nbsp;₽</div></div></div></div>
+</section>
+<section class="slide dark" id="s30" style="grid-template-rows:1fr auto">
+  <div style="padding:76px 72px 0;display:flex;flex-direction:column;justify-content:center">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:146px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97;align-self:flex-start">
+    <h2 class="serif" style="font-weight:300;font-size:44px;line-height:1.16;color:var(--ivory);margin-top:38px;max-width:32ch">Мбаппе и Ямаль. Настоящее и будущее футбола — в одном собрании.</h2>
+  </div>
+  <div style="padding:26px 72px 40px;border-top:1px solid rgba(169,133,69,.3)">
+    <span class="kick" style="letter-spacing:.24em;color:var(--gold2)">stargift.ru</span>
+  </div>
+</section>
+</div>
+
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^s/,'');const id=n?('s'+n.padStart(2,'0')):'s01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+function go(d){const cur=+((location.hash.slice(1).replace(/^s/,''))||1);let x=cur+d;if(x<1)x=1;if(x>30)x=30;location.hash='s'+x;}
+show();addEventListener('hashchange',show);
+addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')go(1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(-1);});
+addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX<innerWidth*0.32?-1:1);});
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.slide{animation:none}.deck{height:auto}
+.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
