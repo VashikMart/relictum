@@ -18,32 +18,44 @@ def rub(n):
 
 C = "img_cr7"
 
+# оформление дома: бутса в акриловом боксе на подставке — это и есть фото лота.
+# Кадры из img_framing/halfslide/ — уже в пропорции половины слайда (tools_halfslide.py),
+# поэтому на слайде они встают целиком, без полей и без обрезки бокса.
+FRAMED = {
+ "witness":   "img_framing/halfslide/cr7_red_marble_black.jpg",
+ "merc_s005": "img_framing/halfslide/cr7_dreamspeed_marble_white.jpg",
+ "sealed":    "img_framing/halfslide/cr7_lisbon_wood.jpg",
+ "victory":   "img_framing/halfslide/cr7_victory_marble_green.jpg",
+}
+
 LOTS = {
  "merc_s005": dict(price=520_000, cert="Beckett",
     name="Криштиану Роналду — бутса Nike Mercurial Dream Speed с автографом",
     text=("Бутса Nike Mercurial серии Dream Speed — личной линейки Роналду "
           "внутри Nike — с автографом синим маркером. Бело-голубая расцветка "
           "с фирменной стелькой CR7. Mercurial — силуэт, в котором Роналду "
-          "провёл всю карьеру: от «Манчестер Юнайтед» до сборной Португалии.")),
+          "провёл всю карьеру: от «Манчестер Юнайтед» до сборной Португалии. "
+          "Оформлена в акриловый бокс на основании из белого каррарского мрамора.")),
  "witness": dict(price=590_000, cert="Beckett Witnessed",
     name="Криштиану Роналду — бутса Nike Mercurial CR7 с автографом, подпись при представителе Beckett",
     text=("Красная бутса Nike Mercurial линейки CR7 — с автографом, "
           "поставленным в присутствии представителя Beckett. Witnessed — "
           "высший уровень экспертизы: свидетель фиксирует сам момент подписи. "
-          "Контрастный чёрный росчерк на алом верхе читается через всю бутсу.")),
+          "Контрастный чёрный росчерк на алом верхе читается через всю бутсу. Оформлена в акриловый бокс на основании из чёрного мрамора.")),
  "sealed": dict(price=520_000, cert="Beckett Witnessed",
     name="Криштиану Роналду — бутса Nike Mercurial с автографом (Лиссабон, 2018)",
     text=("Белая бутса Nike Mercurial с гранёным паттерном серии CR7 — "
           "с автографом, поставленным 6 мая 2018 года в Лиссабоне при "
           "представителе Beckett. Экземпляр новый, с пломбой; номер "
           "сертификата проверяется онлайн за минуту. Весна 2018-го — "
-          "последние месяцы Роналду в «Реал Мадриде».")),
+          "последние месяцы Роналду в «Реал Мадриде». Оформлена в акриловый "
+          "бокс на основании из красного дерева.")),
  "victory": dict(price=520_000, cert="",
     name="Криштиану Роналду — бутса Nike Mercurial Victory CR7 с автографом",
     text=("Белая бутса Nike Mercurial Victory линейки CR7 — с автографом. "
-          "Рядом — кадр из сессии подписания: Роналду с этой моделью в руках. "
-          "Фотография с предметом в руках героя — редкое дополнение, которое "
-          "сразу отвечает на главный вопрос любого гостя вашего дома.")),
+          "Единственный лот подборки, у которого сохранился кадр самой сессии "
+          "подписания: Роналду держит в руках именно эту бутсу — следующий "
+          "разворот. Оформлена в акриловый бокс на основании из зелёного мрамора.")),
 }
 
 ORDER_LADDER = ["witness", "merc_s005", "sealed", "victory"]
@@ -103,6 +115,9 @@ def main():
         S.append(s.replace("__ID__", f"s{n:02d}"))
 
     def img(key, suffix):
+        framed = FRAMED.get(key)
+        if framed and os.path.exists(os.path.join(R, framed)):
+            return framed
         cand = f"{C}/clean_{key}_{suffix}.jpg"
         if os.path.exists(os.path.join(R, cand)):
             return cand
@@ -147,6 +162,23 @@ def main():
     solo("merc_s005", [img("merc_s005", "00")], "Бутсы · 2 из 4")
     solo("sealed", [img("sealed", "01")], "Бутсы · 3 из 4")
     solo("victory", [img("victory", "00")], "Бутсы · 4 из 4")
+
+    # ---------- кадр сессии подписания (лот «Victory»)
+    add("""<section class="slide dark" id="__ID__" style="grid-template-columns:1fr 1fr">
+  <div style="height:720px;overflow:hidden">
+    <img src="img_cr7/clean_victory_01.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 28%">
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:60px 62px 60px 46px">
+    <div class="kick d" style="margin-bottom:22px">Лот 4 · сессия подписания</div>
+    <h2 class="serif" style="font-weight:300;font-size:42px;line-height:1.1;color:var(--ivory);max-width:18ch">Та&nbsp;самая бутса — в&nbsp;его руках</h2>
+    <div class="div-rule" style="margin:26px 0"></div>
+    <p class="div-sub" style="max-width:36ch;font-size:16.5px">Кадр сделан в момент подписания: Роналду держит
+    Mercurial Victory, которая затем уехала к владельцу. Совпадают росчерк,
+    расположение логотипа Mercurial и рисунок верха — это один и тот же предмет.</p>
+    <p style="font:300 14px/1.6 'Inter';color:#8e887c;margin-top:22px;max-width:36ch">Кадр передаётся вместе с лотом — в печати
+    и в файле.</p>
+  </div>
+</section>""")
 
     # ---------- сюжет: Эль Класико
     add("""<section class="slide dark" id="__ID__" style="grid-template-columns:1fr">
