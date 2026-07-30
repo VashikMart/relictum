@@ -1,0 +1,6386 @@
+{
+ "s01": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img/stargift_logo.png",
+    "rect": {
+     "x": 54,
+     "y": 58,
+     "w": 197.4375,
+     "h": 150
+    },
+    "nat": [
+     1440,
+     1094
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "brightness(0) invert(1)"
+   },
+   {
+    "src": "img_ym/hero/mbappe.jpg",
+    "rect": {
+     "x": 571.421875,
+     "y": 0,
+     "w": 354.28125,
+     "h": 720
+    },
+    "nat": [
+     1920,
+     1199
+    ],
+    "fit": "cover",
+    "pos": "62% 20%",
+    "filter": "none"
+   },
+   {
+    "src": "img_ym/hero/yamal.jpg",
+    "rect": {
+     "x": 925.703125,
+     "y": 0,
+     "w": 354.296875,
+     "h": 720
+    },
+    "nat": [
+     2000,
+     1333
+    ],
+    "fit": "cover",
+    "pos": "44% 20%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 52,
+     "y": 282.15625,
+     "w": 290.5625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Частное собрание · Футбол",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 54,
+     "y": 315.15625,
+     "w": 497.421875,
+     "h": 137.25
+    },
+    "align": "start",
+    "lh": 68.64,
+    "base": 66,
+    "runs": [
+     {
+      "text": "Мбаппе",
+      "font": "Cormorant Garamond",
+      "size": 66,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "и Ямаль",
+      "font": "Cormorant Garamond",
+      "size": 66,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 54,
+     "y": 474.40625,
+     "w": 344.65625,
+     "h": 100.4375
+    },
+    "align": "start",
+    "lh": 25.11,
+    "base": 15.5,
+    "runs": [
+     {
+      "text": "Двадцать шесть предметов двух главных имён современного футбола:\n      майки, мячи, бутса и фотографии — каждая вещь с автографом.",
+      "font": "Inter",
+      "size": 15.5,
+      "weight": 300,
+      "color": "rgb(184, 178, 166)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 52,
+     "y": 649,
+     "w": 242.984375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "26 предметов · июль 2026",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 649.5,
+     "y": 696.953125,
+     "w": 276.203125,
+     "h": 10
+    },
+    "align": "start",
+    "lh": 11.05,
+    "base": 8.5,
+    "runs": [
+     {
+      "text": "Фото: Balkan Photos · Wikimedia Commons · CC BY 2.0",
+      "font": "Inter",
+      "size": 8.5,
+      "weight": 400,
+      "color": "rgba(245, 241, 232, 0.55)",
+      "spacing": 0.68,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "credit"
+   },
+   {
+    "rect": {
+     "x": 1002.890625,
+     "y": 696.953125,
+     "w": 277.109375,
+     "h": 10
+    },
+    "align": "start",
+    "lh": 11.05,
+    "base": 8.5,
+    "runs": [
+     {
+      "text": "Фото: Berlination · Wikimedia Commons · CC BY-SA 4.0",
+      "font": "Inter",
+      "size": 8.5,
+      "weight": 400,
+      "color": "rgba(245, 241, 232, 0.55)",
+      "spacing": 0.68,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "credit"
+   }
+  ],
+  "decor": [],
+  "plates": [
+   {
+    "file": "s01_1_plate.png",
+    "rect": {
+     "x": 571.421875,
+     "y": 0,
+     "w": 354.28125,
+     "h": 720
+    }
+   },
+   {
+    "file": "s01_2_plate.png",
+    "rect": {
+     "x": 925.703125,
+     "y": 0,
+     "w": 354.296875,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s02": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_ym/hero/barca_campeones.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     1920,
+     1280
+    ],
+    "fit": "cover",
+    "pos": "50% 42%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 58,
+     "y": 225.984375,
+     "w": 311.734375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Раздел первый · 13 предметов",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.74,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 58,
+     "y": 254.984375,
+     "w": 393.984375,
+     "h": 85
+    },
+    "align": "start",
+    "lh": 70,
+    "base": 70,
+    "runs": [
+     {
+      "text": "Ламин Ямаль",
+      "font": "Cormorant Garamond",
+      "size": 70,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-huge"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 397.984375,
+     "w": 469.421875,
+     "h": 94.03125
+    },
+    "align": "start",
+    "lh": 31.35,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Чемпион Европы в семнадцать, десятый номер «Барселоны», лучший молодой футболист мира. Рынок его вещей рождается прямо сейчас.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-sub"
+   },
+   {
+    "rect": {
+     "x": 963.796875,
+     "y": 696.953125,
+     "w": 316.203125,
+     "h": 10
+    },
+    "align": "start",
+    "lh": 11.05,
+    "base": 8.5,
+    "runs": [
+     {
+      "text": "Фото: Junta de Andalucía · Wikimedia Commons · CC BY-SA 2.0",
+      "font": "Inter",
+      "size": 8.5,
+      "weight": 400,
+      "color": "rgba(245, 241, 232, 0.55)",
+      "spacing": 0.68,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "credit"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 60,
+     "y": 364.984375,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s02_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s03": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_yj_spain_00.jpg",
+    "rect": {
+     "x": 138.28125,
+     "y": 44,
+     "w": 472.015625,
+     "h": 631.984375
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 179.53125,
+     "w": 233.375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Ламин Ямаль · 1 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 206.53125,
+     "w": 483.40625,
+     "h": 99.140625
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — гостевая футболка сборной Испании Евро-2024 с автографом",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 319.671875,
+     "w": 483.40625,
+     "h": 145.78125
+    },
+    "align": "start",
+    "lh": 24.3,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Гостевая футболка сборной Испании турнира Евро-2024 — с автографом. Тот чемпионат Ямаль закончил чемпионом Европы в семнадцать лет: самый молодой игрок и самый молодой автор гола в истории турнира, лучший молодой игрок Евро. Золотистая выездная форма с патчами турнира — форма чемпионского лета Испании.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 483.453125,
+     "w": 125.859375,
+     "h": 35
+    },
+    "align": "start",
+    "lh": 34.8,
+    "base": 29,
+    "runs": [
+     {
+      "text": "380 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 527.453125,
+     "w": 78.90625,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 10,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s04": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_yj_spain_01.jpg",
+    "rect": {
+     "x": 168.984375,
+     "y": 73,
+     "w": 351.03125,
+     "h": 470
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_ym/clean_yj_spain_03.jpg",
+    "rect": {
+     "x": 759.984375,
+     "y": 73,
+     "w": 351.03125,
+     "h": 470
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 70,
+     "y": 26,
+     "w": 394.1875,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "Золото Евро-2024 · форма целиком",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 1027.578125,
+     "y": 40,
+     "w": 196.421875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Ламин Ямаль · 1 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 127.703125,
+     "y": 555,
+     "w": 433.59375,
+     "h": 40.5
+    },
+    "align": "center",
+    "lh": 20.25,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Лицевая сторона: эмблема федерации и патч чемпионата Европы 2024 года.",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-text"
+   },
+   {
+    "rect": {
+     "x": 718.703125,
+     "y": 555,
+     "w": 433.59375,
+     "h": 40.5
+    },
+    "align": "center",
+    "lh": 20.25,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Спина: LAMINE YAMAL, № 19 — номер, под которым он стал чемпионом Европы.",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-text"
+   }
+  ],
+  "decor": []
+ },
+ "s05": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_yj_wc26a_01.jpg",
+    "rect": {
+     "x": 52,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_ym/clean_yj_wc26a_00.jpg",
+    "rect": {
+     "x": 383.296875,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 191.6875,
+     "w": 235.59375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Ламин Ямаль · 2 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 218.6875,
+     "w": 483.40625,
+     "h": 99.140625
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — домашняя футболка сборной Испании ЧМ-2026 с автографом",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 331.828125,
+     "w": 483.40625,
+     "h": 121.484375
+    },
+    "align": "start",
+    "lh": 24.3,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Домашняя футболка сборной Испании образца чемпионата мира 2026 года — с автографом. Красная с золотыми полосами и патчами турнира. Испания едет на чемпионат мира действующим чемпионом Европы, и Ямаль — первое имя этой команды.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 471.3125,
+     "w": 125.859375,
+     "h": 35
+    },
+    "align": "start",
+    "lh": 34.8,
+    "base": 29,
+    "runs": [
+     {
+      "text": "380 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 515.3125,
+     "w": 78.90625,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 10,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s06": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_yj_wc26b_00.jpg",
+    "rect": {
+     "x": 52,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_ym/clean_yj_wc26b_01.jpg",
+    "rect": {
+     "x": 383.296875,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 232.5,
+     "w": 235.71875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Ламин Ямаль · 3 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 259.5,
+     "w": 483.40625,
+     "h": 66.09375
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — футболка сборной Испании ЧМ-2026 с автографом",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 339.59375,
+     "w": 483.40625,
+     "h": 72.890625
+    },
+    "align": "start",
+    "lh": 24.3,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Футболка сборной Испании образца чемпионата мира 2026 года — с автографом. Второй экземпляр домашней формы турнира: красная с тёмно-синими рукавами, номер 19 на спине.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 430.484375,
+     "w": 125.859375,
+     "h": 35
+    },
+    "align": "start",
+    "lh": 34.8,
+    "base": 29,
+    "runs": [
+     {
+      "text": "380 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 474.484375,
+     "w": 78.90625,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 10,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s07": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_yj_barca26_00.jpg",
+    "rect": {
+     "x": 52,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_ym/clean_yj_barca26_01.jpg",
+    "rect": {
+     "x": 383.296875,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 208.203125,
+     "w": 236.03125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Ламин Ямаль · 4 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 235.203125,
+     "w": 483.40625,
+     "h": 66.09375
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — домашняя футболка «Барселоны» 2025/26 с автографом, № 10",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 315.296875,
+     "w": 483.40625,
+     "h": 121.484375
+    },
+    "align": "start",
+    "lh": 24.3,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Домашняя футболка «Барселоны» сезона 2025/26 — с автографом. Летом 2025 года Ямаль получил десятый номер клуба — номер Месси, Роналдиньо и Марадоны. Первая майка «Барсы» с надписью LAMINE YAMAL и десяткой на спине — вещь, фиксирующая смену эпох в клубе.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 454.78125,
+     "w": 125.15625,
+     "h": 35
+    },
+    "align": "start",
+    "lh": 34.8,
+    "base": 29,
+    "runs": [
+     {
+      "text": "360 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 498.78125,
+     "w": 78.90625,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 10,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s08": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_yj_away25_00.jpg",
+    "rect": {
+     "x": 52,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_ym/clean_yj_away25_01.jpg",
+    "rect": {
+     "x": 383.296875,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 208.203125,
+     "w": 235.453125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Ламин Ямаль · 5 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 235.203125,
+     "w": 483.40625,
+     "h": 66.09375
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — гостевая футболка «Барселоны» 2024/25 с автографом",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 315.296875,
+     "w": 483.40625,
+     "h": 121.484375
+    },
+    "align": "start",
+    "lh": 24.3,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Гостевая футболка «Барселоны» сезона 2024/25 — с автографом. Чёрная выездная форма сезона, в котором «Барса» взяла чемпионат, Кубок и Суперкубок Испании, а Ямаль стал обладателем Trophée Kopa — приза лучшему молодому футболисту мира.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 454.78125,
+     "w": 125.15625,
+     "h": 35
+    },
+    "align": "start",
+    "lh": 34.8,
+    "base": 29,
+    "runs": [
+     {
+      "text": "360 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 498.78125,
+     "w": 78.90625,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 10,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s09": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_yj_barca_01.jpg",
+    "rect": {
+     "x": 52,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_ym/clean_yj_barca_00.jpg",
+    "rect": {
+     "x": 383.296875,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 220.359375,
+     "w": 235.75,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Ламин Ямаль · 6 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 247.359375,
+     "w": 483.40625,
+     "h": 66.09375
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — футболка «Барселоны» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 327.453125,
+     "w": 483.40625,
+     "h": 97.1875
+    },
+    "align": "start",
+    "lh": 24.3,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Футболка «Барселоны» — с автографом Ламина Ямаля. Тёмная форма клуба, в котором он прошёл путь от дебюта в пятнадцать лет до статуса первой звезды: воспитанник «Ла Масии», самый молодой автор гола в истории Ла Лиги на момент дебюта.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 442.640625,
+     "w": 125.859375,
+     "h": 35
+    },
+    "align": "start",
+    "lh": 34.8,
+    "base": 29,
+    "runs": [
+     {
+      "text": "380 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 486.640625,
+     "w": 78.90625,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 10,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s10": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_yboot_00.jpg",
+    "rect": {
+     "x": 52,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_ym/src/yboot_01.jpg",
+    "rect": {
+     "x": 383.296875,
+     "y": 203.34375,
+     "w": 313.296875,
+     "h": 313.296875
+    },
+    "nat": [
+     1500,
+     1500
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 230.359375,
+     "w": 235.09375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Ламин Ямаль · 7 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 257.359375,
+     "w": 483.40625,
+     "h": 66.09375
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — бутса adidas F50 с автографом",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 337.453125,
+     "w": 483.40625,
+     "h": 97.1875
+    },
+    "align": "start",
+    "lh": 24.3,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Бутса adidas F50 League Laceless — с автографом. Модель линейки, в которой Ямаль играет за клуб и сборную. Подпись поставлена на закрытой сессии — рядом кадр самого подписания: маркер в руке, бутса на колене.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 452.640625,
+     "w": 125.15625,
+     "h": 35
+    },
+    "align": "start",
+    "lh": 34.8,
+    "base": 29,
+    "runs": [
+     {
+      "text": "360 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   }
+  ],
+  "decor": []
+ },
+ "s11": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_yph_close_00.jpg",
+    "rect": {
+     "x": 221.265625,
+     "y": 73,
+     "w": 246.46875,
+     "h": 330
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_ym/clean_yph_barca_00.jpg",
+    "rect": {
+     "x": 812.265625,
+     "y": 73,
+     "w": 246.46875,
+     "h": 330
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 70,
+     "y": 26,
+     "w": 308.796875,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "Фотографии с автографом",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 1008.390625,
+     "y": 40,
+     "w": 215.609375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Ламин Ямаль · 8–9 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 174.21875,
+     "y": 419,
+     "w": 340.5625,
+     "h": 73.078125
+    },
+    "align": "center",
+    "lh": 24.36,
+    "base": 21,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — фотография «Барселона» крупным планом с автографом",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-name"
+   },
+   {
+    "rect": {
+     "x": 127.703125,
+     "y": 500.078125,
+     "w": 433.59375,
+     "h": 60.75
+    },
+    "align": "center",
+    "lh": 20.25,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Фотография 28×36 см с автографом: Ямаль в клубной форме ведёт мяч. Крупный план эпохи, когда весь футбол начал следить за семнадцатилетним.",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-text"
+   },
+   {
+    "rect": {
+     "x": 295.34375,
+     "y": 570.828125,
+     "w": 98.3125,
+     "h": 26
+    },
+    "align": "center",
+    "lh": 26.4,
+    "base": 22,
+    "runs": [
+     {
+      "text": "250 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 22,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-price"
+   },
+   {
+    "rect": {
+     "x": 307.234375,
+     "y": 602.828125,
+     "w": 74.53125,
+     "h": 11
+    },
+    "align": "center",
+    "lh": 9.5,
+    "base": 9.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 9.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.9,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "dc-cert"
+   },
+   {
+    "rect": {
+     "x": 765.21875,
+     "y": 419,
+     "w": 340.5625,
+     "h": 48.71875
+    },
+    "align": "center",
+    "lh": 24.36,
+    "base": 21,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — фотография «Барселона» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-name"
+   },
+   {
+    "rect": {
+     "x": 718.703125,
+     "y": 475.71875,
+     "w": 433.59375,
+     "h": 60.75
+    },
+    "align": "center",
+    "lh": 20.25,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Фотография 28×36 см с автографом: Ямаль празднует гол за «Барселону» у ворот соперника, руки раскинуты — фирменный жест.",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-text"
+   },
+   {
+    "rect": {
+     "x": 885.859375,
+     "y": 546.46875,
+     "w": 99.28125,
+     "h": 26
+    },
+    "align": "center",
+    "lh": 26.4,
+    "base": 22,
+    "runs": [
+     {
+      "text": "240 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 22,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-price"
+   },
+   {
+    "rect": {
+     "x": 898.234375,
+     "y": 578.46875,
+     "w": 74.53125,
+     "h": 11
+    },
+    "align": "center",
+    "lh": 9.5,
+    "base": 9.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 9.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.9,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "dc-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s12": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_yph_sp6_00.jpg",
+    "rect": {
+     "x": 221.265625,
+     "y": 73,
+     "w": 246.46875,
+     "h": 330
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_ym/clean_yph_sp2_00.jpg",
+    "rect": {
+     "x": 812.265625,
+     "y": 73,
+     "w": 246.46875,
+     "h": 330
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 70,
+     "y": 26,
+     "w": 435.484375,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "Фотографии с автографом · Евро-2024",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 997.046875,
+     "y": 40,
+     "w": 226.953125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Ламин Ямаль · 10–11 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 174.21875,
+     "y": 419,
+     "w": 340.5625,
+     "h": 48.71875
+    },
+    "align": "center",
+    "lh": 24.36,
+    "base": 21,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — фотография сборной Испании с автографом (Евро-2024)",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-name"
+   },
+   {
+    "rect": {
+     "x": 127.703125,
+     "y": 475.71875,
+     "w": 433.59375,
+     "h": 60.75
+    },
+    "align": "center",
+    "lh": 20.25,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Фотография 28×36 см с автографом: празднование на Евро-2024. Тем летом Ямаль сделал четыре результативные передачи — рекорд турнира для игрока до двадцати лет.",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-text"
+   },
+   {
+    "rect": {
+     "x": 294.859375,
+     "y": 546.46875,
+     "w": 99.28125,
+     "h": 26
+    },
+    "align": "center",
+    "lh": 26.4,
+    "base": 22,
+    "runs": [
+     {
+      "text": "240 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 22,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-price"
+   },
+   {
+    "rect": {
+     "x": 307.234375,
+     "y": 578.46875,
+     "w": 74.53125,
+     "h": 11
+    },
+    "align": "center",
+    "lh": 9.5,
+    "base": 9.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 9.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.9,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "dc-cert"
+   },
+   {
+    "rect": {
+     "x": 765.21875,
+     "y": 419,
+     "w": 340.5625,
+     "h": 48.71875
+    },
+    "align": "center",
+    "lh": 24.36,
+    "base": 21,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — фотография сборной Испании с автографом (дождь)",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-name"
+   },
+   {
+    "rect": {
+     "x": 718.703125,
+     "y": 475.71875,
+     "w": 433.59375,
+     "h": 60.75
+    },
+    "align": "center",
+    "lh": 20.25,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Фотография 28×36 см с автографом: Ямаль указывает на партнёра после гола под дождём. Живой кадр — брызги, улыбка, красная форма Испании.",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-text"
+   },
+   {
+    "rect": {
+     "x": 885.859375,
+     "y": 546.46875,
+     "w": 99.28125,
+     "h": 26
+    },
+    "align": "center",
+    "lh": 26.4,
+    "base": 22,
+    "runs": [
+     {
+      "text": "240 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 22,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-price"
+   },
+   {
+    "rect": {
+     "x": 898.234375,
+     "y": 578.46875,
+     "w": 74.53125,
+     "h": 11
+    },
+    "align": "center",
+    "lh": 9.5,
+    "base": 9.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 9.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.9,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "dc-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s13": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_yph_sp5_00.jpg",
+    "rect": {
+     "x": 221.265625,
+     "y": 73,
+     "w": 246.46875,
+     "h": 330
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_ym/clean_yph_sp3_00.jpg",
+    "rect": {
+     "x": 812.265625,
+     "y": 73,
+     "w": 246.46875,
+     "h": 330
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 70,
+     "y": 26,
+     "w": 435.484375,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "Фотографии с автографом · Евро-2024",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 995.03125,
+     "y": 40,
+     "w": 228.96875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Ламин Ямаль · 12–13 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 174.21875,
+     "y": 419,
+     "w": 340.5625,
+     "h": 48.71875
+    },
+    "align": "center",
+    "lh": 24.36,
+    "base": 21,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — фотография гола сборной Испании с автографом",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-name"
+   },
+   {
+    "rect": {
+     "x": 127.703125,
+     "y": 475.71875,
+     "w": 433.59375,
+     "h": 40.5
+    },
+    "align": "center",
+    "lh": 20.25,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Фотография 28×36 см с автографом: мяч влетает в сетку. Кадр момента, ради которого стадионы встают.",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-text"
+   },
+   {
+    "rect": {
+     "x": 294.859375,
+     "y": 526.21875,
+     "w": 99.28125,
+     "h": 26
+    },
+    "align": "center",
+    "lh": 26.4,
+    "base": 22,
+    "runs": [
+     {
+      "text": "240 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 22,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-price"
+   },
+   {
+    "rect": {
+     "x": 307.234375,
+     "y": 558.21875,
+     "w": 74.53125,
+     "h": 11
+    },
+    "align": "center",
+    "lh": 9.5,
+    "base": 9.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 9.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.9,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "dc-cert"
+   },
+   {
+    "rect": {
+     "x": 765.21875,
+     "y": 419,
+     "w": 340.5625,
+     "h": 48.71875
+    },
+    "align": "center",
+    "lh": 24.36,
+    "base": 21,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — фотография матча Испания — Англия с автографом",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-name"
+   },
+   {
+    "rect": {
+     "x": 718.703125,
+     "y": 475.71875,
+     "w": 433.59375,
+     "h": 60.75
+    },
+    "align": "center",
+    "lh": 20.25,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Фотография 28×36 см с автографом: эпизод финала Евро-2024 против Англии — матча, который сделал Испанию четырёхкратным чемпионом Европы.",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-text"
+   },
+   {
+    "rect": {
+     "x": 885.859375,
+     "y": 546.46875,
+     "w": 99.28125,
+     "h": 26
+    },
+    "align": "center",
+    "lh": 26.4,
+    "base": 22,
+    "runs": [
+     {
+      "text": "240 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 22,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-price"
+   },
+   {
+    "rect": {
+     "x": 898.234375,
+     "y": 578.46875,
+     "w": 74.53125,
+     "h": 11
+    },
+    "align": "center",
+    "lh": 9.5,
+    "base": 9.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 9.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.9,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "dc-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s14": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_ym/hero/wc18.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     1880,
+     1160
+    ],
+    "fit": "cover",
+    "pos": "50% 26%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 58,
+     "y": 225.984375,
+     "w": 310.15625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Раздел второй · 13 предметов",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.74,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 58,
+     "y": 254.984375,
+     "w": 465.65625,
+     "h": 85
+    },
+    "align": "start",
+    "lh": 70,
+    "base": 70,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе",
+      "font": "Cormorant Garamond",
+      "size": 70,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-huge"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 397.984375,
+     "w": 469.421875,
+     "h": 94.03125
+    },
+    "align": "start",
+    "lh": 31.35,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Чемпион мира в девятнадцать, капитан Франции, первая девятка «Реал Мадрида». Кубок мира он поднял в Москве.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-sub"
+   },
+   {
+    "rect": {
+     "x": 903.578125,
+     "y": 696.953125,
+     "w": 376.421875,
+     "h": 10
+    },
+    "align": "start",
+    "lh": 11.05,
+    "base": 8.5,
+    "runs": [
+     {
+      "text": "Фото: Пресс-служба Президента России · Wikimedia Commons · CC BY 4.0",
+      "font": "Inter",
+      "size": 8.5,
+      "weight": 400,
+      "color": "rgba(245, 241, 232, 0.55)",
+      "spacing": 0.68,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "credit"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 60,
+     "y": 364.984375,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s14_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s15": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_mph_j1_00.jpg",
+    "rect": {
+     "x": 138.28125,
+     "y": 44,
+     "w": 472.015625,
+     "h": 631.984375
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 208.203125,
+     "w": 254.71875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе · 1 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 235.203125,
+     "w": 483.40625,
+     "h": 66.09375
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — фотография с Кубком мира с автографом (Москва, 2018)",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 315.296875,
+     "w": 483.40625,
+     "h": 121.484375
+    },
+    "align": "start",
+    "lh": 24.3,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Фотография 20×25 см с автографом: Мбаппе целует Кубок мира в Лужниках. 15 июля 2018 года, Москва: гол в финале в девятнадцать лет — второй тинейджер в истории после Пеле, забивавший в финале чемпионата мира, и лучший молодой игрок того турнира.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 454.78125,
+     "w": 125.515625,
+     "h": 35
+    },
+    "align": "start",
+    "lh": 34.8,
+    "base": 29,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 498.78125,
+     "w": 43.625,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 10,
+    "base": 10,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s16": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 452.578125,
+     "y": 157.96875,
+     "w": 374.84375,
+     "h": 14
+    },
+    "align": "center",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Москва · Лужники · 15 июля 2018 года",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.3,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 377,
+     "y": 196.96875,
+     "w": 526,
+     "h": 114
+    },
+    "align": "center",
+    "lh": 57,
+    "base": 50,
+    "runs": [
+     {
+      "text": "Кубок мира, поднятый в Москве",
+      "font": "Cormorant Garamond",
+      "size": 50,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 377,
+     "y": 371.96875,
+     "w": 526,
+     "h": 188.0625
+    },
+    "align": "center",
+    "lh": 31.35,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Гол в финале в девятнадцать лет — до Мбаппе такое удавалось\n    только Пеле. Тот чемпионат мира прошёл в России, и кадры с золотым кубком в Лужниках\n    сделали его мировой звездой за один вечер. Три фотографии этой серии — память\n    о турнире, который случился дома.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-sub"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 605,
+     "y": 340.96875,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ]
+ },
+ "s17": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_mph_j4_00.jpg",
+    "rect": {
+     "x": 221.265625,
+     "y": 73,
+     "w": 246.46875,
+     "h": 330
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_ym/clean_mph_j5_00.jpg",
+    "rect": {
+     "x": 812.265625,
+     "y": 73,
+     "w": 246.46875,
+     "h": 330
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 70,
+     "y": 26,
+     "w": 477.171875,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "Фотографии с Кубком мира · Москва-2018",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 990.75,
+     "y": 40,
+     "w": 233.25,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе · 2–3 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 174.21875,
+     "y": 419,
+     "w": 340.5625,
+     "h": 73.078125
+    },
+    "align": "center",
+    "lh": 24.36,
+    "base": 21,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — фотография с Кубком мира с автографом (крупный план)",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-name"
+   },
+   {
+    "rect": {
+     "x": 127.703125,
+     "y": 500.078125,
+     "w": 433.59375,
+     "h": 60.75
+    },
+    "align": "center",
+    "lh": 20.25,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Фотография 20×25 см с автографом: крупный план с золотым кубком. Трофей, поднятый в Москве, — главный кадр карьеры Мбаппе.",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-text"
+   },
+   {
+    "rect": {
+     "x": 294.71875,
+     "y": 570.828125,
+     "w": 99.5625,
+     "h": 26
+    },
+    "align": "center",
+    "lh": 26.4,
+    "base": 22,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 22,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-price"
+   },
+   {
+    "rect": {
+     "x": 323.609375,
+     "y": 602.828125,
+     "w": 41.78125,
+     "h": 11
+    },
+    "align": "center",
+    "lh": 9.5,
+    "base": 9.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 9.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.9,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "dc-cert"
+   },
+   {
+    "rect": {
+     "x": 765.21875,
+     "y": 419,
+     "w": 340.5625,
+     "h": 48.71875
+    },
+    "align": "center",
+    "lh": 24.36,
+    "base": 21,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — фотография с Кубком мира с автографом (конфетти)",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-name"
+   },
+   {
+    "rect": {
+     "x": 718.703125,
+     "y": 475.71875,
+     "w": 433.59375,
+     "h": 60.75
+    },
+    "align": "center",
+    "lh": 20.25,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Фотография 20×25 см с автографом: Мбаппе с кубком на газоне Лужников под золотым конфетти. Финальная точка чемпионата мира в России.",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-text"
+   },
+   {
+    "rect": {
+     "x": 885.71875,
+     "y": 546.46875,
+     "w": 99.5625,
+     "h": 26
+    },
+    "align": "center",
+    "lh": 26.4,
+    "base": 22,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 22,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-price"
+   },
+   {
+    "rect": {
+     "x": 914.609375,
+     "y": 578.46875,
+     "w": 41.78125,
+     "h": 11
+    },
+    "align": "center",
+    "lh": 9.5,
+    "base": 9.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 9.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.9,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "dc-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s18": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_mph_j2_00.jpg",
+    "rect": {
+     "x": 221.265625,
+     "y": 73,
+     "w": 246.46875,
+     "h": 330
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_ym/clean_mph_j3_00.jpg",
+    "rect": {
+     "x": 812.265625,
+     "y": 73,
+     "w": 246.46875,
+     "h": 330
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 70,
+     "y": 26,
+     "w": 330.359375,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "Фотографии «Реал Мадрид»",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 990.578125,
+     "y": 40,
+     "w": 233.421875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе · 4–5 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 174.21875,
+     "y": 419,
+     "w": 340.5625,
+     "h": 48.71875
+    },
+    "align": "center",
+    "lh": 24.36,
+    "base": 21,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — фотография «Реал Мадрид» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-name"
+   },
+   {
+    "rect": {
+     "x": 127.703125,
+     "y": 475.71875,
+     "w": 433.59375,
+     "h": 81
+    },
+    "align": "center",
+    "lh": 20.25,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Фотография 20×25 см с автографом: празднование гола на «Сантьяго Бернабеу». В дебютном сезоне за «Реал» Мбаппе забил 44 гола и получил «Золотую бутсу» лучшего бомбардира Европы.",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-text"
+   },
+   {
+    "rect": {
+     "x": 294.71875,
+     "y": 566.71875,
+     "w": 99.5625,
+     "h": 26
+    },
+    "align": "center",
+    "lh": 26.4,
+    "base": 22,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 22,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-price"
+   },
+   {
+    "rect": {
+     "x": 323.609375,
+     "y": 598.71875,
+     "w": 41.78125,
+     "h": 11
+    },
+    "align": "center",
+    "lh": 9.5,
+    "base": 9.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 9.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.9,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "dc-cert"
+   },
+   {
+    "rect": {
+     "x": 765.21875,
+     "y": 419,
+     "w": 340.5625,
+     "h": 48.71875
+    },
+    "align": "center",
+    "lh": 24.36,
+    "base": 21,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — фотография «Реал Мадрид» № 9 с автографом",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-name"
+   },
+   {
+    "rect": {
+     "x": 718.703125,
+     "y": 475.71875,
+     "w": 433.59375,
+     "h": 60.75
+    },
+    "align": "center",
+    "lh": 20.25,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Фотография 20×25 см с автографом: Мбаппе в белой форме «Реала» с девятым номером — номером первого мадридского сезона.",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-text"
+   },
+   {
+    "rect": {
+     "x": 885.71875,
+     "y": 546.46875,
+     "w": 99.5625,
+     "h": 26
+    },
+    "align": "center",
+    "lh": 26.4,
+    "base": 22,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 22,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "dc-price"
+   },
+   {
+    "rect": {
+     "x": 914.609375,
+     "y": 578.46875,
+     "w": 41.78125,
+     "h": 11
+    },
+    "align": "center",
+    "lh": 9.5,
+    "base": 9.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 9.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.9,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "dc-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s19": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_mph_monaco_01.jpg",
+    "rect": {
+     "x": 138.28125,
+     "y": 44,
+     "w": 472.015625,
+     "h": 631.984375
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 220.359375,
+     "w": 257.078125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе · 6 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 247.359375,
+     "w": 483.40625,
+     "h": 66.09375
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — арт-принт «Монако» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 327.453125,
+     "w": 483.40625,
+     "h": 97.1875
+    },
+    "align": "start",
+    "lh": 24.3,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Арт-принт в цветах «Монако» — с автографом красным маркером. Оммаж клубу, где всё началось: в семнадцать Мбаппе ворвался в основу, а в 2017-м взял с «Монако» чемпионство Лиги 1, обыграв ПСЖ ещё до перехода туда.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 442.640625,
+     "w": 125.515625,
+     "h": 35
+    },
+    "align": "start",
+    "lh": 34.8,
+    "base": 29,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 486.640625,
+     "w": 78.5625,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 10,
+    "base": 10,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s20": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_mj_fr22_00.jpg",
+    "rect": {
+     "x": 52,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_ym/clean_mj_fr22_01.jpg",
+    "rect": {
+     "x": 383.296875,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 189.53125,
+     "w": 256.4375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе · 7 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 216.53125,
+     "w": 483.40625,
+     "h": 99.140625
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — гостевая футболка сборной Франции ЧМ-2022 с автографом",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 329.671875,
+     "w": 483.40625,
+     "h": 145.78125
+    },
+    "align": "start",
+    "lh": 24.3,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Гостевая футболка сборной Франции чемпионата мира 2022 года — с автографом. Белая форма с рисунком туаль-де-жуи, в которой Франция дошла до финала Катара. Тот турнир Мбаппе закончил лучшим бомбардиром — восемь голов, включая хет-трик в финале: первый хет-трик в финале чемпионата мира с 1966 года.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 493.453125,
+     "w": 126.03125,
+     "h": 35
+    },
+    "align": "start",
+    "lh": 34.8,
+    "base": 29,
+    "runs": [
+     {
+      "text": "500 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   }
+  ],
+  "decor": []
+ },
+ "s21": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_mj_fr26_03.jpg",
+    "rect": {
+     "x": 52,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_ym/clean_mj_fr26_00.jpg",
+    "rect": {
+     "x": 383.296875,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 220.359375,
+     "w": 257.078125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе · 8 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 247.359375,
+     "w": 483.40625,
+     "h": 66.09375
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — футболка сборной Франции 2026 с автографом",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 327.453125,
+     "w": 483.40625,
+     "h": 97.1875
+    },
+    "align": "start",
+    "lh": 24.3,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Футболка сборной Франции образца 2026 года — с автографом. Синяя форма с десятым номером, в которой капитан сборной поведёт Францию на чемпионат мира 2026 года за третьей звездой.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 442.640625,
+     "w": 126.03125,
+     "h": 35
+    },
+    "align": "start",
+    "lh": 34.8,
+    "base": 29,
+    "runs": [
+     {
+      "text": "500 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 486.640625,
+     "w": 78.90625,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 10,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s22": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_mj_rm1_05.jpg",
+    "rect": {
+     "x": 52,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_ym/clean_mj_rm1_00.jpg",
+    "rect": {
+     "x": 383.296875,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 232.5,
+     "w": 257.078125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе · 9 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 259.5,
+     "w": 483.40625,
+     "h": 66.09375
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — футболка «Реал Мадрид» с автографом, № 9",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 339.59375,
+     "w": 483.40625,
+     "h": 72.890625
+    },
+    "align": "start",
+    "lh": 24.3,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Домашняя футболка «Реал Мадрида» с девятым номером — с автографом. Белая форма первого мадридского сезона: 44 гола, «Золотая бутса» и статус наследника великой девятки Роналдо.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 430.484375,
+     "w": 127.65625,
+     "h": 35
+    },
+    "align": "start",
+    "lh": 34.8,
+    "base": 29,
+    "runs": [
+     {
+      "text": "480 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 474.484375,
+     "w": 78.5625,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 10,
+    "base": 10,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s23": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_mj_rm2_00.jpg",
+    "rect": {
+     "x": 138.28125,
+     "y": 44,
+     "w": 472.015625,
+     "h": 631.984375
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 232.5,
+     "w": 265.78125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе · 10 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 259.5,
+     "w": 483.40625,
+     "h": 66.09375
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — футболка «Реал Мадрид» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 339.59375,
+     "w": 483.40625,
+     "h": 72.890625
+    },
+    "align": "start",
+    "lh": 24.3,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Футболка «Реал Мадрида» — с автографом Мбаппе. Второй экземпляр белой домашней формы, подпись чёрным маркером поверх номера.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 430.484375,
+     "w": 127.65625,
+     "h": 35
+    },
+    "align": "start",
+    "lh": 34.8,
+    "base": 29,
+    "runs": [
+     {
+      "text": "480 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 474.484375,
+     "w": 78.5625,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 10,
+    "base": 10,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s24": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_mball_00.jpg",
+    "rect": {
+     "x": 52,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_ym/clean_mball_05.jpg",
+    "rect": {
+     "x": 383.296875,
+     "y": 150.265625,
+     "w": 313.296875,
+     "h": 419.46875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 220.359375,
+     "w": 263.25,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе · 11 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 247.359375,
+     "w": 483.40625,
+     "h": 66.09375
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — мяч Nike сборной Франции с автографом",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 327.453125,
+     "w": 483.40625,
+     "h": 97.1875
+    },
+    "align": "start",
+    "lh": 24.3,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Мяч Nike в тёмно-синем оформлении сборной Франции — с автографом серебряным маркером. Петух федерации, надпись FRANCE и размашистая подпись капитана сборной на одной панели предмета.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 442.640625,
+     "w": 126.03125,
+     "h": 35
+    },
+    "align": "start",
+    "lh": 34.8,
+    "base": 29,
+    "runs": [
+     {
+      "text": "500 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 486.640625,
+     "w": 78.90625,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 10,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s25": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_mcard_00.jpg",
+    "rect": {
+     "x": 138.28125,
+     "y": 44,
+     "w": 472.015625,
+     "h": 631.984375
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 220.359375,
+     "w": 265.453125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе · 12 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 247.359375,
+     "w": 483.40625,
+     "h": 66.09375
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — карточка ПСЖ 2019/20 с автографом, капсула PSA",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 327.453125,
+     "w": 483.40625,
+     "h": 97.1875
+    },
+    "align": "start",
+    "lh": 24.3,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Коллекционная карточка ПСЖ сезона 2019/20 с автографом на карточке — в защитной капсуле PSA. Подписанные карточки Мбаппе той эпохи — растущий сегмент рынка: тираж мал, спрос мировой.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 442.640625,
+     "w": 123.53125,
+     "h": 35
+    },
+    "align": "start",
+    "lh": 34.8,
+    "base": 29,
+    "runs": [
+     {
+      "text": "350 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 486.640625,
+     "w": 44.3125,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 10,
+    "base": 10,
+    "runs": [
+     {
+      "text": "PSA",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s26": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_ym/clean_mmessi_00.jpg",
+    "rect": {
+     "x": 138.28125,
+     "y": 44,
+     "w": 472.015625,
+     "h": 631.984375
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 206.0625,
+     "w": 265.578125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе · 13 из 13",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 233.0625,
+     "w": 483.40625,
+     "h": 66.09375
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Лионель Месси и Килиан Мбаппе — футболка ПСЖ с двумя автографами",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 740.59375,
+     "y": 313.15625,
+     "w": 483.40625,
+     "h": 145.78125
+    },
+    "align": "start",
+    "lh": 24.3,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Выездная футболка ПСЖ сезона 2022/23 — с автографами Месси и Мбаппе. Два года они выходили на поле вместе, а в финале ЧМ-2022 оказались по разные стороны величайшего финала в истории: 3:3, хет-трик Мбаппе против двух голов Месси. Одна майка с двумя этими подписями — предмет, в котором сходится целая эпоха.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 738.59375,
+     "y": 476.9375,
+     "w": 127.65625,
+     "h": 35
+    },
+    "align": "start",
+    "lh": 34.8,
+    "base": 29,
+    "runs": [
+     {
+      "text": "900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   }
+  ],
+  "decor": []
+ },
+ "s27": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_ym/hero/psg_trio.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     1920,
+     1399
+    ],
+    "fit": "cover",
+    "pos": "50% 30%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 58,
+     "y": 179.640625,
+     "w": 183.90625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Париж · 2021–2023",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.3,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 216.640625,
+     "w": 412.125,
+     "h": 108
+    },
+    "align": "start",
+    "lh": 54,
+    "base": 54,
+    "runs": [
+     {
+      "text": "Два имени на одной майке",
+      "font": "Cormorant Garamond",
+      "size": 54,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-huge"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 381.640625,
+     "w": 445.953125,
+     "h": 156.71875
+    },
+    "align": "start",
+    "lh": 31.35,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Величайший игрок прошлой эпохи и первый игрок нынешней\n      два сезона выходили на поле вместе. Майка ПСЖ с подписями обоих — редкий предмет,\n      где эти карьеры пересекаются буквально.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-sub"
+   },
+   {
+    "rect": {
+     "x": 1000.96875,
+     "y": 696.953125,
+     "w": 279.03125,
+     "h": 10
+    },
+    "align": "start",
+    "lh": 11.05,
+    "base": 8.5,
+    "runs": [
+     {
+      "text": "Фото: Liondartois · Wikimedia Commons · CC BY-SA 4.0",
+      "font": "Inter",
+      "size": 8.5,
+      "weight": 400,
+      "color": "rgba(245, 241, 232, 0.55)",
+      "spacing": 0.68,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "credit"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 60,
+     "y": 352.640625,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s27_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s28": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 64,
+     "y": 38,
+     "w": 205,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Подборка целиком",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 58,
+     "w": 240.4375,
+     "h": 51
+    },
+    "align": "start",
+    "lh": 42,
+    "base": 42,
+    "runs": [
+     {
+      "text": "26 предметов",
+      "font": "Cormorant Garamond",
+      "size": 42,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 133,
+     "w": 501.859375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Лионель Месси и Килиан Мбаппе — футболка ПСЖ с двумя автографами",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1143.9375,
+     "y": 129,
+     "w": 86.0625,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 177.15625,
+     "w": 540.921875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — гостевая футболка сборной Франции ЧМ-2022 с автографом",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1144.9375,
+     "y": 173.15625,
+     "w": 85.0625,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "500 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 221.3125,
+     "w": 452.71875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — футболка сборной Франции 2026 с автографом",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1144.9375,
+     "y": 217.3125,
+     "w": 85.0625,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "500 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 265.46875,
+     "w": 412.734375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — мяч Nike сборной Франции с автографом",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1144.9375,
+     "y": 261.46875,
+     "w": 85.0625,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "500 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 309.625,
+     "w": 434.109375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — футболка «Реал Мадрид» с автографом, № 9",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1143.9375,
+     "y": 305.625,
+     "w": 86.0625,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "480 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 353.78125,
+     "w": 399.921875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — футболка «Реал Мадрид» с автографом",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1143.9375,
+     "y": 349.78125,
+     "w": 86.0625,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "480 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 397.9375,
+     "w": 535.9375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — гостевая футболка сборной Испании Евро-2024 с автографом",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.046875,
+     "y": 393.9375,
+     "w": 84.953125,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "380 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 442.09375,
+     "w": 535.734375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — домашняя футболка сборной Испании ЧМ-2026 с автографом",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.046875,
+     "y": 438.09375,
+     "w": 84.953125,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "380 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 486.25,
+     "w": 464.765625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — футболка сборной Испании ЧМ-2026 с автографом",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.046875,
+     "y": 482.25,
+     "w": 84.953125,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "380 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 530.40625,
+     "w": 371.765625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — футболка «Барселоны» с автографом",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.046875,
+     "y": 526.40625,
+     "w": 84.953125,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "380 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 574.5625,
+     "w": 540.09375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — домашняя футболка «Барселоны» 2025/26 с автографом, № 10",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.484375,
+     "y": 570.5625,
+     "w": 84.515625,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "360 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 618.71875,
+     "w": 490.390625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — гостевая футболка «Барселоны» 2024/25 с автографом",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.484375,
+     "y": 614.71875,
+     "w": 84.515625,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "360 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 662.875,
+     "w": 330.03125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — бутса adidas F50 с автографом",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.484375,
+     "y": 658.875,
+     "w": 84.515625,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "360 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 157,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 201.15625,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 245.3125,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 289.46875,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 333.625,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 377.78125,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 421.9375,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 466.09375,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 510.25,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 554.40625,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 598.5625,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 642.71875,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 686.875,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   }
+  ]
+ },
+ "s29": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 64,
+     "y": 38,
+     "w": 205,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Подборка целиком",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 58,
+     "w": 250.3125,
+     "h": 51
+    },
+    "align": "start",
+    "lh": 42,
+    "base": 42,
+    "runs": [
+     {
+      "text": "Продолжение",
+      "font": "Cormorant Garamond",
+      "size": 42,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 133,
+     "w": 473,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — карточка ПСЖ 2019/20 с автографом, капсула PSA",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1146.484375,
+     "y": 129,
+     "w": 83.515625,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "350 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 177.15625,
+     "w": 512.96875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — фотография с Кубком мира с автографом (Москва, 2018)",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.265625,
+     "y": 173.15625,
+     "w": 84.734375,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 221.3125,
+     "w": 515.609375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — фотография с Кубком мира с автографом (крупный план)",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.265625,
+     "y": 217.3125,
+     "w": 84.734375,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 265.46875,
+     "w": 485.046875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — фотография с Кубком мира с автографом (конфетти)",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.265625,
+     "y": 261.46875,
+     "w": 84.734375,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 309.625,
+     "w": 415.953125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — фотография «Реал Мадрид» с автографом",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.265625,
+     "y": 305.625,
+     "w": 84.734375,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 353.78125,
+     "w": 446.328125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — фотография «Реал Мадрид» № 9 с автографом",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.265625,
+     "y": 349.78125,
+     "w": 84.734375,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 397.9375,
+     "w": 367.625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Килиан Мбаппе — арт-принт «Монако» с автографом",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.265625,
+     "y": 393.9375,
+     "w": 84.734375,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 442.09375,
+     "w": 500.453125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — фотография «Барселона» крупным планом с автографом",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1146.296875,
+     "y": 438.09375,
+     "w": 83.703125,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "250 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 486.25,
+     "w": 385.78125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — фотография «Барселона» с автографом",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.5,
+     "y": 482.25,
+     "w": 84.5,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "240 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 530.40625,
+     "w": 500.53125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — фотография сборной Испании с автографом (Евро-2024)",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.5,
+     "y": 526.40625,
+     "w": 84.5,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "240 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 574.5625,
+     "w": 449.21875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — фотография гола сборной Испании с автографом",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.5,
+     "y": 570.5625,
+     "w": 84.5,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "240 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 618.71875,
+     "w": 466.171875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — фотография матча Испания — Англия с автографом",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.5,
+     "y": 614.71875,
+     "w": 84.5,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "240 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 662.875,
+     "w": 471.25,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 17.55,
+    "base": 13.5,
+    "runs": [
+     {
+      "text": "Ламин Ямаль — фотография сборной Испании с автографом (дождь)",
+      "font": "Inter",
+      "size": 13.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1145.5,
+     "y": 658.875,
+     "w": 84.5,
+     "h": 22
+    },
+    "align": "start",
+    "lh": 21.599999999999998,
+    "base": 18,
+    "runs": [
+     {
+      "text": "240 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 18,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 157,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 201.15625,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 245.3125,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 289.46875,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 333.625,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 377.78125,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 421.9375,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 466.09375,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 510.25,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 554.40625,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 598.5625,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 642.71875,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 686.875,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   }
+  ]
+ },
+ "s30": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img/stargift_logo.png",
+    "rect": {
+     "x": 72,
+     "y": 190.453125,
+     "w": 192.171875,
+     "h": 146
+    },
+    "nat": [
+     1440,
+     1094
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "brightness(0) invert(1)"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 72,
+     "y": 374.453125,
+     "w": 671.609375,
+     "h": 153.09375
+    },
+    "align": "start",
+    "lh": 51.04,
+    "base": 44,
+    "runs": [
+     {
+      "text": "Мбаппе и Ямаль. Настоящее и будущее футбола — в одном собрании.",
+      "font": "Cormorant Garamond",
+      "size": 44,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 70,
+     "y": 667,
+     "w": 118.375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 19.2,
+    "base": 16,
+    "runs": [
+     {
+      "text": "stargift.ru",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 0,
+     "y": 642,
+     "w": 1280,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.3)"
+   }
+  ]
+ }
+}
