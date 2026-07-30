@@ -189,16 +189,16 @@
    {
     "src": "img_cr7/clean_witness_02.jpg",
     "rect": {
-     "x": 51.125,
+     "x": 0,
      "y": 0,
-     "w": 537.75,
+     "w": 640,
      "h": 720
     },
     "nat": [
      1195,
      1600
     ],
-    "fit": "contain",
+    "fit": "cover",
     "pos": "50% 50%",
     "filter": "none"
    }
@@ -333,16 +333,16 @@
    {
     "src": "img_cr7/clean_merc_s005_00.jpg",
     "rect": {
-     "x": 51.125,
+     "x": 0,
      "y": 0,
-     "w": 537.75,
+     "w": 640,
      "h": 720
     },
     "nat": [
      1195,
      1600
     ],
-    "fit": "contain",
+    "fit": "cover",
     "pos": "50% 50%",
     "filter": "none"
    }
@@ -477,16 +477,16 @@
    {
     "src": "img_cr7/clean_sealed_01.jpg",
     "rect": {
-     "x": 51.125,
+     "x": 0,
      "y": 0,
-     "w": 537.75,
+     "w": 640,
      "h": 720
     },
     "nat": [
      1195,
      1600
     ],
-    "fit": "contain",
+    "fit": "cover",
     "pos": "50% 50%",
     "filter": "none"
    }
@@ -621,16 +621,16 @@
    {
     "src": "img_cr7/clean_victory_00.jpg",
     "rect": {
-     "x": 51.125,
+     "x": 0,
      "y": 0,
-     "w": 537.75,
+     "w": 640,
      "h": 720
     },
     "nat": [
      1195,
      1600
     ],
-    "fit": "contain",
+    "fit": "cover",
     "pos": "50% 50%",
     "filter": "none"
    }
