@@ -1,0 +1,209 @@
+<meta charset="utf-8">
+<title>Stargift · База оформления</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--noir:#0B0B0C;--gold:#A98545;--gold2:#C9A96A;--ivory:#F5F1E8;
+      --ink:#1A1A1A;--mute:#6b6b6b}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-serif}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:grid}
+.slide>*{min-height:0;min-width:0}
+img{display:block}
+.serif{font-family:'Cormorant Garamond',serif}
+.kick{font:500 11px/1 'Inter';letter-spacing:.36em;text-transform:uppercase;color:var(--gold)}
+.kick.d{color:var(--gold2)}
+.white{background:#FFFFFF;color:var(--ink)}
+.dark{background:var(--noir);color:var(--ivory)}
+.div-rule{height:1px;width:70px;background:rgba(169,133,69,.55)}
+
+/* разворот категории: мастер сверху, правило снизу */
+.cat{grid-template-rows:auto 1fr auto}
+.cat-head{display:flex;justify-content:space-between;align-items:baseline;padding:26px 56px 0}
+.cat-name{font-family:'Cormorant Garamond';font-weight:500;font-size:29px;color:var(--ink)}
+.cat-sheet{padding:16px 56px 0;display:flex;align-items:center;justify-content:center}
+.cat-sheet img{max-width:100%;max-height:100%;object-fit:contain}
+.cat-foot{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px;
+  padding:16px 56px 26px;align-items:start}
+.cat-text{font:300 13.5px/1.6 'Inter';color:#4a4a4a}
+.cell-k{font:500 9.5px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:7px}
+.cell-v{font:300 12.5px/1.55 'Inter';color:#5a5a5a}
+
+/* пример генерации: кадр на полслайда */
+.ex{grid-template-columns:1.15fr .85fr}
+.ex-ph{height:720px;overflow:hidden;background:#fff}
+.ex-ph img{width:100%;height:100%;object-fit:contain}
+.ex-side{display:flex;flex-direction:column;justify-content:center;padding:50px 56px 50px 30px}
+.ex-name{font-family:'Cormorant Garamond';font-weight:500;font-size:28px;line-height:1.15;color:var(--ink)}
+.ex-text{font:300 15px/1.64 'Inter';color:#4a4a4a;margin-top:14px}
+.ex-note{font:300 12.5px/1.55 'Inter';color:#7a7a7a;margin-top:18px;
+  border-top:1px solid rgba(169,133,69,.3);padding-top:14px}
+
+.rules{grid-template-rows:auto 1fr}
+.rule{display:grid;grid-template-columns:52px 1fr;gap:22px;padding:18px 0;
+  border-bottom:1px solid rgba(169,133,69,.22)}
+.rule-n{font-family:'Cormorant Garamond';font-weight:300;font-size:38px;line-height:1;color:var(--gold)}
+.rule-h{font-family:'Cormorant Garamond';font-weight:500;font-size:22px;color:var(--ivory)}
+.rule-t{font:300 14px/1.62 'Inter';color:#b8b2a6;margin-top:7px;max-width:96ch}
+</style>
+
+<div class="deck">
+<section class="slide dark on" id="s01" style="grid-template-rows:1fr auto">
+  <div style="padding:74px 66px 0;display:flex;flex-direction:column;justify-content:center">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:132px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97;align-self:flex-start">
+    <div class="kick d" style="margin-top:40px;margin-bottom:20px">Внутренний стандарт дома</div>
+    <h1 class="serif" style="font-weight:300;font-size:62px;line-height:1.04;color:var(--ivory)">База оформления</h1>
+    <p style="font:300 16px/1.66 'Inter';color:#b8b2a6;margin-top:22px;max-width:56ch">Форматы рам, подставок и сборки инструментов,
+    снятые с готовых лотов. 12 категорий, правила подбора рамы, паспарту и второго элемента.</p>
+  </div>
+  <div style="padding:24px 66px 40px;border-top:1px solid rgba(169,133,69,.3)">
+    <span class="kick" style="letter-spacing:.24em;color:var(--gold2)">17_stargift/img_framing</span>
+  </div>
+</section>
+<section class="slide dark rules" id="s02">
+  <div style="padding:40px 62px 0">
+    <div class="kick d" style="margin-bottom:12px">Что общего у всех категорий</div>
+    <h2 class="serif" style="font-weight:300;font-size:40px;line-height:1;color:var(--ivory)">Четыре правила</h2>
+  </div>
+  <div style="padding:14px 62px 30px"><div class="rule"><div class="rule-n">1</div><div><div class="rule-h">Экспонат почти никогда не идёт один</div><div class="rule-t">Если предмет сам по себе не объясняет, кто это и откуда, в раму добавляется второй элемент: портрет героя, постер фильма, обложка, кадр с матча. Документ, письмо, книга, сценарий, журнал и карточка идут парой практически всегда. Фотография и футболка обычно самодостаточны. Критерий один: гость должен понять экспонат, не читая подпись.</div></div></div><div class="rule"><div class="rule-n">2</div><div><div class="rule-h">Цвет паспарту берётся у предмета</div><div class="rule-t">Бордовый — тёплые и красные кадры. Зелёный — жёлтые, природные, ретро-ТВ. Тёмно-синий — документы, наука, космос, чёрно-белая хроника. Угольный — военное и современное кино. Красный — культовое кино и советская эпоха. Для клубной вещи паспарту берёт клубные цвета.</div></div></div><div class="rule"><div class="rule-n">3</div><div><div class="rule-h">Рама попадает в эпоху</div><div class="rule-t">Резное золото и багет с орнаментом — XIX век и раньше. Матовое серебро и брашированный металл — космос, наука, XX век. Красное дерево — политика и классика. Серый дуб — военное кино и современность. Чёрное и венге — рок и современный спорт. Один и тот же документ в золотом багете и в сером дубе читается как разные вещи.</div></div></div><div class="rule"><div class="rule-n">4</div><div><div class="rule-h">Накладку покупаем — инструмент подбираем</div><div class="rule-t">У гитар и барабанов подписан не инструмент, а съёмная часть: пикгард или пластик. Инструмент дом подбирает под неё по цвету и типу, и это отдельное решение, а не техническая сборка.</div></div></div></div>
+</section>
+<section class="slide white cat" id="s03">
+  <div class="cat-head">
+    <div class="cat-name">Фотографии и постеры</div>
+    <span class="kick">8 форматов</span>
+  </div>
+  <div class="cat-sheet"><img src="img_framing/frames_photo/master_frames_photo.jpg" alt=""></div>
+  <div class="cat-foot"><div class="cat-text">Самодостаточный экспонат: кадр объясняет себя сам, второй элемент не нужен. Работает и обратный ход — два кадра в одной раме, когда хочется показать героя и его сцену.</div><div><div class="cell-k">Бархат</div><div class="cell-v">бордо · уголь · красный · синий</div></div><div><div class="cell-k">Особые</div><div class="cell-v">перламутровое серебро, кованое золото, «парящее стекло»</div></div><div><div class="cell-k">Табличка</div><div class="cell-v">PERSONALLY SIGNED BY</div></div></div>
+</section>
+<section class="slide white cat" id="s04">
+  <div class="cat-head">
+    <div class="cat-name">Документы, письма, журналы</div>
+    <span class="kick">8 форматов</span>
+  </div>
+  <div class="cat-sheet"><img src="img_framing/frames_doc/master_frames_doc.jpg" alt=""></div>
+  <div class="cat-foot"><div class="cat-text">Здесь второй элемент обязателен: документ без портрета не читается. Портрет может стоять слева или справа; для крупных фигур — триптих: портрет, документ и третий предмет эпохи.</div><div><div class="cell-k">Рама по эпохе</div><div class="cell-v">резное золото — XIX век · серебро — наука и космос · красное дерево — политика</div></div><div><div class="cell-k">Паспарту</div><div class="cell-v">синий — основной регистр, зелёный и красный — исключения</div></div><div><div class="cell-k">Табличка</div><div class="cell-v">русская для русских героев</div></div></div>
+</section>
+<section class="slide white cat" id="s05">
+  <div class="cat-head">
+    <div class="cat-name">Киносценарии</div>
+    <span class="kick">6 форматов</span>
+  </div>
+  <div class="cat-sheet"><img src="img_framing/frames_script/master_frames_script.jpg" alt=""></div>
+  <div class="cat-foot"><div class="cat-text">Формат жёсткий: слева титульный лист в собственном золотом багете, справа постер фильма. Латунные брадсы переплёта видны и не убираются — это признак настоящего съёмочного экземпляра.</div><div><div class="cell-k">Военное кино</div><div class="cell-v">серый дуб + угольный бархат</div></div><div><div class="cell-k">Культовое кино 90-х</div><div class="cell-v">тёмно-серая рама + красный</div></div><div><div class="cell-k">Сериалы и ретро-ТВ</div><div class="cell-v">бронза + зелёный</div></div></div>
+</section>
+<section class="slide white cat" id="s06">
+  <div class="cat-head">
+    <div class="cat-name">Пластинки</div>
+    <span class="kick">3 формата</span>
+  </div>
+  <div class="cat-sheet"><img src="img_framing/frames_vinyl/master_frames_vinyl.jpg" alt=""></div>
+  <div class="cat-foot"><div class="cat-text">Главный формат — раскрывающийся диптих на латунных петлях: закрытым он показывает конверт, открытым — конверт и сам диск в глубокой нише. Если подписан только винил, берём квадрат с диском на красном бархате.</div><div><div class="cell-k">Диптих</div><div class="cell-v">бордовый бархат в обеих панелях</div></div><div><div class="cell-k">Только диск</div><div class="cell-v">чёрная фактурная рама + красный</div></div><div><div class="cell-k">Только конверт</div><div class="cell-v">золото + бордо или орех + синий</div></div></div>
+</section>
+<section class="slide white cat" id="s07">
+  <div class="cat-head">
+    <div class="cat-name">Гитары</div>
+    <span class="kick">накладка → инструмент</span>
+  </div>
+  <div class="cat-sheet"><img src="img_framing/instruments_guitar/master_guitar.jpg" alt=""></div>
+  <div class="cat-foot"><div class="cat-text">Дом покупает подписанную накладку, а гитару подбирает под неё. Белая и кремовая накладка — чёрный Stratocaster или Telecaster, реже винтажно-белый. Черепаховая и белая «капля» — санбёрст-акустика.</div><div><div class="cell-k">Подача</div><div class="cell-v">чёрная напольная стойка, съёмка в зале</div></div><div><div class="cell-k">Без рамы</div><div class="cell-v">инструмент показываем целиком</div></div><div><div class="cell-k">Заказные</div><div class="cell-v">пурпурный «спарклевый» Telecaster под белую накладку</div></div></div>
+</section>
+<section class="slide white cat" id="s08">
+  <div class="cat-head">
+    <div class="cat-name">Барабаны</div>
+    <span class="kick">пластик → малый барабан</span>
+  </div>
+  <div class="cat-sheet"><img src="img_framing/instruments_drum/master_drum.jpg" alt=""></div>
+  <div class="cat-foot"><div class="cat-text">Та же логика: покупается подписанный пластик, дом ставит его на настоящий хромированный малый барабан на стойке. Для группового лота на обод крепится шеврон группы.</div><div><div class="cell-k">Два состояния</div><div class="cell-v">голый пластик «как куплен» и собранный барабан</div></div><div><div class="cell-k">Шеврон</div><div class="cell-v">Iron Maiden, Black Sabbath — по группе</div></div><div><div class="cell-k">Подача</div><div class="cell-v">барабан на стойке, вид сверху под углом</div></div></div>
+</section>
+<section class="slide white cat" id="s09">
+  <div class="cat-head">
+    <div class="cat-name">Футболки и джерси</div>
+    <span class="kick">3 формата</span>
+  </div>
+  <div class="cat-sheet"><img src="img_framing/frames_shirt/master_frames_shirt.jpg" alt=""></div>
+  <div class="cat-foot"><div class="cat-text">Паспарту берёт клубные цвета: «Барселона» — бордо, сборная Бразилии — зелёный, белая форма — светло-серое. По бокам таблички ставят два шеврона клуба.</div><div><div class="cell-k">Рама</div><div class="cell-v">чёрная или золотая, широкое паспарту</div></div><div><div class="cell-k">Линия</div><div class="cell-v">тонкая золотая по периметру окна</div></div><div><div class="cell-k">Табличка</div><div class="cell-v">латунь, по центру нижнего поля</div></div></div>
+</section>
+<section class="slide white cat" id="s10">
+  <div class="cat-head">
+    <div class="cat-name">Постеры и афиши</div>
+    <span class="kick">4 формата</span>
+  </div>
+  <div class="cat-sheet"><img src="img_framing/frames_poster/master_frames_poster.jpg" alt=""></div>
+  <div class="cat-foot"><div class="cat-text">Паспарту подбирается под палитру афиши. Крупный формат допускает белое паспарту без бархата — плакату нужен воздух, а не бархат.</div><div><div class="cell-k">Тёплые афиши</div><div class="cell-v">золото + бордо</div></div><div><div class="cell-k">Современные</div><div class="cell-v">серебро + белое</div></div><div><div class="cell-k">Классика</div><div class="cell-v">тёмная рама + белое, крупный формат</div></div></div>
+</section>
+<section class="slide white cat" id="s11">
+  <div class="cat-head">
+    <div class="cat-name">Карточки и слабы</div>
+    <span class="kick">3 формата</span>
+  </div>
+  <div class="cat-sheet"><img src="img_framing/frames_card/master_frames_card.jpg" alt=""></div>
+  <div class="cat-foot"><div class="cat-text">Маленький предмет требует контекста сильнее прочих: к карточке почти всегда добавляют фотографию героя, иначе в раме остаётся пустое поле.</div><div><div class="cell-k">Паспарту</div><div class="cell-v">красный или синий бархат</div></div><div><div class="cell-k">Пара</div><div class="cell-v">карточка + фото героя</div></div><div><div class="cell-k">Группа</div><div class="cell-v">чёрное паспарту под коллективный кадр</div></div></div>
+</section>
+<section class="slide white cat" id="s12">
+  <div class="cat-head">
+    <div class="cat-name">Книги</div>
+    <span class="kick">2 формата</span>
+  </div>
+  <div class="cat-sheet"><img src="img_framing/frames_book/master_frames_book.jpg" alt=""></div>
+  <div class="cat-foot"><div class="cat-text">Либо подписанная страница плоско рядом с портретом автора, либо сама книга раскрытой в глубоком боксе. Большинство книг в каталоге сняты «как есть» — рама добавляется под заказ.</div><div><div class="cell-k">Плоско</div><div class="cell-v">тёмная рама + красный бархат + портрет</div></div><div><div class="cell-k">Глубокий бокс</div><div class="cell-v">красное дерево + зелёный, книга раскрыта</div></div><div><div class="cell-k">Табличка</div><div class="cell-v">имя автора</div></div></div>
+</section>
+<section class="slide white cat" id="s13">
+  <div class="cat-head">
+    <div class="cat-name">Мячи</div>
+    <span class="kick">акриловый куб</span>
+  </div>
+  <div class="cat-sheet"><img src="img_framing/stands_ball/master_stands_ball.jpg" alt=""></div>
+  <div class="cat-foot"><div class="cat-text">Прозрачный куб на квадратном основании, латунная табличка на передней грани. Куб выше и уже, чем бокс под бутсу: мяч стоит по центру и не касается стенок.</div><div><div class="cell-k">Основания</div><div class="cell-v">красное дерево · белый, зелёный, чёрный мрамор</div></div><div><div class="cell-k">Подбор</div><div class="cell-v">винтажная кожа — дерево и зелёный, белый мяч — чёрный мрамор</div></div><div><div class="cell-k">Табличка</div><div class="cell-v">мяч команды — клуб и сезон, а не имя</div></div></div>
+</section>
+<section class="slide white cat" id="s14">
+  <div class="cat-head">
+    <div class="cat-name">Бутсы и объёмные вещи</div>
+    <span class="kick">6 оснований</span>
+  </div>
+  <div class="cat-sheet"><img src="img_framing/stands_boot/master_stands.jpg" alt=""></div>
+  <div class="cat-foot"><div class="cat-text">Вытянутый акриловый бокс на каменном или деревянном основании. Основание подбирается под цвет предмета, а не под вид спорта.</div><div><div class="cell-k">Основания</div><div class="cell-v">красное дерево ×3 · белый, чёрный, зелёный мрамор</div></div><div><div class="cell-k">Шайбы</div><div class="cell-v">тот же формат, куб меньшего размера</div></div><div><div class="cell-k">Табличка</div><div class="cell-v">PERSONALLY SIGNED BY</div></div></div>
+</section>
+<section class="slide white ex" id="s15">
+  <div class="ex-ph"><img src="img_framing/generated/bocelli_vinyl_open_diptych.jpg" alt=""></div>
+  <div class="ex-side">
+    <div class="kick" style="margin-bottom:14px">Пример сборки</div>
+    <div class="ex-name">Раскрывающаяся рама · Андреа Бочелли</div>
+    <div class="ex-text">Собрано из двух настоящих кадров лота: подписанный конверт и сам диск. Модель получила мастер-лист категории первым референсом, конверт вторым, диск третьим — и сложила их в формат дома.</div>
+    <div class="ex-note">Макет формата. В клиентский каталог ставим фотографию собранной рамы.</div>
+  </div>
+</section>
+<section class="slide white ex" id="s16">
+  <div class="ex-ph"><img src="img_framing/generated/rock_mag_photo_dark_navy.jpg" alt=""></div>
+  <div class="ex-side">
+    <div class="kick" style="margin-bottom:14px">Пример сборки</div>
+    <div class="ex-name">Обложка и портрет · Дуэйн Джонсон</div>
+    <div class="ex-text">Экспонат из презентации по Скале: подписанная обложка Rolling Stone. К ней добавлен второй элемент — ринговый кадр эпохи Rocky Maivia. Две эпохи одного человека в одной раме.</div>
+    <div class="ex-note">Крупные надписи и подписи сохранены точно; мелкий шрифт обложки модель перерисовывает — ещё одна причина показывать клиенту фото готовой рамы.</div>
+  </div>
+</section>
+<section class="slide dark" id="s17" style="grid-template-rows:1fr auto">
+  <div style="padding:76px 66px 0;display:flex;flex-direction:column;justify-content:center">
+    <h2 class="serif" style="font-weight:300;font-size:42px;line-height:1.16;color:var(--ivory);max-width:34ch">Новая категория — четыре шага</h2>
+    <div class="div-rule" style="margin:26px 0"></div>
+    <p style="font:300 15px/1.7 'Inter';color:#b8b2a6;max-width:62ch">Отобрать 6–8 готовых лотов категории с сайта и увидеть,
+    чем они отличаются. Сложить мастер-лист с подписями: <span style="color:var(--gold2)">tools_master_sheet.py</span>.
+    Записать правило в README рядом с картинками. Проверить генерацией на реальном предмете — и только потом
+    считать категорию освоенной.</p>
+  </div>
+  <div style="padding:24px 66px 40px;border-top:1px solid rgba(169,133,69,.3)">
+    <span class="kick" style="letter-spacing:.24em;color:var(--gold2)">stargift.ru</span>
+  </div>
+</section>
+</div>
+
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^s/,'');const id=n?('s'+n.padStart(2,'0')):'s01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+function go(d){const cur=+((location.hash.slice(1).replace(/^s/,''))||1);let x=cur+d;if(x<1)x=1;if(x>17)x=17;location.hash='s'+x;}
+show();addEventListener('hashchange',show);
+addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')go(1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(-1);});
+addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX<innerWidth*0.32?-1:1);});
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.slide{animation:none}.deck{height:auto}
+.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
