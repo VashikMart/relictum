@@ -683,15 +683,15 @@
     "filter": "none"
    },
    {
-    "src": "img_cr7/src/victory_01.jpg",
+    "src": "img_cr7/clean_victory_01.jpg",
     "rect": {
      "x": 375.703125,
-     "y": 207.140625,
+     "y": 155.328125,
      "w": 305.71875,
-     "h": 305.71875
+     "h": 409.328125
     },
     "nat": [
-     1600,
+     1195,
      1600
     ],
     "fit": "contain",

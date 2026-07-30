@@ -148,7 +148,7 @@ def main():
     solo("witness", [img("witness", "02"), img("witness", "07")], "Бутсы · 1 из 4")
     solo("merc_s005", [img("merc_s005", "00"), img("merc_s005", "01")], "Бутсы · 2 из 4")
     solo("sealed", [img("sealed", "00"), img("sealed", "01")], "Бутсы · 3 из 4")
-    solo("victory", [img("victory", "00"), f"{C}/src/victory_01.jpg"], "Бутсы · 4 из 4")
+    solo("victory", [img("victory", "00"), img("victory", "01")], "Бутсы · 4 из 4")
 
     # ---------- сюжет: Эль Класико
     add("""<section class="slide dark" id="__ID__" style="grid-template-columns:1fr">
