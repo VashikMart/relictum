@@ -69,9 +69,8 @@ img{display:block}
 .div-rule{height:1px;width:70px;background:rgba(169,133,69,.55)}
 .div-sub{font:300 19px/1.65 'Inter';color:#c9c3b7}
 
-.solo{grid-template-columns:1.22fr 1fr}
-.ph2{display:grid;gap:18px;padding:44px 22px 44px 52px;background:#fff;align-items:center}
-.ph2 .cell{height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.solo{grid-template-columns:1fr 1fr}
+.ph2{display:flex;align-items:center;justify-content:center;background:#f4f4f4;height:720px;overflow:hidden}
 .ph2 img{max-width:100%;max-height:100%;object-fit:contain}
 .solo-side{display:flex;flex-direction:column;justify-content:center;padding:50px 56px 50px 22px}
 .solo-name{font-family:'Cormorant Garamond';font-weight:500;font-size:29px;line-height:1.14;color:var(--ink)}
@@ -110,11 +109,9 @@ def main():
 
     def solo(k, photos, kick):
         it = LOTS[k]
-        cols = "1fr " * len(photos)
-        cells = "".join(f'<div class="cell"><img src="{p}" alt=""></div>' for p in photos)
         cert = f'<div class="solo-cert">{esc(it["cert"])}</div>' if it["cert"] else ""
         add(f"""<section class="slide white solo" id="__ID__">
-  <div class="ph2" style="grid-template-columns:{cols.strip()};height:720px">{cells}</div>
+  <div class="ph2"><img src="{photos[0]}" alt=""></div>
   <div class="solo-side">
     <div class="kick" style="margin-bottom:14px">{kick}</div>
     <div class="solo-name">{esc(it['name'])}</div>
@@ -145,10 +142,10 @@ def main():
   </div>
 </section>""")
 
-    solo("witness", [img("witness", "02"), img("witness", "07")], "Бутсы · 1 из 4")
-    solo("merc_s005", [img("merc_s005", "00"), img("merc_s005", "01")], "Бутсы · 2 из 4")
-    solo("sealed", [img("sealed", "00"), img("sealed", "01")], "Бутсы · 3 из 4")
-    solo("victory", [img("victory", "00"), img("victory", "01")], "Бутсы · 4 из 4")
+    solo("witness", [img("witness", "02")], "Бутсы · 1 из 4")
+    solo("merc_s005", [img("merc_s005", "00")], "Бутсы · 2 из 4")
+    solo("sealed", [img("sealed", "01")], "Бутсы · 3 из 4")
+    solo("victory", [img("victory", "00")], "Бутсы · 4 из 4")
 
     # ---------- сюжет: Эль Класико
     add("""<section class="slide dark" id="__ID__" style="grid-template-columns:1fr">
