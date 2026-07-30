@@ -1,0 +1,1428 @@
+{
+ "s01": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img/stargift_logo.png",
+    "rect": {
+     "x": 54,
+     "y": 60,
+     "w": 197.4375,
+     "h": 150
+    },
+    "nat": [
+     1440,
+     1094
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "brightness(0) invert(1)"
+   },
+   {
+    "src": "img_cr7/hero/cover.jpg",
+    "rect": {
+     "x": 621.34375,
+     "y": 0,
+     "w": 658.65625,
+     "h": 720
+    },
+    "nat": [
+     1920,
+     1280
+    ],
+    "fit": "cover",
+    "pos": "30% 20%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 52,
+     "y": 286.203125,
+     "w": 290.5625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Частное собрание · Футбол",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 54,
+     "y": 321.203125,
+     "w": 513.34375,
+     "h": 146.875
+    },
+    "align": "start",
+    "lh": 73.44,
+    "base": 72,
+    "runs": [
+     {
+      "text": "Криштиану",
+      "font": "Cormorant Garamond",
+      "size": 72,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "Роналду",
+      "font": "Cormorant Garamond",
+      "size": 72,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 54,
+     "y": 492.078125,
+     "w": 395.3125,
+     "h": 78.703125
+    },
+    "align": "start",
+    "lh": 26.24,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Четыре бутсы Nike Mercurial с автографом — силуэт,\n      в котором сыграна вся его карьера. Разные эпохи, разные расцветки,\n      один росчерк.",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(184, 178, 166)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 52,
+     "y": 646.984375,
+     "w": 222.734375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "4 предмета · июль 2026",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 986.828125,
+     "y": 696.953125,
+     "w": 293.171875,
+     "h": 10
+    },
+    "align": "start",
+    "lh": 11.05,
+    "base": 8.5,
+    "runs": [
+     {
+      "text": "Фото: Ludovic Péron · Wikimedia Commons · CC BY-SA 3.0",
+      "font": "Inter",
+      "size": 8.5,
+      "weight": 400,
+      "color": "rgba(245, 241, 232, 0.55)",
+      "spacing": 0.68,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "credit"
+   }
+  ],
+  "decor": [],
+  "plates": [
+   {
+    "file": "s01_1_plate.png",
+    "rect": {
+     "x": 621.34375,
+     "y": 0,
+     "w": 658.65625,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s02": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_cr7/clean_witness_02.jpg",
+    "rect": {
+     "x": 52,
+     "y": 155.34375,
+     "w": 305.703125,
+     "h": 409.296875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_cr7/clean_witness_07.jpg",
+    "rect": {
+     "x": 375.703125,
+     "y": 155.328125,
+     "w": 305.71875,
+     "h": 409.328125
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 723.421875,
+     "y": 187.90625,
+     "w": 154.703125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Бутсы · 1 из 4",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 725.421875,
+     "y": 214.90625,
+     "w": 498.578125,
+     "h": 99.140625
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Криштиану Роналду — бутса Nike Mercurial CR7 с автографом, подпись при представителе Beckett",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 725.421875,
+     "y": 328.046875,
+     "w": 498.578125,
+     "h": 127.03125
+    },
+    "align": "start",
+    "lh": 25.42,
+    "base": 15.5,
+    "runs": [
+     {
+      "text": "Красная бутса Nike Mercurial линейки CR7 — с автографом, поставленным в присутствии представителя Beckett. Witnessed — высший уровень экспертизы: свидетель фиксирует сам момент подписи. Контрастный чёрный росчерк на алом верхе читается через всю бутсу.",
+      "font": "Inter",
+      "size": 15.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 723.421875,
+     "y": 473.078125,
+     "w": 129.390625,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "590 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 723.421875,
+     "y": 519.078125,
+     "w": 162.3125,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 10,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Beckett Witnessed",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s03": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_cr7/clean_merc_s005_00.jpg",
+    "rect": {
+     "x": 52,
+     "y": 155.34375,
+     "w": 305.703125,
+     "h": 409.296875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_cr7/clean_merc_s005_01.jpg",
+    "rect": {
+     "x": 375.703125,
+     "y": 155.328125,
+     "w": 305.71875,
+     "h": 409.328125
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 723.421875,
+     "y": 204.4375,
+     "w": 156.921875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Бутсы · 2 из 4",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 725.421875,
+     "y": 231.4375,
+     "w": 498.578125,
+     "h": 66.09375
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Криштиану Роналду — бутса Nike Mercurial Dream Speed с автографом",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 725.421875,
+     "y": 311.53125,
+     "w": 498.578125,
+     "h": 127.03125
+    },
+    "align": "start",
+    "lh": 25.42,
+    "base": 15.5,
+    "runs": [
+     {
+      "text": "Бутса Nike Mercurial серии Dream Speed — личной линейки Роналду внутри Nike — с автографом синим маркером. Бело-голубая расцветка с фирменной стелькой CR7. Mercurial — силуэт, в котором Роналду провёл всю карьеру: от «Манчестер Юнайтед» до сборной Португалии.",
+      "font": "Inter",
+      "size": 15.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 723.421875,
+     "y": 456.5625,
+     "w": 127.5,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "520 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 723.421875,
+     "y": 502.5625,
+     "w": 78.90625,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 10,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s04": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_cr7/clean_sealed_00.jpg",
+    "rect": {
+     "x": 52,
+     "y": 155.34375,
+     "w": 305.703125,
+     "h": 409.296875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_cr7/clean_sealed_01.jpg",
+    "rect": {
+     "x": 375.703125,
+     "y": 155.328125,
+     "w": 305.71875,
+     "h": 409.328125
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 723.421875,
+     "y": 204.4375,
+     "w": 157.046875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Бутсы · 3 из 4",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 725.421875,
+     "y": 231.4375,
+     "w": 498.578125,
+     "h": 66.09375
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Криштиану Роналду — бутса Nike Mercurial с автографом (Лиссабон, 2018)",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 725.421875,
+     "y": 311.53125,
+     "w": 498.578125,
+     "h": 127.03125
+    },
+    "align": "start",
+    "lh": 25.42,
+    "base": 15.5,
+    "runs": [
+     {
+      "text": "Белая бутса Nike Mercurial с гранёным паттерном серии CR7 — с автографом, поставленным 6 мая 2018 года в Лиссабоне при представителе Beckett. Экземпляр новый, с пломбой; номер сертификата проверяется онлайн за минуту. Весна 2018-го — последние месяцы Роналду в «Реал Мадриде».",
+      "font": "Inter",
+      "size": 15.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 723.421875,
+     "y": 456.5625,
+     "w": 127.5,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "520 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 723.421875,
+     "y": 502.5625,
+     "w": 162.3125,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 10,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Beckett Witnessed",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-cert"
+   }
+  ],
+  "decor": []
+ },
+ "s05": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_cr7/clean_victory_00.jpg",
+    "rect": {
+     "x": 52,
+     "y": 155.34375,
+     "w": 305.703125,
+     "h": 409.296875
+    },
+    "nat": [
+     1195,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_cr7/src/victory_01.jpg",
+    "rect": {
+     "x": 375.703125,
+     "y": 207.140625,
+     "w": 305.71875,
+     "h": 305.71875
+    },
+    "nat": [
+     1600,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 723.421875,
+     "y": 214.4375,
+     "w": 157.359375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Бутсы · 4 из 4",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 725.421875,
+     "y": 241.4375,
+     "w": 498.578125,
+     "h": 66.09375
+    },
+    "align": "start",
+    "lh": 33.06,
+    "base": 29,
+    "runs": [
+     {
+      "text": "Криштиану Роналду — бутса Nike Mercurial Victory CR7 с автографом",
+      "font": "Cormorant Garamond",
+      "size": 29,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 725.421875,
+     "y": 321.53125,
+     "w": 498.578125,
+     "h": 127.03125
+    },
+    "align": "start",
+    "lh": 25.42,
+    "base": 15.5,
+    "runs": [
+     {
+      "text": "Белая бутса Nike Mercurial Victory линейки CR7 — с автографом. Рядом — кадр из сессии подписания: Роналду с этой моделью в руках. Фотография с предметом в руках героя — редкое дополнение, которое сразу отвечает на главный вопрос любого гостя вашего дома.",
+      "font": "Inter",
+      "size": 15.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 723.421875,
+     "y": 466.5625,
+     "w": 127.5,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "520 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   }
+  ],
+  "decor": []
+ },
+ "s06": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_cr7/hero/clasico.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     1500,
+     999
+    ],
+    "fit": "cover",
+    "pos": "22% 30%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 995.59375,
+     "y": 152.640625,
+     "w": 226.40625,
+     "h": 14
+    },
+    "align": "right",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Мадрид · Эль Класико",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.3,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 807.875,
+     "y": 189.640625,
+     "w": 412.125,
+     "h": 162
+    },
+    "align": "right",
+    "lh": 54,
+    "base": 54,
+    "runs": [
+     {
+      "text": "Самый результативный в истории игры",
+      "font": "Cormorant Garamond",
+      "size": 54,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-huge"
+   },
+   {
+    "rect": {
+     "x": 774.046875,
+     "y": 408.640625,
+     "w": 445.953125,
+     "h": 156.71875
+    },
+    "align": "right",
+    "lh": 31.35,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Пять «Золотых мячей», четыре «Золотые бутсы»,\n      более девятисот голов за карьеру — и все они забиты в Mercurial.\n      Бутса с его подписью — самый прямой предмет из возможных.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-sub"
+   },
+   {
+    "rect": {
+     "x": 1009.640625,
+     "y": 696.953125,
+     "w": 270.359375,
+     "h": 10
+    },
+    "align": "start",
+    "lh": 11.05,
+    "base": 8.5,
+    "runs": [
+     {
+      "text": "Фото: Jan S0L0 · Wikimedia Commons · CC BY-SA 2.0",
+      "font": "Inter",
+      "size": 8.5,
+      "weight": 400,
+      "color": "rgba(245, 241, 232, 0.55)",
+      "spacing": 0.68,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "credit"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 1150,
+     "y": 379.640625,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s06_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s07": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_packaging/box_kraft.jpg",
+    "rect": {
+     "x": 81.015625,
+     "y": 124,
+     "w": 581.453125,
+     "h": 439.984375
+    },
+    "nat": [
+     1081,
+     818
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_packaging/bag_white.jpg",
+    "rect": {
+     "x": 717.5,
+     "y": 154.296875,
+     "w": 490.5,
+     "h": 379.390625
+    },
+    "nat": [
+     1064,
+     823
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 70,
+     "y": 30,
+     "w": 284.796875,
+     "h": 34
+    },
+    "align": "start",
+    "lh": 33.6,
+    "base": 28,
+    "runs": [
+     {
+      "text": "Как мы отдаём подарок",
+      "font": "Cormorant Garamond",
+      "size": 28,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 1051.25,
+     "y": 45,
+     "w": 172.75,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Упаковка Stargift",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 0,
+     "y": 638,
+     "w": 926.5,
+     "h": 82
+    },
+    "align": "start",
+    "lh": 24,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Каждый предмет уходит в фирменной упаковке дома:\n  крафт-бумага с автографами великих, лента Stargift и плотный подарочный пакет.\n  Подарок можно вручать сразу — прямо из рук в руки.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s08": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 64,
+     "y": 42,
+     "w": 205,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Подборка целиком",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 62,
+     "w": 211.078125,
+     "h": 54
+    },
+    "align": "start",
+    "lh": 44,
+    "base": 44,
+    "runs": [
+     {
+      "text": "4 предмета",
+      "font": "Cormorant Garamond",
+      "size": 44,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 147,
+     "w": 737.046875,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 20.25,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Криштиану Роналду — бутса Nike Mercurial CR7 с автографом, подпись при представителе Beckett",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1134.015625,
+     "y": 143,
+     "w": 95.984375,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 25.2,
+    "base": 21,
+    "runs": [
+     {
+      "text": "590 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 314,
+     "w": 534.921875,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 20.25,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Криштиану Роналду — бутса Nike Mercurial Dream Speed с автографом",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1135.34375,
+     "y": 310,
+     "w": 94.65625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 25.2,
+    "base": 21,
+    "runs": [
+     {
+      "text": "520 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 481,
+     "w": 563.84375,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 20.25,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Криштиану Роналду — бутса Nike Mercurial с автографом (Лиссабон, 2018)",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1135.34375,
+     "y": 477,
+     "w": 94.65625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 25.2,
+    "base": 21,
+    "runs": [
+     {
+      "text": "520 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 648,
+     "w": 521.921875,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 20.25,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Криштиану Роналду — бутса Nike Mercurial Victory CR7 с автографом",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1135.34375,
+     "y": 644,
+     "w": 94.65625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 25.2,
+    "base": 21,
+    "runs": [
+     {
+      "text": "520 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 178,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 345,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 512,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 679,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   }
+  ]
+ },
+ "s09": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img/stargift_logo.png",
+    "rect": {
+     "x": 72,
+     "y": 214.5625,
+     "w": 192.171875,
+     "h": 146
+    },
+    "nat": [
+     1440,
+     1094
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "brightness(0) invert(1)"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 72,
+     "y": 398.5625,
+     "w": 658.25,
+     "h": 104.875
+    },
+    "align": "start",
+    "lh": 52.44,
+    "base": 46,
+    "runs": [
+     {
+      "text": "Криштиану Роналду. Четыре бутсы — одна карьера.",
+      "font": "Cormorant Garamond",
+      "size": 46,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 70,
+     "y": 667,
+     "w": 118.375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 19.2,
+    "base": 16,
+    "runs": [
+     {
+      "text": "stargift.ru",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 0,
+     "y": 642,
+     "w": 1280,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.3)"
+   }
+  ]
+ }
+}
