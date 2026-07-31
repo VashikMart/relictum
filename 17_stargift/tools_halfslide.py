@@ -90,18 +90,24 @@ def extend_edges(canvas, at, size):
         canvas.paste(canvas.crop((0, oy + h - 1, W, oy + h)).resize((W, b)), (0, oy + h))
 
 
-def main(paths):
-    os.makedirs(OUT, exist_ok=True)
+def main(paths, out=None):
+    out = out or OUT
+    os.makedirs(out, exist_ok=True)
     for p in paths:
         src = p if os.path.isabs(p) else os.path.join(R, p)
-        dst = os.path.join(OUT, os.path.basename(src))
+        dst = os.path.join(out, os.path.basename(src))
         size = halfslide(src, dst)
         print(f"{os.path.basename(src)}: {size[0]}×{size[1]} → 1280×1440")
 
 
 if __name__ == "__main__":
     args = sys.argv[1:]
+    outdir = None
+    if args and args[0].startswith("--out="):
+        outdir = args.pop(0).split("=", 1)[1]
+        if not os.path.isabs(outdir):
+            outdir = os.path.join(R, outdir)
     if not args:
         g = os.path.join(R, "img_framing", "generated")
         args = [os.path.join(g, f) for f in sorted(os.listdir(g)) if f.endswith(".jpg")]
-    main(args)
+    main(args, outdir)

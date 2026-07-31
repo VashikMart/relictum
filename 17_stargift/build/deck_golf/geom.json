@@ -1,0 +1,2965 @@
+{
+ "s01": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img/stargift_logo.png",
+    "rect": {
+     "x": 52,
+     "y": 58,
+     "w": 186.90625,
+     "h": 142
+    },
+    "nat": [
+     1440,
+     1094
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "brightness(0) invert(1)"
+   },
+   {
+    "src": "img_golf/framed_flag22.jpg",
+    "rect": {
+     "x": 627.4375,
+     "y": 0,
+     "w": 652.5625,
+     "h": 720
+    },
+    "nat": [
+     2400,
+     1792
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 50,
+     "y": 290.09375,
+     "w": 278.609375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Частное собрание · Гольф",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 52,
+     "y": 325.09375,
+     "w": 523.4375,
+     "h": 133.09375
+    },
+    "align": "start",
+    "lh": 66.56,
+    "base": 64,
+    "runs": [
+     {
+      "text": "Клюшки легенд",
+      "font": "Cormorant Garamond",
+      "size": 64,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "и флаги Мастерса",
+      "font": "Cormorant Garamond",
+      "size": 64,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 52,
+     "y": 480.1875,
+     "w": 434.84375,
+     "h": 78.703125
+    },
+    "align": "start",
+    "lh": 26.24,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Шесть предметов: три клюшки, которыми играли\n      Бобби Джонс, Генри Пикард и Арнольд Палмер, и три флага Огасты\n      с автографами чемпионов турнира.",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(184, 178, 166)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 50,
+     "y": 648.984375,
+     "w": 233.5625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "6 предметов · июль 2026",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   }
+  ],
+  "decor": [],
+  "plates": [
+   {
+    "file": "s01_1_plate.png",
+    "rect": {
+     "x": 627.4375,
+     "y": 0,
+     "w": 652.5625,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s02": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_golf/clean_jones_00.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     2400,
+     1792
+    ],
+    "fit": "cover",
+    "pos": "50% 45%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 1057.3125,
+     "y": 180.625,
+     "w": 162.6875,
+     "h": 14
+    },
+    "align": "right",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Клюшки легенд",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.3,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 812.5625,
+     "y": 215.625,
+     "w": 405.4375,
+     "h": 150
+    },
+    "align": "right",
+    "lh": 50,
+    "base": 50,
+    "runs": [
+     {
+      "text": "Инструмент, которым",
+      "font": "Cormorant Garamond",
+      "size": 50,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "выигрывали",
+      "font": "Cormorant Garamond",
+      "size": 50,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-huge"
+   },
+   {
+    "rect": {
+     "x": 773.28125,
+     "y": 418.625,
+     "w": 444.71875,
+     "h": 118.75
+    },
+    "align": "right",
+    "lh": 29.7,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Клюшка отличается от любого другого экспоната одним: ею работали. Следы на подошве и потёртая рукоять — это отпечаток самой игры, а не хранения.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-sub"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 1148,
+     "y": 391.625,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s02_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s03": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_golf/halfslide/clean_jones_00.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 664,
+     "y": 204.828125,
+     "w": 172.765625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Клюшки · 1 из 6",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 666,
+     "y": 231.828125,
+     "w": 558,
+     "h": 64.375
+    },
+    "align": "start",
+    "lh": 32.2,
+    "base": 28,
+    "runs": [
+     {
+      "text": "Бобби Джонс — драйвер Jack White из его личных клюшек и подписанная фотография",
+      "font": "Cormorant Garamond",
+      "size": 28,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 666,
+     "y": 310.203125,
+     "w": 558,
+     "h": 122.96875
+    },
+    "align": "start",
+    "lh": 24.6,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Драйвер работы Джека Уайта из Гуллана — мастера, выигравшего Открытый чемпионат Британии 1904 года. Джонс перепробовал шестнадцать драйверов этой мастерской, прежде чем выбрать один для сезона 1930 года, когда взял все четыре главных турнира подряд. Головка из хурмы, латунная лента с клеймом мастера, древко из гикори.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 664,
+     "y": 451.171875,
+     "w": 146.734375,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "1 050 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 664,
+     "y": 499.171875,
+     "w": 368.578125,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 15,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Драйвер · хурма и гикори · Jack White, Gullane",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.8,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s04": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_golf/src/jones_06.jpg",
+    "rect": {
+     "x": 180.25,
+     "y": 114.90625,
+     "w": 322.5,
+     "h": 430
+    },
+    "nat": [
+     1200,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_golf/src/jones_10.jpg",
+    "rect": {
+     "x": 723.5,
+     "y": 114.90625,
+     "w": 430,
+     "h": 430
+    },
+    "nat": [
+     720,
+     720
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 58,
+     "y": 30,
+     "w": 289.65625,
+     "h": 31
+    },
+    "align": "start",
+    "lh": 31.2,
+    "base": 26,
+    "runs": [
+     {
+      "text": "Бобби Джонс · провенанс",
+      "font": "Cormorant Garamond",
+      "size": 26,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "gal-name"
+   },
+   {
+    "rect": {
+     "x": 1063.234375,
+     "y": 43,
+     "w": 172.765625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Клюшки · 1 из 6",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 114.328125,
+     "y": 554.90625,
+     "w": 454.34375,
+     "h": 12
+    },
+    "align": "center",
+    "lh": 15,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Справочник клюшек Джонса · глава «The Jack White Driver»",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.6,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "duo-cap"
+   },
+   {
+    "rect": {
+     "x": 728.46875,
+     "y": 554.90625,
+     "w": 420.046875,
+     "h": 12
+    },
+    "align": "center",
+    "lh": 15,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Письмо Джонса, 25 января 1934 года, подписано «Bob»",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.6,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "duo-cap"
+   },
+   {
+    "rect": {
+     "x": 0,
+     "y": 604.828125,
+     "w": 899.328125,
+     "h": 115.171875
+    },
+    "align": "start",
+    "lh": 22.4,
+    "base": 14,
+    "runs": [
+     {
+      "text": "К клюшке приложены страницы каталога клюшек Джонса с отдельной главой об этой модели и машинописное письмо 1934 года на его бланке — Джонс отвечает Фрэнку Сэмпсону о материале для мартовского номера The American Golfer и подписывает его коротким «Bob».",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "gal-foot"
+   }
+  ],
+  "decor": []
+ },
+ "s05": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_golf/halfslide/framed_jones.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 664,
+     "y": 204.828125,
+     "w": 172.765625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Клюшки · 1 из 6",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 666,
+     "y": 231.828125,
+     "w": 558,
+     "h": 64.375
+    },
+    "align": "start",
+    "lh": 32.2,
+    "base": 28,
+    "runs": [
+     {
+      "text": "Бобби Джонс — драйвер Jack White из его личных клюшек и подписанная фотография",
+      "font": "Cormorant Garamond",
+      "size": 28,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 666,
+     "y": 310.203125,
+     "w": 558,
+     "h": 122.96875
+    },
+    "align": "start",
+    "lh": 24.6,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Оформление дома: глубокий короб с зелёным замшевым полем, клюшка на кожаных держателях по диагонали, рядом — та самая подписанная фотография. Латунная табличка с именем. Формат рассчитан на стену кабинета: предмет читается с трёх метров, фотография объясняет его вблизи.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 664,
+     "y": 451.171875,
+     "w": 146.734375,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "1 050 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 664,
+     "y": 499.171875,
+     "w": 367.609375,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 15,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Оформление · короб 120×60 см · зелёная замша",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.8,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s06": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_golf/framed_flag22.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     2400,
+     1792
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 1036.5,
+     "y": 205.625,
+     "w": 183.5,
+     "h": 14
+    },
+    "align": "right",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Флаги чемпионов",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.3,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 829.34375,
+     "y": 240.625,
+     "w": 388.65625,
+     "h": 100
+    },
+    "align": "right",
+    "lh": 50,
+    "base": 50,
+    "runs": [
+     {
+      "text": "Огаста, второе",
+      "font": "Cormorant Garamond",
+      "size": 50,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "воскресенье апреля",
+      "font": "Cormorant Garamond",
+      "size": 50,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-huge"
+   },
+   {
+    "rect": {
+     "x": 773.28125,
+     "y": 393.625,
+     "w": 444.71875,
+     "h": 118.75
+    },
+    "align": "right",
+    "lh": 29.7,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Флаг с лунки Огасты — единственный предмет Мастерса, который турнир выпускает официально. Подписи собираются годами: чемпионы приезжают на ужин победителей каждую весну.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-sub"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 1148,
+     "y": 366.625,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s06_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s07": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_golf/halfslide/flag22_00.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 664,
+     "y": 217.125,
+     "w": 157.3125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Флаги · 2 из 6",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 666,
+     "y": 244.125,
+     "w": 558,
+     "h": 64.375
+    },
+    "align": "start",
+    "lh": 32.2,
+    "base": 28,
+    "runs": [
+     {
+      "text": "Флаг Мастерса 2022 года с автографами пятнадцати чемпионов турнира",
+      "font": "Cormorant Garamond",
+      "size": 28,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 666,
+     "y": 322.5,
+     "w": 558,
+     "h": 98.375
+    },
+    "align": "start",
+    "lh": 24.6,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Пятнадцать чемпионов Мастерса на одном полотне — среди них Джек Никлаус, шестикратный победитель турнира, и Фил Микельсон. Собрать столько подписей можно только на ужине победителей: посторонних там не бывает.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 664,
+     "y": 438.875,
+     "w": 131.4375,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 664,
+     "y": 486.875,
+     "w": 273.046875,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 15,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Флаг лунки · 51×38 см · сезон 2022",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.8,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s08": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_golf/halfslide/framed_flag22.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 664,
+     "y": 229.421875,
+     "w": 157.3125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Флаги · 2 из 6",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 666,
+     "y": 256.421875,
+     "w": 558,
+     "h": 64.375
+    },
+    "align": "start",
+    "lh": 32.2,
+    "base": 28,
+    "runs": [
+     {
+      "text": "Флаг Мастерса 2022 года с автографами пятнадцати чемпионов турнира",
+      "font": "Cormorant Garamond",
+      "size": 28,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 666,
+     "y": 334.796875,
+     "w": 558,
+     "h": 73.78125
+    },
+    "align": "start",
+    "lh": 24.6,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Оформление дома: тёмная рама, зелёное замшевое паспарту цвета пиджака победителя, тонкая золотая линия и латунная табличка. Жёлтый флаг на зелёном — сочетание, которое узнают без единой подписи.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 664,
+     "y": 426.578125,
+     "w": 131.4375,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 664,
+     "y": 474.578125,
+     "w": 352.65625,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 15,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Оформление · рама 70×55 см · зелёная замша",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.8,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s09": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_golf/halfslide/flag16a_00.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 664,
+     "y": 217.125,
+     "w": 157.421875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Флаги · 3 из 6",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 666,
+     "y": 244.125,
+     "w": 558,
+     "h": 64.375
+    },
+    "align": "start",
+    "lh": 32.2,
+    "base": 28,
+    "runs": [
+     {
+      "text": "Флаг Мастерса 2016 года с автографами тринадцати чемпионов турнира",
+      "font": "Cormorant Garamond",
+      "size": 28,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 666,
+     "y": 322.5,
+     "w": 558,
+     "h": 98.375
+    },
+    "align": "start",
+    "lh": 24.6,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Тринадцать чемпионов, сезон 2016 года. Тот же ужин победителей, другой год и другой состав подписей — среди них Джек Никлаус и Том Уотсон, двукратный чемпион Мастерса и пятикратный победитель Открытого чемпионата Британии.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 664,
+     "y": 438.875,
+     "w": 131.4375,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 664,
+     "y": 486.875,
+     "w": 271.109375,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 15,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Флаг лунки · 51×38 см · сезон 2016",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.8,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s10": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_golf/halfslide/flag16b_00.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 664,
+     "y": 217.125,
+     "w": 157.75,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Флаги · 4 из 6",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 666,
+     "y": 244.125,
+     "w": 558,
+     "h": 64.375
+    },
+    "align": "start",
+    "lh": 32.2,
+    "base": 28,
+    "runs": [
+     {
+      "text": "Флаг Мастерса 2016 года с автографами двенадцати чемпионов турнира",
+      "font": "Cormorant Garamond",
+      "size": 28,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 666,
+     "y": 322.5,
+     "w": 558,
+     "h": 98.375
+    },
+    "align": "start",
+    "lh": 24.6,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Двенадцать чемпионов, тот же сезон 2016 года. Два флага одного года никогда не совпадают по составу: каждый собирался отдельно и в своём порядке. Пара из двух флагов 2016-го — редкий случай, когда можно показать это рядом.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 664,
+     "y": 438.875,
+     "w": 131.4375,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 664,
+     "y": 486.875,
+     "w": 271.109375,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 15,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Флаг лунки · 51×38 см · сезон 2016",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.8,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s11": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_golf/src/flag16a_00.jpg",
+    "rect": {
+     "x": 62,
+     "y": 143.6875,
+     "w": 559,
+     "h": 372.421875
+    },
+    "nat": [
+     1600,
+     1066
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_golf/src/flag16b_00.jpg",
+    "rect": {
+     "x": 659,
+     "y": 145.09375,
+     "w": 559,
+     "h": 369.625
+    },
+    "nat": [
+     1600,
+     1058
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 58,
+     "y": 30,
+     "w": 380.96875,
+     "h": 31
+    },
+    "align": "start",
+    "lh": 31.2,
+    "base": 26,
+    "runs": [
+     {
+      "text": "Флаги Мастерса 2016 · два полотна",
+      "font": "Cormorant Garamond",
+      "size": 26,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "gal-name"
+   },
+   {
+    "rect": {
+     "x": 1041.328125,
+     "y": 43,
+     "w": 194.671875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Флаги · 3 и 4 из 6",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 247.390625,
+     "y": 554.90625,
+     "w": 188.203125,
+     "h": 12
+    },
+    "align": "center",
+    "lh": 15,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Тринадцать чемпионов",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.6,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "duo-cap"
+   },
+   {
+    "rect": {
+     "x": 844.203125,
+     "y": 554.90625,
+     "w": 188.578125,
+     "h": 12
+    },
+    "align": "center",
+    "lh": 15,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Двенадцать чемпионов",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.6,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "duo-cap"
+   },
+   {
+    "rect": {
+     "x": 0,
+     "y": 604.828125,
+     "w": 899.328125,
+     "h": 115.171875
+    },
+    "align": "start",
+    "lh": 22.4,
+    "base": 14,
+    "runs": [
+     {
+      "text": "Оба флага выпущены к одному турниру, но собирались независимо: разное число подписей, разные автографы, разный порядок. Рядом это видно сразу — и именно поэтому пара работает сильнее, чем два одинаковых предмета.",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "gal-foot"
+   }
+  ],
+  "decor": []
+ },
+ "s12": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_golf/halfslide/clean_picard_02.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 664,
+     "y": 204.828125,
+     "w": 174.84375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Клюшки · 5 из 6",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 666,
+     "y": 231.828125,
+     "w": 558,
+     "h": 64.375
+    },
+    "align": "start",
+    "lh": 32.2,
+    "base": 28,
+    "runs": [
+     {
+      "text": "Генри Пикард — комплект персональных айронов и подписанная фотография",
+      "font": "Cormorant Garamond",
+      "size": 28,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 666,
+     "y": 310.203125,
+     "w": 558,
+     "h": 122.96875
+    },
+    "align": "start",
+    "lh": 24.6,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Комплект персональных айронов Генри Пикарда — чемпиона Мастерса 1938 года и Чемпионата PGA 1939-го. Пикард известен не только титулами: именно он поставил свинг Бену Хогану и оплатил ему выход на тур, когда тот был на грани ухода из гольфа. Древки гикори, кованые головки, следы игры на подошвах. В кадре лота — портрет Пикарда и мяч с его росчерком.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 664,
+     "y": 451.171875,
+     "w": 132.15625,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "800 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 664,
+     "y": 499.171875,
+     "w": 349.640625,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 15,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Комплект айронов · гикори и кованая сталь",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.8,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s13": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_golf/src/picard_00.jpg",
+    "rect": {
+     "x": 62,
+     "y": 120.28125,
+     "w": 559,
+     "h": 419.25
+    },
+    "nat": [
+     1600,
+     1200
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_golf/src/picard_03.jpg",
+    "rect": {
+     "x": 659,
+     "y": 120.28125,
+     "w": 559,
+     "h": 419.25
+    },
+    "nat": [
+     1600,
+     1200
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 58,
+     "y": 30,
+     "w": 281.203125,
+     "h": 31
+    },
+    "align": "start",
+    "lh": 31.2,
+    "base": 26,
+    "runs": [
+     {
+      "text": "Генри Пикард · комплект",
+      "font": "Cormorant Garamond",
+      "size": 26,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "gal-name"
+   },
+   {
+    "rect": {
+     "x": 1061.15625,
+     "y": 43,
+     "w": 174.84375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Клюшки · 5 из 6",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 205.59375,
+     "y": 554.90625,
+     "w": 271.8125,
+     "h": 12
+    },
+    "align": "center",
+    "lh": 15,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Подписанная фотография Пикарда",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.6,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "duo-cap"
+   },
+   {
+    "rect": {
+     "x": 862.984375,
+     "y": 554.90625,
+     "w": 151.015625,
+     "h": 12
+    },
+    "align": "center",
+    "lh": 15,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Древки комплекта",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.6,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "duo-cap"
+   },
+   {
+    "rect": {
+     "x": 0,
+     "y": 604.828125,
+     "w": 899.328125,
+     "h": 115.171875
+    },
+    "align": "start",
+    "lh": 22.4,
+    "base": 14,
+    "runs": [
+     {
+      "text": "К комплекту приложена подписанная фотография Пикарда — она и объясняет предмет: без портрета набор старых айронов остаётся набором старых айронов. Дом ставит их в один глубокий короб, фотографию — в отдельное окно рядом.",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "gal-foot"
+   }
+  ],
+  "decor": []
+ },
+ "s14": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_golf/halfslide/clean_palmer_02.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 664,
+     "y": 217.125,
+     "w": 175.140625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Клюшки · 6 из 6",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 666,
+     "y": 244.125,
+     "w": 558,
+     "h": 64.375
+    },
+    "align": "start",
+    "lh": 32.2,
+    "base": 28,
+    "runs": [
+     {
+      "text": "Арнольд Палмер — айрон The Standard forged 2 с автографом",
+      "font": "Cormorant Garamond",
+      "size": 28,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 666,
+     "y": 322.5,
+     "w": 558,
+     "h": 98.375
+    },
+    "align": "start",
+    "lh": 24.6,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Айрон The Standard forged 2 с автографом Арнольда Палмера — человека, который сделал гольф телевизионным видом спорта. Подпись поставлена прямо по клюшке, поперёк бороздок: крупная, уверенная, ровно та, что знают по его автограф-сессиям.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 664,
+     "y": 438.875,
+     "w": 131.078125,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "400 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 664,
+     "y": 486.875,
+     "w": 343.4375,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 15,
+    "base": 10,
+    "runs": [
+     {
+      "text": "Айрон · кованая сталь · автограф маркером",
+      "font": "Inter",
+      "size": 10,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 1.8,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s15": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_golf/src/palmer_00.jpg",
+    "rect": {
+     "x": 173,
+     "y": 81,
+     "w": 150,
+     "h": 200
+    },
+    "nat": [
+     1200,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_golf/src/palmer_03.jpg",
+    "rect": {
+     "x": 506.671875,
+     "y": 81,
+     "w": 266.65625,
+     "h": 199.984375
+    },
+    "nat": [
+     1600,
+     1200
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_golf/src/palmer_05.jpg",
+    "rect": {
+     "x": 957,
+     "y": 81,
+     "w": 150,
+     "h": 200
+    },
+    "nat": [
+     1200,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_golf/src/palmer_09.jpg",
+    "rect": {
+     "x": 173,
+     "y": 350.90625,
+     "w": 150,
+     "h": 200
+    },
+    "nat": [
+     1200,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_golf/src/palmer_10.jpg",
+    "rect": {
+     "x": 565,
+     "y": 350.90625,
+     "w": 150,
+     "h": 200
+    },
+    "nat": [
+     1200,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_golf/src/palmer_06.jpg",
+    "rect": {
+     "x": 957,
+     "y": 350.90625,
+     "w": 150,
+     "h": 200
+    },
+    "nat": [
+     1200,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 58,
+     "y": 30,
+     "w": 302.1875,
+     "h": 31
+    },
+    "align": "start",
+    "lh": 31.2,
+    "base": 26,
+    "runs": [
+     {
+      "text": "Арнольд Палмер · ракурсы",
+      "font": "Cormorant Garamond",
+      "size": 26,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "gal-name"
+   },
+   {
+    "rect": {
+     "x": 1060.859375,
+     "y": 43,
+     "w": 175.140625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Клюшки · 6 из 6",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 0,
+     "y": 604.828125,
+     "w": 899.328125,
+     "h": 115.171875
+    },
+    "align": "start",
+    "lh": 22.4,
+    "base": 14,
+    "runs": [
+     {
+      "text": "Клюшка снята со всех сторон: подошва, обух с маркировкой модели, шафт и рукоять. Это самый доступный предмет подборки и самый понятный в подарок — узнаваемое имя, компактный формат, живая подпись на металле.",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "gal-foot"
+   }
+  ],
+  "decor": []
+ },
+ "s16": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_golf/framed_jones.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 704,
+     "h": 720
+    },
+    "nat": [
+     2400,
+     1792
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 742,
+     "y": 177.390625,
+     "w": 138.71875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Оформление",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 742,
+     "y": 208.390625,
+     "w": 377.609375,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 43.32,
+    "base": 38,
+    "runs": [
+     {
+      "text": "Зелёная замша и латунь",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 744,
+     "y": 302.703125,
+     "w": 352.0625,
+     "h": 176.3125
+    },
+    "align": "start",
+    "lh": 25.2,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Для гольфа дом берёт зелёное замшевое поле —\n    цвет Огасты и пиджака победителя. Клюшка ложится в глубокий короб на кожаных держателях,\n    флаг растягивается под стеклом на паспарту. К предмету всегда добавляется второй элемент:\n    фотография героя или документ, чтобы экспонат читался без подписи.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(184, 178, 166)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 744,
+     "y": 499.015625,
+     "w": 305.125,
+     "h": 41.59375
+    },
+    "align": "start",
+    "lh": 20.8,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Размеры и оттенок замши согласовываем\n    под конкретную стену.",
+      "font": "Inter",
+      "size": 13,
+      "weight": 300,
+      "color": "rgb(142, 136, 124)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 744,
+     "y": 277.703125,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ]
+ },
+ "s17": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_packaging/box_kraft.jpg",
+    "rect": {
+     "x": 71.671875,
+     "y": 138.3125,
+     "w": 568.25,
+     "h": 429.984375
+    },
+    "nat": [
+     1081,
+     818
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_packaging/bag_white.jpg",
+    "rect": {
+     "x": 689.59375,
+     "y": 150.5,
+     "w": 524.390625,
+     "h": 405.609375
+    },
+    "nat": [
+     1064,
+     823
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 64,
+     "y": 30,
+     "w": 275.28125,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "Как мы отдаём подарок",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 1057.25,
+     "y": 44,
+     "w": 172.75,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Упаковка Stargift",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.2,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 0,
+     "y": 625.625,
+     "w": 931.453125,
+     "h": 94.375
+    },
+    "align": "start",
+    "lh": 23.2,
+    "base": 14.5,
+    "runs": [
+     {
+      "text": "Каждый предмет уходит в фирменной упаковке дома:\n  крафт-бумага с автографами великих, лента Stargift и плотный подарочный пакет. Оформленную работу\n  привозим и вешаем сами.",
+      "font": "Inter",
+      "size": 14.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s18": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 62,
+     "y": 40,
+     "w": 205,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Подборка целиком",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.96,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 60,
+     "w": 223.5625,
+     "h": 51
+    },
+    "align": "start",
+    "lh": 42,
+    "base": 42,
+    "runs": [
+     {
+      "text": "6 предметов",
+      "font": "Cormorant Garamond",
+      "size": 42,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 143,
+     "w": 630.109375,
+     "h": 17
+    },
+    "align": "start",
+    "lh": 20.3,
+    "base": 14.5,
+    "runs": [
+     {
+      "text": "Бобби Джонс — драйвер Jack White из его личных клюшек и подписанная фотография",
+      "font": "Inter",
+      "size": 14.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1123.875,
+     "y": 138,
+     "w": 108.125,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 25.2,
+    "base": 21,
+    "runs": [
+     {
+      "text": "1 050 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 244.390625,
+     "w": 535.1875,
+     "h": 17
+    },
+    "align": "start",
+    "lh": 20.3,
+    "base": 14.5,
+    "runs": [
+     {
+      "text": "Флаг Мастерса 2022 года с автографами пятнадцати чемпионов турнира",
+      "font": "Inter",
+      "size": 14.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1134.59375,
+     "y": 239.390625,
+     "w": 97.40625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 25.2,
+    "base": 21,
+    "runs": [
+     {
+      "text": "900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 345.78125,
+     "w": 532.671875,
+     "h": 17
+    },
+    "align": "start",
+    "lh": 20.3,
+    "base": 14.5,
+    "runs": [
+     {
+      "text": "Флаг Мастерса 2016 года с автографами тринадцати чемпионов турнира",
+      "font": "Inter",
+      "size": 14.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1134.59375,
+     "y": 340.78125,
+     "w": 97.40625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 25.2,
+    "base": 21,
+    "runs": [
+     {
+      "text": "900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 447.171875,
+     "w": 534.09375,
+     "h": 17
+    },
+    "align": "start",
+    "lh": 20.3,
+    "base": 14.5,
+    "runs": [
+     {
+      "text": "Флаг Мастерса 2016 года с автографами двенадцати чемпионов турнира",
+      "font": "Inter",
+      "size": 14.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1134.59375,
+     "y": 442.171875,
+     "w": 97.40625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 25.2,
+    "base": 21,
+    "runs": [
+     {
+      "text": "900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 548.5625,
+     "w": 566.9375,
+     "h": 17
+    },
+    "align": "start",
+    "lh": 20.3,
+    "base": 14.5,
+    "runs": [
+     {
+      "text": "Генри Пикард — комплект персональных айронов и подписанная фотография",
+      "font": "Inter",
+      "size": 14.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1134.09375,
+     "y": 543.5625,
+     "w": 97.90625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 25.2,
+    "base": 21,
+    "runs": [
+     {
+      "text": "800 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 649.953125,
+     "w": 458.046875,
+     "h": 17
+    },
+    "align": "start",
+    "lh": 20.3,
+    "base": 14.5,
+    "runs": [
+     {
+      "text": "Арнольд Палмер — айрон The Standard forged 2 с автографом",
+      "font": "Inter",
+      "size": 14.5,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1134.84375,
+     "y": 644.953125,
+     "w": 97.15625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 25.2,
+    "base": 21,
+    "runs": [
+     {
+      "text": "400 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 21,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 64,
+     "y": 174,
+     "w": 1152,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 64,
+     "y": 275.390625,
+     "w": 1152,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 64,
+     "y": 376.78125,
+     "w": 1152,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 64,
+     "y": 478.171875,
+     "w": 1152,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 64,
+     "y": 579.5625,
+     "w": 1152,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 64,
+     "y": 680.953125,
+     "w": 1152,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   }
+  ]
+ },
+ "s19": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img/stargift_logo.png",
+    "rect": {
+     "x": 66,
+     "y": 221.84375,
+     "w": 184.265625,
+     "h": 140
+    },
+    "nat": [
+     1440,
+     1094
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "brightness(0) invert(1)"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 66,
+     "y": 397.84375,
+     "w": 629.625,
+     "h": 100.3125
+    },
+    "align": "start",
+    "lh": 50.16,
+    "base": 44,
+    "runs": [
+     {
+      "text": "Гольф. Три клюшки, три флага, сто лет игры.",
+      "font": "Cormorant Garamond",
+      "size": 44,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 669,
+     "w": 118.375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 19.2,
+    "base": 16,
+    "runs": [
+     {
+      "text": "stargift.ru",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 0,
+     "y": 646,
+     "w": 1280,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.3)"
+   }
+  ]
+ }
+}
