@@ -32,12 +32,26 @@ def bg_color(im):
 
 
 def content_bbox(im, bg, tol=12):
-    """Границы предмета: всё, что заметно отличается от фона."""
+    """Границы предмета: всё, что заметно отличается от фона.
+
+    У студийных генераций фон не плоский — по нему идёт градиент и виньетка,
+    и на низком пороге весь кадр засчитывается за предмет. Поэтому порог
+    поднимаем, пока рамка не перестанет занимать почти весь кадр: у настоящего
+    предмета контраст с фоном заведомо выше этих значений.
+    """
     from PIL import ImageChops
     ref = Image.new("RGB", im.size, bg)
     diff = ImageChops.difference(im, ref).convert("L")
-    mask = diff.point(lambda v: 255 if v > tol else 0)
-    return mask.getbbox() or (0, 0, *im.size)
+    area = im.width * im.height
+    box = (0, 0, *im.size)
+    for t in (tol, 24, 36, 48, 60):
+        b = diff.point(lambda v, t=t: 255 if v > t else 0).getbbox()
+        if not b:
+            break
+        box = b
+        if (b[2] - b[0]) * (b[3] - b[1]) <= area * 0.88:
+            break
+    return box
 
 
 def halfslide(src, dst):
