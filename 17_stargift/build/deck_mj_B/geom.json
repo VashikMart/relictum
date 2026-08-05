@@ -1,0 +1,5073 @@
+{
+ "s01": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img/stargift_logo.png",
+    "rect": {
+     "x": 52,
+     "y": 56,
+     "w": 184.265625,
+     "h": 140
+    },
+    "nat": [
+     1440,
+     1094
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "brightness(0) invert(1)"
+   },
+   {
+    "src": "img_mj/hist/mj_1984.jpg",
+    "rect": {
+     "x": 633.65625,
+     "y": 0,
+     "w": 646.34375,
+     "h": 720
+    },
+    "nat": [
+     1206,
+     1359
+    ],
+    "fit": "cover",
+    "pos": "50% 25%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 50,
+     "y": 272.5625,
+     "w": 342.796875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Частное собрание · Музыка",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 52,
+     "y": 309.5625,
+     "w": 529.65625,
+     "h": 135.9375
+    },
+    "align": "start",
+    "lh": 67.98,
+    "base": 66,
+    "runs": [
+     {
+      "text": "Майкл",
+      "font": "Cormorant Garamond",
+      "size": 66,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "Джексон",
+      "font": "Cormorant Garamond",
+      "size": 66,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 52,
+     "y": 467.5,
+     "w": 434.84375,
+     "h": 104.9375
+    },
+    "align": "start",
+    "lh": 26.24,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Девять подписанных пластинок — от первого сингла\n      Jackson 5 до «Bad» — и пять фотографий. Двадцать лет карьеры, собранные\n      по конвертам, которые он держал в руках.",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(184, 178, 166)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 50,
+     "y": 649,
+     "w": 297.765625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "14 предметов · август 2026",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.12,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 911.4375,
+     "y": 693.703125,
+     "w": 368.5625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 14.3,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Фото: Epic Records · Wikimedia Commons · public domain",
+      "font": "Inter",
+      "size": 11,
+      "weight": 400,
+      "color": "rgba(245, 241, 232, 0.55)",
+      "spacing": 0.88,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "credit"
+   }
+  ],
+  "decor": [],
+  "plates": [
+   {
+    "file": "s01_1_plate.png",
+    "rect": {
+     "x": 633.65625,
+     "y": 0,
+     "w": 646.34375,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s02": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_mj/hist/j5_1969.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     1112,
+     1383
+    ],
+    "fit": "cover",
+    "pos": "50% 24%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 996.046875,
+     "y": 185.625,
+     "w": 223.953125,
+     "h": 16
+    },
+    "align": "right",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "1969–1971 · Motown",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.9,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 809.671875,
+     "y": 222.625,
+     "w": 408.328125,
+     "h": 116
+    },
+    "align": "right",
+    "lh": 58,
+    "base": 58,
+    "runs": [
+     {
+      "text": "Пятеро братьев",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "из Гэри, Индиана",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-huge"
+   },
+   {
+    "rect": {
+     "x": 674.453125,
+     "y": 391.625,
+     "w": 543.546875,
+     "h": 140.75
+    },
+    "align": "right",
+    "lh": 35.2,
+    "base": 22,
+    "runs": [
+     {
+      "text": "Осенью 1969 года Motown выпустил сингл группы, которую ещё никто не знал. Через три месяца он стоял на первой строчке, а солисту было одиннадцать лет.",
+      "font": "Inter",
+      "size": 22,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-sub"
+   },
+   {
+    "rect": {
+     "x": 887.984375,
+     "y": 693.703125,
+     "w": 392.015625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 14.3,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Фото: Bernie Ilson, Inc. · Wikimedia Commons · public domain",
+      "font": "Inter",
+      "size": 11,
+      "weight": 400,
+      "color": "rgba(245, 241, 232, 0.55)",
+      "spacing": 0.88,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "credit"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 1148,
+     "y": 364.625,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s02_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s03": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/clean_iwyb.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 131.609375,
+     "w": 246.484375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Пластинки · 1 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 155.609375,
+     "w": 193.78125,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 30,
+    "base": 30,
+    "runs": [
+     {
+      "text": "1969 · Motown",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0.3,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-era serif"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 201.609375,
+     "w": 596.234375,
+     "h": 77.5
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "«Diana Ross Presents The Jackson 5» — конверт с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 292.109375,
+     "w": 596.234375,
+     "h": 204.53125
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Дебютный альбом Jackson 5. Имя Дайаны Росс на обложке было рекламным ходом лейбла: группу она не открывала, но её имя открывало радиостанции. Сингл с этой пластинки встал на первое место Billboard в январе 1970-го. Конверт в состоянии, редком для тиража 1969 года: углы целы, картон не расслоился. Росчерк идёт наискось через всю обложку — так Джексон подписывал в ранние годы, размашисто и во всю площадь.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 512.640625,
+     "w": 161.6875,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 568.640625,
+     "w": 90.203125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s04": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/clean_maybe.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 131.609375,
+     "w": 249.109375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Пластинки · 2 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 155.609375,
+     "w": 188.703125,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 30,
+    "base": 30,
+    "runs": [
+     {
+      "text": "1971 · Motown",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0.3,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-era serif"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 201.609375,
+     "w": 596.234375,
+     "h": 77.5
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "«Maybe Tomorrow» — первый тираж 1971 года с автографами братьев Джексон",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 292.109375,
+     "w": 596.234375,
+     "h": 204.53125
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Четвёртый альбом Jackson 5, вышедший на пике их первой славы. Экземпляр из первого тиража: разворотный конверт и оригинальные синие лейблы Motown на самом виниле. Автографы Jackson 5 того периода встречаются реже сольных: группа подписывала мало и почти всегда на бегу. Здесь росчерки идут по светлой части обложки и читаются все до одного.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 512.640625,
+     "w": 181.515625,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "1 850 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 568.640625,
+     "w": 49.390625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s05": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/src/maybe_01.jpg",
+    "rect": {
+     "x": 149.375,
+     "y": 89,
+     "w": 197.25,
+     "h": 200
+    },
+    "nat": [
+     1578,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_mj/src/maybe_02.jpg",
+    "rect": {
+     "x": 484.65625,
+     "y": 89,
+     "w": 310.671875,
+     "h": 199.984375
+    },
+    "nat": [
+     1600,
+     1030
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_mj/src/maybe_07.jpg",
+    "rect": {
+     "x": 927.5625,
+     "y": 89,
+     "w": 208.875,
+     "h": 199.984375
+    },
+    "nat": [
+     1600,
+     1532
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_mj/src/maybe_12.jpg",
+    "rect": {
+     "x": 146.21875,
+     "y": 347.8125,
+     "w": 203.546875,
+     "h": 199.984375
+    },
+    "nat": [
+     1600,
+     1572
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_mj/src/maybe_13.jpg",
+    "rect": {
+     "x": 540.5,
+     "y": 347.8125,
+     "w": 199,
+     "h": 200
+    },
+    "nat": [
+     1592,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_mj/src/maybe_16.jpg",
+    "rect": {
+     "x": 898.671875,
+     "y": 347.8125,
+     "w": 266.65625,
+     "h": 199.984375
+    },
+    "nat": [
+     1600,
+     1200
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 58,
+     "y": 30,
+     "w": 518.828125,
+     "h": 39
+    },
+    "align": "start",
+    "lh": 38.4,
+    "base": 32,
+    "runs": [
+     {
+      "text": "«Maybe Tomorrow» · разворот и винил",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "gal-name"
+   },
+   {
+    "rect": {
+     "x": 986.890625,
+     "y": 47,
+     "w": 249.109375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Пластинки · 2 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 0,
+     "y": 590.625,
+     "w": 1124.15625,
+     "h": 129.375
+    },
+    "align": "start",
+    "lh": 27.125,
+    "base": 17.5,
+    "runs": [
+     {
+      "text": "Разворотный конверт с росчерками, внутренний разворот с фотографиями группы, оригинальные синие лейблы Motown и сам винил. Первый пресс отличается именно лейблом: у поздних переизданий он другого цвета и с другим шрифтом.",
+      "font": "Inter",
+      "size": 17.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "gal-foot"
+   }
+  ],
+  "decor": []
+ },
+ "s06": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/clean_gottobe.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 146.21875,
+     "w": 249.25,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Пластинки · 3 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 170.21875,
+     "w": 190.8125,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 30,
+    "base": 30,
+    "runs": [
+     {
+      "text": "1972 · Motown",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0.3,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-era serif"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 216.21875,
+     "w": 596.234375,
+     "h": 77.5
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "«Got To Be There» — конверт сольного дебюта с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 306.71875,
+     "w": 596.234375,
+     "h": 175.3125
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Сольный дебют — Майклу тринадцать. Motown выпустил альбом, не выводя его из состава Jackson 5. С этой обложки начинается его отдельная биография. Конверт сольного дебюта с автографом. Точка, с которой начинается всё остальное в этой подборке: до «Got To Be There» Майкл Джексон был солистом группы, после — самостоятельным именем на обложке.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 498.03125,
+     "w": 183.65625,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "1 000 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 554.03125,
+     "w": 48.53125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s07": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/clean_farewell.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 117,
+     "w": 249.625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Пластинки · 4 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 141,
+     "w": 194.140625,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 30,
+    "base": 30,
+    "runs": [
+     {
+      "text": "1984 · Motown",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0.3,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-era serif"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 187,
+     "w": 596.234375,
+     "h": 77.5
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "«Farewell My Summer Love» — конверт с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 277.5,
+     "w": 596.234375,
+     "h": 233.75
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Записи 1973 года пролежали в архиве лейбла одиннадцать лет. В 1984-м, на волне успеха «Thriller» у другого лейбла, их достали, добавили современную аранжировку и выпустили как новый альбом — без участия артиста. Конверт с автографом. Экземпляр полный: с бонусным цветным постером, который вкладывался в первый тираж и обычно теряется первым. Обложка — ночной концертный кадр, редкий для его пластинок сюжет.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 527.25,
+     "w": 181.0625,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "1 050 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 583.25,
+     "w": 90.203125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s08": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/src/farewell_00.jpg",
+    "rect": {
+     "x": 149.875,
+     "y": 89,
+     "w": 196.25,
+     "h": 200
+    },
+    "nat": [
+     1570,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_mj/src/farewell_05.jpg",
+    "rect": {
+     "x": 570.25,
+     "y": 89,
+     "w": 139.5,
+     "h": 200
+    },
+    "nat": [
+     1116,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_mj/src/farewell_06.jpg",
+    "rect": {
+     "x": 929.953125,
+     "y": 89,
+     "w": 204.078125,
+     "h": 199.984375
+    },
+    "nat": [
+     1600,
+     1568
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_mj/src/farewell_07.jpg",
+    "rect": {
+     "x": 181.75,
+     "y": 361.375,
+     "w": 132.5,
+     "h": 200
+    },
+    "nat": [
+     1060,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_mj/src/farewell_02.jpg",
+    "rect": {
+     "x": 565,
+     "y": 361.375,
+     "w": 150,
+     "h": 200
+    },
+    "nat": [
+     1200,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_mj/src/farewell_03.jpg",
+    "rect": {
+     "x": 957,
+     "y": 361.375,
+     "w": 150,
+     "h": 200
+    },
+    "nat": [
+     1200,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 58,
+     "y": 30,
+     "w": 522.515625,
+     "h": 39
+    },
+    "align": "start",
+    "lh": 38.4,
+    "base": 32,
+    "runs": [
+     {
+      "text": "«Farewell My Summer Love» · комплект",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "gal-name"
+   },
+   {
+    "rect": {
+     "x": 986.375,
+     "y": 47,
+     "w": 249.625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Пластинки · 4 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 0,
+     "y": 617.75,
+     "w": 1124.15625,
+     "h": 102.25
+    },
+    "align": "start",
+    "lh": 27.125,
+    "base": 17.5,
+    "runs": [
+     {
+      "text": "Лицевая сторона с автографом, оборот с указанием на вложенный постер, внутренний конверт со списком композиций и сам винил. Сохранность конверта для тиража 1984 года выше средней.",
+      "font": "Inter",
+      "size": 17.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "gal-foot"
+   }
+  ],
+  "decor": []
+ },
+ "s09": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_mj/hist/mj_1984.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     1206,
+     1359
+    ],
+    "fit": "cover",
+    "pos": "50% 20%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 1034.953125,
+     "y": 185.625,
+     "w": 185.046875,
+     "h": 16
+    },
+    "align": "right",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "1979–1987 · Epic",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.9,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 873.640625,
+     "y": 222.625,
+     "w": 344.359375,
+     "h": 116
+    },
+    "align": "right",
+    "lh": 58,
+    "base": 58,
+    "runs": [
+     {
+      "text": "Куинси Джонс",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "и три альбома",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-huge"
+   },
+   {
+    "rect": {
+     "x": 674.453125,
+     "y": 391.625,
+     "w": 543.546875,
+     "h": 140.75
+    },
+    "align": "right",
+    "lh": 35.2,
+    "base": 22,
+    "runs": [
+     {
+      "text": "Уйдя с Motown, Джексон записал с продюсером Куинси Джонсом три пластинки подряд. Каждая следующая продавалась лучше предыдущей — случай, которого в поп-музыке больше не было.",
+      "font": "Inter",
+      "size": 22,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-sub"
+   },
+   {
+    "rect": {
+     "x": 911.4375,
+     "y": 693.703125,
+     "w": 368.5625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 14.3,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Фото: Epic Records · Wikimedia Commons · public domain",
+      "font": "Inter",
+      "size": 11,
+      "weight": 400,
+      "color": "rgba(245, 241, 232, 0.55)",
+      "spacing": 0.88,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "credit"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 1148,
+     "y": 364.625,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s09_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s10": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/clean_offthewall.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 150.984375,
+     "w": 248.9375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Пластинки · 5 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 174.984375,
+     "w": 144.0625,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 30,
+    "base": 30,
+    "runs": [
+     {
+      "text": "1979 · Epic",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0.3,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-era serif"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 218.984375,
+     "w": 567.40625,
+     "h": 41
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "«Off The Wall» — конверт с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 272.734375,
+     "w": 596.234375,
+     "h": 204.53125
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Первая совместная работа с Куинси Джонсом. Четыре сингла с альбома вошли в первую десятку Billboard — до этого ни один сольный исполнитель такого не добивался. Конверт с автографом — самый дорогой предмет подборки. Обложка снята в смокинге у кирпичной стены: образ, который Джексон потом повторял на сцене годами. Росчерк лежит по светлому полю и читается целиком.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 493.265625,
+     "w": 188.25,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "4 000 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 549.265625,
+     "w": 48.53125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s11": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/clean_thriller.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 131.609375,
+     "w": 249.28125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Пластинки · 6 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 155.609375,
+     "w": 143.984375,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 30,
+    "base": 30,
+    "runs": [
+     {
+      "text": "1982 · Epic",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0.3,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-era serif"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 201.609375,
+     "w": 596.234375,
+     "h": 77.5
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "«Thriller» — ранний тираж QE 38112 с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 292.109375,
+     "w": 596.234375,
+     "h": 204.53125
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Самый продаваемый альбом в истории звукозаписи. Экземпляр из раннего тиража: каталожный номер QE 38112, то есть пластинка отпечатана в первые месяцы после выхода, ещё до того, как продажи стали рекордными. Конверт «Thriller» раннего тиража с автографом. Белый костюм на чёрном фоне — обложка, которую узнают без подписи в любой стране. Автограф поставлен по светлому пиджаку и не спорит с изображением.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 512.640625,
+     "w": 185.390625,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "2 400 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 568.640625,
+     "w": 90.203125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s12": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/src/thriller_00.jpg",
+    "rect": {
+     "x": 124.25,
+     "y": 89,
+     "w": 247.5,
+     "h": 330
+    },
+    "nat": [
+     1200,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_mj/src/thriller_01.jpg",
+    "rect": {
+     "x": 516.25,
+     "y": 89,
+     "w": 247.5,
+     "h": 330
+    },
+    "nat": [
+     1200,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_mj/src/thriller_05.jpg",
+    "rect": {
+     "x": 908.25,
+     "y": 89,
+     "w": 247.5,
+     "h": 330
+    },
+    "nat": [
+     1152,
+     1536
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 58,
+     "y": 30,
+     "w": 573.984375,
+     "h": 39
+    },
+    "align": "start",
+    "lh": 38.4,
+    "base": 32,
+    "runs": [
+     {
+      "text": "«Thriller» · конверт и внутренний разворот",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "gal-name"
+   },
+   {
+    "rect": {
+     "x": 986.71875,
+     "y": 47,
+     "w": 249.28125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Пластинки · 6 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 0,
+     "y": 617.75,
+     "w": 1124.15625,
+     "h": 102.25
+    },
+    "align": "start",
+    "lh": 27.125,
+    "base": 17.5,
+    "runs": [
+     {
+      "text": "Лицевая сторона с автографом, внутренний разворот с текстами песен и сам винил. Ранний пресс узнаётся по каталожному номеру на этикетке.",
+      "font": "Inter",
+      "size": 17.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "gal-foot"
+   }
+  ],
+  "decor": []
+ },
+ "s13": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/framed_thriller_diptych.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 224.34375,
+     "w": 311.53125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Оформление · пластинка",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 250.34375,
+     "w": 603.546875,
+     "h": 41
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Раскрывающаяся рама: конверт и сам диск",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 304.09375,
+     "w": 596.234375,
+     "h": 116.875
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Две квадратные панели на латунных петлях, бордовый бархат внутри. Закрытой рама показывает конверт, открытой — конверт и винил в глубокой нише. Формат дома для пластинки, у которой хочется показать обе части.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 647.765625,
+     "y": 440.96875,
+     "w": 578.234375,
+     "h": 52.6875
+    },
+    "align": "start",
+    "lh": 26.35,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Бархат подбираем под палитру конверта: бордовый, тёмно-синий или бирюзовый.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-hist-t"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 629.765625,
+     "y": 440.96875,
+     "w": 2,
+     "h": 52.6875
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s14": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/framed_thriller_square.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 224.34375,
+     "w": 311.53125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Оформление · пластинка",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 250.34375,
+     "w": 497.8125,
+     "h": 41
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Закрытый квадрат: только конверт",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 304.09375,
+     "w": 596.234375,
+     "h": 116.875
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Тот же экземпляр в простой подаче — одна квадратная рама, бордовое бархатное паспарту, тонкая золотая линия и латунная табличка внизу. Вешается как картина и занимает вдвое меньше стены.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 647.765625,
+     "y": 440.96875,
+     "w": 578.234375,
+     "h": 52.6875
+    },
+    "align": "start",
+    "lh": 26.35,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Выбор между диптихом и квадратом — вопрос места и того, подписан ли сам винил.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-hist-t"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 629.765625,
+     "y": 440.96875,
+     "w": 2,
+     "h": 52.6875
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s15": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/clean_thrillerjp.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 97.625,
+     "w": 248.515625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Пластинки · 7 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 121.625,
+     "w": 218.15625,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 30,
+    "base": 30,
+    "runs": [
+     {
+      "text": "1982 · Epic Japan",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0.3,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-era serif"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 167.625,
+     "w": 596.234375,
+     "h": 116.25
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "«Thriller» — японское издание инструментальной версии с оби-полосой и автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 296.875,
+     "w": 596.234375,
+     "h": 233.75
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Японское издание с оби-полосой — узкой бумажной лентой на корешке, которую печатали отдельно и почти всегда выбрасывали при вскрытии. Инструментальная версия выпускалась только для японского рынка. Оби-полоса сохранена целиком, с иероглифами и ценой в иенах — по ней японский экземпляр отличают от европейского с первого взгляда. Автограф поставлен по светлому полю обложки и не перекрывает лицо.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 546.625,
+     "w": 179.25,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "1 750 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 602.625,
+     "w": 48.53125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s16": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/clean_bad.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 131.609375,
+     "w": 249.28125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Пластинки · 8 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 155.609375,
+     "w": 144.78125,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 30,
+    "base": 30,
+    "runs": [
+     {
+      "text": "1987 · Epic",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0.3,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-era serif"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 201.609375,
+     "w": 596.234375,
+     "h": 77.5
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "«Bad» — конверт с именным посвящением и автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 292.109375,
+     "w": 596.234375,
+     "h": 204.53125
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Третья и последняя пластинка, сделанная с Куинси Джонсом. Пять синглов с одного альбома поднялись на первое место Billboard — до «Bad» этого не удавалось никому. Конверт с автографом и именным посвящением — Джексон подписал его конкретному человеку, надписав имя от руки. Такие экземпляры ценятся отдельно: они доказывают, что подпись поставлена вживую, а не на стопке конвертов у стола промоутера.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 512.640625,
+     "w": 185.890625,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "3 000 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 568.640625,
+     "w": 49.390625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s17": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/clean_badpromo.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 165.59375,
+     "w": 249.28125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Пластинки · 9 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 189.59375,
+     "w": 144.78125,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 30,
+    "base": 30,
+    "runs": [
+     {
+      "text": "1987 · Epic",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0.3,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-era serif"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 233.59375,
+     "w": 520.359375,
+     "h": 41
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "«Bad» — промо-тираж с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 287.34375,
+     "w": 596.234375,
+     "h": 175.3125
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Промо-тираж печатался ограниченным числом и рассылался на радио до официального выхода. В продажу такие экземпляры не поступали, поэтому уцелевших мало. Промо-экземпляр узнаётся по обороту: вместо торгового оформления там служебная разметка для радиостанции. Автограф крупный, поставлен по белому полю рядом с логотипом.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 478.65625,
+     "w": 186.34375,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "3 800 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 534.65625,
+     "w": 48.53125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s18": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_mj/hist/mj_reagan.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     3597,
+     2424
+    ],
+    "fit": "cover",
+    "pos": "50% 40%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 1070.484375,
+     "y": 168.03125,
+     "w": 149.515625,
+     "h": 16
+    },
+    "align": "right",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Фотографии",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.9,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 957.625,
+     "y": 205.03125,
+     "w": 260.375,
+     "h": 116
+    },
+    "align": "right",
+    "lh": 58,
+    "base": 58,
+    "runs": [
+     {
+      "text": "Белый дом,",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "14 мая 1984",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-huge"
+   },
+   {
+    "rect": {
+     "x": 674.453125,
+     "y": 374.03125,
+     "w": 543.546875,
+     "h": 175.9375
+    },
+    "align": "right",
+    "lh": 35.2,
+    "base": 22,
+    "runs": [
+     {
+      "text": "Рейган вручает Джексону благодарность за то, что тот отдал «Beat It» для кампании против пьяного вождения. Год «Thriller» — и единственный визит поп-музыканта в Розовый сад в таком качестве.",
+      "font": "Inter",
+      "size": 22,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-sub"
+   },
+   {
+    "rect": {
+     "x": 779.21875,
+     "y": 693.703125,
+     "w": 500.78125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 14.3,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Фото: Ronald Reagan Presidential Library · Wikimedia Commons · public domain",
+      "font": "Inter",
+      "size": 11,
+      "weight": 400,
+      "color": "rgba(245, 241, 232, 0.55)",
+      "spacing": 0.88,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "credit"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 1148,
+     "y": 347.03125,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s18_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s19": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/clean_ph1620.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 146.21875,
+     "w": 272.296875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Фотографии · 10 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 170.21875,
+     "w": 318.078125,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 30,
+    "base": 30,
+    "runs": [
+     {
+      "text": "1983 · эпоха «Billie Jean»",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0.3,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-era serif"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 216.21875,
+     "w": 596.234375,
+     "h": 77.5
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Фотография эпохи «Billie Jean» с автографом, 41×51 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 306.71875,
+     "w": 596.234375,
+     "h": 175.3125
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Год после выхода «Thriller»: сингл «Billie Jean» держится в верхней строчке, а лунная походка на юбилейном концерте Motown только что превратила Джексона в главную фигуру десятилетия. Крупноформатный кадр эпохи «Billie Jean» с автографом. Формат 41×51 см — самый большой в подборке, рассчитанный на то, чтобы висеть отдельно, а не в ряду.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 498.03125,
+     "w": 180.375,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "1 300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 554.03125,
+     "w": 48.53125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s20": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/clean_ph75.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 160.828125,
+     "w": 269.296875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Фотографии · 11 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 184.828125,
+     "w": 185.5625,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 30,
+    "base": 30,
+    "runs": [
+     {
+      "text": "1980-е · сцена",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0.3,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-era serif"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 230.828125,
+     "w": 596.234375,
+     "h": 77.5
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Фотография в расшитом сценическом костюме с автографом, 19×28 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 321.328125,
+     "w": 596.234375,
+     "h": 146.09375
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Расшитый сценический костюм — часть образа, который Джексон выстраивал сам: военная выправка, блеск, узнаваемый силуэт с последнего ряда зала. Сценический кадр в расшитом костюме с автографом. Небольшой формат, плотная композиция: лицо, костюм и росчерк умещаются в одном кадре без пустот.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 483.421875,
+     "w": 183.1875,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "1 600 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 539.421875,
+     "w": 90.203125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s21": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/clean_ph1114c.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 146.21875,
+     "w": 271.921875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Фотографии · 12 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 170.21875,
+     "w": 94,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 30,
+    "base": 30,
+    "runs": [
+     {
+      "text": "1990-е",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0.3,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-era serif"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 216.21875,
+     "w": 596.234375,
+     "h": 77.5
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Цветная фотография с автографом, 28×36 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 306.71875,
+     "w": 596.234375,
+     "h": 175.3125
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Кадр периода, когда Джексон уже не выступал регулярно, но оставался самым узнаваемым лицом в мире. Чёрная куртка с шевронами — его поздний сценический образ. Цветной портрет в чёрной куртке с шевронами — образ конца восьмидесятых. Автограф серебряным маркером по тёмному полю, читается на просвет.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 498.03125,
+     "w": 181.515625,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "1 850 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 554.03125,
+     "w": 90.203125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s22": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/clean_ph1114hat.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 160.828125,
+     "w": 272.0625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Фотографии · 13 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 184.828125,
+     "w": 400.484375,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 30,
+    "base": 30,
+    "runs": [
+     {
+      "text": "1987–1988 · «Smooth Criminal»",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0.3,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-era serif"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 230.828125,
+     "w": 596.234375,
+     "h": 77.5
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Фотография в белой шляпе с автографом, 28×36 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 321.328125,
+     "w": 596.234375,
+     "h": 146.09375
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Белая шляпа, синий свет и наклон корпуса — самая копируемая поза в истории поп-музыки, снятая на съёмках «Moonwalker». Кадр в белой шляпе и синем сценическом свете — узнаваемая поза из «Smooth Criminal». Один из тех снимков, где герой опознаётся по силуэту, даже если закрыть лицо.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 483.421875,
+     "w": 186.3125,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "2 000 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 539.421875,
+     "w": 49.390625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s23": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/framed_ph1114hat.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 252.125,
+     "w": 323.46875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Оформление · фотография",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 278.125,
+     "w": 554.359375,
+     "h": 41
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Тёмная рама, синее замшевое паспарту",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 331.875,
+     "w": 596.234375,
+     "h": 87.65625
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Под холодный кадр берём синее паспарту и тёмную раму: рамка не спорит со сценическим светом, а золотая линия по краю окна отделяет снимок от поля. Латунная табличка с именем внизу.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 645.765625,
+     "y": 442.53125,
+     "w": 576.734375,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 26.35,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Цвет паспарту всегда берём у самой фотографии, а не по каталогу.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-hist-t"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 629.765625,
+     "y": 439.53125,
+     "w": 2,
+     "h": 26.34375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s24": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/framed_ph1620.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 238.953125,
+     "w": 323.46875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Оформление · фотография",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 264.953125,
+     "w": 481.921875,
+     "h": 41
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Кованое золото, бордовый бархат",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 318.703125,
+     "w": 596.234375,
+     "h": 87.65625
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Тёплый кадр требует тёплой рамы: кованое золото и бордовый бархат — классический регистр дома для портретов. Тот же снимок в тёмной раме выглядел бы холоднее, чем он есть.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 647.765625,
+     "y": 426.359375,
+     "w": 578.234375,
+     "h": 52.6875
+    },
+    "align": "start",
+    "lh": 26.35,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Две фотографии рядом на одной стене оформляем в одном материале рамы.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-hist-t"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 629.765625,
+     "y": 426.359375,
+     "w": 2,
+     "h": 52.6875
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s25": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/clean_cut.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 603.765625,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 146.21875,
+     "w": 272.4375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Фотографии · 14 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 170.21875,
+     "w": 140.3125,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 30,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Автограф",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0.3,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lot-era serif"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 216.21875,
+     "w": 596.234375,
+     "h": 77.5
+    },
+    "align": "start",
+    "lh": 38.76,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Автограф на отдельном листе в капсуле, 23×9 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-name"
+   },
+   {
+    "rect": {
+     "x": 629.765625,
+     "y": 306.71875,
+     "w": 596.234375,
+     "h": 175.3125
+    },
+    "align": "start",
+    "lh": 29.23,
+    "base": 18.5,
+    "runs": [
+     {
+      "text": "Отдельный лист с росчерком, запечатанный в капсулу. Самый гибкий предмет подборки: его оформляют в раму рядом с любой фотографией на выбор. Автограф на отдельном листе, запечатанный в капсулу. Самый доступный предмет подборки и самый гибкий: капсулу можно оформить в раму рядом с любой фотографией на выбор.",
+      "font": "Inter",
+      "size": 18.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-text"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 498.03125,
+     "w": 157.734375,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "750 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "solo-price"
+   },
+   {
+    "rect": {
+     "x": 627.765625,
+     "y": 554.03125,
+     "w": 90.203125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "solo-spec"
+   }
+  ],
+  "decor": []
+ },
+ "s26": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_packaging/box_kraft.jpg",
+    "rect": {
+     "x": 71.671875,
+     "y": 138.3125,
+     "w": 568.25,
+     "h": 429.984375
+    },
+    "nat": [
+     1081,
+     818
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_packaging/bag_white.jpg",
+    "rect": {
+     "x": 689.59375,
+     "y": 150.5,
+     "w": 524.390625,
+     "h": 405.609375
+    },
+    "nat": [
+     1064,
+     823
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 64,
+     "y": 30,
+     "w": 275.28125,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "Как мы отдаём подарок",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 1029.109375,
+     "y": 42,
+     "w": 200.890625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Упаковка Stargift",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.6,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 0,
+     "y": 625.625,
+     "w": 931.453125,
+     "h": 94.375
+    },
+    "align": "start",
+    "lh": 23.2,
+    "base": 14.5,
+    "runs": [
+     {
+      "text": "Каждый предмет уходит в фирменной упаковке дома:\n  крафт-бумага с автографами великих, лента Stargift и плотный подарочный пакет. Оформленную работу\n  привозим и вешаем сами.",
+      "font": "Inter",
+      "size": 14.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s27": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 60,
+     "y": 32,
+     "w": 239,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Подборка целиком",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.68,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 53,
+     "w": 216.03125,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 38,
+    "base": 38,
+    "runs": [
+     {
+      "text": "14 предметов",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 124,
+     "w": 323.234375,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.6,
+    "base": 16,
+    "runs": [
+     {
+      "text": "«Off The Wall» — конверт с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 507.46875,
+     "y": 118,
+     "w": 125.53125,
+     "h": 29
+    },
+    "align": "start",
+    "lh": 28.799999999999997,
+    "base": 24,
+    "runs": [
+     {
+      "text": "4 000 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 24,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 661,
+     "y": 124,
+     "w": 303.875,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.6,
+    "base": 16,
+    "runs": [
+     {
+      "text": "«Bad» — промо-тираж с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1109.671875,
+     "y": 118,
+     "w": 124.328125,
+     "h": 29
+    },
+    "align": "start",
+    "lh": 28.799999999999997,
+    "base": 24,
+    "runs": [
+     {
+      "text": "3 800 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 24,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 172,
+     "w": 422.953125,
+     "h": 43.1875
+    },
+    "align": "start",
+    "lh": 21.6,
+    "base": 16,
+    "runs": [
+     {
+      "text": "«Bad» — конверт с именным посвящением и автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 508.953125,
+     "y": 166,
+     "w": 124.046875,
+     "h": 29
+    },
+    "align": "start",
+    "lh": 28.799999999999997,
+    "base": 24,
+    "runs": [
+     {
+      "text": "3 000 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 24,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 661,
+     "y": 172,
+     "w": 401.578125,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.6,
+    "base": 16,
+    "runs": [
+     {
+      "text": "«Thriller» — ранний тираж QE 38112 с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1110.265625,
+     "y": 166,
+     "w": 123.734375,
+     "h": 29
+    },
+    "align": "start",
+    "lh": 28.799999999999997,
+    "base": 24,
+    "runs": [
+     {
+      "text": "2 400 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 24,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 240.1875,
+     "w": 423.40625,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.6,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Фотография в белой шляпе с автографом, 28×36 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 508.703125,
+     "y": 234.1875,
+     "w": 124.296875,
+     "h": 29
+    },
+    "align": "start",
+    "lh": 28.799999999999997,
+    "base": 24,
+    "runs": [
+     {
+      "text": "2 000 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 24,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 661,
+     "y": 240.1875,
+     "w": 370.640625,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.6,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Цветная фотография с автографом, 28×36 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1112.71875,
+     "y": 234.1875,
+     "w": 121.28125,
+     "h": 29
+    },
+    "align": "start",
+    "lh": 28.799999999999997,
+    "base": 24,
+    "runs": [
+     {
+      "text": "1 850 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 24,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 288.1875,
+     "w": 425.71875,
+     "h": 43.1875
+    },
+    "align": "start",
+    "lh": 21.6,
+    "base": 16,
+    "runs": [
+     {
+      "text": "«Maybe Tomorrow» — первый тираж 1971 года с автографами братьев Джексон",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 511.71875,
+     "y": 282.1875,
+     "w": 121.28125,
+     "h": 29
+    },
+    "align": "start",
+    "lh": 28.799999999999997,
+    "base": 24,
+    "runs": [
+     {
+      "text": "1 850 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 24,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 663,
+     "y": 288.1875,
+     "w": 427.15625,
+     "h": 43.1875
+    },
+    "align": "start",
+    "lh": 21.6,
+    "base": 16,
+    "runs": [
+     {
+      "text": "«Thriller» — японское издание инструментальной версии с оби-полосой и автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1114.15625,
+     "y": 282.1875,
+     "w": 119.84375,
+     "h": 29
+    },
+    "align": "start",
+    "lh": 28.799999999999997,
+    "base": 24,
+    "runs": [
+     {
+      "text": "1 750 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 24,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 356.375,
+     "w": 424.671875,
+     "h": 43.1875
+    },
+    "align": "start",
+    "lh": 21.6,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Фотография в расшитом сценическом костюме с автографом, 19×28 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 510.671875,
+     "y": 350.375,
+     "w": 122.328125,
+     "h": 29
+    },
+    "align": "start",
+    "lh": 28.799999999999997,
+    "base": 24,
+    "runs": [
+     {
+      "text": "1 600 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 24,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 663,
+     "y": 356.375,
+     "w": 426.4375,
+     "h": 43.1875
+    },
+    "align": "start",
+    "lh": 21.6,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Фотография эпохи «Billie Jean» с автографом, 41×51 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1113.4375,
+     "y": 350.375,
+     "w": 120.5625,
+     "h": 29
+    },
+    "align": "start",
+    "lh": 28.799999999999997,
+    "base": 24,
+    "runs": [
+     {
+      "text": "1 300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 24,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 424.5625,
+     "w": 428.984375,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.6,
+    "base": 16,
+    "runs": [
+     {
+      "text": "«Farewell My Summer Love» — конверт с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 512.015625,
+     "y": 418.5625,
+     "w": 120.984375,
+     "h": 29
+    },
+    "align": "start",
+    "lh": 28.799999999999997,
+    "base": 24,
+    "runs": [
+     {
+      "text": "1 050 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 24,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 663,
+     "y": 424.5625,
+     "w": 424.375,
+     "h": 43.1875
+    },
+    "align": "start",
+    "lh": 21.6,
+    "base": 16,
+    "runs": [
+     {
+      "text": "«Got To Be There» — конверт сольного дебюта с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1111.375,
+     "y": 418.5625,
+     "w": 122.625,
+     "h": 29
+    },
+    "align": "start",
+    "lh": 28.799999999999997,
+    "base": 24,
+    "runs": [
+     {
+      "text": "1 000 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 24,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 492.75,
+     "w": 438.25,
+     "h": 43.1875
+    },
+    "align": "start",
+    "lh": 21.6,
+    "base": 16,
+    "runs": [
+     {
+      "text": "«Diana Ross Presents The Jackson 5» — конверт с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 524.25,
+     "y": 486.75,
+     "w": 108.75,
+     "h": 29
+    },
+    "align": "start",
+    "lh": 28.799999999999997,
+    "base": 24,
+    "runs": [
+     {
+      "text": "900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 24,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 661,
+     "y": 492.75,
+     "w": 403.109375,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.6,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Автограф на отдельном листе в капсуле, 23×9 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1127.75,
+     "y": 486.75,
+     "w": 106.25,
+     "h": 29
+    },
+    "align": "start",
+    "lh": 28.799999999999997,
+    "base": 24,
+    "runs": [
+     {
+      "text": "750 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 24,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 156,
+     "w": 555,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 663,
+     "y": 156,
+     "w": 555,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 224.1875,
+     "w": 555,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 663,
+     "y": 224.1875,
+     "w": 555,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 272.1875,
+     "w": 555,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 663,
+     "y": 272.1875,
+     "w": 555,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 340.375,
+     "w": 555,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 663,
+     "y": 340.375,
+     "w": 555,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 408.5625,
+     "w": 555,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 663,
+     "y": 408.5625,
+     "w": 555,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 476.75,
+     "w": 555,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 663,
+     "y": 476.75,
+     "w": 555,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 544.9375,
+     "w": 555,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 663,
+     "y": 544.9375,
+     "w": 555,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   }
+  ]
+ },
+ "s28": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img/stargift_logo.png",
+    "rect": {
+     "x": 66,
+     "y": 195.765625,
+     "w": 184.265625,
+     "h": 140
+    },
+    "nat": [
+     1440,
+     1094
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "brightness(0) invert(1)"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 66,
+     "y": 371.765625,
+     "w": 671.609375,
+     "h": 150.46875
+    },
+    "align": "start",
+    "lh": 50.16,
+    "base": 44,
+    "runs": [
+     {
+      "text": "Майкл Джексон. От первого сингла до последней пластинки с Куинси Джонсом.",
+      "font": "Cormorant Garamond",
+      "size": 44,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 667,
+     "w": 136.609375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 19.2,
+    "base": 16,
+    "runs": [
+     {
+      "text": "stargift.ru",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.12,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 0,
+     "y": 644,
+     "w": 1280,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.3)"
+   }
+  ]
+ }
+}

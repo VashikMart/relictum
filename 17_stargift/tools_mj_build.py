@@ -9,6 +9,8 @@
 """
 import html, os
 
+import sys
+VARIANT = (sys.argv[1] if len(sys.argv) > 1 else "A").upper()
 R = os.path.dirname(os.path.abspath(__file__))
 C = "img_mj"
 
@@ -33,32 +35,46 @@ def img(name, half=False):
 
 LOTS = {
  "iwyb":       dict(price=900_000,   cert="PSA/DNA",
+   era='1969 · Motown', hist='Дебютный альбом Jackson 5. Имя Дайаны Росс на обложке было рекламным ходом лейбла: группу она не открывала, но её имя открывало радиостанции. Сингл с этой пластинки встал на первое место Billboard в январе 1970-го.',
    name="«Diana Ross Presents The Jackson 5» — конверт с автографом"),
  "maybe":      dict(price=1_850_000, cert="PSA",
+   era='1971 · Motown', hist='Четвёртый альбом Jackson 5, вышедший на пике их первой славы. Экземпляр из первого тиража: разворотный конверт и оригинальные синие лейблы Motown на самом виниле.',
    name="«Maybe Tomorrow» — первый тираж 1971 года с автографами братьев Джексон"),
  "gottobe":    dict(price=1_000_000, cert="JSA",
+   era='1972 · Motown', hist='Сольный дебют — Майклу тринадцать. Motown выпустил альбом, не выводя его из состава Jackson 5. С этой обложки начинается его отдельная биография.',
    name="«Got To Be There» — конверт сольного дебюта с автографом"),
  "farewell":   dict(price=1_050_000, cert="PSA/DNA",
+   era='1984 · Motown', hist='Записи 1973 года пролежали в архиве лейбла одиннадцать лет. В 1984-м, на волне успеха «Thriller» у другого лейбла, их достали, добавили современную аранжировку и выпустили как новый альбом — без участия артиста.',
    name="«Farewell My Summer Love» — конверт с автографом"),
  "offthewall": dict(price=4_000_000, cert="JSA",
+   era='1979 · Epic', hist='Первая совместная работа с Куинси Джонсом. Четыре сингла с альбома вошли в первую десятку Billboard — до этого ни один сольный исполнитель такого не добивался.',
    name="«Off The Wall» — конверт с автографом"),
  "thriller":   dict(price=2_400_000, cert="PSA/DNA",
+   era='1982 · Epic', hist='Самый продаваемый альбом в истории звукозаписи. Экземпляр из раннего тиража: каталожный номер QE 38112, то есть пластинка отпечатана в первые месяцы после выхода, ещё до того, как продажи стали рекордными.',
    name="«Thriller» — ранний тираж QE 38112 с автографом"),
  "thrillerjp": dict(price=1_750_000, cert="JSA",
+   era='1982 · Epic Japan', hist='Японское издание с оби-полосой — узкой бумажной лентой на корешке, которую печатали отдельно и почти всегда выбрасывали при вскрытии. Инструментальная версия выпускалась только для японского рынка.',
    name="«Thriller» — японское издание инструментальной версии с оби-полосой и автографом"),
  "bad":        dict(price=3_000_000, cert="PSA",
+   era='1987 · Epic', hist='Третья и последняя пластинка, сделанная с Куинси Джонсом. Пять синглов с одного альбома поднялись на первое место Billboard — до «Bad» этого не удавалось никому.',
    name="«Bad» — конверт с именным посвящением и автографом"),
  "badpromo":   dict(price=3_800_000, cert="JSA",
+   era='1987 · Epic', hist='Промо-тираж печатался ограниченным числом и рассылался на радио до официального выхода. В продажу такие экземпляры не поступали, поэтому уцелевших мало.',
    name="«Bad» — промо-тираж с автографом"),
  "ph1620":     dict(price=1_300_000, cert="JSA",
+   era='1983 · эпоха «Billie Jean»', hist='Год после выхода «Thriller»: сингл «Billie Jean» держится в верхней строчке, а лунная походка на юбилейном концерте Motown только что превратила Джексона в главную фигуру десятилетия.',
    name="Фотография эпохи «Billie Jean» с автографом, 41×51 см"),
  "ph75":       dict(price=1_600_000, cert="PSA/DNA",
+   era='1980-е · сцена', hist='Расшитый сценический костюм — часть образа, который Джексон выстраивал сам: военная выправка, блеск, узнаваемый силуэт с последнего ряда зала.',
    name="Фотография в расшитом сценическом костюме с автографом, 19×28 см"),
  "ph1114c":    dict(price=1_850_000, cert="PSA/DNA",
+   era='1990-е', hist='Кадр периода, когда Джексон уже не выступал регулярно, но оставался самым узнаваемым лицом в мире. Чёрная куртка с шевронами — его поздний сценический образ.',
    name="Цветная фотография с автографом, 28×36 см"),
  "ph1114hat":  dict(price=2_000_000, cert="PSA",
+   era='1987–1988 · «Smooth Criminal»', hist='Белая шляпа, синий свет и наклон корпуса — самая копируемая поза в истории поп-музыки, снятая на съёмках «Moonwalker».',
    name="Фотография в белой шляпе с автографом, 28×36 см"),
  "cut":        dict(price=750_000,   cert="PSA/DNA",
+   era='Автограф', hist='Отдельный лист с росчерком, запечатанный в капсулу. Самый гибкий предмет подборки: его оформляют в раму рядом с любой фотографией на выбор.',
    name="Автограф на отдельном листе в капсуле, 23×9 см"),
 }
 
@@ -76,24 +92,28 @@ html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-s
 .slide>*{min-height:0;min-width:0}
 img{display:block}
 .serif{font-family:'Cormorant Garamond',serif}
-.kick{font:500 11px/1 'Inter';letter-spacing:.36em;text-transform:uppercase;color:var(--gold)}
+.kick{font:500 13px/1 'Inter';letter-spacing:.36em;text-transform:uppercase;color:var(--gold)}
 .kick.d{color:var(--gold2)}
 .white{background:#FFFFFF;color:var(--ink)}
 .dark{background:var(--noir);color:var(--ivory)}
-.credit{position:absolute;right:16px;bottom:12px;font:400 8.5px/1.3 'Inter';
+.credit{position:absolute;right:16px;bottom:12px;font:400 11px/1.3 'Inter';
   letter-spacing:.08em;color:rgba(245,241,232,.55)}
 .div-rule{height:1px;width:70px;background:rgba(169,133,69,.55)}
 .div-huge{font-family:'Cormorant Garamond';font-weight:300;line-height:1;color:var(--ivory)}
-.div-sub{font:300 18px/1.65 'Inter';color:#c9c3b7}
+.div-sub{font:300 22px/1.6 'Inter';color:#c9c3b7}
 
-.solo{grid-template-columns:1fr 1fr}
+.solo{grid-template-columns:__COLS__}
 .ph2{height:720px;overflow:hidden;background:#fff}
 .ph2 img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
 .solo-side{display:flex;flex-direction:column;justify-content:center;padding:48px 54px 48px 26px}
-.solo-name{font-family:'Cormorant Garamond';font-weight:500;font-size:27px;line-height:1.16;color:var(--ink)}
-.solo-text{font:300 14.5px/1.62 'Inter';color:#4a4a4a;margin-top:13px}
-.solo-price{font-family:'Cormorant Garamond';font-weight:500;font-size:29px;color:var(--gold);margin-top:16px}
-.solo-spec{font:400 10px/1.5 'Inter';letter-spacing:.18em;text-transform:uppercase;color:#9a958c;margin-top:9px}
+.solo-name{font-family:'Cormorant Garamond';font-weight:500;font-size:34px;line-height:1.14;color:var(--ink)}
+.solo-text{font:300 18.5px/1.58 'Inter';color:#4a4a4a;margin-top:13px}
+.solo-price{font-family:'Cormorant Garamond';font-weight:500;font-size:38px;color:var(--gold);margin-top:16px}
+.lot-era{font-weight:500;font-size:30px;line-height:1;color:var(--gold);margin-bottom:12px;letter-spacing:.01em}
+.lot-hist{margin-top:15px;padding-left:16px;border-left:2px solid var(--gold)}
+.lot-era-s{font:500 12px/1 'Inter';letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.lot-hist-t{font:300 17px/1.55 'Inter';color:#3d3d3d}
+.solo-spec{font:400 12.5px/1.5 'Inter';letter-spacing:.18em;text-transform:uppercase;color:#9a958c;margin-top:9px}
 
 /* справка об альбоме: тёмная страница с цифрами */
 .fact{grid-template-columns:.92fr 1.08fr}
@@ -119,17 +139,19 @@ img{display:block}
 
 .gal{grid-template-rows:auto 1fr auto}
 .gal-head{display:flex;justify-content:space-between;align-items:baseline;padding:30px 60px 0}
-.gal-name{font-family:'Cormorant Garamond';font-weight:500;font-size:26px;color:var(--ink)}
+.gal-name{font-family:'Cormorant Garamond';font-weight:500;font-size:32px;color:var(--ink)}
 .gal-grid{display:grid;gap:16px;padding:20px 60px 0}
 .gal-cell{background:#F7F5F1;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .gal-cell img{max-width:100%;max-height:100%;object-fit:contain}
-.gal-foot{padding:18px 60px 30px;font:300 14px/1.6 'Inter';color:#4a4a4a;max-width:104ch}
+.gal-foot{padding:18px 60px 30px;font:300 17.5px/1.55 'Inter';color:#4a4a4a;max-width:104ch}
 
-.lad{display:flex;flex-direction:column;height:100%;justify-content:space-between}
+/* прайс-лист в две колонки: с крупным кеглем 14 строк в один столбец не влезают,
+   а кегль уменьшать нельзя — правило шаблона */
+.lad{display:grid;grid-template-columns:1fr 1fr;gap:0 46px;align-content:start}
 .lad-row{display:grid;grid-template-columns:1fr auto;gap:26px;align-items:baseline;
-  padding:7.5px 0;border-bottom:1px solid rgba(169,133,69,.2)}
-.lad-nm{font:300 13px/1.35 'Inter';color:#d5cfc3}
-.lad-pr{font-family:'Cormorant Garamond';font-weight:500;font-size:19px;color:var(--gold2);white-space:nowrap}
+  padding:9px 0;border-bottom:1px solid rgba(169,133,69,.2)}
+.lad-nm{font:300 16px/1.35 'Inter';color:#d5cfc3}
+.lad-pr{font-family:'Cormorant Garamond';font-weight:500;font-size:24px;color:var(--gold2);white-space:nowrap}
 """
 
 
@@ -142,13 +164,23 @@ def main():
         S.append(s.replace("__ID__", f"s{n:02d}"))
 
     def solo(key, photo, kick, text):
+        """Слайд лота. История альбома идёт первым абзацем описания —
+        отдельным слайдом-справкой она ломает логику деки при открытии."""
         it = LOTS[key]
+        if VARIANT == "B":
+            lead = (f'<div class="lot-era serif">{esc(it["era"])}</div>'
+                    f'<div class="solo-name">{esc(it["name"])}</div>'
+                    f'<div class="solo-text">{esc(it["hist"])} {esc(text)}</div>')
+        else:
+            lead = (f'<div class="solo-name">{esc(it["name"])}</div>'
+                    f'<div class="lot-hist"><div class="lot-era-s">{esc(it["era"])}</div>'
+                    f'<div class="lot-hist-t">{esc(it["hist"])}</div></div>'
+                    f'<div class="solo-text">{esc(text)}</div>')
         add(f"""<section class="slide white solo" id="__ID__">
   <div class="ph2"><img src="{photo}" alt=""></div>
   <div class="solo-side">
     <div class="kick" style="margin-bottom:13px">{kick}</div>
-    <div class="solo-name">{esc(it['name'])}</div>
-    <div class="solo-text">{esc(text)}</div>
+    {lead}
     <div class="solo-price">{rub(it['price'])}</div>
     <div class="solo-spec">{esc(it['cert'])}</div>
   </div>
@@ -187,6 +219,18 @@ def main():
   </div>
 </section>""")
 
+
+    def framing(photo, kick, title, text, note):
+        add(f"""<section class="slide white solo" id="__ID__">
+  <div class="ph2"><img src="{photo}" alt=""></div>
+  <div class="solo-side">
+    <div class="kick" style="margin-bottom:13px">{esc(kick)}</div>
+    <div class="solo-name">{esc(title)}</div>
+    <div class="solo-text">{esc(text)}</div>
+    <div class="lot-hist" style="margin-top:20px"><div class="lot-hist-t">{esc(note)}</div></div>
+  </div>
+</section>""")
+
     def gallery(title, kick, cells, cols, rowh, foot):
         cc = "".join(f'<div class="gal-cell" style="height:{rowh}px">'
                      f'<img src="{p}" alt=""></div>' for p in cells)
@@ -204,7 +248,7 @@ def main():
     <div style="position:absolute;inset:0;background:linear-gradient(270deg,rgba(11,11,12,.95) 0%,rgba(11,11,12,.78) 34%,rgba(11,11,12,.22) 66%,rgba(11,11,12,.06) 100%)"></div>
     <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;text-align:right;padding:0 62px">
       <div class="kick d" style="letter-spacing:.3em;margin-bottom:22px">{esc(kick)}</div>
-      <h2 class="div-huge" style="font-size:50px;max-width:17ch">{huge}</h2>
+      <h2 class="div-huge" style="font-size:58px;max-width:15ch">{huge}</h2>
       <div class="div-rule" style="margin:26px 0"></div>
       <p class="div-sub" style="max-width:40ch">{esc(sub)}</p>
     </div>
@@ -239,36 +283,16 @@ def main():
             "Через три месяца он стоял на первой строчке, а солисту было одиннадцать лет.",
             img("j5_1969"), "Фото: Bernie Ilson, Inc. · Wikimedia Commons · public domain", "50% 24%")
 
-    fact("Справка · Motown · 1969", "Diana&nbsp;Ross Presents<br>The Jackson&nbsp;5",
-         "Дебютный альбом группы на Motown. Название придумали как рекламный ход: "
-         "Дайана Росс группу не открывала, но её имя на обложке открывало радиостанции. "
-         "Сингл «I Want You Back» с этой пластинки поднялся на первое место "
-         "Billboard Hot 100 в январе 1970-го.",
-         [("Лейбл", "Motown"), ("Вышел", "18 декабря 1969"),
-          ("Сингл", "«I Want You Back» — первое место Billboard Hot 100"),
-          ("Майклу", "11 лет")],
-         img("j5_promo"), "50% 30%")
-
     solo("iwyb", img("clean_iwyb", half=True), "Пластинки · 1 из 14",
-         "Конверт дебютного альбома Jackson 5 с автографом. Тот самый релиз, "
-         "с которого началась карьера: на обороте — фотография пятерых братьев "
-         "в студии, на лицевой стороне — рамка с именем Дайаны Росс, придуманная "
-         "лейблом для радио.")
+         "Конверт в состоянии, редком для тиража 1969 года: углы целы, картон "
+         "не расслоился. Росчерк идёт наискось через всю обложку — так Джексон "
+         "подписывал в ранние годы, размашисто и во всю площадь.")
 
-    fact_plain("Справка · Motown", "1971", "Maybe Tomorrow",
-         "Четвёртый альбом Jackson 5, вышедший на пике их первой славы. "
-         "Экземпляр из первого тиража: разворотный конверт, оригинальные "
-         "лейблы Motown на самом виниле. Подписан не одним Майклом — "
-         "росчерки братьев идут прямо по обложке.",
-         [("Лейбл", "Motown"), ("Вышел", "12 апреля 1971"),
-          ("Тираж", "первый пресс, разворотный конверт"),
-          ("Автографы", "Майкл и братья, по лицевой стороне")])
 
     solo("maybe", img("clean_maybe", half=True), "Пластинки · 2 из 14",
-         "Самый ранний предмет подборки после дебюта: первый тираж 1971 года "
-         "с автографами братьев Джексон прямо по обложке. Автографы Jackson 5 "
-         "того периода встречаются реже сольных — группа подписывала мало "
-         "и почти всегда на бегу.")
+         "Автографы Jackson 5 того периода встречаются реже сольных: группа "
+         "подписывала мало и почти всегда на бегу. Здесь росчерки идут "
+         "по светлой части обложки и читаются все до одного.")
 
     gallery("«Maybe Tomorrow» · разворот и винил", "Пластинки · 2 из 14",
             [img("src/maybe_01"), img("src/maybe_02"), img("src/maybe_07"),
@@ -279,27 +303,11 @@ def main():
             "лейблом: у поздних переизданий он другого цвета и с другим шрифтом.")
 
     # ================= 1972 · сольный дебют
-    fact_plain("Справка · Motown", "1972", "Got To Be There",
-         "Сольный дебют Майкла — ему тринадцать. Motown выпустил альбом, "
-         "не выводя его из состава Jackson 5: группа продолжала записываться "
-         "параллельно. С этой обложки и начинается его отдельная биография — "
-         "мальчик в кепке, снятый на фоне неба.",
-         [("Лейбл", "Motown"), ("Вышел", "24 января 1972"),
-          ("Формат", "первый сольный студийный альбом"), ("Майклу", "13 лет")])
 
     solo("gottobe", img("clean_gottobe", half=True), "Пластинки · 3 из 14",
          "Конверт сольного дебюта с автографом. Точка, с которой начинается "
          "всё остальное в этой подборке: до «Got To Be There» Майкл Джексон был "
          "солистом группы, после — самостоятельным именем на обложке.")
-
-    fact_plain("Справка · Motown", "1984", "Farewell My Summer Love",
-         "Пластинка с необычной историей. Записи 1973 года пролежали в архиве "
-         "Motown одиннадцать лет; в 1984-м, на волне успеха «Thriller» у другого "
-         "лейбла, их достали, добавили современную аранжировку и выпустили "
-         "как новый альбом. Голос на записи — шестнадцатилетний.",
-         [("Лейбл", "Motown"), ("Вышел", "15 мая 1984"),
-          ("Записано", "1973 год, архив лейбла"),
-          ("Особенность", "выпущен без участия артиста")])
 
     solo("farewell", img("clean_farewell", half=True), "Пластинки · 4 из 14",
          "Конверт с автографом. Экземпляр полный: с бонусным цветным постером, "
@@ -321,13 +329,6 @@ def main():
             "в поп-музыке больше не было.",
             img("mj_1984"), "Фото: Epic Records · Wikimedia Commons · public domain", "50% 20%")
 
-    fact_plain("Справка · Epic", "1979", "Off The Wall",
-         "Первая совместная работа с Куинси Джонсом и первый альбом, где Джексон "
-         "звучит как взрослый артист. Четыре сингла с него вошли в первую десятку "
-         "Billboard — до этого ни один сольный исполнитель такого не добивался.",
-         [("Лейбл", "Epic"), ("Вышел", "10 августа 1979"),
-          ("Продюсер", "Куинси Джонс"),
-          ("Рекорд", "четыре сингла в первой десятке Billboard")])
 
     solo("offthewall", img("clean_offthewall", half=True), "Пластинки · 5 из 14",
          "Конверт с автографом — самый дорогой предмет подборки. "
@@ -335,14 +336,6 @@ def main():
          "потом повторял на сцене годами. Росчерк лежит по светлому полю "
          "и читается целиком.")
 
-    fact_plain("Справка · Epic", "1982", "Thriller",
-         "Самый продаваемый альбом в истории звукозаписи. Экземпляр из раннего "
-         "тиража — каталожный номер QE 38112 без более поздних пометок, "
-         "то есть пластинка отпечатана в первые месяцы после выхода, "
-         "ещё до того, как продажи стали рекордными.",
-         [("Лейбл", "Epic"), ("Вышел", "30 ноября 1982"),
-          ("Тираж", "ранний пресс, QE 38112"),
-          ("Место в истории", "самый продаваемый альбом")])
 
     solo("thriller", img("clean_thriller", half=True), "Пластинки · 6 из 14",
          "Конверт «Thriller» раннего тиража с автографом. Белый костюм на чёрном "
@@ -355,19 +348,25 @@ def main():
             "Лицевая сторона с автографом, внутренний разворот с текстами песен "
             "и сам винил. Ранний пресс узнаётся по каталожному номеру на этикетке.")
 
-    solo("thrillerjp", img("clean_thrillerjp", half=True), "Пластинки · 7 из 14",
-         "Японское издание с оби-полосой — узкой бумажной лентой на корешке, "
-         "которую японские лейблы печатали отдельно и которая почти всегда "
-         "выбрасывалась при вскрытии. Здесь она сохранена. Инструментальная "
-         "версия выпускалась только для японского рынка.")
+    framing(img("framed_thriller_diptych", half=True), "Оформление · пластинка",
+            "Раскрывающаяся рама: конверт и сам диск",
+            "Две квадратные панели на латунных петлях, бордовый бархат внутри. "
+            "Закрытой рама показывает конверт, открытой — конверт и винил в глубокой нише. "
+            "Формат дома для пластинки, у которой хочется показать обе части.",
+            "Бархат подбираем под палитру конверта: бордовый, тёмно-синий или бирюзовый.")
 
-    fact_plain("Справка · Epic", "1987", "Bad",
-         "Третья и последняя пластинка, сделанная с Куинси Джонсом. Пять синглов "
-         "с одного альбома поднялись на первое место Billboard Hot 100 — "
-         "до «Bad» этого не удавалось никому, и рекорд держался годами.",
-         [("Лейбл", "Epic"), ("Вышел", "31 августа 1987"),
-          ("Продюсер", "Куинси Джонс"),
-          ("Рекорд", "пять синглов на первом месте Billboard")])
+    framing(img("framed_thriller_square", half=True), "Оформление · пластинка",
+            "Закрытый квадрат: только конверт",
+            "Тот же экземпляр в простой подаче — одна квадратная рама, бордовое "
+            "бархатное паспарту, тонкая золотая линия и латунная табличка внизу. "
+            "Вешается как картина и занимает вдвое меньше стены.",
+            "Выбор между диптихом и квадратом — вопрос места и того, подписан ли сам винил.")
+
+    solo("thrillerjp", img("clean_thrillerjp", half=True), "Пластинки · 7 из 14",
+         "Оби-полоса сохранена целиком, с иероглифами и ценой в иенах — по ней "
+         "японский экземпляр отличают от европейского с первого взгляда. "
+         "Автограф поставлен по светлому полю обложки и не перекрывает лицо.")
+
 
     solo("bad", img("clean_bad", half=True), "Пластинки · 8 из 14",
          "Конверт с автографом и именным посвящением — Джексон подписал его "
@@ -376,9 +375,9 @@ def main():
          "а не на стопке конвертов у стола промоутера.")
 
     solo("badpromo", img("clean_badpromo", half=True), "Пластинки · 9 из 14",
-         "Промо-тираж «Bad» с автографом. Промо-экземпляры печатались "
-         "ограниченным числом и рассылались на радио до официального выхода — "
-         "в продажу они не поступали, поэтому уцелевших мало.")
+         "Промо-экземпляр узнаётся по обороту: вместо торгового оформления там "
+         "служебная разметка для радиостанции. Автограф крупный, поставлен "
+         "по белому полю рядом с логотипом.")
 
     # ================= фотографии
     divider("Фотографии", "Белый дом,<br>14 мая 1984",
@@ -406,6 +405,20 @@ def main():
          "из «Smooth Criminal». Один из тех снимков, где герой опознаётся "
          "по силуэту, даже если закрыть лицо.")
 
+    framing(img("framed_ph1114hat", half=True), "Оформление · фотография",
+            "Тёмная рама, синее замшевое паспарту",
+            "Под холодный кадр берём синее паспарту и тёмную раму: рамка не спорит "
+            "со сценическим светом, а золотая линия по краю окна отделяет снимок "
+            "от поля. Латунная табличка с именем внизу.",
+            "Цвет паспарту всегда берём у самой фотографии, а не по каталогу.")
+
+    framing(img("framed_ph1620", half=True), "Оформление · фотография",
+            "Кованое золото, бордовый бархат",
+            "Тёплый кадр требует тёплой рамы: кованое золото и бордовый бархат — "
+            "классический регистр дома для портретов. Тот же снимок в тёмной раме "
+            "выглядел бы холоднее, чем он есть.",
+            "Две фотографии рядом на одной стене оформляем в одном материале рамы.")
+
     solo("cut", img("clean_cut", half=True), "Фотографии · 14 из 14",
          "Автограф на отдельном листе, запечатанный в капсулу. "
          "Самый доступный предмет подборки и самый гибкий: капсулу можно "
@@ -430,6 +443,7 @@ def main():
     rows = "".join(
         f'<div class="lad-row"><div class="lad-nm">{esc(LOTS[k]["name"])}</div>'
         f'<div class="lad-pr">{rub(LOTS[k]["price"])}</div></div>' for k in ORDER)
+    # порядок по колонкам сверху вниз, а не змейкой
     add(f"""<section class="slide dark" id="__ID__" style="grid-template-rows:auto 1fr">
   <div style="padding:34px 62px 0">
     <div class="kick d" style="margin-bottom:10px">Подборка целиком</div>
@@ -452,7 +466,7 @@ def main():
     doc = f"""<meta charset="utf-8">
 <title>Stargift · Майкл Джексон</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<style>{CSS}</style>
+<style>{CSS.replace("__COLS__", "1.28fr 1fr" if VARIANT == "A" else "1fr 1.12fr")}</style>
 
 <div class="deck">
 {chr(10).join(S)}
@@ -469,8 +483,8 @@ addEventListener('click',e=>{{if(e.target.closest('a'))return;go(e.clientX<inner
 <style>@page{{size:1280px 720px;margin:0}}@media print{{html,body{{overflow:visible;height:auto}}*{{box-shadow:none !important}}.slide{{animation:none}}.deck{{height:auto}}
 .slide{{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}}}</style>
 """
-    open(f"{R}/deck_mj.html", "w", encoding="utf-8").write(doc)
-    print(f"deck_mj.html: {n} слайдов, {len(LOTS)} лотов")
+    open(f"{R}/deck_mj_{VARIANT}.html", "w", encoding="utf-8").write(doc)
+    print(f"deck_mj_{VARIANT}.html: {n} слайдов, {len(LOTS)} лотов")
 
 
 if __name__ == "__main__":
