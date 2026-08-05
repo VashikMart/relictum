@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Проверяет, что ничего не вылезает за пределы слайда 1280×720.
+"""Проверяет, что ничего не вылезает за пределы слайда.
 
     python3 tools_deck_check.py deck_museum.html
 
@@ -47,12 +47,20 @@ JS = """
 """
 
 
+def deck_size(path):
+    """Размер слайда берём из @page самой деки — деки бывают и вертикальные."""
+    import re as _re
+    m = _re.search(r'@page\s*{\s*size:\s*(\d+)px\s+(\d+)px', open(path, encoding='utf-8').read())
+    return (int(m.group(1)), int(m.group(2))) if m else (1280, 720)
+
+
 async def main():
     bad = 0
     async with async_playwright() as p:
         b = await p.chromium.launch(executable_path='/opt/pw-browsers/chromium',
                                     args=['--no-sandbox', '--disable-gpu'])
-        pg = await b.new_page(viewport={'width': 1280, 'height': 720})
+        W, H = deck_size(DECK)
+        pg = await b.new_page(viewport={'width': W, 'height': H})
         await pg.goto('file://' + DECK)
         await pg.wait_for_timeout(2500)
         ids = await pg.eval_on_selector_all('.slide', 'els=>els.map(e=>e.id)')

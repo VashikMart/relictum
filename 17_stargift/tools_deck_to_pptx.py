@@ -15,6 +15,8 @@ _A=_ap.parse_args()
 SP=os.path.abspath(_A.build_dir)
 ROOT=os.path.abspath(_A.root)
 GEOM=json.load(open(os.path.join(SP,'geom.json'),encoding='utf-8'))
+_sz=os.path.join(SP,'size.json')
+SW,SH=(lambda d:(d['w'],d['h']))(json.load(open(_sz))) if os.path.exists(_sz) else (1280,720)
 MEDIA=os.path.join(SP,'media'); shutil.rmtree(MEDIA,ignore_errors=True); os.makedirs(MEDIA)
 
 PX=lambda v: Emu(int(round(v/96*914400)))
@@ -132,14 +134,14 @@ def add_text(slide, t, override_runs=None, rect=None, lh=None):
     return box
 
 prs=Presentation()
-prs.slide_width=PX(1280); prs.slide_height=PX(720)
+prs.slide_width=PX(SW); prs.slide_height=PX(SH)
 blank=prs.slide_layouts[6]
 
 for sid in sorted(GEOM.keys()):
     g=GEOM[sid]
     sl=prs.slides.add_slide(blank)
     # background
-    bg=sl.shapes.add_shape(MSO_SHAPE.RECTANGLE,0,0,PX(1280),PX(720))
+    bg=sl.shapes.add_shape(MSO_SHAPE.RECTANGLE,0,0,PX(SW),PX(SH))
     bg.fill.solid(); bg.fill.fore_color.rgb=rgb(g['bg']); bg.line.fill.background()
     bg.shadow.inherit=False
 

@@ -155,7 +155,10 @@ async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch(executable_path='/opt/pw-browsers/chromium',
                                     args=['--no-sandbox','--disable-gpu'])
-        pg = await b.new_page(viewport={'width':1280,'height':720})
+        import re as _re
+        _m = _re.search(r'@page\s*{\s*size:\s*(\d+)px\s+(\d+)px', open(DECK, encoding='utf-8').read())
+        W, H = (int(_m.group(1)), int(_m.group(2))) if _m else (1280, 720)
+        pg = await b.new_page(viewport={'width': W, 'height': H})
         await pg.goto('file://'+DECK)
         await pg.wait_for_timeout(2500)
         ids = await pg.eval_on_selector_all('.slide','els=>els.map(e=>e.id)')
@@ -194,6 +197,7 @@ async def main():
                 data[sid]['plates'] = plates
             await pg.evaluate("""(sid)=>{document.getElementById(sid).querySelectorAll('*').forEach(e=>e.style.visibility='')}""", sid)
         await b.close()
+    json.dump({'w': W, 'h': H}, open(os.path.join(OUT,'size.json'),'w'))
     json.dump(data, open(os.path.join(OUT,'geom.json'),'w'), ensure_ascii=False, indent=1)
     for k,v in data.items():
         print(k, 'imgs',len(v['imgs']), 'texts',len(v['texts']),

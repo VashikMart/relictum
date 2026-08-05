@@ -117,10 +117,14 @@ def main(paths, out=None):
 if __name__ == "__main__":
     args = sys.argv[1:]
     outdir = None
-    if args and args[0].startswith("--out="):
-        outdir = args.pop(0).split("=", 1)[1]
-        if not os.path.isabs(outdir):
-            outdir = os.path.join(R, outdir)
+    while args and args[0].startswith("--"):
+        k, _, v = args.pop(0).partition("=")
+        if k == "--out":
+            outdir = v if os.path.isabs(v) else os.path.join(R, v)
+        elif k == "--aspect":           # ширина/высота кадра, напр. 0.8 для вертикали
+            ASPECT = float(v)
+            globals()["ASPECT"] = ASPECT
+            globals()["TARGET"] = (1440, round(1440 / ASPECT))
     if not args:
         g = os.path.join(R, "img_framing", "generated")
         args = [os.path.join(g, f) for f in sorted(os.listdir(g)) if f.endswith(".jpg")]

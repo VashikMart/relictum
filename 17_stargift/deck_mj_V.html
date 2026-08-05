@@ -1,0 +1,326 @@
+<meta charset="utf-8">
+<title>Stargift · Майкл Джексон · вертикаль</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--noir:#0B0B0C;--gold:#A98545;--gold2:#C9A96A;--ivory:#F5F1E8;
+      --paper:#F7F5F1;--ink:#1A1A1A;--mute:#6b6b6b;--cert:#9a958c}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-serif}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:grid}
+.slide>*{min-height:0;min-width:0}
+img{display:block}
+.serif{font-family:'Cormorant Garamond',serif}
+.kick{font:500 15px/1 'Inter';letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+.kick.d{color:var(--gold2)}
+.light{background:var(--paper);color:var(--ink)}
+.white{background:#fff;color:var(--ink)}
+.dark{background:var(--noir);color:var(--ivory)}
+.credit{position:absolute;right:20px;bottom:16px;font:400 12px/1.3 'Inter';
+  letter-spacing:.06em;color:rgba(245,241,232,.6)}
+.rule{height:1px;width:84px;background:rgba(169,133,69,.55)}
+
+/* лот: фото сверху, плашка снизу */
+.solo{grid-template-rows:1fr auto}
+.solo .ph{background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:34px 40px}
+.solo .ph img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.solo .info{padding:36px 44px 44px;border-top:1px solid rgba(169,133,69,.35);background:var(--paper)}
+.solo .nm{font-family:'Cormorant Garamond';font-weight:500;font-size:40px;line-height:1.05;margin-top:14px}
+.solo .era{font:500 14px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:16px}
+.solo .tp{font:300 22px/1.46 'Inter';color:#4a4a4a;margin-top:10px}
+.solo .pr{font-family:'Cormorant Garamond';font-weight:500;font-size:46px;color:var(--gold);margin-top:20px}
+.solo .ct{font:400 14px/1.5 'Inter';letter-spacing:.16em;text-transform:uppercase;color:var(--cert);margin-top:10px}
+
+/* разделитель эпохи: кадр во весь экран, текст внизу */
+.div-v{grid-template-rows:1fr}
+.div-huge{font-family:'Cormorant Garamond';font-weight:300;font-size:66px;line-height:1.02;color:var(--ivory)}
+.div-sub{font:300 24px/1.5 'Inter';color:#c9c3b7;margin-top:20px}
+
+.lad-row{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:baseline;
+  padding:13px 0;border-bottom:1px solid rgba(169,133,69,.2)}
+.lad-nm{font:300 17px/1.32 'Inter';color:#d5cfc3}
+.lad-pr{font-family:'Cormorant Garamond';font-weight:500;font-size:24px;color:var(--gold2);white-space:nowrap}
+</style>
+
+<div class="deck">
+<section class="slide dark" id="s01" style="grid-template-rows:1fr auto">
+  <div style="position:relative">
+    <img src="img_mj/hist/mj_1984.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 22%">
+    <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,11,12,.98) 0%,rgba(11,11,12,.5) 34%,rgba(11,11,12,.1) 70%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:0 48px 44px">
+      <img src="img/stargift_logo.png" alt="Stargift" style="height:120px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97;align-self:flex-start;margin-bottom:34px">
+      <div class="kick d" style="margin-bottom:20px">Частное собрание · Музыка</div>
+      <h1 class="serif" style="font-weight:300;font-size:80px;line-height:1.02;color:var(--ivory)">Майкл<br>Джексон</h1>
+      <p style="font:300 23px/1.5 'Inter';color:#b8b2a6;margin-top:22px">Девять подписанных пластинок и пять фотографий.
+      Двадцать лет карьеры, собранные по конвертам.</p>
+    </div>
+    <span class="credit">Фото: Epic Records · Wikimedia Commons · public domain</span>
+  </div>
+  <div style="padding:24px 48px 30px;border-top:1px solid rgba(169,133,69,.3)">
+    <span class="kick" style="letter-spacing:.22em">14 предметов · август 2026</span>
+  </div>
+</section>
+<section class="slide dark div-v" id="s02">
+  <div style="position:relative">
+    <img src="img_mj/hist/j5_1969.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 22%">
+    <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,11,12,.97) 0%,rgba(11,11,12,.86) 30%,rgba(11,11,12,.2) 62%,rgba(11,11,12,.05) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:0 48px 74px">
+      <div class="kick d" style="letter-spacing:.26em;margin-bottom:20px">1969–1971 · Motown</div>
+      <h2 class="div-huge">Пятеро братьев<br>из Гэри, Индиана</h2>
+      <div class="rule" style="margin:24px 0"></div>
+      <p class="div-sub">Осенью 1969-го Motown выпустил сингл группы, которую никто не знал. Через три месяца он стоял первым, а солисту было одиннадцать.</p>
+    </div>
+    <span class="credit">Фото: Bernie Ilson, Inc. · Wikimedia Commons · public domain</span>
+  </div>
+</section>
+<section class="slide light solo" id="s03">
+  <div class="ph"><img src="img_mj/cut/clean_iwyb.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Пластинки · 1 из 14</div>
+    <div class="nm">«Diana Ross Presents The Jackson 5» — конверт с автографом</div>
+    <div class="era">1969 · Motown</div>
+    <div class="tp">Дебютный альбом Jackson 5. Сингл с этой пластинки встал на первое место Billboard в январе 1970-го.</div>
+    <div class="pr">900 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s04">
+  <div class="ph"><img src="img_mj/cut/clean_maybe.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Пластинки · 2 из 14</div>
+    <div class="nm">«Maybe Tomorrow» — первый тираж 1971 года с автографами братьев Джексон</div>
+    <div class="era">1971 · Motown</div>
+    <div class="tp">Первый тираж 1971 года, разворотный конверт. Подписан не одним Майклом — росчерки братьев по всей обложке.</div>
+    <div class="pr">1 850 000&nbsp;₽</div>
+    <div class="ct">PSA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s05">
+  <div class="ph"><img src="img_mj/cut/clean_gottobe.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Пластинки · 3 из 14</div>
+    <div class="nm">«Got To Be There» — конверт сольного дебюта с автографом</div>
+    <div class="era">1972 · Motown</div>
+    <div class="tp">Сольный дебют — Майклу тринадцать. С этой обложки начинается его отдельная биография.</div>
+    <div class="pr">1 000 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s06">
+  <div class="ph"><img src="img_mj/cut/clean_farewell.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Пластинки · 4 из 14</div>
+    <div class="nm">«Farewell My Summer Love» — конверт с автографом</div>
+    <div class="era">1984 · Motown</div>
+    <div class="tp">Записи 1973 года пролежали в архиве Motown одиннадцать лет и вышли альбомом только в 1984-м.</div>
+    <div class="pr">1 050 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide dark div-v" id="s07">
+  <div style="position:relative">
+    <img src="img_mj/hist/mj_1984.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 18%">
+    <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,11,12,.97) 0%,rgba(11,11,12,.86) 30%,rgba(11,11,12,.2) 62%,rgba(11,11,12,.05) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:0 48px 74px">
+      <div class="kick d" style="letter-spacing:.26em;margin-bottom:20px">1979–1987 · Epic</div>
+      <h2 class="div-huge">Куинси Джонс<br>и три альбома</h2>
+      <div class="rule" style="margin:24px 0"></div>
+      <p class="div-sub">Три пластинки подряд, каждая продавалась лучше предыдущей — случай, которого в поп-музыке больше не было.</p>
+    </div>
+    <span class="credit">Фото: Epic Records · Wikimedia Commons · public domain</span>
+  </div>
+</section>
+<section class="slide light solo" id="s08">
+  <div class="ph"><img src="img_mj/cut/clean_offthewall.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Пластинки · 5 из 14</div>
+    <div class="nm">«Off The Wall» — конверт с автографом</div>
+    <div class="era">1979 · Epic</div>
+    <div class="tp">Первая работа с Куинси Джонсом. Четыре сингла в первой десятке Billboard — до этого такого не делал никто.</div>
+    <div class="pr">4 000 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s09">
+  <div class="ph"><img src="img_mj/cut/clean_thriller.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Пластинки · 6 из 14</div>
+    <div class="nm">«Thriller» — ранний тираж QE 38112 с автографом</div>
+    <div class="era">1982 · Epic</div>
+    <div class="tp">Самый продаваемый альбом в истории. Ранний тираж: каталожный номер QE 38112.</div>
+    <div class="pr">2 400 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s10">
+  <div class="ph"><img src="img_mj/cut/framed_thriller_diptych.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Оформление · пластинка</div>
+    <div class="nm">Раскрывающаяся рама</div>
+    <div class="tp" style="margin-top:16px">Конверт слева, винил справа в глубокой нише на бордовом бархате. Латунные петли, табличка с именем.</div>
+  </div>
+</section>
+<section class="slide light solo" id="s11">
+  <div class="ph"><img src="img_mj/cut/framed_thriller_square.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Оформление · пластинка</div>
+    <div class="nm">Закрытый квадрат</div>
+    <div class="tp" style="margin-top:16px">Та же пластинка в простой подаче: одна рама, бордовое паспарту, вдвое меньше места на стене.</div>
+  </div>
+</section>
+<section class="slide light solo" id="s12">
+  <div class="ph"><img src="img_mj/cut/clean_thrillerjp.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Пластинки · 7 из 14</div>
+    <div class="nm">«Thriller» — японское издание инструментальной версии с оби-полосой и автографом</div>
+    <div class="era">1982 · Epic Japan</div>
+    <div class="tp">Японское издание с оби-полосой. Инструментальная версия выходила только для Японии.</div>
+    <div class="pr">1 750 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s13">
+  <div class="ph"><img src="img_mj/cut/clean_bad.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Пластинки · 8 из 14</div>
+    <div class="nm">«Bad» — конверт с именным посвящением и автографом</div>
+    <div class="era">1987 · Epic</div>
+    <div class="tp">Пять синглов с одного альбома на первом месте Billboard. Подписан конкретному человеку, с именем от руки.</div>
+    <div class="pr">3 000 000&nbsp;₽</div>
+    <div class="ct">PSA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s14">
+  <div class="ph"><img src="img_mj/cut/clean_badpromo.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Пластинки · 9 из 14</div>
+    <div class="nm">«Bad» — промо-тираж с автографом</div>
+    <div class="era">1987 · Epic</div>
+    <div class="tp">Промо-тираж: рассылался на радио до выхода, в продажу не поступал.</div>
+    <div class="pr">3 800 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide dark div-v" id="s15">
+  <div style="position:relative">
+    <img src="img_mj/hist/mj_reagan.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 38%">
+    <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,11,12,.97) 0%,rgba(11,11,12,.86) 30%,rgba(11,11,12,.2) 62%,rgba(11,11,12,.05) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:0 48px 74px">
+      <div class="kick d" style="letter-spacing:.26em;margin-bottom:20px">Фотографии</div>
+      <h2 class="div-huge">Белый дом,<br>14 мая 1984</h2>
+      <div class="rule" style="margin:24px 0"></div>
+      <p class="div-sub">Рейган вручает Джексону благодарность за «Beat It», отданную кампании против пьяного вождения.</p>
+    </div>
+    <span class="credit">Фото: Ronald Reagan Presidential Library · Wikimedia Commons · public domain</span>
+  </div>
+</section>
+<section class="slide light solo" id="s16">
+  <div class="ph"><img src="img_mj/cut/clean_ph1620.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Фотографии · 10 из 14</div>
+    <div class="nm">Фотография эпохи «Billie Jean» с автографом, 41×51 см</div>
+    <div class="era">1983 · эпоха «Billie Jean»</div>
+    <div class="tp">Эпоха «Billie Jean». Самый крупный формат подборки — 41×51 см.</div>
+    <div class="pr">1 300 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s17">
+  <div class="ph"><img src="img_mj/cut/clean_ph75.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Фотографии · 11 из 14</div>
+    <div class="nm">Фотография в расшитом сценическом костюме с автографом, 19×28 см</div>
+    <div class="era">1980-е · сцена</div>
+    <div class="tp">Расшитый сценический костюм — часть образа, который Джексон выстраивал сам.</div>
+    <div class="pr">1 600 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s18">
+  <div class="ph"><img src="img_mj/cut/clean_ph1114c.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Фотографии · 12 из 14</div>
+    <div class="nm">Цветная фотография с автографом, 28×36 см</div>
+    <div class="era">1990-е</div>
+    <div class="tp">Поздний сценический образ: чёрная куртка с шевронами. Автограф серебром по тёмному полю.</div>
+    <div class="pr">1 850 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s19">
+  <div class="ph"><img src="img_mj/cut/clean_ph1114hat.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Фотографии · 13 из 14</div>
+    <div class="nm">Фотография в белой шляпе с автографом, 28×36 см</div>
+    <div class="era">1987–1988 · «Smooth Criminal»</div>
+    <div class="tp">«Smooth Criminal»: белая шляпа, синий свет и самая копируемая поза в поп-музыке.</div>
+    <div class="pr">2 000 000&nbsp;₽</div>
+    <div class="ct">PSA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s20">
+  <div class="ph"><img src="img_mj/cut/framed_ph1114hat.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Оформление · фотография</div>
+    <div class="nm">Тёмная рама, синий бархат</div>
+    <div class="tp" style="margin-top:16px">Под холодный кадр — синее паспарту: рама не спорит со сценическим светом.</div>
+  </div>
+</section>
+<section class="slide light solo" id="s21">
+  <div class="ph"><img src="img_mj/cut/framed_ph1620.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Оформление · фотография</div>
+    <div class="nm">Кованое золото, бордо</div>
+    <div class="tp" style="margin-top:16px">Тёплый кадр требует тёплой рамы. Цвет паспарту всегда берём у самой фотографии.</div>
+  </div>
+</section>
+<section class="slide light solo" id="s22">
+  <div class="ph"><img src="img_mj/cut/clean_cut.jpg" alt=""></div>
+  <div class="info">
+    <div class="kick">Фотографии · 14 из 14</div>
+    <div class="nm">Автограф на отдельном листе в капсуле, 23×9 см</div>
+    <div class="era">Автограф</div>
+    <div class="tp">Росчерк на отдельном листе в капсуле. Оформляется в раму рядом с любой фотографией на выбор.</div>
+    <div class="pr">750 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide light" id="s23" style="grid-template-rows:1fr 1fr auto">
+  <div style="background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="img_packaging/box_kraft.jpg" alt="" style="width:100%;height:100%;object-fit:contain;padding:22px"></div>
+  <div style="background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;border-top:1px solid rgba(169,133,69,.2)"><img src="img_packaging/bag_white.jpg" alt="" style="width:100%;height:100%;object-fit:contain;padding:22px"></div>
+  <div style="padding:32px 44px 40px;border-top:1px solid rgba(169,133,69,.35)">
+    <div class="kick">Упаковка Stargift</div>
+    <div class="serif" style="font-weight:500;font-size:38px;line-height:1.06;margin-top:14px">Как мы отдаём подарок</div>
+    <p style="font:300 22px/1.46 'Inter';color:#4a4a4a;margin-top:12px">Крафт-бумага с автографами великих, лента дома
+    и плотный пакет. Оформленную работу привозим и вешаем сами.</p>
+  </div>
+</section>
+<section class="slide dark" id="s24" style="grid-template-rows:auto 1fr">
+  <div style="padding:52px 44px 0">
+    <div class="kick d" style="margin-bottom:14px">Подборка целиком</div>
+    <h2 class="serif" style="font-weight:300;font-size:52px;line-height:1;color:var(--ivory)">14 предметов</h2>
+  </div>
+  <div style="padding:24px 44px 44px"><div class="lad-row"><div class="lad-nm">«Off The Wall» — конверт с автографом</div><div class="lad-pr">4 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">«Bad» — промо-тираж с автографом</div><div class="lad-pr">3 800 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">«Bad» — конверт с именным посвящением и автографом</div><div class="lad-pr">3 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">«Thriller» — ранний тираж QE 38112 с автографом</div><div class="lad-pr">2 400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Фотография в белой шляпе с автографом, 28×36 см</div><div class="lad-pr">2 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Цветная фотография с автографом, 28×36 см</div><div class="lad-pr">1 850 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">«Maybe Tomorrow» — первый тираж 1971 года с автографами братьев Джексон</div><div class="lad-pr">1 850 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">«Thriller» — японское издание инструментальной версии с оби-полосой и автографом</div><div class="lad-pr">1 750 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Фотография в расшитом сценическом костюме с автографом, 19×28 см</div><div class="lad-pr">1 600 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Фотография эпохи «Billie Jean» с автографом, 41×51 см</div><div class="lad-pr">1 300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">«Farewell My Summer Love» — конверт с автографом</div><div class="lad-pr">1 050 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">«Got To Be There» — конверт сольного дебюта с автографом</div><div class="lad-pr">1 000 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">«Diana Ross Presents The Jackson 5» — конверт с автографом</div><div class="lad-pr">900 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Автограф на отдельном листе в капсуле, 23×9 см</div><div class="lad-pr">750 000&nbsp;₽</div></div></div>
+</section>
+<section class="slide dark" id="s25" style="grid-template-rows:1fr auto">
+  <div style="padding:0 44px;display:flex;flex-direction:column;justify-content:center">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:130px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.97;align-self:flex-start">
+    <h2 class="serif" style="font-weight:300;font-size:54px;line-height:1.1;color:var(--ivory);margin-top:38px">Майкл Джексон. От первого сингла до последней пластинки с Куинси Джонсом.</h2>
+  </div>
+  <div style="padding:28px 44px 44px;border-top:1px solid rgba(169,133,69,.3)">
+    <span class="kick" style="letter-spacing:.22em;color:var(--gold2)">stargift.ru</span>
+  </div>
+</section>
+</div>
+
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^s/,'');const id=n?('s'+n.padStart(2,'0')):'s01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+function go(d){const cur=+((location.hash.slice(1).replace(/^s/,''))||1);let x=cur+d;if(x<1)x=1;if(x>25)x=25;location.hash='s'+x;}
+show();addEventListener('hashchange',show);
+addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')go(1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(-1);});
+addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX<innerWidth*0.32?-1:1);});
+</script>
+<style>@page{size:720px 1280px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.slide{animation:none}.deck{height:auto}
+.slide{position:relative;inset:auto;display:grid !important;width:720px;height:1280px;page-break-after:always}}</style>
