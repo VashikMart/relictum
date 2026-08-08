@@ -9,6 +9,8 @@
 """
 import html, os, sys
 
+import json
+
 from tools_kat_data import LOTS, ORDER, CHAPTERS
 
 V = (sys.argv[1].upper() if len(sys.argv) > 1 else "H") == "V"
@@ -25,12 +27,28 @@ def rub(n):
     return f"{n:,}".replace(",", " ") + "&nbsp;₽"
 
 
+_oi = os.path.join(R, C, "orig", "index.json")
+ORIG = json.load(open(_oi, encoding="utf-8")) if os.path.exists(_oi) else {}
+
+
 def img(tag):
-    """Вырез предмета на белом; студийный кадр — запасной вариант."""
+    """Фото лота.
+
+    У предметов со сложной границей (вырубной конверт, нотный лист, накладка
+    гитары) автоматический вырез оставляет рваный край — для них берём
+    оригинальный кадр объявления как есть. Остальным вырез идёт на пользу.
+    """
+    if tag in ORIG:
+        return f"{C}/orig/{tag}_0.jpg"
     for p in (f"{C}/cut/{tag}.jpg", f"{C}/pick/{tag}.jpg"):
         if os.path.exists(os.path.join(R, p)):
             return p
     return f"{C}/pick/{tag}.jpg"
+
+
+def extra(tag):
+    """Дополнительные кадры объявления — на отдельный слайд ракурсов."""
+    return [f"{C}/orig/{tag}_{i}.jpg" for i in range(1, len(ORIG.get(tag, [])))]
 
 
 BASE = """
@@ -125,6 +143,32 @@ def main():
   </div>
 </section>""")
 
+    def angles(tag, kick, shots):
+        cells = "".join(
+            f'<div style="background:#F7F5F1;display:flex;align-items:center;'
+            f'justify-content:center;overflow:hidden;height:100%">'
+            f'<img src="{p}" alt="" style="max-width:100%;max-height:100%;object-fit:contain"></div>'
+            for p in shots)
+        cols = len(shots)
+        if V:
+            add(f"""<section class="slide light" id="__ID__" style="grid-template-rows:1fr auto">
+  <div style="display:grid;grid-template-rows:repeat({cols},1fr);gap:12px;padding:34px 40px 0">{cells}</div>
+  <div style="padding:26px 44px 38px;border-top:1px solid rgba(169,133,69,.35)">
+    <div class="kick">{esc(kick)}</div>
+    <div class="serif" style="font-weight:500;font-size:34px;line-height:1.06;margin-top:12px">{esc(LOTS[tag]['name'])}</div>
+    <p style="font:300 20px/1.45 'Inter';color:#4a4a4a;margin-top:10px">Оригинальные кадры объявления: предмет с других сторон.</p>
+  </div>
+</section>""")
+        else:
+            add(f"""<section class="slide white" id="__ID__" style="grid-template-rows:auto 1fr auto">
+  <div style="padding:32px 60px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <div class="serif" style="font-weight:500;font-size:30px;color:var(--ink);max-width:60ch">{esc(LOTS[tag]['name'])}</div>
+    <span class="kick">{esc(kick)}</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat({cols},1fr);gap:20px;padding:22px 60px 0">{cells}</div>
+  <div style="padding:18px 60px 32px;font:300 17.5px/1.5 'Inter';color:#4a4a4a">Оригинальные кадры объявления: предмет с других сторон.</div>
+</section>""")
+
     def divider(kick, huge, sub, photo):
         if V:
             add(f"""<section class="slide dark" id="__ID__" style="grid-template-rows:1fr">
@@ -196,7 +240,11 @@ def main():
         divider(kick, huge, sub, HERO[grp])
         keys = [k for k in ORDER if LOTS[k]["grp"] == grp]
         for i, k in enumerate(keys, 1):
-            solo(k, f"{NAMES[grp]} · {i} из {len(keys)}")
+            kick = f"{NAMES[grp]} · {i} из {len(keys)}"
+            solo(k, kick)
+            sh = extra(k)
+            if sh:
+                angles(k, kick, sh)
 
     # ---------- упаковка
     if V:

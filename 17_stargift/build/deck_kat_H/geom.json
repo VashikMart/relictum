@@ -19,16 +19,16 @@
     "filter": "brightness(0) invert(1)"
    },
    {
-    "src": "img_kat/cut/ph_band_x2.jpg",
+    "src": "img_kat/orig/ph_band_x2_0.jpg",
     "rect": {
      "x": 673.4375,
-     "y": 173.328125,
+     "y": 147.859375,
      "w": 560.5625,
-     "h": 373.328125
+     "h": 424.265625
     },
     "nat": [
-     1500,
-     999
+     1600,
+     1211
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -152,7 +152,7 @@
   "bg": "rgb(11, 11, 12)",
   "imgs": [
    {
-    "src": "img_kat/cut/ph_black_promo.jpg",
+    "src": "img_kat/orig/ph_black_promo_0.jpg",
     "rect": {
      "x": 0,
      "y": 0,
@@ -160,8 +160,8 @@
      "h": 720
     },
     "nat": [
-     1473,
-     1244
+     1600,
+     1280
     ],
     "fit": "cover",
     "pos": "50% 40%",
@@ -677,16 +677,16 @@
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
-    "src": "img_kat/cut/ph_black_promo.jpg",
+    "src": "img_kat/orig/ph_black_promo_0.jpg",
     "rect": {
      "x": 40,
-     "y": 94.578125,
+     "y": 108.578125,
      "w": 628.5625,
-     "h": 530.828125
+     "h": 502.84375
     },
     "nat": [
-     1473,
-     1244
+     1600,
+     1280
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -880,16 +880,16 @@
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
-    "src": "img_kat/cut/pg_guitarhero.jpg",
+    "src": "img_kat/orig/pg_guitarhero_0.jpg",
     "rect": {
      "x": 40,
-     "y": 136.65625,
+     "y": 124.34375,
      "w": 628.5625,
-     "h": 446.6875
+     "h": 471.3125
     },
     "nat": [
-     1500,
-     1066
+     1599,
+     1199
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -1083,16 +1083,128 @@
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
-    "src": "img_kat/cut/ph_band_8x10.jpg",
+    "src": "img_kat/orig/pg_guitarhero_1.jpg",
     "rect": {
-     "x": 107.859375,
+     "x": 60,
+     "y": 145.984375,
+     "w": 570,
+     "h": 442.78125
+    },
+    "nat": [
+     923,
+     717
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_kat/orig/pg_guitarhero_2.jpg",
+    "rect": {
+     "x": 684.625,
+     "y": 91,
+     "w": 500.734375,
+     "h": 552.734375
+    },
+    "nat": [
+     1011,
+     1116
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 58,
+     "y": 32,
+     "w": 764.375,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Накладка гитары Guitar Hero с автографами всех участников",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 985.8125,
+     "y": 47,
+     "w": 250.1875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Весь состав · 4 из 7",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 58,
+     "y": 663.75,
+     "w": 533,
+     "h": 21
+    },
+    "align": "start",
+    "lh": 26.25,
+    "base": 17.5,
+    "runs": [
+     {
+      "text": "Оригинальные кадры объявления: предмет с других сторон.",
+      "font": "Inter",
+      "size": 17.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s08": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/orig/ph_band_8x10_0.jpg",
+    "rect": {
+     "x": 101.984375,
      "y": 44,
-     "w": 492.84375,
+     "w": 504.578125,
      "h": 631.984375
     },
     "nat": [
-     928,
-     1190
+     998,
+     1250
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -1282,7 +1394,7 @@
    }
   ]
  },
- "s08": {
+ "s09": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -1485,20 +1597,20 @@
    }
   ]
  },
- "s09": {
+ "s10": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
-    "src": "img_kat/cut/ph_band_x2.jpg",
+    "src": "img_kat/orig/ph_band_x2_0.jpg",
     "rect": {
      "x": 40,
-     "y": 150.6875,
+     "y": 122.125,
      "w": 628.5625,
-     "h": 418.609375
+     "h": 475.734375
     },
     "nat": [
-     1500,
-     999
+     1600,
+     1211
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -1688,7 +1800,7 @@
    }
   ]
  },
- "s10": {
+ "s11": {
   "bg": "rgb(11, 11, 12)",
   "imgs": [
    {
@@ -1810,7 +1922,7 @@
   ],
   "plates": [
    {
-    "file": "s10_0_plate.png",
+    "file": "s11_0_plate.png",
     "rect": {
      "x": 0,
      "y": 0,
@@ -1820,20 +1932,20 @@
    }
   ]
  },
- "s11": {
+ "s12": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
-    "src": "img_kat/cut/book_het.jpg",
+    "src": "img_kat/orig/book_het_0.jpg",
     "rect": {
-     "x": 70.140625,
-     "y": 44,
-     "w": 568.265625,
-     "h": 631.984375
+     "x": 40,
+     "y": 124.28125,
+     "w": 628.5625,
+     "h": 471.421875
     },
     "nat": [
-     856,
-     952
+     1600,
+     1200
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -2023,7 +2135,119 @@
    }
   ]
  },
- "s12": {
+ "s13": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/orig/book_het_1.jpg",
+    "rect": {
+     "x": 60,
+     "y": 172.125,
+     "w": 570,
+     "h": 427.5
+    },
+    "nat": [
+     1600,
+     1200
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_kat/orig/book_het_2.jpg",
+    "rect": {
+     "x": 741.59375,
+     "y": 128,
+     "w": 386.8125,
+     "h": 515.75
+    },
+    "nat": [
+     1200,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 60,
+     "y": 32,
+     "w": 858.59375,
+     "h": 74
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Джеймс Хэтфилд — «Messengers. The Guitars of Metallica» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 996.265625,
+     "y": 47,
+     "w": 239.734375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Участники · 1 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 58,
+     "y": 663.75,
+     "w": 533,
+     "h": 21
+    },
+    "align": "start",
+    "lh": 26.25,
+    "base": 17.5,
+    "runs": [
+     {
+      "text": "Оригинальные кадры объявления: предмет с других сторон.",
+      "font": "Inter",
+      "size": 17.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s14": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -2226,7 +2450,7 @@
    }
   ]
  },
- "s13": {
+ "s15": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -2429,7 +2653,7 @@
    }
   ]
  },
- "s14": {
+ "s16": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -2632,7 +2856,7 @@
    }
   ]
  },
- "s15": {
+ "s17": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -2835,20 +3059,20 @@
    }
   ]
  },
- "s16": {
+ "s18": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
-    "src": "img_kat/cut/pg_newsted.jpg",
+    "src": "img_kat/orig/pg_newsted_0.jpg",
     "rect": {
      "x": 40,
-     "y": 125.34375,
+     "y": 120.359375,
      "w": 628.5625,
-     "h": 469.3125
+     "h": 479.28125
     },
     "nat": [
-     1500,
-     1120
+     1339,
+     1021
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -3038,20 +3262,20 @@
    }
   ]
  },
- "s17": {
+ "s19": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
-    "src": "img_kat/cut/dh_lars_evans.jpg",
+    "src": "img_kat/orig/dh_lars_evans_0.jpg",
     "rect": {
-     "x": 40,
-     "y": 125.34375,
-     "w": 628.5625,
-     "h": 469.3125
+     "x": 117.328125,
+     "y": 44,
+     "w": 473.890625,
+     "h": 631.984375
     },
     "nat": [
-     1500,
-     1120
+     1199,
+     1599
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -3241,7 +3465,119 @@
    }
   ]
  },
- "s18": {
+ "s20": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/orig/dh_lars_evans_1.jpg",
+    "rect": {
+     "x": 137.765625,
+     "y": 91,
+     "w": 414.46875,
+     "h": 552.734375
+    },
+    "nat": [
+     1199,
+     1599
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_kat/orig/dh_lars_evans_2.jpg",
+    "rect": {
+     "x": 727.765625,
+     "y": 91,
+     "w": 414.46875,
+     "h": 552.734375
+    },
+    "nat": [
+     1199,
+     1599
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 58,
+     "y": 32,
+     "w": 733.59375,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Ларс Ульрих — пластик барабана Evans 25 см с автографом",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 994.234375,
+     "y": 47,
+     "w": 241.765625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Участники · 7 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 58,
+     "y": 663.75,
+     "w": 533,
+     "h": 21
+    },
+    "align": "start",
+    "lh": 26.25,
+    "base": 17.5,
+    "runs": [
+     {
+      "text": "Оригинальные кадры объявления: предмет с других сторон.",
+      "font": "Inter",
+      "size": 17.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s21": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -3444,7 +3780,7 @@
    }
   ]
  },
- "s19": {
+ "s22": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -3647,20 +3983,20 @@
    }
   ]
  },
- "s20": {
+ "s23": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
-    "src": "img_kat/cut/lp_truj_puppets.jpg",
+    "src": "img_kat/orig/lp_truj_puppets_0.jpg",
     "rect": {
-     "x": 117.703125,
+     "x": 117.28125,
      "y": 44,
-     "w": 473.15625,
-     "h": 631.984375
+     "w": 474,
+     "h": 632
     },
     "nat": [
-     1123,
-     1500
+     1200,
+     1600
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -3850,20 +4186,20 @@
    }
   ]
  },
- "s21": {
+ "s24": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
-    "src": "img_kat/cut/lp_truj_hardwired.jpg",
+    "src": "img_kat/orig/lp_truj_hardwired_0.jpg",
     "rect": {
      "x": 40,
-     "y": 140.828125,
+     "y": 100.625,
      "w": 628.5625,
-     "h": 438.34375
+     "h": 518.75
     },
     "nat": [
-     1150,
-     802
+     1185,
+     978
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -4053,7 +4389,119 @@
    }
   ]
  },
- "s22": {
+ "s25": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/orig/lp_truj_hardwired_1.jpg",
+    "rect": {
+     "x": 60,
+     "y": 194.59375,
+     "w": 570,
+     "h": 345.5625
+    },
+    "nat": [
+     1407,
+     853
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_kat/orig/lp_truj_hardwired_2.jpg",
+    "rect": {
+     "x": 650,
+     "y": 177.5,
+     "w": 570,
+     "h": 379.75
+    },
+    "nat": [
+     1600,
+     1066
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 58,
+     "y": 32,
+     "w": 803.359375,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Роберт Трухильо — «Hardwired... to Self-Destruct» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 986.453125,
+     "y": 47,
+     "w": 249.546875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Участники · 11 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 58,
+     "y": 663.75,
+     "w": 533,
+     "h": 21
+    },
+    "align": "start",
+    "lh": 26.25,
+    "base": 17.5,
+    "runs": [
+     {
+      "text": "Оригинальные кадры объявления: предмет с других сторон.",
+      "font": "Inter",
+      "size": 17.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s26": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -4256,7 +4704,7 @@
    }
   ]
  },
- "s23": {
+ "s27": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -4459,7 +4907,7 @@
    }
   ]
  },
- "s24": {
+ "s28": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -4662,11 +5110,11 @@
    }
   ]
  },
- "s25": {
+ "s29": {
   "bg": "rgb(11, 11, 12)",
   "imgs": [
    {
-    "src": "img_kat/cut/ph_gahan_11x14.jpg",
+    "src": "img_kat/orig/ph_gahan_11x14_0.jpg",
     "rect": {
      "x": 0,
      "y": 0,
@@ -4674,8 +5122,8 @@
      "h": 720
     },
     "nat": [
-     908,
-     1148
+     1572,
+     1600
     ],
     "fit": "cover",
     "pos": "50% 40%",
@@ -4771,7 +5219,7 @@
   ],
   "plates": [
    {
-    "file": "s25_0_plate.png",
+    "file": "s29_0_plate.png",
     "rect": {
      "x": 0,
      "y": 0,
@@ -4781,7 +5229,7 @@
    }
   ]
  },
- "s26": {
+ "s30": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -4984,7 +5432,7 @@
    }
   ]
  },
- "s27": {
+ "s31": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -5187,7 +5635,7 @@
    }
   ]
  },
- "s28": {
+ "s32": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -5390,20 +5838,20 @@
    }
   ]
  },
- "s29": {
+ "s33": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
-    "src": "img_kat/cut/lyric_gahan_ets.jpg",
+    "src": "img_kat/orig/lyric_gahan_ets_0.jpg",
     "rect": {
-     "x": 100.109375,
+     "x": 117.28125,
      "y": 44,
-     "w": 508.328125,
-     "h": 631.984375
+     "w": 474,
+     "h": 632
     },
     "nat": [
-     1192,
-     1482
+     1200,
+     1600
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -5593,7 +6041,119 @@
    }
   ]
  },
- "s30": {
+ "s34": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/orig/lyric_gahan_ets_1.jpg",
+    "rect": {
+     "x": 137.71875,
+     "y": 91,
+     "w": 414.5625,
+     "h": 552.75
+    },
+    "nat": [
+     1200,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_kat/orig/lyric_gahan_ets_2.jpg",
+    "rect": {
+     "x": 727.71875,
+     "y": 91,
+     "w": 414.5625,
+     "h": 552.75
+    },
+    "nat": [
+     1200,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 58,
+     "y": 32,
+     "w": 741.390625,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Дэйв Гаан — нотный лист «Enjoy the Silence» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 959.671875,
+     "y": 47,
+     "w": 276.328125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Depeche Mode · 4 из 10",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 58,
+     "y": 663.75,
+     "w": 533,
+     "h": 21
+    },
+    "align": "start",
+    "lh": 26.25,
+    "base": 17.5,
+    "runs": [
+     {
+      "text": "Оригинальные кадры объявления: предмет с других сторон.",
+      "font": "Inter",
+      "size": 17.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s35": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -5796,20 +6356,20 @@
    }
   ]
  },
- "s31": {
+ "s36": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
-    "src": "img_kat/cut/ph_gahan_11x14.jpg",
+    "src": "img_kat/orig/ph_gahan_11x14_0.jpg",
     "rect": {
-     "x": 104.34375,
-     "y": 44.015625,
-     "w": 499.859375,
-     "h": 631.96875
+     "x": 43.8125,
+     "y": 44,
+     "w": 620.9375,
+     "h": 631.984375
     },
     "nat": [
-     908,
-     1148
+     1572,
+     1600
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -5999,7 +6559,119 @@
    }
   ]
  },
- "s32": {
+ "s37": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/orig/ph_gahan_11x14_1.jpg",
+    "rect": {
+     "x": 60,
+     "y": 153.625,
+     "w": 570,
+     "h": 427.5
+    },
+    "nat": [
+     1600,
+     1200
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_kat/orig/ph_gahan_11x14_2.jpg",
+    "rect": {
+     "x": 727.890625,
+     "y": 91.015625,
+     "w": 414.203125,
+     "h": 552.71875
+    },
+    "nat": [
+     1199,
+     1600
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 58,
+     "y": 32,
+     "w": 612.453125,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Дэйв Гаан — фотография с автографом, 28×36 см",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 960.015625,
+     "y": 47,
+     "w": 275.984375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Depeche Mode · 6 из 10",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 58,
+     "y": 663.75,
+     "w": 533,
+     "h": 21
+    },
+    "align": "start",
+    "lh": 26.25,
+    "base": 17.5,
+    "runs": [
+     {
+      "text": "Оригинальные кадры объявления: предмет с других сторон.",
+      "font": "Inter",
+      "size": 17.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s38": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -6202,7 +6874,7 @@
    }
   ]
  },
- "s33": {
+ "s39": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -6405,7 +7077,7 @@
    }
   ]
  },
- "s34": {
+ "s40": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -6608,20 +7280,20 @@
    }
   ]
  },
- "s35": {
+ "s41": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
-    "src": "img_kat/cut/cd_gahan_soulsavers.jpg",
+    "src": "img_kat/orig/cd_gahan_soulsavers_0.jpg",
     "rect": {
-     "x": 40,
-     "y": 48.96875,
-     "w": 628.5625,
-     "h": 622.0625
+     "x": 80.15625,
+     "y": 44,
+     "w": 548.25,
+     "h": 631.984375
     },
     "nat": [
-     968,
-     958
+     1388,
+     1600
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -6811,7 +7483,103 @@
    }
   ]
  },
- "s36": {
+ "s42": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/orig/cd_gahan_soulsavers_1.jpg",
+    "rect": {
+     "x": 360.296875,
+     "y": 91,
+     "w": 559.390625,
+     "h": 552.734375
+    },
+    "nat": [
+     1600,
+     1581
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 58,
+     "y": 32,
+     "w": 780.125,
+     "h": 37
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Дэйв Гаан — «Angels & Ghosts» с The Soulsavers, с автографом",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 950,
+     "y": 47,
+     "w": 286,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Depeche Mode · 10 из 10",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 58,
+     "y": 663.75,
+     "w": 533,
+     "h": 21
+    },
+    "align": "start",
+    "lh": 26.25,
+    "base": 17.5,
+    "runs": [
+     {
+      "text": "Оригинальные кадры объявления: предмет с других сторон.",
+      "font": "Inter",
+      "size": 17.5,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s43": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -6923,7 +7691,7 @@
   ],
   "decor": []
  },
- "s37": {
+ "s44": {
   "bg": "rgb(11, 11, 12)",
   "imgs": [],
   "texts": [
@@ -7385,7 +8153,7 @@
    }
   ]
  },
- "s38": {
+ "s45": {
   "bg": "rgb(11, 11, 12)",
   "imgs": [],
   "texts": [
@@ -8253,7 +9021,7 @@
    }
   ]
  },
- "s39": {
+ "s46": {
   "bg": "rgb(11, 11, 12)",
   "imgs": [],
   "texts": [
@@ -8889,7 +9657,7 @@
    }
   ]
  },
- "s40": {
+ "s47": {
   "bg": "rgb(11, 11, 12)",
   "imgs": [
    {
