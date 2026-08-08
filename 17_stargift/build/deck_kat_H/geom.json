@@ -1,0 +1,8975 @@
+{
+ "s01": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img/stargift_logo.png",
+    "rect": {
+     "x": 52,
+     "y": 56,
+     "w": 181.640625,
+     "h": 138
+    },
+    "nat": [
+     1440,
+     1094
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "brightness(0) invert(1)"
+   },
+   {
+    "src": "img_kat/cut/ph_band_x2.jpg",
+    "rect": {
+     "x": 673.4375,
+     "y": 173.328125,
+     "w": 560.5625,
+     "h": 373.328125
+    },
+    "nat": [
+     1500,
+     999
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 50,
+     "y": 269.9375,
+     "w": 336.296875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Частное собрание · Музыка",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 52,
+     "y": 306.9375,
+     "w": 523.4375,
+     "h": 128.9375
+    },
+    "align": "start",
+    "lh": 64.48,
+    "base": 62,
+    "runs": [
+     {
+      "text": "Metallica",
+      "font": "Cormorant Garamond",
+      "size": 62,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "Depeche Mode",
+      "font": "Cormorant Garamond",
+      "size": 62,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 52,
+     "y": 457.875,
+     "w": 466.953125,
+     "h": 115.1875
+    },
+    "align": "start",
+    "lh": 28.8,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Тридцать один предмет: пластинки, барабанные\n      пластики, накладки гитар, тексты песен и фотографии. Две группы, каждая — со своим составом на стене.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(184, 178, 166)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 50,
+     "y": 649,
+     "w": 273.046875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "31 предмет · август 2026",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.12,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   }
+  ],
+  "decor": []
+ },
+ "s02": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/ph_black_promo.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     1473,
+     1244
+    ],
+    "fit": "cover",
+    "pos": "50% 40%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 913.6875,
+     "y": 154.890625,
+     "w": 306.3125,
+     "h": 16
+    },
+    "align": "right",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Металлика · весь состав",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 803.015625,
+     "y": 191.890625,
+     "w": 414.984375,
+     "h": 177.46875
+    },
+    "align": "right",
+    "lh": 59.16,
+    "base": 58,
+    "runs": [
+     {
+      "text": "Четыре подписи на одном предмете",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-huge"
+   },
+   {
+    "rect": {
+     "x": 674.453125,
+     "y": 422.359375,
+     "w": 543.546875,
+     "h": 140.75
+    },
+    "align": "right",
+    "lh": 35.2,
+    "base": 22,
+    "runs": [
+     {
+      "text": "Собрать всех четверых на одной вещи труднее всего: группа подписывает по отдельности и редко в один день. В подборке таких предметов семь.",
+      "font": "Inter",
+      "size": 22,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-sub"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 1148,
+     "y": 395.359375,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s02_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s03": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/dh_concert_1991.jpg",
+    "rect": {
+     "x": 40,
+     "y": 65,
+     "w": 628.5625,
+     "h": 590
+    },
+    "nat": [
+     1500,
+     1408
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 127.609375,
+     "w": 247.046875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Весь состав · 1 из 7",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 142.609375,
+     "w": 487.4375,
+     "h": 115.21875
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Пластик барабана с концерта 20 ноября 1991 года с автографами всех участников",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 271.828125,
+     "w": 290.03125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1991 · тур «Чёрного альбома»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 293.828125,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Год выхода «Чёрного альбома»: пятнадцать миллионов проданных копий в США и первое место в десяти странах.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 386.3125,
+     "w": 487.4375,
+     "h": 112.3125
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Пластик снят с установки после концерта и подписан всеми четырьмя в тот же вечер. Самый дорогой предмет подборки и единственный, который сам побывал на сцене.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 516.625,
+     "w": 183.1875,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "1 900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 572.625,
+     "w": 49.390625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 273.828125,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s04": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/lp_killemall.jpg",
+    "rect": {
+     "x": 40,
+     "y": 50.171875,
+     "w": 628.5625,
+     "h": 619.65625
+    },
+    "nat": [
+     777,
+     766
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 146.8125,
+     "w": 249.65625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Весь состав · 2 из 7",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 161.8125,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "«Kill 'Em All» — конверт с автографами всех участников",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 252.625,
+     "w": 244.0625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1983 · дебютный альбом",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 274.625,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Первая пластинка Metallica. Записана за две недели на деньги, занятые у владельца магазина пластинок; тираж — пятнадцать тысяч копий.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 367.109375,
+     "w": 487.4375,
+     "h": 112.3125
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Конверт с росчерками всего состава. Автографы на дебютнике собрать труднее всего: до славы его подписывали редко, после — экземпляры уже разошлись.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 497.421875,
+     "w": 183.1875,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "1 600 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 553.421875,
+     "w": 48.53125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 254.625,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s05": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/ph_black_promo.jpg",
+    "rect": {
+     "x": 40,
+     "y": 94.578125,
+     "w": 628.5625,
+     "h": 530.828125
+    },
+    "nat": [
+     1473,
+     1244
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 154.5625,
+     "w": 249.796875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Весь состав · 3 из 7",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 169.5625,
+     "w": 487.4375,
+     "h": 115.21875
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Промо-фотография эпохи «Чёрного альбома» с автографами всех участников",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 298.78125,
+     "w": 195.421875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1991 · промо-тираж",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 320.78125,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Снимок рассылался по редакциям к выходу альбома, который перевёл группу из металла в стадионы.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 387.4375,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Чёрно-белый кадр состава 1991 года, подписанный всеми четырьмя. Промо-фотографии печатались малым числом и в продажу не поступали.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 489.671875,
+     "w": 159.109375,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "950 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 545.671875,
+     "w": 48.53125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 300.78125,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s06": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/pg_guitarhero.jpg",
+    "rect": {
+     "x": 40,
+     "y": 136.65625,
+     "w": 628.5625,
+     "h": 446.6875
+    },
+    "nat": [
+     1500,
+     1066
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 146.8125,
+     "w": 250.1875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Весь состав · 4 из 7",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 161.8125,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Накладка гитары Guitar Hero с автографами всех участников",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 252.625,
+     "w": 289.8125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "2009 · Guitar Hero: Metallica",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 274.625,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Игра, через которую с группой познакомилось поколение, не заставшее ни одного её альбома вживую.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 367.109375,
+     "w": 487.4375,
+     "h": 112.3125
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Накладка от контроллера из лимитированного издания, подписанная всем составом. Дом ставит такую накладку на настоящую гитару — инструмент подбирается под её цвет.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 497.421875,
+     "w": 161.6875,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 553.421875,
+     "w": 90.625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 254.625,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s07": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/ph_band_8x10.jpg",
+    "rect": {
+     "x": 107.859375,
+     "y": 44,
+     "w": 492.84375,
+     "h": 631.984375
+    },
+    "nat": [
+     928,
+     1190
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 160.859375,
+     "w": 249.5,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Весь состав · 5 из 7",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 175.859375,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Фотография с автографами всех участников, 20×25 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 266.671875,
+     "w": 194.921875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Состав с Трухильо",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 288.671875,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Четыре профиля лицом друг к другу — кадр, который группа использовала как визитную карточку современного состава.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 381.15625,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Компактный формат с четырьмя росчерками. Самый простой способ повесить на стену полный состав, не занимая полстены.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 483.390625,
+     "w": 157.734375,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "750 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 539.390625,
+     "w": 48.53125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 268.671875,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s08": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/ticket_2009.jpg",
+    "rect": {
+     "x": 40,
+     "y": 209.984375,
+     "w": 628.5625,
+     "h": 300.03125
+    },
+    "nat": [
+     1500,
+     716
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 154.5625,
+     "w": 249.84375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Весь состав · 6 из 7",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 169.5625,
+     "w": 487.4375,
+     "h": 115.21875
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Концертный билет 2009 года с автографами всех участников в капсуле",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 298.78125,
+     "w": 278.453125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "2009 · тур «Death Magnetic»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 320.78125,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Обычный входной билет, который после концерта попал к музыкантам и вернулся с четырьмя подписями.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 387.4375,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Предмет размером с ладонь и с полным составом на нём. Запечатан в капсулу, оформляется в раму рядом с фотографией группы.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 489.671875,
+     "w": 160.3125,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "700 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 545.671875,
+     "w": 49.390625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 300.78125,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s09": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/ph_band_x2.jpg",
+    "rect": {
+     "x": 40,
+     "y": 150.6875,
+     "w": 628.5625,
+     "h": 418.609375
+    },
+    "nat": [
+     1500,
+     999
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 173.765625,
+     "w": 249.078125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Весь состав · 7 из 7",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 188.765625,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Фотография с автографами всех участников, 28×36 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 279.578125,
+     "w": 215.40625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Современный состав",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 301.578125,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Кадр с фестивальной сцены: четверо с поднятыми руками в конце сета.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 368.234375,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Крупный формат и четыре подписи по светлому полю — читаются с нескольких метров. Самый доступный групповой лот подборки.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 470.46875,
+     "w": 156.03125,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "320 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 526.46875,
+     "w": 90.625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 281.578125,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s10": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/ph_lars_c.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     1500,
+     1243
+    ],
+    "fit": "cover",
+    "pos": "50% 40%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 931.9375,
+     "y": 172.484375,
+     "w": 288.0625,
+     "h": 16
+    },
+    "align": "right",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Металлика · участники",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 803.015625,
+     "y": 209.484375,
+     "w": 414.984375,
+     "h": 177.46875
+    },
+    "align": "right",
+    "lh": 59.16,
+    "base": 58,
+    "runs": [
+     {
+      "text": "Хэтфилд, Ульрих,",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "Хэмметт, Трухильо",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-huge"
+   },
+   {
+    "rect": {
+     "x": 674.453125,
+     "y": 439.953125,
+     "w": 543.546875,
+     "h": 105.5625
+    },
+    "align": "right",
+    "lh": 35.2,
+    "base": 22,
+    "runs": [
+     {
+      "text": "Отдельные автографы участников: барабанные пластики, накладки гитар, пластинки и книга. Из них собирается стена, а не один предмет.",
+      "font": "Inter",
+      "size": 22,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-sub"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 1148,
+     "y": 412.953125,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s10_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s11": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/book_het.jpg",
+    "rect": {
+     "x": 70.140625,
+     "y": 44,
+     "w": 568.265625,
+     "h": 631.984375
+    },
+    "nat": [
+     856,
+     952
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 154.5625,
+     "w": 239.734375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Участники · 1 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 169.5625,
+     "w": 487.4375,
+     "h": 115.21875
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Джеймс Хэтфилд — «Messengers. The Guitars of Metallica» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 298.78125,
+     "w": 170.21875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Хэтфилд · книга",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 320.78125,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Издание о гитарах Metallica: инструменты, на которых сыграны все главные альбомы группы.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 387.4375,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Подписанный лист вклеен в книгу. Редкий для рок-подборки формат — экспонат, который можно взять в руки и пролистать.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 489.671875,
+     "w": 156.296875,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "350 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 545.671875,
+     "w": 49.390625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 300.78125,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s12": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/pg_truj.jpg",
+    "rect": {
+     "x": 40,
+     "y": 106.90625,
+     "w": 628.5625,
+     "h": 506.1875
+    },
+    "nat": [
+     1500,
+     1208
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 160.859375,
+     "w": 242.34375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Участники · 2 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 175.859375,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Роберт Трухильо — накладка гитары Stratocaster с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 266.671875,
+     "w": 304.921875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Трухильо · басист с 2003 года",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 288.671875,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "До Metallica играл у Оззи Осборна и в Suicidal Tendencies; в группу пришёл после прослушивания, снятого для документального фильма.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 381.15625,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Белая накладка Stratocaster с крупным росчерком. Дом подбирает под белую накладку чёрный или винтажно-белый корпус.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 483.390625,
+     "w": 156.03125,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "320 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 539.390625,
+     "w": 49.390625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 268.671875,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s13": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/cut_het.jpg",
+    "rect": {
+     "x": 40,
+     "y": 174.78125,
+     "w": 628.5625,
+     "h": 370.421875
+    },
+    "nat": [
+     1500,
+     884
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 173.765625,
+     "w": 242.484375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Участники · 3 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 188.765625,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Джеймс Хэтфилд — автограф на логотипе группы в капсуле",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 279.578125,
+     "w": 201.59375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Хэтфилд · автограф",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 301.578125,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Логотип Metallica, нарисованный в 1981 году, — один из самых узнаваемых знаков в музыке.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 368.234375,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Росчерк поверх фирменного логотипа, запечатанный в капсулу. Оформляется в раму рядом с любой фотографией на выбор.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 470.46875,
+     "w": 158.875,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 526.46875,
+     "w": 90.203125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 281.578125,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s14": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/cd_kirk_puppets.jpg",
+    "rect": {
+     "x": 151.203125,
+     "y": 44,
+     "w": 406.15625,
+     "h": 631.984375
+    },
+    "nat": [
+     964,
+     1500
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 173.765625,
+     "w": 242.859375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Участники · 4 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 188.765625,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Кирк Хэмметт — обложка «Master of Puppets» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 279.578125,
+     "w": 233.375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Хэмметт · соло-гитара",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 301.578125,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Учился у Джо Сатриани; соло на «Master of Puppets» разбирают в гитарных школах до сих пор.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 368.234375,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Компактный формат в капсуле. Пара к пластинке Ульриха: один и тот же альбом, подписанный двумя участниками.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 470.46875,
+     "w": 158.875,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 526.46875,
+     "w": 90.203125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 281.578125,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s15": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/dh_lars_12.jpg",
+    "rect": {
+     "x": 40,
+     "y": 57.65625,
+     "w": 628.5625,
+     "h": 604.671875
+    },
+    "nat": [
+     1500,
+     1443
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 173.765625,
+     "w": 242.171875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Участники · 5 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 188.765625,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Ларс Ульрих — пластик барабана 30 см с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 279.578125,
+     "w": 213.9375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Ульрих · барабанщик",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 301.578125,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Основал группу по объявлению в газете, которое сам же и подал; за установкой Metallica с первого дня.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 368.234375,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Крупный пластик с логотипом группы и росчерком поперёк. Дом ставит такой пластик на настоящий малый барабан на стойке.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 470.46875,
+     "w": 158.84375,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "290 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 526.46875,
+     "w": 90.625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 281.578125,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s16": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/pg_newsted.jpg",
+    "rect": {
+     "x": 40,
+     "y": 125.34375,
+     "w": 628.5625,
+     "h": 469.3125
+    },
+    "nat": [
+     1500,
+     1120
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 174.890625,
+     "w": 242.515625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Участники · 6 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 189.890625,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Джейсон Ньюстед — накладка гитары Stratocaster с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 280.703125,
+     "w": 274.703125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Ньюстед · басист 1986–2001",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 302.703125,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Пришёл в группу после гибели Клиффа Бёртона и отыграл пятнадцать лет — весь период от «...And Justice for All» до «S&M».",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 395.1875,
+     "w": 487.4375,
+     "h": 56.15625
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Накладка подписана с датой. Пара к накладке Трухильо: два басиста группы рядом на одной стене.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 469.34375,
+     "w": 159.75,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "280 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 525.34375,
+     "w": 90.625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 282.703125,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s17": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/dh_lars_evans.jpg",
+    "rect": {
+     "x": 40,
+     "y": 125.34375,
+     "w": 628.5625,
+     "h": 469.3125
+    },
+    "nat": [
+     1500,
+     1120
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 160.859375,
+     "w": 241.765625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Участники · 7 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 175.859375,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Ларс Ульрих — пластик барабана Evans 25 см с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 266.671875,
+     "w": 213.9375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Ульрих · барабанщик",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 288.671875,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Evans — один из двух брендов, между которыми ударники делят весь мир; Ульрих играл на них десятилетиями.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 381.15625,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Чистый белый пластик, росчерк по центру. Меньший диаметр — компактнее в раме, чем тридцатисантиметровый.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 483.390625,
+     "w": 158.84375,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "260 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 539.390625,
+     "w": 90.203125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 268.671875,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s18": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/dh_lars_remo.jpg",
+    "rect": {
+     "x": 40,
+     "y": 47.8125,
+     "w": 628.5625,
+     "h": 624.359375
+    },
+    "nat": [
+     1500,
+     1490
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 187.8125,
+     "w": 242.515625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Участники · 8 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 202.8125,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Ларс Ульрих — пластик барабана Remo 25 см с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 293.625,
+     "w": 213.9375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Ульрих · барабанщик",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 315.625,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Remo — второй из этих двух брендов; красный пластик выпускался ограниченными сериями.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 382.28125,
+     "w": 487.4375,
+     "h": 56.15625
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Красный пластик с чёрным росчерком — самый заметный из трёх барабанных лотов подборки.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 456.4375,
+     "w": 158.84375,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "260 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 512.4375,
+     "w": 48.53125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 295.625,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s19": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/lp_lars_puppets.jpg",
+    "rect": {
+     "x": 40,
+     "y": 148.390625,
+     "w": 628.5625,
+     "h": 423.21875
+    },
+    "nat": [
+     1500,
+     1010
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 160.859375,
+     "w": 242.515625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Участники · 9 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 175.859375,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Ларс Ульрих — «Master of Puppets» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 266.671875,
+     "w": 266.3125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1986 · «Master of Puppets»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 288.671875,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Последний альбом, записанный с Клиффом Бёртоном: через полгода после выхода он погиб в аварии автобуса в Швеции.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 381.15625,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Конверт с кладбищем крестов — обложка, которую в металле знают без подписи. Экземпляр полный, с самим винилом.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 483.390625,
+     "w": 158.84375,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "260 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 539.390625,
+     "w": 90.203125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 268.671875,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s20": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/lp_truj_puppets.jpg",
+    "rect": {
+     "x": 117.703125,
+     "y": 44,
+     "w": 473.15625,
+     "h": 631.984375
+    },
+    "nat": [
+     1123,
+     1500
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 160.859375,
+     "w": 252.546875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Участники · 10 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 175.859375,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Роберт Трухильо — «Master of Puppets» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 266.671875,
+     "w": 266.3125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1986 · «Master of Puppets»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 288.671875,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Трухильо пришёл в группу через семнадцать лет после выхода этого альбома и играет его партии на каждом концерте.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 381.15625,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Тот же альбом, третий автограф. Три экземпляра «Master of Puppets» с разными подписями собираются в один ряд на стене.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 483.390625,
+     "w": 158.84375,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "260 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 539.390625,
+     "w": 90.625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 268.671875,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s21": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/lp_truj_hardwired.jpg",
+    "rect": {
+     "x": 40,
+     "y": 140.828125,
+     "w": 628.5625,
+     "h": 438.34375
+    },
+    "nat": [
+     1150,
+     802
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 173.765625,
+     "w": 249.546875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Участники · 11 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 188.765625,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Роберт Трухильо — «Hardwired... to Self-Destruct» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 279.578125,
+     "w": 190.609375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "2016 · «Hardwired»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 301.578125,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Первый альбом группы за восемь лет; вышел сразу на первое место в четырнадцати странах.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 368.234375,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Яркая обложка с искажённым лицом — самая современная вещь подборки. Росчерк по тёмному полю читается на просвет.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 470.46875,
+     "w": 156.703125,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "250 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 526.46875,
+     "w": 90.625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 281.578125,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s22": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/ph_lars_c.jpg",
+    "rect": {
+     "x": 40,
+     "y": 99.5625,
+     "w": 628.5625,
+     "h": 520.859375
+    },
+    "nat": [
+     1500,
+     1243
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 187.8125,
+     "w": 252.15625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Участники · 12 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 202.8125,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Ларс Ульрих — фотография с автографом, 28×36 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 293.625,
+     "w": 157.140625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Ульрих · сцена",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 315.625,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Кадр за установкой в момент удара: то, ради чего на Metallica и ходят.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 382.28125,
+     "w": 487.4375,
+     "h": 56.15625
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Крупный формат, живой сценический кадр. Самый доступный лот подборки и самый понятный в подарок.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 456.4375,
+     "w": 156.4375,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "220 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 512.4375,
+     "w": 90.625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 295.625,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s23": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/cd_lars.jpg",
+    "rect": {
+     "x": 40,
+     "y": 134.765625,
+     "w": 628.5625,
+     "h": 450.46875
+    },
+    "nat": [
+     1433,
+     1027
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 173.765625,
+     "w": 252.296875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Участники · 13 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 188.765625,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Ларс Ульрих — обложка «Metallica» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 279.578125,
+     "w": 234.359375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1991 · «Чёрный альбом»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 301.578125,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Альбом без названия, который все зовут «Чёрным»: обложка почти пустая, только тиснёный логотип и змея.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 368.234375,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Росчерк серебром по чёрному полю — единственное светлое пятно на обложке. Оформляется в раму с красным или угольным паспарту.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 470.46875,
+     "w": 156.4375,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "220 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 526.46875,
+     "w": 90.203125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 281.578125,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s24": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/ph_truj.jpg",
+    "rect": {
+     "x": 62.765625,
+     "y": 44,
+     "w": 583.015625,
+     "h": 631.984375
+    },
+    "nat": [
+     1131,
+     1226
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 187.8125,
+     "w": 252.6875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Участники · 14 из 14",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 202.8125,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Роберт Трухильо — фотография с автографом, 20×25 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 293.625,
+     "w": 179.453125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Трухильо · сцена",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 315.625,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Узнаваемая низкая стойка с басом почти у колен — его манера, которую ни с кем не спутать.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 382.28125,
+     "w": 487.4375,
+     "h": 56.15625
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Самый доступный лот подборки. Небольшой формат, оформляется в раму с угольным паспарту.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 456.4375,
+     "w": 156.171875,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "190 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 512.4375,
+     "w": 48.53125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 295.625,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s25": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/ph_gahan_11x14.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     908,
+     1148
+    ],
+    "fit": "cover",
+    "pos": "50% 40%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 1045.984375,
+     "y": 231.640625,
+     "w": 174.015625,
+     "h": 16
+    },
+    "align": "right",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Depeche Mode",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 959.71875,
+     "y": 262.640625,
+     "w": 260.28125,
+     "h": 71
+    },
+    "align": "right",
+    "lh": 59.16,
+    "base": 58,
+    "runs": [
+     {
+      "text": "Гаан и Гор",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-huge"
+   },
+   {
+    "rect": {
+     "x": 674.453125,
+     "y": 380.796875,
+     "w": 543.546875,
+     "h": 105.5625
+    },
+    "align": "right",
+    "lh": 35.2,
+    "base": 22,
+    "runs": [
+     {
+      "text": "Голос группы и её автор. Десять предметов — от дебютного «Speak & Spell» 1981 года до «Memento Mori», записанного уже вдвоём.",
+      "font": "Inter",
+      "size": 22,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-sub"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 1148,
+     "y": 353.796875,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s25_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s26": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/lp_gore_speak.jpg",
+    "rect": {
+     "x": 41.015625,
+     "y": 44,
+     "w": 626.515625,
+     "h": 631.984375
+    },
+    "nat": [
+     1487,
+     1500
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 160.859375,
+     "w": 273.1875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Depeche Mode · 1 из 10",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 175.859375,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Мартин Гор — «Speak & Spell» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 266.671875,
+     "w": 241.53125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1981 · дебютный альбом",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 288.671875,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Единственная пластинка, записанная с Винсом Кларком: он ушёл сразу после выхода, и писать песни начал Гор.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 381.15625,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Конверт дебютника с росчерком автора всего, что группа выпустила позже. Точка, с которой начинается Depeche Mode как авторская группа.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 483.390625,
+     "w": 161.234375,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "400 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 539.390625,
+     "w": 90.625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 268.671875,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s27": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/lp_gahan.jpg",
+    "rect": {
+     "x": 49.234375,
+     "y": 44,
+     "w": 610.09375,
+     "h": 631.984375
+    },
+    "nat": [
+     1393,
+     1443
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 160.859375,
+     "w": 275.8125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Depeche Mode · 2 из 10",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 175.859375,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Дэйв Гаан — «Black Celebration» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 266.671875,
+     "w": 264.484375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1986 · «Black Celebration»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 288.671875,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Альбом, на котором группа окончательно ушла в тёмное звучание и нашла интонацию, за которую её любят до сих пор.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 381.15625,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Конверт с ночным городом и крупным росчерком по светлой части. Один из двух автографов Гаана на пластинке в подборке.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 483.390625,
+     "w": 161.234375,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "400 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 539.390625,
+     "w": 48.53125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 268.671875,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s28": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/lp_gahan_violator.jpg",
+    "rect": {
+     "x": 40,
+     "y": 49.5625,
+     "w": 628.5625,
+     "h": 620.859375
+    },
+    "nat": [
+     1306,
+     1290
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 160.859375,
+     "w": 275.9375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Depeche Mode · 3 из 10",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 175.859375,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Дэйв Гаан — «Violator» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 266.671875,
+     "w": 175.046875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1990 · «Violator»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 288.671875,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Самый продаваемый альбом группы. На автограф-сессию в лос-анджелесском магазине пришло около двадцати тысяч человек, и полиция закрыла квартал.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 381.15625,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Красная роза на сером поле — обложка, которую узнают без подписи. Росчерк идёт по нижней светлой части конверта.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 483.390625,
+     "w": 161.234375,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "400 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 539.390625,
+     "w": 90.203125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 268.671875,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s29": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/lyric_gahan_ets.jpg",
+    "rect": {
+     "x": 100.109375,
+     "y": 44,
+     "w": 508.328125,
+     "h": 631.984375
+    },
+    "nat": [
+     1192,
+     1482
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 173.765625,
+     "w": 276.328125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Depeche Mode · 4 из 10",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 188.765625,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Дэйв Гаан — нотный лист «Enjoy the Silence» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 279.578125,
+     "w": 260.015625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1990 · «Enjoy the Silence»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 301.578125,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Гор принёс её как медленную балладу; Алан Уайлдер добавил ритм, и вещь стала главным синглом группы.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 368.234375,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Нотная запись с розой на полях и росчерком поверх. Пара к тексту «Personal Jesus»: две главные песни рядом.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 470.46875,
+     "w": 161.234375,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "400 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 526.46875,
+     "w": 90.625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 281.578125,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s30": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/lyric_gore_pj.jpg",
+    "rect": {
+     "x": 129.53125,
+     "y": 44,
+     "w": 449.484375,
+     "h": 631.984375
+    },
+    "nat": [
+     963,
+     1354
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 160.859375,
+     "w": 275.640625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Depeche Mode · 5 из 10",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 175.859375,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Мартин Гор — лист с текстом «Personal Jesus» и автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 266.671875,
+     "w": 236.765625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1989 · «Personal Jesus»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 288.671875,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Песня написана под впечатлением от книги Присциллы Пресли об Элвисе — о человеке, который становится для другого богом.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 381.15625,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Отпечатанный текст песни с росчерком автора. Формат, который читается вблизи: гость подходит и разбирает строки.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 483.390625,
+     "w": 159.328125,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "380 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 539.390625,
+     "w": 90.625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 268.671875,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s31": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/ph_gahan_11x14.jpg",
+    "rect": {
+     "x": 104.34375,
+     "y": 44.015625,
+     "w": 499.859375,
+     "h": 631.96875
+    },
+    "nat": [
+     908,
+     1148
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 187.8125,
+     "w": 275.984375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Depeche Mode · 6 из 10",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 202.8125,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Дэйв Гаан — фотография с автографом, 28×36 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 293.625,
+     "w": 134.09375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Гаан · сцена",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 315.625,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Стойка с микрофоном на вытянутой руке — жест, который на концертах группы повторяет весь зал.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 382.28125,
+     "w": 487.4375,
+     "h": 56.15625
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Крупный формат, тёмный кадр и светлый росчерк. Оформляется в тёмную раму с угольным паспарту.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 456.4375,
+     "w": 158.421875,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "360 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 512.4375,
+     "w": 90.203125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 295.625,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s32": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/lp_gore_memento.jpg",
+    "rect": {
+     "x": 40,
+     "y": 49.90625,
+     "w": 628.5625,
+     "h": 620.171875
+    },
+    "nat": [
+     1500,
+     1480
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 173.765625,
+     "w": 275.21875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Depeche Mode · 7 из 10",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 188.765625,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Мартин Гор — «Memento Mori» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 279.578125,
+     "w": 224.65625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "2023 · «Memento Mori»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 301.578125,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Первый альбом после смерти Энди Флетчера; название придумали до того, как его не стало.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 368.234375,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Белые крылья на чёрном поле. Самая свежая пластинка подборки и единственная от дуэта, а не от трио.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 470.46875,
+     "w": 156.296875,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "350 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 526.46875,
+     "w": 90.203125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 281.578125,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s33": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/ph_gahan_8x10.jpg",
+    "rect": {
+     "x": 40,
+     "y": 111.90625,
+     "w": 628.5625,
+     "h": 496.1875
+    },
+    "nat": [
+     736,
+     581
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 187.8125,
+     "w": 275.984375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Depeche Mode · 8 из 10",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 202.8125,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Дэйв Гаан — фотография с автографом, 20×25 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 293.625,
+     "w": 134.09375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Гаан · сцена",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 315.625,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Кадр с фиолетовым сценическим светом — фирменная палитра туров группы двухтысячных.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 382.28125,
+     "w": 487.4375,
+     "h": 56.15625
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Компактный формат с ярким цветом. Под холодный кадр дом берёт синее замшевое паспарту.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 456.4375,
+     "w": 156.03125,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "320 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 512.4375,
+     "w": 48.53125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 295.625,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s34": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/cd_gore_violator.jpg",
+    "rect": {
+     "x": 151.203125,
+     "y": 44,
+     "w": 406.15625,
+     "h": 631.984375
+    },
+    "nat": [
+     964,
+     1500
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 160.859375,
+     "w": 275.984375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Depeche Mode · 9 из 10",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 175.859375,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Мартин Гор — «Violator» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 266.671875,
+     "w": 175.046875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1990 · «Violator»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 288.671875,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Гор написал на этом альбоме «Personal Jesus» и «Enjoy the Silence» — две песни, которые группа с тех пор играет каждый концерт.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 381.15625,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Компактный формат в капсуле. Пара к пластинке Гаана: один альбом, подписанный автором и голосом группы.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 483.390625,
+     "w": 158.875,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 539.390625,
+     "w": 90.203125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 268.671875,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s35": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_kat/cut/cd_gahan_soulsavers.jpg",
+    "rect": {
+     "x": 40,
+     "y": 48.96875,
+     "w": 628.5625,
+     "h": 622.0625
+    },
+    "nat": [
+     968,
+     958
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 160.859375,
+     "w": 286,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Depeche Mode · 10 из 10",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 175.859375,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Дэйв Гаан — «Angels & Ghosts» с The Soulsavers, с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 266.671875,
+     "w": 221.265625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "2015 · сольная работа",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 288.671875,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Записан вне группы, с британским дуэтом Soulsavers: другой материал, другой голос — ближе к госпелу, чем к синти-попу.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 381.15625,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Обложка с двойным портретом и росчерком поперёк. Показывает Гаана не как фронтмена, а как самостоятельного артиста.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 483.390625,
+     "w": 158.875,
+     "h": 46
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 539.390625,
+     "w": 90.203125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 268.671875,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s36": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_packaging/box_kraft.jpg",
+    "rect": {
+     "x": 91.5,
+     "y": 150.609375,
+     "w": 528.59375,
+     "h": 399.984375
+    },
+    "nat": [
+     1081,
+     818
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_packaging/bag_white.jpg",
+    "rect": {
+     "x": 693.21875,
+     "y": 150.609375,
+     "w": 517.125,
+     "h": 399.984375
+    },
+    "nat": [
+     1064,
+     823
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 64,
+     "y": 30,
+     "w": 322.921875,
+     "h": 39
+    },
+    "align": "start",
+    "lh": 38.4,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Как мы отдаём подарок",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 998.171875,
+     "y": 47,
+     "w": 231.828125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Упаковка Stargift",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 0,
+     "y": 614.21875,
+     "w": 1067.34375,
+     "h": 105.78125
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Каждый предмет уходит в фирменной упаковке дома:\n  крафт-бумага с автографами великих, лента Stargift и плотный подарочный пакет. Оформленную работу привозим и вешаем сами.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s37": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 60,
+     "y": 38,
+     "w": 306.3125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Металлика · весь состав",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 61,
+     "w": 212.328125,
+     "h": 48
+    },
+    "align": "start",
+    "lh": 40,
+    "base": 40,
+    "runs": [
+     {
+      "text": "7 предметов",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 139,
+     "w": 432.015625,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Пластик барабана с концерта 20 ноября 1991 года с автографами всех участников",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 516.015625,
+     "y": 134,
+     "w": 117.984375,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "1 900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 662,
+     "y": 139,
+     "w": 432.015625,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "«Kill 'Em All» — конверт с автографами всех участников",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1116.015625,
+     "y": 134,
+     "w": 117.984375,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "1 600 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 205.21875,
+     "w": 446.59375,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Промо-фотография эпохи «Чёрного альбома» с автографами всех участников",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 530.59375,
+     "y": 200.21875,
+     "w": 103.40625,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "950 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 662,
+     "y": 205.21875,
+     "w": 445.03125,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Накладка гитары Guitar Hero с автографами всех участников",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1129.03125,
+     "y": 200.21875,
+     "w": 104.96875,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 271.4375,
+     "w": 446.171875,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Фотография с автографами всех участников, 20×25 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 531.421875,
+     "y": 266.4375,
+     "w": 102.578125,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "750 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 662,
+     "y": 271.4375,
+     "w": 445.859375,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Концертный билет 2009 года с автографами всех участников в капсуле",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1129.859375,
+     "y": 266.4375,
+     "w": 104.140625,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "700 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 337.65625,
+     "w": 446.296875,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Фотография с автографами всех участников, 28×36 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 532.453125,
+     "y": 332.65625,
+     "w": 101.546875,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "320 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 190.21875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 190.21875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 256.4375,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 256.4375,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 322.65625,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 322.65625,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 369.65625,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   }
+  ]
+ },
+ "s38": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 60,
+     "y": 38,
+     "w": 288.0625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Металлика · участники",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 61,
+     "w": 226.453125,
+     "h": 48
+    },
+    "align": "start",
+    "lh": 40,
+    "base": 40,
+    "runs": [
+     {
+      "text": "14 предметов",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 139,
+     "w": 448.296875,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Джеймс Хэтфилд — «Messengers. The Guitars of Metallica» с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 532.296875,
+     "y": 134,
+     "w": 101.703125,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "350 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 662,
+     "y": 139,
+     "w": 448.453125,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Роберт Трухильо — накладка гитары Stratocaster с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1132.453125,
+     "y": 134,
+     "w": 101.546875,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "320 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 205.21875,
+     "w": 446.734375,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Джеймс Хэтфилд — автограф на логотипе группы в капсуле",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 530.734375,
+     "y": 200.21875,
+     "w": 103.265625,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 662,
+     "y": 205.21875,
+     "w": 446.734375,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Кирк Хэмметт — обложка «Master of Puppets» с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1130.734375,
+     "y": 200.21875,
+     "w": 103.265625,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 271.4375,
+     "w": 440.328125,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Ларс Ульрих — пластик барабана 30 см с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 530.75,
+     "y": 266.4375,
+     "w": 103.25,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "290 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 662,
+     "y": 271.4375,
+     "w": 446.203125,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Джейсон Ньюстед — накладка гитары Stratocaster с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1130.203125,
+     "y": 266.4375,
+     "w": 103.796875,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "280 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 337.65625,
+     "w": 446.75,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Ларс Ульрих — пластик барабана Evans 25 см с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 530.75,
+     "y": 332.65625,
+     "w": 103.25,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "260 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 662,
+     "y": 337.65625,
+     "w": 446.75,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Ларс Ульрих — пластик барабана Remo 25 см с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1130.75,
+     "y": 332.65625,
+     "w": 103.25,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "260 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 403.875,
+     "w": 404.953125,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Ларс Ульрих — «Master of Puppets» с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 530.75,
+     "y": 398.875,
+     "w": 103.25,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "260 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 660,
+     "y": 403.875,
+     "w": 438.015625,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Роберт Трухильо — «Master of Puppets» с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1130.75,
+     "y": 398.875,
+     "w": 103.25,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "260 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 450.875,
+     "w": 448.046875,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Роберт Трухильо — «Hardwired... to Self-Destruct» с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 532.046875,
+     "y": 445.875,
+     "w": 101.953125,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "250 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 660,
+     "y": 450.875,
+     "w": 426.453125,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Ларс Ульрих — фотография с автографом, 28×36 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1132.203125,
+     "y": 445.875,
+     "w": 101.796875,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "220 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 517.09375,
+     "w": 406.59375,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Ларс Ульрих — обложка «Metallica» с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 532.203125,
+     "y": 512.09375,
+     "w": 101.796875,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "220 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 660,
+     "y": 517.09375,
+     "w": 459.375,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Роберт Трухильо — фотография с автографом, 20×25 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1132.359375,
+     "y": 512.09375,
+     "w": 101.640625,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "190 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 190.21875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 190.21875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 256.4375,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 256.4375,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 322.65625,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 322.65625,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 388.875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 388.875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 435.875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 435.875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 502.09375,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 502.09375,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 549.09375,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 549.09375,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   }
+  ]
+ },
+ "s39": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 60,
+     "y": 38,
+     "w": 174.015625,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Depeche Mode",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 61,
+     "w": 227.53125,
+     "h": 48
+    },
+    "align": "start",
+    "lh": 40,
+    "base": 40,
+    "runs": [
+     {
+      "text": "10 предметов",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 139,
+     "w": 362.296875,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Мартин Гор — «Speak & Spell» с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 529.3125,
+     "y": 134,
+     "w": 104.6875,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "400 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 660,
+     "y": 139,
+     "w": 380.125,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Дэйв Гаан — «Black Celebration» с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1129.3125,
+     "y": 134,
+     "w": 104.6875,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "400 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 186,
+     "w": 306.203125,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Дэйв Гаан — «Violator» с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 529.3125,
+     "y": 181,
+     "w": 104.6875,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "400 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 662,
+     "y": 186,
+     "w": 445.3125,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Дэйв Гаан — нотный лист «Enjoy the Silence» с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1129.3125,
+     "y": 181,
+     "w": 104.6875,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "400 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 252.21875,
+     "w": 446.453125,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Мартин Гор — лист с текстом «Personal Jesus» и автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 530.453125,
+     "y": 247.21875,
+     "w": 103.546875,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "380 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 660,
+     "y": 252.21875,
+     "w": 407.296875,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Дэйв Гаан — фотография с автографом, 28×36 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1131,
+     "y": 247.21875,
+     "w": 103,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "360 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 318.4375,
+     "w": 368.84375,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Мартин Гор — «Memento Mori» с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 532.296875,
+     "y": 313.4375,
+     "w": 101.703125,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "350 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 660,
+     "y": 318.4375,
+     "w": 407.171875,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Дэйв Гаан — фотография с автографом, 20×25 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1132.453125,
+     "y": 313.4375,
+     "w": 101.546875,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "320 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 365.4375,
+     "w": 316.796875,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Мартин Гор — «Violator» с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 530.734375,
+     "y": 360.4375,
+     "w": 103.265625,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 662,
+     "y": 365.4375,
+     "w": 446.734375,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Дэйв Гаан — «Angels & Ghosts» с The Soulsavers, с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1130.734375,
+     "y": 360.4375,
+     "w": 103.265625,
+     "h": 28
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 171,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 171,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 237.21875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 237.21875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 303.4375,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 303.4375,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 350.4375,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 350.4375,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 416.65625,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 416.65625,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   }
+  ]
+ },
+ "s40": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img/stargift_logo.png",
+    "rect": {
+     "x": 66,
+     "y": 186.734375,
+     "w": 179,
+     "h": 136
+    },
+    "nat": [
+     1440,
+     1094
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "brightness(0) invert(1)"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 66,
+     "y": 356.734375,
+     "w": 671.609375,
+     "h": 98.53125
+    },
+    "align": "start",
+    "lh": 49.28,
+    "base": 44,
+    "runs": [
+     {
+      "text": "Металлика и Depeche Mode. Два состава, тридцать один предмет.",
+      "font": "Cormorant Garamond",
+      "size": 44,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 665,
+     "w": 136.609375,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 19.2,
+    "base": 16,
+    "runs": [
+     {
+      "text": "stargift.ru",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.12,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 0,
+     "y": 642,
+     "w": 1280,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.3)"
+   }
+  ]
+ }
+}

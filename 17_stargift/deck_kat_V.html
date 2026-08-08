@@ -1,0 +1,425 @@
+<meta charset="utf-8">
+<title>Stargift · Metallica и Depeche Mode</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--noir:#0B0B0C;--gold:#A98545;--gold2:#C9A96A;--ivory:#F5F1E8;
+      --paper:#F7F5F1;--ink:#1A1A1A;--cert:#9a958c}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-serif}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:grid}
+.slide>*{min-height:0;min-width:0}
+img{display:block}
+.serif{font-family:'Cormorant Garamond',serif}
+.white{background:#FFFFFF;color:var(--ink)}
+.light{background:var(--paper);color:var(--ink)}
+.dark{background:var(--noir);color:var(--ivory)}
+.rule{height:1px;background:rgba(169,133,69,.55)}
+.div-huge{font-family:'Cormorant Garamond';font-weight:300;line-height:1.02;color:var(--ivory)}
+
+.kick{font:500 15px/1 'Inter';letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+.kick.d{color:var(--gold2)}
+.solo{grid-template-rows:1fr auto}
+.ph{background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:34px 40px}
+.ph img{max-width:100%;max-height:100%;object-fit:contain}
+.side{padding:34px 44px 42px;border-top:1px solid rgba(169,133,69,.35);background:var(--paper)}
+.nm{font-family:'Cormorant Garamond';font-weight:500;font-size:38px;line-height:1.06;color:var(--ink);margin-top:13px}
+.hist{display:none}
+.era{font:500 14px/1 'Inter';letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:15px}
+.histt{display:none}
+.tx{font:300 21px/1.45 'Inter';color:#4a4a4a;margin-top:10px}
+.pr{font-family:'Cormorant Garamond';font-weight:500;font-size:44px;color:var(--gold);margin-top:18px}
+.ct{font:400 14px/1.5 'Inter';letter-spacing:.16em;text-transform:uppercase;color:var(--cert);margin-top:9px}
+.div-sub{font:300 24px/1.5 'Inter';color:#c9c3b7;margin-top:20px}
+.lad-row{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:baseline;
+  padding:9px 0;border-bottom:1px solid rgba(169,133,69,.2)}
+.lad-nm{font:300 15px/1.28 'Inter';color:#d5cfc3}
+.lad-pr{font-family:'Cormorant Garamond';font-weight:500;font-size:21px;color:var(--gold2);white-space:nowrap}
+.lad{display:grid;grid-template-columns:1fr;align-content:start}
+</style>
+
+<div class="deck">
+<section class="slide dark" id="s01" style="grid-template-rows:1fr auto">
+  <div style="position:relative;background:#0B0B0C">
+    <img src="img_kat/cut/ph_band_x2.jpg" alt="" style="width:100%;height:100%;object-fit:contain;padding:40px 30px 0">
+    <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,11,12,.99) 0%,rgba(11,11,12,.72) 30%,rgba(11,11,12,0) 62%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:0 48px 40px">
+      <img src="img/stargift_logo.png" alt="Stargift" style="height:112px;width:auto;object-fit:contain;filter:brightness(0) invert(1);align-self:flex-start;margin-bottom:30px">
+      <div class="kick d" style="margin-bottom:18px">Частное собрание · Музыка</div>
+      <h1 class="serif" style="font-weight:300;font-size:66px;line-height:1.03;color:var(--ivory)">Metallica<br>Depeche Mode</h1>
+      <p style="font:300 22px/1.5 'Inter';color:#b8b2a6;margin-top:20px">Тридцать один предмет: пластинки, барабанные пластики,
+      накладки гитар и фотографии.</p>
+    </div>
+  </div>
+  <div style="padding:22px 48px 28px;border-top:1px solid rgba(169,133,69,.3)">
+    <span class="kick" style="letter-spacing:.22em">31 предмет · август 2026</span>
+  </div>
+</section>
+<section class="slide dark" id="s02" style="grid-template-rows:1fr">
+  <div style="position:relative">
+    <img src="img_kat/cut/ph_black_promo.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%">
+    <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,11,12,.97) 0%,rgba(11,11,12,.84) 32%,rgba(11,11,12,.25) 64%,rgba(11,11,12,.08) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:0 48px 72px">
+      <div class="kick d" style="margin-bottom:20px">Металлика · весь состав</div>
+      <h2 class="div-huge" style="font-size:62px">Четыре подписи на одном предмете</h2>
+      <div class="rule" style="width:84px;margin:24px 0"></div>
+      <p class="div-sub">Собрать всех четверых на одной вещи труднее всего: группа подписывает по отдельности и редко в один день. В подборке таких предметов семь.</p>
+    </div>
+  </div>
+</section>
+<section class="slide light solo" id="s03">
+  <div class="ph"><img src="img_kat/cut/dh_concert_1991.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Весь состав · 1 из 7</div>
+    <div class="nm">Пластик барабана с концерта 20 ноября 1991 года с автографами всех участников</div><div class="era">1991 · тур «Чёрного альбома»</div><div class="tx">Год выхода «Чёрного альбома»: пятнадцать миллионов проданных копий в США и первое место в десяти странах.</div>
+    <div class="pr">1 900 000&nbsp;₽</div>
+    <div class="ct">PSA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s04">
+  <div class="ph"><img src="img_kat/cut/lp_killemall.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Весь состав · 2 из 7</div>
+    <div class="nm">«Kill 'Em All» — конверт с автографами всех участников</div><div class="era">1983 · дебютный альбом</div><div class="tx">Первая пластинка Metallica. Записана за две недели на деньги, занятые у владельца магазина пластинок; тираж — пятнадцать тысяч копий.</div>
+    <div class="pr">1 600 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s05">
+  <div class="ph"><img src="img_kat/cut/ph_black_promo.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Весь состав · 3 из 7</div>
+    <div class="nm">Промо-фотография эпохи «Чёрного альбома» с автографами всех участников</div><div class="era">1991 · промо-тираж</div><div class="tx">Снимок рассылался по редакциям к выходу альбома, который перевёл группу из металла в стадионы.</div>
+    <div class="pr">950 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s06">
+  <div class="ph"><img src="img_kat/cut/pg_guitarhero.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Весь состав · 4 из 7</div>
+    <div class="nm">Накладка гитары Guitar Hero с автографами всех участников</div><div class="era">2009 · Guitar Hero: Metallica</div><div class="tx">Игра, через которую с группой познакомилось поколение, не заставшее ни одного её альбома вживую.</div>
+    <div class="pr">900 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide light solo" id="s07">
+  <div class="ph"><img src="img_kat/cut/ph_band_8x10.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Весь состав · 5 из 7</div>
+    <div class="nm">Фотография с автографами всех участников, 20×25 см</div><div class="era">Состав с Трухильо</div><div class="tx">Четыре профиля лицом друг к другу — кадр, который группа использовала как визитную карточку современного состава.</div>
+    <div class="pr">750 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s08">
+  <div class="ph"><img src="img_kat/cut/ticket_2009.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Весь состав · 6 из 7</div>
+    <div class="nm">Концертный билет 2009 года с автографами всех участников в капсуле</div><div class="era">2009 · тур «Death Magnetic»</div><div class="tx">Обычный входной билет, который после концерта попал к музыкантам и вернулся с четырьмя подписями.</div>
+    <div class="pr">700 000&nbsp;₽</div>
+    <div class="ct">PSA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s09">
+  <div class="ph"><img src="img_kat/cut/ph_band_x2.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Весь состав · 7 из 7</div>
+    <div class="nm">Фотография с автографами всех участников, 28×36 см</div><div class="era">Современный состав</div><div class="tx">Кадр с фестивальной сцены: четверо с поднятыми руками в конце сета.</div>
+    <div class="pr">320 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide dark" id="s10" style="grid-template-rows:1fr">
+  <div style="position:relative">
+    <img src="img_kat/cut/ph_lars_c.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%">
+    <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,11,12,.97) 0%,rgba(11,11,12,.84) 32%,rgba(11,11,12,.25) 64%,rgba(11,11,12,.08) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:0 48px 72px">
+      <div class="kick d" style="margin-bottom:20px">Металлика · участники</div>
+      <h2 class="div-huge" style="font-size:62px">Хэтфилд, Ульрих,<br>Хэмметт, Трухильо</h2>
+      <div class="rule" style="width:84px;margin:24px 0"></div>
+      <p class="div-sub">Отдельные автографы участников: барабанные пластики, накладки гитар, пластинки и книга. Из них собирается стена, а не один предмет.</p>
+    </div>
+  </div>
+</section>
+<section class="slide light solo" id="s11">
+  <div class="ph"><img src="img_kat/cut/book_het.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Участники · 1 из 14</div>
+    <div class="nm">Джеймс Хэтфилд — «Messengers. The Guitars of Metallica» с автографом</div><div class="era">Хэтфилд · книга</div><div class="tx">Издание о гитарах Metallica: инструменты, на которых сыграны все главные альбомы группы.</div>
+    <div class="pr">350 000&nbsp;₽</div>
+    <div class="ct">PSA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s12">
+  <div class="ph"><img src="img_kat/cut/pg_truj.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Участники · 2 из 14</div>
+    <div class="nm">Роберт Трухильо — накладка гитары Stratocaster с автографом</div><div class="era">Трухильо · басист с 2003 года</div><div class="tx">До Metallica играл у Оззи Осборна и в Suicidal Tendencies; в группу пришёл после прослушивания, снятого для документального фильма.</div>
+    <div class="pr">320 000&nbsp;₽</div>
+    <div class="ct">PSA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s13">
+  <div class="ph"><img src="img_kat/cut/cut_het.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Участники · 3 из 14</div>
+    <div class="nm">Джеймс Хэтфилд — автограф на логотипе группы в капсуле</div><div class="era">Хэтфилд · автограф</div><div class="tx">Логотип Metallica, нарисованный в 1981 году, — один из самых узнаваемых знаков в музыке.</div>
+    <div class="pr">300 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s14">
+  <div class="ph"><img src="img_kat/cut/cd_kirk_puppets.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Участники · 4 из 14</div>
+    <div class="nm">Кирк Хэмметт — обложка «Master of Puppets» с автографом</div><div class="era">Хэмметт · соло-гитара</div><div class="tx">Учился у Джо Сатриани; соло на «Master of Puppets» разбирают в гитарных школах до сих пор.</div>
+    <div class="pr">300 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s15">
+  <div class="ph"><img src="img_kat/cut/dh_lars_12.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Участники · 5 из 14</div>
+    <div class="nm">Ларс Ульрих — пластик барабана 30 см с автографом</div><div class="era">Ульрих · барабанщик</div><div class="tx">Основал группу по объявлению в газете, которое сам же и подал; за установкой Metallica с первого дня.</div>
+    <div class="pr">290 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide light solo" id="s16">
+  <div class="ph"><img src="img_kat/cut/pg_newsted.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Участники · 6 из 14</div>
+    <div class="nm">Джейсон Ньюстед — накладка гитары Stratocaster с автографом</div><div class="era">Ньюстед · басист 1986–2001</div><div class="tx">Пришёл в группу после гибели Клиффа Бёртона и отыграл пятнадцать лет — весь период от «...And Justice for All» до «S&amp;M».</div>
+    <div class="pr">280 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide light solo" id="s17">
+  <div class="ph"><img src="img_kat/cut/dh_lars_evans.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Участники · 7 из 14</div>
+    <div class="nm">Ларс Ульрих — пластик барабана Evans 25 см с автографом</div><div class="era">Ульрих · барабанщик</div><div class="tx">Evans — один из двух брендов, между которыми ударники делят весь мир; Ульрих играл на них десятилетиями.</div>
+    <div class="pr">260 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s18">
+  <div class="ph"><img src="img_kat/cut/dh_lars_remo.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Участники · 8 из 14</div>
+    <div class="nm">Ларс Ульрих — пластик барабана Remo 25 см с автографом</div><div class="era">Ульрих · барабанщик</div><div class="tx">Remo — второй из этих двух брендов; красный пластик выпускался ограниченными сериями.</div>
+    <div class="pr">260 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s19">
+  <div class="ph"><img src="img_kat/cut/lp_lars_puppets.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Участники · 9 из 14</div>
+    <div class="nm">Ларс Ульрих — «Master of Puppets» с автографом</div><div class="era">1986 · «Master of Puppets»</div><div class="tx">Последний альбом, записанный с Клиффом Бёртоном: через полгода после выхода он погиб в аварии автобуса в Швеции.</div>
+    <div class="pr">260 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s20">
+  <div class="ph"><img src="img_kat/cut/lp_truj_puppets.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Участники · 10 из 14</div>
+    <div class="nm">Роберт Трухильо — «Master of Puppets» с автографом</div><div class="era">1986 · «Master of Puppets»</div><div class="tx">Трухильо пришёл в группу через семнадцать лет после выхода этого альбома и играет его партии на каждом концерте.</div>
+    <div class="pr">260 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide light solo" id="s21">
+  <div class="ph"><img src="img_kat/cut/lp_truj_hardwired.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Участники · 11 из 14</div>
+    <div class="nm">Роберт Трухильо — «Hardwired... to Self-Destruct» с автографом</div><div class="era">2016 · «Hardwired»</div><div class="tx">Первый альбом группы за восемь лет; вышел сразу на первое место в четырнадцати странах.</div>
+    <div class="pr">250 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide light solo" id="s22">
+  <div class="ph"><img src="img_kat/cut/ph_lars_c.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Участники · 12 из 14</div>
+    <div class="nm">Ларс Ульрих — фотография с автографом, 28×36 см</div><div class="era">Ульрих · сцена</div><div class="tx">Кадр за установкой в момент удара: то, ради чего на Metallica и ходят.</div>
+    <div class="pr">220 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide light solo" id="s23">
+  <div class="ph"><img src="img_kat/cut/cd_lars.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Участники · 13 из 14</div>
+    <div class="nm">Ларс Ульрих — обложка «Metallica» с автографом</div><div class="era">1991 · «Чёрный альбом»</div><div class="tx">Альбом без названия, который все зовут «Чёрным»: обложка почти пустая, только тиснёный логотип и змея.</div>
+    <div class="pr">220 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s24">
+  <div class="ph"><img src="img_kat/cut/ph_truj.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Участники · 14 из 14</div>
+    <div class="nm">Роберт Трухильо — фотография с автографом, 20×25 см</div><div class="era">Трухильо · сцена</div><div class="tx">Узнаваемая низкая стойка с басом почти у колен — его манера, которую ни с кем не спутать.</div>
+    <div class="pr">190 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide dark" id="s25" style="grid-template-rows:1fr">
+  <div style="position:relative">
+    <img src="img_kat/cut/ph_gahan_11x14.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%">
+    <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,11,12,.97) 0%,rgba(11,11,12,.84) 32%,rgba(11,11,12,.25) 64%,rgba(11,11,12,.08) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:0 48px 72px">
+      <div class="kick d" style="margin-bottom:20px">Depeche Mode</div>
+      <h2 class="div-huge" style="font-size:62px">Гаан и Гор</h2>
+      <div class="rule" style="width:84px;margin:24px 0"></div>
+      <p class="div-sub">Голос группы и её автор. Десять предметов — от дебютного «Speak &amp; Spell» 1981 года до «Memento Mori», записанного уже вдвоём.</p>
+    </div>
+  </div>
+</section>
+<section class="slide light solo" id="s26">
+  <div class="ph"><img src="img_kat/cut/lp_gore_speak.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Depeche Mode · 1 из 10</div>
+    <div class="nm">Мартин Гор — «Speak &amp; Spell» с автографом</div><div class="era">1981 · дебютный альбом</div><div class="tx">Единственная пластинка, записанная с Винсом Кларком: он ушёл сразу после выхода, и писать песни начал Гор.</div>
+    <div class="pr">400 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide light solo" id="s27">
+  <div class="ph"><img src="img_kat/cut/lp_gahan.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Depeche Mode · 2 из 10</div>
+    <div class="nm">Дэйв Гаан — «Black Celebration» с автографом</div><div class="era">1986 · «Black Celebration»</div><div class="tx">Альбом, на котором группа окончательно ушла в тёмное звучание и нашла интонацию, за которую её любят до сих пор.</div>
+    <div class="pr">400 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s28">
+  <div class="ph"><img src="img_kat/cut/lp_gahan_violator.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Depeche Mode · 3 из 10</div>
+    <div class="nm">Дэйв Гаан — «Violator» с автографом</div><div class="era">1990 · «Violator»</div><div class="tx">Самый продаваемый альбом группы. На автограф-сессию в лос-анджелесском магазине пришло около двадцати тысяч человек, и полиция закрыла квартал.</div>
+    <div class="pr">400 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s29">
+  <div class="ph"><img src="img_kat/cut/lyric_gahan_ets.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Depeche Mode · 4 из 10</div>
+    <div class="nm">Дэйв Гаан — нотный лист «Enjoy the Silence» с автографом</div><div class="era">1990 · «Enjoy the Silence»</div><div class="tx">Гор принёс её как медленную балладу; Алан Уайлдер добавил ритм, и вещь стала главным синглом группы.</div>
+    <div class="pr">400 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide light solo" id="s30">
+  <div class="ph"><img src="img_kat/cut/lyric_gore_pj.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Depeche Mode · 5 из 10</div>
+    <div class="nm">Мартин Гор — лист с текстом «Personal Jesus» и автографом</div><div class="era">1989 · «Personal Jesus»</div><div class="tx">Песня написана под впечатлением от книги Присциллы Пресли об Элвисе — о человеке, который становится для другого богом.</div>
+    <div class="pr">380 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide light solo" id="s31">
+  <div class="ph"><img src="img_kat/cut/ph_gahan_11x14.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Depeche Mode · 6 из 10</div>
+    <div class="nm">Дэйв Гаан — фотография с автографом, 28×36 см</div><div class="era">Гаан · сцена</div><div class="tx">Стойка с микрофоном на вытянутой руке — жест, который на концертах группы повторяет весь зал.</div>
+    <div class="pr">360 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s32">
+  <div class="ph"><img src="img_kat/cut/lp_gore_memento.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Depeche Mode · 7 из 10</div>
+    <div class="nm">Мартин Гор — «Memento Mori» с автографом</div><div class="era">2023 · «Memento Mori»</div><div class="tx">Первый альбом после смерти Энди Флетчера; название придумали до того, как его не стало.</div>
+    <div class="pr">350 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s33">
+  <div class="ph"><img src="img_kat/cut/ph_gahan_8x10.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Depeche Mode · 8 из 10</div>
+    <div class="nm">Дэйв Гаан — фотография с автографом, 20×25 см</div><div class="era">Гаан · сцена</div><div class="tx">Кадр с фиолетовым сценическим светом — фирменная палитра туров группы двухтысячных.</div>
+    <div class="pr">320 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s34">
+  <div class="ph"><img src="img_kat/cut/cd_gore_violator.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Depeche Mode · 9 из 10</div>
+    <div class="nm">Мартин Гор — «Violator» с автографом</div><div class="era">1990 · «Violator»</div><div class="tx">Гор написал на этом альбоме «Personal Jesus» и «Enjoy the Silence» — две песни, которые группа с тех пор играет каждый концерт.</div>
+    <div class="pr">300 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide light solo" id="s35">
+  <div class="ph"><img src="img_kat/cut/cd_gahan_soulsavers.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Depeche Mode · 10 из 10</div>
+    <div class="nm">Дэйв Гаан — «Angels &amp; Ghosts» с The Soulsavers, с автографом</div><div class="era">2015 · сольная работа</div><div class="tx">Записан вне группы, с британским дуэтом Soulsavers: другой материал, другой голос — ближе к госпелу, чем к синти-попу.</div>
+    <div class="pr">300 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide light" id="s36" style="grid-template-rows:1fr 1fr auto">
+  <div style="background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="img_packaging/box_kraft.jpg" alt="" style="width:100%;height:100%;object-fit:contain;padding:22px"></div>
+  <div style="background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;border-top:1px solid rgba(169,133,69,.2)"><img src="img_packaging/bag_white.jpg" alt="" style="width:100%;height:100%;object-fit:contain;padding:22px"></div>
+  <div style="padding:30px 44px 40px;border-top:1px solid rgba(169,133,69,.35)">
+    <div class="kick">Упаковка Stargift</div>
+    <div class="serif" style="font-weight:500;font-size:36px;line-height:1.06;margin-top:12px">Как мы отдаём подарок</div>
+    <p style="font:300 21px/1.45 'Inter';color:#4a4a4a;margin-top:10px">Крафт-бумага с автографами великих, лента дома
+    и плотный пакет. Оформленную работу привозим и вешаем сами.</p>
+  </div>
+</section>
+<section class="slide dark" id="s37" style="grid-template-rows:auto 1fr">
+  <div style="padding:48px 44px 0">
+    <div class="kick d" style="margin-bottom:12px">Металлика · весь состав</div>
+    <h2 class="serif" style="font-weight:300;font-size:48px;line-height:1;color:var(--ivory)">7 предметов</h2>
+  </div>
+  <div style="padding:20px 44px 36px"><div class="lad"><div class="lad-row"><div class="lad-nm">Пластик барабана с концерта 20 ноября 1991 года с автографами всех участников</div><div class="lad-pr">1 900 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">«Kill 'Em All» — конверт с автографами всех участников</div><div class="lad-pr">1 600 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Промо-фотография эпохи «Чёрного альбома» с автографами всех участников</div><div class="lad-pr">950 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Накладка гитары Guitar Hero с автографами всех участников</div><div class="lad-pr">900 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Фотография с автографами всех участников, 20×25 см</div><div class="lad-pr">750 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Концертный билет 2009 года с автографами всех участников в капсуле</div><div class="lad-pr">700 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Фотография с автографами всех участников, 28×36 см</div><div class="lad-pr">320 000&nbsp;₽</div></div></div></div>
+</section>
+<section class="slide dark" id="s38" style="grid-template-rows:auto 1fr">
+  <div style="padding:48px 44px 0">
+    <div class="kick d" style="margin-bottom:12px">Металлика · участники</div>
+    <h2 class="serif" style="font-weight:300;font-size:48px;line-height:1;color:var(--ivory)">14 предметов</h2>
+  </div>
+  <div style="padding:20px 44px 36px"><div class="lad"><div class="lad-row"><div class="lad-nm">Джеймс Хэтфилд — «Messengers. The Guitars of Metallica» с автографом</div><div class="lad-pr">350 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Роберт Трухильо — накладка гитары Stratocaster с автографом</div><div class="lad-pr">320 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Джеймс Хэтфилд — автограф на логотипе группы в капсуле</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Кирк Хэмметт — обложка «Master of Puppets» с автографом</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ларс Ульрих — пластик барабана 30 см с автографом</div><div class="lad-pr">290 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Джейсон Ньюстед — накладка гитары Stratocaster с автографом</div><div class="lad-pr">280 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ларс Ульрих — пластик барабана Evans 25 см с автографом</div><div class="lad-pr">260 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ларс Ульрих — пластик барабана Remo 25 см с автографом</div><div class="lad-pr">260 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ларс Ульрих — «Master of Puppets» с автографом</div><div class="lad-pr">260 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Роберт Трухильо — «Master of Puppets» с автографом</div><div class="lad-pr">260 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Роберт Трухильо — «Hardwired... to Self-Destruct» с автографом</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ларс Ульрих — фотография с автографом, 28×36 см</div><div class="lad-pr">220 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Ларс Ульрих — обложка «Metallica» с автографом</div><div class="lad-pr">220 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Роберт Трухильо — фотография с автографом, 20×25 см</div><div class="lad-pr">190 000&nbsp;₽</div></div></div></div>
+</section>
+<section class="slide dark" id="s39" style="grid-template-rows:auto 1fr">
+  <div style="padding:48px 44px 0">
+    <div class="kick d" style="margin-bottom:12px">Depeche Mode</div>
+    <h2 class="serif" style="font-weight:300;font-size:48px;line-height:1;color:var(--ivory)">10 предметов</h2>
+  </div>
+  <div style="padding:20px 44px 36px"><div class="lad"><div class="lad-row"><div class="lad-nm">Мартин Гор — «Speak &amp; Spell» с автографом</div><div class="lad-pr">400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Дэйв Гаан — «Black Celebration» с автографом</div><div class="lad-pr">400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Дэйв Гаан — «Violator» с автографом</div><div class="lad-pr">400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Дэйв Гаан — нотный лист «Enjoy the Silence» с автографом</div><div class="lad-pr">400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Мартин Гор — лист с текстом «Personal Jesus» и автографом</div><div class="lad-pr">380 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Дэйв Гаан — фотография с автографом, 28×36 см</div><div class="lad-pr">360 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Мартин Гор — «Memento Mori» с автографом</div><div class="lad-pr">350 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Дэйв Гаан — фотография с автографом, 20×25 см</div><div class="lad-pr">320 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Мартин Гор — «Violator» с автографом</div><div class="lad-pr">300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Дэйв Гаан — «Angels &amp; Ghosts» с The Soulsavers, с автографом</div><div class="lad-pr">300 000&nbsp;₽</div></div></div></div>
+</section>
+<section class="slide dark" id="s40" style="grid-template-rows:1fr auto">
+  <div style="padding:0 44px;display:flex;flex-direction:column;justify-content:center">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:126px;width:auto;object-fit:contain;filter:brightness(0) invert(1);align-self:flex-start">
+    <h2 class="serif" style="font-weight:300;font-size:50px;line-height:1.12;color:var(--ivory);margin-top:34px;max-width:100%">Металлика и Depeche Mode. Два состава, тридцать один предмет.</h2>
+  </div>
+  <div style="padding:24px 44px 40px;border-top:1px solid rgba(169,133,69,.3)">
+    <span class="kick" style="letter-spacing:.24em;color:var(--gold2)">stargift.ru</span>
+  </div>
+</section>
+</div>
+
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^s/,'');const id=n?('s'+n.padStart(2,'0')):'s01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+function go(d){const cur=+((location.hash.slice(1).replace(/^s/,''))||1);let x=cur+d;if(x<1)x=1;if(x>40)x=40;location.hash='s'+x;}
+show();addEventListener('hashchange',show);
+addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')go(1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(-1);});
+addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX<innerWidth*0.32?-1:1);});
+</script>
+<style>@page{size:720px 1280px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.slide{animation:none}.deck{height:auto}
+.slide{position:relative;inset:auto;display:grid !important;width:720px;height:1280px;page-break-after:always}}</style>
