@@ -54,6 +54,37 @@ def deck_size(path):
     return (int(m.group(1)), int(m.group(2))) if m else (1280, 720)
 
 
+# логотип и упаковка повторяются по делу, остальное — нет
+ALLOW_REPEAT = ('logo', 'img_packaging/')
+
+
+async def dup_photos(pg):
+    """Одно фото на двух слайдах читается как сбой сборки.
+
+    Так и было: фотографию лота я ставил ещё и на обложку или на разделитель
+    главы, и клиент видел один и тот же кадр дважды за три слайда. Если для
+    разделителя нет отдельного кадра — разделитель делаем типографским,
+    без фотографии.
+    """
+    used = await pg.evaluate("""() => {
+      const out = {};
+      [...document.querySelectorAll('.slide')].forEach((s, i) => {
+        s.querySelectorAll('img').forEach(im => {
+          const src = im.getAttribute('src');
+          (out[src] = out[src] || []).push(i + 1);
+        });
+      });
+      return out;
+    }""")
+    bad = 0
+    for src, slides in used.items():
+        uniq = sorted(set(slides))
+        if len(uniq) > 1 and not any(a in src for a in ALLOW_REPEAT):
+            bad += 1
+            print(f"одно фото на нескольких слайдах {uniq} — {src}")
+    return bad
+
+
 async def main():
     bad = 0
     async with async_playwright() as p:
@@ -73,6 +104,7 @@ async def main():
                 bad += 1
                 print(f"{sid}: {o['tag']}.{o['cls']} вылезает за {o['side']} "
                       f"на {o['px']}px — «{o['text']}»")
+        bad += await dup_photos(pg)
         await b.close()
     print('за срез ничего не уходит' if not bad else f'нарушений: {bad}')
     raise SystemExit(1 if bad else 0)
