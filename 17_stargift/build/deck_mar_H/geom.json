@@ -1,0 +1,4752 @@
+{
+ "s01": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img/stargift_logo.png",
+    "rect": {
+     "x": 52,
+     "y": 56,
+     "w": 181.640625,
+     "h": 138
+    },
+    "nat": [
+     1440,
+     1094
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "brightness(0) invert(1)"
+   },
+   {
+    "src": "img_mar/cut/darrow.jpg",
+    "rect": {
+     "x": 673.4375,
+     "y": 150.71875,
+     "w": 560.5625,
+     "h": 418.546875
+    },
+    "nat": [
+     2400,
+     1792
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 50,
+     "y": 270.9375,
+     "w": 326.796875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Частное собрание · Музыка",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 52,
+     "y": 306.9375,
+     "w": 523.4375,
+     "h": 128.9375
+    },
+    "align": "start",
+    "lh": 64.48,
+    "base": 62,
+    "runs": [
+     {
+      "text": "«Славные парни»",
+      "font": "Cormorant Garamond",
+      "size": 62,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "и круг Скорсезе",
+      "font": "Cormorant Garamond",
+      "size": 62,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 52,
+     "y": 457.875,
+     "w": 378,
+     "h": 115.1875
+    },
+    "align": "start",
+    "lh": 28.8,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Четырнадцать предметов: фотографии, постер «Таксиста»\n      и полный сценарий «Бешеных псов». Актёры, режиссёры и второй план — один круг американского кино.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(184, 178, 166)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 50,
+     "y": 650,
+     "w": 285.609375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "14 предметов · август 2026",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.12,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   }
+  ],
+  "decor": []
+ },
+ "s02": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/liotta_fod.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     1500,
+     1225
+    ],
+    "fit": "cover",
+    "pos": "50% 40%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 1036.59375,
+     "y": 155.890625,
+     "w": 183.40625,
+     "h": 15
+    },
+    "align": "right",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Пеши и Лиотта",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 783,
+     "y": 191.890625,
+     "w": 435,
+     "h": 177.46875
+    },
+    "align": "right",
+    "lh": 59.16,
+    "base": 58,
+    "runs": [
+     {
+      "text": "Два лица",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "«Славных парней»",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-huge"
+   },
+   {
+    "rect": {
+     "x": 778,
+     "y": 422.359375,
+     "w": 440,
+     "h": 140.75
+    },
+    "align": "right",
+    "lh": 35.2,
+    "base": 22,
+    "runs": [
+     {
+      "text": "Томми Девито и Генри Хилл. Автограф Пеши — самый труднодоступный в этом круге: он почти не подписывает и почти не даёт интервью.",
+      "font": "Inter",
+      "size": 22,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-sub"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 1148,
+     "y": 395.359375,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s02_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s03": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/pesci_gf.jpg",
+    "rect": {
+     "x": 40,
+     "y": 125.34375,
+     "w": 628.5625,
+     "h": 469.3125
+    },
+    "nat": [
+     2400,
+     1792
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 143.65625,
+     "w": 269.40625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Пеши и Лиотта · 1 из 2",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 157.65625,
+     "w": 487.4375,
+     "h": 115.21875
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Джо Пеши — фотография эпохи «Славных парней» с автографом, 20×25 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 287.875,
+     "w": 225.390625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1990 · «Славные парни»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 308.875,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Роль Томми Девито принесла Пеши «Оскар». Он вышел на сцену, сказал «это большая честь» и ушёл — самая короткая благодарственная речь в истории премии.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 401.359375,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Портрет в капсуле, росчерк по светлому полю. Пеши подписывает крайне редко: из круга «Славных парней» его автограф достать труднее всех.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 504.59375,
+     "w": 175.1875,
+     "h": 42
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "165 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 558.59375,
+     "w": 90,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 288.875,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s04": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/liotta_fod.jpg",
+    "rect": {
+     "x": 40,
+     "y": 103.34375,
+     "w": 628.5625,
+     "h": 513.3125
+    },
+    "nat": [
+     1500,
+     1225
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 143.65625,
+     "w": 269.40625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Пеши и Лиотта · 2 из 2",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 157.65625,
+     "w": 487.4375,
+     "h": 115.21875
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Рэй Лиотта — фотография «Поле его мечты» с автографом, 28×36 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 287.875,
+     "w": 229.15625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1989 · «Поле его мечты»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 308.875,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "За год до «Славных парней» Лиотта сыграл призрак Шузлесса Джо Джексона — роль, которая сделала его узнаваемым в Америке.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 401.359375,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Крупный формат, кадр в бейсбольной форме. Пара к фотографии Пеши: два лица одного фильма, снятые в разные годы.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 504.59375,
+     "w": 175.1875,
+     "h": 42
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "160 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 558.59375,
+     "w": 90,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 288.875,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s05": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/keitel_taxi.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     1016,
+     1352
+    ],
+    "fit": "cover",
+    "pos": "50% 40%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 1039.21875,
+     "y": 155.890625,
+     "w": 180.78125,
+     "h": 15
+    },
+    "align": "right",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Харви Кейтель",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 783,
+     "y": 191.890625,
+     "w": 435,
+     "h": 177.46875
+    },
+    "align": "right",
+    "lh": 59.16,
+    "base": 58,
+    "runs": [
+     {
+      "text": "От «Таксиста»",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "до «Бешеных псов»",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-huge"
+   },
+   {
+    "rect": {
+     "x": 778,
+     "y": 422.359375,
+     "w": 440,
+     "h": 140.75
+    },
+    "align": "right",
+    "lh": 35.2,
+    "base": 22,
+    "runs": [
+     {
+      "text": "Четыре предмета одного актёра: постер, полный сценарий и две фотографии. Восемнадцать лет между самой ранней и самой поздней вещью.",
+      "font": "Inter",
+      "size": 22,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-sub"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 1148,
+     "y": 395.359375,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s05_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s06": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/keitel_script.jpg",
+    "rect": {
+     "x": 40,
+     "y": 125.34375,
+     "w": 628.5625,
+     "h": 469.3125
+    },
+    "nat": [
+     2400,
+     1792
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 143.65625,
+     "w": 192.953125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Кейтель · 1 из 5",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 157.65625,
+     "w": 487.4375,
+     "h": 115.21875
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Харви Кейтель — полный сценарий «Бешеных псов» на 103 страницы с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 287.875,
+     "w": 207.0625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1992 · «Бешеные псы»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 308.875,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Кейтель не только сыграл мистера Уайта — он оплатил часть съёмок и привёл Тарантино к продюсерам. Без него дебюта могло не быть.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 401.359375,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Полный экземпляр сценария, не титульный лист. Самый весомый предмет подборки: сто три страницы текста, с которого начался Тарантино.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 504.59375,
+     "w": 175.1875,
+     "h": 42
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "190 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 558.59375,
+     "w": 90,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 288.875,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s07": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/keitel_taxi.jpg",
+    "rect": {
+     "x": 116.8125,
+     "y": 44.015625,
+     "w": 474.921875,
+     "h": 631.96875
+    },
+    "nat": [
+     1016,
+     1352
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 176.890625,
+     "w": 192.953125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Кейтель · 2 из 5",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 190.890625,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Харви Кейтель — постер «Таксиста» с автографом",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 282.703125,
+     "w": 161.046875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1976 · «Таксист»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 303.703125,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Кейтелю было тридцать шесть, когда он сыграл сутенёра Спорта. Фильм взял «Золотую пальмовую ветвь» и стал точкой отсчёта для всего американского кино семидесятых.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 396.1875,
+     "w": 487.4375,
+     "h": 56.15625
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Настоящий постер фильма с росчерком по нижней части. Крупный формат — вещь для стены, а не для полки.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 471.34375,
+     "w": 175.1875,
+     "h": 42
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "170 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 525.34375,
+     "w": 87.25,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 283.703125,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s08": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/keitel_pf2.jpg",
+    "rect": {
+     "x": 40,
+     "y": 125.34375,
+     "w": 628.5625,
+     "h": 469.3125
+    },
+    "nat": [
+     2400,
+     1792
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 170.609375,
+     "w": 192.953125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Кейтель · 3 из 5",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 184.609375,
+     "w": 487.4375,
+     "h": 115.21875
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Харви Кейтель — фотография «Криминального чтива» с автографом, 20×25 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 314.828125,
+     "w": 278.453125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1994 · «Криминальное чтиво»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 335.828125,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Мистер Вульф решает проблемы. Восемь минут экранного времени — и одна из самых цитируемых ролей девяностых.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 402.484375,
+     "w": 487.4375,
+     "h": 56.15625
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Чёрно-белый кадр в костюме, росчерк с посвящением. Формат, который вешают в кабинет рядом с постером.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 477.640625,
+     "w": 175.1875,
+     "h": 42
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "160 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 531.640625,
+     "w": 45.59375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 315.828125,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s09": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/keitel_rd_promo.jpg",
+    "rect": {
+     "x": 40,
+     "y": 125.34375,
+     "w": 628.5625,
+     "h": 469.3125
+    },
+    "nat": [
+     2400,
+     1792
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 143.65625,
+     "w": 192.953125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Кейтель · 4 из 5",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 157.65625,
+     "w": 487.4375,
+     "h": 115.21875
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Харви Кейтель — промо-фотография «Бешеных псов» с автографом, 20×25 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 287.875,
+     "w": 207.0625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1992 · «Бешеные псы»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 308.875,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Промо-кадр рассылался по редакциям к прокату фильма, который сняли за миллион двести тысяч долларов и который окупился вдесятеро.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 401.359375,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Кадр с пистолетом у машины — сцена, которую помнят все. Промо-тираж печатался малым числом и в продажу не поступал.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 504.59375,
+     "w": 175.1875,
+     "h": 42
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "160 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 558.59375,
+     "w": 45.59375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 288.875,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s10": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/keitel_pf1.jpg",
+    "rect": {
+     "x": 100.265625,
+     "y": 44.015625,
+     "w": 508.015625,
+     "h": 631.96875
+    },
+    "nat": [
+     836,
+     1040
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 189.8125,
+     "w": 192.953125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Кейтель · 5 из 5",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 203.8125,
+     "w": 487.4375,
+     "h": 76.8125
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Харви Кейтель — студийный портрет с автографом, 20×25 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 295.625,
+     "w": 179.234375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Кейтель · портрет",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 316.625,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Актёр, прошедший путь от морской пехоты до Скорсезе: они начали вместе в 1967-м и сняли шесть фильмов.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 383.28125,
+     "w": 487.4375,
+     "h": 56.15625
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Классический студийный портрет с напечатанным именем внизу. Самый доступный лот подборки.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 458.4375,
+     "w": 175.1875,
+     "h": 42
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "150 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 512.4375,
+     "w": 45.59375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 296.625,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s11": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/coppola_jsa.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     1084,
+     1500
+    ],
+    "fit": "cover",
+    "pos": "50% 40%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 1082.15625,
+     "y": 185.46875,
+     "w": 137.84375,
+     "h": 15
+    },
+    "align": "right",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Режиссёры",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 906.359375,
+     "y": 221.46875,
+     "w": 311.640625,
+     "h": 118.3125
+    },
+    "align": "right",
+    "lh": 59.16,
+    "base": 58,
+    "runs": [
+     {
+      "text": "Коппола",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "и Де Пальма",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-huge"
+   },
+   {
+    "rect": {
+     "x": 778,
+     "y": 392.78125,
+     "w": 440,
+     "h": 140.75
+    },
+    "align": "right",
+    "lh": 35.2,
+    "base": 22,
+    "runs": [
+     {
+      "text": "Два имени из поколения, которое переписало американское кино в семидесятые. Автографы режиссёров встречаются реже актёрских: они меньше на виду.",
+      "font": "Inter",
+      "size": 22,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-sub"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 1148,
+     "y": 365.78125,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s11_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s12": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/coppola_bas.jpg",
+    "rect": {
+     "x": 40,
+     "y": 125.34375,
+     "w": 628.5625,
+     "h": 469.3125
+    },
+    "nat": [
+     2400,
+     1792
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 157.6875,
+     "w": 223.859375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Режиссёры · 1 из 3",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 171.6875,
+     "w": 487.4375,
+     "h": 115.21875
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Фрэнсис Форд Коппола — фотография с автографом, 20×25 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 301.90625,
+     "w": 197.53125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Коппола · режиссёр",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 322.90625,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Пять «Оскаров», две «Золотые пальмовые ветви». «Крёстный отец» и «Апокалипсис сегодня» сняты одним человеком за семь лет.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 415.390625,
+     "w": 487.4375,
+     "h": 56.15625
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Кадр в наушниках на съёмочной площадке — Коппола за работой, а не на публике. Росчерк синим по светлому полю.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 490.546875,
+     "w": 175.1875,
+     "h": 42
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "175 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 544.546875,
+     "w": 90,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 302.90625,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s13": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/coppola_jsa.jpg",
+    "rect": {
+     "x": 125.921875,
+     "y": 44,
+     "w": 456.71875,
+     "h": 631.984375
+    },
+    "nat": [
+     1084,
+     1500
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 157.6875,
+     "w": 223.859375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Режиссёры · 2 из 3",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 171.6875,
+     "w": 487.4375,
+     "h": 115.21875
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Фрэнсис Форд Коппола — цветная фотография с автографом, 20×25 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 301.90625,
+     "w": 197.53125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Коппола · режиссёр",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 322.90625,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Снимая «Крёстного отца», Коппола каждую неделю ждал увольнения: студия не хотела ни Пачино, ни Брандо, ни его самого.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 415.390625,
+     "w": 487.4375,
+     "h": 56.15625
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Цветной портрет в красной рубашке. Пара к чёрно-белому кадру: два разных Копполы на одной стене.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 490.546875,
+     "w": 175.1875,
+     "h": 42
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "175 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 544.546875,
+     "w": 45.59375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 302.90625,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s14": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/depalma.jpg",
+    "rect": {
+     "x": 40,
+     "y": 125.34375,
+     "w": 628.5625,
+     "h": 469.3125
+    },
+    "nat": [
+     2400,
+     1792
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 157.6875,
+     "w": 223.859375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Режиссёры · 3 из 3",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 171.6875,
+     "w": 487.4375,
+     "h": 115.21875
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Брайан Де Пальма — фотография с автографом, 20×25 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 301.90625,
+     "w": 213.96875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Де Пальма · режиссёр",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 322.90625,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "«Лицо со шрамом», «Кэрри», «Неприкасаемые». Учился в одной компании со Скорсезе, Копполой и Спилбергом — поколением, которое переписало Голливуд.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 415.390625,
+     "w": 487.4375,
+     "h": 56.15625
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Кадр на площадке, росчерк синим. Третий режиссёр подборки и единственный, кто снимал и хоррор, и гангстерское кино.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 490.546875,
+     "w": 175.1875,
+     "h": 42
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "150 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 544.546875,
+     "w": 45.59375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 302.90625,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s15": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/darrow.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     2400,
+     1792
+    ],
+    "fit": "cover",
+    "pos": "50% 40%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 1021.828125,
+     "y": 173.484375,
+     "w": 198.171875,
+     "h": 15
+    },
+    "align": "right",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Та же компания",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 783,
+     "y": 209.484375,
+     "w": 435,
+     "h": 177.46875
+    },
+    "align": "right",
+    "lh": 59.16,
+    "base": 58,
+    "runs": [
+     {
+      "text": "Второй план,",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "без которого нет фильма",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-huge"
+   },
+   {
+    "rect": {
+     "x": 778,
+     "y": 439.953125,
+     "w": 440,
+     "h": 105.5625
+    },
+    "align": "right",
+    "lh": 35.2,
+    "base": 22,
+    "runs": [
+     {
+      "text": "Четыре актёра из тех же картин. Собираются в один ряд с главными — и стоят заметно дешевле.",
+      "font": "Inter",
+      "size": 22,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "div-sub"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 1148,
+     "y": 412.953125,
+     "w": 70,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s15_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s16": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/sorvino.jpg",
+    "rect": {
+     "x": 40,
+     "y": 133.296875,
+     "w": 628.5625,
+     "h": 453.390625
+    },
+    "nat": [
+     1500,
+     1082
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 157.6875,
+     "w": 284.1875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Та же компания · 1 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 171.6875,
+     "w": 487.4375,
+     "h": 115.21875
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Пол Сорвино — фотография «Славных парней» с автографом, 20×25 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 301.90625,
+     "w": 225.390625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1990 · «Славные парни»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 322.90625,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Полли Цицеро, глава семьи, который «не говорил по телефону». Сорвино почти отказался от роли: боялся, что не найдёт в себе нужной жёсткости.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 415.390625,
+     "w": 487.4375,
+     "h": 56.15625
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Цветной кадр с Лиоттой в одном кадре. Роль второго плана, без которой фильм не собирается.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 490.546875,
+     "w": 173.78125,
+     "h": 42
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "110 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 544.546875,
+     "w": 45.59375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 302.90625,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s17": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/vincent.jpg",
+    "rect": {
+     "x": 40,
+     "y": 125.34375,
+     "w": 628.5625,
+     "h": 469.3125
+    },
+    "nat": [
+     2400,
+     1792
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 143.65625,
+     "w": 284.1875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Та же компания · 2 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 157.65625,
+     "w": 487.4375,
+     "h": 115.21875
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Фрэнк Винсент — фотография «Бешеного быка» с автографом, 20×25 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 287.875,
+     "w": 206.609375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1980 · «Бешеный бык»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 308.875,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Винсент и Пеши пришли в кино вместе: Скорсезе увидел их в одном малобюджетном фильме и взял обоих. Дальше они играли друг против друга двадцать лет.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 401.359375,
+     "w": 487.4375,
+     "h": 84.234375
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Кадр из «Бешеного быка» — первая их совместная работа у Скорсезе. Для собирающего линию Пеши это недостающее звено.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 504.59375,
+     "w": 175.1875,
+     "h": 42
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "100 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 558.59375,
+     "w": 45.59375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 288.875,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s18": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/bracco.jpg",
+    "rect": {
+     "x": 40,
+     "y": 100.1875,
+     "w": 628.5625,
+     "h": 519.609375
+    },
+    "nat": [
+     1500,
+     1240
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 157.6875,
+     "w": 284.1875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Та же компания · 3 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 171.6875,
+     "w": 487.4375,
+     "h": 115.21875
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Лоррейн Бракко — фотография «Славных парней» с автографом, 20×25 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 301.90625,
+     "w": 225.390625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1990 · «Славные парни»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 322.90625,
+     "w": 469.4375,
+     "h": 77.484375
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Карен Хилл — единственный женский голос в фильме и единственный, кто рассказывает историю изнутри семьи. Номинация на «Оскар».",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 415.390625,
+     "w": 487.4375,
+     "h": 56.15625
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Кадр с Лиоттой за столиком, росчерк серебром. Единственная женская роль в подборке.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 490.546875,
+     "w": 156.1875,
+     "h": 42
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "90 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 544.546875,
+     "w": 45.59375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 302.90625,
+     "w": 2,
+     "h": 97.484375
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s19": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mar/cut/darrow.jpg",
+    "rect": {
+     "x": 40,
+     "y": 125.34375,
+     "w": 628.5625,
+     "h": 469.3125
+    },
+    "nat": [
+     2400,
+     1792
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 170.609375,
+     "w": 284.1875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Та же компания · 4 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 184.609375,
+     "w": 487.4375,
+     "h": 115.21875
+    },
+    "align": "start",
+    "lh": 38.42,
+    "base": 34,
+    "runs": [
+     {
+      "text": "Тони Дарроу — фотография «Славных парней» с автографом, 20×25 см",
+      "font": "Cormorant Garamond",
+      "size": 34,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 754.5625,
+     "y": 314.828125,
+     "w": 225.390625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "1990 · «Славные парни»",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 756.5625,
+     "y": 335.828125,
+     "w": 469.4375,
+     "h": 51.65625
+    },
+    "align": "start",
+    "lh": 25.84,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Соня, владелец ресторана. Дарроу играл у Скорсезе трижды и стал одним из постоянных лиц его нью-йоркских фильмов.",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 738.5625,
+     "y": 402.484375,
+     "w": 487.4375,
+     "h": 56.15625
+    },
+    "align": "start",
+    "lh": 28.08,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Групповой кадр: Лиотта, Де Ниро, Пеши и Скорсезе в одном ряду. Самый населённый кадр подборки.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 477.640625,
+     "w": 156.1875,
+     "h": 42
+    },
+    "align": "start",
+    "lh": 45.6,
+    "base": 38,
+    "runs": [
+     {
+      "text": "90 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 38,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 736.5625,
+     "y": 531.640625,
+     "w": 45.59375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 738.5625,
+     "y": 315.828125,
+     "w": 2,
+     "h": 71.65625
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s20": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_packaging/box_kraft.jpg",
+    "rect": {
+     "x": 91.5,
+     "y": 149.609375,
+     "w": 528.59375,
+     "h": 399.984375
+    },
+    "nat": [
+     1081,
+     818
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_packaging/bag_white.jpg",
+    "rect": {
+     "x": 693.21875,
+     "y": 149.609375,
+     "w": 517.125,
+     "h": 399.984375
+    },
+    "nat": [
+     1064,
+     823
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 64,
+     "y": 30,
+     "w": 338.734375,
+     "h": 36
+    },
+    "align": "start",
+    "lh": 38.4,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Как мы отдаём подарок",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 1000.078125,
+     "y": 47,
+     "w": 229.921875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Упаковка Stargift",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 0,
+     "y": 614.21875,
+     "w": 864,
+     "h": 105.78125
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Каждый предмет уходит в фирменной упаковке дома:\n  крафт-бумага с автографами великих, лента Stargift и плотный подарочный пакет. Оформленную работу привозим и вешаем сами.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s21": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 60,
+     "y": 39,
+     "w": 183.40625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Пеши и Лиотта",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 62,
+     "w": 225.890625,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 40,
+    "base": 40,
+    "runs": [
+     {
+      "text": "2 предметов",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 139,
+     "w": 436.859375,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Джо Пеши — фотография эпохи «Славных парней» с автографом, 20×25 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 520.859375,
+     "y": 135,
+     "w": 113.140625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "165 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 662,
+     "y": 139,
+     "w": 436.859375,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Рэй Лиотта — фотография «Поле его мечты» с автографом, 28×36 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1120.859375,
+     "y": 135,
+     "w": 113.140625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "160 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 190.21875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 190.21875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   }
+  ]
+ },
+ "s22": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 60,
+     "y": 39,
+     "w": 180.78125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Харви Кейтель",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 62,
+     "w": 225.890625,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 40,
+    "base": 40,
+    "runs": [
+     {
+      "text": "5 предметов",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 139,
+     "w": 436.859375,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Харви Кейтель — полный сценарий «Бешеных псов» на 103 страницы с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 520.859375,
+     "y": 135,
+     "w": 113.140625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "190 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 660,
+     "y": 141,
+     "w": 364.9375,
+     "h": 17
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Харви Кейтель — постер «Таксиста» с автографом",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1120.859375,
+     "y": 135,
+     "w": 113.140625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "170 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 205.21875,
+     "w": 436.859375,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Харви Кейтель — фотография «Криминального чтива» с автографом, 20×25 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 520.859375,
+     "y": 201.21875,
+     "w": 113.140625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "160 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 662,
+     "y": 205.21875,
+     "w": 436.859375,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Харви Кейтель — промо-фотография «Бешеных псов» с автографом, 20×25 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1120.859375,
+     "y": 201.21875,
+     "w": 113.140625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "160 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 273.4375,
+     "w": 439.765625,
+     "h": 17
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Харви Кейтель — студийный портрет с автографом, 20×25 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 520.859375,
+     "y": 267.4375,
+     "w": 113.140625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "150 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 190.21875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 190.21875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 256.4375,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 256.4375,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 302.4375,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   }
+  ]
+ },
+ "s23": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 60,
+     "y": 39,
+     "w": 137.84375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Режиссёры",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 62,
+     "w": 225.890625,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 40,
+    "base": 40,
+    "runs": [
+     {
+      "text": "3 предметов",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 141,
+     "w": 448.8125,
+     "h": 17
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Фрэнсис Форд Коппола — фотография с автографом, 20×25 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 520.859375,
+     "y": 135,
+     "w": 113.140625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "175 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 662,
+     "y": 139,
+     "w": 436.859375,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Фрэнсис Форд Коппола — цветная фотография с автографом, 20×25 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1120.859375,
+     "y": 135,
+     "w": 113.140625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "175 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 207.21875,
+     "w": 413.0625,
+     "h": 17
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Брайан Де Пальма — фотография с автографом, 20×25 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 520.859375,
+     "y": 201.21875,
+     "w": 113.140625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "150 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 190.21875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 190.21875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 236.21875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   }
+  ]
+ },
+ "s24": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 60,
+     "y": 39,
+     "w": 198.171875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Та же компания",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.42,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 62,
+     "w": 225.890625,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 40,
+    "base": 40,
+    "runs": [
+     {
+      "text": "4 предметов",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 139,
+     "w": 437.71875,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Пол Сорвино — фотография «Славных парней» с автографом, 20×25 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 521.71875,
+     "y": 135,
+     "w": 112.28125,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "110 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 662,
+     "y": 139,
+     "w": 436.859375,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Фрэнк Винсент — фотография «Бешеного быка» с автографом, 20×25 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1120.859375,
+     "y": 135,
+     "w": 113.140625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "100 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 205.21875,
+     "w": 448.359375,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Лоррейн Бракко — фотография «Славных парней» с автографом, 20×25 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 532.359375,
+     "y": 201.21875,
+     "w": 101.640625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "90 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 662,
+     "y": 205.21875,
+     "w": 448.359375,
+     "h": 42.21875
+    },
+    "align": "start",
+    "lh": 21.12,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Тони Дарроу — фотография «Славных парней» с автографом, 20×25 см",
+      "font": "Inter",
+      "size": 16,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1132.359375,
+     "y": 201.21875,
+     "w": 101.640625,
+     "h": 25
+    },
+    "align": "start",
+    "lh": 27.599999999999998,
+    "base": 23,
+    "runs": [
+     {
+      "text": "90 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 23,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 190.21875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 190.21875,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 62,
+     "y": 256.4375,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 662,
+     "y": 256.4375,
+     "w": 556,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.2)"
+   }
+  ]
+ },
+ "s25": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img/stargift_logo.png",
+    "rect": {
+     "x": 66,
+     "y": 162.09375,
+     "w": 179,
+     "h": 136
+    },
+    "nat": [
+     1440,
+     1094
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "brightness(0) invert(1)"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 66,
+     "y": 332.09375,
+     "w": 704,
+     "h": 147.796875
+    },
+    "align": "start",
+    "lh": 49.28,
+    "base": 44,
+    "runs": [
+     {
+      "text": "«Славные парни» и круг Скорсезе. Четырнадцать предметов, один круг кино.",
+      "font": "Cormorant Garamond",
+      "size": 44,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 666,
+     "w": 133.75,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 19.2,
+    "base": 16,
+    "runs": [
+     {
+      "text": "stargift.ru",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.12,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 0,
+     "y": 642,
+     "w": 1280,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.3)"
+   }
+  ]
+ }
+}

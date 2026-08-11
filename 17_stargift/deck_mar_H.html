@@ -1,0 +1,292 @@
+<meta charset="utf-8">
+<title>Stargift · Славные парни</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--noir:#0B0B0C;--gold:#A98545;--gold2:#C9A96A;--ivory:#F5F1E8;
+      --paper:#F7F5F1;--ink:#1A1A1A;--cert:#9a958c}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-serif}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:grid}
+.slide>*{min-height:0;min-width:0}
+img{display:block}
+.serif{font-family:'Cormorant Garamond',serif}
+.white{background:#FFFFFF;color:var(--ink)}
+.light{background:var(--paper);color:var(--ink)}
+.dark{background:var(--noir);color:var(--ivory)}
+.rule{height:1px;background:rgba(169,133,69,.55)}
+.div-huge{font-family:'Cormorant Garamond';font-weight:300;line-height:1.02;color:var(--ivory)}
+
+.kick{font:500 13px/1 'Inter';letter-spacing:.34em;text-transform:uppercase;color:var(--gold)}
+.kick.d{color:var(--gold2)}
+.solo{grid-template-columns:1.24fr 1fr}
+.ph{background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:44px 40px}
+.ph img{max-width:100%;max-height:100%;object-fit:contain}
+.side{display:flex;flex-direction:column;justify-content:center;padding:48px 54px 48px 30px}
+.nm{font-family:'Cormorant Garamond';font-weight:500;font-size:34px;line-height:1.13;color:var(--ink)}
+.hist{margin-top:16px;padding-left:16px;border-left:2px solid var(--gold)}
+.era{font:500 12px/1 'Inter';letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.histt{font:300 17px/1.52 'Inter';color:#3d3d3d}
+.tx{font:300 18px/1.56 'Inter';color:#4a4a4a;margin-top:15px}
+.pr{font-family:'Cormorant Garamond';font-weight:500;font-size:38px;color:var(--gold);margin-top:18px}
+.ct{font:400 12.5px/1.5 'Inter';letter-spacing:.18em;text-transform:uppercase;color:var(--cert);margin-top:9px}
+.div-sub{font:300 22px/1.6 'Inter';color:#c9c3b7}
+.lad-row{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:baseline;
+  padding:9px 0;border-bottom:1px solid rgba(169,133,69,.2)}
+.lad-nm{font:300 16px/1.32 'Inter';color:#d5cfc3}
+.lad-pr{font-family:'Cormorant Garamond';font-weight:500;font-size:23px;color:var(--gold2);white-space:nowrap}
+.lad{display:grid;grid-template-columns:1fr 1fr;gap:0 44px;align-content:start}
+</style>
+
+<div class="deck">
+<section class="slide dark" id="s01" style="grid-template-columns:1fr 1.04fr">
+  <div style="display:flex;flex-direction:column;justify-content:space-between;padding:56px 52px">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:138px;width:auto;object-fit:contain;filter:brightness(0) invert(1);align-self:flex-start">
+    <div>
+      <div class="kick d" style="margin-bottom:22px">Частное собрание · Музыка</div>
+      <h1 class="serif" style="font-weight:300;font-size:62px;line-height:1.04;color:var(--ivory)">«Славные парни»<br>и круг Скорсезе</h1>
+      <p style="font:300 18px/1.6 'Inter';color:#b8b2a6;margin-top:22px;max-width:42ch">Четырнадцать предметов: фотографии, постер «Таксиста»
+      и полный сценарий «Бешеных псов». Актёры, режиссёры и второй план — один круг американского кино.</p>
+    </div>
+    <div class="kick" style="letter-spacing:.24em">14 предметов · август 2026</div>
+  </div>
+  <div style="position:relative;background:#fff;display:flex;align-items:center;justify-content:center;padding:56px 46px">
+    <img src="img_mar/cut/darrow.jpg" alt="" style="max-width:100%;max-height:100%;object-fit:contain">
+  </div>
+</section>
+<section class="slide dark" id="s02" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_mar/cut/liotta_fod.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%">
+    <div style="position:absolute;inset:0;background:linear-gradient(270deg,rgba(11,11,12,.95) 0%,rgba(11,11,12,.8) 36%,rgba(11,11,12,.25) 68%,rgba(11,11,12,.06) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;text-align:right;padding:0 62px">
+      <div class="kick d" style="margin-bottom:22px">Пеши и Лиотта</div>
+      <h2 class="div-huge" style="font-size:58px;max-width:15ch">Два лица<br>«Славных парней»</h2>
+      <div class="rule" style="width:70px;margin:26px 0"></div>
+      <p class="div-sub" style="max-width:40ch">Томми Девито и Генри Хилл. Автограф Пеши — самый труднодоступный в этом круге: он почти не подписывает и почти не даёт интервью.</p>
+    </div>
+  </div>
+</section>
+<section class="slide white solo" id="s03">
+  <div class="ph"><img src="img_mar/cut/pesci_gf.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Пеши и Лиотта · 1 из 2</div>
+    <div class="nm">Джо Пеши — фотография эпохи «Славных парней» с автографом, 20×25 см</div><div class="hist"><div class="era">1990 · «Славные парни»</div><div class="histt">Роль Томми Девито принесла Пеши «Оскар». Он вышел на сцену, сказал «это большая честь» и ушёл — самая короткая благодарственная речь в истории премии.</div></div><div class="tx">Портрет в капсуле, росчерк по светлому полю. Пеши подписывает крайне редко: из круга «Славных парней» его автограф достать труднее всех.</div>
+    <div class="pr">165 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s04">
+  <div class="ph"><img src="img_mar/cut/liotta_fod.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Пеши и Лиотта · 2 из 2</div>
+    <div class="nm">Рэй Лиотта — фотография «Поле его мечты» с автографом, 28×36 см</div><div class="hist"><div class="era">1989 · «Поле его мечты»</div><div class="histt">За год до «Славных парней» Лиотта сыграл призрак Шузлесса Джо Джексона — роль, которая сделала его узнаваемым в Америке.</div></div><div class="tx">Крупный формат, кадр в бейсбольной форме. Пара к фотографии Пеши: два лица одного фильма, снятые в разные годы.</div>
+    <div class="pr">160 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide dark" id="s05" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_mar/cut/keitel_taxi.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%">
+    <div style="position:absolute;inset:0;background:linear-gradient(270deg,rgba(11,11,12,.95) 0%,rgba(11,11,12,.8) 36%,rgba(11,11,12,.25) 68%,rgba(11,11,12,.06) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;text-align:right;padding:0 62px">
+      <div class="kick d" style="margin-bottom:22px">Харви Кейтель</div>
+      <h2 class="div-huge" style="font-size:58px;max-width:15ch">От «Таксиста»<br>до «Бешеных псов»</h2>
+      <div class="rule" style="width:70px;margin:26px 0"></div>
+      <p class="div-sub" style="max-width:40ch">Четыре предмета одного актёра: постер, полный сценарий и две фотографии. Восемнадцать лет между самой ранней и самой поздней вещью.</p>
+    </div>
+  </div>
+</section>
+<section class="slide white solo" id="s06">
+  <div class="ph"><img src="img_mar/cut/keitel_script.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Кейтель · 1 из 5</div>
+    <div class="nm">Харви Кейтель — полный сценарий «Бешеных псов» на 103 страницы с автографом</div><div class="hist"><div class="era">1992 · «Бешеные псы»</div><div class="histt">Кейтель не только сыграл мистера Уайта — он оплатил часть съёмок и привёл Тарантино к продюсерам. Без него дебюта могло не быть.</div></div><div class="tx">Полный экземпляр сценария, не титульный лист. Самый весомый предмет подборки: сто три страницы текста, с которого начался Тарантино.</div>
+    <div class="pr">190 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s07">
+  <div class="ph"><img src="img_mar/cut/keitel_taxi.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Кейтель · 2 из 5</div>
+    <div class="nm">Харви Кейтель — постер «Таксиста» с автографом</div><div class="hist"><div class="era">1976 · «Таксист»</div><div class="histt">Кейтелю было тридцать шесть, когда он сыграл сутенёра Спорта. Фильм взял «Золотую пальмовую ветвь» и стал точкой отсчёта для всего американского кино семидесятых.</div></div><div class="tx">Настоящий постер фильма с росчерком по нижней части. Крупный формат — вещь для стены, а не для полки.</div>
+    <div class="pr">170 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s08">
+  <div class="ph"><img src="img_mar/cut/keitel_pf2.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Кейтель · 3 из 5</div>
+    <div class="nm">Харви Кейтель — фотография «Криминального чтива» с автографом, 20×25 см</div><div class="hist"><div class="era">1994 · «Криминальное чтиво»</div><div class="histt">Мистер Вульф решает проблемы. Восемь минут экранного времени — и одна из самых цитируемых ролей девяностых.</div></div><div class="tx">Чёрно-белый кадр в костюме, росчерк с посвящением. Формат, который вешают в кабинет рядом с постером.</div>
+    <div class="pr">160 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s09">
+  <div class="ph"><img src="img_mar/cut/keitel_rd_promo.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Кейтель · 4 из 5</div>
+    <div class="nm">Харви Кейтель — промо-фотография «Бешеных псов» с автографом, 20×25 см</div><div class="hist"><div class="era">1992 · «Бешеные псы»</div><div class="histt">Промо-кадр рассылался по редакциям к прокату фильма, который сняли за миллион двести тысяч долларов и который окупился вдесятеро.</div></div><div class="tx">Кадр с пистолетом у машины — сцена, которую помнят все. Промо-тираж печатался малым числом и в продажу не поступал.</div>
+    <div class="pr">160 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s10">
+  <div class="ph"><img src="img_mar/cut/keitel_pf1.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Кейтель · 5 из 5</div>
+    <div class="nm">Харви Кейтель — студийный портрет с автографом, 20×25 см</div><div class="hist"><div class="era">Кейтель · портрет</div><div class="histt">Актёр, прошедший путь от морской пехоты до Скорсезе: они начали вместе в 1967-м и сняли шесть фильмов.</div></div><div class="tx">Классический студийный портрет с напечатанным именем внизу. Самый доступный лот подборки.</div>
+    <div class="pr">150 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide dark" id="s11" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_mar/cut/coppola_jsa.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%">
+    <div style="position:absolute;inset:0;background:linear-gradient(270deg,rgba(11,11,12,.95) 0%,rgba(11,11,12,.8) 36%,rgba(11,11,12,.25) 68%,rgba(11,11,12,.06) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;text-align:right;padding:0 62px">
+      <div class="kick d" style="margin-bottom:22px">Режиссёры</div>
+      <h2 class="div-huge" style="font-size:58px;max-width:15ch">Коппола<br>и Де Пальма</h2>
+      <div class="rule" style="width:70px;margin:26px 0"></div>
+      <p class="div-sub" style="max-width:40ch">Два имени из поколения, которое переписало американское кино в семидесятые. Автографы режиссёров встречаются реже актёрских: они меньше на виду.</p>
+    </div>
+  </div>
+</section>
+<section class="slide white solo" id="s12">
+  <div class="ph"><img src="img_mar/cut/coppola_bas.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Режиссёры · 1 из 3</div>
+    <div class="nm">Фрэнсис Форд Коппола — фотография с автографом, 20×25 см</div><div class="hist"><div class="era">Коппола · режиссёр</div><div class="histt">Пять «Оскаров», две «Золотые пальмовые ветви». «Крёстный отец» и «Апокалипсис сегодня» сняты одним человеком за семь лет.</div></div><div class="tx">Кадр в наушниках на съёмочной площадке — Коппола за работой, а не на публике. Росчерк синим по светлому полю.</div>
+    <div class="pr">175 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s13">
+  <div class="ph"><img src="img_mar/cut/coppola_jsa.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Режиссёры · 2 из 3</div>
+    <div class="nm">Фрэнсис Форд Коппола — цветная фотография с автографом, 20×25 см</div><div class="hist"><div class="era">Коппола · режиссёр</div><div class="histt">Снимая «Крёстного отца», Коппола каждую неделю ждал увольнения: студия не хотела ни Пачино, ни Брандо, ни его самого.</div></div><div class="tx">Цветной портрет в красной рубашке. Пара к чёрно-белому кадру: два разных Копполы на одной стене.</div>
+    <div class="pr">175 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s14">
+  <div class="ph"><img src="img_mar/cut/depalma.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Режиссёры · 3 из 3</div>
+    <div class="nm">Брайан Де Пальма — фотография с автографом, 20×25 см</div><div class="hist"><div class="era">Де Пальма · режиссёр</div><div class="histt">«Лицо со шрамом», «Кэрри», «Неприкасаемые». Учился в одной компании со Скорсезе, Копполой и Спилбергом — поколением, которое переписало Голливуд.</div></div><div class="tx">Кадр на площадке, росчерк синим. Третий режиссёр подборки и единственный, кто снимал и хоррор, и гангстерское кино.</div>
+    <div class="pr">150 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide dark" id="s15" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_mar/cut/darrow.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%">
+    <div style="position:absolute;inset:0;background:linear-gradient(270deg,rgba(11,11,12,.95) 0%,rgba(11,11,12,.8) 36%,rgba(11,11,12,.25) 68%,rgba(11,11,12,.06) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;text-align:right;padding:0 62px">
+      <div class="kick d" style="margin-bottom:22px">Та же компания</div>
+      <h2 class="div-huge" style="font-size:58px;max-width:15ch">Второй план,<br>без которого нет фильма</h2>
+      <div class="rule" style="width:70px;margin:26px 0"></div>
+      <p class="div-sub" style="max-width:40ch">Четыре актёра из тех же картин. Собираются в один ряд с главными — и стоят заметно дешевле.</p>
+    </div>
+  </div>
+</section>
+<section class="slide white solo" id="s16">
+  <div class="ph"><img src="img_mar/cut/sorvino.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Та же компания · 1 из 4</div>
+    <div class="nm">Пол Сорвино — фотография «Славных парней» с автографом, 20×25 см</div><div class="hist"><div class="era">1990 · «Славные парни»</div><div class="histt">Полли Цицеро, глава семьи, который «не говорил по телефону». Сорвино почти отказался от роли: боялся, что не найдёт в себе нужной жёсткости.</div></div><div class="tx">Цветной кадр с Лиоттой в одном кадре. Роль второго плана, без которой фильм не собирается.</div>
+    <div class="pr">110 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s17">
+  <div class="ph"><img src="img_mar/cut/vincent.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Та же компания · 2 из 4</div>
+    <div class="nm">Фрэнк Винсент — фотография «Бешеного быка» с автографом, 20×25 см</div><div class="hist"><div class="era">1980 · «Бешеный бык»</div><div class="histt">Винсент и Пеши пришли в кино вместе: Скорсезе увидел их в одном малобюджетном фильме и взял обоих. Дальше они играли друг против друга двадцать лет.</div></div><div class="tx">Кадр из «Бешеного быка» — первая их совместная работа у Скорсезе. Для собирающего линию Пеши это недостающее звено.</div>
+    <div class="pr">100 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s18">
+  <div class="ph"><img src="img_mar/cut/bracco.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Та же компания · 3 из 4</div>
+    <div class="nm">Лоррейн Бракко — фотография «Славных парней» с автографом, 20×25 см</div><div class="hist"><div class="era">1990 · «Славные парни»</div><div class="histt">Карен Хилл — единственный женский голос в фильме и единственный, кто рассказывает историю изнутри семьи. Номинация на «Оскар».</div></div><div class="tx">Кадр с Лиоттой за столиком, росчерк серебром. Единственная женская роль в подборке.</div>
+    <div class="pr">90 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s19">
+  <div class="ph"><img src="img_mar/cut/darrow.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Та же компания · 4 из 4</div>
+    <div class="nm">Тони Дарроу — фотография «Славных парней» с автографом, 20×25 см</div><div class="hist"><div class="era">1990 · «Славные парни»</div><div class="histt">Соня, владелец ресторана. Дарроу играл у Скорсезе трижды и стал одним из постоянных лиц его нью-йоркских фильмов.</div></div><div class="tx">Групповой кадр: Лиотта, Де Ниро, Пеши и Скорсезе в одном ряду. Самый населённый кадр подборки.</div>
+    <div class="pr">90 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide white" id="s20" style="grid-template-rows:auto 1fr auto">
+  <div style="padding:30px 66px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 class="serif" style="font-weight:500;font-size:32px;color:var(--ink)">Как мы отдаём подарок</h2>
+    <span class="kick">Упаковка Stargift</span>
+  </div>
+  <div style="display:grid;grid-template-columns:1.05fr .95fr;gap:44px;padding:18px 66px 0;align-items:center">
+    <div style="height:400px;display:flex;align-items:center;justify-content:center;background:#F7F5F1;overflow:hidden"><img src="img_packaging/box_kraft.jpg" alt="" style="max-width:100%;max-height:100%;object-fit:contain"></div>
+    <div style="height:400px;display:flex;align-items:center;justify-content:center;background:#F7F5F1;overflow:hidden"><img src="img_packaging/bag_white.jpg" alt="" style="max-width:100%;max-height:100%;object-fit:contain"></div>
+  </div>
+  <div style="padding:16px 66px 34px;font:300 18px/1.55 'Inter';color:#4a4a4a;max-width:96ch">Каждый предмет уходит в фирменной упаковке дома:
+  крафт-бумага с автографами великих, лента Stargift и плотный подарочный пакет. Оформленную работу привозим и вешаем сами.</div>
+</section>
+<section class="slide dark" id="s21" style="grid-template-rows:auto 1fr">
+  <div style="padding:40px 62px 0">
+    <div class="kick d" style="margin-bottom:12px">Пеши и Лиотта</div>
+    <h2 class="serif" style="font-weight:300;font-size:40px;line-height:1;color:var(--ivory)">2 предметов</h2>
+  </div>
+  <div style="padding:20px 62px 36px"><div class="lad"><div class="lad-row"><div class="lad-nm">Джо Пеши — фотография эпохи «Славных парней» с автографом, 20×25 см</div><div class="lad-pr">165 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Рэй Лиотта — фотография «Поле его мечты» с автографом, 28×36 см</div><div class="lad-pr">160 000&nbsp;₽</div></div></div></div>
+</section>
+<section class="slide dark" id="s22" style="grid-template-rows:auto 1fr">
+  <div style="padding:40px 62px 0">
+    <div class="kick d" style="margin-bottom:12px">Харви Кейтель</div>
+    <h2 class="serif" style="font-weight:300;font-size:40px;line-height:1;color:var(--ivory)">5 предметов</h2>
+  </div>
+  <div style="padding:20px 62px 36px"><div class="lad"><div class="lad-row"><div class="lad-nm">Харви Кейтель — полный сценарий «Бешеных псов» на 103 страницы с автографом</div><div class="lad-pr">190 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Харви Кейтель — постер «Таксиста» с автографом</div><div class="lad-pr">170 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Харви Кейтель — фотография «Криминального чтива» с автографом, 20×25 см</div><div class="lad-pr">160 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Харви Кейтель — промо-фотография «Бешеных псов» с автографом, 20×25 см</div><div class="lad-pr">160 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Харви Кейтель — студийный портрет с автографом, 20×25 см</div><div class="lad-pr">150 000&nbsp;₽</div></div></div></div>
+</section>
+<section class="slide dark" id="s23" style="grid-template-rows:auto 1fr">
+  <div style="padding:40px 62px 0">
+    <div class="kick d" style="margin-bottom:12px">Режиссёры</div>
+    <h2 class="serif" style="font-weight:300;font-size:40px;line-height:1;color:var(--ivory)">3 предметов</h2>
+  </div>
+  <div style="padding:20px 62px 36px"><div class="lad"><div class="lad-row"><div class="lad-nm">Фрэнсис Форд Коппола — фотография с автографом, 20×25 см</div><div class="lad-pr">175 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Фрэнсис Форд Коппола — цветная фотография с автографом, 20×25 см</div><div class="lad-pr">175 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Брайан Де Пальма — фотография с автографом, 20×25 см</div><div class="lad-pr">150 000&nbsp;₽</div></div></div></div>
+</section>
+<section class="slide dark" id="s24" style="grid-template-rows:auto 1fr">
+  <div style="padding:40px 62px 0">
+    <div class="kick d" style="margin-bottom:12px">Та же компания</div>
+    <h2 class="serif" style="font-weight:300;font-size:40px;line-height:1;color:var(--ivory)">4 предметов</h2>
+  </div>
+  <div style="padding:20px 62px 36px"><div class="lad"><div class="lad-row"><div class="lad-nm">Пол Сорвино — фотография «Славных парней» с автографом, 20×25 см</div><div class="lad-pr">110 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Фрэнк Винсент — фотография «Бешеного быка» с автографом, 20×25 см</div><div class="lad-pr">100 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Лоррейн Бракко — фотография «Славных парней» с автографом, 20×25 см</div><div class="lad-pr">90 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Тони Дарроу — фотография «Славных парней» с автографом, 20×25 см</div><div class="lad-pr">90 000&nbsp;₽</div></div></div></div>
+</section>
+<section class="slide dark" id="s25" style="grid-template-rows:1fr auto">
+  <div style="padding:0 66px;display:flex;flex-direction:column;justify-content:center">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:136px;width:auto;object-fit:contain;filter:brightness(0) invert(1);align-self:flex-start">
+    <h2 class="serif" style="font-weight:300;font-size:44px;line-height:1.12;color:var(--ivory);margin-top:34px;max-width:32ch">«Славные парни» и круг Скорсезе. Четырнадцать предметов, один круг кино.</h2>
+  </div>
+  <div style="padding:24px 66px 40px;border-top:1px solid rgba(169,133,69,.3)">
+    <span class="kick" style="letter-spacing:.24em;color:var(--gold2)">stargift.ru</span>
+  </div>
+</section>
+</div>
+
+<script>
+function show(){const raw=location.hash.slice(1);const n=raw.replace(/^s/,'');const id=n?('s'+n.padStart(2,'0')):'s01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+function go(d){const cur=+((location.hash.slice(1).replace(/^s/,''))||1);let x=cur+d;if(x<1)x=1;if(x>25)x=25;location.hash='s'+x;}
+show();addEventListener('hashchange',show);
+addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')go(1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(-1);});
+addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX<innerWidth*0.32?-1:1);});
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.slide{animation:none}.deck{height:auto}
+.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
