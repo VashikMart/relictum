@@ -23,7 +23,7 @@
    {
     "rect": {
      "x": 56,
-     "y": 270.578125,
+     "y": 285.578125,
      "w": 289.265625,
      "h": 15
     },
@@ -47,7 +47,7 @@
    {
     "rect": {
      "x": 58,
-     "y": 304.578125,
+     "y": 319.578125,
      "w": 562,
      "h": 124.78125
     },
@@ -56,7 +56,7 @@
     "base": 60,
     "runs": [
      {
-      "text": "Зал боксёрской",
+      "text": "Бокс:",
       "font": "Cormorant Garamond",
       "size": 60,
       "weight": 300,
@@ -69,7 +69,7 @@
       "br": true
      },
      {
-      "text": "славы",
+      "text": "имена на вещах",
       "font": "Cormorant Garamond",
       "size": 60,
       "weight": 300,
@@ -84,16 +84,16 @@
    {
     "rect": {
      "x": 58,
-     "y": 449.359375,
+     "y": 464.359375,
      "w": 361,
-     "h": 120.0625
+     "h": 90.046875
     },
     "align": "start",
     "lh": 30.02,
     "base": 19,
     "runs": [
      {
-      "text": "Три предмета из Канастоты: программы\n      церемоний 1996 и 1997 годов и официальный пресс-кит, подписанный соперниками Мохаммеда Али.",
+      "text": "Экипировка ринга, перчатки и бумаги\n      Международного зала боксёрской славы в Канастоте.",
       "font": "Inter",
       "size": 19,
       "weight": 300,
@@ -108,8 +108,8 @@
    {
     "rect": {
      "x": 56,
-     "y": 652,
-     "w": 263.71875,
+     "y": 651.984375,
+     "w": 275.984375,
      "h": 15
     },
     "align": "start",
@@ -117,7 +117,7 @@
     "base": 13,
     "runs": [
      {
-      "text": "3 предмета · август 2026",
+      "text": "9 предметов · август 2026",
       "font": "Inter",
       "size": 13,
       "weight": 500,
@@ -132,18 +132,18 @@
    {
     "rect": {
      "x": 697,
-     "y": 143.203125,
-     "w": 148,
-     "h": 144
+     "y": 146.046875,
+     "w": 81,
+     "h": 139
     },
     "align": "start",
-    "lh": 119.6,
-    "base": 130,
+    "lh": 115.92,
+    "base": 126,
     "runs": [
      {
-      "text": "41",
+      "text": "9",
       "font": "Cormorant Garamond",
-      "size": 130,
+      "size": 126,
       "weight": 300,
       "color": "rgb(169, 133, 69)",
       "spacing": 0,
@@ -156,8 +156,8 @@
    {
     "rect": {
      "x": 699,
-     "y": 324.796875,
-     "w": 260,
+     "y": 322.953125,
+     "w": 270,
      "h": 124
     },
     "align": "start",
@@ -165,7 +165,7 @@
     "base": 20,
     "runs": [
      {
-      "text": "автограф на двух программах — от Арчи Мура\n    и Флойда Паттерсона до Марвина Хаглера.",
+      "text": "предметов: атласный халат, три пары трусов,\n    перчатки, две программы церемоний и папка для прессы.",
       "font": "Inter",
       "size": 20,
       "weight": 300,
@@ -180,8 +180,8 @@
    {
     "rect": {
      "x": 699,
-     "y": 470.796875,
-     "w": 260,
+     "y": 468.953125,
+     "w": 270,
      "h": 93
     },
     "align": "start",
@@ -189,7 +189,7 @@
     "base": 20,
     "runs": [
      {
-      "text": "Плюс папка для прессы с именами\n    Фрейзера, Нортона и Леона Спинкса.",
+      "text": "Али и Тайсон, Хирнс и Льюис,\n    Пакьяо и Леонард, Головкин и Дюран.",
       "font": "Inter",
       "size": 20,
       "weight": 300,
@@ -217,7 +217,7 @@
     "kind": "rect",
     "rect": {
      "x": 699,
-     "y": 299.796875,
+     "y": 297.953125,
      "w": 76,
      "h": 1
     },
@@ -227,6 +227,3262 @@
   ]
  },
  "s02": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 70,
+     "y": 170.90625,
+     "w": 218.234375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Экипировка ринга",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 72,
+     "y": 208.90625,
+     "w": 614.984375,
+     "h": 182.671875
+    },
+    "align": "start",
+    "lh": 60.9,
+    "base": 58,
+    "runs": [
+     {
+      "text": "Халат и трусы,",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "сто семнадцать подписей",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 72,
+     "y": 448.578125,
+     "w": 462,
+     "h": 99.515625
+    },
+    "align": "start",
+    "lh": 33.18,
+    "base": 21,
+    "runs": [
+     {
+      "text": "Четыре предмета, в которых выходят к рингу: атласный халат и три пары трусов — чемпионские и тренерские.",
+      "font": "Inter",
+      "size": 21,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 730.984375,
+     "y": 279.21875,
+     "w": 172.8125,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 29.7,
+    "base": 27,
+    "runs": [
+     {
+      "text": "117 подписей",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 730.984375,
+     "y": 318.90625,
+     "w": 187.625,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 26.1,
+    "base": 18,
+    "runs": [
+     {
+      "text": "на четырёх предметах",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(157, 151, 139)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   },
+   {
+    "rect": {
+     "x": 730.984375,
+     "y": 378,
+     "w": 260.1875,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 29.7,
+    "base": 27,
+    "runs": [
+     {
+      "text": "Everlast · Cleto Reyes",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 730.984375,
+     "y": 417.6875,
+     "w": 339.453125,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 26.1,
+    "base": 18,
+    "runs": [
+     {
+      "text": "две мастерские, которым сто лет на двоих",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(157, 151, 139)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 72,
+     "y": 419.578125,
+     "w": 74,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 732.984375,
+     "y": 261.21875,
+     "w": 475,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.28)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 732.984375,
+     "y": 360,
+     "w": 475,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.28)"
+   }
+  ]
+ },
+ "s03": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_box/half/orig_robe51.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 112.796875,
+     "w": 301.90625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Экипировка ринга · 1 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 139.796875,
+     "w": 548,
+     "h": 110.859375
+    },
+    "align": "start",
+    "lh": 36.96,
+    "base": 33,
+    "runs": [
+     {
+      "text": "Боксёрский халат Everlast с 51 автографом: Томас Хирнс, Леннокс Льюис и другие чемпионы",
+      "font": "Cormorant Garamond",
+      "size": 33,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 695,
+     "y": 264.65625,
+     "w": 328.953125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Синий атлас · 51 подпись серебром",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.4,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 697,
+     "y": 284.65625,
+     "w": 531,
+     "h": 81
+    },
+    "align": "start",
+    "lh": 27,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Халат — то, в чём боксёра видят до первого удара: под ним идут к рингу и в нём стоят, пока читают представление. Этот собирал подписи годами.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 379.65625,
+     "w": 548,
+     "h": 136.796875
+    },
+    "align": "start",
+    "lh": 27.36,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Пятьдесят один росчерк серебром по синему атласу. Среди подписавших — Томас Хирнс и Леннокс Льюис. Предмет читается с другого конца комнаты: серебро на синем видно издалека, а масштаб понятен сразу — столько имён на одной вещи случайно не собирается. Для большой стены: кабинет, клубная комната, лестничный пролёт.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 533.453125,
+     "w": 213.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "2 000 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 589.453125,
+     "w": 170.609375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett · AC49467",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 680,
+     "y": 265.65625,
+     "w": 2,
+     "h": 100
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s04": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_box/det/robe51_a.jpg",
+    "rect": {
+     "x": 69.5,
+     "y": 91.59375,
+     "w": 549,
+     "h": 518
+    },
+    "nat": [
+     549,
+     518
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_box/det/robe51_b.jpg",
+    "rect": {
+     "x": 707,
+     "y": 118.59375,
+     "w": 458,
+     "h": 464
+    },
+    "nat": [
+     458,
+     464
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 56,
+     "y": 29,
+     "w": 243.421875,
+     "h": 36
+    },
+    "align": "start",
+    "lh": 35.2,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Подписи крупно",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 936.09375,
+     "y": 46,
+     "w": 301.90625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Экипировка ринга · 1 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 56,
+     "y": 637,
+     "w": 409.421875,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 27,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Томас Хирнс · Леннокс Льюис · Гильермо Ригондо",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "sig"
+   },
+   {
+    "rect": {
+     "x": 56,
+     "y": 672,
+     "w": 392.828125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 21,
+    "base": 14,
+    "runs": [
+     {
+      "text": "Фрагменты того же халата крупно: плечо с логотипом и спина.",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(141, 136, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s05": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_box/half/orig_trunks28.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 112.796875,
+     "w": 301.90625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Экипировка ринга · 2 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 139.796875,
+     "w": 548,
+     "h": 110.859375
+    },
+    "align": "start",
+    "lh": 36.96,
+    "base": 33,
+    "runs": [
+     {
+      "text": "Боксёрские трусы Cleto Reyes с 28 автографами: Мэнни Пакьяо, Шугар Рэй Леонард и другие",
+      "font": "Cormorant Garamond",
+      "size": 33,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 695,
+     "y": 264.65625,
+     "w": 344.421875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Чёрный шёлк · 28 подписей серебром",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.4,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 697,
+     "y": 284.65625,
+     "w": 531,
+     "h": 81
+    },
+    "align": "start",
+    "lh": 27,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Cleto Reyes — мексиканская мастерская, чью экипировку чемпионы выбирают с 1945 года. Чёрный шёлк, серебряный маркер: контраст, который держит подпись десятилетиями.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 379.65625,
+     "w": 548,
+     "h": 136.796875
+    },
+    "align": "start",
+    "lh": 27.36,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Двадцать восемь подписей. Мэнни Пакьяо — единственный в истории чемпион мира в восьми весовых категориях; Шугар Рэй Леонард — в пяти. Рядом читаются Майки Гарсия и Тимоти Брэдли. Компактная вещь, которая в раме занимает меньше места, чем халат, а имён держит почти столько же.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 533.453125,
+     "w": 213.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "1 400 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 589.453125,
+     "w": 170.609375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett · AC49475",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 680,
+     "y": 265.65625,
+     "w": 2,
+     "h": 100
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s06": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_box/det/trunks28_a.jpg",
+    "rect": {
+     "x": 70,
+     "y": 92.09375,
+     "w": 548,
+     "h": 517
+    },
+    "nat": [
+     548,
+     517
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_box/det/trunks28_b.jpg",
+    "rect": {
+     "x": 662,
+     "y": 92.09375,
+     "w": 548,
+     "h": 517
+    },
+    "nat": [
+     548,
+     517
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 56,
+     "y": 29,
+     "w": 243.421875,
+     "h": 36
+    },
+    "align": "start",
+    "lh": 35.2,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Подписи крупно",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 936.09375,
+     "y": 46,
+     "w": 301.90625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Экипировка ринга · 2 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 56,
+     "y": 637,
+     "w": 554.34375,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 27,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Мэнни Пакьяо · Шугар Рэй Леонард · Майки Гарсия · Тимоти Брэдли",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "sig"
+   },
+   {
+    "rect": {
+     "x": 56,
+     "y": 672,
+     "w": 374.359375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 21,
+    "base": 14,
+    "runs": [
+     {
+      "text": "Фрагменты тех же трусов крупно: левая и правая половина.",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(141, 136, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s07": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_box/half/orig_trunks20.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 112.796875,
+     "w": 301.90625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Экипировка ринга · 3 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 139.796875,
+     "w": 548,
+     "h": 110.859375
+    },
+    "align": "start",
+    "lh": 36.96,
+    "base": 33,
+    "runs": [
+     {
+      "text": "Боксёрские трусы Cleto Reyes с 20 автографами тренеров: Фредди Роуч, Флойд Мейвезер-старший и другие",
+      "font": "Cormorant Garamond",
+      "size": 33,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 695,
+     "y": 264.65625,
+     "w": 284.734375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Чёрный шёлк · угол, а не ринг",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.4,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 697,
+     "y": 284.65625,
+     "w": 531,
+     "h": 81
+    },
+    "align": "start",
+    "lh": 27,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Редкий случай: трусы подписаны не бойцами, а углом — теми, кто стоит между раундами. Почти каждый добавил к росчерку слово Coach.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 379.65625,
+     "w": 548,
+     "h": 136.796875
+    },
+    "align": "start",
+    "lh": 27.36,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Двадцать подписей тренеров. Фредди Роуч, доведший Пакьяо до титулов в восьми весах. Флойд Мейвезер-старший. Исмаэль Салас, подписавшийся «тренер года WBA 1996». Предмет для того, кто понимает, что бой выигрывается в углу, — и это редкая тема в собраниях, где обычно висят только чемпионы.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 533.453125,
+     "w": 213.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "1 200 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 589.453125,
+     "w": 170.609375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett · AC49472",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 680,
+     "y": 265.65625,
+     "w": 2,
+     "h": 100
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s08": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_box/det/trunks20_a.jpg",
+    "rect": {
+     "x": 69.5,
+     "y": 91.59375,
+     "w": 549,
+     "h": 518
+    },
+    "nat": [
+     549,
+     518
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_box/det/trunks20_b.jpg",
+    "rect": {
+     "x": 661.5,
+     "y": 91.59375,
+     "w": 549,
+     "h": 518
+    },
+    "nat": [
+     549,
+     518
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 56,
+     "y": 29,
+     "w": 243.421875,
+     "h": 36
+    },
+    "align": "start",
+    "lh": 35.2,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Подписи крупно",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 936.09375,
+     "y": 46,
+     "w": 301.90625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Экипировка ринга · 3 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 56,
+     "y": 637,
+     "w": 462.671875,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 27,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Фредди Роуч · Флойд Мейвезер-старший · Исмаэль Салас",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "sig"
+   },
+   {
+    "rect": {
+     "x": 56,
+     "y": 672,
+     "w": 374.359375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 21,
+    "base": 14,
+    "runs": [
+     {
+      "text": "Фрагменты тех же трусов крупно: левая и правая половина.",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(141, 136, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s09": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_box/half/orig_trunks18.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 126.46875,
+     "w": 301.90625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Экипировка ринга · 4 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 153.46875,
+     "w": 548,
+     "h": 110.859375
+    },
+    "align": "start",
+    "lh": 36.96,
+    "base": 33,
+    "runs": [
+     {
+      "text": "Боксёрские трусы Everlast с 18 автографами: Геннадий Головкин, Леннокс Льюис и другие",
+      "font": "Cormorant Garamond",
+      "size": 33,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 695,
+     "y": 278.328125,
+     "w": 319.265625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Белый атлас с чёрными полосами",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.4,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 697,
+     "y": 298.328125,
+     "w": 531,
+     "h": 81
+    },
+    "align": "start",
+    "lh": 27,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Классический силуэт больших вечеров в Лас-Вегасе: белый атлас, две чёрные полосы по бокам. По светлому шёлку подписи идут чёрным и читаются как строки.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 393.328125,
+     "w": 548,
+     "h": 109.4375
+    },
+    "align": "start",
+    "lh": 27.36,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Восемнадцать подписей. Геннадий Головкин, Леннокс Льюис, Кит Турман, подписавшийся своим прозвищем «One Time», Рэй «Бум-Бум» Манчини. Светлый предмет, который выигрывает в тёмной раме, — и единственный в этой подборке, где подписи чёрные, а не серебряные.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 519.765625,
+     "w": 183.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 575.765625,
+     "w": 170.609375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett · AC49468",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 680,
+     "y": 279.328125,
+     "w": 2,
+     "h": 100
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s10": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_box/det/trunks18_a.jpg",
+    "rect": {
+     "x": 70,
+     "y": 92.09375,
+     "w": 548,
+     "h": 517
+    },
+    "nat": [
+     548,
+     517
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_box/det/trunks18_b.jpg",
+    "rect": {
+     "x": 662,
+     "y": 92.09375,
+     "w": 548,
+     "h": 517
+    },
+    "nat": [
+     548,
+     517
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 56,
+     "y": 29,
+     "w": 243.421875,
+     "h": 36
+    },
+    "align": "start",
+    "lh": 35.2,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Подписи крупно",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 936.09375,
+     "y": 46,
+     "w": 301.90625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Экипировка ринга · 4 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 56,
+     "y": 637,
+     "w": 755.8125,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 27,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Геннадий Головкин · Леннокс Льюис · Кит Турман · Рэй «Бум-Бум» Манчини · Миа Сент-Джон",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "sig"
+   },
+   {
+    "rect": {
+     "x": 56,
+     "y": 672,
+     "w": 374.359375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 21,
+    "base": 14,
+    "runs": [
+     {
+      "text": "Фрагменты тех же трусов крупно: левая и правая половина.",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(141, 136, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s11": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 60,
+     "y": 41,
+     "w": 361.640625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Кто расписался на экипировке",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 65,
+     "w": 245.734375,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 42.4,
+    "base": 40,
+    "runs": [
+     {
+      "text": "Кто эти люди",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 158.09375,
+     "w": 183.5,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 31.8,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Томас Хирнс",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-nm"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 198.890625,
+     "w": 549,
+     "h": 57
+    },
+    "align": "start",
+    "lh": 28.5,
+    "base": 19,
+    "runs": [
+     {
+      "text": "«Хитмэн» из зала Kronk. Первый боксёр, взявший титулы чемпиона мира в пяти весовых категориях.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(181, 175, 163)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-tx"
+   },
+   {
+    "rect": {
+     "x": 667,
+     "y": 158.09375,
+     "w": 219.03125,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 31.8,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Леннокс Льюис",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-nm"
+   },
+   {
+    "rect": {
+     "x": 669,
+     "y": 198.890625,
+     "w": 549,
+     "h": 57
+    },
+    "align": "start",
+    "lh": 28.5,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Чемпион в тяжёлом весе, закончивший карьеру действующим обладателем титула. Отомстил обоим, кто его побеждал.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(181, 175, 163)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-tx"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 284.890625,
+     "w": 205.265625,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 31.8,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Мэнни Пакьяо",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-nm"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 325.6875,
+     "w": 549,
+     "h": 57
+    },
+    "align": "start",
+    "lh": 28.5,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Единственный в истории чемпион мира в восьми весовых категориях.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(181, 175, 163)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-tx"
+   },
+   {
+    "rect": {
+     "x": 667,
+     "y": 284.890625,
+     "w": 272.953125,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 31.8,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Шугар Рэй Леонард",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-nm"
+   },
+   {
+    "rect": {
+     "x": 669,
+     "y": 325.6875,
+     "w": 549,
+     "h": 57
+    },
+    "align": "start",
+    "lh": 28.5,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Лицо бокса восьмидесятых, один из «Четырёх королей». Чемпион в пяти весах.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(181, 175, 163)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-tx"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 411.6875,
+     "w": 266.8125,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 31.8,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Геннадий Головкин",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-nm"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 452.484375,
+     "w": 549,
+     "h": 57
+    },
+    "align": "start",
+    "lh": 28.5,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Двадцать защит титула в среднем весе подряд — повторение рекорда дивизиона.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(181, 175, 163)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-tx"
+   },
+   {
+    "rect": {
+     "x": 667,
+     "y": 411.6875,
+     "w": 183.59375,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 31.8,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Фредди Роуч",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-nm"
+   },
+   {
+    "rect": {
+     "x": 669,
+     "y": 452.484375,
+     "w": 549,
+     "h": 57
+    },
+    "align": "start",
+    "lh": 28.5,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Многократный тренер года. Довёл Пакьяо до титулов в восьми весовых категориях.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(181, 175, 163)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-tx"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 538.484375,
+     "w": 352.796875,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 31.8,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Флойд Мейвезер-старший",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-nm"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 579.28125,
+     "w": 549,
+     "h": 57
+    },
+    "align": "start",
+    "lh": 28.5,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Боксёр и тренер, отец и первый наставник Флойда Мейвезера-младшего.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(181, 175, 163)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-tx"
+   },
+   {
+    "rect": {
+     "x": 667,
+     "y": 538.484375,
+     "w": 169.203125,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 31.8,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Кит Турман",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-nm"
+   },
+   {
+    "rect": {
+     "x": 669,
+     "y": 579.28125,
+     "w": 549,
+     "h": 57
+    },
+    "align": "start",
+    "lh": 28.5,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Чемпион в полусреднем весе. Подписывается своим прозвищем — «One Time».",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(181, 175, 163)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-tx"
+   }
+  ],
+  "decor": []
+ },
+ "s12": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 70,
+     "y": 201.34375,
+     "w": 118.546875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Перчатки",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 72,
+     "y": 239.34375,
+     "w": 614.984375,
+     "h": 121.78125
+    },
+    "align": "start",
+    "lh": 60.9,
+    "base": 58,
+    "runs": [
+     {
+      "text": "Тяжёлый вес",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "в двух лотах",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 72,
+     "y": 418.125,
+     "w": 462,
+     "h": 99.515625
+    },
+    "align": "start",
+    "lh": 33.18,
+    "base": 21,
+    "runs": [
+     {
+      "text": "Красная перчатка с автографом Али и пара, подписанная пятью чемпионами восьмидесятых и девяностых.",
+      "font": "Inter",
+      "size": 21,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 730.984375,
+     "y": 279.21875,
+     "w": 403.765625,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 29.7,
+    "base": 27,
+    "runs": [
+     {
+      "text": "Али · Тайсон · Фрейзер · Форман",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 730.984375,
+     "y": 318.90625,
+     "w": 236.875,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 26.1,
+    "base": 18,
+    "runs": [
+     {
+      "text": "одна перчатка, четыре эпохи",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(157, 151, 139)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   },
+   {
+    "rect": {
+     "x": 730.984375,
+     "y": 378,
+     "w": 312.3125,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 29.7,
+    "base": 27,
+    "runs": [
+     {
+      "text": "Леонард · Хирнс · Дюран",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 730.984375,
+     "y": 417.6875,
+     "w": 227.375,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 26.1,
+    "base": 18,
+    "runs": [
+     {
+      "text": "трое из «Четырёх королей»",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(157, 151, 139)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 72,
+     "y": 389.125,
+     "w": 74,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 732.984375,
+     "y": 261.21875,
+     "w": 475,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.28)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 732.984375,
+     "y": 360,
+     "w": 475,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.28)"
+   }
+  ]
+ },
+ "s13": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_box/half/orig_glove_ali.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 94.3125,
+     "w": 202.21875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Перчатки · 1 из 2",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 121.3125,
+     "w": 548,
+     "h": 147.8125
+    },
+    "align": "start",
+    "lh": 36.96,
+    "base": 33,
+    "runs": [
+     {
+      "text": "Боксёрская перчатка Everlast с автографами Мохаммеда Али («Cassius Clay»), Майка Тайсона, Джо Фрейзера и Джорджа Формана",
+      "font": "Cormorant Garamond",
+      "size": 33,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 695,
+     "y": 283.125,
+     "w": 234.40625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Красная кожа · 12 унций",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.4,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 697,
+     "y": 303.125,
+     "w": 531,
+     "h": 81
+    },
+    "align": "start",
+    "lh": 27,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Али подписался здесь двойным именем — Мохаммед Али и Cassius Clay: тем, которое он оставил в 1964-м, и тем, которое взял. Так он расписывался редко и обычно по просьбе.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 398.125,
+     "w": 548,
+     "h": 136.796875
+    },
+    "align": "start",
+    "lh": 27.36,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Красная перчатка Everlast, двенадцать унций. Кроме Али — Майк Тайсон, Джо Фрейзер и Джордж Форман. Четыре имени, которые держат всю историю тяжёлого веса: от Киншасы 1974-го до Токио 1990-го. Главный предмет кабинета — тот, у которого останавливаются.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 551.921875,
+     "w": 213.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "1 500 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 607.921875,
+     "w": 90,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 680,
+     "y": 284.125,
+     "w": 2,
+     "h": 100
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s14": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_box/det/glove_ali_a.jpg",
+    "rect": {
+     "x": 76,
+     "y": 97.59375,
+     "w": 536,
+     "h": 506
+    },
+    "nat": [
+     536,
+     506
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_box/det/glove_ali_b.jpg",
+    "rect": {
+     "x": 689,
+     "y": 117.59375,
+     "w": 494,
+     "h": 466
+    },
+    "nat": [
+     494,
+     466
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 56,
+     "y": 29,
+     "w": 243.421875,
+     "h": 36
+    },
+    "align": "start",
+    "lh": 35.2,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Подписи крупно",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 1035.78125,
+     "y": 46,
+     "w": 202.21875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Перчатки · 1 из 2",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 56,
+     "y": 637,
+     "w": 640.984375,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 27,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Мохаммед Али («Cassius Clay») · Майк Тайсон · Джо Фрейзер · Джордж Форман",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "sig"
+   },
+   {
+    "rect": {
+     "x": 56,
+     "y": 672,
+     "w": 407.765625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 21,
+    "base": 14,
+    "runs": [
+     {
+      "text": "Фрагменты той же перчатки крупно: манжета и тыльная сторона.",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(141, 136, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s15": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_box/half/orig_glove5.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 126.46875,
+     "w": 202.21875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Перчатки · 2 из 2",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 153.46875,
+     "w": 548,
+     "h": 110.859375
+    },
+    "align": "start",
+    "lh": 36.96,
+    "base": 33,
+    "runs": [
+     {
+      "text": "Пара боксёрских перчаток Everlast с автографами пяти чемпионов: Тайсон, Льюис, Леонард, Хирнс, Дюран",
+      "font": "Cormorant Garamond",
+      "size": 33,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 695,
+     "y": 278.328125,
+     "w": 241.0625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Состаренная кожа · пара",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.4,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 697,
+     "y": 298.328125,
+     "w": 531,
+     "h": 81
+    },
+    "align": "start",
+    "lh": 27,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Трое из пяти подписавших — Леонард, Хирнс и Дюран — входят в «Четырёх королей»: вместе с Марвином Хаглером они провели друг с другом девять боёв и поделили между собой 1980-е.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 393.328125,
+     "w": 548,
+     "h": 109.4375
+    },
+    "align": "start",
+    "lh": 27.36,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Пара перчаток, а не одна: на подставке это уже объект, а не сувенир. Майк Тайсон и Леннокс Льюис на левой, Томас Хирнс, Шугар Рэй Леонард и Роберто Дюран на правой. Самый доступный вход в эту подборку — и при этом пять имён первого ряда.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 519.765625,
+     "w": 183.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "550 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 575.765625,
+     "w": 90,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 680,
+     "y": 279.328125,
+     "w": 2,
+     "h": 100
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s16": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_box/det/glove5_a.jpg",
+    "rect": {
+     "x": 62.4375,
+     "y": 85.1875,
+     "w": 563.125,
+     "h": 530.796875
+    },
+    "nat": [
+     575,
+     542
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_box/det/glove5_b.jpg",
+    "rect": {
+     "x": 654.4375,
+     "y": 85.1875,
+     "w": 563.125,
+     "h": 530.796875
+    },
+    "nat": [
+     575,
+     542
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 56,
+     "y": 29,
+     "w": 243.421875,
+     "h": 36
+    },
+    "align": "start",
+    "lh": 35.2,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Подписи крупно",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 1035.78125,
+     "y": 46,
+     "w": 202.21875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Перчатки · 2 из 2",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 56,
+     "y": 637,
+     "w": 670.234375,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 27,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Майк Тайсон · Леннокс Льюис · Томас Хирнс · Шугар Рэй Леонард · Роберто Дюран",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "sig"
+   },
+   {
+    "rect": {
+     "x": 56,
+     "y": 672,
+     "w": 361.890625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 21,
+    "base": 14,
+    "runs": [
+     {
+      "text": "Фрагменты той же пары крупно: левая и правая перчатка.",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(141, 136, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s17": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 60,
+     "y": 41,
+     "w": 346.65625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Кто расписался на перчатках",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 65,
+     "w": 245.734375,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 42.4,
+    "base": 40,
+    "runs": [
+     {
+      "text": "Кто эти люди",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 221.5,
+     "w": 212.453125,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 31.8,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Мохаммед Али",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-nm"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 262.296875,
+     "w": 549,
+     "h": 57
+    },
+    "align": "start",
+    "lh": 28.5,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Трижды чемпион мира в тяжёлом весе. Здесь оставил оба имени — и то, которое носил до 1964 года.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(181, 175, 163)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-tx"
+   },
+   {
+    "rect": {
+     "x": 667,
+     "y": 221.5,
+     "w": 187.453125,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 31.8,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Майк Тайсон",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-nm"
+   },
+   {
+    "rect": {
+     "x": 669,
+     "y": 262.296875,
+     "w": 549,
+     "h": 57
+    },
+    "align": "start",
+    "lh": 28.5,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Самый молодой чемпион мира в тяжёлом весе в истории: двадцать лет.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(181, 175, 163)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-tx"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 348.296875,
+     "w": 189.1875,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 31.8,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Джо Фрейзер",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-nm"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 389.09375,
+     "w": 549,
+     "h": 57
+    },
+    "align": "start",
+    "lh": 28.5,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Победил Али в «Бою века» 1971 года — первое поражение Али в карьере.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(181, 175, 163)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-tx"
+   },
+   {
+    "rect": {
+     "x": 667,
+     "y": 348.296875,
+     "w": 232.9375,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 31.8,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Джордж Форман",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-nm"
+   },
+   {
+    "rect": {
+     "x": 669,
+     "y": 389.09375,
+     "w": 549,
+     "h": 57
+    },
+    "align": "start",
+    "lh": 28.5,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Олимпийский чемпион 1968-го. Вернул себе титул в сорок пять лет.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(181, 175, 163)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-tx"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 475.09375,
+     "w": 214.1875,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 31.8,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Роберто Дюран",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-nm"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 515.890625,
+     "w": 549,
+     "h": 57
+    },
+    "align": "start",
+    "lh": 28.5,
+    "base": 19,
+    "runs": [
+     {
+      "text": "«Руки-камни». Чемпион мира в четырёх весовых категориях, карьера длиной в пять десятилетий.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(181, 175, 163)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-tx"
+   },
+   {
+    "rect": {
+     "x": 667,
+     "y": 475.09375,
+     "w": 206.328125,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 31.8,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Четыре короля",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 500,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-nm"
+   },
+   {
+    "rect": {
+     "x": 669,
+     "y": 515.890625,
+     "w": 549,
+     "h": 57
+    },
+    "align": "start",
+    "lh": 28.5,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Леонард, Хирнс, Дюран и Хаглер провели друг с другом девять боёв и поделили 1980-е.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(181, 175, 163)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "hero-tx"
+   }
+  ],
+  "decor": []
+ },
+ "s18": {
   "bg": "rgb(11, 11, 12)",
   "imgs": [],
   "texts": [
@@ -446,7 +3702,7 @@
    }
   ]
  },
- "s03": {
+ "s19": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -649,20 +3905,20 @@
    }
   ]
  },
- "s04": {
+ "s20": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
     "src": "img_box/det/hof96_22_a.jpg",
     "rect": {
-     "x": 75.046875,
+     "x": 77.203125,
      "y": 85.1875,
-     "w": 537.890625,
+     "w": 533.59375,
      "h": 503.796875
     },
     "nat": [
-     947,
-     887
+     985,
+     930
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -671,14 +3927,14 @@
    {
     "src": "img_box/det/hof96_22_b.jpg",
     "rect": {
-     "x": 660.84375,
+     "x": 669.203125,
      "y": 85.1875,
-     "w": 550.296875,
+     "w": 533.59375,
      "h": 503.796875
     },
     "nat": [
-     947,
-     867
+     985,
+     930
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -785,7 +4041,7 @@
   ],
   "decor": []
  },
- "s05": {
+ "s21": {
   "bg": "rgb(11, 11, 12)",
   "imgs": [],
   "texts": [
@@ -1128,7 +4384,7 @@
   ],
   "decor": []
  },
- "s06": {
+ "s22": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -1331,20 +4587,20 @@
    }
   ]
  },
- "s07": {
+ "s23": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
     "src": "img_box/det/hof97_19_a.jpg",
     "rect": {
-     "x": 58.65625,
+     "x": 62.8125,
      "y": 85.1875,
-     "w": 570.671875,
+     "w": 562.359375,
      "h": 530.796875
     },
     "nat": [
-     959,
-     892
+     998,
+     942
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -1353,14 +4609,14 @@
    {
     "src": "img_box/det/hof97_19_b.jpg",
     "rect": {
-     "x": 650.984375,
+     "x": 654.8125,
      "y": 85.1875,
-     "w": 570.03125,
+     "w": 562.359375,
      "h": 530.796875
     },
     "nat": [
-     959,
-     893
+     998,
+     942
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -1467,7 +4723,7 @@
   ],
   "decor": []
  },
- "s08": {
+ "s24": {
   "bg": "rgb(11, 11, 12)",
   "imgs": [],
   "texts": [
@@ -1810,7 +5066,7 @@
   ],
   "decor": []
  },
- "s09": {
+ "s25": {
   "bg": "rgb(11, 11, 12)",
   "imgs": [],
   "texts": [
@@ -1975,7 +5231,7 @@
     "rect": {
      "x": 730.984375,
      "y": 417.6875,
-     "w": 404.765625,
+     "w": 339.96875,
      "h": 20
     },
     "align": "start",
@@ -1983,7 +5239,7 @@
     "base": 18,
     "runs": [
      {
-      "text": "три человека, отобравшие у Али титул или победу",
+      "text": "трое, отобравшие у Али победу или титул",
       "font": "Inter",
       "size": 18,
       "weight": 300,
@@ -2030,7 +5286,7 @@
    }
   ]
  },
- "s10": {
+ "s26": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -2233,20 +5489,20 @@
    }
   ]
  },
- "s11": {
+ "s27": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
     "src": "img_box/det/hof96_ali_a.jpg",
     "rect": {
-     "x": 62.890625,
+     "x": 62.953125,
      "y": 85.1875,
-     "w": 562.203125,
+     "w": 562.09375,
      "h": 530.796875
     },
     "nat": [
-     949,
-     896
+     988,
+     933
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -2255,14 +5511,14 @@
    {
     "src": "img_box/det/hof96_ali_b.jpg",
     "rect": {
-     "x": 654.890625,
+     "x": 654.953125,
      "y": 85.1875,
-     "w": 562.203125,
+     "w": 562.09375,
      "h": 530.796875
     },
     "nat": [
-     949,
-     896
+     988,
+     933
     ],
     "fit": "contain",
     "pos": "50% 50%",
@@ -2369,7 +5625,7 @@
   ],
   "decor": []
  },
- "s12": {
+ "s28": {
   "bg": "rgb(11, 11, 12)",
   "imgs": [],
   "texts": [
@@ -2760,7 +6016,7 @@
   ],
   "decor": []
  },
- "s13": {
+ "s29": {
   "bg": "rgb(255, 255, 255)",
   "imgs": [
    {
@@ -2872,14 +6128,14 @@
   ],
   "decor": []
  },
- "s14": {
+ "s30": {
   "bg": "rgb(11, 11, 12)",
   "imgs": [],
   "texts": [
    {
     "rect": {
      "x": 64,
-     "y": 47,
+     "y": 37,
      "w": 118.484375,
      "h": 15
     },
@@ -2903,8 +6159,8 @@
    {
     "rect": {
      "x": 64,
-     "y": 70,
-     "w": 273.3125,
+     "y": 60,
+     "w": 354.5,
      "h": 49
     },
     "align": "start",
@@ -2912,7 +6168,7 @@
     "base": 44,
     "runs": [
      {
-      "text": "Три предмета",
+      "text": "Девять предметов",
       "font": "Cormorant Garamond",
       "size": 44,
       "weight": 300,
@@ -2927,8 +6183,8 @@
    {
     "rect": {
      "x": 64,
-     "y": 278.40625,
-     "w": 797.5625,
+     "y": 156,
+     "w": 245.15625,
      "h": 21
     },
     "align": "start",
@@ -2936,7 +6192,151 @@
     "base": 19,
     "runs": [
      {
-      "text": "Программа церемонии Международного зала боксёрской славы, 9 июня 1996 года, 22 автографа",
+      "text": "Халат Everlast · 51 автограф",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1036.09375,
+     "y": 141,
+     "w": 193.90625,
+     "h": 40
+    },
+    "align": "start",
+    "lh": 43.199999999999996,
+    "base": 36,
+    "runs": [
+     {
+      "text": "2 000 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 36,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 221,
+     "w": 296.5,
+     "h": 21
+    },
+    "align": "start",
+    "lh": 26.6,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Трусы Cleto Reyes · 28 автографов",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1036.09375,
+     "y": 206,
+     "w": 193.90625,
+     "h": 40
+    },
+    "align": "start",
+    "lh": 43.199999999999996,
+    "base": 36,
+    "runs": [
+     {
+      "text": "1 400 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 36,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 286,
+     "w": 374.296875,
+     "h": 21
+    },
+    "align": "start",
+    "lh": 26.6,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Трусы Cleto Reyes · 20 автографов тренеров",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1036.09375,
+     "y": 271,
+     "w": 193.90625,
+     "h": 40
+    },
+    "align": "start",
+    "lh": 43.199999999999996,
+    "base": 36,
+    "runs": [
+     {
+      "text": "1 200 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 36,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 351,
+     "w": 266.40625,
+     "h": 21
+    },
+    "align": "start",
+    "lh": 26.6,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Трусы Everlast · 18 автографов",
       "font": "Inter",
       "size": 19,
       "weight": 300,
@@ -2951,7 +6351,151 @@
    {
     "rect": {
      "x": 1063.09375,
-     "y": 263.40625,
+     "y": 336,
+     "w": 166.90625,
+     "h": 40
+    },
+    "align": "start",
+    "lh": 43.199999999999996,
+    "base": 36,
+    "runs": [
+     {
+      "text": "900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 36,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 416,
+     "w": 427.671875,
+     "h": 21
+    },
+    "align": "start",
+    "lh": 26.6,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Перчатка Everlast · Али, Тайсон, Фрейзер, Форман",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1036.09375,
+     "y": 401,
+     "w": 193.90625,
+     "h": 40
+    },
+    "align": "start",
+    "lh": 43.199999999999996,
+    "base": 36,
+    "runs": [
+     {
+      "text": "1 500 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 36,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 481,
+     "w": 346.6875,
+     "h": 21
+    },
+    "align": "start",
+    "lh": 26.6,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Пара перчаток Everlast · пять чемпионов",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1063.09375,
+     "y": 466,
+     "w": 166.90625,
+     "h": 40
+    },
+    "align": "start",
+    "lh": 43.199999999999996,
+    "base": 36,
+    "runs": [
+     {
+      "text": "550 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 36,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 546,
+     "w": 432.421875,
+     "h": 21
+    },
+    "align": "start",
+    "lh": 26.6,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Программа церемонии, 9 июня 1996 · 22 автографа",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1063.09375,
+     "y": 531,
      "w": 166.90625,
      "h": 40
     },
@@ -2975,8 +6519,8 @@
    {
     "rect": {
      "x": 64,
-     "y": 373.40625,
-     "w": 817.09375,
+     "y": 611,
+     "w": 451.953125,
      "h": 21
     },
     "align": "start",
@@ -2984,7 +6528,7 @@
     "base": 19,
     "runs": [
      {
-      "text": "Программа церемонии Международного зала боксёрской славы, 15 июня 1997 года, 19 автографов",
+      "text": "Программа церемонии, 15 июня 1997 · 19 автографов",
       "font": "Inter",
       "size": 19,
       "weight": 300,
@@ -2999,7 +6543,7 @@
    {
     "rect": {
      "x": 1063.09375,
-     "y": 358.40625,
+     "y": 596,
      "w": 166.90625,
      "h": 40
     },
@@ -3022,17 +6566,17 @@
    },
    {
     "rect": {
-     "x": 66,
-     "y": 466.40625,
-     "w": 969.09375,
-     "h": 53.1875
+     "x": 64,
+     "y": 676,
+     "w": 322.625,
+     "h": 21
     },
     "align": "start",
     "lh": 26.6,
     "base": 19,
     "runs": [
      {
-      "text": "Официальный пресс-кит Международного зала боксёрской славы, 6–9 июня 1996 года, автографы соперников Мохаммеда Али",
+      "text": "Пресс-кит 1996 года · соперники Али",
       "font": "Inter",
       "size": 19,
       "weight": 300,
@@ -3047,7 +6591,7 @@
    {
     "rect": {
      "x": 1063.09375,
-     "y": 453.40625,
+     "y": 661,
      "w": 166.90625,
      "h": 40
     },
@@ -3074,7 +6618,7 @@
     "kind": "rect",
     "rect": {
      "x": 66,
-     "y": 330.40625,
+     "y": 193,
      "w": 1148,
      "h": 1
     },
@@ -3084,7 +6628,7 @@
     "kind": "rect",
     "rect": {
      "x": 66,
-     "y": 425.40625,
+     "y": 258,
      "w": 1148,
      "h": 1
     },
@@ -3094,7 +6638,67 @@
     "kind": "rect",
     "rect": {
      "x": 66,
-     "y": 545.59375,
+     "y": 323,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 388,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 453,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 518,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 583,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 648,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 713,
      "w": 1148,
      "h": 1
     },
@@ -3102,7 +6706,7 @@
    }
   ]
  },
- "s15": {
+ "s31": {
   "bg": "rgb(11, 11, 12)",
   "imgs": [
    {
@@ -3135,7 +6739,7 @@
     "base": 44,
     "runs": [
      {
-      "text": "Канастота, июнь. Один день в году, когда весь бокс расписывается в одной комнате.",
+      "text": "Девять предметов, на которых расписался бокс: от халата и перчаток до бумаг из Канастоты.",
       "font": "Cormorant Garamond",
       "size": 44,
       "weight": 300,

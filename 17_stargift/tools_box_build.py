@@ -67,7 +67,7 @@ img{display:block}
 .sig{font:300 18px/1.5 'Inter';color:#4a4a4a}
 
 .lad-row{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:baseline;
-  padding:26px 0;border-bottom:1px solid rgba(169,133,69,.22)}
+  padding:11px 0;border-bottom:1px solid rgba(169,133,69,.22)}
 .lad-nm{font:300 19px/1.4 'Inter';color:#d5cfc3}
 .lad-pr{font-family:'Cormorant Garamond';font-weight:500;font-size:36px;color:var(--gold2);white-space:nowrap}
 """
@@ -89,20 +89,20 @@ def main():
     <img src="img/stargift_logo.png" alt="Stargift" style="height:134px;width:auto;object-fit:contain;filter:brightness(0) invert(1);align-self:flex-start">
     <div>
       <div class="kick d" style="margin-bottom:20px">Частное собрание · Бокс</div>
-      <h1 class="serif" style="font-weight:300;font-size:60px;line-height:1.04;color:var(--ivory)">Зал боксёрской<br>славы</h1>
-      <p style="font:300 19px/1.58 'Inter';color:#b8b2a6;margin-top:20px;max-width:38ch">Три предмета из Канастоты: программы
-      церемоний 1996 и 1997 годов и официальный пресс-кит, подписанный соперниками Мохаммеда&nbsp;Али.</p>
+      <h1 class="serif" style="font-weight:300;font-size:60px;line-height:1.04;color:var(--ivory)">Бокс:<br>имена на вещах</h1>
+      <p style="font:300 19px/1.58 'Inter';color:#b8b2a6;margin-top:20px;max-width:38ch">Экипировка ринга, перчатки и бумаги
+      Международного зала боксёрской славы в Канастоте.</p>
     </div>
-    <div class="kick" style="letter-spacing:.24em">3 предмета · август 2026</div>
+    <div class="kick" style="letter-spacing:.24em">9 предметов · август 2026</div>
   </div>
   <div style="position:relative;display:flex;flex-direction:column;justify-content:center;
               padding:0 58px;border-left:1px solid rgba(169,133,69,.28)">
-    <div class="serif" style="font-weight:300;font-size:130px;line-height:.92;color:var(--gold);opacity:.9">41</div>
+    <div class="serif" style="font-weight:300;font-size:126px;line-height:.92;color:var(--gold);opacity:.9">9</div>
     <div class="rule" style="width:76px;margin:24px 0"></div>
-    <p style="font:300 20px/1.55 'Inter';color:#b8b2a6;max-width:26ch">автограф на двух программах — от Арчи Мура
-    и Флойда Паттерсона до Марвина Хаглера.</p>
-    <p style="font:300 20px/1.55 'Inter';color:#b8b2a6;max-width:26ch;margin-top:22px">Плюс папка для прессы с именами
-    Фрейзера, Нортона и Леона Спинкса.</p>
+    <p style="font:300 20px/1.55 'Inter';color:#b8b2a6;max-width:27ch">предметов: атласный халат, три пары трусов,
+    перчатки, две программы церемоний и папка для прессы.</p>
+    <p style="font:300 20px/1.55 'Inter';color:#b8b2a6;max-width:27ch;margin-top:22px">Али и Тайсон, Хирнс и Льюис,
+    Пакьяо и Леонард, Головкин и Дюран.</p>
   </div>
 </section>""")
 
@@ -182,7 +182,10 @@ def main():
             k2 = f"{kick} · {i} из {len(keys)}" if len(keys) > 1 else kick
             solo(k, k2)
             details(k, k2)
-            heroes(k)
+            if k in HEROES:          # у программ состав подписей свой
+                heroes(k)
+        if grp in HEROES:            # у экипировки и перчаток — общий на главу
+            heroes(grp)
 
     # ---------- упаковка
     add("""<section class="slide white" id="__ID__" style="grid-template-rows:auto 1fr auto">
@@ -200,21 +203,21 @@ def main():
 
     # ---------- прайс-лист
     rows = "".join(
-        f'<div class="lad-row"><div class="lad-nm">{esc(LOTS[k]["name"])}</div>'
+        f'<div class="lad-row"><div class="lad-nm">{esc(LOTS[k]["short"])}</div>'
         f'<div class="lad-pr">{rub(LOTS[k]["price"])}</div></div>' for k in ORDER)
     add(f"""<section class="slide dark" id="__ID__" style="grid-template-rows:auto 1fr">
-  <div style="padding:48px 66px 0">
+  <div style="padding:38px 66px 0">
     <div class="kick d" style="margin-bottom:12px">Собрание</div>
-    <h2 class="serif" style="font-weight:300;font-size:44px;line-height:1;color:var(--ivory)">Три предмета</h2>
+    <h2 class="serif" style="font-weight:300;font-size:44px;line-height:1;color:var(--ivory)">Девять предметов</h2>
   </div>
-  <div style="display:flex;flex-direction:column;justify-content:center;padding:0 66px 54px">{rows}</div>
+  <div style="display:flex;flex-direction:column;justify-content:flex-start;padding:22px 66px 34px">{rows}</div>
 </section>""")
 
     # ---------- финал
     add("""<section class="slide dark" id="__ID__" style="grid-template-rows:1fr auto">
   <div style="padding:0 66px;display:flex;flex-direction:column;justify-content:center">
     <img src="img/stargift_logo.png" alt="Stargift" style="height:132px;width:auto;object-fit:contain;filter:brightness(0) invert(1);align-self:flex-start">
-    <h2 class="serif" style="font-weight:300;font-size:44px;line-height:1.12;color:var(--ivory);margin-top:32px;max-width:34ch">Канастота, июнь. Один день в году, когда весь бокс расписывается в одной комнате.</h2>
+    <h2 class="serif" style="font-weight:300;font-size:44px;line-height:1.12;color:var(--ivory);margin-top:32px;max-width:34ch">Девять предметов, на которых расписался бокс: от халата и перчаток до бумаг из Канастоты.</h2>
   </div>
   <div style="padding:24px 66px 40px;border-top:1px solid rgba(169,133,69,.3)">
     <span class="kick" style="letter-spacing:.24em;color:var(--gold2)">stargift.ru</span>
