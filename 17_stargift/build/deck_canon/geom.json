@@ -1,0 +1,2436 @@
+{
+ "s01": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img/stargift_logo.png",
+    "rect": {
+     "x": 58,
+     "y": 54,
+     "w": 176.375,
+     "h": 134
+    },
+    "nat": [
+     1440,
+     1094
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "brightness(0) invert(1)"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 56,
+     "y": 272.078125,
+     "w": 526.671875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Внутренний стандарт · Как мы собираем деки",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 58,
+     "y": 306.078125,
+     "w": 562,
+     "h": 121.78125
+    },
+    "align": "start",
+    "lh": 60.9,
+    "base": 58,
+    "runs": [
+     {
+      "text": "Канон Stargift:",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "формат и кухня",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 58,
+     "y": 447.859375,
+     "w": 380,
+     "h": 120.0625
+    },
+    "align": "start",
+    "lh": 30.02,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Каждый разворот показан дважды: сначала слайд,\n      каким его видит клиент, затем — исходное фото продавца, промпт или команда и результат.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(184, 178, 166)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 56,
+     "y": 652,
+     "w": 132.96875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "август 2026",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.12,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 697,
+     "y": 130.546875,
+     "w": 81,
+     "h": 139
+    },
+    "align": "start",
+    "lh": 115.92,
+    "base": 126,
+    "runs": [
+     {
+      "text": "4",
+      "font": "Cormorant Garamond",
+      "size": 126,
+      "weight": 300,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 699,
+     "y": 307.453125,
+     "w": 270,
+     "h": 155
+    },
+    "align": "start",
+    "lh": 31,
+    "base": 20,
+    "runs": [
+     {
+      "text": "способа получить чистый кадр: nano banana pro,\n    геометрическое выравнивание, отбеливание фона и честные макро-фрагменты.",
+      "font": "Inter",
+      "size": 20,
+      "weight": 300,
+      "color": "rgb(184, 178, 166)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 699,
+     "y": 484.453125,
+     "w": 270,
+     "h": 93
+    },
+    "align": "start",
+    "lh": 31,
+    "base": 20,
+    "runs": [
+     {
+      "text": "Один промпт на все предметы.\n    Ни одного перерисованного автографа.",
+      "font": "Inter",
+      "size": 20,
+      "weight": 300,
+      "color": "rgb(184, 178, 166)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 640,
+     "y": 0,
+     "w": 1,
+     "h": 720
+    },
+    "color": "rgba(169, 133, 69, 0.28)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 699,
+     "y": 282.453125,
+     "w": 76,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ]
+ },
+ "s02": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_mj/halfslide/clean_thriller.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 172.125,
+     "w": 245.609375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Формат · Слайд лота",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 199.125,
+     "w": 548,
+     "h": 73.90625
+    },
+    "align": "start",
+    "lh": 36.96,
+    "base": 33,
+    "runs": [
+     {
+      "text": "Альбом Thriller с автографом Майкла Джексона",
+      "font": "Cormorant Garamond",
+      "size": 33,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 695,
+     "y": 287.03125,
+     "w": 181.953125,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Epic Records · 1982",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.4,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 697,
+     "y": 307.03125,
+     "w": 531,
+     "h": 54
+    },
+    "align": "start",
+    "lh": 27,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Самый продаваемый альбом в истории музыки. Подпись синим маркером\n      по лаковому конверту первого пресса.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 375.03125,
+     "w": 548,
+     "h": 82.078125
+    },
+    "align": "start",
+    "lh": 27.36,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Фото занимает ровно половину слайда, текст стоит на воздухе справа:\n    название, контекст первым абзацем, цена золотом. Кегли — от 18 px, дека читается с телефона.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 474.109375,
+     "w": 213.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "1 500 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 530.109375,
+     "w": 87.25,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 680,
+     "y": 288.03125,
+     "w": 2,
+     "h": 73
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s03": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_canon/r_thriller_src.jpg",
+    "rect": {
+     "x": 183.09375,
+     "y": 79,
+     "w": 316.796875,
+     "h": 422.390625
+    },
+    "nat": [
+     825,
+     1100
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_canon/r_thriller_out.jpg",
+    "rect": {
+     "x": 655.53125,
+     "y": 79,
+     "w": 565.9375,
+     "h": 422.390625
+    },
+    "nat": [
+     1100,
+     821
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 52,
+     "y": 26,
+     "w": 495.625,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Кухня: белая студия одним промптом",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 400,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "rc-t"
+   },
+   {
+    "rect": {
+     "x": 848.375,
+     "y": 41,
+     "w": 393.625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Higgsfield · nano banana pro · 2k",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 52,
+     "y": 512.40625,
+     "w": 330.390625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 16.8,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Было · ",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 2.16,
+      "upper": true,
+      "italic": false
+     },
+     {
+      "text": "фото продавца: стол, тень, завал, наклейка",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(143, 138, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "rc-cap"
+   },
+   {
+    "rect": {
+     "x": 649,
+     "y": 512.40625,
+     "w": 333.03125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 16.8,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Стало · ",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 2.16,
+      "upper": true,
+      "italic": false
+     },
+     {
+      "text": "фронтально, белая студия, автограф 1-в-1",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(143, 138, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "rc-cap"
+   },
+   {
+    "rect": {
+     "x": 74,
+     "y": 561,
+     "w": 1090.1875,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Промпт — один и тот же для любого предмета. Имён и сюжета в нём нет: модель может выдумать только то, что упомянуто",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "lbl"
+   },
+   {
+    "rect": {
+     "x": 76,
+     "y": 581,
+     "w": 1130,
+     "h": 93
+    },
+    "align": "start",
+    "lh": 23.25,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Put this on a clean white studio background and photograph it perfectly straight on, square to the camera: the item's edges parallel to the frame edges, no tilt, no rotation, no perspective, viewed flat from directly in front and centred. Beautiful studio photography with a soft shadow under the item. Do not change the item itself in any way. Keep every printed detail and the handwritten signature exactly as in the reference.",
+      "font": "ui-monospace",
+      "size": 15,
+      "weight": 400,
+      "color": "rgb(217, 212, 200)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "CODE"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 54,
+     "y": 78,
+     "w": 575,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 54,
+     "y": 501.40625,
+     "w": 575,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 54,
+     "y": 78,
+     "w": 1,
+     "h": 424.40625
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 628,
+     "y": 78,
+     "w": 1,
+     "h": 424.40625
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 651,
+     "y": 78,
+     "w": 575,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 651,
+     "y": 501.40625,
+     "w": 575,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 651,
+     "y": 78,
+     "w": 1,
+     "h": 424.40625
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 1225,
+     "y": 78,
+     "w": 1,
+     "h": 424.40625
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 54,
+     "y": 546,
+     "w": 2,
+     "h": 144
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s04": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_box/half/orig_hof96_22.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 185.8125,
+     "w": 245.609375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Формат · Слайд лота",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 212.8125,
+     "w": 548,
+     "h": 73.90625
+    },
+    "align": "start",
+    "lh": 36.96,
+    "base": 33,
+    "runs": [
+     {
+      "text": "Программа Зала боксёрской славы, 1996 год, 22 автографа",
+      "font": "Cormorant Garamond",
+      "size": 33,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 695,
+     "y": 300.71875,
+     "w": 229.515625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Канастота · 9 июня 1996",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.4,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 697,
+     "y": 320.71875,
+     "w": 531,
+     "h": 54
+    },
+    "align": "start",
+    "lh": 27,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Плоский лот, весь смысл которого — подписи. Такому генерация\n      противопоказана: ракурс исправлен геометрией, пиксели настоящие.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 388.71875,
+     "w": 548,
+     "h": 54.71875
+    },
+    "align": "start",
+    "lh": 27.36,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Внешне слайд не отличается от соседнего — и не должен: клиент видит один\n    стандарт подачи, каким бы путём ни был получен кадр.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 460.4375,
+     "w": 183.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "700 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 516.4375,
+     "w": 45.59375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 680,
+     "y": 301.71875,
+     "w": 2,
+     "h": 73
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s05": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_canon/r_hof_src.jpg",
+    "rect": {
+     "x": 107.046875,
+     "y": 79,
+     "w": 468.90625,
+     "h": 468.90625
+    },
+    "nat": [
+     1100,
+     1100
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_canon/r_hof_out.jpg",
+    "rect": {
+     "x": 752.21875,
+     "y": 79,
+     "w": 372.5625,
+     "h": 468.890625
+    },
+    "nat": [
+     874,
+     1100
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 52,
+     "y": 26,
+     "w": 507.640625,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Кухня: ракурс правится без нейросети",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 400,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "rc-t"
+   },
+   {
+    "rect": {
+     "x": 782.765625,
+     "y": 41,
+     "w": 459.234375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "tools_flatten.py · перспективный варп",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 52,
+     "y": 558.90625,
+     "w": 342.640625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 16.8,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Было · ",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 2.16,
+      "upper": true,
+      "italic": false
+     },
+     {
+      "text": "тёмная ткань продавца, наклон, перспектива",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(143, 138, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "rc-cap"
+   },
+   {
+    "rect": {
+     "x": 649,
+     "y": 558.90625,
+     "w": 325.390625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 16.8,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Стало · ",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 2.16,
+      "upper": true,
+      "italic": false
+     },
+     {
+      "text": "те же пиксели, развёрнутые фронтально",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(143, 138, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "rc-cap"
+   },
+   {
+    "rect": {
+     "x": 74,
+     "y": 607.5,
+     "w": 1012.625,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Команда вместо промпта: находим четыре угла листа и разворачиваем. Подписи не перерисовываются в принципе",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "lbl"
+   },
+   {
+    "rect": {
+     "x": 76,
+     "y": 627.5,
+     "w": 1130,
+     "h": 46.5
+    },
+    "align": "start",
+    "lh": 23.25,
+    "base": 15,
+    "runs": [
+     {
+      "text": "python3 tools_flatten.py --mode=bright --out=img_box/flat img_box/orig_hof96_22.jpg\npython3 tools_halfslide.py --out=img_box/half img_box/flat/orig_hof96_22.jpg",
+      "font": "ui-monospace",
+      "size": 15,
+      "weight": 400,
+      "color": "rgb(217, 212, 200)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "CODE"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 54,
+     "y": 78,
+     "w": 575,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 54,
+     "y": 547.90625,
+     "w": 575,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 54,
+     "y": 78,
+     "w": 1,
+     "h": 470.90625
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 628,
+     "y": 78,
+     "w": 1,
+     "h": 470.90625
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 651,
+     "y": 78,
+     "w": 575,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 651,
+     "y": 547.90625,
+     "w": 575,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 651,
+     "y": 78,
+     "w": 1,
+     "h": 470.90625
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 1225,
+     "y": 78,
+     "w": 1,
+     "h": 470.90625
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 54,
+     "y": 592.5,
+     "w": 2,
+     "h": 97.5
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s06": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_box/half/orig_glove5.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 185.8125,
+     "w": 245.609375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Формат · Слайд лота",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 212.8125,
+     "w": 548,
+     "h": 73.90625
+    },
+    "align": "start",
+    "lh": 36.96,
+    "base": 33,
+    "runs": [
+     {
+      "text": "Пара перчаток Everlast: Тайсон, Льюис, Леонард, Хирнс, Дюран",
+      "font": "Cormorant Garamond",
+      "size": 33,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 695,
+     "y": 300.71875,
+     "w": 241.0625,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 12,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Состаренная кожа · пара",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.4,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "era"
+   },
+   {
+    "rect": {
+     "x": 697,
+     "y": 320.71875,
+     "w": 531,
+     "h": 54
+    },
+    "align": "start",
+    "lh": 27,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Объёмный предмет на сером фоне продавца. Вырезать нельзя —\n      жёсткая маска рвёт кромку. Фон уведён в белый без границы.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(61, 61, 61)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "histt"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 388.71875,
+     "w": 548,
+     "h": 54.71875
+    },
+    "align": "start",
+    "lh": 27.36,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Трое из пяти подписавших — «Четыре короля» восьмидесятых. Пара на подставке —\n    объект, а не сувенир.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 460.4375,
+     "w": 183.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "550 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 516.4375,
+     "w": 90,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 680,
+     "y": 301.71875,
+     "w": 2,
+     "h": 73
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s07": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_canon/r_glove_src.jpg",
+    "rect": {
+     "x": 59.15625,
+     "y": 79,
+     "w": 564.671875,
+     "h": 468.890625
+    },
+    "nat": [
+     1079,
+     896
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_canon/r_glove_out.jpg",
+    "rect": {
+     "x": 730.046875,
+     "y": 79,
+     "w": 416.890625,
+     "h": 468.890625
+    },
+    "nat": [
+     978,
+     1100
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 52,
+     "y": 26,
+     "w": 444.390625,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Кухня: фон в белый, границы нет",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 400,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "rc-t"
+   },
+   {
+    "rect": {
+     "x": 861.390625,
+     "y": 41,
+     "w": 380.609375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "tools_whiten.py · без вырезания",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 52,
+     "y": 558.90625,
+     "w": 299.84375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 16.8,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Было · ",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 2.16,
+      "upper": true,
+      "italic": false
+     },
+     {
+      "text": "перчатка Али лежит на столе у стены",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(143, 138, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "rc-cap"
+   },
+   {
+    "rect": {
+     "x": 649,
+     "y": 558.90625,
+     "w": 337.03125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 16.8,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Стало · ",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 2.16,
+      "upper": true,
+      "italic": false
+     },
+     {
+      "text": "стоит, как выставляют; фон чистый белый",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(143, 138, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "rc-cap"
+   },
+   {
+    "rect": {
+     "x": 74,
+     "y": 607.5,
+     "w": 1039.453125,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Фон опознаётся как светлое и бесцветное и плавно уводится в белый; --rot ставит предмет так, как его выставляют",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "lbl"
+   },
+   {
+    "rect": {
+     "x": 76,
+     "y": 627.5,
+     "w": 1130,
+     "h": 46.5
+    },
+    "align": "start",
+    "lh": 23.25,
+    "base": 15,
+    "runs": [
+     {
+      "text": "python3 tools_whiten.py --rot=90 --out=img_box/wht img_box/orig_glove_ali.jpg\npython3 tools_halfslide.py --out=img_box/half img_box/wht/orig_glove_ali.jpg",
+      "font": "ui-monospace",
+      "size": 15,
+      "weight": 400,
+      "color": "rgb(217, 212, 200)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "CODE"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 54,
+     "y": 78,
+     "w": 575,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 54,
+     "y": 547.90625,
+     "w": 575,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 54,
+     "y": 78,
+     "w": 1,
+     "h": 470.90625
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 628,
+     "y": 78,
+     "w": 1,
+     "h": 470.90625
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 651,
+     "y": 78,
+     "w": 575,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 651,
+     "y": 547.90625,
+     "w": 575,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 651,
+     "y": 78,
+     "w": 1,
+     "h": 470.90625
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 1225,
+     "y": 78,
+     "w": 1,
+     "h": 470.90625
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 54,
+     "y": 592.5,
+     "w": 2,
+     "h": 97.5
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s08": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_canon/r_det_a.jpg",
+    "rect": {
+     "x": 62.890625,
+     "y": 85.1875,
+     "w": 562.203125,
+     "h": 530.796875
+    },
+    "nat": [
+     985,
+     930
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_canon/r_det_b.jpg",
+    "rect": {
+     "x": 654.890625,
+     "y": 85.1875,
+     "w": 562.203125,
+     "h": 530.796875
+    },
+    "nat": [
+     985,
+     930
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 56,
+     "y": 29,
+     "w": 243.421875,
+     "h": 36
+    },
+    "align": "start",
+    "lh": 35.2,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Подписи крупно",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 908.1875,
+     "y": 46,
+     "w": 329.8125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Формат · Второй слайд лота",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 56,
+     "y": 637,
+     "w": 747.125,
+     "h": 20
+    },
+    "align": "start",
+    "lh": 27,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Арчи Мур · Флойд Паттерсон · Кармен Базилио · Карлос Ортис · Боб Фостер · Кристи Мартин",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   },
+   {
+    "rect": {
+     "x": 56,
+     "y": 672,
+     "w": 615.421875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 21,
+    "base": 14,
+    "runs": [
+     {
+      "text": "Когда у лота одно фото объявления, вторые ракурсы не выдумываются — режутся из того же кадра.",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(141, 136, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s09": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_canon/r_hof_src2.jpg",
+    "rect": {
+     "x": 107.046875,
+     "y": 79,
+     "w": 468.90625,
+     "h": 468.90625
+    },
+    "nat": [
+     1100,
+     1100
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_canon/r_det_a2.jpg",
+    "rect": {
+     "x": 690.1875,
+     "y": 79,
+     "w": 496.625,
+     "h": 468.890625
+    },
+    "nat": [
+     985,
+     930
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 52,
+     "y": 26,
+     "w": 357.328125,
+     "h": 33
+    },
+    "align": "start",
+    "lh": 36,
+    "base": 30,
+    "runs": [
+     {
+      "text": "Кухня: макро без выдумки",
+      "font": "Cormorant Garamond",
+      "size": 30,
+      "weight": 400,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "rc-t"
+   },
+   {
+    "rect": {
+     "x": 679.828125,
+     "y": 41,
+     "w": 562.171875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "tools_box_details.py · фрагменты того же листа",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 52,
+     "y": 558.90625,
+     "w": 278.234375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 16.8,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Было · ",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 2.16,
+      "upper": true,
+      "italic": false
+     },
+     {
+      "text": "один кадр объявления на весь лот",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(143, 138, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "rc-cap"
+   },
+   {
+    "rect": {
+     "x": 649,
+     "y": 558.90625,
+     "w": 348.765625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 16.8,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Стало · ",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 2.16,
+      "upper": true,
+      "italic": false
+     },
+     {
+      "text": "фрагмент 1:1 под пропорцию ячейки слайда",
+      "font": "Inter",
+      "size": 14,
+      "weight": 300,
+      "color": "rgb(143, 138, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "rc-cap"
+   },
+   {
+    "rect": {
+     "x": 74,
+     "y": 607.5,
+     "w": 881.421875,
+     "h": 12
+    },
+    "align": "start",
+    "lh": 11,
+    "base": 11,
+    "runs": [
+     {
+      "text": "Центр и ширина фрагмента задаются в долях предмета; границы предмета инструмент находит сам",
+      "font": "Inter",
+      "size": 11,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 2.64,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "lbl"
+   },
+   {
+    "rect": {
+     "x": 76,
+     "y": 627.5,
+     "w": 1130,
+     "h": 46.5
+    },
+    "align": "start",
+    "lh": 23.25,
+    "base": 15,
+    "runs": [
+     {
+      "text": "SPEC = {\"hof96_22\": [(0.31, 0.22, 0.62), (0.69, 0.79, 0.62)]}  # (cx, cy, ширина)\npython3 tools_box_details.py",
+      "font": "ui-monospace",
+      "size": 15,
+      "weight": 400,
+      "color": "rgb(217, 212, 200)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "CODE"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 54,
+     "y": 78,
+     "w": 575,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 54,
+     "y": 547.90625,
+     "w": 575,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 54,
+     "y": 78,
+     "w": 1,
+     "h": 470.90625
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 628,
+     "y": 78,
+     "w": 1,
+     "h": 470.90625
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 651,
+     "y": 78,
+     "w": 575,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 651,
+     "y": 547.90625,
+     "w": 575,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 651,
+     "y": 78,
+     "w": 1,
+     "h": 470.90625
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 1225,
+     "y": 78,
+     "w": 1,
+     "h": 470.90625
+    },
+    "color": "rgba(169, 133, 69, 0.25)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 54,
+     "y": 592.5,
+     "w": 2,
+     "h": 97.5
+    },
+    "color": "rgb(169, 133, 69)"
+   }
+  ]
+ },
+ "s10": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 60,
+     "y": 41,
+     "w": 270.453125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Формат · Тексты лотов",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 65,
+     "w": 632.40625,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 42.4,
+    "base": 40,
+    "runs": [
+     {
+      "text": "Из строки выгрузки — в голос дома",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 60,
+     "y": 288.453125,
+     "w": 172.71875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 16.8,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Было · строка CSV",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 2.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "rc-cap"
+   },
+   {
+    "rect": {
+     "x": 62,
+     "y": 314.25,
+     "w": 494.21875,
+     "h": 76.78125
+    },
+    "align": "start",
+    "lh": 25.6,
+    "base": 16,
+    "runs": [
+     {
+      "text": "Boxing Greats Multi Signed Autographed Robe 51 Sigs Hearns Lewis BAS AC49467. Международная сертификация подлинности: Beckett/BAS.",
+      "font": "ui-monospace",
+      "size": 16,
+      "weight": 400,
+      "color": "rgb(143, 138, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 598.21875,
+     "y": 288.453125,
+     "w": 193.96875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 16.8,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Стало · текст в деке",
+      "font": "Inter",
+      "size": 12,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 2.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "rc-cap"
+   },
+   {
+    "rect": {
+     "x": 600.21875,
+     "y": 314.25,
+     "w": 617.78125,
+     "h": 147.1875
+    },
+    "align": "start",
+    "lh": 29.45,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Пятьдесят один росчерк серебром по синему атласу. Среди подписавших — Томас Хирнс и Леннокс Льюис. Предмет читается с другого конца комнаты, а масштаб понятен сразу: столько имён на одной вещи случайно не собирается. Для большой стены — кабинет, клубная комната, лестничный пролёт.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(217, 212, 200)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 600.21875,
+     "y": 475.4375,
+     "w": 617.78125,
+     "h": 46.5
+    },
+    "align": "start",
+    "lh": 23.25,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Формула: факт → в чём особенность → кому подойдёт. Слова «подлинность» нет ни в одном тексте; сертификатор — мелкой строкой, только Beckett · JSA · PSA/DNA.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(143, 138, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   }
+  ],
+  "decor": []
+ },
+ "s11": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img/stargift_logo.png",
+    "rect": {
+     "x": 66,
+     "y": 154,
+     "w": 157.9375,
+     "h": 120
+    },
+    "nat": [
+     1440,
+     1094
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "brightness(0) invert(1)"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 66,
+     "y": 304,
+     "w": 880,
+     "h": 184
+    },
+    "align": "start",
+    "lh": 46,
+    "base": 40,
+    "runs": [
+     {
+      "text": "Пять правил, которые держат всё: одно фото — один слайд; фото лота не кропать; кегли не уменьшать; про подлинность не писать; автограф не перерисовывать.",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 666,
+     "w": 133.75,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "stargift.ru",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.12,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 928.15625,
+     "y": 666,
+     "w": 301.84375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "PHOTO_RULES.md · CLAUDE.md",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.12,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 0,
+     "y": 642,
+     "w": 1280,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.3)"
+   }
+  ]
+ }
+}
