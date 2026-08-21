@@ -1,0 +1,5416 @@
+{
+ "s01": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img/stargift_logo.png",
+    "rect": {
+     "x": 58,
+     "y": 54,
+     "w": 176.375,
+     "h": 134
+    },
+    "nat": [
+     1440,
+     1094
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "brightness(0) invert(1)"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 56,
+     "y": 270.578125,
+     "w": 402.734375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Частное собрание · Отбор Stargift",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 58,
+     "y": 304.578125,
+     "w": 562,
+     "h": 124.78125
+    },
+    "align": "start",
+    "lh": 62.4,
+    "base": 60,
+    "runs": [
+     {
+      "text": "Собрание",
+      "font": "Cormorant Garamond",
+      "size": 60,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "необычного",
+      "font": "Cormorant Garamond",
+      "size": 60,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 58,
+     "y": 449.359375,
+     "w": 380,
+     "h": 120.0625
+    },
+    "align": "start",
+    "lh": 30.02,
+    "base": 19,
+    "runs": [
+     {
+      "text": "Двадцать предметов, которые не повторяются:\n      от сертификата Standard Oil с подписью Рокфеллера до мяча чемпионата мира, который ещё не начался.",
+      "font": "Inter",
+      "size": 19,
+      "weight": 300,
+      "color": "rgb(184, 178, 166)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 56,
+     "y": 652,
+     "w": 285.609375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "20 предметов · август 2026",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 3.12,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 697,
+     "y": 161.546875,
+     "w": 81,
+     "h": 139
+    },
+    "align": "start",
+    "lh": 115.92,
+    "base": 126,
+    "runs": [
+     {
+      "text": "5",
+      "font": "Cormorant Garamond",
+      "size": 126,
+      "weight": 300,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 699,
+     "y": 338.453125,
+     "w": 270,
+     "h": 93
+    },
+    "align": "start",
+    "lh": 31,
+    "base": 20,
+    "runs": [
+     {
+      "text": "миров в одной деке: документы и письма, кино,\n    музыка, спорт, искусство и стиль.",
+      "font": "Inter",
+      "size": 20,
+      "weight": 300,
+      "color": "rgb(184, 178, 166)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 699,
+     "y": 453.453125,
+     "w": 270,
+     "h": 93
+    },
+    "align": "start",
+    "lh": 31,
+    "base": 20,
+    "runs": [
+     {
+      "text": "Рокфеллер и Веттриано, Али и Месси,\n    Меркьюри и Дауни-младший.",
+      "font": "Inter",
+      "size": 20,
+      "weight": 300,
+      "color": "rgb(184, 178, 166)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 640,
+     "y": 0,
+     "w": 1,
+     "h": 720
+    },
+    "color": "rgba(169, 133, 69, 0.28)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 699,
+     "y": 313.453125,
+     "w": 76,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ]
+ },
+ "s02": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_sel/hist/rockefeller.jpg",
+    "rect": {
+     "x": 684.640625,
+     "y": 0,
+     "w": 595.34375,
+     "h": 720
+    },
+    "nat": [
+     1495,
+     2048
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "grayscale(1) contrast(1.04)"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 70,
+     "y": 184.765625,
+     "w": 248.15625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Документы и письма",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 72,
+     "y": 222.765625,
+     "w": 560.640625,
+     "h": 121.78125
+    },
+    "align": "start",
+    "lh": 60.9,
+    "base": 58,
+    "runs": [
+     {
+      "text": "Подписи,",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "которые работали",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 72,
+     "y": 401.546875,
+     "w": 462,
+     "h": 132.6875
+    },
+    "align": "start",
+    "lh": 33.18,
+    "base": 21,
+    "runs": [
+     {
+      "text": "Сертификат Standard Oil, письмо из Штутгарта, контракт молодого актёра и книга, подаренная героине: бумаги, где подпись — часть самой истории.",
+      "font": "Inter",
+      "size": 21,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 706.640625,
+     "y": 690.203125,
+     "w": 339.296875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 16.8,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Джон Д. Рокфеллер · фото: Wikimedia Commons, public domain",
+      "font": "Inter",
+      "size": 12,
+      "weight": 300,
+      "color": "rgb(143, 138, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 72,
+     "y": 372.546875,
+     "w": 74,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s02_1_plate.png",
+    "rect": {
+     "x": 684.640625,
+     "y": 0,
+     "w": 595.34375,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s03": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/oilcert.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 112.875,
+     "w": 331.828125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Документы и письма · 1 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 139.875,
+     "w": 548,
+     "h": 107.484375
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Сертификат Standard Oil Trust с подписями Джона Рокфеллера и Генри Флаглера",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 263.359375,
+     "w": 548,
+     "h": 251.015625
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Акционерный сертификат Standard Oil Trust конца XIX века. Джон Рокфеллер расписался как президент компании, Генри Флаглер — как секретарь: это не автографы на память, а рабочие подписи на действующем документе самой большой нефтяной компании в истории — той, которую в 1911 году Верховный суд США разделил на тридцать четыре части, и из осколков выросли Exxon, Mobil и Chevron. Гравированный бланк, зелёная кайма, номер и печать треста. Документ такого уровня — центр кабинета: он разговаривает с гостем сам, без единой подписи под рамой.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 533.375,
+     "w": 213.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "2 200 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 589.375,
+     "w": 87.25,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": []
+ },
+ "s04": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_sel/int/oilcert.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     2048,
+     2048
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 38,
+     "y": 633,
+     "w": 548.9375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Сертификат Standard Oil · Рокфеллер и Флаглер",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 40,
+     "y": 655,
+     "w": 675,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 22.5,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Кабинет: сертификат Standard Oil в раме красного дерева с бордовым паспарту под латунной подсветкой. Атмосферная подача.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": [],
+  "plates": [
+   {
+    "file": "s04_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s05": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/porsche.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 112.875,
+     "w": 331.828125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Документы и письма · 2 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 139.875,
+     "w": 548,
+     "h": 107.484375
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Письмо на бланке Porsche AG с подписью доктора Ферри Порше, 29 мая 1974 года",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 263.359375,
+     "w": 548,
+     "h": 251.015625
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Машинописное письмо на фирменном бланке «Dr. Ing. h. c. F. Porsche AG · Штутгарт-Цуффенхаузен», датировано 29 мая 1974 года и подписано синими чернилами: Ферри Порше, создатель Porsche 356 — первого автомобиля марки — и человек, при котором появился 911-й, отвечает клиенту лично. Вежливый, выдержанный немецкий деловой стиль: «спасибо за терпение, вопрос решается, вы — ценный член семьи Porsche». Предмет для гаража с характером, кабинета коллекционера или офиса компании, где слово «инженер» произносят с уважением.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 533.375,
+     "w": 183.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "590 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 589.375,
+     "w": 87.25,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": []
+ },
+ "s06": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/rdjcontract.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 130.78125,
+     "w": 331.828125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Документы и письма · 3 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 157.78125,
+     "w": 548,
+     "h": 71.65625
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Агентский контракт Роберта Дауни-младшего, подписанный в 1985 году",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 245.4375,
+     "w": 548,
+     "h": 251.015625
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Стандартный агентский контракт AFTRA между агентством ICM и двадцатилетним актёром по имени Robert Downey, Jr. — подписан 1 сентября 1985 года, за считаные месяцы до «Саранчи» и звёздного сезона в Saturday Night Live. Голубой бланк, машинописные вставки, юная подпись человека, который через двадцать три года наденет броню Железного человека. Документы начала карьеры — самый редкий жанр в актёрской мемо­рабилии: их не подписывали для поклонников, они просто выжили. Для поклонника Marvel это буквально точка старта всей истории.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 515.453125,
+     "w": 183.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "550 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 571.453125,
+     "w": 47.6875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": []
+ },
+ "s07": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/faithfull.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 140.1875,
+     "w": 331.828125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Документы и письма · 4 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 167.1875,
+     "w": 548,
+     "h": 107.484375
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Альбом Жан-Мари Перье «Rencontres» с дарственной надписью Марианне Фейтфулл — героине книги",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 290.671875,
+     "w": 548,
+     "h": 223.125
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Фотоальбом Жан-Мари Перье — человека, снимавшего всех: Битлз, Роллингов, Дилана, Джонни Холлидея. На титуле — дарственная надпись самой Марианне Фейтфулл: «Pour Marianne. With all the love she knows», дата 26 сентября 2012 года и росчерк автора. Экземпляр, подаренный героине книги, — то, что на аукционах называют association copy: связь между фотографом и музой зафиксирована чернилами на бумаге. Тихий, очень парижский предмет для библиотеки, где любят шестидесятые.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 532.796875,
+     "w": 183.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "320 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   }
+  ],
+  "decor": []
+ },
+ "s08": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 76,
+     "y": 195.6875,
+     "w": 71.484375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Кино",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 78,
+     "y": 233.6875,
+     "w": 1124,
+     "h": 133.09375
+    },
+    "align": "start",
+    "lh": 66.56,
+    "base": 64,
+    "runs": [
+     {
+      "text": "От «Империи»",
+      "font": "Cormorant Garamond",
+      "size": 64,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "до «Таксиста»",
+      "font": "Cormorant Garamond",
+      "size": 64,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 78,
+     "y": 423.78125,
+     "w": 546,
+     "h": 99.515625
+    },
+    "align": "start",
+    "lh": 33.18,
+    "base": 21,
+    "runs": [
+     {
+      "text": "Семнадцать подписей «Звёздных войн», сценарий «Лица со шрамом», прокат 1976 года и первый Джейсон: кино, которое пересматривают.",
+      "font": "Inter",
+      "size": 21,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 78,
+     "y": 394.78125,
+     "w": 74,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ]
+ },
+ "s09": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/empire.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 140.765625,
+     "w": 155.15625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Кино · 1 из 5",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 167.765625,
+     "w": 548,
+     "h": 107.484375
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Постер «Империя наносит ответный удар» с семнадцатью подписями актёрского состава и создателей",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 291.25,
+     "w": 548,
+     "h": 195.234375
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Семнадцать подписей на одном листе: Марк Хэмилл, Харрисон Форд, Кэрри Фишер, Билли Ди Уильямс, Энтони Дэниелс, Джордж Лукас, Дэвид Праус, Кенни Бейкер, Питер Мэйхью, Джон Уильямс — весь экипаж «Сокола» и те, кто его построил. Собрать такой состав сегодня физически невозможно. Музейный уровень для частной коллекции: предмет, вокруг которого строится вся комната, а не наоборот. Полное письмо Beckett на все семнадцать росчерков.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 505.484375,
+     "w": 213.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "8 900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 561.484375,
+     "w": 90,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": []
+ },
+ "s10": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/scarface.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 158.671875,
+     "w": 155.15625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Кино · 2 из 5",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 185.671875,
+     "w": 548,
+     "h": 71.65625
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Сценарий «Лица со шрамом» с автографом Стивена Бауэра",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 273.328125,
+     "w": 548,
+     "h": 195.234375
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Переплетённый сценарий «Scarface» с подписью Стивена Бауэра — Манни Риберы, правой руки Тони Монтаны. Бауэр — единственный кубинец в главном касте фильма о кубинце: Пачино учил акцент, Бауэр с ним родился. Розовая надпись «SCARFACE» на белой обложке узнаётся через всю комнату — фильм сорок лет живёт в плакатах, барах и текстах хип-хопа. Отличный первый предмет кино-коллекции: культовый титул за разумные деньги.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 487.5625,
+     "w": 183.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "250 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 543.5625,
+     "w": 90,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": []
+ },
+ "s11": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/taxidriver.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 168.078125,
+     "w": 155.15625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Кино · 3 из 5",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 195.078125,
+     "w": 548,
+     "h": 107.484375
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Полный комплект из восьми лобби-карт «Таксиста», оригинал проката 1976 года",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 318.5625,
+     "w": 548,
+     "h": 167.34375
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Восемь лобби-карт первого проката «Таксиста» — карточки, которые в 1976 году висели в фойе кинотеатров: Де Ниро у жёлтого чекера, Джоди Фостер, ночной Нью-Йорк Скорсезе. Полный неразрозненный комплект, не репринт — прокатный оригинал пятидесятилетней выдержки. В одной раме из восьми окон это готовая стена домашнего кинозала: вся картина разложена по кадрам, как раскадровка.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 504.90625,
+     "w": 183.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "160 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   }
+  ],
+  "decor": []
+ },
+ "s12": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_sel/int/taxidriver.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     2048,
+     2048
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 38,
+     "y": 655.5,
+     "w": 493.984375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "«Таксист» · комплект лобби-карт 1976 года",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 38,
+     "y": 680.5,
+     "w": 669.796875,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 22.5,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Домашний кинозал: все восемь лобби-карт в единой раме с бордовым паспарту. Атмосферная подача.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": [],
+  "plates": [
+   {
+    "file": "s12_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s13": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/jasonmask.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 140.765625,
+     "w": 155.15625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Кино · 4 из 5",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 167.765625,
+     "w": 548,
+     "h": 107.484375
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Маска Джейсона с автографом Ари Лемана — первого Джейсона в истории «Пятницы, 13-е»",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 291.25,
+     "w": 548,
+     "h": 195.234375
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Белая хоккейная маска с кровавыми подтёками, подписанная Ари Леманом — актёром, сыгравшим Джейсона Вурхиза в самой первой «Пятнице, 13-е» 1980 года. Леман добавил к росчерку «Jason 1»: он был первым, до всех сиквелов и канона с мачете. Подпись поставлена при свидетеле Beckett. Идеальный подарок человеку, который устраивает домашние хоррор-марафоны: страшно, культово и с историей происхождения жанра.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 505.484375,
+     "w": 163.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "90 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 561.484375,
+     "w": 186,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett Witnessed",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": []
+ },
+ "s14": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/cadillac.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 154.703125,
+     "w": 155.15625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Кино · 5 из 5",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 181.703125,
+     "w": 548,
+     "h": 107.484375
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Cadillac Fleetwood 1955 года в масштабе 1:18 с автографом Аль Пачино",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 305.1875,
+     "w": 548,
+     "h": 167.34375
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Чёрный Cadillac Fleetwood 1955 года — автомобиль эпохи «Крёстного отца» — в коллекционном масштабе 1:18, подписанный Аль Пачино серебряным маркером по крыше. Подпись на автомобиле, а не на фотографии — редкий формат для Пачино: на рынке это единственный такой экземпляр. Готовый предмет для рабочего стола или полки кабинета — тот случай, когда экспонат не требует стены.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 491.53125,
+     "w": 183.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "650 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 547.53125,
+     "w": 90,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": []
+ },
+ "s15": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_sel/hist/supremes1966.jpg",
+    "rect": {
+     "x": 684.640625,
+     "y": 0,
+     "w": 595.34375,
+     "h": 720
+    },
+    "nat": [
+     684,
+     820
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "grayscale(1) contrast(1.04)"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 70,
+     "y": 201.34375,
+     "w": 99.46875,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Музыка",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 72,
+     "y": 239.34375,
+     "w": 560.640625,
+     "h": 121.78125
+    },
+    "align": "start",
+    "lh": 60.9,
+    "base": 58,
+    "runs": [
+     {
+      "text": "Голоса",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "на бумаге и виниле",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 72,
+     "y": 418.125,
+     "w": 462,
+     "h": 99.515625
+    },
+    "align": "start",
+    "lh": 33.18,
+    "base": 21,
+    "runs": [
+     {
+      "text": "Фредди Меркьюри, дуэт Элтона и Джорджа Майкла, Motown 1968 года и Metallica: четыре способа услышать автограф.",
+      "font": "Inter",
+      "size": 21,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 706.640625,
+     "y": 690.203125,
+     "w": 338.1875,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 16.8,
+    "base": 12,
+    "runs": [
+     {
+      "text": "The Supremes, 1966 · фото: Wikimedia Commons, public domain",
+      "font": "Inter",
+      "size": 12,
+      "weight": 300,
+      "color": "rgb(143, 138, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 72,
+     "y": 389.125,
+     "w": 74,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s15_1_plate.png",
+    "rect": {
+     "x": 684.640625,
+     "y": 0,
+     "w": 595.34375,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s16": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/freddie.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 172.046875,
+     "w": 183.140625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Музыка · 1 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 199.046875,
+     "w": 548,
+     "h": 71.65625
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Автограф Фредди Меркьюри на листе, оформленный в паспарту",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 286.703125,
+     "w": 548,
+     "h": 195.234375
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Росчерк Фредди Меркьюри тонким пером по бумаге — стремительный, с летящей заглавной F, узнаваемый мгновенно. Автографы Меркьюри — среди самых дефицитных в музыке: он ушёл в 1991-м, до эпохи организованных автограф-сессий, и почти всё, что существует, подписано на бегу — на программках, билетах, случайных листах. Небольшой предмет с огромной плотностью смысла: в раме с паспарту он держит стену не хуже гитары.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 500.9375,
+     "w": 213.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "1 300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   }
+  ],
+  "decor": []
+ },
+ "s17": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/eltongm.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 140.765625,
+     "w": 183.140625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Музыка · 2 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 167.765625,
+     "w": 548,
+     "h": 107.484375
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Промо-постер «Don't Let the Sun Go Down on Me» с автографами Элтона Джона и Джорджа Майкла",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 291.25,
+     "w": 548,
+     "h": 195.234375
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Промо-постер живого дуэта 1991 года: Джордж Майкл в синем пиджаке обнимает Элтона за плечи, оба расписались золотым маркером прямо по кадру. Эта запись с концерта на «Уэмбли» стала синглом номер один по обе стороны Атлантики — и одним из самых трогательных дуэтов десятилетия. Двойной автограф такого уровня в одном предмете — редкость: обычно эти подписи продаются порознь. Полное письмо PSA/DNA.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 505.484375,
+     "w": 213.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "1 400 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 561.484375,
+     "w": 87.25,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": []
+ },
+ "s18": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/supremes.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 140.765625,
+     "w": 183.140625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Музыка · 3 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 167.765625,
+     "w": 548,
+     "h": 107.484375
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Конверт саундтрека TCB группы Diana Ross and the Supremes с автографом Мэри Уилсон",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 291.25,
+     "w": 548,
+     "h": 195.234375
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Конверт пластинки «TCB» 1968 года — телевизионного шоу Motown, где Supremes выступали вместе с Temptations: золотые платья, оркестр, вершина детройтского звука. Подпись Мэри Уилсон — соосновательницы Supremes, единственной, кто прошёл весь путь группы от первого состава до последнего. Тёплый предмет эпохи виниловых конвертов: в раме со стеклом он выглядит как окно в 1968 год.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 505.484375,
+     "w": 183.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "180 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 561.484375,
+     "w": 87.25,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": []
+ },
+ "s19": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/drumhead.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 158.671875,
+     "w": 183.140625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Музыка · 4 из 4",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 185.671875,
+     "w": 548,
+     "h": 71.65625
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Барабанный пластик Remo с автографами Metallica",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 273.328125,
+     "w": 548,
+     "h": 195.234375
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Чёрный десятидюймовый пластик Remo Emperor, подписанный участниками Metallica серебряным маркером. Барабанный пластик — естественная поверхность для рок-автографа: круглая форма собирает росчерки в единую композицию, а чёрный глянец держит серебро десятилетиями. В акриловом боксе на подставке смотрится как объект современного искусства — и безошибочно читается любым, кто хоть раз слышал «Enter Sandman».",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 487.5625,
+     "w": 183.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "450 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 543.5625,
+     "w": 87.25,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA/DNA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": []
+ },
+ "s20": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_sel/hist/ali1967.jpg",
+    "rect": {
+     "x": 684.640625,
+     "y": 0,
+     "w": 595.34375,
+     "h": 720
+    },
+    "nat": [
+     2932,
+     3669
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "grayscale(1) contrast(1.04)"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 70,
+     "y": 201.34375,
+     "w": 81.578125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Спорт",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 72,
+     "y": 239.34375,
+     "w": 560.640625,
+     "h": 121.78125
+    },
+    "align": "start",
+    "lh": 60.9,
+    "base": 58,
+    "runs": [
+     {
+      "text": "Али, Джордан,",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "Месси",
+      "font": "Cormorant Garamond",
+      "size": 58,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 72,
+     "y": 418.125,
+     "w": 462,
+     "h": 99.515625
+    },
+    "align": "start",
+    "lh": 33.18,
+    "base": 21,
+    "runs": [
+     {
+      "text": "Литография трёх величайших, мяч будущего чемпионата мира, боевой визор Формулы-1 и конверт, открывший Зал боксёрской славы.",
+      "font": "Inter",
+      "size": 21,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   },
+   {
+    "rect": {
+     "x": 706.640625,
+     "y": 690.203125,
+     "w": 346.984375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 16.8,
+    "base": 12,
+    "runs": [
+     {
+      "text": "Мохаммед Али, 1967 · фото: Wikimedia Commons, public domain",
+      "font": "Inter",
+      "size": 12,
+      "weight": 300,
+      "color": "rgb(143, 138, 128)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 72,
+     "y": 389.125,
+     "w": 74,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ],
+  "plates": [
+   {
+    "file": "s20_1_plate.png",
+    "rect": {
+     "x": 684.640625,
+     "y": 0,
+     "w": 595.34375,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s21": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/legends.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 136.21875,
+     "w": 165.25,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Спорт · 1 из 5",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 163.21875,
+     "w": 548,
+     "h": 143.3125
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Литография «Legends of Sport» с подписями Мохаммеда Али, Майкла Джордана и Тайгера Вудса, тираж 49 из 500",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 322.53125,
+     "w": 548,
+     "h": 195.234375
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Панорамная литография Upper Deck «Legends of Sport»: три человека, каждый из которых стал синонимом своего вида спорта, — и три подписи на одном листе. Али, Джордан и Вудс вместе не подписывали почти ничего: тираж 500 экземпляров, этот — номер 49. Величайший боксёр, величайший баскетболист и величайший гольфист на одной стене — формула, которую невозможно усилить. Центральный экспонат для клубной комнаты или кабинета серьёзного собрания.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 536.765625,
+     "w": 233.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "15 900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   }
+  ],
+  "decor": []
+ },
+ "s22": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_sel/int/legends.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     2048,
+     2048
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 38,
+     "y": 655.5,
+     "w": 463.203125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "«Legends of Sport» · Али, Джордан, Вудс",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 38,
+     "y": 680.5,
+     "w": 689.328125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 22.5,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Клубная комната: «Legends of Sport» в тонкой чёрной раме под музейным стеклом. Атмосферная подача.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": [],
+  "plates": [
+   {
+    "file": "s22_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s23": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/trionda.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 158.671875,
+     "w": 165.25,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Спорт · 2 из 5",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 185.671875,
+     "w": 548,
+     "h": 71.65625
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Мяч чемпионата мира 2026 года Adidas Trionda с автографом Лионеля Месси",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 273.328125,
+     "w": 548,
+     "h": 195.234375
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Официальный мяч чемпионата мира 2026 года — Adidas Trionda с красно-сине-зелёной графикой трёх стран-хозяек — подписан Лионелем Месси по зелёному сегменту. Мяч будущего турнира с подписью действующего чемпиона мира: предмет, который дорожает по календарю — с каждым месяцем до первого свистка. В акриловом кубе на белом мраморном основании — готовый центр спортивной полки.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 487.5625,
+     "w": 183.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "750 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 543.5625,
+     "w": 90,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "Beckett",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": []
+ },
+ "s24": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/shilton.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 172.046875,
+     "w": 165.25,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Спорт · 3 из 5",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 199.046875,
+     "w": 548,
+     "h": 71.65625
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Вратарская перчатка с автографом Питера Шилтона",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 286.703125,
+     "w": 548,
+     "h": 195.234375
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Белая вратарская перчатка, подписанная Питером Шилтоном — рекордсменом сборной Англии: 125 матчей за национальную команду, больше, чем у кого-либо до или после. Шилтон — тот самый вратарь, через которого прошла «рука Бога» Марадоны в 1986-м: обе стороны той истории теперь в музеях. Перчатка — правильная поверхность для вратарского автографа: предмет профессии, а не сувенир. В акриловом боксе на тёмном основании — строгий мужской подарок.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 500.9375,
+     "w": 183.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "190 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   }
+  ],
+  "decor": []
+ },
+ "s25": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/alonso.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 154.140625,
+     "w": 165.25,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Спорт · 4 из 5",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 181.140625,
+     "w": 548,
+     "h": 107.484375
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Визор шлема Arai GP7 с автографом Фернандо Алонсо, сезон McLaren 2007 года",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 304.625,
+     "w": 548,
+     "h": 195.234375
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Боевой визор шлема Arai GP7 в размере 1:1 с полосой Johnnie Walker — ливрея сезона-2007, единственного года Алонсо в McLaren рядом с дебютантом по имени Льюис Хэмилтон. Подпись серебром по тонированному поликарбонату; подписание зафиксировано на видео. Изогнутая форма визора красиво ловит свет на подставке — предмет для кабинета человека, который смотрит гонки по воскресеньям с секундомером.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 518.859375,
+     "w": 183.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "550 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   }
+  ],
+  "decor": []
+ },
+ "s26": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/aliplaque.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 108.90625,
+     "w": 165.25,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Спорт · 5 из 5",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 135.90625,
+     "w": 548,
+     "h": 143.3125
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Конверт первого дня Зала боксёрской славы 1990 года с подписями Мохаммеда Али, Джо Фрейзера и ещё девяти чемпионов",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 295.21875,
+     "w": 548,
+     "h": 223.125
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Конверт первого гашения, выпущенный к открытию Международного зала боксёрской славы: штемпель «Induction Station · June 10, 1990 · Canastota NY» и олимпийские боксёрские марки. Поверх — одиннадцать подписей первого призыва: Мохаммед Али и Джо Фрейзер рядом, как в Мэдисон-сквер-гарден, Джейк Ламотта — «Бешеный бык» Скорсезе, Вилли Пеп, Арчи Мур, Эмиль Гриффит, Кармен Базилио. Одиннадцать имён, открывших Зал славы, на одном листе размером с журнальную страницу. Полное письмо JSA.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 537.34375,
+     "w": 213.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "1 800 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 593.34375,
+     "w": 45.59375,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": []
+ },
+ "s27": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 76,
+     "y": 212.28125,
+     "w": 225.90625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Искусство и стиль",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 78,
+     "y": 250.28125,
+     "w": 1124,
+     "h": 133.09375
+    },
+    "align": "start",
+    "lh": 66.56,
+    "base": 64,
+    "runs": [
+     {
+      "text": "Веттриано,",
+      "font": "Cormorant Garamond",
+      "size": 64,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     },
+     {
+      "br": true
+     },
+     {
+      "text": "Армани, Версаче",
+      "font": "Cormorant Garamond",
+      "size": 64,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 78,
+     "y": 440.375,
+     "w": 546,
+     "h": 66.34375
+    },
+    "align": "start",
+    "lh": 33.18,
+    "base": 21,
+    "runs": [
+     {
+      "text": "Танец на вечернем берегу и два росчерка итальянской моды: предметы для домов, где стены умеют говорить тихо.",
+      "font": "Inter",
+      "size": 21,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "P"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 78,
+     "y": 411.375,
+     "w": 74,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.55)",
+    "oval": false
+   }
+  ]
+ },
+ "s28": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/vettriano.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 140.1875,
+     "w": 309.578125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Искусство и стиль · 1 из 2",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 167.1875,
+     "w": 548,
+     "h": 107.484375
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Джек Веттриано «Dance Me to the End of Love», подписанная лимитированная печать",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 290.671875,
+     "w": 548,
+     "h": 223.125
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "«Dance Me to the End of Love» — пара танцует на пустом вечернем берегу под низкой луной; название взято у Леонарда Коэна, а настроение — фирменное веттриановское: нуар, шёлк и недосказанность. Подписанная автором лимитированная печать малого формата; тираж давно распродан, у издателя оставался последний экземпляр. Веттриано — самый тиражируемый британский художник своего поколения, и эта вещь — его «Целующий полицейский» для спальни или гостиной: романтика без сиропа.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 532.796875,
+     "w": 213.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "1 900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   }
+  ],
+  "decor": []
+ },
+ "s29": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img_sel/int/vettriano.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    },
+    "nat": [
+     2048,
+     2048
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 38,
+     "y": 655.5,
+     "w": 472.015625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Веттриано · Dance Me to the End of Love",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 38,
+     "y": 680.5,
+     "w": 507.328125,
+     "h": 16
+    },
+    "align": "start",
+    "lh": 22.5,
+    "base": 15,
+    "runs": [
+     {
+      "text": "Гостиная: «Dance Me to the End of Love» над камином. Атмосферная подача.",
+      "font": "Inter",
+      "size": 15,
+      "weight": 300,
+      "color": "rgb(201, 195, 183)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": [],
+  "plates": [
+   {
+    "file": "s29_0_plate.png",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1280,
+     "h": 720
+    }
+   }
+  ]
+ },
+ "s30": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_sel/half/versace.jpg",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 720
+    },
+    "nat": [
+     1280,
+     1440
+    ],
+    "fit": "cover",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 678,
+     "y": 144.734375,
+     "w": 309.578125,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Искусство и стиль · 2 из 2",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 171.734375,
+     "w": 548,
+     "h": 71.65625
+    },
+    "align": "start",
+    "lh": 35.84,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Автографы Джорджо Армани и Джанни Версаче в одной раме",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "nm"
+   },
+   {
+    "rect": {
+     "x": 680,
+     "y": 259.390625,
+     "w": 548,
+     "h": 223.125
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Два росчерка, определившие итальянскую моду конца XX века, в одном паспарту: строгий Armani и летящий Gianni Versace, между ними — фотография двух маэстро. Версаче не стало в 1997-м; предметов первого уровня с его подписью на рынке почти нет, и по этому лоту существуют отдельные письма PSA и JSA — по одному на каждую подпись. Вещь для шоу-рума, ателье, бутика или дома, где моду понимают как искусство — рядом с гардеробной такая рама выглядит манифестом.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(63, 63, 63)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "tx"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 501.515625,
+     "w": 213.453125,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 48,
+    "base": 40,
+    "runs": [
+     {
+      "text": "1 800 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "pr"
+   },
+   {
+    "rect": {
+     "x": 678,
+     "y": 557.515625,
+     "w": 91.75,
+     "h": 14
+    },
+    "align": "start",
+    "lh": 18.75,
+    "base": 12.5,
+    "runs": [
+     {
+      "text": "PSA · JSA",
+      "font": "Inter",
+      "size": 12.5,
+      "weight": 400,
+      "color": "rgb(154, 149, 140)",
+      "spacing": 2.25,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "ct"
+   }
+  ],
+  "decor": []
+ },
+ "s31": {
+  "bg": "rgb(255, 255, 255)",
+  "imgs": [
+   {
+    "src": "img_packaging/box_kraft.jpg",
+    "rect": {
+     "x": 92.765625,
+     "y": 152.609375,
+     "w": 523.3125,
+     "h": 395.984375
+    },
+    "nat": [
+     1081,
+     818
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   },
+   {
+    "src": "img_packaging/bag_white.jpg",
+    "rect": {
+     "x": 697.4375,
+     "y": 152.609375,
+     "w": 511.953125,
+     "h": 395.984375
+    },
+    "nat": [
+     1064,
+     823
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "none"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 60,
+     "y": 30,
+     "w": 338.734375,
+     "h": 36
+    },
+    "align": "start",
+    "lh": 38.4,
+    "base": 32,
+    "runs": [
+     {
+      "text": "Как мы отдаём подарок",
+      "font": "Cormorant Garamond",
+      "size": 32,
+      "weight": 500,
+      "color": "rgb(26, 26, 26)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 1008.5,
+     "y": 47,
+     "w": 225.5,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Упаковка Stargift",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(169, 133, 69)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick"
+   },
+   {
+    "rect": {
+     "x": 0,
+     "y": 616.21875,
+     "w": 864,
+     "h": 103.78125
+    },
+    "align": "start",
+    "lh": 27.9,
+    "base": 18,
+    "runs": [
+     {
+      "text": "Каждый предмет уходит в фирменной упаковке дома:\n  крафт-бумага с автографами великих, лента Stargift и плотный подарочный пакет. Оформленную работу привозим и вешаем сами.",
+      "font": "Inter",
+      "size": 18,
+      "weight": 300,
+      "color": "rgb(74, 74, 74)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": []
+ },
+ "s32": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 64,
+     "y": 39,
+     "w": 345.109375,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Собрание · Документы и кино",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 62,
+     "w": 213.734375,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 40,
+    "base": 40,
+    "runs": [
+     {
+      "text": "Прайс-лист",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 156,
+     "w": 363.15625,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Сертификат Standard Oil · Рокфеллер и Флаглер",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1080.0625,
+     "y": 147,
+     "w": 149.9375,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "2 200 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 213,
+     "w": 338.78125,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Письмо Porsche AG · подпись Ферри Порше",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1100.3125,
+     "y": 204,
+     "w": 129.6875,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "590 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 270,
+     "w": 320.625,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Контракт Роберта Дауни-младшего · 1985",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1100.3125,
+     "y": 261,
+     "w": 129.6875,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "550 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 327,
+     "w": 348.625,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "«Rencontres» · инскрипт Марианне Фейтфулл",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1100.3125,
+     "y": 318,
+     "w": 129.6875,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "320 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 384,
+     "w": 375.703125,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "«Империя наносит ответный удар» · 17 подписей",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1080.0625,
+     "y": 375,
+     "w": 149.9375,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "8 900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 441,
+     "w": 342.578125,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Сценарий «Лица со шрамом» · Стивен Бауэр",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1100.3125,
+     "y": 432,
+     "w": 129.6875,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "250 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 498,
+     "w": 330.84375,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "«Таксист» · комплект лобби-карт 1976 года",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1100.3125,
+     "y": 489,
+     "w": 129.6875,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "160 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 555,
+     "w": 311.671875,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Маска Джейсона · автограф Ари Лемана",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1113.8125,
+     "y": 546,
+     "w": 116.1875,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "90 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 612,
+     "w": 283.34375,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Cadillac 1955 · автограф Аль Пачино",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1100.3125,
+     "y": 603,
+     "w": 129.6875,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "650 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 190,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 247,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 304,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 361,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 418,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 475,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 532,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 589,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 646,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   }
+  ]
+ },
+ "s33": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [],
+  "texts": [
+   {
+    "rect": {
+     "x": 64,
+     "y": 39,
+     "w": 431.625,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 13,
+    "base": 13,
+    "runs": [
+     {
+      "text": "Собрание · Музыка, спорт, искусство",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 4.16,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "kick d"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 62,
+     "w": 213.734375,
+     "h": 45
+    },
+    "align": "start",
+    "lh": 40,
+    "base": 40,
+    "runs": [
+     {
+      "text": "Прайс-лист",
+      "font": "Cormorant Garamond",
+      "size": 40,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 99,
+     "w": 229.015625,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Автограф Фредди Меркьюри",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1080.0625,
+     "y": 90,
+     "w": 149.9375,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "1 300 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 156,
+     "w": 303.875,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Постер · Элтон Джон и Джордж Майкл",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1080.0625,
+     "y": 147,
+     "w": 149.9375,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "1 400 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 213,
+     "w": 295.40625,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Конверт TCB · автограф Мэри Уилсон",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1100.3125,
+     "y": 204,
+     "w": 129.6875,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "180 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 270,
+     "w": 282.40625,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Пластик Remo · автографы Metallica",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1100.3125,
+     "y": 261,
+     "w": 129.6875,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "450 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 327,
+     "w": 312.84375,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "«Legends of Sport» · Али, Джордан, Вудс",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1066.5625,
+     "y": 318,
+     "w": 163.4375,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "15 900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 384,
+     "w": 307.375,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Мяч ЧМ-2026 Trionda · автограф Месси",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1100.3125,
+     "y": 375,
+     "w": 129.6875,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "750 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 441,
+     "w": 289.9375,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Вратарская перчатка · Питер Шилтон",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1100.3125,
+     "y": 432,
+     "w": 129.6875,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "190 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 498,
+     "w": 276.171875,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Визор Arai GP7 · Фернандо Алонсо",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1100.3125,
+     "y": 489,
+     "w": 129.6875,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "550 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 555,
+     "w": 417.078125,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Конверт первого дня 1990 · Али, Фрейзер и ещё девять",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1080.0625,
+     "y": 546,
+     "w": 149.9375,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "1 800 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 612,
+     "w": 310.90625,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Веттриано · Dance Me to the End of Love",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1080.0625,
+     "y": 603,
+     "w": 149.9375,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "1 900 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 669,
+     "w": 363.921875,
+     "h": 19
+    },
+    "align": "start",
+    "lh": 22.95,
+    "base": 17,
+    "runs": [
+     {
+      "text": "Армани и Версаче · два автографа в одной раме",
+      "font": "Inter",
+      "size": 17,
+      "weight": 300,
+      "color": "rgb(213, 207, 195)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-nm"
+   },
+   {
+    "rect": {
+     "x": 1080.0625,
+     "y": 660,
+     "w": 149.9375,
+     "h": 30
+    },
+    "align": "start",
+    "lh": 32.4,
+    "base": 27,
+    "runs": [
+     {
+      "text": "1 800 000 ₽",
+      "font": "Cormorant Garamond",
+      "size": 27,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "lad-pr"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 133,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 190,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 247,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 304,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 361,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 418,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 475,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 532,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 589,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 646,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   },
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 66,
+     "y": 703,
+     "w": 1148,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.22)"
+   }
+  ]
+ },
+ "s34": {
+  "bg": "rgb(11, 11, 12)",
+  "imgs": [
+   {
+    "src": "img/stargift_logo.png",
+    "rect": {
+     "x": 66,
+     "y": 165.09375,
+     "w": 173.734375,
+     "h": 132
+    },
+    "nat": [
+     1440,
+     1094
+    ],
+    "fit": "contain",
+    "pos": "50% 50%",
+    "filter": "brightness(0) invert(1)"
+   }
+  ],
+  "texts": [
+   {
+    "rect": {
+     "x": 66,
+     "y": 329.09375,
+     "w": 792,
+     "h": 147.796875
+    },
+    "align": "start",
+    "lh": 49.28,
+    "base": 44,
+    "runs": [
+     {
+      "text": "Двадцать предметов, которые не повторяются. Каждый — с историей, которую рассказывают гостям.",
+      "font": "Cormorant Garamond",
+      "size": 44,
+      "weight": 300,
+      "color": "rgb(245, 241, 232)",
+      "spacing": 0,
+      "upper": false,
+      "italic": false
+     }
+    ],
+    "id": "serif"
+   },
+   {
+    "rect": {
+     "x": 64,
+     "y": 666,
+     "w": 133.75,
+     "h": 15
+    },
+    "align": "start",
+    "lh": 19.2,
+    "base": 16,
+    "runs": [
+     {
+      "text": "stargift.ru",
+      "font": "Inter",
+      "size": 13,
+      "weight": 500,
+      "color": "rgb(201, 169, 106)",
+      "spacing": 3.12,
+      "upper": true,
+      "italic": false
+     }
+    ],
+    "id": "DIV"
+   }
+  ],
+  "decor": [
+   {
+    "kind": "rect",
+    "rect": {
+     "x": 0,
+     "y": 642,
+     "w": 1280,
+     "h": 1
+    },
+    "color": "rgba(169, 133, 69, 0.3)"
+   }
+  ]
+ }
+}

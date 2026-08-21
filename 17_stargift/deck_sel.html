@@ -1,0 +1,398 @@
+<meta charset="utf-8">
+<title>Stargift · Собрание необычного</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--noir:#0B0B0C;--gold:#A98545;--gold2:#C9A96A;--ivory:#F5F1E8;
+      --paper:#F7F5F1;--ink:#1A1A1A;--cert:#9a958c}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000;font-family:'Inter',sans-serif}
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;overflow:hidden}
+.slide.on{display:grid}
+.slide>*{min-height:0;min-width:0}
+img{display:block}
+.serif{font-family:'Cormorant Garamond',serif}
+.white{background:#FFFFFF;color:var(--ink)}
+.dark{background:var(--noir);color:var(--ivory)}
+.rule{height:1px;background:rgba(169,133,69,.55)}
+.kick{font:500 13px/1 'Inter';letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+.kick.d{color:var(--gold2)}
+
+.solo{grid-template-columns:640px 1fr}
+.ph{background:#fff;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+.side{display:flex;flex-direction:column;justify-content:center;padding:40px 52px 40px 40px}
+.nm{font-family:'Cormorant Garamond';font-weight:500;font-size:32px;line-height:1.12;color:var(--ink)}
+.tx{font:300 18px/1.55 'Inter';color:#3f3f3f;margin-top:16px}
+.pr{font-family:'Cormorant Garamond';font-weight:500;font-size:40px;color:var(--gold);margin-top:18px}
+.ct{font:400 12.5px/1.5 'Inter';letter-spacing:.18em;text-transform:uppercase;color:var(--cert);margin-top:8px}
+
+.lad-row{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:baseline;
+  padding:12px 0;border-bottom:1px solid rgba(169,133,69,.22)}
+.lad-nm{font:300 17px/1.35 'Inter';color:#d5cfc3}
+.lad-pr{font-family:'Cormorant Garamond';font-weight:500;font-size:27px;color:var(--gold2);white-space:nowrap}
+</style>
+
+<div class="deck">
+<section class="slide dark" id="s01" style="grid-template-columns:1fr 1fr">
+  <div style="display:flex;flex-direction:column;justify-content:space-between;padding:54px 20px 54px 58px">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:134px;width:auto;object-fit:contain;filter:brightness(0) invert(1);align-self:flex-start">
+    <div>
+      <div class="kick d" style="margin-bottom:20px">Частное собрание · Отбор Stargift</div>
+      <h1 class="serif" style="font-weight:300;font-size:60px;line-height:1.04;color:var(--ivory)">Собрание<br>необычного</h1>
+      <p style="font:300 19px/1.58 'Inter';color:#b8b2a6;margin-top:20px;max-width:40ch">Двадцать предметов, которые не повторяются:
+      от сертификата Standard Oil с подписью Рокфеллера до мяча чемпионата мира, который ещё не начался.</p>
+    </div>
+    <div class="kick" style="letter-spacing:.24em">20 предметов · август 2026</div>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:0 58px;border-left:1px solid rgba(169,133,69,.28)">
+    <div class="serif" style="font-weight:300;font-size:126px;line-height:.92;color:var(--gold);opacity:.9">5</div>
+    <div class="rule" style="width:76px;margin:24px 0"></div>
+    <p style="font:300 20px/1.55 'Inter';color:#b8b2a6;max-width:27ch">миров в одной деке: документы и письма, кино,
+    музыка, спорт, искусство и стиль.</p>
+    <p style="font:300 20px/1.55 'Inter';color:#b8b2a6;max-width:27ch;margin-top:22px">Рокфеллер и Веттриано, Али и Месси,
+    Меркьюри и Дауни-младший.</p>
+  </div>
+</section>
+<section class="slide dark" id="s02" style="grid-template-columns:1.15fr 1fr">
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:0 52px 0 72px">
+    <div class="kick d" style="margin-bottom:24px">Документы и письма</div>
+    <h2 class="serif" style="font-weight:300;font-size:58px;line-height:1.05;color:var(--ivory)">Подписи,<br>которые работали</h2>
+    <div class="rule" style="width:74px;margin:28px 0"></div>
+    <p style="font:300 21px/1.58 'Inter';color:#c9c3b7;max-width:44ch">Сертификат Standard Oil, письмо из Штутгарта, контракт молодого актёра и книга, подаренная героине: бумаги, где подпись — часть самой истории.</p>
+  </div>
+  <div style="position:relative">
+    <img src="img_sel/hist/rockefeller.jpg" alt="" style="width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.04)">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,1) 0%,rgba(11,11,12,.25) 30%,rgba(11,11,12,0) 60%)"></div>
+    <div style="position:absolute;left:0;right:0;bottom:0;padding:14px 24px;font:300 12px/1.4 'Inter';color:#8f8a80;background:linear-gradient(0deg,rgba(11,11,12,.85),rgba(11,11,12,0))">Джон Д. Рокфеллер · фото: Wikimedia Commons, public domain</div>
+  </div>
+</section>
+<section class="slide white solo" id="s03">
+  <div class="ph"><img src="img_sel/half/oilcert.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Документы и письма · 1 из 4</div>
+    <div class="nm" style="margin-top:13px">Сертификат Standard Oil Trust с подписями Джона Рокфеллера и Генри Флаглера</div>
+    <div class="tx">Акционерный сертификат Standard Oil Trust конца XIX века. Джон Рокфеллер расписался как президент компании, Генри Флаглер — как секретарь: это не автографы на память, а рабочие подписи на действующем документе самой большой нефтяной компании в истории — той, которую в 1911 году Верховный суд США разделил на тридцать четыре части, и из осколков выросли Exxon, Mobil и Chevron. Гравированный бланк, зелёная кайма, номер и печать треста. Документ такого уровня — центр кабинета: он разговаривает с гостем сам, без единой подписи под рамой.</div>
+    <div class="pr">2 200 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide dark" id="s04" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_sel/int/oilcert.jpg" alt="" style="width:100%;height:100%;object-fit:cover">
+    <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 40px;
+                background:linear-gradient(0deg,rgba(11,11,12,.88),rgba(11,11,12,0))">
+      <span class="kick d">Сертификат Standard Oil · Рокфеллер и Флаглер</span>
+      <div style="font:300 15px/1.5 'Inter';color:#c9c3b7;margin-top:8px;max-width:90ch">Кабинет: сертификат Standard Oil в раме красного дерева с бордовым паспарту под латунной подсветкой. Атмосферная подача.</div>
+    </div>
+  </div>
+</section>
+<section class="slide white solo" id="s05">
+  <div class="ph"><img src="img_sel/half/porsche.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Документы и письма · 2 из 4</div>
+    <div class="nm" style="margin-top:13px">Письмо на бланке Porsche AG с подписью доктора Ферри Порше, 29 мая 1974 года</div>
+    <div class="tx">Машинописное письмо на фирменном бланке «Dr. Ing. h. c. F. Porsche AG · Штутгарт-Цуффенхаузен», датировано 29 мая 1974 года и подписано синими чернилами: Ферри Порше, создатель Porsche 356 — первого автомобиля марки — и человек, при котором появился 911-й, отвечает клиенту лично. Вежливый, выдержанный немецкий деловой стиль: «спасибо за терпение, вопрос решается, вы — ценный член семьи Porsche». Предмет для гаража с характером, кабинета коллекционера или офиса компании, где слово «инженер» произносят с уважением.</div>
+    <div class="pr">590 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s06">
+  <div class="ph"><img src="img_sel/half/rdjcontract.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Документы и письма · 3 из 4</div>
+    <div class="nm" style="margin-top:13px">Агентский контракт Роберта Дауни-младшего, подписанный в 1985 году</div>
+    <div class="tx">Стандартный агентский контракт AFTRA между агентством ICM и двадцатилетним актёром по имени Robert Downey, Jr. — подписан 1 сентября 1985 года, за считаные месяцы до «Саранчи» и звёздного сезона в Saturday Night Live. Голубой бланк, машинописные вставки, юная подпись человека, который через двадцать три года наденет броню Железного человека. Документы начала карьеры — самый редкий жанр в актёрской мемо­рабилии: их не подписывали для поклонников, они просто выжили. Для поклонника Marvel это буквально точка старта всей истории.</div>
+    <div class="pr">550 000&nbsp;₽</div>
+    <div class="ct">PSA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s07">
+  <div class="ph"><img src="img_sel/half/faithfull.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Документы и письма · 4 из 4</div>
+    <div class="nm" style="margin-top:13px">Альбом Жан-Мари Перье «Rencontres» с дарственной надписью Марианне Фейтфулл — героине книги</div>
+    <div class="tx">Фотоальбом Жан-Мари Перье — человека, снимавшего всех: Битлз, Роллингов, Дилана, Джонни Холлидея. На титуле — дарственная надпись самой Марианне Фейтфулл: «Pour Marianne. With all the love she knows», дата 26 сентября 2012 года и росчерк автора. Экземпляр, подаренный героине книги, — то, что на аукционах называют association copy: связь между фотографом и музой зафиксирована чернилами на бумаге. Тихий, очень парижский предмет для библиотеки, где любят шестидесятые.</div>
+    <div class="pr">320 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide dark" id="s08" style="grid-template-columns:1fr">
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:0 78px">
+    <div class="kick d" style="margin-bottom:24px">Кино</div>
+    <h2 class="serif" style="font-weight:300;font-size:64px;line-height:1.04;color:var(--ivory)">От «Империи»<br>до «Таксиста»</h2>
+    <div class="rule" style="width:74px;margin:28px 0"></div>
+    <p style="font:300 21px/1.58 'Inter';color:#c9c3b7;max-width:52ch">Семнадцать подписей «Звёздных войн», сценарий «Лица со шрамом», прокат 1976 года и первый Джейсон: кино, которое пересматривают.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s09">
+  <div class="ph"><img src="img_sel/half/empire.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Кино · 1 из 5</div>
+    <div class="nm" style="margin-top:13px">Постер «Империя наносит ответный удар» с семнадцатью подписями актёрского состава и создателей</div>
+    <div class="tx">Семнадцать подписей на одном листе: Марк Хэмилл, Харрисон Форд, Кэрри Фишер, Билли Ди Уильямс, Энтони Дэниелс, Джордж Лукас, Дэвид Праус, Кенни Бейкер, Питер Мэйхью, Джон Уильямс — весь экипаж «Сокола» и те, кто его построил. Собрать такой состав сегодня физически невозможно. Музейный уровень для частной коллекции: предмет, вокруг которого строится вся комната, а не наоборот. Полное письмо Beckett на все семнадцать росчерков.</div>
+    <div class="pr">8 900 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s10">
+  <div class="ph"><img src="img_sel/half/scarface.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Кино · 2 из 5</div>
+    <div class="nm" style="margin-top:13px">Сценарий «Лица со шрамом» с автографом Стивена Бауэра</div>
+    <div class="tx">Переплетённый сценарий «Scarface» с подписью Стивена Бауэра — Манни Риберы, правой руки Тони Монтаны. Бауэр — единственный кубинец в главном касте фильма о кубинце: Пачино учил акцент, Бауэр с ним родился. Розовая надпись «SCARFACE» на белой обложке узнаётся через всю комнату — фильм сорок лет живёт в плакатах, барах и текстах хип-хопа. Отличный первый предмет кино-коллекции: культовый титул за разумные деньги.</div>
+    <div class="pr">250 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s11">
+  <div class="ph"><img src="img_sel/half/taxidriver.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Кино · 3 из 5</div>
+    <div class="nm" style="margin-top:13px">Полный комплект из восьми лобби-карт «Таксиста», оригинал проката 1976 года</div>
+    <div class="tx">Восемь лобби-карт первого проката «Таксиста» — карточки, которые в 1976 году висели в фойе кинотеатров: Де Ниро у жёлтого чекера, Джоди Фостер, ночной Нью-Йорк Скорсезе. Полный неразрозненный комплект, не репринт — прокатный оригинал пятидесятилетней выдержки. В одной раме из восьми окон это готовая стена домашнего кинозала: вся картина разложена по кадрам, как раскадровка.</div>
+    <div class="pr">160 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide dark" id="s12" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_sel/int/taxidriver.jpg" alt="" style="width:100%;height:100%;object-fit:cover">
+    <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 40px;
+                background:linear-gradient(0deg,rgba(11,11,12,.88),rgba(11,11,12,0))">
+      <span class="kick d">«Таксист» · комплект лобби-карт 1976 года</span>
+      <div style="font:300 15px/1.5 'Inter';color:#c9c3b7;margin-top:8px;max-width:90ch">Домашний кинозал: все восемь лобби-карт в единой раме с бордовым паспарту. Атмосферная подача.</div>
+    </div>
+  </div>
+</section>
+<section class="slide white solo" id="s13">
+  <div class="ph"><img src="img_sel/half/jasonmask.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Кино · 4 из 5</div>
+    <div class="nm" style="margin-top:13px">Маска Джейсона с автографом Ари Лемана — первого Джейсона в истории «Пятницы, 13-е»</div>
+    <div class="tx">Белая хоккейная маска с кровавыми подтёками, подписанная Ари Леманом — актёром, сыгравшим Джейсона Вурхиза в самой первой «Пятнице, 13-е» 1980 года. Леман добавил к росчерку «Jason 1»: он был первым, до всех сиквелов и канона с мачете. Подпись поставлена при свидетеле Beckett. Идеальный подарок человеку, который устраивает домашние хоррор-марафоны: страшно, культово и с историей происхождения жанра.</div>
+    <div class="pr">90 000&nbsp;₽</div>
+    <div class="ct">Beckett Witnessed</div>
+  </div>
+</section>
+<section class="slide white solo" id="s14">
+  <div class="ph"><img src="img_sel/half/cadillac.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Кино · 5 из 5</div>
+    <div class="nm" style="margin-top:13px">Cadillac Fleetwood 1955 года в масштабе 1:18 с автографом Аль Пачино</div>
+    <div class="tx">Чёрный Cadillac Fleetwood 1955 года — автомобиль эпохи «Крёстного отца» — в коллекционном масштабе 1:18, подписанный Аль Пачино серебряным маркером по крыше. Подпись на автомобиле, а не на фотографии — редкий формат для Пачино: на рынке это единственный такой экземпляр. Готовый предмет для рабочего стола или полки кабинета — тот случай, когда экспонат не требует стены.</div>
+    <div class="pr">650 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide dark" id="s15" style="grid-template-columns:1.15fr 1fr">
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:0 52px 0 72px">
+    <div class="kick d" style="margin-bottom:24px">Музыка</div>
+    <h2 class="serif" style="font-weight:300;font-size:58px;line-height:1.05;color:var(--ivory)">Голоса<br>на бумаге и виниле</h2>
+    <div class="rule" style="width:74px;margin:28px 0"></div>
+    <p style="font:300 21px/1.58 'Inter';color:#c9c3b7;max-width:44ch">Фредди Меркьюри, дуэт Элтона и Джорджа Майкла, Motown 1968 года и Metallica: четыре способа услышать автограф.</p>
+  </div>
+  <div style="position:relative">
+    <img src="img_sel/hist/supremes1966.jpg" alt="" style="width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.04)">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,1) 0%,rgba(11,11,12,.25) 30%,rgba(11,11,12,0) 60%)"></div>
+    <div style="position:absolute;left:0;right:0;bottom:0;padding:14px 24px;font:300 12px/1.4 'Inter';color:#8f8a80;background:linear-gradient(0deg,rgba(11,11,12,.85),rgba(11,11,12,0))">The Supremes, 1966 · фото: Wikimedia Commons, public domain</div>
+  </div>
+</section>
+<section class="slide white solo" id="s16">
+  <div class="ph"><img src="img_sel/half/freddie.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Музыка · 1 из 4</div>
+    <div class="nm" style="margin-top:13px">Автограф Фредди Меркьюри на листе, оформленный в паспарту</div>
+    <div class="tx">Росчерк Фредди Меркьюри тонким пером по бумаге — стремительный, с летящей заглавной F, узнаваемый мгновенно. Автографы Меркьюри — среди самых дефицитных в музыке: он ушёл в 1991-м, до эпохи организованных автограф-сессий, и почти всё, что существует, подписано на бегу — на программках, билетах, случайных листах. Небольшой предмет с огромной плотностью смысла: в раме с паспарту он держит стену не хуже гитары.</div>
+    <div class="pr">1 300 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white solo" id="s17">
+  <div class="ph"><img src="img_sel/half/eltongm.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Музыка · 2 из 4</div>
+    <div class="nm" style="margin-top:13px">Промо-постер «Don't Let the Sun Go Down on Me» с автографами Элтона Джона и Джорджа Майкла</div>
+    <div class="tx">Промо-постер живого дуэта 1991 года: Джордж Майкл в синем пиджаке обнимает Элтона за плечи, оба расписались золотым маркером прямо по кадру. Эта запись с концерта на «Уэмбли» стала синглом номер один по обе стороны Атлантики — и одним из самых трогательных дуэтов десятилетия. Двойной автограф такого уровня в одном предмете — редкость: обычно эти подписи продаются порознь. Полное письмо PSA/DNA.</div>
+    <div class="pr">1 400 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s18">
+  <div class="ph"><img src="img_sel/half/supremes.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Музыка · 3 из 4</div>
+    <div class="nm" style="margin-top:13px">Конверт саундтрека TCB группы Diana Ross and the Supremes с автографом Мэри Уилсон</div>
+    <div class="tx">Конверт пластинки «TCB» 1968 года — телевизионного шоу Motown, где Supremes выступали вместе с Temptations: золотые платья, оркестр, вершина детройтского звука. Подпись Мэри Уилсон — соосновательницы Supremes, единственной, кто прошёл весь путь группы от первого состава до последнего. Тёплый предмет эпохи виниловых конвертов: в раме со стеклом он выглядит как окно в 1968 год.</div>
+    <div class="pr">180 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide white solo" id="s19">
+  <div class="ph"><img src="img_sel/half/drumhead.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Музыка · 4 из 4</div>
+    <div class="nm" style="margin-top:13px">Барабанный пластик Remo с автографами Metallica</div>
+    <div class="tx">Чёрный десятидюймовый пластик Remo Emperor, подписанный участниками Metallica серебряным маркером. Барабанный пластик — естественная поверхность для рок-автографа: круглая форма собирает росчерки в единую композицию, а чёрный глянец держит серебро десятилетиями. В акриловом боксе на подставке смотрится как объект современного искусства — и безошибочно читается любым, кто хоть раз слышал «Enter Sandman».</div>
+    <div class="pr">450 000&nbsp;₽</div>
+    <div class="ct">PSA/DNA</div>
+  </div>
+</section>
+<section class="slide dark" id="s20" style="grid-template-columns:1.15fr 1fr">
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:0 52px 0 72px">
+    <div class="kick d" style="margin-bottom:24px">Спорт</div>
+    <h2 class="serif" style="font-weight:300;font-size:58px;line-height:1.05;color:var(--ivory)">Али, Джордан,<br>Месси</h2>
+    <div class="rule" style="width:74px;margin:28px 0"></div>
+    <p style="font:300 21px/1.58 'Inter';color:#c9c3b7;max-width:44ch">Литография трёх величайших, мяч будущего чемпионата мира, боевой визор Формулы-1 и конверт, открывший Зал боксёрской славы.</p>
+  </div>
+  <div style="position:relative">
+    <img src="img_sel/hist/ali1967.jpg" alt="" style="width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.04)">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,1) 0%,rgba(11,11,12,.25) 30%,rgba(11,11,12,0) 60%)"></div>
+    <div style="position:absolute;left:0;right:0;bottom:0;padding:14px 24px;font:300 12px/1.4 'Inter';color:#8f8a80;background:linear-gradient(0deg,rgba(11,11,12,.85),rgba(11,11,12,0))">Мохаммед Али, 1967 · фото: Wikimedia Commons, public domain</div>
+  </div>
+</section>
+<section class="slide white solo" id="s21">
+  <div class="ph"><img src="img_sel/half/legends.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Спорт · 1 из 5</div>
+    <div class="nm" style="margin-top:13px">Литография «Legends of Sport» с подписями Мохаммеда Али, Майкла Джордана и Тайгера Вудса, тираж 49 из 500</div>
+    <div class="tx">Панорамная литография Upper Deck «Legends of Sport»: три человека, каждый из которых стал синонимом своего вида спорта, — и три подписи на одном листе. Али, Джордан и Вудс вместе не подписывали почти ничего: тираж 500 экземпляров, этот — номер 49. Величайший боксёр, величайший баскетболист и величайший гольфист на одной стене — формула, которую невозможно усилить. Центральный экспонат для клубной комнаты или кабинета серьёзного собрания.</div>
+    <div class="pr">15 900 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide dark" id="s22" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_sel/int/legends.jpg" alt="" style="width:100%;height:100%;object-fit:cover">
+    <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 40px;
+                background:linear-gradient(0deg,rgba(11,11,12,.88),rgba(11,11,12,0))">
+      <span class="kick d">«Legends of Sport» · Али, Джордан, Вудс</span>
+      <div style="font:300 15px/1.5 'Inter';color:#c9c3b7;margin-top:8px;max-width:90ch">Клубная комната: «Legends of Sport» в тонкой чёрной раме под музейным стеклом. Атмосферная подача.</div>
+    </div>
+  </div>
+</section>
+<section class="slide white solo" id="s23">
+  <div class="ph"><img src="img_sel/half/trionda.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Спорт · 2 из 5</div>
+    <div class="nm" style="margin-top:13px">Мяч чемпионата мира 2026 года Adidas Trionda с автографом Лионеля Месси</div>
+    <div class="tx">Официальный мяч чемпионата мира 2026 года — Adidas Trionda с красно-сине-зелёной графикой трёх стран-хозяек — подписан Лионелем Месси по зелёному сегменту. Мяч будущего турнира с подписью действующего чемпиона мира: предмет, который дорожает по календарю — с каждым месяцем до первого свистка. В акриловом кубе на белом мраморном основании — готовый центр спортивной полки.</div>
+    <div class="pr">750 000&nbsp;₽</div>
+    <div class="ct">Beckett</div>
+  </div>
+</section>
+<section class="slide white solo" id="s24">
+  <div class="ph"><img src="img_sel/half/shilton.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Спорт · 3 из 5</div>
+    <div class="nm" style="margin-top:13px">Вратарская перчатка с автографом Питера Шилтона</div>
+    <div class="tx">Белая вратарская перчатка, подписанная Питером Шилтоном — рекордсменом сборной Англии: 125 матчей за национальную команду, больше, чем у кого-либо до или после. Шилтон — тот самый вратарь, через которого прошла «рука Бога» Марадоны в 1986-м: обе стороны той истории теперь в музеях. Перчатка — правильная поверхность для вратарского автографа: предмет профессии, а не сувенир. В акриловом боксе на тёмном основании — строгий мужской подарок.</div>
+    <div class="pr">190 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white solo" id="s25">
+  <div class="ph"><img src="img_sel/half/alonso.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Спорт · 4 из 5</div>
+    <div class="nm" style="margin-top:13px">Визор шлема Arai GP7 с автографом Фернандо Алонсо, сезон McLaren 2007 года</div>
+    <div class="tx">Боевой визор шлема Arai GP7 в размере 1:1 с полосой Johnnie Walker — ливрея сезона-2007, единственного года Алонсо в McLaren рядом с дебютантом по имени Льюис Хэмилтон. Подпись серебром по тонированному поликарбонату; подписание зафиксировано на видео. Изогнутая форма визора красиво ловит свет на подставке — предмет для кабинета человека, который смотрит гонки по воскресеньям с секундомером.</div>
+    <div class="pr">550 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide white solo" id="s26">
+  <div class="ph"><img src="img_sel/half/aliplaque.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Спорт · 5 из 5</div>
+    <div class="nm" style="margin-top:13px">Конверт первого дня Зала боксёрской славы 1990 года с подписями Мохаммеда Али, Джо Фрейзера и ещё девяти чемпионов</div>
+    <div class="tx">Конверт первого гашения, выпущенный к открытию Международного зала боксёрской славы: штемпель «Induction Station · June 10, 1990 · Canastota NY» и олимпийские боксёрские марки. Поверх — одиннадцать подписей первого призыва: Мохаммед Али и Джо Фрейзер рядом, как в Мэдисон-сквер-гарден, Джейк Ламотта — «Бешеный бык» Скорсезе, Вилли Пеп, Арчи Мур, Эмиль Гриффит, Кармен Базилио. Одиннадцать имён, открывших Зал славы, на одном листе размером с журнальную страницу. Полное письмо JSA.</div>
+    <div class="pr">1 800 000&nbsp;₽</div>
+    <div class="ct">JSA</div>
+  </div>
+</section>
+<section class="slide dark" id="s27" style="grid-template-columns:1fr">
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:0 78px">
+    <div class="kick d" style="margin-bottom:24px">Искусство и стиль</div>
+    <h2 class="serif" style="font-weight:300;font-size:64px;line-height:1.04;color:var(--ivory)">Веттриано,<br>Армани, Версаче</h2>
+    <div class="rule" style="width:74px;margin:28px 0"></div>
+    <p style="font:300 21px/1.58 'Inter';color:#c9c3b7;max-width:52ch">Танец на вечернем берегу и два росчерка итальянской моды: предметы для домов, где стены умеют говорить тихо.</p>
+  </div>
+</section>
+<section class="slide white solo" id="s28">
+  <div class="ph"><img src="img_sel/half/vettriano.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Искусство и стиль · 1 из 2</div>
+    <div class="nm" style="margin-top:13px">Джек Веттриано «Dance Me to the End of Love», подписанная лимитированная печать</div>
+    <div class="tx">«Dance Me to the End of Love» — пара танцует на пустом вечернем берегу под низкой луной; название взято у Леонарда Коэна, а настроение — фирменное веттриановское: нуар, шёлк и недосказанность. Подписанная автором лимитированная печать малого формата; тираж давно распродан, у издателя оставался последний экземпляр. Веттриано — самый тиражируемый британский художник своего поколения, и эта вещь — его «Целующий полицейский» для спальни или гостиной: романтика без сиропа.</div>
+    <div class="pr">1 900 000&nbsp;₽</div>
+    
+  </div>
+</section>
+<section class="slide dark" id="s29" style="grid-template-columns:1fr">
+  <div style="position:relative">
+    <img src="img_sel/int/vettriano.jpg" alt="" style="width:100%;height:100%;object-fit:cover">
+    <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 40px;
+                background:linear-gradient(0deg,rgba(11,11,12,.88),rgba(11,11,12,0))">
+      <span class="kick d">Веттриано · Dance Me to the End of Love</span>
+      <div style="font:300 15px/1.5 'Inter';color:#c9c3b7;margin-top:8px;max-width:90ch">Гостиная: «Dance Me to the End of Love» над камином. Атмосферная подача.</div>
+    </div>
+  </div>
+</section>
+<section class="slide white solo" id="s30">
+  <div class="ph"><img src="img_sel/half/versace.jpg" alt=""></div>
+  <div class="side">
+    <div class="kick">Искусство и стиль · 2 из 2</div>
+    <div class="nm" style="margin-top:13px">Автографы Джорджо Армани и Джанни Версаче в одной раме</div>
+    <div class="tx">Два росчерка, определившие итальянскую моду конца XX века, в одном паспарту: строгий Armani и летящий Gianni Versace, между ними — фотография двух маэстро. Версаче не стало в 1997-м; предметов первого уровня с его подписью на рынке почти нет, и по этому лоту существуют отдельные письма PSA и JSA — по одному на каждую подпись. Вещь для шоу-рума, ателье, бутика или дома, где моду понимают как искусство — рядом с гардеробной такая рама выглядит манифестом.</div>
+    <div class="pr">1 800 000&nbsp;₽</div>
+    <div class="ct">PSA · JSA</div>
+  </div>
+</section>
+<section class="slide white" id="s31" style="grid-template-rows:auto 1fr auto">
+  <div style="padding:30px 62px 0;display:flex;justify-content:space-between;align-items:baseline">
+    <h2 class="serif" style="font-weight:500;font-size:32px;color:var(--ink)">Как мы отдаём подарок</h2>
+    <span class="kick">Упаковка Stargift</span>
+  </div>
+  <div style="display:grid;grid-template-columns:1.05fr .95fr;gap:42px;padding:18px 62px 0;align-items:center">
+    <div style="height:396px;display:flex;align-items:center;justify-content:center;background:#F7F5F1;overflow:hidden"><img src="img_packaging/box_kraft.jpg" alt="" style="max-width:100%;max-height:100%;object-fit:contain"></div>
+    <div style="height:396px;display:flex;align-items:center;justify-content:center;background:#F7F5F1;overflow:hidden"><img src="img_packaging/bag_white.jpg" alt="" style="max-width:100%;max-height:100%;object-fit:contain"></div>
+  </div>
+  <div style="padding:16px 62px 32px;font:300 18px/1.55 'Inter';color:#4a4a4a;max-width:96ch">Каждый предмет уходит в фирменной упаковке дома:
+  крафт-бумага с автографами великих, лента Stargift и плотный подарочный пакет. Оформленную работу привозим и вешаем сами.</div>
+</section>
+<section class="slide dark" id="s32" style="grid-template-rows:auto 1fr">
+  <div style="padding:40px 66px 0">
+    <div class="kick d" style="margin-bottom:12px">Собрание · Документы и кино</div>
+    <h2 class="serif" style="font-weight:300;font-size:40px;line-height:1;color:var(--ivory)">Прайс-лист</h2>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:0 66px 44px"><div class="lad-row"><div class="lad-nm">Сертификат Standard Oil · Рокфеллер и Флаглер</div><div class="lad-pr">2 200 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Письмо Porsche AG · подпись Ферри Порше</div><div class="lad-pr">590 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Контракт Роберта Дауни-младшего · 1985</div><div class="lad-pr">550 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">«Rencontres» · инскрипт Марианне Фейтфулл</div><div class="lad-pr">320 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">«Империя наносит ответный удар» · 17 подписей</div><div class="lad-pr">8 900 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Сценарий «Лица со шрамом» · Стивен Бауэр</div><div class="lad-pr">250 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">«Таксист» · комплект лобби-карт 1976 года</div><div class="lad-pr">160 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Маска Джейсона · автограф Ари Лемана</div><div class="lad-pr">90 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Cadillac 1955 · автограф Аль Пачино</div><div class="lad-pr">650 000&nbsp;₽</div></div></div>
+</section>
+<section class="slide dark" id="s33" style="grid-template-rows:auto 1fr">
+  <div style="padding:40px 66px 0">
+    <div class="kick d" style="margin-bottom:12px">Собрание · Музыка, спорт, искусство</div>
+    <h2 class="serif" style="font-weight:300;font-size:40px;line-height:1;color:var(--ivory)">Прайс-лист</h2>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;padding:0 66px 44px"><div class="lad-row"><div class="lad-nm">Автограф Фредди Меркьюри</div><div class="lad-pr">1 300 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Постер · Элтон Джон и Джордж Майкл</div><div class="lad-pr">1 400 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Конверт TCB · автограф Мэри Уилсон</div><div class="lad-pr">180 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Пластик Remo · автографы Metallica</div><div class="lad-pr">450 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">«Legends of Sport» · Али, Джордан, Вудс</div><div class="lad-pr">15 900 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Мяч ЧМ-2026 Trionda · автограф Месси</div><div class="lad-pr">750 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Вратарская перчатка · Питер Шилтон</div><div class="lad-pr">190 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Визор Arai GP7 · Фернандо Алонсо</div><div class="lad-pr">550 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Конверт первого дня 1990 · Али, Фрейзер и ещё девять</div><div class="lad-pr">1 800 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Веттриано · Dance Me to the End of Love</div><div class="lad-pr">1 900 000&nbsp;₽</div></div><div class="lad-row"><div class="lad-nm">Армани и Версаче · два автографа в одной раме</div><div class="lad-pr">1 800 000&nbsp;₽</div></div></div>
+</section>
+<section class="slide dark" id="s34" style="grid-template-rows:1fr auto">
+  <div style="padding:0 66px;display:flex;flex-direction:column;justify-content:center">
+    <img src="img/stargift_logo.png" alt="Stargift" style="height:132px;width:auto;object-fit:contain;filter:brightness(0) invert(1);align-self:flex-start">
+    <h2 class="serif" style="font-weight:300;font-size:44px;line-height:1.12;color:var(--ivory);margin-top:32px;max-width:36ch">Двадцать предметов, которые не повторяются. Каждый — с историей, которую рассказывают гостям.</h2>
+  </div>
+  <div style="padding:24px 66px 40px;border-top:1px solid rgba(169,133,69,.3)">
+    <span class="kick" style="letter-spacing:.24em;color:var(--gold2)">stargift.ru</span>
+  </div>
+</section>
+</div>
+
+<script>
+function show(){const raw=location.hash.slice(1);const k=raw.replace(/^s/,'');const id=k?('s'+k.padStart(2,'0')):'s01';
+document.querySelectorAll('.slide').forEach(s=>s.classList.toggle('on', s.id===id));scrollTo(0,0);}
+function go(d){const cur=+((location.hash.slice(1).replace(/^s/,''))||1);let x=cur+d;if(x<1)x=1;if(x>34)x=34;location.hash='s'+x;}
+show();addEventListener('hashchange',show);
+addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')go(1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(-1);});
+addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX<innerWidth*0.32?-1:1);});
+</script>
+<style>@page{size:1280px 720px;margin:0}@media print{html,body{overflow:visible;height:auto}*{box-shadow:none !important}.slide{animation:none}.deck{height:auto}
+.slide{position:relative;inset:auto;display:grid !important;width:1280px;height:720px;page-break-after:always}}</style>
